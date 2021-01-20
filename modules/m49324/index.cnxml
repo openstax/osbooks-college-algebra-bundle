@@ -1,0 +1,3871 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Linear Functions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m49324</md:content-id>
+  <md:title>Linear Functions</md:title>
+  <md:abstract><para>In this section, you will:</para>
+<list>
+<item>Represent a linear function.</item>
+<item>Determine whether a linear function is increasing, decreasing, or constant.</item>
+<item>Calculate and interpret slope.</item>
+<item>Write the point-slope form of an equation.</item>
+<item>Write and interpret a linear function.</item>
+</list></md:abstract>
+  <md:uuid>9520ff9d-9def-4937-a92b-8b0e9d58103b</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+<figure id="CNX_Precalc_Figure_02_01_001"><media id="fs-id1165137433758" alt="Front view of a subway train, the maglev train.">
+<image src="../../media/CNX_Precalc_Figure_02_01_011.jpg" mime-type="image/jpg" width="325"/>
+</media>
+
+<caption>Shanghai MagLev Train (credit: “kanegen”/Flickr)</caption></figure><para id="fs-id1165137697072">Just as with the growth of a bamboo plant, there are many situations that involve constant change over time. Consider, for example, the first commercial maglev train in the world, the Shanghai MagLev Train (<link target-id="CNX_Precalc_Figure_02_01_001"/>). It carries passengers comfortably for a 30-kilometer trip from the airport to the subway station in only eight minutes.<footnote id="ch02mod01_fn01">http://www.chinahighlights.com/shanghai/transportation/maglev-train.htm</footnote></para>
+<para id="fs-id1165134340085">Suppose a maglev train were to travel a long distance, and that the train maintains a constant speed of 83 meters per second for a period of time once it is 250 meters from the station. How can we analyze the train’s distance from the station as a function of time? In this section, we will investigate a kind of function that is useful for this purpose, and use it to investigate real-world situations such as the train’s distance from the station at a given point in time.</para>
+<section id="fs-id1165137444281">
+<title>Representing Linear Functions</title>
+<para id="fs-id1165137573850">The function describing the train’s motion is a <emphasis>linear function</emphasis>, which is defined as a function with a constant rate of change, that is, a polynomial of degree 1. There are several ways to represent a linear function, including word form, function notation, tabular form, and graphical form. We will describe the train’s motion as a function using each method.</para>
+<section id="fs-id1165137759903">
+<title>Representing a Linear Function in Word Form</title>
+<para id="fs-id1165137588695">Let’s begin by describing the linear function in words. For the train problem we just considered, the following word sentence may be used to describe the function relationship.</para>
+<list id="fs-id1165135526954" list-type="bulleted">
+<item><emphasis effect="italics">The train’s distance from the station is a function of the time during which the train moves at a constant speed plus its original distance from the station when it began moving at constant speed.</emphasis></item>
+</list>
+<para id="fs-id1165135188466">The speed is the rate of change. Recall that a rate of change is a measure of how quickly the dependent variable changes with respect to the independent variable. The rate of change for this example is constant, which means that it is the same for each input value. As the time (input) increases by 1 second, the corresponding distance (output) increases by 83 meters. The train began moving at this constant speed at a distance of 250 meters from the station.</para>
+</section>
+
+<section id="fs-id1165135639903"><title>Representing a Linear Function in Function Notation</title><para id="fs-id1165137833100">Another approach to representing linear functions is by using function notation. One example of function notation is an equation written in the form known as the <term>slope-intercept form</term> of a line, where <m:math>
+<m:mi>x</m:mi>
+</m:math> is the input value, <m:math>
+<m:mi>m</m:mi>
+</m:math> is the rate of change, and <m:math>
+<m:mi>b</m:mi>
+</m:math> is the initial value of the dependent variable.</para>
+<equation id="Equation_02_01_01" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Equation form</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Equation notation</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137411219">In the example of the train, we might use the notation <m:math>
+<m:mrow>
+<m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+in which the total distance <m:math>
+<m:mi>D</m:mi>
+</m:math>
+is a function of the time <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+The rate, <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+is 83 meters per second. The initial value of the dependent variable <m:math>
+<m:mi>b</m:mi>
+</m:math>
+is the original distance from the station, 250 meters. We can write a generalized equation to represent the motion of the train.</para>
+<equation id="fs-id1165137559254" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>83</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>250</m:mn>
+</m:mrow>
+</m:math>
+</equation>
+</section><section id="fs-id1165135415800"><title>Representing a Linear Function in Tabular Form</title><para id="fs-id1165137438406">A third method of representing a linear function is through the use of a table. The relationship between the distance from the station and the time is represented in <link target-id="CNX_Precalc_Figure_02_01_015"/>. From the table, we can see that the distance changes by 83 meters for every 1 second increase in time.</para>
+
+<figure id="CNX_Precalc_Figure_02_01_015" class="medium">
+<media id="fs-id1165137759688" alt="Table with the first row, labeled t, containing the seconds from 0 to 3, and with the second row, labeled D(t), containing the meters 250 to 499. The first row goes up by 1 second, and the second row goes up by 83 meters.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_015.jpg"/>
+</media>
+<caption>Tabular representation of the function <emphasis effect="italics">D</emphasis> showing selected input and output values</caption>
+</figure>
+
+<note id="fs-id1165137482942" class="precalculus qa">
+<label>Q&amp;A</label>
+<para id="fs-id1165137828205"><emphasis>Can the input in the previous example be any real number?</emphasis></para>
+<para id="fs-id1165135209002"><emphasis effect="italics">No. The input represents time, so while nonnegative rational and irrational numbers are possible, negative real numbers are not possible for this example. The input consists of non-negative real numbers.</emphasis></para>
+</note>
+</section><section id="fs-id1165137619188"><title>Representing a Linear Function in Graphical Form</title><para id="fs-id1165137827353">Another way to represent linear functions is visually, using a graph. We can use the function relationship from above, <m:math>
+<m:mrow>
+<m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>83</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>250</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> to draw a graph, represented in <link target-id="CNX_Precalc_Figure_02_01_012"/>. Notice the graph is a line. When we plot a linear function, the graph is always a line.</para><para id="fs-id1165137451297">The rate of change, which is constant, determines the slant, or <emphasis>slope</emphasis> of the line. The point at which the input value is zero is the vertical intercept, or <emphasis><emphasis effect="italics">y</emphasis>-intercept</emphasis>, of the line. We can see from the graph in <link target-id="CNX_Precalc_Figure_02_01_012"/> that the <emphasis effect="italics">y</emphasis>-intercept in the train example we just saw is <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>250</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+and represents the distance of the train from the station when it began moving at a constant speed.</para>
+<figure id="CNX_Precalc_Figure_02_01_012" class="small">
+<media id="fs-id1165137698181" alt="A graph of an increasing function with points at (-2, -4) and (0, 2).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_012.jpg"/>
+</media>
+
+<caption>The graph of <m:math>
+<m:mrow>
+<m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>83</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>250.</m:mn>
+</m:mrow>
+</m:math> Graphs of linear functions are lines because the rate of change is constant.</caption></figure>
+
+<para id="fs-id1165137715509">Notice that the graph of the train example is restricted, but this is not always the case. Consider the graph of the line <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msub>
+<m:mi>x</m:mi>
+</m:msub>
+<m:mn>+1.</m:mn>
+</m:mrow>
+</m:math>
+Ask yourself what numbers can be input to the function, that is, what is the domain of the function? The domain is comprised of all real numbers because any number may be doubled, and then have one added to the product.</para>
+
+<note id="fs-id1165137726089">
+
+<title>Linear Function</title>
+<para id="fs-id1165137454496">A <term>linear function</term> is a function whose graph is a line. Linear functions can be written in the slope-intercept form of a line</para>
+<equation id="Equation_02_01_02" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137784222">where <m:math>
+<m:mi>b</m:mi>
+</m:math>
+is the initial or starting value of the function (when input, <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math>
+), and <m:math>
+<m:mi>m</m:mi>
+</m:math>
+is the constant rate of change, or <term>slope</term> of the function. The <term><emphasis effect="italics">y</emphasis>-intercept</term> is at <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</note>
+
+<example id="Example_02_01_01">
+<exercise id="fs-id1165137583894"><problem id="fs-id1165135209144">
+<title>Using a Linear Function to Find the Pressure on a Diver</title>
+<para id="fs-id1165135184177">The pressure, <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+in pounds per square inch (PSI) on the diver in <link target-id="CNX_Precalc_Figure_02_01_003"/> depends upon her depth below the water surface, <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> in feet. This relationship may be modeled by the equation, <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.434</m:mn><m:mi>d</m:mi><m:mo>+</m:mo><m:mn>14.696.</m:mn>
+</m:mrow>
+</m:math> Restate this function in words.</para><figure id="CNX_Precalc_Figure_02_01_003" class="small">
+<media id="fs-id1165137565865" alt="Scuba diver.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_003.jpg"/>
+</media>
+<caption>(credit: Ilse Reijs and Jan-Noud Hutten)</caption>
+</figure>
+</problem>
+<solution id="fs-id1165135181728">
+<para id="fs-id1165137398472">To restate the function in words, we need to describe each part of the equation. The pressure as a function of depth equals four hundred thirty-four thousandths times depth plus fourteen and six hundred ninety-six thousandths.</para>
+</solution>
+<commentary id="fs-id1165137738187">
+<title>Analysis</title>
+<para id="fs-id1165137740917">The initial value, 14.696, is the pressure in PSI on the diver at a depth of 0 feet, which is the surface of the water. The rate of change, or slope, is 0.434 PSI per foot. This tells us that the pressure on the diver increases 0.434 PSI for each foot her depth increases.</para>
+</commentary>
+</exercise></example>
+</section></section>
+<section id="fs-id1165137749252">
+<title>Determining whether a Linear Function Is Increasing, Decreasing, or Constant</title>
+<para id="fs-id1165135482019">The linear functions we used in the two previous examples increased over time, but not every linear function does. A linear function may be increasing, decreasing, or constant. For an <term class="no-emphasis">increasing function</term>, as with the train example, the output values increase as the input values increase. The graph of an increasing function has a positive slope. A line with a positive slope slants upward from left to right as in <link target-id="CNX_Precalc_Figure_02_01_004abc"/><emphasis>(a)</emphasis>. For a <term class="no-emphasis">decreasing function</term>, the slope is negative. The output values decrease as the input values increase. A line with a negative slope slants downward from left to right as in <link target-id="CNX_Precalc_Figure_02_01_004abc"/><emphasis>(b)</emphasis>. If the function is constant, the output values are the same for all input values so the slope is zero. A line with a slope of zero is horizontal as in <link target-id="CNX_Precalc_Figure_02_01_004abc"/><emphasis>(c)</emphasis>.</para>
+
+<figure id="CNX_Precalc_Figure_02_01_004abc">
+<media id="fs-id1165137453957" alt="Three graphs depicting an increasing function, a decreasing function, and a constant function.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_004abc.jpg"/>
+</media>
+</figure>
+
+<note id="fs-id1165137446154"><title>Increasing and Decreasing Functions</title>
+
+<para id="fs-id1165134085973">The slope determines if the function is an <term>increasing linear function</term>, a <term>decreasing linear function</term>, or a constant function.</para>
+<list id="eip-643" list-type="bulleted" bullet-style="none"><item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mtext> is an increasing function if </m:mtext><m:mi>m</m:mi><m:mo>&gt;</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mtext> is an decreasing function if </m:mtext><m:mi>m</m:mi><m:mo>&lt;</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mtext> is a constant function if </m:mtext><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </item></list></note><example id="Example_02_01_02">
+<exercise id="fs-id1165137405281">
+<problem id="fs-id1165135571684">
+<title>Deciding whether a Function Is Increasing, Decreasing, or Constant</title>
+<para id="fs-id1165137400625">Some recent studies suggest that a teenager sends an average of 60 texts per day.<footnote id="ch02mod01_fn02">http://www.cbsnews.com/8301-501465_162-57400228-501465/teens-are-sending-60-texts-a-day-study-says/</footnote> For each of the following scenarios, find the linear function that describes the relationship between the input value and the output value. Then, determine whether the graph of the function is increasing, decreasing, or constant.</para>
+<list id="fs-id1165137807449" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> The total number of texts a teen sends is considered a function of time in days. The input is the number of days, and output is the total number of texts sent.</item>
+<item><span class="token">ⓑ</span> A teen has a limit of 500 texts per month in his or her data plan. The input is the number of days, and output is the total number of texts remaining for the month.</item>
+<item><span class="token">ⓒ</span> A teen has an unlimited number of texts in his or her data plan for a cost of $50 per month. The input is the number of days, and output is the total cost of texting each month.</item>
+</list>
+</problem>
+<solution id="fs-id1165137435336">
+<para id="fs-id1165137508045">Analyze each function.</para>
+<list id="fs-id1165137778959" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> The function can be represented as <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>60</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:math> where <m:math>
+<m:mi>x</m:mi>
+</m:math> is the number of days. The slope, 60, is positive so the function is increasing. This makes sense because the total number of texts increases with each day.</item>
+<item><span class="token">ⓑ</span> The function can be represented as <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>500</m:mn><m:mo>−</m:mo><m:mn>60</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:math> where <m:math>
+<m:mi>x</m:mi>
+</m:math> is the number of days. In this case, the slope is negative so the function is decreasing. This makes sense because the number of texts remaining decreases each day and this function represents the number of texts remaining in the data plan after <m:math>
+<m:mi>x</m:mi>
+</m:math> days.</item>
+<item><span class="token">ⓒ</span> The cost function can be represented as <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>50</m:mn>
+</m:mrow>
+</m:math> because the number of days does not affect the total cost. The slope is 0 so the function is constant.</item>
+</list></solution>
+</exercise>
+</example>
+</section>
+
+<section id="fs-id1165137837055"><title>Calculating and Interpreting Slope</title><para id="fs-id1165137573268">In the examples we have seen so far, we have had the slope provided for us. However, we often need to calculate the <term class="no-emphasis">slope</term> given input and output values. Given two values for the input, <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>x</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and two corresponding values for the output, <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:math>
+and <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:mrow>
+</m:math> —which can be represented by a set of points, <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mtext>,  </m:mtext><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+and <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mtext>,  </m:mtext><m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> —we can calculate the slope <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+as follows</para>
+<equation id="fs-id1165137757690" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mtext>change in output (rise)</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>change in input (run)</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>Δ</m:mi><m:mi>y</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>Δ</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo><m:msub>
+     <m:mi>y</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo><m:msub>
+     <m:mi>x</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137767606">where <m:math><m:mrow><m:mtext>Δ</m:mtext><m:mi>y</m:mi> </m:mrow></m:math> is the vertical displacement and <m:math> <m:mrow>  <m:mtext>Δ</m:mtext><m:mi>x</m:mi></m:mrow></m:math> is the horizontal displacement. Note in function notation two corresponding values for the output <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub>  </m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> for the function <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> so we could equivalently write</para>
+
+<equation id="fs-id1165137438737" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo><m:mo>–</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165137452099"><link target-id="CNX_Precalc_Figure_02_01_005"/> indicates how the slope of the line between the points, <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1,</m:mn>
+</m:msub>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+and <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>2,</m:mn>
+</m:msub>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+is calculated. Recall that the slope measures steepness. The greater the absolute value of the slope, the steeper the line is.</para>
+<figure id="CNX_Precalc_Figure_02_01_005" class="medium">
+<media id="fs-id1165137415842" alt="Graph depicting how to calculate the slope of a line">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_005.jpg"/>
+</media>
+
+<caption>The slope of a function is calculated by the change in <m:math>
+<m:mi>y</m:mi>
+</m:math> divided by the change in <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> It does not matter which coordinate is used as the <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/>
+</m:mrow>
+</m:msub>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> and which is the <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>,</m:mo><m:mspace width="0.8em"/><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math> as long as each calculation is started with the elements from the same coordinate pair.</caption></figure><note id="fs-id1165137831952" class="precalculus qa">
+<label>Q&amp;A</label>
+<para id="fs-id1165137501372"><emphasis>Are the units for slope always <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>units for the output</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>units for the input</m:mtext>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>?</emphasis></para>
+<para id="fs-id1165137462769"><emphasis effect="italics">Yes. Think of the units as the change of output value for each unit of change in input value. An example of slope could be miles per hour or dollars per day. Notice the units appear as a ratio of units for the output per units for the input.</emphasis></para>
+</note>
+
+<note id="fs-id1165135161219">
+
+<title>Calculate Slope</title>
+<para id="fs-id1165134069119">The slope, or rate of change, of a function <m:math><m:mi>m</m:mi></m:math> can be calculated according to the following:</para>
+<equation id="Equation_02_01_03" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>change in output (rise)</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>change in input (run)</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>Δ</m:mtext><m:mi>y</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mtext>Δ</m:mtext><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135414432">where <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:mrow>
+</m:math> are input values, <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:mrow>
+</m:math> are output values.</para></note>
+
+<note id="fs-id1165137539010" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165137675584"><emphasis>Given two points from a linear function, calculate and interpret the slope.</emphasis></para>
+<list id="fs-id1165137820100" list-type="enumerated" number-style="arabic">
+<item>Determine the units for output and input values.</item>
+<item>Calculate the change of output values and change of input values.</item>
+<item>Interpret the slope as the change in output values per unit of the input value.</item>
+</list>
+</note>
+
+<example id="Example_02_01_03"><exercise id="fs-id1165137641892"><problem id="fs-id1165137811167">
+<title>Finding the Slope of a Linear Function</title>
+<para id="fs-id1165137724908">If <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+is a linear function, and <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3,−2</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+and <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>8,1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+are points on the line, find the slope. Is this function increasing or decreasing?</para>
+</problem>
+<solution id="fs-id1165137415954">
+<para id="fs-id1165137714054">The coordinate pairs are <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3,−2</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+and <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>8,1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> To find the rate of change, we divide the change in output by the change in input.</para>
+<equation id="eip-id1165137437221" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>change in output</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>change in input</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mn>8</m:mn><m:mo>−</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137469338">We could also write the slope as <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mn>0.6.</m:mn>
+</m:mrow>
+</m:math> The function is increasing because <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>&gt;</m:mo><m:mn>0.</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+<commentary id="fs-id1165137727715">
+<title>Analysis</title>
+<para id="fs-id1165137842413">As noted earlier, the order in which we write the points does not matter when we compute the slope of the line as long as the first output value, or <emphasis effect="italics">y</emphasis>-coordinate, used corresponds with the first input value, or <emphasis effect="italics">x</emphasis>-coordinate, used.</para>
+</commentary>
+</exercise>
+</example><note id="fs-id1165137645977" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_01_01">
+<problem id="fs-id1165137704588">
+<para id="fs-id1165137451238">If <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+is a linear function, and <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>3</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+and <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+are points on the line, find the slope. Is this function increasing or decreasing?</para>
+</problem>
+<solution id="fs-id1165137731951">
+<para id="fs-id1165137422589"> <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>−</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>−</m:mo><m:mn>2</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>2</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math>; decreasing because <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>&lt;</m:mo><m:mn>0.</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+
+<example id="Example_02_01_04">
+<exercise id="fs-id1165135307935">
+<problem id="fs-id1165135307937">
+<title>Finding the Population Change from a Linear Function</title>
+<para id="fs-id1165135386495">The population of a city increased from 23,400 to 27,800 between 2008 and 2012. Find the change of population per year if we assume the change was constant from 2008 to 2012.</para>
+</problem>
+<solution id="fs-id1165137925518">
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137415969">The rate of change relates the change in population to the change in time. The population increased by <m:math><m:mrow><m:mn>27</m:mn><m:mo>,</m:mo><m:mn>800</m:mn><m:mo>−</m:mo><m:mn>23</m:mn><m:mo>,</m:mo><m:mn>400</m:mn><m:mo>=</m:mo><m:mn>4,400</m:mn></m:mrow>
+</m:math> people over the four-year time interval. To find the rate of change, divide the change in the number of people by the number of years.</para><equation id="fs-id1165137701368" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>4,400</m:mn><m:mtext> people</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mn>4</m:mn><m:mtext> years</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>1,100</m:mn><m:mspace width="0.8em"/><m:mfrac>
+<m:mrow>
+<m:mtext>people</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>year</m:mtext>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137705484">So the population increased by 1,100 people per year.</para>
+</solution>
+<commentary id="fs-id1165137605140">
+<title>Analysis</title>
+<para id="fs-id1165137451439">Because we are told that the population increased, we would expect the slope to be positive. This positive slope we calculated is therefore reasonable.</para>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137410528" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_01_02">
+<problem id="fs-id1165137425640">
+<para id="fs-id1165137425642">The population of a small town increased from 1,442 to 1,868 between 2009 and 2012. Find the change of population per year if we assume the change was constant from 2009 to 2012.</para>
+</problem>
+<solution id="fs-id1165137416648">
+<para id="fs-id1165137767759">
+ <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>,</m:mo><m:mn>868</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>442</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn><m:mo>,</m:mo><m:mn>012</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>009</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>426</m:mn>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>142</m:mn><m:mtext> people per year</m:mtext>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1165135208792"><title>Writing the Point-Slope Form of a Linear Equation</title><para id="fs-id1165137639245">Up until now, we have been using the slope-intercept form of a linear equation to describe linear functions. Here, we will learn another way to write a linear function, the <term>point-slope form</term>.</para>
+
+<equation id="fs-id1165137452508" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137551238">The point-slope form is derived from the slope formula.</para>
+<equation id="eip-301" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>assuming </m:mtext><m:mi>x</m:mi><m:mo>≠</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:mfrac>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Multiply both sides by </m:mtext><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Simplify</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Rearrange</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165137844021">Keep in mind that the slope-intercept form and the point-slope form can be used to describe the same function. We can move from one form to another using basic algebra. For example, suppose we are given an equation in point-slope form, <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>. We can convert it to the slope-intercept form as shown.</para>
+<equation id="eip-424" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Distribute the </m:mtext><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Add 4 to each side</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137409234">Therefore, the same line can be described in slope-intercept form as <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7.</m:mn>
+</m:mrow>
+</m:math>
+</para>
+
+<note id="fs-id1165137461941">
+
+<title>Point-Slope Form of a Linear Equation</title>
+<para id="fs-id1165137647838">The <emphasis>point-slope form</emphasis> of a linear equation takes the form</para>
+<equation id="Equation_02_01_04" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137663648">where <m:math>
+<m:mi>m</m:mi>
+</m:math>
+is the slope, <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mrow>
+<m:mn>1</m:mn><m:mspace width="0.8em"/>
+</m:mrow>
+</m:msub>
+<m:mtext>and</m:mtext><m:mspace width="0.8em"/><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:math>
+are the <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mtext>-</m:mtext><m:mtext> and </m:mtext><m:mi>y</m:mi><m:mtext>-</m:mtext>
+</m:mrow>
+</m:math>
+coordinates of a specific point through which the line passes.</para></note>
+
+<section id="fs-id1165137745298"><title>Writing the Equation of a Line Using a Point and the Slope</title><para id="fs-id1165137444576">The point-slope form is particularly useful if we know one point and the slope of a line. Suppose, for example, we are told that a line has a slope of 2 and passes through the point <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+We know that <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+</m:mrow>
+</m:math>
+and that <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:math>
+and <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math> We can substitute these values into the general point-slope equation.</para>
+<equation id="fs-id1165134380388" class="unnumbered"><label/> <m:math display="block">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</equation>
+<para id="fs-id1165137639550">If we wanted to then rewrite the equation in slope-intercept form, we apply algebraic techniques.</para>
+<equation id="eip-420" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Distribute the </m:mtext><m:mn>2.</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Add 1 to each side</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135333698">Both equations, <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+and <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>7</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> describe the same line. See <link target-id="CNX_Precalc_Figure_02_01_013"/>.</para><figure id="CNX_Precalc_Figure_02_01_013" class="small">
+<media id="fs-id1165137925529" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_013.jpg"/>
+</media>
+</figure>
+
+<example id="Example_02_01_05">
+<exercise id="fs-id1165137423582"><problem id="fs-id1165137423584">
+<title>Writing Linear Equations Using a Point and the Slope</title>
+<para id="fs-id1165137736482">Write the point-slope form of an equation of a line with a slope of 3 that passes through the point <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>6</m:mn><m:mo>,</m:mo><m:mn>–1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Then rewrite it in the slope-intercept form.</para>
+</problem>
+<solution id="fs-id1165137548489">
+<para id="fs-id1165137530790">Let’s figure out what we know from the given information. The slope is 3, so <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow></m:math> We also know one point, so we know <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn>
+</m:msub><m:mo>=</m:mo><m:mn>−1.</m:mn></m:mrow>
+</m:math> Now we can substitute these values into the general point-slope equation.</para>
+
+<equation id="eip-id1165135340596" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+       <m:mi>y</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+       <m:mi>x</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Substitute known values</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Distribute </m:mtext><m:mo>−</m:mo><m:mn>1</m:mn><m:mtext> to find point-slope form</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137594974">Then we use algebra to find the slope-intercept form.</para>
+
+<equation id="eip-id1165135181326" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>18</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Distribute 3</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>19</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Simplify to slope-intercept form</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example>
+
+<note id="fs-id1165137911315" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_01_03">
+<problem id="fs-id1165137731405">
+<para id="fs-id1165137731407">Write the point-slope form of an equation of a line with a slope of <m:math>
+<m:mrow>
+<m:mn>–2</m:mn>
+</m:mrow>
+</m:math>
+that passes through the point <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>–2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>2</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Then rewrite it in the slope-intercept form.</para></problem>
+<solution id="fs-id1165137847204">
+<para id="fs-id1165137541146"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+; <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1165137804818"><title>Writing the Equation of a Line Using Two Points </title><para id="fs-id1165137413780">The point-slope form of an equation is also useful if we know any two points through which a line passes. Suppose, for example, we know that a line passes through the points <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+and <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>2</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> We can use the coordinates of the two points to find the slope.</para>
+<equation id="fs-id1165137566741" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+         <m:mrow>
+          <m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mo>−</m:mo><m:mn>0</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165135431090">Now we can use the slope we found and the coordinates of one of the points to find the equation for the line. Let use (0, 1) for our point.</para>
+<equation id="fs-id1165137468831" class="unnumbered"><label/> <m:math display="block">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>0</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</equation>
+<para id="fs-id1165137638900">As before, we can use algebra to rewrite the equation in the slope-intercept form.</para>
+<equation id="eip-403" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Distribute the </m:mtext><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Add 1 to each side</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135456723">Both equations describe the line shown in <link target-id="CNX_Precalc_Figure_02_01_014"/>.</para>
+
+<figure id="CNX_Precalc_Figure_02_01_014" class="small">
+<media id="fs-id1165135154190" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_014.jpg"/>
+</media>
+</figure>
+
+<example id="Example_02_01_06">
+<exercise id="fs-id1165137736140">
+<problem id="fs-id1165137736142">
+<title>Writing Linear Equations Using Two Points</title>
+<para id="fs-id1165137634384">Write the point-slope form of an equation of a line that passes through the points (5, 1) and (8, 7). Then rewrite it in the slope-intercept form.</para>
+</problem>
+<solution id="fs-id1165137749761">
+<para id="fs-id1165137749763">Let’s begin by finding the slope.</para>
+<equation id="fs-id1165137422633" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+         <m:mrow>
+          <m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>7</m:mn><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>8</m:mn><m:mo>−</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>6</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135530557">So <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:math> Next, we substitute the slope and the coordinates for one of the points into the general point-slope equation. We can choose either point, but we will use <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+<equation id="fs-id1165137603384" class="unnumbered"><label/> <m:math display="block">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</equation>
+<para id="fs-id1165135431079">The point-slope equation of the line is <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>–</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> To rewrite the equation in slope-intercept form, we use algebra.</para>
+<equation id="fs-id1165137932576" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>10</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135445782">The slope-intercept equation of the line is <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>9.</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135183971" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_01_04">
+<problem id="fs-id1165137863825">
+<para id="fs-id1165137863827">Write the point-slope form of an equation of a line that passes through the points <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Then rewrite it in the slope-intercept form.</para></problem>
+<solution id="fs-id1165137766941">
+<para id="fs-id1165137656111"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>0</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>; <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section></section><section id="fs-id1165137770240"><title>Writing and Interpreting an Equation for a Linear Function</title><para id="fs-id1165137911671">Now that we have written equations for linear functions in both the slope-intercept form and the point-slope form, we can choose which method to use based on the information we are given. That information may be provided in the form of a graph, a point and a slope, two points, and so on. Look at the graph of the function <m:math>
+<m:mi>f</m:mi></m:math> in <link target-id="CNX_Precalc_Figure_02_01_006"/>.</para>
+
+<figure id="CNX_Precalc_Figure_02_01_006" class="small">
+<media id="fs-id1165135182766" alt="Graph depicting how to calculate the slope of a line">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_006.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137657203">We are not given the slope of the line, but we can choose any two points on the line to find the slope. Let’s choose <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>7</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> We can use these points to calculate the slope.</para>
+<equation id="fs-id1165137666429" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+         <m:mrow>
+          <m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mn>4</m:mn><m:mo>−</m:mo><m:mn>7</m:mn>
+           </m:mrow>
+           <m:mrow>
+            <m:mn>4</m:mn><m:mo>−</m:mo><m:mn>0</m:mn>
+           </m:mrow>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+           <m:mn>3</m:mn>
+           <m:mn>4</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135176567">Now we can substitute the slope and the coordinates of one of the points into the point-slope form.</para>
+<equation id="fs-id1165135450369" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+       <m:mi>y</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+       <m:mi>x</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137634475">If we want to rewrite the equation in the slope-intercept form, we would find</para>
+<equation id="fs-id1165137768649" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137769983">If we wanted to find the slope-intercept form without first writing the point-slope form, we could have recognized that the line crosses the <emphasis effect="italics">y</emphasis>-axis when the output value is 7. Therefore, <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>7.</m:mn></m:mrow></m:math>
+We now have the initial value <m:math><m:mi>b</m:mi></m:math> and the slope <m:math><m:mi>m</m:mi></m:math> so we can substitute <m:math><m:mi>m</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math> into the slope-intercept form of a line.</para><media id="fs-id1165137548391" display="block" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_007.jpg"/>
+</media>
+
+
+<para id="fs-id1165137705273">So the function is <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+and the linear equation would be <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7.</m:mn>
+</m:mrow>
+</m:math>
+</para><note id="fs-id1165137824876" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165137824881"><emphasis>Given the graph of a linear function, write an equation to represent the function.</emphasis></para>
+<list id="fs-id1165137803240" list-type="enumerated" number-style="arabic">
+<item>Identify two points on the line.</item>
+<item>Use the two points to calculate the slope.</item>
+<item>Determine where the line crosses the <emphasis effect="italics">y</emphasis>-axis to identify the <emphasis effect="italics">y</emphasis>-intercept by visual inspection.</item>
+<item>Substitute the slope and <emphasis effect="italics">y</emphasis>-intercept into the slope-intercept form of a line equation.</item>
+</list>
+</note>
+
+<example id="Example_02_01_07">
+<exercise id="fs-id1165137602269"><problem id="fs-id1165137602271">
+<title>Writing an Equation for a Linear Function</title>
+<para id="fs-id1165137481145">Write an equation for a linear function given a graph of <m:math>
+<m:mi>f</m:mi></m:math> shown in <link target-id="CNX_Precalc_Figure_02_01_008a"/>.</para>
+
+<figure id="CNX_Precalc_Figure_02_01_008a" class="small">
+<media id="fs-id1165137439448" alt="Graph of an increasing function with points at (-3, 0) and (0, 1).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_008a.jpg"/>
+</media>
+</figure>
+</problem>
+
+<solution id="fs-id1165135536535">
+<para id="fs-id1165135536538">Identify two points on the line, such as <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mtext>−4</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Use the points to calculate the slope.</para>
+<equation id="fs-id1165137824250" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+         <m:mrow>
+          <m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>0</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>6</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137732234">Substitute the slope and the coordinates of one of the points into the point-slope form.</para>
+<equation id="fs-id1165134305424" class="unnumbered"><label/> <m:math display="block">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>2</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</equation>
+<para id="fs-id1165137731540">We can use algebra to rewrite the equation in the slope-intercept form.</para>
+<equation id="fs-id1165137460061" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+</solution>
+<commentary id="fs-id1165135194076">
+<title>Analysis</title>
+<para id="fs-id1165135496505">This makes sense because we can see from <link target-id="CNX_Precalc_Figure_02_01_008b"/> that the line crosses the y-axis at the point <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow>  <m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, which is the <emphasis effect="italics">y</emphasis>-intercept, so <m:math><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:math> </para>
+<figure id="CNX_Precalc_Figure_02_01_008b" class="small">
+<media id="fs-id1165137407613" alt="Graph of an increasing line with points at (0, 2) and (-2, -4).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_008b.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+
+<example id="Example_02_01_08">
+<exercise id="fs-id1165137426936"><problem id="fs-id1165137757806">
+<title>Writing an Equation for a Linear Cost Function</title>
+<para id="fs-id1165137638162">Suppose Ben starts a company in which he incurs a fixed cost of $1,250 per month for the overhead, which includes his office rent. His production costs are $37.50 per item. Write a linear function <m:math><m:mi>C</m:mi></m:math> where <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is the cost for <m:math><m:mi>x</m:mi></m:math> items produced in a given month.</para>
+</problem>
+<solution id="fs-id1165137406776">
+<para id="fs-id1165137406778">The fixed cost is present every month, $1,250. The costs that can vary include the cost to produce each item, which is $37.50 for Ben. The variable cost, called the marginal cost, is represented by <m:math><m:mrow><m:mn>37.5.</m:mn></m:mrow></m:math> The cost Ben incurs is the sum of these two costs, represented by <m:math> <m:mrow>
+<m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1250</m:mn><m:mo>+</m:mo><m:mn>37.5</m:mn><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> </para>
+</solution>
+<commentary id="fs-id1165137767515">
+<title>Analysis </title>
+<para id="fs-id1165135511326">If Ben produces 100 items in a month, his monthly cost is represented by</para>
+<equation id="fs-id1165137417815" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1250</m:mn><m:mo>+</m:mo><m:mn>37.5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>           </m:mtext><m:mo>=</m:mo><m:mn>5000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137862645">So his monthly cost would be $5,000.</para>
+</commentary>
+</exercise></example>
+
+<example id="Example_02_01_09">
+<exercise id="fs-id1165137459731">
+<problem id="fs-id1165135259656">
+<title>Writing an Equation for a Linear Function Given Two Points</title>
+<para id="fs-id1165135259662">If <m:math><m:mi>f</m:mi></m:math> is a linear function, with <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn></m:mrow></m:math>, and <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>, find an equation for the function in slope-intercept form.</para></problem>
+<solution id="fs-id1165137730073">
+<para id="fs-id1165137730075">We can write the given points using coordinates. </para>
+<equation id="fs-id1165137639761" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137603531">We can then use the points to calculate the slope.</para>
+<equation id="fs-id1165137582561" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+         <m:mrow>
+          <m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>1</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>8</m:mn><m:mo>−</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137851970">Substitute the slope and the coordinates of one of the points into the point-slope form.</para>
+<equation id="fs-id1165137583929" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+       <m:mi>y</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+       <m:mi>x</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137629473">We can use algebra to rewrite the equation in the slope-intercept form.</para>
+<equation id="fs-id1165135543458" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>19</m:mn>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137762684" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_2_01_05">
+<problem id="fs-id1165135456744">
+<para id="fs-id1165135456746">If <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is a linear function, with <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>11</m:mn><m:mo>,</m:mo></m:mrow></m:math> and <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>25</m:mn><m:mo>,</m:mo></m:mrow></m:math> find an equation for the function in slope-intercept form.</para>
+</problem>
+<solution id="fs-id1165137654874">
+<para id="fs-id1165137654876"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1165137894282">
+<title>Modeling Real-World Problems with Linear Functions</title>
+<para id="fs-id1165137594074">In the real world, problems are not always explicitly stated in terms of a function or represented with a graph. Fortunately, we can analyze the problem by first representing it as a linear function and then interpreting the components of the function. As long as we know, or can figure out, the initial value and the rate of change of a linear function, we can solve many different kinds of real-world problems.</para>
+
+<note id="fs-id1165137900351" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165137404879"><emphasis>Given a linear function <m:math><m:mi>f</m:mi></m:math> and the initial value and rate of change, evaluate <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> </emphasis></para>
+
+<list id="fs-id1165137660790" list-type="enumerated" number-style="arabic">
+<item>Determine the initial value and the rate of change (slope).</item>
+<item>Substitute the values into <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math> </item>
+<item>Evaluate the function at <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow></m:math> </item>
+</list>
+</note>
+
+<example id="Example_02_01_10"><exercise id="fs-id1165137836747">
+<problem id="fs-id1165137836750">
+<title>Using a Linear Function to Determine the Number of Songs in a Music Collection</title>
+<para id="fs-id1165137740859">Marcus currently has 200 songs in his music collection. Every month, he adds 15 new songs. Write a formula for the number of songs, <m:math>
+ <m:mrow>
+  <m:mi>N</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> in his collection as a function of time, <m:math><m:mrow><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> the number of months. How many songs will he own in a year?</para></problem>
+<solution id="fs-id1165135411391">
+<para id="fs-id1165135411394">The initial value for this function is 200 because he currently owns 200 songs, so <m:math><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>200</m:mn><m:mo>,</m:mo></m:mrow></m:math> which means that <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>200.</m:mn></m:mrow></m:math> </para>
+<para id="fs-id1165137738190">The number of songs increases by 15 songs per month, so the rate of change is 15 songs per month. Therefore we know that <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>15.</m:mn></m:mrow></m:math> We can substitute the initial value and the rate of change into the slope-intercept form of a line.</para>
+<figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_Precalc_Figure_02_01_010" class="unnumbered"><media id="fs-id1165137417445" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_010.jpg"/>
+</media>
+</figure><para id="fs-id1165137810258">We can write the formula <m:math><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>15</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>200.</m:mn></m:mrow></m:math> </para>
+<para id="fs-id1165137454711">With this formula, we can then predict how many songs Marcus will have in 1 year (12 months). In other words, we can evaluate the function at <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>12.</m:mn></m:mrow></m:math> </para>
+<equation id="fs-id1165137462736" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>15</m:mn><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>200</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>          </m:mtext><m:mo>=</m:mo><m:mn>180</m:mn><m:mo>+</m:mo><m:mn>200</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>          </m:mtext><m:mo>=</m:mo><m:mn>380</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137694205">Marcus will have 380 songs in 12 months.</para>
+</solution>
+<commentary id="fs-id1165135296377">
+<title>Analysis </title>
+<para id="fs-id1165134065131">Notice that <emphasis effect="italics">N</emphasis> is an increasing linear function. As the input (the number of months) increases, the output (number of songs) increases as well.</para>
+</commentary>
+</exercise>
+</example><example id="Example_02_01_11">
+<exercise id="fs-id1165137803740">
+<problem id="fs-id1165137766973">
+<title>Using a Linear Function to Calculate Salary Plus Commission</title>
+<para id="fs-id1165137742312">Working as an insurance salesperson, Ilya earns a base salary plus a commission on each new policy. Therefore, Ilya’s weekly income, <m:math><m:mrow><m:mi>I</m:mi><m:mo>,</m:mo></m:mrow></m:math> depends on the number of new policies, <m:math><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> he sells during the week. Last week he sold 3 new policies, and earned $760 for the week. The week before, he sold 5 new policies and earned $920. Find an equation for <m:math><m:mrow><m:mi>I</m:mi><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> and interpret the meaning of the components of the equation.</para></problem>
+<solution id="fs-id1165135169132">
+<para id="fs-id1165135169134">The given information gives us two input-output pairs: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3,760</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5,920</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> We start by finding the rate of change.</para>
+
+<equation id="fs-id1165135195046" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>920</m:mn><m:mo>−</m:mo><m:mn>760</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>$160</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>2 policies</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>$80</m:mn><m:mtext> per policy</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137855034">Keeping track of units can help us interpret this quantity. Income increased by $160 when the number of policies increased by 2, so the rate of change is $80 per policy. Therefore, Ilya earns a commission of $80 for each policy sold during the week.</para>
+<para id="fs-id1165137855040">We can then solve for the initial value.</para>
+<equation id="fs-id1165135484088" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>           </m:mtext><m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>80</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>            </m:mtext><m:mn>760</m:mn><m:mo>=</m:mo><m:mn>80</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>when </m:mtext><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>760</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>760</m:mn><m:mo>−</m:mo><m:mn>80</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>            </m:mtext><m:mn>520</m:mn><m:mo>=</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137400716">The value of <m:math><m:mi>b</m:mi></m:math> is the starting value for the function and represents Ilya’s income when <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> or when no new policies are sold. We can interpret this as Ilya’s base salary for the week, which does not depend upon the number of policies sold.</para>
+<para id="fs-id1165135203653">We can now write the final equation.</para>
+<equation id="fs-id1165137506449" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>80</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>520</m:mn>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137655487">Our final interpretation is that Ilya’s base salary is $520 per week and he earns an additional $80 commission for each policy sold.</para>
+</solution>
+</exercise>
+</example>
+
+<example id="Example_02_01_12">
+<exercise id="fs-id1165137705959">
+<problem id="fs-id1165137705961">
+<title>Using Tabular Form to Write an Equation for a Linear Function</title>
+<para id="fs-id1165135161325"><link target-id="Table_02_01_02"/> relates the number of rats in a population to time, in weeks. Use the table to write a linear equation.</para>
+
+<table id="Table_02_01_02" summary="Two rows and five columns. The first row is labeled, 'w, the numers of weeks'. The second row is labeled is labeled, 'P(w), number of rats'. Reading the remaining rows as ordered pairs (i.e., (w, P(w)), we have the following values: (0, 1000), (2, 1080), (4, 1160), and (6, 1240)."><tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center"><emphasis><emphasis effect="italics">w</emphasis>, number of weeks</emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">2</entry>
+<entry align="center">4</entry>
+<entry align="center">6</entry>
+</row>
+<row>
+<entry align="center"><emphasis><emphasis effect="italics">P(w)</emphasis>, number of rats</emphasis></entry>
+<entry align="center">1000</entry>
+<entry align="center">1080</entry>
+<entry align="center">1160</entry>
+<entry align="center">1240</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137643331">
+<para id="fs-id1165137530990">We can see from the table that the initial value for the number of rats is 1000, so <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>1000.</m:mn></m:mrow></m:math> </para>
+<para id="fs-id1165137935601">Rather than solving for <m:math><m:mrow><m:mi>m</m:mi><m:mo>,</m:mo></m:mrow></m:math> we can tell from looking at the table that the population increases by 80 for every 2 weeks that pass. This means that the rate of change is 80 rats per 2 weeks, which can be simplified to 40 rats per week.</para>
+<equation id="fs-id1165137737900" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>w</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>40</m:mn><m:mi>w</m:mi><m:mo>+</m:mo><m:mn>1000</m:mn>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137465125">If we did not notice the rate of change from the table we could still solve for the slope using any two points from the table. For example, using <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1080</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>1240</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+
+<equation id="fs-id1165137627069" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>1240</m:mn><m:mo>−</m:mo><m:mn>1080</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mo>−</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>160</m:mn>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>40</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137725510" class="precalculus qa">
+<label>Q&amp;A</label>
+<para id="fs-id1165137920800"><emphasis>Is the initial value always provided in a table of values like <link target-id="Table_02_01_02"/>?</emphasis></para>
+<para id="fs-id1165137762000"><emphasis effect="italics">No. Sometimes the initial value is provided in a table of values, but sometimes it is not. If you see an input of 0, then the initial value would be the corresponding output. If the initial value is not provided because there is no value of input on the table equal to 0, find the slope, substitute one coordinate pair and the slope into <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> and solve for <m:math><m:mrow><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math> </emphasis></para>
+</note>
+
+<note id="fs-id1165137399688" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_01_06">
+<problem id="fs-id1165137645253"><para id="fs-id1165137645254">A new plant food was introduced to a young tree to test its effect on the height of the tree. <link target-id="Table_02_01_03"/> shows the height of the tree, in feet, <m:math><m:mi>x</m:mi></m:math> months since the measurements began. Write a linear function, <m:math><m:mrow><m:mi>H</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>x</m:mi></m:math> is the number of months since the start of the experiment.</para><table id="Table_02_01_03" summary="Two rows and six columns. The first row is labeled, 'x'. The second row is labeled is labeled, 'H(x)'. Reading the remaining rows as ordered pairs (i.e., (x, H(x)), we have the following values: (0, 12.5), (2, 13.5), (4, 14.5), (8, 16.5), and (12, 18.5).">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row><entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">2</entry>
+<entry align="center">4</entry>
+<entry align="center">8</entry>
+<entry align="center">12</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mrow>
+  <m:mi>H</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center">12.5</entry>
+<entry align="center">13.5</entry>
+<entry align="center">14.5</entry>
+<entry align="center">16.5</entry>
+<entry align="center">18.5</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165134155192">
+<para id="fs-id1165135195573"> <m:math>
+<m:mrow>
+<m:mi>H</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12.5</m:mn>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137418481" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165135419862">Access this online resource for additional instruction and practice with linear functions.</para>
+<list id="fs-id1165137570221" list-type="bulleted" display="block">
+<item>
+<link url="http://openstax.org/l/linearfunctions">Linear Functions</link>
+</item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165137784950" class="key-equations"><title>Key Equations</title><table id="fs-id1165137784956" summary="..." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center">slope-intercept form of a line</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center">slope</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>change in output (rise)</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>change in input (run)</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>Δ</m:mtext><m:mi>y</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mtext>Δ</m:mtext><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center">point-slope form of a line</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></section><section id="fs-id1165135696154" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1165137736447" list-type="bulleted"><item>The ordered pairs given by a linear function represent points on a line.</item>
+<item>Linear functions can be represented in words, function notation, tabular form, and graphical form. See <link target-id="Example_02_01_01"/>.</item>
+<item>The rate of change of a linear function is also known as the slope.</item>
+<item>An equation in the slope-intercept form of a line includes the slope and the initial value of the function.</item>
+<item>The initial value, or <emphasis effect="italics">y</emphasis>-intercept, is the output value when the input of a linear function is zero. It is the <emphasis effect="italics">y</emphasis>-value of the point at which the line crosses the <emphasis effect="italics">y</emphasis>-axis.</item>
+<item>An increasing linear function results in a graph that slants upward from left to right and has a positive slope.</item>
+<item>A decreasing linear function results in a graph that slants downward from left to right and has a negative slope.</item>
+<item>A constant linear function results in a graph that is a horizontal line.</item>
+<item>Analyzing the slope within the context of a problem indicates whether a linear function is increasing, decreasing, or constant. See <link target-id="Example_02_01_02"/>.</item>
+<item>The slope of a linear function can be calculated by dividing the difference between <emphasis effect="italics">y</emphasis>-values by the difference in corresponding <emphasis effect="italics">x</emphasis>-values of any two points on the line. See <link target-id="Example_02_01_03"/> and <link target-id="Example_02_01_04"/>.</item>
+<item>The slope and initial value can be determined given a graph or any two points on the line.</item>
+<item>One type of function notation is the slope-intercept form of an equation.</item>
+<item>The point-slope form is useful for finding a linear equation when given the slope of a line and one point. See <link target-id="Example_02_01_05"/>.</item>
+<item>The point-slope form is also convenient for finding a linear equation when given two points through which a line passes. See <link target-id="Example_02_01_06"/>.</item>
+<item>The equation for a linear function can be written if the slope <m:math><m:mi>m</m:mi></m:math> and initial value <m:math><m:mi>b</m:mi></m:math> are known. See <link target-id="Example_02_01_07"/>, <link target-id="Example_02_01_08"/>, and <link target-id="Example_02_01_09"/>.</item>
+<item>A linear function can be used to solve real-world problems. See <link target-id="Example_02_01_10"/> and <link target-id="Example_02_01_11"/>.</item>
+<item>A linear function can be written from tabular form. See <link target-id="Example_02_01_12"/>.</item>
+</list></section>
+
+<section id="fs-id1165135502059" class="section-exercises">
+<title>Section Exercises</title><section id="fs-id1165135502062">
+<title>Verbal</title>
+<exercise id="fs-id1165135176742">
+<problem id="fs-id1165135176744">
+<para id="fs-id1165137854790">Terry is skiing down a steep hill. Terry's elevation, <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> in feet after <m:math><m:mi>t</m:mi></m:math> seconds is given by <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3000</m:mn><m:mo>−</m:mo><m:mn>70</m:mn><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> Write a complete sentence describing Terry’s starting elevation and how it is changing over time.</para></problem>
+<solution id="fs-id1165137942439">
+<para id="fs-id1165137942441">Terry starts at an elevation of 3000 feet and descends 70 feet per second.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137641273">
+<problem id="fs-id1165137641275">
+<para id="fs-id1165137475310">Maria is climbing a mountain. Maria's elevation, <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> in feet after <m:math><m:mi>t</m:mi></m:math> minutes is given by <m:math><m:mrow>
+<m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1200</m:mn><m:mo>+</m:mo><m:mn>40</m:mn><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> Write a complete sentence describing Maria’s starting elevation and how it is changing over time.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135184124">
+<problem id="fs-id1165135184127">
+<para id="fs-id1165135184129">Jessica is walking home from a friend’s house. After 2 minutes she is 1.4 miles from home. Twelve minutes after leaving, she is 0.9 miles from home. What is her rate in miles per hour?</para>
+</problem>
+<solution id="fs-id1165135389019">
+<para id="fs-id1165137771919">3 miles per hour</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137771924">
+<problem id="fs-id1165137452891">
+<para id="fs-id1165137452893">Sonya is currently 10 miles from home and is walking farther away at 2 miles per hour. Write an equation for her distance from home <emphasis effect="italics">t</emphasis> hours from now.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135514592">
+<problem id="fs-id1165137740804">
+<para id="fs-id1165137740806">A boat is 100 miles away from the marina, sailing directly toward it at 10 miles per hour. Write an equation for the distance of the boat from the marina after <emphasis effect="italics">t</emphasis> hours.</para>
+</problem>
+<solution id="fs-id1165135701592">
+<para id="fs-id1165137812013"> <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>−</m:mo><m:mn>10</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137935611">
+<problem id="fs-id1165137935613">
+<para id="fs-id1165137935615">Timmy goes to the fair with $40. Each ride costs $2. How much money will he have left after riding <m:math><m:mi>n</m:mi></m:math> rides?</para>
+</problem>
+</exercise>
+</section>
+
+<section id="fs-id1165137854917">
+<title>Algebraic</title>
+<para id="fs-id1165137854922">For the following exercises, determine whether the equation of the curve can be written as a linear function.</para>
+
+<exercise id="fs-id1165135188236">
+<problem id="fs-id1165135188238">
+<para id="fs-id1165135369203"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137726430">
+<para id="fs-id1165137726432">Yes.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134261662">
+<problem id="fs-id1165134261664">
+<para id="fs-id1165135311618"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137651695">
+<problem id="fs-id1165137651697">
+<para id="fs-id1165135245530"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>2</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137695218">
+<para id="fs-id1165137695221">No.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137759700">
+<problem id="fs-id1165137759702">
+<para id="fs-id1165137735640"> <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>15</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137759992">
+<problem id="fs-id1165137759994">
+<para id="fs-id1165137759996"> <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>15</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137550988">
+<para id="fs-id1165137550990">No.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135386510">
+<problem id="fs-id1165135386512">
+<para id="fs-id1165137842456"> <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>15</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137561867">
+<problem id="fs-id1165137561870">
+<para id="fs-id1165137561872"> <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>6</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137817407">
+<para id="fs-id1165137817409">No.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137659078">
+<problem id="fs-id1165137659080">
+<para id="fs-id1165135187250"> <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>2</m:mn><m:mi>y</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<para id="fs-id1165137476477">For the following exercises, determine whether each function is increasing or decreasing.</para>
+
+<exercise id="fs-id1165137476480">
+<problem id="fs-id1165135253230">
+<para id="fs-id1165135253233"> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn> </m:mrow></m:math> </para></problem>
+<solution id="fs-id1165137834141">
+<para id="fs-id1165137834143">Increasing.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137447357">
+<problem id="fs-id1165137447359">
+<para id="fs-id1165137447361"> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137766929">
+<problem id="fs-id1165137766932">
+<para id="fs-id1165135176589"> <m:math><m:mrow><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165137401253">
+<para id="fs-id1165137401255">Decreasing.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134042261">
+<problem id="fs-id1165134042263">
+<para id="fs-id1165137434551"> <m:math><m:mrow><m:mi>b</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137427578">
+<problem id="fs-id1165135502034">
+<para id="fs-id1165135502036"> <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165137408154">
+<para id="fs-id1165137408156">Decreasing.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135310669">
+<problem id="fs-id1165135310671">
+<para id="fs-id1165135310673"> <m:math><m:mrow><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137653326">
+<problem id="fs-id1165137653328">
+<para id="fs-id1165137653331"> <m:math><m:mrow><m:mi>j</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165134231524">
+<para id="fs-id1165134231526">Increasing.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137477116">
+<problem id="fs-id1165137477118">
+<para id="fs-id1165137477120"> <m:math><m:mrow><m:mi>p</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137849191">
+<problem id="fs-id1165137849193">
+<para id="fs-id1165137849195"> <m:math><m:mrow><m:mi>n</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165135445820">
+<para id="fs-id1165135445822">Decreasing.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135198574">
+<problem id="fs-id1165135198576">
+<para id="fs-id1165135198578"> <m:math><m:mrow><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<para id="fs-id1165137871801">For the following exercises, find the slope of the line that passes through the two given points.</para>
+
+<exercise id="fs-id1165135481153">
+<problem id="fs-id1165135481155">
+<para id="fs-id1165135481157"> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mtext> 10</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165135496634">
+<para id="fs-id1165137896183">3</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137896188">
+<problem id="fs-id1165135528401">
+<para id="fs-id1165135528403"> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext> 5</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mtext> 11</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137639531">
+<problem id="fs-id1165137639533">
+<para id="fs-id1165137639535"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mtext>4</m:mtext><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mtext>2</m:mtext><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137698130">
+<para id="fs-id1165137698132"> <m:math><m:mrow><m:mo>–</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137758750">
+<problem id="fs-id1165137758752">
+<para id="fs-id1165137758754"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135150657">
+<problem id="fs-id1165135150659">
+<para id="fs-id1165135150661"> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>11</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135195303">
+<para id="fs-id1165137936942"> <m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137738035">For the following exercises, given each set of information, find a linear equation satisfying the conditions, if possible.</para>
+
+<exercise id="fs-id1165135536493">
+<problem id="fs-id1165135536495">
+<para id="fs-id1165135536498"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math>
+ and <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137431158">
+<problem id="fs-id1165137923493">
+<para id="fs-id1165137923495"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137911547">
+<para id="fs-id1165137911549"> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137542042">
+<problem id="fs-id1165137542044">
+<para id="fs-id1165137410630"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137470485">
+<problem id="fs-id1165137560300">
+<para id="fs-id1165137560302">Passes through <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137659686">
+<para id="fs-id1165137659688"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135191249">
+<problem id="fs-id1165137463110">
+<para id="fs-id1165137463112">Passes through <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext> 4</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mtext> 2</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137812693">
+<problem id="fs-id1165137556841">
+<para id="fs-id1165137556844">Passes through <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mtext> 8</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mtext> 6</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165137602554">
+<para id="fs-id1165137602556"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>22</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137433429">
+<problem id="fs-id1165137433431">
+<para id="fs-id1165135264784"><emphasis effect="italics">x</emphasis> intercept at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mtext> 0</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <emphasis effect="italics">y</emphasis> intercept at <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135435811">
+<problem id="fs-id1165135435813">
+<para id="fs-id1165135435815"><emphasis effect="italics">x</emphasis> intercept at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mtext> 0</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <emphasis effect="italics">y</emphasis> intercept at <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mtext> 4</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165137831238">
+<para id="fs-id1165137831240"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137629486">
+<title>Graphical</title>
+<para id="fs-id1165137737089">For the following exercises, find the slope of the lines graphed.</para>
+
+<exercise id="fs-id1165137737092" class="material-set-2"><problem id="fs-id1165137737094">
+
+<media id="fs-id1165137638038" display="block" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_201.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165135195937" class="material-set-2"><problem id="fs-id1165135195939">
+
+<media id="fs-id1165137405241" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_202-314b.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137871684">
+<para id="fs-id1165135245503"> <m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> </para></solution>
+</exercise><exercise id="fs-id1165137470735"><problem id="fs-id1165137851787">
+<media id="fs-id1165137851792" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_203-9ba5.jpg"/>
+</media>
+</problem>
+</exercise><para id="fs-id1165137454184">For the following exercises, write an equation for the lines graphed.</para>
+
+<exercise id="fs-id1165137454188" class="material-set-2"><problem id="fs-id1165135189842">
+<media id="fs-id1165135189848" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_205-2fc2.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1165135186682">
+<para id="fs-id1165135186684"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise><exercise id="fs-id1165137661374" class="material-set-2"><problem id="fs-id1165137692090">
+<media id="fs-id1165137692095" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_206-cf9d.jpg"/>
+</media>
+</problem>
+</exercise><exercise id="fs-id1165137828363" class="material-set-2"><problem id="fs-id1165137828365">
+
+<media id="fs-id1165137394600" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_207.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137772003">
+<para id="fs-id1165137772005"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise><exercise id="fs-id1165137677631" class="material-set-2"><problem id="fs-id1165137677633">
+
+<media id="fs-id1165135160253" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_208-5f32.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165137663997" class="material-set-2"><problem id="fs-id1165137663999">
+
+<media id="fs-id1165135175196" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_209-ffd3.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137447987">
+<para id="fs-id1165137447989"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165137767831" class="material-set-2"><problem id="fs-id1165137767833">
+
+<media id="fs-id1165137785002" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_210-0a01.jpg"/>
+</media>
+
+</problem>
+</exercise></section>
+
+<section id="fs-id1165137472087">
+<title>Numeric</title>
+<para id="fs-id1165137772386">For the following exercises, which of the tables could represent a linear function? For each that could be linear, find a linear equation that models the data.</para>
+
+<exercise id="fs-id1165137772391"><problem id="fs-id1165137772393">
+  <table xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="Table_02_01_04" summary="Two columns and five rows. The first column is labeled, 'x'. The second column is labeled, 'g(x)'. Reading the remaining rows as ordered pairs (i.e., (x, g(x)), we have the following values: (0, 5), (5, -10), (10, -25), and (15, -40)." class="unnumbered"><label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">5</entry>
+<entry align="center">10</entry>
+<entry align="center">15</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">5</entry>
+<entry align="center">–10</entry>
+<entry align="center">–25</entry>
+<entry align="center">–40</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137673870">
+<para id="fs-id1165137673872">Linear, <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137445427"><problem id="fs-id1165137450858">
+<table id="Table_02_01_05" summary="Two columns and five rows. The first column is labeled, 'x'. The second column is labeled, 'h(x)'. Reading the remaining rows as ordered pairs (i.e., (x, h(x)), we have the following values: (0, 5), (5, 30), (10, 105), and (15, 230)." class="unnumbered"><label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">5</entry>
+<entry align="center">10</entry>
+<entry align="center">15</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">5</entry>
+<entry align="center">30</entry>
+<entry align="center">105</entry>
+<entry align="center">230</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+</exercise><exercise id="fs-id1165135187440"><problem id="fs-id1165137406153">
+<table id="Table_02_01_06" summary="Two columns and five rows. The first column is labeled, 'x'. The second column is labeled, 'f(x)'. Reading the remaining rows as ordered pairs (i.e., (x, f(x)), we have the following values: (0,- 5), (5, 20), (10, 45), and (15, 70)." class="unnumbered"><label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">5</entry>
+<entry align="center">10</entry>
+<entry align="center">15</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">–5</entry>
+<entry align="center">20</entry>
+<entry align="center">45</entry>
+<entry align="center">70</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137423425">
+<para id="fs-id1165135421660">Linear, <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math> </para></solution>
+</exercise><exercise id="fs-id1165137462170"><problem id="fs-id1165137758412">
+<table xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="Table_02_01_07" summary="Two columns and five rows. The first column is labeled, 'x'. The second column is labeled, 'k(x)'. Reading the remaining rows as ordered pairs (i.e., (x, k(x)), we have the following values: (5, 13), (10, 28), (20, 58), and (25, 73)." class="unnumbered"><label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">5</entry>
+<entry align="center">10</entry>
+<entry align="center">20</entry>
+<entry align="center">25</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">13</entry>
+<entry align="center">28</entry>
+<entry align="center">58</entry>
+<entry align="center">73</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+</exercise><exercise id="fs-id1165137574907"><problem id="fs-id1165137727508">
+<table xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="Table_02_01_08" summary="Two columns and five rows. The first column is labeled, 'x'. The second column is labeled, 'g(x)'. Reading the remaining rows as ordered pairs (i.e., (x, g(x)), we have the following values: (0, 6), (5, -10), (10, -25), and (15, -40)." class="unnumbered"><label/>
+<tgroup cols="5"><colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">2</entry>
+<entry align="center">4</entry>
+<entry align="center">6</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">6</entry>
+<entry align="center">–19</entry>
+<entry align="center">–44</entry>
+<entry align="center">–69</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137652768">
+<para id="fs-id1165137652771">Linear, <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>25</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math> </para></solution>
+</exercise><exercise id="fs-id1165137804591"><problem id="fs-id1165137469550">
+  <table xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="Table_02_01_09" summary="Two columns and five rows. The first column is labeled, 'x'. The second column is labeled, 'h(x)'. Reading the remaining rows as ordered pairs (i.e., (x, h(x)), we have the following values: (2, 13), (4, 23), (8, 43), and (10, 53)." class="unnumbered"><label/>
+<tgroup cols="5"><colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">2</entry>
+<entry align="center">4</entry>
+<entry align="center">6</entry>
+<entry align="center">8</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">–4</entry>
+<entry align="center">16</entry>
+<entry align="center">36</entry>
+<entry align="center">56</entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table></problem>
+</exercise><exercise id="fs-id1165137603214"><problem id="fs-id1165137603216">
+<table xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="Table_02_01_10" summary="Two columns and five rows. The first column is labeled, 'x'. The second column is labeled, 'f(x)'. Reading the remaining rows as ordered pairs (i.e., (x, f(x)), we have the following values: (2, -4), (4, 16), (6, 36), and (8, 56)." class="unnumbered"><label/>
+<tgroup cols="5"><colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">2</entry>
+<entry align="center">4</entry>
+<entry align="center">6</entry>
+<entry align="center">8</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">–4</entry>
+<entry align="center">16</entry>
+<entry align="center">36</entry>
+<entry align="center">56</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137410202">
+<para id="fs-id1165137410204">Linear, <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>24</m:mn></m:mrow></m:math> </para></solution>
+</exercise><exercise id="fs-id1165137634322"><problem id="fs-id1165137694058">
+<table xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="Table_02_01_11" summary="Two columns and five rows. The first column is labeled, 'x'. The second column is labeled, 'k(x)'. Reading the remaining rows as ordered pairs (i.e., (x, k(x)), we have the following values: (0, 6), (2, 31), (6, 106), and (8, 231)." class="unnumbered"><label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">2</entry>
+<entry align="center">6</entry>
+<entry align="center">8</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">6</entry>
+<entry align="center">31</entry>
+<entry align="center">106</entry>
+<entry align="center">231</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+</exercise></section>
+
+<section id="fs-id1165137474626">
+<title>Technology</title>
+
+<exercise id="fs-id1165137474632">
+<problem id="fs-id1165137823746">
+<para id="fs-id1165137823748">If <m:math><m:mi>f</m:mi></m:math> is a linear function, <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>11.5</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext> and</m:mtext><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>5.9</m:mn><m:mo>,</m:mo></m:mrow></m:math> find an equation for the function.</para>
+</problem>
+<solution id="fs-id1165137844202">
+<para id="fs-id1165137844204"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>58</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>17.3</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137552899">
+<problem id="fs-id1165137936768">
+<para id="fs-id1165137936770">Graph the function <m:math><m:mi>f</m:mi></m:math> on a domain of <m:math><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>–</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>10</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>:</m:mo><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.02</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>0.01.</m:mn></m:mrow></m:math> Enter the function in a graphing utility. For the viewing window, set the minimum value of <m:math><m:mi>x</m:mi></m:math> to be <m:math><m:mrow><m:mo>−</m:mo><m:mn>10</m:mn></m:mrow></m:math> and the maximum value of <m:math><m:mi>x</m:mi></m:math> to be <m:math><m:mrow><m:mn>10.</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137502934"><problem id="fs-id1165137502936">
+<para id="fs-id1165137502938">Graph the function <m:math><m:mi>f</m:mi></m:math> on a domain of <m:math><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>–</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>10</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>:</m:mo><m:mi>f</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>500</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>000</m:mn></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165137678561">
+
+<media id="fs-id1165137817569" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_214.jpg"/>
+</media>
+
+</solution>
+</exercise><exercise id="fs-id1165135403547">
+<problem id="fs-id1165135403550">
+<para id="fs-id1165135403552"><link target-id="Table_02_01_12"/> shows the input, <m:math><m:mrow><m:mi>w</m:mi><m:mo>, </m:mo></m:mrow></m:math> and output, <m:math><m:mrow><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> for a linear function <m:math><m:mrow><m:mi>k</m:mi><m:mo>.</m:mo></m:mrow></m:math> a. Fill in the missing values of the table. b. Write the linear function <m:math><m:mrow><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> round to 3 decimal places.</para><table id="Table_02_01_12" summary="Two rows and five columns. The first row is labeled, 'w'. The second row is labeled is labeled, 'k'. Reading the remaining rows as ordered pairs (i.e., (w, k), we have the following values: (-10, 30), (5.5, -26), (67.5, a), and (b, -44).">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>w</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">–10</entry>
+<entry align="center">5.5</entry>
+<entry align="center">67.5</entry>
+<entry align="center">b</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>k</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">30</entry>
+<entry align="center">–26</entry>
+<entry align="center">a</entry>
+<entry align="center">–44</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+</exercise>
+
+<exercise id="fs-id1165135319509">
+<problem id="fs-id1165137935676">
+<para id="fs-id1165137935678"><link target-id="Table_02_01_13"/> shows the input, <m:math><m:mrow><m:mi>p</m:mi><m:mo>,</m:mo></m:mrow></m:math> and output, <m:math><m:mrow><m:mi>q</m:mi><m:mo>,</m:mo></m:mrow></m:math> for a linear function <m:math><m:mrow><m:mi>q</m:mi><m:mo>.</m:mo></m:mrow></m:math> a. Fill in the missing values of the table. b. Write the linear function <m:math><m:mrow><m:mi>k</m:mi><m:mo>.</m:mo></m:mrow></m:math> </para><table id="Table_02_01_13" summary="Two rows and five columns. The first row is labeled, 'w'. The second row is labeled is labeled, 'k'. Reading the remaining rows as ordered pairs (i.e., (p, q), we have the following values: (0.5, 400), (0.8, 700), (12, a), and (b, 1,000,000).">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>p</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">0.5</entry>
+<entry align="center">0.8</entry>
+<entry align="center">12</entry>
+<entry align="center">b</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>q</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">400</entry>
+<entry align="center">700</entry>
+<entry align="center">a</entry>
+<entry align="center">1,000,000</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165135500746">
+<para id="fs-id1165135500748">a. <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>11</m:mn><m:mo>,</m:mo><m:mn>900</m:mn></m:mrow></m:math>; <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>1000.1</m:mn></m:mrow></m:math> b. <m:math><m:mrow><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1000</m:mn><m:mi>p</m:mi><m:mo>−</m:mo><m:mn>100</m:mn></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135543284">
+<problem id="fs-id1165135543286">
+<para id="fs-id1165135543288">Graph the linear function <m:math><m:mi>f</m:mi></m:math> on a domain of <m:math><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>−</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>10</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math> for the function whose slope is <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> and <emphasis effect="italics">y</emphasis>-intercept is <m:math><m:mrow><m:mfrac><m:mrow><m:mn>31</m:mn></m:mrow><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math>. Label the points for the input values of <m:math><m:mrow><m:mo>−</m:mo><m:mn>10</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mn>10.</m:mn></m:mrow></m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137742298"><problem id="fs-id1165137742300">
+<para id="fs-id1165137742302">Graph the linear function <m:math><m:mi>f</m:mi></m:math> on a domain of <m:math><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>−</m:mo><m:mn>0.1</m:mn><m:mo>,</m:mo><m:mn>0.1</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math> for the function whose slope is 75 and <emphasis effect="italics">y</emphasis>-intercept is <m:math><m:mrow><m:mo>−</m:mo><m:mn>22.5</m:mn></m:mrow></m:math>. Label the points for the input values of <m:math><m:mrow><m:mo>−</m:mo><m:mn>0.1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mn>0.1.</m:mn></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165137540098">
+
+<media id="fs-id1165137540104" alt="..">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_216.jpg"/>
+</media>
+
+</solution>
+</exercise><exercise id="fs-id1165134148520"><problem id="fs-id1165134148522">
+<para id="fs-id1165135203736">Graph the linear function <m:math><m:mi>f</m:mi></m:math> where <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math> on the same set of axes on a domain of <m:math><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math> for the following values of <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mrow><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math>
+<list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137811104" list-type="enumerated" number-style="lower-alpha"><item> <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> </item>
+<item> <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>;</m:mo><m:mtext>​</m:mtext><m:mspace width="0.8em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> </item>
+<item> <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn></m:mrow></m:math> </item>
+<item> <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>5</m:mn> </m:mrow></m:math> </item></list></para></problem></exercise></section>
+
+<section id="fs-id1165135699138">
+<title>Extensions</title>
+
+<exercise id="fs-id1165135485955">
+<problem id="fs-id1165135485957">
+<para id="fs-id1165135485959">Find the value of <m:math><m:mi>x</m:mi></m:math> if a linear function goes through the following points and has the following slope: <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165134085980">
+<para id="fs-id1165134085982"> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137874831">
+<problem id="fs-id1165137874833">
+<para id="fs-id1165137804686">Find the value of<emphasis effect="italics"> y </emphasis>if a linear function goes through the following points and has the following slope: <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>25</m:mn><m:mo>,</m:mo><m:mn>100</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>m</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135248539">
+<problem id="fs-id1165135248541">
+<para id="fs-id1165137817599">Find the equation of the line that passes through the following points: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>b</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137757960">
+<para id="fs-id1165137757962"> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135532360">
+<problem id="fs-id1165135417742">
+<para id="fs-id1165135417744">Find the equation of the line that passes through the following points: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>b</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165134065117">
+<problem id="fs-id1165134065120">
+<para id="fs-id1165134065122">Find the equation of the line that passes through the following points: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>c</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>d</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165135500791">
+<para id="fs-id1165135190790"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>c</m:mi><m:mo>−</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mi>d</m:mi></m:mrow><m:mrow><m:mi>c</m:mi><m:mo>−</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mrow></m:math> </para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137541587"><title>Real-World Applications</title><exercise id="fs-id1165137541592">
+<problem id="fs-id1165137673440">
+<para id="fs-id1165137673442">At noon, a barista notices that she has $20 in her tip jar. If she makes an average of $0.50 from each customer, how much will she have in her tip jar if she serves <m:math><m:mi>n</m:mi></m:math> more customers during her shift?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137653532">
+<problem id="fs-id1165137653534">
+<para id="fs-id1165137784771">A gym membership with two personal training sessions costs $125, while gym membership with five personal training sessions costs $260. What is cost per session?</para>
+</problem>
+<solution id="fs-id1165137784777">
+<para id="fs-id1165137784779">$45 per training session.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137921688">
+<problem id="fs-id1165137921690">
+<para id="fs-id1165137921693">A clothing business finds there is a linear relationship between the number of shirts, <m:math><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> it can sell and the price, <m:math><m:mrow><m:mi>p</m:mi><m:mo>,</m:mo></m:mrow></m:math> it can charge per shirt. In particular, historical data shows that 1,000 shirts can be sold at a price of <m:math><m:mrow><m:mi>$</m:mi><m:mn>30</m:mn></m:mrow></m:math>, while 3,000 shirts can be sold at a price of $22. Find a linear equation in the form <m:math><m:mrow><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math> that gives the price <m:math><m:mi>p</m:mi></m:math> they can charge for <m:math><m:mi>n</m:mi></m:math> shirts.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135501016">
+<problem id="fs-id1165135501019">
+<para id="fs-id1165135501021">A phone company charges for service according to the formula: <m:math><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>24</m:mn><m:mo>+</m:mo><m:mn>0.1</m:mn><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>n</m:mi></m:math> is the number of minutes talked, and <m:math><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+is the monthly charge, in dollars. Find and interpret the rate of change and initial value.</para>
+</problem>
+<solution id="fs-id1165135191396">
+<para id="fs-id1165137476619">The rate of change is 0.1. For every additional minute talked, the monthly charge increases by $0.1 or 10 cents. The initial value is 24. When there are no minutes talked, initially the charge is $24.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137476626">
+<problem id="fs-id1165137851861">
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137851863">A farmer finds there is a linear relationship between the number of bean stalks, <m:math><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> she plants and the yield, <m:math><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> each plant produces. When she plants 30 stalks, each plant yields 30 oz of beans. When she plants 34 stalks, each plant produces 28 oz of beans. Find a linear relationship in the form <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math> that gives the yield when <m:math><m:mi>n</m:mi></m:math> stalks are planted.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137742676">
+<problem id="fs-id1165137673496">
+<para id="fs-id1165137673498">A city’s population in the year 1960 was 287,500. In 1989 the population was 275,900. Compute the rate of growth of the population and make a statement about the population rate of change in people per year.</para>
+</problem>
+<solution id="fs-id1165137653495">
+<para id="fs-id1165137653498">The slope is <m:math><m:mrow><m:mo>−</m:mo><m:mn>400.</m:mn></m:mrow></m:math> This means for every year between 1960 and 1989, the population dropped by 400 per year in the city.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137643978">
+<problem id="fs-id1165137643980">
+<para id="fs-id1165135173497">A town’s population has been growing linearly. In 2003, the population was 45,000, and the population has been growing by 1,700 people each year. Write an equation, <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> for the population <m:math><m:mi>t</m:mi></m:math> years after 2003.</para></problem>
+</exercise>
+<exercise id="eip-id1165135320034">
+<problem id="eip-id1165135320037">
+<para id="eip-id1165135320039">Suppose that average annual income (in dollars) for the years 1990 through 1999 is given by the linear function: <m:math><m:mrow><m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1054</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>23</m:mn><m:mo>,</m:mo><m:mn>286</m:mn><m:mo>,</m:mo></m:mrow></m:math> where <m:math><m:mi>x</m:mi></m:math> is the number of years after 1990. Which of the following interprets the slope in the context of the problem?</para><list id="fs-id1165137475692" list-type="enumerated" number-style="lower-alpha">
+<item>As of 1990, average annual income was $23,286.</item>
+<item>In the ten-year period from 1990–1999, average annual income increased by a total of $1,054.</item>
+<item>Each year in the decade of the 1990s, average annual income increased by $1,054.</item>
+<item>Average annual income rose to a level of $23,286 by the end of 1999.</item>
+</list>
+</problem>
+<solution id="fs-id1165137901249">
+<para id="fs-id1165137901251">c.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137811773">
+<problem id="fs-id1165137811775">
+<para id="fs-id1165137811777">When temperature is 0 degrees Celsius, the Fahrenheit temperature is 32. When the Celsius temperature is 100, the corresponding Fahrenheit temperature is 212. Express the Fahrenheit temperature as a linear function of <m:math><m:mrow><m:mi>C</m:mi><m:mo>,</m:mo></m:mrow></m:math> the Celsius temperature, <m:math><m:mrow><m:mi>F</m:mi><m:mrow><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> </para><list id="fs-id1165137692075" list-type="enumerated" number-style="lower-alpha"><item>Find the rate of change of Fahrenheit temperature for each unit change temperature of Celsius.</item>
+<item>Find and interpret <m:math><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mn>28</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> </item>
+<item>Find and interpret <m:math><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mn>–40</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+</list></problem>
+</exercise>
+</section></section>
+</content>
+
+<glossary>
+<definition id="fs-id1165137405111">
+<term>decreasing linear function</term>
+<meaning id="fs-id1165137405116">a function with a negative slope: If <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext>then</m:mtext><m:mspace width="0.8em"/><m:mi>m</m:mi><m:mo>&lt;</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math>
+</meaning>
+</definition>
+
+<definition id="fs-id1165137863356">
+<term>increasing linear function</term>
+<meaning id="fs-id1165135188274">a function with a positive slope: If <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext>then</m:mtext><m:mspace width="0.8em"/><m:mi>m</m:mi><m:mo>&gt;</m:mo><m:mn>0.</m:mn></m:mrow></m:math> </meaning>
+</definition>
+
+<definition id="fs-id1165135429388">
+<term>linear function</term>
+<meaning id="fs-id1165135429394">a function with a constant rate of change that is a polynomial of degree 1, and whose graph is a straight line</meaning>
+</definition>
+
+<definition id="fs-id1165134389091">
+<term>point-slope form </term>
+<meaning id="fs-id1165134389097">the equation for a line that represents a linear function of the form <m:math><m:mrow><m:mi>y</m:mi><m:mo>−</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </meaning>
+</definition>
+
+<definition id="fs-id1165137635132">
+<term>slope</term>
+<meaning id="fs-id1165137635137">the ratio of the change in output values to the change in input values; a measure of the steepness of a line</meaning>
+</definition>
+
+<definition id="fs-id1165137817449">
+<term>slope-intercept form</term>
+<meaning id="fs-id1165137817454">the equation for a line that represents a linear function in the form <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math> </meaning>
+</definition>
+
+<definition id="fs-id1165135195656">
+<term><emphasis effect="italics">y</emphasis>-intercept</term>
+<meaning id="fs-id1165137635107">the value of a function when the input value is zero; also known as initial value</meaning>
+</definition>
+</glossary>
+</document>

@@ -1,0 +1,3102 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Non-right Triangles: Law of Sines</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m49404</md:content-id>
+  <md:title>Non-right Triangles: Law of Sines</md:title>
+  <md:abstract><para>In this section, you will:</para>
+<list>
+<item>Use the Law of Sines to solve oblique triangles.</item>
+<item>Find the area of an oblique triangle using the sine function.</item>
+<item>Solve applied problems using the Law of Sines.</item>
+</list></md:abstract>
+  <md:uuid>aea1516b-dcb8-4853-a3b6-b15775067250</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+
+ <para id="fs-id1165137805976">Suppose two radar stations located 20 miles apart each detect an aircraft between them. The angle of elevation measured by the first station is 35 degrees, whereas the <term class="no-emphasis">angle of elevation</term> measured by the second station is 15 degrees. How can we determine the altitude of the aircraft? We see in <link target-id="Figure_08_01_001"/> that the triangle formed by the aircraft and the two stations is not a right triangle, so we cannot use what we know about right triangles. In this section, we will find out how to solve problems involving <term class="no-emphasis">non-right triangles</term>.</para>
+
+ <figure id="Figure_08_01_001" class="small"><media id="fs-id1165134487538" alt="A diagram of a triangle where the vertices are the first ground station, the second ground station, and the airplane in the air between them. The angle between the first ground station and the plane is 15 degrees, and the angle between the second station and the airplane is 35 degrees. The side between the two stations is of length 20 miles. There is a dotted line perpendicular to the ground side connecting the airplane vertex with the ground - an altitude line.">
+   <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_001.jpg"/>
+  </media>
+ </figure><section id="fs-id1165137629477">
+    <title>Using the Law of Sines to Solve Oblique Triangles</title><para id="fs-id1165132912724">In any triangle, we can draw an <term>altitude</term>, a perpendicular line from one vertex to the opposite side, forming two right triangles. It would be preferable, however, to have methods that we can apply directly to non-right triangles without first having to create right triangles.</para>
+    <para id="fs-id1165137737731">Any triangle that is not a right triangle is an <term>oblique triangle</term>. Solving an oblique triangle means finding the measurements of all three angles and all three sides. To do so, we need to start with at least three of these values, including at least one of the sides. We will investigate three possible oblique triangle problem situations:</para>
+    <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135347529" list-type="enumerated" number-style="arabic"><item><emphasis>ASA (angle-side-angle)</emphasis> We know the measurements of two angles and the included side. See <link target-id="Figure_08_01_002"/>.
+
+    <figure id="Figure_08_01_002" class="small"><media id="fs-id1165135342808" alt="An oblique triangle consisting of angles alpha, beta, and gamma. Alpha and gamma's values are known, as is the side opposite beta, between alpha and gamma.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_002.jpg"/>
+      </media>
+    </figure></item>
+      <item><term>AAS (angle-angle-side)</term> We know the measurements of two angles and a side that is not between the known angles. See <link target-id="Figure_08_01_003"/>.
+
+    <figure id="Figure_08_01_003" class="small"><media id="fs-id1165137612260" alt="An oblique triangle consisting of angles alpha, beta, and gamma. Alpha and gamma are known, as is the side opposite alpha, between beta and gamma.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_003.jpg"/>
+      </media>
+    </figure></item>
+      <item><term>SSA (side-side-angle)</term> We know the measurements of two sides and an angle that is not between the known sides. See <link target-id="Figure_08_01_004"/>.
+    <figure id="Figure_08_01_004" class="small"><media id="fs-id1165137637362" alt="An oblique triangle consisting of angles alpha, beta, and gamma. Alpha is the only angle known. Two sides are known. The first is opposite alpha, between beta and gamma, and the second is opposite gamma, between alpha and beta.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_004.jpg"/>
+      </media>
+    </figure></item>
+    </list><para id="fs-id1165131837001">Knowing how to approach each of these situations enables us to solve oblique triangles without having to drop a perpendicular to form two right triangles. Instead, we can use the fact that the ratio of the measurement of one of the angles to the length of its opposite side will be equal to the other two ratios of angle measure to opposite side. Let’s see how this statement is derived by considering the triangle shown in <link target-id="Figure_08_01_005"/>.</para>
+
+    <figure id="Figure_08_01_005" class="small"><media id="fs-id1165134325097" alt="An oblique triangle consisting of sides a, b, and c, and angles alpha, beta, and gamma. Side c is opposide angle gamma and is the horizontal base of the triangle. Side b is opposite angle beta, and side a is opposite angle alpha. There is a dotted perpendicular line - an altitude - from the gamma angle to the horizontal base c.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_005.jpg"/>
+      </media>
+    </figure><para id="fs-id1165135430238">Using the right triangle relationships, we know that <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>h</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>h</m:mi>
+   <m:mi>a</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Solving both equations for <m:math>
+      <m:mrow>
+<m:mi>h</m:mi></m:mrow>
+    </m:math> gives two different expressions for <m:math>
+      <m:mrow>
+<m:mi>h</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </para><equation id="fs-id1165134041961" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+        <m:mi>h</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mspace width="0.3em"/><m:mtext>and</m:mtext><m:mspace width="0.3em"/><m:mi>h</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi></m:mrow>
+    </m:math>
+    </equation><para id="fs-id1165135436248">We then set the expressions equal to each other.</para>
+    <equation id="fs-id1165133454469" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>b</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:mi>a</m:mi><m:mi>b</m:mi>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:mi>a</m:mi><m:mi>b</m:mi>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiply both sides by</m:mtext><m:mspace width="0.3em"/><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mi>a</m:mi><m:mi>b</m:mi>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+       </m:mrow>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+       <m:mi>b</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137472984">Similarly, we can compare the other ratios.</para><equation id="fs-id1165134113891" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+   </m:mrow>
+   <m:mi>a</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+   </m:mrow>
+   <m:mi>c</m:mi>
+  </m:mfrac>
+  <m:mspace width="0.3em"/><m:mtext>and</m:mtext><m:mspace width="0.3em"/><m:mfrac>
+   <m:mrow>
+    <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+   </m:mrow>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+   </m:mrow>
+   <m:mi>c</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135353701">Collectively, these relationships are called the <emphasis>Law of Sines</emphasis>.</para>
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137456728" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi></m:mrow>
+          <m:mi>a</m:mi>
+        </m:mfrac>
+        <m:mo>=</m:mo><m:mfrac>
+          <m:mrow>
+            <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi></m:mrow>
+          <m:mi>b</m:mi>
+        </m:mfrac>
+        <m:mo>=</m:mo><m:mfrac>
+          <m:mrow>
+            <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi></m:mrow>
+          <m:mi>c</m:mi>
+        </m:mfrac>
+      </m:mrow>
+    </m:math>
+    </equation><para id="fs-id1165137663291">Note the standard way of labeling triangles: angle <m:math>
+      <m:mrow>
+<m:mi>α</m:mi></m:mrow>
+    </m:math> (alpha) is opposite side <m:math>
+      <m:mrow>
+<m:mi>a</m:mi><m:mo>;</m:mo></m:mrow>
+    </m:math> angle <m:math>
+      <m:mrow>
+<m:mi>β</m:mi></m:mrow>
+    </m:math> (beta) is opposite side <m:math>
+      <m:mrow>
+<m:mi>b</m:mi><m:mo>;</m:mo></m:mrow>
+    </m:math> and angle <m:math>
+      <m:mrow>
+<m:mi>γ</m:mi></m:mrow>
+    </m:math> (gamma) is opposite side <m:math>
+      <m:mrow>
+<m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> See <link target-id="Figure_08_01_006"/>.</para>
+    <para id="fs-id1165137935659">While calculating angles and sides, be sure to carry the exact values through to the final answer. Generally, final answers are rounded to the nearest tenth, unless otherwise specified.</para><figure id="Figure_08_01_006" class="small"><media id="fs-id1165135487150" alt="A triangle with standard labels.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_006.jpg"/>
+      </media>
+    </figure><note id="fs-id1165133141415">
+
+      <title>Law of Sines</title>
+      <para id="fs-id1165134076025">Given a triangle with angles and opposite sides labeled as in <link target-id="Figure_08_01_006"/>, the ratio of the measurement of an angle to the length of its opposite side will be equal to the other two ratios of angle measure to opposite side. All proportions will be equal. The <term>Law of Sines</term> is based on proportions and is presented symbolically two ways.</para>
+      <equation id="fs-id1165137423030" class="unnumbered"><label/> <m:math display="block">
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi></m:mrow>
+            <m:mi>a</m:mi>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+            <m:mrow>
+              <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi></m:mrow>
+            <m:mi>b</m:mi>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+            <m:mrow>
+              <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi></m:mrow>
+            <m:mi>c</m:mi>
+          </m:mfrac>
+        </m:mrow>
+      </m:math>
+      </equation><equation id="fs-id1165137641714" class="unnumbered"><label/> <m:math display="block">
+        <m:mrow>
+          <m:mfrac>
+            <m:mi>a</m:mi>
+            <m:mrow>
+              <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi></m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+            <m:mi>b</m:mi>
+            <m:mrow>
+              <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi></m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+            <m:mi>c</m:mi>
+            <m:mrow>
+              <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi></m:mrow>
+          </m:mfrac>
+        </m:mrow>
+      </m:math>
+      </equation><para id="fs-id1165137600232">To solve an oblique triangle, use any pair of applicable ratios.</para>
+      </note>
+
+    <example id="Example_08_01_01">
+      <exercise id="fs-id1165135456696">
+        <problem id="fs-id1165137662067">
+          <title>Solving for Two Unknown Sides and Angle of an AAS Triangle</title>
+          <para id="fs-id1165134554335">Solve the triangle shown in <link target-id="Figure_08_01_007"/> to the nearest tenth.</para>
+
+          <figure id="Figure_08_01_007" class="small"><media id="fs-id1165134155184" alt="An oblique triangle with standard labels. Angle alpha is 50 degrees, angle gamma is 30 degrees, and side a is of length 10. Side b is the horizontal base.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_007.jpg"/>
+            </media>
+          </figure></problem>
+        <solution id="fs-id1165135441699">
+          <para id="fs-id1165134323533">The three angles must add up to 180 degrees. From this, we can determine that </para><equation id="fs-id1165135262620" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>−</m:mo><m:mn>50°</m:mn><m:mo>−</m:mo><m:mn>30°</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>100°</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137900235">To find an unknown side, we need to know the corresponding angle and a known ratio. We know that angle <m:math>
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>50°</m:mn>
+ </m:mrow>
+</m:math> and its corresponding side <m:math>
+            <m:mrow>
+              <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>10.</m:mn></m:mrow>
+          </m:math> We can use the following proportion from the Law of Sines to find the length of <m:math>
+            <m:mrow>
+              <m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math>
+          </para><equation id="fs-id1165137735634" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mi>c</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiply both sides by</m:mtext><m:mspace width="0.3em"/><m:mi>c</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiply by the reciprocal to isolate</m:mtext><m:mspace width="0.3em"/><m:mi>c</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>6.5</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135171592">Similarly, to solve for <m:math>
+            <m:mrow>
+              <m:mi>b</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math> we set up another proportion.</para>
+          <equation id="fs-id1165135185939" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow><m:mfrac>
+           <m:mrow>
+            <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mrow>
+            <m:mn>10</m:mn>
+           </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>100°</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mi>b</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>b</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>100°</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiply both sides by</m:mtext><m:mspace width="0.3em"/><m:mi>b</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>10</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>100°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiply by the reciprocal to isolate</m:mtext><m:mspace width="0.3em"/><m:mi>b</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>12.9</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133064370">Therefore, the complete set of angles and sides is</para>
+          <equation id="fs-id1165133064373" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>50°</m:mn><m:mspace width="1em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>10</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>100°</m:mn><m:mspace width="1em"/><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>12.9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>30°</m:mn><m:mspace width="1em"/><m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>6.5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+       </exercise>
+        </example>
+
+    <note id="fs-id1165134164931" class="precalculus try">
+      <label>Try It</label>
+      <exercise id="ti_08_01_01">
+        <problem id="fs-id1165135313600"><para id="fs-id1165135313601">Solve the triangle shown in <link target-id="Figure_08_01_008"/> to the nearest tenth.</para>
+
+        <figure id="Figure_08_01_008" class="small"><media id="fs-id1165132957318" alt="An oblique triangle with standard labels. Angle alpha is 98 degrees, angle gamma is 43 degrees, and side b is of length 22. Side b is the horizontal base.">
+            <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_008.jpg"/>
+          </media>
+        </figure></problem>
+        <solution id="fs-id1165132912639">
+          <para id="fs-id1165132912641"> <m:math>
+            <m:mtable columnalign="left">
+              <m:mtr>
+                <m:mtd>
+                  <m:mi>α</m:mi><m:mo>=</m:mo><m:msup>
+                    <m:mn>98</m:mn>
+                    <m:mo>∘</m:mo>
+                  </m:msup><m:mspace width="1em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>34.6</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:mi>β</m:mi><m:mo>=</m:mo><m:msup>
+                    <m:mn>39</m:mn>
+                    <m:mo>∘</m:mo>
+                  </m:msup><m:mspace width="1em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>22</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:mi>γ</m:mi><m:mo>=</m:mo><m:msup>
+                    <m:mn>43</m:mn>
+                    <m:mo>∘</m:mo>
+                  </m:msup><m:mspace width="1em"/><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>23.8</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+
+          </m:math>
+          </para>
+        </solution>
+      </exercise>
+     </note>
+     </section>
+  <section id="fs-id1165135199352">
+    <title>Using The Law of Sines to Solve SSA Triangles</title><para id="fs-id1165133361407">We can use the Law of Sines to solve any oblique triangle, but some solutions may not be straightforward. In some cases, more than one triangle may satisfy the given criteria, which we describe as an <term>ambiguous case</term>. Triangles classified as SSA, those in which we know the lengths of two sides and the measurement of the angle opposite one of the given sides, may result in one or two solutions, or even no solution.</para><note id="fs-id1165134481112"><title>Possible Outcomes for SSA Triangles</title>
+
+      <para id="fs-id1165134193487">Oblique triangles in the category SSA may have four different outcomes. <link target-id="Figure_08_01_009"/> illustrates the solutions with the known sides <m:math>
+        <m:mrow>
+          <m:mi>a</m:mi></m:mrow>
+      </m:math> and <m:math>
+        <m:mrow>
+          <m:mi>b</m:mi></m:mrow>
+      </m:math> and known angle <m:math>
+        <m:mrow>
+          <m:mi>α</m:mi><m:mo>.</m:mo></m:mrow>
+      </m:math>
+      </para>
+
+      <figure id="Figure_08_01_009" class="medium"><media id="fs-id1165134155097" alt="Four attempted oblique triangles are in a row, all with standard labels. Side c is the horizontal base. In the first attempted triangle, side a is less than the altitude height. Since side a cannot reach side c,  there is no triangle. In the second attempted triangle, side a is equal to the length of the altitude height, so side a forms a right angle with side c. In the third attempted triangle, side a is greater than the altitude height and less than side b, so side a can form either an acute or obtuse angle with side c. In the fourth attempted triangle, side a is greater than or equal to side b, so side a forms an acute angle with side c.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_009n.png"/>
+        </media>
+      </figure></note><example id="Example_08_01_02"><exercise id="fs-id1165135547547"><problem id="fs-id1165131893624">
+          <title>Solving an Oblique SSA Triangle</title>
+          <para id="fs-id1165131893629">Solve the triangle in <link target-id="Figure_08_01_010"/> for the missing side and find the missing angle measures to the nearest tenth.</para>
+
+          <figure id="Figure_08_01_010" class="small"><media id="fs-id1165135299841" alt="An oblique triangle with standard labels where side a is of length 6, side b is of length 8, and angle alpha is 35 degrees.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_010.jpg"/>
+            </media>
+          </figure></problem>
+
+        <solution id="fs-id1165135390986">
+          <para id="fs-id1165135390988">Use the Law of Sines to find angle <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi></m:mrow>
+          </m:math> and angle <m:math>
+            <m:mrow>
+              <m:mi>γ</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math> and then side <m:math>
+            <m:mrow>
+              <m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math> Solving for <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math> we have the proportion</para>
+
+          <equation id="fs-id1165137832935" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="right">
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+       </m:mrow>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+       <m:mi>b</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+       <m:mn>8</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>8</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mn>0.7648</m:mn><m:mo>≈</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>sin</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mn>0.7648</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>49.9°</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>49.9°</m:mn><m:mo/>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134284386">However, in the diagram, angle <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi></m:mrow>
+          </m:math> appears to be an obtuse angle and may be greater than 90°. How did we get an acute angle, and how do we find the measurement of <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi><m:mo>?</m:mo></m:mrow>
+          </m:math> Let’s investigate further. Dropping a perpendicular from <m:math>
+            <m:mrow>
+              <m:mi>γ</m:mi></m:mrow>
+          </m:math> and viewing the triangle from a right angle perspective, we have <link target-id="Figure_08_01_011"/>. It appears that there may be a second triangle that will fit the given criteria.</para><figure id="Figure_08_01_011" class="small"><media id="fs-id1165135173349" alt="An oblique triangle built from the previous with standard prime labels. Side a is of length 6, side b is of length 8, and angle alpha prime is 35 degrees. An isosceles triangle is attached, using side a as one of its congruent legs and the angle supplementary to angle beta as one of its congruent base angles. The other congruent angle is called beta prime, and the entire new horizontal base, which extends from the original side c, is called c prime. There is a dotted altitude line from angle gamma prime to side c prime.">
+            <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_011.jpg"/>
+          </media>
+        </figure><para id="fs-id1165135173358">The angle supplementary to <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi></m:mrow>
+          </m:math> is approximately equal to 49.9°, which means that <m:math>
+ <m:mrow>
+  <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>−</m:mo><m:mn>49.9°</m:mn><m:mo>=</m:mo><m:mn>130.1°</m:mn><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> (Remember that the sine function is positive in both the first and second quadrants.) Solving for <m:math>
+ <m:mrow>
+  <m:mi>γ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math>  we have</para><equation id="fs-id1165134081388" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>−</m:mo><m:mn>35°</m:mn><m:mo>−</m:mo><m:mn>130.1°</m:mn><m:mo>≈</m:mo><m:mn>14.9°</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134261684">We can then use these measurements to solve the other triangle. Since <m:math>
+            <m:mrow>
+              <m:msup>
+                <m:mi>γ</m:mi>
+                <m:mo>′</m:mo>
+              </m:msup>
+              </m:mrow>
+          </m:math> is supplementary to the sum of <m:math>
+            <m:mrow>
+              <m:msup>
+                <m:mi>α</m:mi>
+                <m:mo>′</m:mo>
+              </m:msup>
+              </m:mrow>
+          </m:math> and <m:math>
+            <m:mrow>
+              <m:msup>
+              <m:mi>β</m:mi>
+              <m:mo>′</m:mo>
+              </m:msup>
+              <m:mo>,</m:mo></m:mrow>
+          </m:math>  we have</para><equation id="fs-id1165134129904" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>γ</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>−</m:mo><m:mn>35°</m:mn><m:mo>−</m:mo><m:mn>49.9°</m:mn><m:mo>≈</m:mo><m:mn>95.1°</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135416361">Now we need to find <m:math>
+            <m:mrow>
+              <m:mi>c</m:mi></m:mrow>
+          </m:math> and <m:math>
+            <m:mrow>
+              <m:msup>
+                <m:mi>c</m:mi>
+                <m:mo>′</m:mo>
+              </m:msup>
+              <m:mo>.</m:mo></m:mrow>
+          </m:math>
+          </para>
+        <para id="fs-id1165137696701">We have</para>
+          <equation id="fs-id1165135468093" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>c</m:mi>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14.9°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>6</m:mn>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.3em"/><m:mi>c</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14.9°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>≈</m:mo><m:mn>2.7</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133210009">Finally,</para>
+          <equation id="fs-id1165134430446" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mi>c</m:mi>
+         <m:mo>′</m:mo>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>95.1°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>6</m:mn>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mi>c</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>95.1°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>≈</m:mo><m:mn>10.4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134357379">To summarize, there are two triangles with an angle of 35°, an adjacent side of 8, and an opposite side of 6, as shown in <link target-id="Figure_08_01_012"/>.</para>
+<figure id="Figure_08_01_012" class="medium"><media id="fs-id1165137694956" alt="There are two triangles with standard labels. Triangle a is the orginal triangle. It has angles alpha of 35 degrees, beta of 130.1 degrees, and gamma of 14.9 degrees. It has sides a = 6, b = 8, and c is approximately 2.7. Triangle b is the extended triangle. It has angles alpha prime = 35 degrees, angle beta prime = 49.9 degrees, and angle gamma prime = 95.1 degrees. It has side a prime = 6, side b prime = 8, and side c prime is approximately 10.4.">
+            <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_012ab.jpg"/>
+          </media>
+        </figure><para id="fs-id1165137694965">However, we were looking for the values for the triangle with an obtuse angle <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math> We can see them in the first triangle (a) in <link target-id="Figure_08_01_012"/>.</para></solution>
+      </exercise></example><note id="fs-id1165135378681" class="precalculus try">
+      <label>Try It</label>
+      <exercise id="ti_08_01_03"><problem id="fs-id1165135378691"><para id="fs-id1165135378692">Given <m:math>
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>80°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>120</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+          <m:mrow>
+            <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>121</m:mn><m:mo>,</m:mo></m:mrow>
+        </m:math> find the missing side and angles. If there is more than one possible solution, show both.</para></problem>
+
+        <solution id="fs-id1165135555468">
+      <para id="fs-id1165135555470">Solution 1</para>
+          <equation id="fs-id1165135555473" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>80°</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>120</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>83.2°</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>121</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>γ</m:mi><m:mo>≈</m:mo><m:mn>16.8°</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>35.2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165132945457">Solution 2</para>
+          <equation id="fs-id1165132945460" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>α</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>80°</m:mn><m:mspace width="0.3em"/><m:msup>
+       <m:mi>a</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>120</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>β</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>≈</m:mo><m:mn>96.8°</m:mn><m:mspace width="0.3em"/><m:msup>
+       <m:mi>b</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>121</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>γ</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>≈</m:mo><m:mn>3.2°</m:mn><m:mspace width="0.3em"/><m:msup>
+       <m:mi>c</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>≈</m:mo><m:mn>6.8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+      </exercise></note>
+
+    <example id="Example_08_01_03"><exercise id="fs-id1165135510889"><problem id="fs-id1165135510891">
+          <title>Solving for the Unknown Sides and Angles of a SSA Triangle</title>
+          <para id="fs-id1165135510897">In the triangle shown in <link target-id="Figure_08_01_014"/>, solve for the unknown side and angles. Round your answers to the nearest tenth.</para>
+
+          <figure id="Figure_08_01_014" class="small"><media id="fs-id1165134170053" alt="An oblique triangle with standard labels. Side b is 9, side c is 12, and angle gamma is 85. Angle alpha, angle beta, and side a are unknown.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_014.jpg"/>
+            </media>
+          </figure></problem>
+        <solution id="fs-id1165137893341">
+          <para id="fs-id1165137893343">In choosing the pair of ratios from the Law of Sines to use, look at the information given. In this case, we know the angle <m:math>
+ <m:mrow>
+  <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>85°</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and its corresponding side <m:math>
+            <m:mrow>
+              <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>,</m:mo></m:mrow>
+          </m:math> and we know side <m:math>
+            <m:mrow>
+              <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>9.</m:mn></m:mrow>
+          </m:math> We will use this proportion to solve for <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math>
+          </para><equation id="fs-id1165134373519" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Isolate the unknown</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>9</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134081707">To find <m:math>
+          <m:mrow>
+            <m:mi>β</m:mi><m:mo>,</m:mo></m:mrow>
+        </m:math> apply the inverse sine function. The inverse sine will produce a single result, but keep in mind that there may be two values for <m:math>
+          <m:mrow>
+            <m:mi>β</m:mi><m:mo>.</m:mo></m:mrow>
+        </m:math> It is important to verify the result, as there may be two viable solutions, only one solution (the usual case), or no solutions.</para><equation id="fs-id1165135523278" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>sin</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>9</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85°</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mrow>
+          <m:mn>12</m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>≈</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>sin</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mn>0.7471</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>48.3°</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135494473">In this case, if we subtract <m:math>
+          <m:mrow>
+            <m:mi>β</m:mi></m:mrow>
+        </m:math> from 180°, we find that there may be a second possible solution. Thus, <m:math>
+          <m:mrow>
+            <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>−</m:mo><m:mn>48.3°</m:mn><m:mo>≈</m:mo><m:mn>131.7°</m:mn><m:mo>.</m:mo></m:mrow>
+        </m:math> To check the solution, subtract both angles, 131.7° and 85°, from 180°. This gives</para><equation id="fs-id1165134361390" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>−</m:mo><m:mn>85°</m:mn><m:mo>−</m:mo><m:mn>131.7°</m:mn><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>36.7°</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133227613">which is impossible, and so <m:math>
+ <m:mrow>
+  <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>48.3°</m:mn><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+        </para><para id="fs-id1165131907329">To find the remaining missing values, we calculate <m:math>
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>−</m:mo><m:mn>85°</m:mn><m:mo>−</m:mo><m:mn>48.3°</m:mn><m:mo>≈</m:mo><m:mn>46.7°</m:mn><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Now, only side <m:math>
+          <m:mrow>
+            <m:mi>a</m:mi></m:mrow>
+        </m:math> is needed. Use the Law of Sines to solve for <m:math>
+          <m:mrow>
+            <m:mi>a</m:mi></m:mrow>
+        </m:math> by one of the proportions.</para><equation id="fs-id1165135199437" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtable columnalign="left">
+           <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+             <m:mrow/>
+            </m:mtd>
+           </m:mtr>
+           <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+             <m:mrow><m:mfrac>
+               <m:mrow>
+                <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+               </m:mrow>
+               <m:mrow>
+                <m:mn>12</m:mn>
+               </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo><m:mfrac>
+               <m:mrow>
+                <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>46.7</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+               </m:mrow>
+               <m:mi>a</m:mi>
+              </m:mfrac>
+
+             </m:mrow>
+            </m:mtd>
+           </m:mtr>
+
+          </m:mtable>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>a</m:mi><m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>46.7</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>12</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>46.7</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>≈</m:mo><m:mn>8.8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165131962245">The complete set of solutions for the given triangle is</para>
+
+          <equation id="fs-id1165131962248" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>α</m:mi><m:mo>≈</m:mo><m:mn>46.7°</m:mn><m:mspace width="1em"/><m:mi>a</m:mi><m:mo>≈</m:mo><m:mn>8.8</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>48.3°</m:mn><m:mspace width="1em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>85°</m:mn><m:mspace width="1em"/><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+        </exercise></example><note id="fs-id1165135417780" class="precalculus try">
+      <label>Try It</label>
+      <exercise id="ti_08_01_02">
+        <problem id="fs-id1165137892396">
+          <para id="fs-id1165137892398">Given <m:math>
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>80°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mspace width="0.3em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> find the missing side and angles. If there is more than one possible solution, show both. Round your answers to the nearest tenth. </para></problem>
+        <solution id="fs-id1165131893780">
+<para id="fs-id1165131893782"> <m:math>
+          <m:mrow>
+            <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>5.7°</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>≈</m:mo><m:mn>94.3°</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>101.3</m:mn></m:mrow>
+        </m:math>
+        </para>
+        </solution>
+        </exercise>
+        </note>
+
+    <example id="Example_08_01_04">
+      <exercise id="fs-id1165134532777">
+        <problem id="fs-id1165134532779">
+          <title>Finding the Triangles That Meet the Given Criteria</title>
+          <para id="fs-id1165135546063">Find all possible triangles if one side has length 4 opposite an angle of 50°, and a second side has length 10.</para>
+        </problem>
+        <solution id="fs-id1165135546069">
+          <para id="fs-id1165135546071">Using the given information, we can solve for the angle opposite the side of length 10. See <link target-id="Figure_08_01_015"/>.</para>
+
+          <equation id="fs-id1165137900104" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>10</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>≈</m:mo><m:mn>1.915</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><figure id="Figure_08_01_015" class="small"><media id="fs-id1165137701660" alt="An incomplete triangle. One side has length 4 opposite a 50 degree angle, and a second side has length 10 opposite angle a. The side of length 4 is too short to reach the side of length 10, so there is no third angle.">
+            <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_015.jpg"/>
+          </media>
+        </figure><para id="fs-id1165135202531">We can stop here without finding the value of <m:math>
+            <m:mrow>
+              <m:mi>α</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math> Because the range of the sine function is <m:math>
+            <m:mrow>
+              <m:mrow><m:mo>[</m:mo> <m:mrow>
+                <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+          </m:math> it is impossible for the sine value to be 1.915. In fact, inputting <m:math>
+            <m:mrow>
+              <m:msup>
+                <m:mrow>
+                  <m:mi>sin</m:mi></m:mrow>
+                <m:mrow>
+                  <m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+              </m:msup>
+              <m:mrow><m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>1.915</m:mn></m:mrow>
+                <m:mo>)</m:mo></m:mrow></m:mrow>
+          </m:math> in a graphing calculator generates an ERROR DOMAIN. Therefore, no triangles can be drawn with the provided dimensions.</para></solution>
+       </exercise>
+        </example>
+
+    <note id="fs-id1165137812541" class="precalculus try">
+      <label>Try It</label>
+      <exercise id="ti_08_01_05">
+        <problem id="fs-id1165137761651"><para id="fs-id1165137761652">Determine the number of triangles possible given <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>31</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>26</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>48°</m:mn><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>         </para></problem>
+        <solution id="fs-id1165132079317">
+<para id="fs-id1165135650686">two</para>
+</solution>
+      </exercise>
+    </note>
+  </section>
+
+  <section id="fs-id1165135650693">
+    <title> Finding the Area of an Oblique Triangle Using the Sine Function</title>
+    <para id="fs-id1165135317533">Now that we can solve a triangle for missing values, we can use some of those values and the sine function to find the area of an oblique triangle. Recall that the area formula for a triangle is given as <m:math>
+      <m:mrow>
+<m:mtext>Area</m:mtext><m:mo>=</m:mo><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>b</m:mi><m:mi>h</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> where <m:math>
+      <m:mrow>
+<m:mi>b</m:mi></m:mrow>
+    </m:math> is base and <m:math>
+      <m:mrow>
+<m:mi>h</m:mi></m:mrow>
+    </m:math> is height. For oblique triangles, we must find <m:math>
+      <m:mrow>
+<m:mi>h</m:mi></m:mrow>
+    </m:math> before we can use the area formula. Observing the two triangles in <link target-id="Figure_08_01_016"/>, one acute and one obtuse, we can drop a perpendicular to represent the height and then apply the trigonometric property <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mtext>opposite</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>hypotenuse</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> to write an equation for area in oblique triangles. In the acute triangle, we have <m:math>
+      <m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac>
+          <m:mi>h</m:mi>
+          <m:mi>c</m:mi>
+        </m:mfrac>
+        </m:mrow>
+    </m:math> or <m:math>
+      <m:mrow>
+        <m:mi>c</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mi>h</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> However, in the obtuse triangle, we drop the perpendicular outside the triangle and extend the base <m:math>
+      <m:mrow>
+<m:mi>b</m:mi></m:mrow>
+    </m:math> to form a right triangle. The angle used in calculation is <m:math>
+      <m:mrow>
+<m:msup>
+          <m:mi>α</m:mi>
+          <m:mo>′</m:mo>
+        </m:msup>
+        <m:mo>,</m:mo></m:mrow>
+    </m:math> or <m:math>
+      <m:mrow>
+<m:mn>180</m:mn><m:mo>−</m:mo><m:mi>α</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math>
+      </para><figure id="Figure_08_01_016"><media id="fs-id1165134181795" alt="Two oblique triangles with standard labels. Both have a dotted altitude line h extended from angle beta to the horizontal base side b. In the first, which is an acute triangle, the altitude is within the triangle. In the second, which is an obtuse triangle, the altitude h is outside of the triangle. ">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_016.jpg"/>
+      </media>
+    </figure><para id="fs-id1165135546803">Thus,</para>
+    <equation id="fs-id1165135546806" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+        <m:mtext>Area</m:mtext><m:mo>=</m:mo><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mtext>base</m:mtext></m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+            <m:mrow>
+              <m:mtext>height</m:mtext></m:mrow>
+            <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+        <m:mi>b</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>c</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math>
+    </equation><para id="fs-id1165135502020">Similarly,</para>
+    <equation id="fs-id1165135502023" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+        <m:mtext>Area</m:mtext><m:mo>=</m:mo><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>a</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>b</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi></m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+        <m:mi>a</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>c</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math>
+    </equation><note id="fs-id1165135317669">
+
+      <title>Area of an Oblique Triangle</title>
+      <para id="fs-id1165135317678">The formula for the area of an oblique triangle is given by</para>
+      <equation id="fs-id1165134386652" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Area</m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>b</m:mi><m:mi>c</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>a</m:mi><m:mi>c</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>a</m:mi><m:mi>b</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134557988">This is equivalent to one-half of the product of two sides and the sine of their included angle.</para>
+      </note>
+
+    <example id="Example_08_01_05">
+      <exercise id="fs-id1165135177780">
+        <problem id="fs-id1165135177782">
+          <title>Finding the Area of an Oblique Triangle</title>
+          <para id="fs-id1165135177787">Find the area of a triangle with sides <m:math>
+            <m:mrow>
+              <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>90</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>52</m:mn><m:mo>,</m:mo></m:mrow>
+          </m:math> and angle <m:math>
+ <m:mrow>
+  <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>102°</m:mn><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Round the area to the nearest integer.</para></problem>
+        <solution id="fs-id1165137502457">
+          <para id="fs-id1165137502459">Using the formula, we have</para>
+
+        <equation id="fs-id1165137502463" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Area</m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>a</m:mi><m:mi>b</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Area</m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mn>90</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>52</m:mn><m:mo stretchy="false">)</m:mo><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>102°</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Area</m:mtext><m:mo>≈</m:mo><m:mn>2289</m:mn><m:mspace width="0.3em"/><m:mtext>square</m:mtext><m:mspace width="0.3em"/><m:mtext>units</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+      </exercise>
+    </example>
+
+    <note id="fs-id1165137419119" class="precalculus try">
+      <label>Try It</label>
+      <exercise id="ti_08_01_06">
+        <problem id="fs-id1165137423575"><para id="fs-id1165137423576">Find the area of the triangle given <m:math>
+ <m:mrow>
+  <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>42°</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>7.2</m:mn><m:mspace width="0.3em"/><m:mtext>ft</m:mtext><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>3.4</m:mn><m:mspace width="0.3em"/><m:mtext>ft</m:mtext><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Round the area to the nearest tenth.</para></problem>
+        <solution id="fs-id1165135168061">
+<para id="fs-id1165135168063">about <m:math>
+          <m:mrow>
+            <m:mn>8.2</m:mn></m:mrow>
+        </m:math> square feet</para>
+        </solution>
+        </exercise>
+       </note>
+  </section>
+
+  <section id="fs-id1165135381204">
+    <title> Solving Applied Problems Using the Law of Sines</title>
+    <para id="fs-id1165137628654">The more we study trigonometric applications, the more we discover that the applications are countless. Some are flat, diagram-type situations, but many applications in calculus, engineering, and physics involve three dimensions and motion.</para><example id="Example_08_01_06"><exercise id="fs-id1165137628663"><problem id="fs-id1165134041227">
+          <title>Finding an Altitude</title>
+          <para id="fs-id1165134041232">Find the altitude of the aircraft in the problem introduced at the beginning of this section, shown in <link target-id="Figure_08_01_017"/>. Round the altitude to the nearest tenth of a mile.</para>
+
+          <figure id="Figure_08_01_017" class="small"><media id="fs-id1165134122936" alt="A diagram of a triangle where the vertices are the first ground station, the second ground station, and the airplane in the air between them. The angle between the first ground station and the plane is 15 degrees, and the angle between the second station and the airplane is 35 degrees. The side between the two stations is of length 20 miles. There is a dotted altitude line perpendicular to the ground side connecting the airplane vertex with the ground.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_017.jpg"/>
+            </media>
+          </figure></problem>
+        <solution id="fs-id1165132972747">
+          <para id="fs-id1165132972749">To find the elevation of the aircraft, we first find the distance from one station to the aircraft, such as the side <m:math>
+            <m:mrow>
+              <m:mi>a</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math>  and then use right triangle relationships to find the height of the aircraft, <m:math>
+            <m:mrow>
+              <m:mi>h</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math>
+          </para><para id="fs-id1165137732703">Because the angles in the triangle add up to 180 degrees, the unknown angle must be 180°−15°−35°=130°. This angle is opposite the side of length 20, allowing us to set up a Law of Sines relationship.</para><equation id="fs-id1165134246237" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtable columnalign="left">
+           <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+             <m:mrow/>
+            </m:mtd>
+           </m:mtr>
+           <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+             <m:mrow/>
+            </m:mtd>
+           </m:mtr>
+
+          </m:mtable>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow><m:mfrac>
+           <m:mrow>
+            <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>130°</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mrow>
+            <m:mn>20</m:mn>
+           </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mi>a</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>a</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>130°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>20</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>20</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>130°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>a</m:mi><m:mo>≈</m:mo><m:mn>14.98</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133102541">The distance from one station to the aircraft is about 14.98 miles.</para>
+          <para id="fs-id1165133102544">Now that we know <m:math>
+            <m:mrow>
+              <m:mi>a</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math> we can use right triangle relationships to solve for <m:math>
+            <m:mrow>
+              <m:mi>h</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math>
+          </para>
+          <equation id="fs-id1165135172284" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>opposite</m:mtext>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mi>h</m:mi>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mi>h</m:mi>
+       <m:mrow>
+        <m:mn>14.98</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>14.98</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15°</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>h</m:mi><m:mo>≈</m:mo><m:mn>3.88</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137722150">The aircraft is at an altitude of approximately 3.9 miles.</para>
+        </solution>
+        </exercise></example><note id="fs-id1165137722156" class="precalculus try">
+      <label/>
+      <exercise id="ti_08_01_07">
+        <problem id="fs-id1165133197151">
+          <para id="fs-id1165133197153">The diagram shown in <link target-id="Figure_08_01_018"/> represents the height of a blimp flying over a football stadium. Find the height of the blimp if the angle of elevation at the southern end zone, point A, is 70°, the angle of elevation from the northern end zone, point <m:math>
+            <m:mrow>
+              <m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math> is 62°, and the distance between the viewing points of the two end zones is 145 yards.</para><figure id="Figure_08_01_018" class="small"><media id="fs-id1165137715412" alt="An oblique triangle formed from three vertices A, B, and C. Verticies A and B are points on the ground, and vertex C is the blimp in the air between them. The distance between A and B is 145 yards. The angle at vertex A is 70 degrees, and the angle at vertex B is 62 degrees.">
+            <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_018.jpg"/>
+          </media>
+        </figure></problem>
+        <solution id="fs-id1165134380826">
+          <para id="fs-id1165134380829">161.9 yd.</para>
+        </solution>
+      </exercise>
+    </note>
+
+    <note id="fs-id1165137896860" class="precalculus media media-notitle"><label>Media</label>
+      <para id="fs-id1165137896866">Access these online resources for additional instruction and practice with trigonometric applications.</para>
+ <list id="eip-id1165135341252">
+ <item><link url="http://openstax.org/l/sinesbasic">Law of Sines: The Basics</link></item>
+     <item><link url="http://openstax.org/l/sinesambiguous">Law of Sines: The Ambiguous Case</link></item>
+</list>
+    </note></section>
+
+<section id="fs-id1165137732417" class="key-equations"><title>Key Equations</title><table id="eip-id2728866" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry>Law of Sines</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+       </m:mrow>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+       <m:mi>b</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+       </m:mrow>
+       <m:mi>c</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mi>b</m:mi>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mi>c</m:mi>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </entry>
+</row>
+
+<row>
+<entry>Area for oblique triangles</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="right">
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>Area</m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>b</m:mi><m:mi>c</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>a</m:mi><m:mi>c</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>a</m:mi><m:mi>b</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></section><section id="fs-id1165135252053" class="key-concepts">
+    <title>Key Concepts</title>
+   <list id="fs-id1165135428315" list-type="bulleted"><item>The Law of Sines can be used to solve oblique triangles, which are non-right triangles.</item>
+    <item>According to the Law of Sines, the ratio of the measurement of one of the angles to the length of its opposite side equals the other two ratios of angle measure to opposite side.</item>
+     <item>There are three possible cases: ASA, AAS, SSA. Depending on the information given, we can choose the appropriate equation to find the requested solution. See <link target-id="Example_08_01_01"/>.</item>
+    <item>The ambiguous case arises when an oblique triangle can have different outcomes.</item>
+     <item>There are three possible cases that arise from SSA arrangement—a single solution, two possible solutions, and no solution. See <link target-id="Example_08_01_02"/> and <link target-id="Example_08_01_03"/>.</item>
+     <item>The Law of Sines can be used to solve triangles with given criteria. See <link target-id="Example_08_01_04"/>.</item>
+     <item>The general area formula for triangles translates to oblique triangles by first finding the appropriate height value. See <link target-id="Example_08_01_05"/>.</item>
+     <item>There are many trigonometric applications. They can often be solved by first drawing a diagram of the given information and then using the appropriate equation. See <link target-id="Example_08_01_06"/>.</item>
+   </list></section>
+
+  <section id="fs-id1165134534154" class="section-exercises"><title>Section Exercises</title><section id="fs-id1165134534157">
+<title>Verbal</title>
+
+<exercise id="fs-id1165134534162">
+  <problem id="fs-id1165134534164">
+    <para id="fs-id1165137762314">Describe the altitude of a triangle.</para>
+  </problem>
+<solution id="fs-id1165137762318">
+<para id="fs-id1165137762320">The altitude extends from any vertex to the opposite side or to the line containing the opposite side at a 90° angle.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134167308">
+<problem id="fs-id1165134167310">
+<para id="fs-id1165134167312">Compare right triangles and oblique triangles.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134167318">
+<problem id="fs-id1165134314755">
+<para id="fs-id1165134314757">When can you use the Law of Sines to find a missing angle?</para>
+</problem>
+  <solution id="fs-id1165134314761">
+<para id="fs-id1165134314763">When the known values are the side opposite the missing angle and another side and its opposite angle. </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135528433">
+<problem id="fs-id1165135528435">
+<para id="fs-id1165135528437">In the Law of Sines, what is the relationship between the angle in the numerator and the side in the denominator?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135528444">
+<problem id="fs-id1165135195290">
+<para id="fs-id1165135195293">What type of triangle results in an ambiguous case?</para>
+</problem>
+<solution id="fs-id1165135195297">
+<para id="fs-id1165135195299">A triangle with two given sides and a non-included angle. </para>
+</solution>
+</exercise>
+
+</section>
+<section id="fs-id1165134237172">
+<title>Algebraic</title>
+  <para id="fs-id1165134237178">For the following exercises, assume <m:math>
+    <m:mrow>
+      <m:mi>α</m:mi></m:mrow>
+  </m:math> is opposite side <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>β</m:mi></m:mrow>
+  </m:math> is opposite side <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> and <m:math>
+    <m:mrow>
+      <m:mi>γ</m:mi></m:mrow>
+  </m:math> is opposite side <m:math>
+    <m:mrow>
+      <m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math> Solve each triangle, if possible. Round each answer to the nearest tenth.</para>
+<exercise id="fs-id1165135525976">
+  <problem id="fs-id1165135525978">
+    <para id="fs-id1165135525980"> <m:math>
+      <m:mrow>
+        <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>43°</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>69°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165134258493">
+  <problem id="fs-id1165134258495">
+    <para id="fs-id1165134258497"> <m:math>
+      <m:mrow>
+        <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>35°</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>73°</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165133243549">
+  <para id="fs-id1165135639128"> <m:math>
+    <m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>72°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>≈</m:mo><m:mn>12.0</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>19.9</m:mn></m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165134480947">
+  <problem id="fs-id1165134480949">
+    <para id="fs-id1165134480951"> <m:math>
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>60°</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>60°</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>60°</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135702707">
+  <problem id="fs-id1165135518130">
+    <para id="fs-id1165135518132"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/>
+          <m:mrow>
+            <m:mn>60°</m:mn></m:mrow>
+        <m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>100°</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165137911000">
+  <para id="fs-id1165137911002"> <m:math>
+    <m:mrow><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>20°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>4.5</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>1.6</m:mn></m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165135367533">
+  <problem id="fs-id1165135367535">
+    <para id="fs-id1165133402068"> <m:math>
+      <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>95°</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/>
+          <m:mrow>
+            <m:mn>30°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+
+  <para id="fs-id1165134148228">For the following exercises, use the Law of Sines to solve for the missing side for each oblique triangle. Round each answer to the nearest hundredth. Assume that angle <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi></m:mrow>
+  </m:math> is opposite side <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> angle <m:math>
+    <m:mrow>
+      <m:mi>B</m:mi></m:mrow>
+  </m:math> is opposite side <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> and angle <m:math>
+    <m:mrow>
+      <m:mi>C</m:mi></m:mrow>
+  </m:math> is opposite side <m:math>
+    <m:mrow>
+      <m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math>
+  </para><exercise id="fs-id1165137619092">
+  <problem id="fs-id1165137619094">
+    <para id="fs-id1165137619096">Find side <m:math>
+      <m:mrow>
+<m:mi>b</m:mi></m:mrow>
+    </m:math> when <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mo>=</m:mo><m:mn>37°</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>B</m:mi><m:mo>=</m:mo><m:mn>49°</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn></m:mrow>
+    </m:math>
+    </para>
+  </problem>
+<solution id="fs-id1165137701948">
+  <para id="fs-id1165137701950"> <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>3.78</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135497737">
+  <problem id="fs-id1165135497739">
+    <para id="fs-id1165135497741">Find side <m:math>
+      <m:mrow>
+<m:mi>a</m:mi></m:mrow>
+    </m:math>  when <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mo>=</m:mo><m:mn>132°</m:mn><m:mo>,</m:mo><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>23°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>10.</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165133361987">
+  <problem id="fs-id1165133361989">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165133361991">Find side <m:math>
+      <m:mrow>
+<m:mi>c</m:mi></m:mrow>
+    </m:math> when <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>=</m:mo><m:mn>37°</m:mn><m:mo>,</m:mo><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>21°</m:mn><m:mo/><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>23.</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165133300613">
+  <para id="fs-id1165133300616"> <m:math>
+    <m:mrow>
+      <m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>13.70</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+
+  <para id="fs-id1165135541644">For the following exercises, assume <m:math>
+    <m:mrow>
+      <m:mi>α</m:mi></m:mrow>
+  </m:math> is opposite side <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>β</m:mi></m:mrow>
+  </m:math> is opposite side <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> and <m:math>
+    <m:mrow>
+      <m:mi>γ</m:mi></m:mrow>
+  </m:math> is opposite side <m:math>
+    <m:mrow>
+      <m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math> Determine whether there is no triangle, one triangle, or two triangles. Then solve each triangle, if possible. Round each answer to the nearest tenth.</para>
+<exercise id="fs-id1165137894577">
+  <problem id="fs-id1165137894579">
+    <para id="fs-id1165137894581"> <m:math>
+      <m:mrow>
+        <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>119°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>14</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>26</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165134389853">
+  <problem id="fs-id1165134389855">
+    <para id="fs-id1165134389858"> <m:math>
+      <m:mrow>
+        <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>113°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>32</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165133317685">
+  <para id="fs-id1165133317687">one triangle, <m:math>
+    <m:mrow>
+      <m:mi>α</m:mi><m:mo>≈</m:mo><m:mn>50.3°</m:mn><m:mo>,</m:mo><m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>16.7°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>≈</m:mo><m:mn>26.7</m:mn></m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165135634360">
+  <problem id="fs-id1165135634363">
+    <para id="fs-id1165135442377"> <m:math>
+      <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>3.5</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>5.3</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>γ</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/>
+          <m:mrow>
+            <m:mn>80°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165135521227">
+  <problem id="fs-id1165135521229">
+    <para id="fs-id1165135521231"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>17</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/>
+          <m:mrow>
+            <m:mn>35°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165134224075">
+  <para id="fs-id1165135518098">two triangles, <m:math>
+    <m:mrow>
+      <m:mi>γ</m:mi><m:mo>≈</m:mo><m:mn>54.3°</m:mn><m:mo>,</m:mo><m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>90.7°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>20.9</m:mn></m:mrow>
+  </m:math> or <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>γ</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>125.7°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>β</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>19.3°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>b</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>6.9</m:mn>
+ </m:mrow>
+</m:math>   </para></solution></exercise>
+<exercise id="fs-id1165134073101">
+  <problem id="fs-id1165134073103">
+    <para id="fs-id1165134192805"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>20.5</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>35.0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>25°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165135426390">
+  <problem id="fs-id1165135347186">
+    <para id="fs-id1165135347188"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/><m:mn>43°</m:mn></m:mrow>
+    </m:math>
+    </para>
+  </problem>
+<solution id="fs-id1165134032288">
+  <para id="fs-id1165134032290">two triangles, <m:math>
+    <m:mrow><m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>75.7°</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>γ</m:mi><m:mo>≈</m:mo><m:mn>61.3°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>9.9</m:mn></m:mrow>
+  </m:math> or <m:math>
+ <m:mrow><m:msup>
+   <m:mi>β</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>18.3°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>γ</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>118.7°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>b</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>3.2</m:mn>
+ </m:mrow>
+</m:math>   </para></solution>
+</exercise>
+<exercise id="fs-id1165133359520">
+  <problem id="fs-id1165133359522">
+    <para id="fs-id1165133359524"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>24°</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165134122771">
+  <problem id="fs-id1165134122740">
+    <para id="fs-id1165134122743"> <m:math>
+      <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>13</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/><m:mn>10°</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165135353721">
+  <para id="fs-id1165135353723">two triangles, <m:math>
+    <m:mrow><m:mi>α</m:mi><m:mo>≈</m:mo><m:mn>143.2°</m:mn><m:mo>,</m:mo><m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>26.8°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>≈</m:mo><m:mn>17.3</m:mn></m:mrow>
+  </m:math> or <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>α</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>16.8°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>β</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>153.2°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>a</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>8.3</m:mn>
+ </m:mrow>
+</m:math>   </para></solution>
+</exercise>
+<exercise id="fs-id1165135291787">
+  <problem id="fs-id1165135291789">
+    <para id="fs-id1165135291792"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2.3</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>1.8</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>28°</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165131940272">
+  <problem id="fs-id1165134113869">
+    <para id="fs-id1165134113872"> <m:math>
+      <m:mrow>
+        <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>119°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>8.2</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>11.3</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165135515868">
+<para id="fs-id1165135515870">no triangle possible</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135515875">For the following exercises, use the Law of Sines to solve, if possible, the missing side or angle for each triangle or triangles in the ambiguous case. Round each answer to the nearest tenth.</para>
+
+<exercise id="fs-id1165135515880">
+  <problem id="fs-id1165134367921">
+    <para id="fs-id1165134367923">Find angle <m:math>
+      <m:mi>A</m:mi>
+    </m:math> when <m:math>
+      <m:mrow>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mn>24</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>B</m:mi><m:mo>=</m:mo><m:mn>22°.</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165133141464">
+  <problem id="fs-id1165133141466">
+    <para id="fs-id1165133141468">Find angle <m:math>
+      <m:mrow>
+        <m:mi>A</m:mi></m:mrow>
+    </m:math> when <m:math>
+      <m:mrow>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mn>13</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mi>B</m:mi><m:mo>=</m:mo><m:mn>20°.</m:mn><m:mo/></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165133388236">
+  <para id="fs-id1165133388238"> <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi><m:mo>≈</m:mo><m:mn>47.8°</m:mn></m:mrow>
+  </m:math> or <m:math>
+    <m:mrow>
+      <m:msup>
+        <m:mi>A</m:mi>
+        <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>≈</m:mo>
+        <m:mrow>
+          <m:mn>132.2°</m:mn></m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165133310446">
+  <problem id="fs-id1165133310448">
+    <para id="fs-id1165133310450">Find angle <m:math>
+      <m:mrow>
+<m:mi>B</m:mi></m:mrow>
+    </m:math> when <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mo>=</m:mo><m:mn>12°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>9.</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+
+<para id="fs-id1165135550008">For the following exercises, find the area of the triangle with the given measurements. Round each answer to the nearest tenth.</para>
+
+<exercise id="fs-id1165135550012">
+  <problem id="fs-id1165134177575">
+    <para id="fs-id1165134177577"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mi>β</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/>
+          <m:mrow>
+            <m:mn>35°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165135697825">
+  <para id="fs-id1165135697827"> <m:math>
+    <m:mrow>
+      <m:mn>8.6</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134235787">
+  <problem id="fs-id1165134235789">
+    <para id="fs-id1165131880468"> <m:math>
+      <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>11</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mi>α</m:mi><m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>28°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165135363342">
+  <problem id="fs-id1165135363344">
+    <para id="fs-id1165135363346"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>32</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>24</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>75°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165135307836">
+  <para id="fs-id1165135307838"> <m:math>
+    <m:mrow>
+      <m:mn>370.9</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137643361">
+  <problem id="fs-id1165137643363">
+    <para id="fs-id1165137643365"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>7.2</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>4.5</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>43°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+
+</section>
+<section id="fs-id1165134257560">
+<title>Graphical</title>
+  <para id="fs-id1165134257566">For the following exercises, find the length of side <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math> Round to the nearest tenth.</para>
+
+<exercise id="fs-id1165135363188"><problem id="fs-id1165135363190">
+
+<media id="fs-id1165135363197" alt="A triangle with an angle of 50 degrees and opposite side of length 10. Another angle is 70 degrees with side opposite of length x.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_201.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165133199362">
+  <para id="fs-id1165133199364"> <m:math>
+    <m:mrow>
+      <m:mn>12.3</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165137765789"><problem id="fs-id1165137765791">
+<media id="fs-id1165137765797" alt="A triangle with one angle = 120 degrees. Another angle is 25 degrees with side opposite = x. The side adjacent to the 25 and 120 degree angles is of length 6.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_202.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165134156060"><problem id="fs-id1165134156062">
+<media id="fs-id1165137529464" alt="A triangle. One angle is 45 degrees with side opposite = x. Another angle is 75 degrees. The side adjacent to the 45 and 75 degree angles = 15.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_203.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165137529474">
+  <para id="fs-id1165134081222"> <m:math>
+    <m:mrow>
+      <m:mn>12.2</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165137931158"><problem id="fs-id1165137931160">
+<media id="fs-id1165137931167" alt="A triangle. One angle is 40 degrees with opposite side = x. Another angle is 110 degrees with side opposite = 18.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_204.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165133307610"><problem id="fs-id1165133307612">
+<media id="fs-id1165135641451" alt="A triangle. One angle is 50 degrees with opposite = x. Another angle is 42 degrees with opposite side = 14.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_205.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165135641462">
+  <para id="fs-id1165135641464"> <m:math>
+    <m:mrow>
+      <m:mn>16.0</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165135181103"><problem id="fs-id1165134149774">
+<media id="fs-id1165134149780" alt="A triangle. One angle is 111 degrees with opposite side = x. Another angle is 22 degrees. The side adjacent to the 111 and 22 degree angles = 8.6.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_206.jpg"/>
+</media>
+  </problem>
+</exercise><para id="fs-id1165135246602">For the following exercises, find the measure of angle <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> if possible. Round to the nearest tenth.</para><exercise id="fs-id1165135246606"><problem id="fs-id1165135246608">
+<media id="fs-id1165135333725" alt="A triangle. One angles is 98 degrees with opposite side = 10. Another angle is x degrees with opposite side = 5.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_207.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1165135333736">
+  <para id="fs-id1165135333738"> <m:math>
+    <m:mrow>
+        <m:mrow>
+          <m:mn>29.7°</m:mn></m:mrow>
+    </m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165133249126"><problem id="fs-id1165133249129">
+<media id="fs-id1165134271323" alt="A triangle. One angle is 37 degrees with opposite side = 11. Another angle is x degrees with opposite side = 8.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_208.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165134271335"><problem id="fs-id1165134271337">
+<media id="fs-id1165135442505" alt="A triangle. One angle is 22 degrees with side opposite = 5. Another angle is x degrees with opposite side = 13.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_209.jpg"/>
+</media>
+</problem>
+  <solution id="fs-id1165133300591">
+    <para id="fs-id1165133300594"> <m:math>
+      <m:mrow>
+        <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>76.9°</m:mn><m:mtext>or</m:mtext><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>103.1°</m:mn></m:mrow>
+    </m:math>
+    </para>
+  </solution>
+</exercise><exercise id="fs-id1165131880286"><problem id="fs-id1165131880288">
+<media id="fs-id1165137832518" alt="A triangle. One angle is 59 degrees with opposite side = 5.7. Another angle is x degrees with opposite side = 5.3.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_210.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165137832530"><problem id="fs-id1165132005056">
+    <para id="fs-id1165132005058">Notice that <m:math>
+      <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+    </m:math> is an obtuse angle.</para>
+<media id="fs-id1165134328319" alt="A triangle. One angle is 55 degrees with side opposite = 21. Another angle is x degrees with opposite side = 24.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_211.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165137450859">
+  <para id="fs-id1165137450861"> <m:math>
+    <m:mrow>
+      <m:mn>110.6°</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165135600243"><problem id="fs-id1165135600245">
+<media id="fs-id1165133023578" alt="A triangle. One angle is 65 degrees with opposite side = 10. Another angle is x degrees with opposite side = 12.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_212.jpg"/>
+</media>
+  </problem>
+</exercise><para id="fs-id1165133023590">For the following exercises, find the area of each triangle. Round each answer to the nearest tenth.</para><exercise id="fs-id1165134185460"><problem id="fs-id1165134185462">
+<media id="fs-id1165134185468" alt="A triangle. One angle is 93 degrees with opposite side = 32.6. Another side is 24.1.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_214.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165137456555">
+  <para id="fs-id1165137456557"> <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi><m:mo>≈</m:mo><m:mn>39.4</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>C</m:mi><m:mo>≈</m:mo><m:mn>47.6</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>B</m:mi><m:mi>C</m:mi><m:mo>≈</m:mo><m:mn>20.7</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165135505462"><problem id="fs-id1165135505464">
+<media id="fs-id1165131894562" alt="A triangle. One angle is 30 degrees. The two sides adjacent to that angle are 10 and 16.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_215.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165137899950"><problem id="fs-id1165137899952">
+<media id="fs-id1165137899959" alt="A triangle. One angle is 25 degrees. The two sides adjacent to that angle are 18 and 15">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_216.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165134068913">
+  <para id="fs-id1165134068915"> <m:math>
+    <m:mrow>
+      <m:mn>57.1</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution></exercise><exercise id="fs-id1165135633912"><problem id="fs-id1165135633914">
+<media id="fs-id1165135633921" alt="A triangle. One angle is 51 degrees with opposite side = 3.5. The other two sides are 4.5 and 2.9.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_217.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165137810101"><problem id="fs-id1165137810104">
+<media id="fs-id1165135400875" alt="A triangle. One angle is 58 degrees with opposite side unknown. Another angle is 51 degrees with opposite side = 9. The side adjacent to the two given angles is 11.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_218.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165135400886">
+  <para id="fs-id1165137888190"> <m:math>
+    <m:mrow>
+      <m:mn>42.0</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165135512599"><problem id="fs-id1165135512601">
+<media id="fs-id1165135512608" alt="A triangle. One angle is 40 degrees with opposite side = 18. One of the other sides is 25.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_219.jpg"/>
+</media>
+ </problem>
+</exercise><exercise id="fs-id1165135388763"><problem id="fs-id1165135388765">
+<media id="fs-id1165135388772" alt="A triangle. One angle is 115 degrees with opposite side = 50. Another angle is 30 degrees with opposite side = 30.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_220.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1165134384443">
+  <para id="fs-id1165134384445"> <m:math>
+    <m:mrow>
+      <m:mn>430.2</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise></section>
+<section id="fs-id1165134418962">
+<title>Extensions</title>
+  <exercise id="fs-id1165133088145"><problem id="fs-id1165133088147">
+      <para id="fs-id1165133088149">Find the radius of the circle in <link target-id="Figure_08_01_221"/>. Round to the nearest tenth.</para>
+  <figure id="Figure_08_01_221" class="small">
+    <media id="fs-id1165135694392" alt="A triangle inscribed in a circle. Two of the legs are radii. The central angle formed by the radii is 145 degrees, and the opposite side is 3.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_221.jpg"/>
+    </media>
+  </figure>
+    </problem>
+  </exercise><exercise id="fs-id1165135149916"><problem id="fs-id1165135149918"><para id="fs-id1165137734376">Find the diameter of the circle in <link target-id="Figure_08_01_222"/>. Round to the nearest tenth.</para>
+  <figure id="Figure_08_01_222" class="small"><media id="fs-id1165135149928" alt="A triangle inscribed in a circle. Two of the legs are radii. The central angle formed by the radii is 110 degrees, and the opposite side is 8.3.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_222.jpg"/>
+    </media>
+  </figure></problem>
+<solution id="fs-id1165135506392">
+  <para id="fs-id1165135506394"> <m:math>
+    <m:mrow>
+      <m:mn>10.1</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+  </exercise><exercise id="fs-id1165134391079">
+    <problem id="fs-id1165134391081">
+      <para id="fs-id1165134391083">Find <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>∠</m:mo><m:mi>A</m:mi><m:mi>D</m:mi><m:mi>C</m:mi>
+ </m:mrow>
+</m:math> in <link target-id="Figure_08_01_223"/>. Round to the nearest tenth.</para><figure id="Figure_08_01_223" class="small"><media id="fs-id1165135698485" alt="A triangle inside a triangle. The outer triangle is formed by vertices A, B, and D. Side B D is the base. The inner triangle shares vertices A and B. The last vertex C is located on the base side of the outer triangle between vertices B and D. Angle B is 60 degrees, side A D is 10, and side A C is 9. ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_223.jpg"/>
+</media>
+</figure></problem>
+  </exercise>
+
+<exercise id="fs-id1165135500668">
+  <problem id="fs-id1165135500670">
+    <para id="fs-id1165135500672">Find <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mi>D</m:mi></m:mrow>
+</m:math> in <link target-id="Figure_08_01_224"/>. Round to the nearest tenth.</para><figure id="Figure_08_01_224" class="small"><media id="fs-id1165134317924" alt="A triangle inside a triangle. The outer triangle is formed by vertices A, B, and D. Side B D is the base. The inner triangle shares vertices A and B. The last vertex C is located on the base side of the outer triangle between vertices B and D. Angle B is 53 degrees, angle D is 44 degrees, side A B is 12, and side A C is 13.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_224.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165135186220">
+  <para id="fs-id1165135186222"> <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi><m:mi>D</m:mi><m:mo>≈</m:mo><m:mspace width="0.3em"/><m:mn>13.8</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165133091580">
+  <problem id="fs-id1165133091582">
+    <para id="fs-id1165133091585">Solve both triangles in <link target-id="Figure_08_01_225"/>. Round each answer to the nearest tenth.</para>
+<figure id="Figure_08_01_225" class="small"><media id="fs-id1165135483111" alt="Two triangles formed by intersecting lines A D and B C. They intersect at point E. The first triangle is formed from vertices A, B, and E while the second triangle is formed from vertices C, E, and D. Angle A is 48 degrees, side A B is 4.2, angle D is 48 degrees, and side C D is 2. Angle A E B is 46 degrees.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_225.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+
+<exercise id="fs-id1165135483123">
+  <problem id="fs-id1165135483125">
+    <para id="fs-id1165134331094">Find <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mi>B</m:mi></m:mrow>
+    </m:math> in the parallelogram shown in <link target-id="Figure_08_01_226"/>.</para>
+
+<figure id="Figure_08_01_226" class="small"><media id="fs-id1165135556655" alt="A parallelogram with vertices A, B, C, and D. There is a diagonal from vertex B to vertex C. Angle A is 130 degrees, angle D is 130 degrees, side B D is 10, and the diagonal B C is 12.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_226.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165135690080">
+  <para id="fs-id1165135690082"> <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi><m:mi>B</m:mi><m:mo>≈</m:mo><m:mn>2.8</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134408479">
+  <problem id="fs-id1165134408482"><para id="fs-id1165137807079">Solve the triangle in <link target-id="Figure_08_01_227"/>. (Hint: Draw a perpendicular from <m:math>
+    <m:mrow>
+      <m:mi>H</m:mi></m:mrow>
+  </m:math> to <m:math>
+    <m:mrow>
+      <m:mi>J</m:mi><m:mi>K</m:mi><m:mo>).</m:mo></m:mrow>
+  </m:math> Round each answer to the nearest tenth.</para><figure id="Figure_08_01_227" class="small"><media id="fs-id1165134501236" alt="A triangle with vertices J, K, and H. Side J K is the horizontal base and is 10. Side JH is 7. Angle J is 20 degrees.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_227.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+
+<exercise id="fs-id1165137921487">
+  <problem id="fs-id1165137921489">
+    <para id="fs-id1165137921491">Solve the triangle in <link target-id="Figure_08_01_228"/>. (Hint: Draw a perpendicular from <m:math>
+      <m:mrow>
+<m:mi>N</m:mi></m:mrow>
+    </m:math> to <m:math>
+      <m:mrow>
+<m:mi>L</m:mi><m:mi>M</m:mi><m:mo>).</m:mo></m:mrow>
+    </m:math> Round each answer to the nearest tenth.</para><figure id="Figure_08_01_228" class="small"><media id="fs-id1165134331084" alt="A triangle with vertices M, N, and L. Side M N is the horizontal base and is 4.6. Angle M is 74 degrees, and side M L is 5.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_228.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165133359479">
+  <para id="fs-id1165133359481"> <m:math>
+    <m:mrow>
+      <m:mi>L</m:mi><m:mo>≈</m:mo><m:mn>49.7</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>N</m:mi><m:mo>≈</m:mo><m:mn>56.3</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>L</m:mi><m:mi>N</m:mi><m:mo>≈</m:mo><m:mn>5.8</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137507972">
+  <problem id="fs-id1165137507974">
+    <para id="fs-id1165137507976">In <link target-id="Figure_08_01_229"/>, <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow>
+    </m:math> is not a parallelogram. <m:math>
+ <m:mrow>
+  <m:mo>∠</m:mo><m:mi>m</m:mi>
+ </m:mrow>
+</m:math> is obtuse. Solve both triangles. Round each answer to the nearest tenth.</para><figure id="Figure_08_01_229" class="small"><media id="fs-id1165137538994" alt="A quadrilateral with vertices A, B, C, and D. There is a diagonal from vertex B to vertex D of length 45. Side A B is x, side B C is y, side C D is 40, and side D A is 29. Angle A is m degrees, angle C is 65 degrees, angle A B D is 35 degrees, angle D B C is n degrees, angle B D C is k degrees, and angle A D B is h degrees.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_229.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+
+</section>
+<section id="fs-id1165135390788">
+<title>Real-World Applications</title>
+
+
+<exercise id="fs-id1165135390794" class="material-set-2">
+  <problem id="fs-id1165135390796">
+    <para id="fs-id1165135659154">A pole leans away from the sun at an angle of <m:math>
+      <m:mrow>
+<m:mn>7°</m:mn></m:mrow>
+    </m:math> to the vertical, as shown in <link target-id="Figure_08_01_231"/>. When the elevation of the sun is <m:math>
+      <m:mrow>
+<m:mn>55°</m:mn><m:mo>,</m:mo></m:mrow>
+    </m:math> the pole casts a shadow 42 feet long on the level ground. How long is the pole? Round the answer to the nearest tenth.</para><figure id="Figure_08_01_231" class="small"><media id="fs-id1165135545537" alt="A triangle within a triangle. The outer triangle is formed by vertices A, B, and S (the sun). Side A B is the horizontal base, the ground, and is 42 feet. Angle A is 55 degrees. The inner triangle is formed by vertices A, B, and C. Side B C is the pole. Vertex C is located on side A S of the outer triangle between vertices A and S. Angle C B S is 7 degrees.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_231.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165133348802">
+  <para id="fs-id1165133348805">51.4 feet  </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137832661" class="material-set-2">
+  <problem id="fs-id1165137832664">
+    <para id="fs-id1165134436094">To determine how far a boat is from shore, two radar stations 500 feet apart find the angles out to the boat, as shown in <link target-id="Figure_08_01_232"/>. Determine the distance of the boat from station <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> and the distance of the boat from shore. Round your answers to the nearest whole foot.</para><figure id="Figure_08_01_232" class="small"><media id="fs-id1165133340991" alt="A triangle formed by the two radar stations A and B and the boat. Side A B is the horizontal base. Angle A is 70 degrees and angle B is 60 degrees.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_232.jpg"/>
+</media>
+</figure></problem></exercise>
+
+<exercise id="fs-id1165133306908" class="material-set-2">
+  <problem id="fs-id1165133306910">
+    <para id="fs-id1165133306912"><link target-id="Figure_08_01_233"/> shows a satellite orbiting Earth. The satellite passes directly over two tracking stations <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> and <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> which are 69 miles apart. When the satellite is on one side of the two stations, the angles of elevation at <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> and <m:math>
+      <m:mrow>
+<m:mi>B</m:mi></m:mrow>
+    </m:math> are measured to be <m:math>
+      <m:mrow>
+<m:mn>83.9°</m:mn></m:mrow>
+    </m:math> and <m:math>
+      <m:mrow>
+<m:mn>86.2°</m:mn><m:mo>,</m:mo></m:mrow>
+    </m:math> respectively. How far is the satellite from station <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> and how high is the satellite above the ground? Round answers to the nearest whole mile.</para><figure id="Figure_08_01_233" class="small"><media id="fs-id1165135181798" alt="A triangle formed by two ground tracking stations A and B and the satellite. Side A B is the horizontal base of the triangle. Angle A is 83.9 degrees, and the supplementary angle to angle B is 86.2 degrees.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_233.jpg"/>
+</media>
+</figure></problem>
+
+
+<solution id="fs-id1165135181808">
+  <para id="fs-id1165133236439">The distance from the satellite to station <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi></m:mrow>
+  </m:math> is approximately 1716 miles. The satellite is approximately 1706 miles above the ground. </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135453148" class="material-set-2">
+  <problem id="fs-id1165135453150">
+    <para id="fs-id1165135453153">A communications tower is located at the top of a steep hill, as shown in <link target-id="Figure_08_01_234"/>. The angle of inclination of the hill is <m:math>
+      <m:mrow>
+<m:mn>67°</m:mn><m:mo/><m:mo>.</m:mo></m:mrow>
+    </m:math> A guy wire is to be attached to the top of the tower and to the ground, 165 meters downhill from the base of the tower. The angle formed by the guy wire and the hill is <m:math>
+      <m:mrow>
+<m:mn>16°.</m:mn></m:mrow>
+    </m:math> Find the length of the cable required for the guy wire to the nearest whole meter.</para><figure id="Figure_08_01_234" class="small"><media id="fs-id1165135695097" alt="A triangle formed by the bottom of the hill, the base of the tower at the top of the hill, and the top of the tower. The side between the bottom of the hill and the top of the tower is wire. The length of the side bertween the bottom of the hill and the bottom of the tower is 165 meters. The angle formed by the wire side and the bottom of the hill is 16 degrees. The angle between the hill and the horizontal ground is 67 degrees. ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_234.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+
+<exercise id="fs-id1165132957163" class="material-set-2">
+  <problem id="fs-id1165132957165">
+    <para id="fs-id1165132957167">The roof of a house is at a <m:math>
+      <m:mrow>
+<m:mn>20°</m:mn></m:mrow>
+    </m:math> angle. An 8-foot solar panel is to be mounted on the roof and should be angled <m:math>
+      <m:mrow>
+<m:mn>38°</m:mn></m:mrow>
+    </m:math> relative to the horizontal for optimal results. (See <link target-id="Figure_08_01_235"/>). How long does the vertical support holding up the back of the panel need to be? Round to the nearest tenth.</para><figure id="Figure_08_01_235" class="small"><media id="fs-id1165134263935" alt="A triangle whose sides are the solar panel, the roof which goes past the solar panel, and the vertical support for the panel. The solar panel side is 8 feet long. There are horizontal dotted lines at the bottom of the solar panel and the bottom of the roof. The angle between the solar panel and the horizontal is 38 degrees. The angle between the roof and the horizontal is 20 degrees.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_235.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165134239618">
+  <para id="fs-id1165134239620">2.6 ft
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165135154317" class="material-set-2">
+  <problem id="fs-id1165135154319">
+    <para id="fs-id1165135154321">Similar to an angle of elevation, an <emphasis effect="italics">angle of depression</emphasis> is the acute angle formed by a horizontal line and an observer’s line of sight to an object below the horizontal. A pilot is flying over a straight highway. He determines the angles of depression to two mileposts, 6.6 km apart, to be <m:math>
+      <m:mrow>
+<m:mn>37°</m:mn></m:mrow>
+    </m:math> and <m:math>
+      <m:mrow>
+<m:mn>44°</m:mn><m:mo>,</m:mo></m:mrow>
+    </m:math> as shown in <link target-id="Figure_08_01_236"/>. Find the distance of the plane from point <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> to the nearest tenth of a kilometer.</para><figure id="Figure_08_01_236" class="small"><media id="fs-id1165134401633" alt="A triangle formed by points A and B on the ground and a plane in the air between them. Side A B is the horizontal ground. There is a horizontal dotted line parallel to the ground going through the plane. The angle formed by the dotted horizontal, the plane, and point A is 37 degrees. The angle between the dotted horizontal, the plane, and point B is 44 degrees.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_236.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+<exercise id="fs-id1165134260436" class="material-set-2">
+  <problem id="fs-id1165134260439">
+    <para id="fs-id1165134260441">A pilot is flying over a straight highway. He determines the angles of depression to two mileposts, 4.3 km apart, to be 32° and 56°, as shown in <link target-id="Figure_08_01_237"/>. Find the distance of the plane from point <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> to the nearest tenth of a kilometer.</para><figure id="Figure_08_01_237" class="small"><media id="fs-id1165135186078" alt="A triangle formed between the plane and two points on the ground, A and B. Side A B is the horizontal base. The plane is above and to the left of both A and B. Point B is to the right of point A. There is a dotted horizontal line going through the plane parallel to the ground. The angle formed between point B, the plane, and the dotted horizontal line is 32 degrees. The angle formed between point A, the plane, and the dotted horizontal line is 56 degrees. ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_237.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165135339575">
+  <para id="fs-id1165135339577">5.6 km
+  </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135305774" class="material-set-2">
+  <problem id="fs-id1165135305776">
+    <para id="fs-id1165135305778">In order to estimate the height of a building, two students stand at a certain distance from the building at street level. From this point, they find the angle of elevation from the street to the top of the building to be 39°. They then move 300 feet closer to the building and find the angle of elevation to be 50°. Assuming that the street is level, estimate the height of the building to the nearest foot.</para></problem>
+</exercise>
+  <exercise id="fs-id1165135664922"><problem id="fs-id1165135664923"><para id="fs-id1165135664924">In order to estimate the height of a building, two students stand at a certain distance from the building at street level. From this point, they find the angle of elevation from the street to the top of the building to be 35°. They then move 250 feet closer to the building and find the angle of elevation to be 53°. Assuming that the street is level, estimate the height of the building to the nearest foot.</para></problem>
+<solution id="fs-id1165135664927">
+  <para id="fs-id1165135690038">371 ft
+  </para></solution> </exercise>
+<exercise id="fs-id1165135189790">
+  <problem id="fs-id1165135189792">
+    <para id="fs-id1165135189794">Points <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> and <m:math>
+      <m:mrow>
+<m:mi>B</m:mi></m:mrow>
+    </m:math> are on opposite sides of a lake. Point <m:math>
+      <m:mrow>
+<m:mi>C</m:mi></m:mrow>
+    </m:math> is 97 meters from <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> The measure of angle <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mi>A</m:mi><m:mi>C</m:mi></m:mrow>
+    </m:math> is determined to be 101°, and the measure of angle <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mi>C</m:mi><m:mi>B</m:mi>
+ </m:mrow>
+</m:math> is determined to be 53°. What is the distance from <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> to <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> rounded to the nearest whole meter?</para></problem>
+</exercise>
+<exercise id="fs-id1165135510852">
+  <problem id="fs-id1165137677990">
+    <para id="fs-id1165137677992">A man and a woman standing <m:math>
+      <m:mrow>
+<m:mn>3</m:mn><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        </m:mrow>
+    </m:math> miles apart spot a hot air balloon at the same time. If the angle of elevation from the man to the balloon is 27°, and the angle of elevation from the woman to the balloon is 41°, find the altitude of the balloon to the nearest foot.</para></problem>
+<solution id="fs-id1165134279662">
+  <para id="fs-id1165132945473">5936 ft
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165134084302">
+  <problem id="fs-id1165134084304">
+    <para id="fs-id1165134084306">Two search teams spot a stranded climber on a mountain. The first search team is 0.5 miles from the second search team, and both teams are at an altitude of 1 mile. The angle of elevation from the first search team to the stranded climber is 15°. The angle of elevation from the second search team to the climber is 22°. What is the altitude of the climber? Round to the nearest tenth of a mile.</para></problem>
+</exercise>
+<exercise id="fs-id1165134248783">
+  <problem id="fs-id1165134248785">
+    <para id="fs-id1165134248787">A street light is mounted on a pole. A 6-foot-tall man is standing on the street a short distance from the pole, casting a shadow. The angle of elevation from the tip of the man’s shadow to the top of his head of 28°. A 6-foot-tall woman is standing on the same street on the opposite side of the pole from the man. The angle of elevation from the tip of her shadow to the top of her head is 28°. If the man and woman are 20 feet apart, how far is the street light from the tip of the shadow of each person? Round the distance to the nearest tenth of a foot.</para></problem>
+<solution id="fs-id1165135442445">
+  <para id="fs-id1165135442447">24.1 ft</para></solution>
+</exercise>
+<exercise id="fs-id1165135173174">
+  <problem id="fs-id1165135551786">
+    <para id="fs-id1165135551788">Three cities, <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mo>,</m:mo><m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> and <m:math>
+      <m:mrow>
+<m:mi>C</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> are located so that city <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> is due east of city <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> If city <m:math>
+      <m:mrow>
+<m:mi>C</m:mi></m:mrow>
+    </m:math> is located 35° west of north from city <m:math>
+      <m:mrow>
+<m:mi>B</m:mi></m:mrow>
+    </m:math> and is 100 miles from city <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> and 70 miles from city <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> how far is city <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> from city <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>?</m:mo></m:mrow>
+    </m:math> Round the distance to the nearest tenth of a mile.</para></problem>
+</exercise>
+<exercise id="fs-id1165137898663" class="material-set-2">
+  <problem id="fs-id1165137898665">
+    <para id="fs-id1165137898668">Two streets meet at an 80° angle. At the corner, a park is being built in the shape of a triangle. Find the area of the park if, along one road, the park measures 180 feet, and along the other road, the park measures 215 feet.</para>
+  </problem>
+<solution id="fs-id1165137898676">
+  <para id="fs-id1165137898678">19,056 ft<sup>2</sup></para></solution>
+</exercise>
+  <exercise id="fs-id1165135553499" class="material-set-2">
+    <problem id="fs-id1165135648721">
+      <para id="fs-id1165135648724">Brian’s house is on a corner lot. Find the area of the front yard if the edges measure 40 and 56 feet, as shown in <link target-id="Figure_08_01_238"/>.</para>
+
+<figure id="Figure_08_01_238" class="small"><media id="fs-id1165137694933" alt="A triangle with angle 135 degrees. The sides adjacent to that angle are 56 feet and 40 feet. The other side is the house, length unknown.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_238.jpg"/>
+</media>
+</figure></problem>
+  </exercise>
+
+<exercise id="fs-id1165137694945">
+  <problem id="fs-id1165137694947">
+    <para id="fs-id1165134374758">The Bermuda triangle is a region of the Atlantic Ocean that connects Bermuda, Florida, and Puerto Rico. Find the area of the Bermuda triangle if the distance from Florida to Bermuda is 1030 miles, the distance from Puerto Rico to Bermuda is 980 miles, and the angle created by the two distances is 62°.</para></problem>
+<solution id="fs-id1165134374768">
+  <para id="fs-id1165134374770">445,624 square miles
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165137782252">
+  <problem id="fs-id1165137782254">
+    <para id="fs-id1165137782256">A yield sign measures 30 inches on all three sides. What is the area of the sign?</para>
+  </problem>
+</exercise>
+<exercise id="fs-id1165137782262">
+  <problem id="fs-id1165137782264">
+    <para id="fs-id1165137782266">Naomi bought a modern dining table whose top is in the shape of a triangle. Find the area of the table top if two of the sides measure 4 feet and 4.5 feet, and the smaller angles measure 32° and 42°, as shown in <link target-id="Figure_08_01_239"/>.</para><figure id="Figure_08_01_239" class="small"><media id="fs-id1165135413644" alt="A triangle. One angle is 32 degrees with opposite side = 4. Another angle is 42 degrees with opposite side = 4.5.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_239.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165133044322">
+  <para id="fs-id1165133044325">8.65 ft<sup>2</sup>
+  </para></solution>
+</exercise>
+</section>
+ </section></content>
+
+  <glossary>
+    <definition id="fs-id1165135646148">
+      <term>altitude</term> <meaning id="fs-id1165135646153">a perpendicular line from one vertex of a triangle to the opposite side, or in the case of an obtuse triangle, to the line containing the opposite side, forming two right triangles</meaning>
+    </definition>
+    <definition id="fs-id1165134357482">
+      <term>ambiguous case</term>
+      <meaning id="fs-id1165134357487">a scenario in which more than one triangle is a valid solution for a given oblique SSA triangle</meaning>
+    </definition>
+    <definition id="fs-id1165134357493">
+      <term>Law of Sines</term>
+      <meaning id="fs-id1165133234509">states that the ratio of the measurement of one angle of a triangle to the length of its opposite side is equal to the remaining two ratios of angle measure to opposite side; any pair of proportions may be used to solve for a missing angle or side</meaning>
+    </definition>
+    <definition id="fs-id1165133234516">
+      <term>oblique triangle</term>
+      <meaning id="fs-id1165135551173">any triangle that is not a right triangle</meaning></definition>
+  </glossary>
+</document>

@@ -1,0 +1,2740 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+
+<title>Absolute Value Functions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m49314</md:content-id>
+  <md:title>Absolute Value Functions</md:title>
+  <md:abstract>In this section you will:
+<list>
+<item>Graph an absolute value function.</item>
+<item>Solve an absolute value equation.</item>
+<item>Solve an absolute value inequality.</item>
+</list></md:abstract>
+  <md:uuid>224377fe-6ca8-48ab-bfdd-cd1d46bdd8c1</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+
+ <figure id="Figure_01_06_001" class="medium"><media id="fs-id1165137466427" alt="The Milky Way.">
+   <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_001n.jpg"/>
+  </media>
+
+ <caption>Distances in deep space can be measured in all directions. As such, it is useful to consider distance in terms of absolute values. (credit: "s58y"/Flickr)</caption></figure><para id="fs-id1165137475222">Until the 1920s, the so-called spiral nebulae were believed to be clouds of dust and gas in our own galaxy, some tens of thousands of light years away. Then, astronomer Edwin Hubble proved that these objects are galaxies in their own right, at distances of millions of light years. Today, astronomers can detect galaxies that are billions of light years away. Distances in the universe can be measured in all directions. As such, it is useful to consider distance as an absolute value function. In this section, we will investigate <term class="no-emphasis">absolute value functions</term>.
+ </para><section id="fs-id1165137426078">
+  <title>Understanding Absolute Value </title><para id="fs-id1165135449691">Recall that in its basic form <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+  </m:math> the absolute value function, is one of our toolkit functions. The <term class="no-emphasis">absolute value</term> function is commonly thought of as providing the distance the number is from zero on a number line. Algebraically, for whatever the input value is, the output is the value without regard to sign.</para>
+<note id="fs-id1165135404116">
+
+<title>Absolute Value Function</title>
+<para id="fs-id1165137832269">The absolute value function can be defined as a piecewise function</para>
+<equation id="fs-id1165137665354" class="unnumbered"><label/> <m:math display="block">
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mi>x</m:mi>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow>
+          <m:mtext>if</m:mtext></m:mrow>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow>
+          <m:mo>−</m:mo><m:mi>x</m:mi></m:mrow>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow>
+          <m:mtext>if</m:mtext></m:mrow>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable></m:mrow> </m:mrow></m:mrow>
+   </m:math>
+   </equation>
+  </note><example id="Example_01_06_01">
+   <exercise id="fs-id1165137437173">
+    <problem id="fs-id1165137618976">
+     <title>Determine a Number within a Prescribed Distance</title>
+     <para id="fs-id1165137761508">Describe all values <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi></m:mrow>
+     </m:math> within or including a distance of 4 from the number 5.</para>
+    </problem>
+    <solution id="fs-id1165135193649">
+     <para id="fs-id1165135424674">We want the distance between <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi></m:mrow>
+     </m:math> and 5 to be less than or equal to 4. We can draw a number line, such as the one in <link target-id="Figure_01_06_002"/>, to represent the condition to be satisfied.</para><figure id="Figure_01_06_002" class="small">
+     <media id="fs-id1165137761581" alt="Number line describing the difference of the distance of 4 away from 5.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_002-2c3f.jpg"/>
+     </media>
+    </figure>
+     <para id="fs-id1165137772130">The distance from <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi></m:mrow>
+     </m:math> to 5 can be represented using the absolute value as <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+     </m:math> We want the values of <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi></m:mrow>
+     </m:math> that satisfy the condition <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mn>4.</m:mn></m:mrow>
+     </m:math>
+     </para></solution>
+    <commentary id="fs-id1165137656116">
+     <title>Analysis </title>
+     <para id="fs-id1165135161478">Note that </para>
+
+
+     <equation id="fs-id1165134394601" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>4</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>≤</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165137569650">So <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mn>4</m:mn></m:mrow>
+     </m:math> is equivalent to <m:math>
+      <m:mrow>
+       <m:mn>1</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>9.</m:mn></m:mrow>
+     </m:math>
+     </para>
+     <para id="fs-id1165137539782">However, mathematicians generally prefer absolute value notation.</para>
+     </commentary>
+   </exercise>
+  </example>
+
+  <note id="fs-id1165137408957" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_06_01">
+    <problem id="fs-id1165135394308"><para id="fs-id1165135394310">Describe all values <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi></m:mrow>
+    </m:math> within a distance of 3 from the number 2.</para></problem>
+    <solution id="fs-id1165135160738"><para id="fs-id1165135160739"> <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mn>3</m:mn></m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+   </note>
+
+  <example id="Example_01_06_02">
+   <exercise id="fs-id1165137657277">
+    <problem id="fs-id1165137579723">
+     <title>Resistance of a Resistor</title>
+     <para id="fs-id1165135203760">Electrical parts, such as resistors and capacitors, come with specified values of their operating parameters: resistance, capacitance, etc. However, due to imprecision in manufacturing, the actual values of these parameters vary somewhat from piece to piece, even when they are supposed to be the same. The best that manufacturers can do is to try to guarantee that the variations will stay within a specified range, often <m:math>
+      <m:mrow>
+       <m:mtext>±1%,</m:mtext><m:mspace width="0.8em"/><m:mo>±</m:mo><m:mtext>5%,</m:mtext></m:mrow>
+     </m:math> or <m:math>
+      <m:mrow>
+       <m:mo>±</m:mo><m:mtext>10%</m:mtext><m:mtext>.</m:mtext></m:mrow>
+     </m:math>
+     </para>
+     <para id="fs-id1165135175007">Suppose we have a resistor rated at 680 ohms, <m:math>
+      <m:mrow>
+       <m:mo>±</m:mo><m:mn>5</m:mn><m:mi>%</m:mi><m:mo>.</m:mo></m:mrow>
+     </m:math> Use the absolute value function to express the range of possible values of the actual resistance.</para>
+    </problem>
+    <solution id="fs-id1165137786481">
+     <para id="fs-id1165137600783">5% of 680 ohms is 34 ohms. The absolute value of the difference between the actual and nominal resistance should not exceed the stated variability, so, with the resistance <m:math>
+      <m:mrow>
+       <m:mi>R</m:mi></m:mrow>
+     </m:math> in ohms,</para>
+
+     <equation id="fs-id1165135176481" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>R</m:mi><m:mo>−</m:mo><m:mn>680</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mn>34</m:mn></m:mrow>
+     </m:math>
+     </equation>
+    </solution>
+   </exercise>
+  </example>
+
+  <note id="fs-id1165137540249" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_06_02">
+    <problem id="fs-id1165137828265"><para id="fs-id1165137828266">Students who score within 20 points of 80 will pass a test. Write this as a distance from 80 using absolute value notation. </para></problem>
+    <solution id="fs-id1165137715310"><para id="fs-id1165134090680">using the variable <m:math>
+     <m:mrow>
+      <m:mi>p</m:mi></m:mrow>
+    </m:math> for passing, <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>p</m:mi><m:mo>−</m:mo><m:mn>80</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mn>20</m:mn></m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+  </note>
+ </section>
+
+ <section id="fs-id1165135186288">
+<title>Graphing an Absolute Value Function</title>
+<para id="fs-id1165135570012">The most significant feature of the absolute value graph is the corner point at which the graph changes direction. This point is shown at the <term class="no-emphasis">origin</term> in <link target-id="Figure_01_06_003"/>.</para><figure id="Figure_01_06_003" class="small">
+   <media id="fs-id1165137530693" alt="Graph of an absolute function">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_003-f97d.jpg"/>
+   </media>
+  </figure>
+
+  <para id="fs-id1165135639350"><link target-id="Figure_01_06_004"/> shows the graph of <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>3</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4.</m:mn> </m:mrow>
+</m:math> The graph of <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow> </m:mrow>
+</m:math> has been shifted right 3 units, vertically stretched by a factor of 2, and shifted up 4 units. This means that the corner point is located at <m:math>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow>
+     <m:mo>)</m:mo></m:mrow></m:mrow>
+  </m:math> for this transformed function.</para><figure id="Figure_01_06_004" class="small">
+   <media id="fs-id1165137768813" alt="Graph of the different types of transformations for an absolute function.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_004-eab2.jpg"/>
+   </media>
+  </figure>
+
+  <example id="Example_01_06_03">
+   <exercise id="fs-id1165135187768">
+    <problem id="fs-id1165137741094">
+     <title>Writing an Equation for an Absolute Value Function</title>
+     <para id="fs-id1165135414332">Write an equation for the function graphed in <link target-id="Figure_01_06_005"/>.</para>
+
+     <figure id="Figure_01_06_005" class="small">
+      <media id="fs-id1165137838653" alt="Graph of an absolute function.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_005-7ac2.jpg"/>
+      </media>
+     </figure>
+
+    </problem>
+    <solution id="fs-id1165137736321">
+     <para id="fs-id1165137680556">The basic absolute value function changes direction at the origin, so this graph has been shifted to the right 3 units and down 2 units from the basic toolkit function. See <link target-id="Figure_01_06_006"/>.</para>
+
+
+    <figure id="Figure_01_06_006" class="small">
+     <media id="fs-id1165137901124" alt="Graph of two transformations for an absolute function at (3, -2).">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_006-ccf0.jpg"/>
+     </media>
+    </figure>
+
+     <para id="fs-id1165137805107">We also notice that the graph appears vertically stretched, because the width of the final graph on a horizontal line is not equal to 2 times the vertical distance from the corner to this line, as it would be for an unstretched absolute value function. Instead, the width is equal to 1 times the vertical distance as shown in <link target-id="Figure_01_06_007"/>.</para>
+
+    <figure id="Figure_01_06_007" class="small">
+     <media id="fs-id1165135388376" alt="Graph of two transformations for an absolute function at (3, -2) and describes the ratios between the two different transformations.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_007-b405.jpg"/>
+     </media>
+    </figure>
+
+    <para id="fs-id1165137732766">From this information we can write the equation</para>
+     <equation id="fs-id1165137425569" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>|</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>treating the stretch as a vertical stretch, or</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>|</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>|</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>treating the stretch as a horizontal compression</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+    <commentary id="fs-id1165137706602">
+     <title>Analysis </title>
+     <para id="fs-id1165137591631">Note that these equations are algebraically equivalent—the stretch for an absolute value function can be written interchangeably as a vertical or horizontal stretch or compression. Note also that if the vertical stretch factor is negative, there is also a reflection about the x-axis.</para>
+     </commentary>
+   </exercise>
+  </example>
+
+ <note id="fs-id1165134377948" class="precalculus qa">
+<label>Q&amp;A</label>
+  <para id="fs-id1165135245777"><emphasis>If we couldn’t observe the stretch of the function from the graphs, could we algebraically determine it?</emphasis></para><para id="fs-id1165137473393"><emphasis effect="italics">Yes. If we are unable to determine the stretch based on the width of the graph, we can solve for the stretch factor by putting in a known pair of values for <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi></m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+  </m:math>
+  </emphasis></para>
+  <equation id="fs-id1165135514699" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>|</m:mo><m:mo>−</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137694034"><emphasis effect="italics">Now substituting in the point </emphasis>(1, 2)</para>
+  <equation id="fs-id1165135173265" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>=</m:mo><m:mi>a</m:mi><m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mn>1</m:mn><m:mo>−</m:mo><m:mn>3</m:mn>
+      </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>a</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></note>
+<note id="fs-id1165137611709" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_06_03">
+    <problem id="fs-id1165134312222">
+     <para id="fs-id1165135497155">Write the equation for the absolute value function that is horizontally shifted left 2 units, is vertically flipped, and vertically shifted up 3 units. </para></problem>
+    <solution id="fs-id1165137405204">
+     <para id="fs-id1165137758260"> <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </solution>
+   </exercise>
+  </note>
+
+  <note id="fs-id1165135203778" class="precalculus qa">
+<label>Q&amp;A</label>
+  <para id="fs-id1165137527840"><emphasis>Do the graphs of absolute value functions always intersect the vertical axis? The horizontal axis?
+  </emphasis></para>
+   <para id="fs-id1165137581861"><emphasis effect="italics">Yes, they always intersect the vertical axis. The graph of an absolute value function will intersect the vertical axis when the input is zero.
+   </emphasis></para>
+   <para id="fs-id1165137444543"><emphasis effect="italics">No, they do not always intersect the horizontal axis. The graph may or may not intersect the horizontal axis, depending on how the graph has been shifted and reflected. It is possible for the absolute value function to intersect the horizontal axis at zero, one, or two points (see <link target-id="Figure_01_06_008"/>).
+   </emphasis></para>
+</note>
+
+
+   <figure id="Figure_01_06_008">
+    <media id="fs-id1165135523418" alt="Graph of the different types of transformations for an absolute function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_008abc-8a0c.jpg"/>
+    </media>
+    <caption>(a) The absolute value function does not intersect the horizontal axis. (b) The absolute value function intersects the horizontal axis at one point. (c) The absolute value function intersects the horizontal axis at two points.</caption>
+   </figure>
+  </section><section id="fs-id1165133257286">
+<title>Solving an Absolute Value Equation</title>
+<para id="fs-id1165137401775">Now that we can graph an absolute value function, we will learn how to solve an absolute value equation. To solve an equation such as <m:math>
+   <m:mrow>
+    <m:mn>8</m:mn><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+  </m:math> we notice that the absolute value will be equal to 8 if the quantity inside the absolute value is 8 or -8. This leads to two different equations we can solve independently.</para>
+
+<equation id="fs-id1165137583696" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>or</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>14</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137641126">Knowing how to solve problems involving <term class="no-emphasis">absolute value functions</term> is useful. For example, we may need to identify numbers or points on a line that are at a specified distance from a given reference point.</para><para id="fs-id1165137937577">An <term>absolute value equation</term> is an equation in which the unknown variable appears in absolute value bars. For example,</para>
+  <equation id="fs-id1165137646929" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+      </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+      </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><note id="fs-id1165137692078">
+
+   <title>Solutions to Absolute Value Equations</title>
+   <para id="fs-id1165137809877">For real numbers <m:math>
+    <m:mrow>
+     <m:mi>A</m:mi></m:mrow>
+   </m:math> and <m:math>
+    <m:mrow>
+     <m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+   </m:math> an equation of the form <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+   </m:math> with <m:math>
+    <m:mrow>
+     <m:mi>B</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+   </m:math> will have solutions when <m:math>
+    <m:mrow>
+     <m:mi>A</m:mi><m:mo>=</m:mo><m:mi>B</m:mi></m:mrow>
+   </m:math> or <m:math>
+    <m:mrow>
+     <m:mi>A</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>B</m:mi><m:mo>.</m:mo></m:mrow>
+   </m:math> If <m:math>
+    <m:mrow>
+     <m:mi>B</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+   </m:math> the equation <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mi>B</m:mi></m:mrow>
+   </m:math> has no solution.</para>
+  </note>
+
+  <note id="fs-id1165135160087" class="how-to-notitle">
+   <label>How To</label>
+   <para id="fs-id1165135593248"><emphasis>Given the formula for an absolute value function, find the horizontal intercepts of its graph</emphasis>.</para>
+   <list id="fs-id1165131968095" list-type="enumerated" number-style="arabic"><item>Isolate the absolute value term.</item>
+    <item>Use <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mi>B</m:mi></m:mrow>
+    </m:math> to write <m:math>
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo>=</m:mo><m:mi>B</m:mi></m:mrow>
+    </m:math> or <m:math>
+ <m:mrow>
+  <m:mi>−A</m:mi><m:mo>=</m:mo><m:mi>B</m:mi><m:mo>,</m:mo> </m:mrow>
+</m:math> assuming <m:math>
+     <m:mrow>
+      <m:mi>B</m:mi><m:mo>&gt;</m:mo><m:mn>0.</m:mn></m:mrow>
+    </m:math>
+  </item>
+    <item>Solve for <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </item>
+   </list></note>
+
+  <example id="Example_01_06_04"><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137619575"><problem id="fs-id1165135309797">
+     <title>Finding the Zeros of an Absolute Value Function</title>
+     <para id="fs-id1165137527684">For the function <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow></m:math>, find the values of
+
+ <m:math><m:mrow><m:mi>x</m:mi></m:mrow></m:math> such that
+
+ <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>.
+     </para></problem>
+     <solution id="fs-id1165137405662">
+      <para id="delete_me"><table id="tictactoe" class="unnumbered" summary="A 3 by 3 table representing a completed game of tic tac toe in which neither player has won."><label/>
+<tgroup cols="2" align="left"><tbody>
+    <row><entry align="center">
+ <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mo>|</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>|</m:mo><m:mo>−</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+</m:mtr></m:mtable></m:mrow></m:math> </entry>
+<entry align="center">Substitute 0 for f(x).</entry></row>
+
+<row><entry align="center">
+  <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>7</m:mn><m:mo>=</m:mo><m:mo>|</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>|</m:mo>
+     </m:mrow>
+    </m:mtd>
+</m:mtr></m:mtable></m:mrow></m:math> </entry>
+<entry align="center">Isolate the absolute value on one side of the equation.</entry></row>
+
+<row><entry align="center">
+
+
+
+ <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>7</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>or</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>6</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd></m:mtr>
+
+
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>6</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>1.5</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>8</m:mn>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+       </m:mtr></m:mtable></m:mrow></m:math> </entry>
+
+
+   <entry align="center">Break into two separate equations and solve.</entry></row></tbody>
+
+
+
+
+
+
+
+</tgroup>
+</table></para>
+
+<para id="fs-id1165137870931">The function outputs 0 when <m:math>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.5</m:mn>
+        </m:mrow>
+      </m:math> or <m:math>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2.</m:mn></m:mrow>
+      </m:math> See <link target-id="Figure_01_06_011"/>.
+      </para><figure id="Figure_01_06_011" class="medium"><media id="fs-id1165137662351" alt="Graph an absolute function with x-intercepts at -2 and 1.5.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_011F-d7a0.jpg"/>
+      </media>
+     </figure></solution>
+   </exercise></example><note id="fs-id1165137599670" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_06_04">
+    <problem id="fs-id1165135191411"><para id="fs-id1165137843093">For the function <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> find the values of <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi> </m:mrow>
+</m:math> such that <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math>
+  </para></problem>
+    <solution id="fs-id1165137939483"><para id="fs-id1165137481390"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> or <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math>
+</para></solution>
+   </exercise>
+  </note>
+
+  <note id="fs-id1165135175321" class="precalculus qa">
+   <label>Q&amp;A</label>
+   <para id="fs-id1165135606935"><emphasis>Should we always expect two answers when solving <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mi>B</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> </emphasis></para><para id="fs-id1165137755892"><emphasis effect="italics">No. We may find one, two, or even no answers. For example, there is no solution to</emphasis>
+
+ <m:math>
+    <m:mrow>
+     <m:mn>2</m:mn><m:mo>+</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+   </m:math>
+
+   </para></note>
+
+  <note id="fs-id1165137911662" class="how-to-notitle">
+   <label>How To</label>
+   <para id="fs-id1165137647413"><emphasis>Given an absolute value equation, solve it.</emphasis></para>
+   <list id="fs-id1165137589466" list-type="enumerated" number-style="arabic"><item>Isolate the absolute value term.</item>
+    <item>Use <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mi>B</m:mi></m:mrow>
+    </m:math> to write <m:math>
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo>=</m:mo><m:mi>B</m:mi></m:mrow>
+    </m:math> or <m:math>
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo>=</m:mo><m:mi>−B</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </item>
+    <item>Solve for <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </item>
+   </list></note>
+
+  <example id="Example_01_06_05">
+   <exercise id="fs-id1165137727865">
+    <problem id="fs-id1165135195112">
+     <title>Solving an Absolute Value Equation</title>
+     <para id="fs-id1165137695200">Solve <m:math>
+      <m:mrow>
+       <m:mn>1</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2.</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165137561245">
+     <para id="fs-id1165135210177">Isolating the absolute value on one side of the equation gives the following.</para>
+
+     <equation id="fs-id1165137732202" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137611734">The absolute value always returns a positive value, so it is impossible for the absolute value to equal a negative value. At this point, we notice that this equation has no solutions.</para>
+    </solution>
+   </exercise>
+  </example>
+
+  <note id="fs-id1165137465993" class="precalculus qa">
+<label>Q&amp;A</label>
+   <para id="fs-id1165137573052"><emphasis>In <link target-id="Example_01_06_05"/>, if <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+   </m:math> and <m:math>
+    <m:mrow>
+     <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+   </m:math> were graphed on the same set of axes, would the graphs intersect?</emphasis></para>
+   <para id="fs-id1165137602208"><emphasis effect="italics">No. The graphs of <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi></m:mrow>
+   </m:math> and <m:math>
+    <m:mrow>
+     <m:mi>g</m:mi></m:mrow>
+   </m:math> would not intersect, as shown in <link target-id="Figure_01_06_012"/>. This confirms, graphically, that the equation <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn> </m:mrow>
+</m:math> has no solution.</emphasis></para></note>
+
+
+    <figure id="Figure_01_06_012" class="small">
+     <media id="fs-id1165135190179" alt="Graph of g(x)=4|x-2|+2 and f(x)=1.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_012.jpg"/>
+     </media>
+    </figure>
+
+
+  <note id="fs-id1165135195670" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_06_05">
+    <problem id="fs-id1165137735929"><para id="fs-id1165137735930">Find where the graph of the function <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+    </m:math> intersects the horizontal and vertical axes.</para></problem>
+    <solution id="fs-id1165134057566"><para id="fs-id1165137452134"> <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+    </m:math> so the graph intersects the vertical axis at <m:math>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+    </m:math> <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+    </m:math> when <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow>
+    </m:math> and <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:math> so the graph intersects the horizontal axis at <m:math>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> and <m:math>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+  </note>
+   </section><section id="fs-id1165135571678">
+  <title>Solving an Absolute Value Inequality</title>
+  <para id="fs-id1165137583863">Absolute value equations may not always involve equalities. Instead, we may need to solve an equation within a range of values. We would use an absolute value inequality to solve such an equation. An <term>absolute value inequality</term> is an equation of the form</para>
+  <equation id="fs-id1165134065110" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>|</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mi>B</m:mi><m:mo>,</m:mo><m:mo>|</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mo>≤</m:mo><m:mi>B</m:mi><m:mo>,</m:mo><m:mo>|</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:mi>B</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext>or</m:mtext><m:mspace width="0.8em"/><m:mo>|</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mo>≥</m:mo><m:mi>B</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135154162">where an expression <m:math>
+   <m:mrow>
+    <m:mi>A</m:mi></m:mrow>
+  </m:math> (and possibly but not usually <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi>
+ </m:mrow>
+</m:math> ) depends on a variable <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Solving the inequality means finding the set of all <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi></m:mrow>
+   </m:math> that satisfy the inequality. Usually this set will be an interval or the union of two intervals.</para><para id="fs-id1165137580992">There are two basic approaches to solving absolute value inequalities: graphical and algebraic. The advantage of the graphical approach is we can read the solution by interpreting the graphs of two functions. The advantage of the algebraic approach is it yields solutions that may be difficult to read from the graph.</para>
+  <para id="fs-id1165137557647">For example, we know that all numbers within 200 units of 0 may be expressed as</para>
+  <equation id="fs-id1165137543814" class="unnumbered"><label/> <m:math display="block">
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mn>200</m:mn><m:mspace width="0.8em"/><m:mtext>or</m:mtext><m:mspace width="0.8em"/><m:mo>−</m:mo><m:mn>200</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>200</m:mn></m:mrow>
+  </m:math>
+  </equation><para id="fs-id1165137610749">Suppose we want to know all possible returns on an investment if we could earn some amount of money within $200 of $600. We can solve algebraically for the set of values <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math>
+such that the distance between <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi></m:mrow>
+  </m:math> and 600 is less than 200. We represent the distance between <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi></m:mrow>
+  </m:math>
+   and 600 as <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>|</m:mo> <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>600</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+   </m:math>
+  </para>
+
+<equation id="fs-id1165137755666" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+<m:mtr/>
+<m:mtr>
+   <m:mtd>
+    <m:mo>|</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>600</m:mn><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mn>200</m:mn><m:mtext>    or    </m:mtext><m:mo>−</m:mo><m:mn>200</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>600</m:mn><m:mo>&lt;</m:mo><m:mn>200</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtext>  </m:mtext><m:mo>−</m:mo><m:mn>200</m:mn><m:mo>+</m:mo><m:mn>600</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>600</m:mn><m:mo>+</m:mo><m:mn>600</m:mn><m:mo>&lt;</m:mo><m:mn>200</m:mn><m:mo>+</m:mo><m:mn>600</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtext>                      </m:mtext><m:mn>400</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>800</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation><para id="fs-id1165137804310">This means our returns would be between $400 and $800.</para>
+  <para id="fs-id1165137507358">Sometimes an absolute value inequality problem will be presented to us in terms of a shifted and/or stretched or compressed absolute value function, where we must determine for which values of the input the function’s output will be negative or positive.</para>
+<note id="fs-id1165137667916" class="how-to-notitle">
+   <label>How To</label>
+   <para id="fs-id1165137502428"><emphasis>Given an absolute value inequality of the form <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>A</m:mi>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mi>B</m:mi> </m:mrow>
+</m:math> for real numbers <m:math>
+    <m:mrow>
+     <m:mi>a</m:mi></m:mrow>
+   </m:math> and <m:math>
+    <m:mrow>
+     <m:mi>b</m:mi></m:mrow>
+   </m:math> where <m:math>
+    <m:mrow>
+     <m:mi>b</m:mi></m:mrow>
+   </m:math> is positive, solve the absolute value inequality algebraically.</emphasis></para><list id="fs-id1165137563287" list-type="enumerated" number-style="arabic"><item>Find boundary points by solving <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>A</m:mi>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mi>B</m:mi><m:mo>.</m:mo> </m:mrow>
+</m:math> </item>
+
+<item>Test intervals created by the boundary points to determine where <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>A</m:mi>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mi>B</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+
+   <item>Write the interval or union of intervals satisfying the inequality in interval, inequality, or set-builder notation.</item>
+   </list></note>
+
+  <example id="Example_01_06_06">
+   <exercise id="fs-id1165135704112"><problem id="fs-id1165137401703">
+     <title>Solving an Absolute Value Inequality</title>
+     <para id="fs-id1165135342955">Solve <m:math>
+ <m:mrow>
+  <m:mo>|</m:mo><m:mi>x</m:mi><m:mspace width="0.8em"/><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>|</m:mo><m:mo>≤</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165137550840">
+     <para id="fs-id1165137645044">With both approaches, we will need to know first where the corresponding equality is true. In this case we first will find where <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+</m:math> We do this because the absolute value is a function with no breaks, so the only way the function values can switch from being less than 4 to being greater than 4 is by passing through where the values equal 4. Solve <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+     </m:math>
+     </para>
+
+<equation id="fs-id1165135341386" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>or</m:mtext><m:mspace width="0.8em"/></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137665217">After determining that the absolute value is equal to 4 at <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> and <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow>
+     </m:math> we know the graph can change only from being less than 4 to greater than 4 at these values. This divides the number line up into three intervals:</para>
+     <equation id="fs-id1165137423933" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mtext> and  </m:mtext><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>9.</m:mn></m:mrow>
+     </m:math>
+     </equation><para id="fs-id1165137422669">To determine when the function is less than 4, we could choose a value in each interval and see if the output is less than or greater than 4, as shown in <link target-id="Table_01_06_01"/>.</para><table id="Table_01_06_01" summary="Table describing the interval test for certain inequalities for x. So if x&lt;1 and f(x)=0, then |0-5|&gt;4. If1&lt; x&lt;9 and f(x)=6, then |6-5|&lt;4. If x&lt;9 and f(x)=11, then |11-5|&gt;4.">
+      <title/>
+      <tgroup cols="4">
+
+       <colspec colnum="1" colname="c1"/>
+       <colspec colnum="2" colname="c2" align="left"/>
+       <colspec colnum="3" colname="c3" align="left"/>
+       <colspec colnum="4" colname="c4" align="left"/>
+       <thead>
+        <row>
+         <entry align="center">Interval test <m:math>
+          <m:mrow>
+           <m:mi>x</m:mi></m:mrow>
+         </m:math>
+         </entry>
+         <entry align="center"> <m:math>
+          <m:mrow>
+           <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+         </m:math>
+         </entry>
+         <entry align="center" namest="c3" nameend="c4"> <m:math>
+          <m:mrow>
+           <m:mo>&lt;</m:mo><m:mn>4</m:mn></m:mrow>
+         </m:math> or <m:math>
+          <m:mrow>
+           <m:mo>&gt;</m:mo><m:mn>4</m:mn><m:mo>?</m:mo></m:mrow>
+         </m:math>
+
+         </entry>
+        </row>
+       </thead>
+       <tbody>
+        <row>
+         <entry align="center"> <m:math>
+          <m:mrow>
+           <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow>
+         </m:math>
+         </entry>
+         <entry align="center">0</entry>
+         <entry align="center"> <m:math>
+          <m:mrow>
+           <m:mrow><m:mo>|</m:mo> <m:mrow>
+            <m:mn>0</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow>
+         </m:math>
+         </entry>
+         <entry align="center">Greater than</entry>
+        </row>
+        <row>
+         <entry align="center"> <m:math>
+          <m:mrow>
+           <m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>9</m:mn></m:mrow>
+         </m:math>
+         </entry>
+         <entry align="center">6</entry>
+         <entry align="center"> <m:math>
+          <m:mrow>
+           <m:mrow><m:mo>|</m:mo> <m:mrow>
+            <m:mn>6</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+         </m:math>
+         </entry>
+         <entry align="center">Less than</entry>
+        </row>
+        <row>
+         <entry align="center"> <m:math>
+          <m:mrow>
+           <m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>9</m:mn></m:mrow>
+         </m:math>
+         </entry>
+         <entry align="center">11</entry>
+         <entry align="center"> <m:math>
+          <m:mrow>
+           <m:mrow><m:mo>|</m:mo> <m:mrow>
+            <m:mn>11</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow>
+         </m:math>
+         </entry>
+         <entry align="center">Greater than</entry>
+         </row>
+       </tbody>
+
+      </tgroup>
+     </table>
+
+
+     <para id="fs-id1165137558949">Because <m:math>
+      <m:mrow>
+       <m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>9</m:mn></m:mrow>
+     </m:math> is the only interval in which the output at the test value is less than 4, we can conclude that the solution to <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mn>4</m:mn></m:mrow>
+     </m:math> is <m:math>
+      <m:mrow>
+       <m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow>
+     </m:math> or <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>(</m:mo> <m:mrow>
+        <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </para>
+     <para id="fs-id1165137424051">To use a graph, we can sketch the function <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+     </m:math> To help us see where the outputs are 4, the line <m:math>
+      <m:mrow>
+       <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+     </m:math> could also be sketched as in <link target-id="Figure_01_06_013"/>.</para>
+
+    <figure id="Figure_01_06_013" class="small">
+     <media id="fs-id1165137704773" alt="Graph of an absolute function and a vertical line, demonstrating how to see what outputs are less than the vertical line.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_013.jpg"/>
+     </media>
+     <caption>Graph to find the points satisfying an absolute value inequality.</caption>
+    </figure>
+
+    <para id="fs-id1165137874583">We can see the following:</para><list id="fs-id1165134148370">
+     <item>The output values of the absolute value are equal to 4 at <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> and <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9.</m:mn></m:mrow>
+     </m:math>
+     </item>
+     <item>The graph of <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi></m:mrow>
+     </m:math> is below the graph of <m:math>
+      <m:mrow>
+       <m:mi>g</m:mi></m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>9.</m:mn></m:mrow>
+     </m:math> This means the output values of <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> are less than the output values of <m:math>
+      <m:mrow>
+       <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </item>
+     <item>The absolute value is less than or equal to 4 between these two points, when <m:math>
+      <m:mrow>
+       <m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>9.</m:mn></m:mrow>
+     </m:math> In interval notation, this would be the interval <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>(</m:mo> <m:mrow>
+        <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </item>
+    </list>
+    </solution>
+    <commentary id="fs-id1165135381301">
+     <title>Analysis </title>
+
+
+     <para id="fs-id1165135689465">For absolute value inequalities,</para>
+     <equation id="fs-id1165135650752" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>|</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mi>C</m:mi><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>|</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:mi>C</m:mi><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mi>C</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>A</m:mi><m:mo>&lt;</m:mo><m:mi>C</m:mi><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>A</m:mi><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mi>C</m:mi><m:mtext> or </m:mtext><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>A</m:mi><m:mo>&gt;</m:mo><m:mi>C</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165135195336">The <m:math>
+ <m:mrow>
+  <m:mo>&lt;</m:mo> </m:mrow>
+</m:math> or <m:math>
+ <m:mrow>
+  <m:mo>&gt;</m:mo> </m:mrow>
+</m:math> symbol may be replaced by <m:math>
+      <m:mrow>
+       <m:mo>≤</m:mo><m:mtext> or </m:mtext><m:mo>≥</m:mo><m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </para><para id="fs-id1165135524557">So, for this example, we could use this alternative approach.</para>
+     <equation id="fs-id1165134226778" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>|</m:mo><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>|</m:mo><m:mo>≤</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>4</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>≤</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Rewrite by removing the absolute value bars</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>≤</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Isolate the </m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></commentary>
+   </exercise></example>
+
+  <note id="fs-id1165137762260" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_06_06"><problem id="fs-id1165137810520">
+    <para id="fs-id1165137450875">Solve <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mn>6.</m:mn></m:mrow>
+    </m:math>
+    </para>
+</problem>
+    <solution id="fs-id1165137447691"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137447692"> <m:math>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>8</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>4</m:mn></m:mrow>
+    </m:math>
+     </para></solution>
+    </exercise>
+    </note>
+
+
+  <note id="fs-id1165137530158" class="how-to-notitle">
+   <label>How To</label>
+   <para id="fs-id1165135445865"><emphasis>Given an absolute value function, solve for the set of inputs where the output is positive (or negative).
+   </emphasis></para>
+   <list id="fs-id1165137572514" list-type="enumerated" number-style="arabic">
+    <item>Set the function equal to zero, and solve for the boundary points of the solution set.</item>
+   <item>Use test points or a graph to determine where the function’s output is positive or negative.</item>
+   </list>
+  </note>
+
+  <example id="Example_01_06_07">
+   <exercise id="fs-id1165137409791">
+    <problem id="fs-id1165137838822">
+     <title>Using a Graphical Approach to Solve Absolute Value Inequalities</title>
+     <para id="fs-id1165137933778">Given the function <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+     </m:math> determine the <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mtext>-</m:mtext>
+ </m:mrow>
+</m:math> values for which the function values are negative.</para></problem>
+    <solution id="fs-id1165137921789">
+     <para id="fs-id1165137431799">We are trying to determine where <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo> </m:mrow>
+</m:math> which is when <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mspace width="0.8em"/><m:mo>|</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>|</m:mo><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>&lt;</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> We begin by isolating the absolute value.</para>
+
+<equation id="fs-id1165135640966" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>|</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiply both sides by –2, and reverse the inequality</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>|</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>|</m:mo><m:mo>&gt;</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135317447">Next we solve for the equality <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6.</m:mn></m:mrow>
+     </m:math>
+     </para>
+     <equation id="fs-id1165135307916" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+         <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  or</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>11</m:mn>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135344887">Now, we can examine the graph of <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi></m:mrow>
+     </m:math> to observe where the output is negative. We will observe where the branches are below the <emphasis effect="italics">x</emphasis>-axis. Notice that it is not even important exactly what the graph looks like, as long as we know that it crosses the horizontal axis at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+   </m:mrow>
+</m:math> and <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+        <m:mrow>
+         <m:mn>11</m:mn></m:mrow>
+        <m:mn>4</m:mn>
+       </m:mfrac>
+       </m:mrow>
+     </m:math> and that the graph has been reflected vertically. See <link target-id="Figure_01_06_014"/><emphasis>.</emphasis></para><figure id="Figure_01_06_014" class="small">
+     <media id="fs-id1165137728256" alt="Graph of an absolute function with x-intercepts at -0.25 and 2.75.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_014.jpg"/>
+     </media>
+    </figure>
+
+     <para id="fs-id1165137725461">We observe that the graph of the function is below the <emphasis effect="italics">x</emphasis>-axis left of <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+   </m:mrow>
+</m:math> and right of <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+        <m:mrow>
+         <m:mn>11</m:mn></m:mrow>
+        <m:mn>4</m:mn>
+       </m:mfrac>
+       <m:mo>.</m:mo></m:mrow>
+     </m:math> This means the function values are negative to the left of the first horizontal intercept at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo> </m:mrow>
+</m:math> and negative to the right of the second intercept at <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+        <m:mrow>
+         <m:mn>11</m:mn></m:mrow>
+        <m:mn>4</m:mn>
+       </m:mfrac>
+       <m:mo>.</m:mo></m:mrow>
+     </m:math> This gives us the solution to the inequality.</para>
+<equation id="fs-id1165137460499" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>4</m:mn>
+       </m:mfrac>
+       <m:mtext> </m:mtext><m:mtext>or</m:mtext><m:mtext> </m:mtext><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mfrac>
+        <m:mrow>
+         <m:mn>11</m:mn></m:mrow>
+        <m:mn>4</m:mn>
+       </m:mfrac>
+      </m:mrow>
+     </m:math>
+     </equation><para id="fs-id1165135502945">In interval notation, this would be <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>0.25</m:mn></m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>2.75</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi></m:mrow>
+         <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </solution>
+   </exercise>
+  </example>
+
+  <note id="fs-id1165137805480" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_06_07">
+    <problem id="fs-id1165137784437"><para id="fs-id1165137784438">Solve <m:math>
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>k</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mo>−</m:mo><m:mn>6.</m:mn></m:mrow>
+    </m:math>
+   </para></problem>
+    <solution id="fs-id1165135547314"><para id="fs-id1165137767092"> <m:math>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:math> or <m:math>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mo>≥</m:mo><m:mn>7</m:mn><m:mo>;</m:mo></m:mrow>
+    </m:math> in interval notation, this would be <m:math>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">]</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">[</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+  </note>
+
+  <note id="fs-id1165134257615" class="precalculus media media-notitle">
+   <label>Media</label>
+   <para id="fs-id1165134332731">Access these online resources for additional instruction and practice with absolute value.</para>
+  <list id="fs-id1165137508064" list-type="bulleted"><item><link url="http://openstax.org/l/graphabsvalue">Graphing Absolute Value Functions</link></item>
+   <item><link url="http://openstax.org/l/graphabsvalue2">Graphing Absolute Value Functions 2</link></item>
+   <item><link url="http://openstax.org/l/findeqabsval">Equations of Absolute Value Function</link></item>
+   <item><link url="http://openstax.org/l/findeqabsval2">Equations of Absolute Value Function 2</link></item>
+   <item><link url="http://openstax.org/l/solveabsvalueeq">Solving Absolute Value Equations</link></item>
+  </list></note>
+ </section>
+
+ <section id="fs-id1165133291312" class="key-concepts">
+  <title>Key Concepts</title>
+  <list id="fs-id1165135332513"><item>The absolute value function is commonly used to measure distances between points. See <link target-id="Example_01_06_01"/>.</item>
+   <item>Applied problems, such as ranges of possible values, can also be solved using the absolute value function. See <link target-id="Example_01_06_02"/>.</item>
+   <item>The graph of the absolute value function resembles a letter V. It has a corner point at which the graph changes direction. See <link target-id="Example_01_06_03"/>.</item>
+  <item>In an absolute value equation, an unknown variable is the input of an absolute value function.</item>
+   <item>If the absolute value of an expression is set equal to a positive number, expect two solutions for the unknown variable. See <link target-id="Example_01_06_04"/>.</item>
+   <item>An absolute value equation may have one solution, two solutions, or no solutions. See <link target-id="Example_01_06_05"/>.</item>
+   <item>An absolute value inequality is similar to an absolute value equation but takes the form <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mi>B</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mi>B</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mi>B</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext>or</m:mtext><m:mspace width="0.8em"/><m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>≥</m:mo><m:mi>B</m:mi><m:mo>.</m:mo></m:mrow>
+   </m:math> It can be solved by determining the boundaries of the solution set and then testing which segments are in the set. See <link target-id="Example_01_06_06"/>.</item>
+   <item>Absolute value inequalities can also be solved graphically. See <link target-id="Example_01_06_07"/>.</item>
+  </list></section>
+
+ <section id="fs-id1165135255406" class="section-exercises">
+<title>Section Exercise</title>
+<section id="fs-id1165137406985">
+   <title>Verbal</title>
+   <exercise id="fs-id1165137734873">
+    <problem id="fs-id1165135510060">
+     <para id="fs-id1165134347447">How do you solve an absolute value equation?</para>
+    </problem>
+   <solution id="fs-id1165135206149">
+    <para id="fs-id1165135189754">Isolate the absolute value term so that the equation is of the form <m:math>
+     <m:mrow>
+      <m:mo>|</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mo>=</m:mo><m:mi>B</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> Form one equation by setting the expression inside the absolute value symbol, <m:math>
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> equal to the expression on the other side of the equation, <m:math>
+     <m:mrow>
+      <m:mi>B</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> Form a second equation by setting <m:math>
+     <m:mrow>
+      <m:mi>A</m:mi></m:mrow>
+    </m:math> equal to the opposite of the expression on the other side of the equation, <m:math>
+     <m:mrow>
+      <m:mo>−</m:mo><m:mi>B</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> Solve each equation for the variable.</para>
+   </solution>
+   </exercise>
+   <exercise id="fs-id1165137593210">
+    <problem id="fs-id1165131968049">
+     <para id="fs-id1165135440055">How can you tell whether an absolute value function has two <emphasis effect="italics">x</emphasis>-intercepts without graphing the function?</para></problem>
+   </exercise>
+   <exercise id="fs-id1165133103957">
+    <problem id="fs-id1165133103959">
+     <para id="fs-id1165137647741">When solving an absolute value function, the isolated absolute value term is equal to a negative number. What does that tell you about the graph of the absolute value function?</para>
+    </problem>
+   <solution id="fs-id1165134475281">
+    <para id="fs-id1165137662762"> The graph of the absolute value function does not cross the <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi></m:mrow>
+    </m:math>-axis, so the graph is either completely above or completely below the <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi></m:mrow>
+    </m:math>-axis.</para>
+   </solution>
+   </exercise>
+   <exercise id="fs-id1165135264708">
+    <problem id="fs-id1165135149122">
+     <para id="fs-id1165135149124">How can you use the graph of an absolute value function to determine the <emphasis effect="italics">x</emphasis>-values for which the function values are negative?</para></problem>
+   </exercise>
+   <exercise id="fs-id1165137645236">
+    <problem id="fs-id1165135414273">
+     <para id="fs-id1165137475324">How do you solve an absolute value inequality algebraically?</para>
+    </problem>
+   <solution id="fs-id1165135533156"><para id="fs-id1165135533157"> First determine the boundary points by finding the solution(s) of the equation. Use the boundary points to form possible solution intervals. Choose a test value in each interval to determine which values satisfy the inequality. </para>
+   </solution>
+   </exercise>
+
+  </section>
+
+  <section id="fs-id1165134273549">
+   <title>Algebraic</title>
+   <exercise id="fs-id1165137841613">
+    <problem id="fs-id1165137841615">
+     <para id="fs-id1165137579699">Describe all numbers <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi></m:mrow>
+     </m:math> that are at a distance of 4 from the number 8. Express this using absolute value notation.</para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165135445894">
+    <problem id="fs-id1165135445896">
+     <para id="fs-id1165135169187">Describe all numbers <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi></m:mrow>
+     </m:math> that are at a distance of <m:math>
+      <m:mrow>
+       <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+       </m:mrow>
+     </m:math> from the number −4. Express this using absolute value notation.</para>
+    </problem>
+   <solution id="fs-id1165135356596">
+    <para id="fs-id1165134278683"> <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+      </m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise>
+   	<exercise id="fs-id1165137542576">
+   	 <problem id="fs-id1165137648320">
+   	  <para id="fs-id1165137648322">Describe the situation in which the distance that point <m:math>
+   	   <m:mrow><m:mi>x</m:mi></m:mrow>
+   	  </m:math> is from 10 is at least 15 units. Express this using absolute value notation.</para>
+   	 </problem>
+   	</exercise>
+
+   <exercise id="fs-id1165134057540">
+    <problem id="fs-id1165137464076">
+     <para id="fs-id1165137464078">Find all function values <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> such that the distance from <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> to the value 8 is less than 0.03 units. Express this using absolute value notation.</para>
+    </problem>
+   <solution id="fs-id1165137541376">
+    <para id="fs-id1165137572565"> <m:math>
+     <m:mrow>
+      <m:mo>|</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mn>8</m:mn><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mn>0.03</m:mn></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise>
+
+   <para id="fs-id1165137658780">For the following exercises, solve the equations below and express the answer using set notation.</para>
+
+   <exercise id="fs-id1165137547457">
+    <problem id="fs-id1165135176655">
+     <para id="fs-id1165137823605"> <m:math>
+      <m:mrow>
+       <m:mo>|</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>|</m:mo><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165135254647">
+    <problem id="fs-id1165135254649">
+     <para id="fs-id1165135253828"> <m:math>
+      <m:mrow>
+       <m:mo>|</m:mo><m:mn>6</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165137424495">
+    <para id="fs-id1165137424497"> <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mrow>
+       <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>11</m:mn></m:mrow> <m:mo>}</m:mo></m:mrow></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise>
+
+   <exercise id="fs-id1165137930354">
+    <problem id="fs-id1165137930356">
+     <para id="fs-id1165137639146"> <m:math>
+      <m:mrow>
+       <m:mo>|</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>|</m:mo><m:mo>=</m:mo><m:mn>11</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165137594492">
+    <problem id="fs-id1165137594494">
+     <para id="fs-id1165137436276"> <m:math>
+      <m:mrow>
+       <m:mo>|</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>|</m:mo><m:mo>=</m:mo><m:mn>11</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165137600494">
+     <para id="fs-id1165135453346"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mo>-</m:mo><m:mrow>
+   <m:mfrac>
+    <m:mn>9</m:mn>
+    <m:mn>4</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mfrac>
+    <m:mrow>
+     <m:mn>13</m:mn>
+    </m:mrow>
+    <m:mn>4</m:mn>
+   </m:mfrac>
+
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution>
+   </exercise>
+
+   <exercise id="fs-id1165135440214">
+    <problem id="fs-id1165137833911">
+     <para id="fs-id1165137833914"> <m:math>
+      <m:mrow>
+       <m:mn>2</m:mn><m:mo>|</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165135641672">
+    <problem id="fs-id1165135641675">
+     <para id="fs-id1165137410330"> <m:math>
+      <m:mrow>
+       <m:mn>3</m:mn><m:mo>|</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165137411215">
+     <para id="fs-id1165137411217"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mrow>
+     <m:mn>10</m:mn>
+    </m:mrow>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mfrac>
+    <m:mrow>
+     <m:mn>20</m:mn>
+    </m:mrow>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution>
+   </exercise>
+
+   <exercise id="fs-id1165135241396">
+    <problem id="fs-id1165135192397">
+     <para id="fs-id1165135192399"> <m:math>
+      <m:mrow>
+       <m:mn>3</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>|</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165137451880">
+    <problem id="fs-id1165137451883">
+     <para id="fs-id1165137439227"> <m:math>
+      <m:mrow>
+       <m:mn>5</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165137896314">
+     <para id="fs-id1165134108517"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mrow>
+     <m:mn>11</m:mn>
+    </m:mrow>
+    <m:mn>5</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mfrac>
+    <m:mrow>
+     <m:mn>29</m:mn>
+    </m:mrow>
+    <m:mn>5</m:mn>
+   </m:mfrac>
+
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution>
+   </exercise>
+
+   <exercise id="fs-id1165137803650">
+    <problem id="fs-id1165137803652">
+     <para id="fs-id1165135613399"> <m:math>
+      <m:mrow>
+       <m:mn>0</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165137442574">
+    <problem id="fs-id1165137442576">
+     <para id="fs-id1165137732896"> <m:math>
+      <m:mrow>
+       <m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165135151997">
+     <para id="fs-id1165137585705"> <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>{</m:mo> <m:mrow>
+        <m:mfrac>
+         <m:mn>5</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>,</m:mo><m:mfrac>
+         <m:mn>7</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+       </m:mrow> <m:mo>}</m:mo></m:mrow></m:mrow>
+     </m:math>
+     </para>
+    </solution>
+   </exercise>
+
+   <exercise id="fs-id1165137761108">
+    <problem id="fs-id1165131911969">
+     <para id="fs-id1165131911971"> <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165137838065">
+    <problem id="fs-id1165137571104">
+     <para id="fs-id1165137571106"> <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165137809984">
+     <para id="fs-id1165135182933">No solution</para></solution>
+   </exercise>
+
+   <exercise id="fs-id1165137793832">
+    <problem id="fs-id1165134393100">
+     <para id="fs-id1165134393102"> <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>11</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165137401505">
+    <problem id="fs-id1165137401507">
+     <para id="fs-id1165137852038"> <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>14</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165137854997">
+     <para id="fs-id1165137564109"> <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>{</m:mo> <m:mrow>
+        <m:mo>−</m:mo><m:mn>57</m:mn><m:mo>,</m:mo><m:mn>27</m:mn></m:mrow> <m:mo>}</m:mo></m:mrow></m:mrow>
+     </m:math>
+     </para>
+    </solution>
+   </exercise>
+
+   <exercise id="fs-id1165135160638">
+    <problem id="fs-id1165137769919">
+     <para id="fs-id1165137769921"> <m:math>
+      <m:mrow>
+       <m:mo>−</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>14</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+
+   <para id="fs-id1165137589731">For the following exercises, find the <emphasis effect="italics">x</emphasis>- and <emphasis effect="italics">y</emphasis>-intercepts of the graphs of each function.</para><exercise id="fs-id1165135190614">
+    <problem id="fs-id1165134117307">
+     <para id="fs-id1165134117309"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>10</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   <solution id="fs-id1165134557389">
+    <para id="fs-id1165134557391"> <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>0</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mo>−</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>4</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow>
+         <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise>
+
+  <exercise id="fs-id1165134401702">
+   <problem id="fs-id1165135362510">
+    <para id="fs-id1165135362512"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+  </exercise>
+   <exercise id="fs-id1165137824535">
+    <problem id="fs-id1165137824537">
+     <para id="fs-id1165134220856"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   <solution id="fs-id1165137433350">
+    <para id="fs-id1165137433352"> <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>0</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo></m:mrow>
+    </m:math> no <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi></m:mrow>
+    </m:math>-intercepts </para>
+   </solution>
+   </exercise>
+
+   <exercise id="fs-id1165134371172">
+    <problem id="fs-id1165134371174">
+     <para id="fs-id1165137590699"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   </exercise>
+
+   <para id="fs-id1165134117280">For the following exercises, solve each inequality and write the solution in interval notation.</para>
+
+   <exercise id="fs-id1165137656160">
+    <problem id="fs-id1165137656163">
+     <para id="fs-id1165137938872"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mn>10</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   <solution id="fs-id1165137427184">
+    <para id="fs-id1165137427186"> <m:math>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise>
+
+   <exercise id="fs-id1165137407052">
+    <problem id="fs-id1165135508305">
+     <para id="fs-id1165135508307"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>v</m:mi><m:mo>−</m:mo><m:mn>7</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>≥</m:mo><m:mn>42</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   </exercise>
+   <exercise id="fs-id1165135187122">
+    <problem id="fs-id1165135187125">
+     <para id="fs-id1165137418895"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   <solution id="fs-id1165137445354">
+    <para id="fs-id1165137715044"> <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>4</m:mn></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise>
+
+   <exercise id="fs-id1165135320061">
+    <problem id="fs-id1165135320063">
+     <para id="fs-id1165135195164"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≥</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   </exercise>
+   <exercise id="fs-id1165135196794">
+    <problem id="fs-id1165135196796">
+     <para id="fs-id1165135641739"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≥</m:mo><m:mn>13</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165137812206">
+     <para id="fs-id1165135412892"> <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>(</m:mo> <m:mrow>
+        <m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac>
+         <m:mn>8</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+       </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mn>6</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi></m:mrow> <m:mo>)</m:mo></m:mrow></m:mrow>
+     </m:math>
+     </para>
+    </solution>
+   </exercise>
+
+   <exercise id="fs-id1165135512537">
+    <problem id="fs-id1165137448163">
+     <para id="fs-id1165137448165"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≥</m:mo><m:mo>−</m:mo><m:mn>13</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   </exercise>
+   <exercise id="fs-id1165135149793">
+    <problem id="fs-id1165137784178">
+     <para id="fs-id1165137784180"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mn>3</m:mn>
+    <m:mn>4</m:mn>
+   </m:mfrac>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≥</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165135377121">
+     <para id="fs-id1165135377124"> <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>(</m:mo> <m:mrow>
+        <m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac>
+         <m:mn>8</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+       </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mn>16</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi></m:mrow> <m:mo>)</m:mo></m:mrow></m:mrow>
+     </m:math>
+     </para>
+    </solution>
+   </exercise>
+
+   <exercise id="fs-id1165137419461">
+    <problem id="fs-id1165137410039">
+     <para id="fs-id1165137410042"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mn>3</m:mn>
+    <m:mn>4</m:mn>
+   </m:mfrac>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>≤</m:mo><m:mn>16</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   </exercise>
+
+  </section>
+  <section id="fs-id1165137602379">
+   <title>Graphical</title>
+   <para id="fs-id1165133047532">For the following exercises, graph the absolute value function. Plot at least five points by hand for each graph.</para>
+
+   <exercise id="fs-id1165137891404"><problem id="fs-id1165137817696">
+     <para id="fs-id1165137817699"> <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>|</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165137714274">
+
+    <media id="fs-id1165135499906" alt="Graph of an absolute function with points at (-1, 2), (0, 1), (1, 0), (2, 1), and (3, 2).">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_201.jpg"/>
+    </media>
+
+   </solution></exercise><exercise id="fs-id1165137679099">
+    <problem id="fs-id1165137679101">
+     <para id="fs-id1165137418760"> <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>|</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165135422938"><problem id="fs-id1165135422940">
+     <para id="fs-id1165137652979"> <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165137414774">
+
+    <media id="fs-id1165137658298" alt="Graph of an absolute function with points at (-2, 3), (-1, 2), (0, 1), (1, 2), and (2, 3).">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_203.jpg"/>
+    </media>
+  </solution></exercise><para id="fs-id1165137406944">For the following exercises, graph the given functions by hand.</para>
+
+   <exercise id="fs-id1165135332726">
+    <problem id="fs-id1165135332729">
+     <para id="fs-id1165135251459"> <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165137601710"><problem id="fs-id1165137601713">
+     <para id="fs-id1165137419974"> <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165137400044">
+
+    <media id="fs-id1165135160170" alt="Graph of an absolute function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_205.jpg"/>
+    </media>
+ </solution></exercise><exercise id="fs-id1165137735265">
+    <problem id="fs-id1165137431347">
+     <para id="fs-id1165137431349"> <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165137731590"><problem id="fs-id1165137603675">
+     <para id="fs-id1165137603678"> <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165137645253">
+
+    <media id="fs-id1165135653964" alt="Graph of an absolute function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_207.jpg"/>
+    </media>
+
+   </solution>
+   </exercise><exercise id="fs-id1165137394585">
+    <problem id="fs-id1165137394587">
+     <para id="fs-id1165135572124"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>|</m:mo><m:mo>−</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   </exercise>
+   <exercise id="fs-id1165135335986"><problem id="fs-id1165137651575">
+     <para id="fs-id1165137651578"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>|</m:mo><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   <solution id="fs-id1165137434149">
+
+    <media id="fs-id1165137553071" alt="Graph of an absolute function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_209.jpg"/>
+    </media>
+
+   </solution>
+    </exercise><exercise id="fs-id1165137705796">
+    <problem id="fs-id1165137705798">
+     <para id="fs-id1165137469167"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>|</m:mo><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   </exercise>
+   <exercise id="fs-id1165137427199"><problem id="fs-id1165137619904">
+     <para id="fs-id1165137619906"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   <solution id="fs-id1165137436399">
+
+    <media id="fs-id1165137410325" alt="Graph of an absolute function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_211.jpg"/>
+    </media>
+
+   </solution>
+    </exercise><exercise id="fs-id1165137715460">
+    <problem id="fs-id1165137715462">
+     <para id="fs-id1165137469722"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   </exercise>
+   <exercise id="fs-id1165135258293"><problem id="fs-id1165135258295">
+     <para id="fs-id1165137452029"> <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+         <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165137433126">
+
+    <media id="fs-id1165137654715" alt="Graph of an absolute function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_213.jpg"/>
+    </media>
+
+   </solution>
+    </exercise><exercise id="fs-id1165137464095">
+    <problem id="fs-id1165137464097">
+     <para id="fs-id1165137470140"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   </exercise>
+   <exercise id="fs-id1165137443657"><problem id="fs-id1165137911316">
+     <para id="fs-id1165137911318"> <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165137399944">
+
+    <media id="fs-id1165137451010" alt="Graph of an absolute function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_215.jpg"/>
+    </media>
+
+   </solution>
+    </exercise><exercise id="fs-id1165137803326">
+    <problem id="fs-id1165137803328">
+     <para id="fs-id1165137824374"> <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+       <m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+
+  </section>
+  <section id="fs-id1165137897208">
+<title>Technology</title>
+<exercise id="fs-id1165137749758"><problem id="fs-id1165137749760">
+     <para id="fs-id1165137460158">Use a graphing utility to graph <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>|</m:mo></m:mrow>
+     </m:math> on the viewing window <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+     </m:math> Identify the corresponding range. Show the graph.</para></problem>
+    <solution id="fs-id1165134042934"><para id="fs-id1165134042935">range: <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>20</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow>
+    </m:math>
+    </para>
+
+    <media id="fs-id1165137564125" alt="Graph of an absolute function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_217.jpg"/>
+    </media>
+
+    </solution>
+   </exercise><exercise id="fs-id1165137413783">
+    <problem id="fs-id1165137434783">
+     <para id="fs-id1165137434785">Use a graphing utility to graph <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>100</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mo>+</m:mo><m:mn>100</m:mn></m:mrow>
+     </m:math> on the viewing window <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mo>−</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+     </m:math> Identify the corresponding range. Show the graph.</para>
+    </problem>
+   </exercise>
+
+   <para id="fs-id1165137831208">For the following exercises, graph each function using a graphing utility. Specify the viewing window.</para>
+
+   <exercise id="fs-id1165137762283"><problem id="fs-id1165135464843"><para id="fs-id1165137724085"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.1</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+      <m:mn>0.1</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0.2</m:mn><m:mo>−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>0.3</m:mn></m:mrow>
+   </m:math>
+    </para>
+</problem>
+    <solution id="fs-id1165137812572"><para id="fs-id1165137812573"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mtext>-</m:mtext>
+ </m:mrow>
+</m:math> intercepts:</para>
+    <media id="fs-id1165137784866" alt="Graph of an absolute function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_06_219.jpg"/>
+    </media>
+
+
+   </solution>
+   </exercise><exercise id="eip-id1165134039354">
+<problem id="eip-id1165134039356">
+<para id="fs-id1165137483195"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>×</m:mo><m:msup>
+      <m:mrow>
+       <m:mn>10</m:mn></m:mrow>
+      <m:mn>9</m:mn>
+     </m:msup>
+     <m:mrow><m:mo>|</m:mo> <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>×</m:mo><m:msup>
+       <m:mrow>
+        <m:mn>10</m:mn></m:mrow>
+       <m:mn>9</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>×</m:mo><m:msup>
+       <m:mrow>
+        <m:mn>10</m:mn></m:mrow>
+       <m:mn>9</m:mn>
+      </m:msup>
+    </m:mrow>
+   </m:math>
+   </para>
+   </problem>
+</exercise>
+  </section><section id="fs-id1165137419467">
+   <title>Extensions</title>
+   <para id="fs-id1165137901338">For the following exercises, solve the inequality.</para>
+   <exercise id="fs-id1165137901341">
+    <problem id="fs-id1165135397245">
+     <para id="fs-id1165135397247"> <m:math>
+ <m:mrow>
+  <m:mo>|</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>|</m:mo><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>&gt;</m:mo><m:mn>−1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+   <solution id="fs-id1165137662699">
+    <para id="fs-id1165137662701"> <m:math>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise>
+   <exercise id="fs-id1165137434569"><problem id="fs-id1165137434570"><para id="fs-id1165137434571">If possible, find all values of <m:math>
+    <m:mrow>
+     <m:mi>a</m:mi></m:mrow>
+   </m:math> such that there are no <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mtext>-</m:mtext>
+ </m:mrow>
+</m:math> intercepts for <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow>
+   </m:math>
+   </para></problem>
+   </exercise>
+   <exercise id="fs-id1165137639316">
+    <problem id="fs-id1165137652958">
+     <para id="fs-id1165137652960">If possible, find all values of <m:math>
+      <m:mrow>
+       <m:mi>a</m:mi></m:mrow>
+     </m:math> such that there are no <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi></m:mrow>
+     </m:math>-intercepts for <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165137648025">
+    <para id="fs-id1165137454792">There is no solution for <m:math>
+     <m:mrow>
+      <m:mi>a</m:mi></m:mrow>
+    </m:math> that will keep the function from having a <m:math>
+     <m:mrow>
+      <m:mi>y</m:mi></m:mrow>
+    </m:math>-intercept. The absolute value function always crosses the <m:math>
+     <m:mrow>
+      <m:mi>y</m:mi></m:mrow>
+    </m:math>-intercept when <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+  </section>
+  <section id="fs-id1165135172151">
+   <title>Real-World Applications</title>
+<exercise id="fs-id1165137641899">
+ <problem id="fs-id1165137641901">
+  <para id="fs-id1165137459748">Cities A and B are on the same east-west line. Assume that city A is located at the origin. If the distance from city A to city B is at least 100 miles and <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi></m:mrow>
+  </m:math> represents the distance from city B to city A, express this using absolute value notation.</para>
+ </problem>
+</exercise>
+ <exercise id="fs-id1165137812302">
+  <problem id="fs-id1165137812304">
+   <para id="fs-id1165137431941">The true proportion <m:math>
+    <m:mrow>
+     <m:mi>p</m:mi></m:mrow>
+   </m:math> of people who give a favorable rating to Congress is 8% with a margin of error of 1.5%. Describe this statement using an absolute value equation.</para></problem>
+ <solution id="fs-id1165135431083">
+  <para id="fs-id1165134042456"> <m:math>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mi>p</m:mi><m:mo>−</m:mo><m:mn>0.08</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mn>0.015</m:mn></m:mrow>
+  </m:math>
+  </para>
+ </solution>
+ </exercise>
+<exercise id="fs-id1165137598001">
+ <problem id="fs-id1165137562568">
+  <para id="fs-id1165137562570">Students who score within 18 points of the number 82 will pass a particular test. Write this statement using absolute value notation and use the variable <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi></m:mrow>
+  </m:math> for the score.</para>
+ </problem>
+</exercise>
+ <exercise id="fs-id1165137758810">
+  <problem id="fs-id1165137758812">
+   <para id="fs-id1165135332394">A machinist must produce a bearing that is within 0.01 inches of the correct diameter of 5.0 inches. Using <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi></m:mrow>
+   </m:math> as the diameter of the bearing, write this statement using absolute value notation. </para>
+  </problem>
+ <solution id="fs-id1165135192953">
+  <para id="fs-id1165135192955"> <m:math>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5.0</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mn>0.01</m:mn></m:mrow>
+  </m:math>
+  </para>
+ </solution>
+ </exercise>
+ <exercise id="fs-id1165137732323">
+  <problem id="fs-id1165137732325">
+   <para id="fs-id1165137673610">The tolerance for a ball bearing is 0.01. If the true diameter of the bearing is to be 2.0 inches and the measured value of the diameter is <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi></m:mrow>
+   </m:math> inches, express the tolerance using absolute value notation.</para>
+  </problem>
+ </exercise>
+</section>
+ </section></content>
+ <glossary>
+  <definition id="fs-id1165135191341">
+   <term>absolute value equation</term>
+   <meaning id="fs-id1165137627032">an equation of the form <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+   </m:math> with <m:math>
+    <m:mrow>
+     <m:mi>B</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow>
+   </m:math> it will have solutions when <m:math>
+    <m:mrow>
+     <m:mi>A</m:mi><m:mo>=</m:mo><m:mi>B</m:mi></m:mrow>
+   </m:math> or <m:math>
+    <m:mrow>
+     <m:mi>A</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>B</m:mi></m:mrow>
+   </m:math>
+   </meaning>
+  </definition>
+  <definition id="fs-id1165137560214">
+   <term>absolute value inequality</term> <meaning id="fs-id1165135173524">a relationship in the form <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mi>B</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>≤</m:mo><m:mi>B</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mi>B</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext>or</m:mtext><m:mspace width="0.8em"/><m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>≥</m:mo><m:mi>B</m:mi></m:mrow>
+   </m:math>
+   </meaning>
+  </definition>
+
+ </glossary>
+ </document>

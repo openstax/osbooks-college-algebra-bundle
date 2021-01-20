@@ -1,0 +1,3457 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Arithmetic Sequences</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m49445</md:content-id>
+  <md:title>Arithmetic Sequences</md:title>
+  <md:abstract><para>In this section, you will:</para><list>
+<item>Find the common difference for an arithmetic sequence.</item>
+<item>Write terms of an arithmetic sequence.</item>
+<item>Use a recursive formula for an arithmetic sequence.</item>
+<item>Use an explicit formula for an arithmetic sequence.</item>
+</list></md:abstract>
+  <md:uuid>35388d0f-fefc-42fc-857a-1c0c8e20d85f</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+<section id="eip-756" class="coreq-skills"><section id="eip-823" class="learning-objectives"><title>Learning Objectives</title><list id="eip-621"><item>Determine if a sequence is arithmetic (IA 12.2.1) </item>
+<item>Find the general term (nth term) of an arithmetic sequence (IA 12.2.2)</item>
+</list></section><section id="eip-52"><title>Objective 1: Determine if a sequence is arithmetic (IA 12.2.1)</title><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-607">An <term>arithmetic sequence</term> is a sequence where the difference between consecutive terms is always the same.
+</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-853">The difference between consecutive terms, <emphasis effect="italics">d</emphasis>, and is called the <term>common difference</term>, for n greater than or equal to two.</para><equation id="eip-236" class="unnumbered"><label/> <m:math><m:mi>d</m:mi><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>-</m:mo><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:math> </equation><para id="eip-37"><media id="eip-idm282265120" alt="This figure has two rows and three columns. The first row reads “7”, “10”,”13”, “16”, “19”, “22”, and an ellipsis, “10 minus 7, divided by 3”, “13 minus 10, divided by 3”, “16 minus 13, divided by 3”, nth term equals nth term minus 1 divided by d”">
+    <image mime-type="image/jpeg" src="../../media/9_2_1.jpg"/>
+  </media></para><example id="eip-939"><exercise id="fs-id1167832041539">
+<problem id="fs-id1167835326267">
+<para id="fs-id1167831959293">Determine if each sequence is arithmetic. If so, indicate the common difference.</para>
+<para id="fs-id1167832076355"><span class="token">ⓐ</span> <m:math><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>13</m:mn><m:mo>,</m:mo><m:mn>17</m:mn><m:mo>,</m:mo><m:mn>21</m:mn><m:mo>,</m:mo><m:mn>25</m:mn><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mtext>…</m:mtext></m:mrow></m:math> </para>
+<para id="fs-id1167834214180"><span class="token">ⓑ</span> <m:math><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>17</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>25</m:mn><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mtext>…</m:mtext></m:mrow></m:math> </para>
+
+</problem>
+<solution id="fs-id1167835354025">
+<para id="fs-id1167835339364">To determine if the sequence is arithmetic, we find the difference of the consecutive terms shown.</para>
+<para id="fs-id1167835368778"><span class="token">ⓐ</span><newline/>
+ <m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtable><m:mtr/><m:mtr/><m:mtr/><m:mtr/><m:mtr><m:mtd columnalign="left"><m:mtext>Find the difference of</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>the consecutive terms.</m:mtext></m:mtd></m:mtr></m:mtable></m:mtd><m:mtd/><m:mtd/><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>9</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>13</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>17</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>21</m:mn><m:mo>,</m:mo></m:mtd><m:mtd columnalign="center"><m:mspace width="0.6em"/><m:mn>25</m:mn><m:mo>,</m:mo><m:mo>…</m:mo></m:mtd></m:mtr><m:mtr/><m:mtr/>
+<m:mtr><m:mtd columnalign="center"><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>13</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>13</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>21</m:mn><m:mo>−</m:mo><m:mn>17</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>25</m:mn><m:mo>−</m:mo><m:mn>21</m:mn></m:mtd><m:mtd/><m:mtd/></m:mtr>
+<m:mtr><m:mtd columnalign="center"><m:mn>4</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>4</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>4</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>4</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>4</m:mn></m:mtd><m:mtd/><m:mtd/></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr/><m:mtr/>
+<m:mtr><m:mtd/><m:mtd/><m:mtd/><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtext>The sequence is arithmetic. The common difference is</m:mtext><m:mspace width="0.2em"/><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mtext>.</m:mtext></m:mtd></m:mtr></m:mtable></m:mrow></m:math> </para>
+<para id="fs-id1167834094786"><span class="token">ⓑ</span><newline/>
+ <m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtable><m:mtr/><m:mtr/><m:mtr/><m:mtr/><m:mtr><m:mtd columnalign="left"><m:mtext>Find the difference of</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>the consecutive terms.</m:mtext></m:mtd></m:mtr></m:mtable></m:mtd><m:mtd/><m:mtd/><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>4</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>9</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>12</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>17</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>20</m:mn><m:mo>,</m:mo></m:mtd><m:mtd columnalign="center"><m:mspace width="0.6em"/><m:mn>25</m:mn><m:mo>,</m:mo><m:mo>…</m:mo></m:mtd></m:mtr><m:mtr/><m:mtr/>
+<m:mtr><m:mtd columnalign="center"><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>12</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>20</m:mn><m:mo>−</m:mo><m:mn>17</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>25</m:mn><m:mo>−</m:mo><m:mn>20</m:mn></m:mtd><m:mtd/><m:mtd/></m:mtr>
+<m:mtr><m:mtd columnalign="center"><m:mn>2</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>3</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>5</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>3</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mspace width="1em"/><m:mn>5</m:mn></m:mtd><m:mtd/><m:mtd/></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr/><m:mtr/>
+<m:mtr><m:mtd/><m:mtd/><m:mtd/><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtext>The sequence is not arithmetic as all the differences between</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>the consecutive terms are not the same.</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>There is no common difference.</m:mtext></m:mtd></m:mtr></m:mtable></m:mtd></m:mtr></m:mtable></m:mrow></m:math> </para>
+
+</solution>
+</exercise>
+</example><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-640" class="practice-perfect"><title>Practice Makes Perfect </title><para id="eip-599">Determine if each sequence is arithmetic. If so, indicate the common difference.
+</para>
+<exercise id="eip-794"><problem id="eip-129">
+  <para id="eip-323">
+-4, 4, 2, 10, 8, 16, …
+  </para>
+<table id="eip-idm460718048" summary="." class="unnumbered"><label/><tgroup cols="2">
+<tbody>
+<row>
+<entry>________________________________________</entry>
+<entry>________________________________________</entry>
+</row>
+<row>
+<entry>Find the difference of consecutive terms.</entry>
+<entry>________________________________________</entry>
+</row>
+<row>
+<entry>________________________________________</entry>
+<entry>________________________________________</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+
+</exercise><exercise id="eip-9"><problem id="eip-843">
+  <para id="eip-490">
+-3, -1, 1, 3, 5, 7, …
+  </para>
+<table id="eip-idm347928064" summary="." class="unnumbered"><label/><tgroup cols="2">
+<tbody>
+<row>
+<entry>________________________________________</entry>
+<entry>________________________________________</entry>
+</row>
+<row>
+<entry>Find the difference of consecutive terms.</entry>
+<entry>________________________________________</entry>
+</row>
+<row>
+<entry>________________________________________</entry>
+<entry>________________________________________</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+
+</exercise></section><example id="eip-971"><exercise id="fs-id1167835416627">
+<problem id="fs-id1167835254902">
+<para id="fs-id1167835336301">Write the first five terms of the sequence where the first term is 5 and the common difference is <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn><m:mo>.</m:mo></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1167835422706">
+<para id="fs-id1167834064148">We start with the first term and add the common difference. Then we add the common difference to that result to get the next term, and so on.</para>
+<equation id="fs-id1167832056274" class="unnumbered"><label/> <m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>3</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>4</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>5</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/></m:mtr><m:mtr><m:mtd columnalign="center"><m:mn>5</m:mn></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mn>5</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mn>−1</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mn>−7</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mn>−13</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mo>−1</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mo>−7</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mo>−13</m:mo></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mo>−19</m:mo></m:mtd></m:mtr></m:mtable></m:mrow></m:math> </equation>
+<para id="fs-id1167831010120">The sequence is <m:math><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−7</m:mn><m:mo>,</m:mo><m:mn>−13</m:mn><m:mo>,</m:mo><m:mn>−19</m:mn><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mtext>…</m:mtext></m:mrow></m:math> </para>
+</solution>
+</exercise>
+</example><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-549" class="practice-perfect"><title>Practice Makes Perfect</title><exercise id="eip-idm392018624"><problem id="eip-idm366489312">
+<para id="eip-idm366489056">Write the first five terms of the sequence where the first term is –4 and the common difference is <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>.</m:mo></m:mrow></m:math> </para><equation id="eip-idm987950640" class="unnumbered"><label/> <m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>3</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>4</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>5</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/></m:mtr><m:mtr><m:mtd><m:mn>-4</m:mn></m:mtd></m:mtr></m:mtable></m:mrow></m:math> </equation><para id="eip-idm1128311552">The sequence is: ________________________________________</para></problem>
+</exercise></section></section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-894"><title>Objective 2: Find the general term (nth term) of an arithmetic sequence (IA 12.2.2)</title><para id="fs-id1167835191878">In the last section, we found a formula for the general term of a sequence, we can also find a formula for the general term of an arithmetic sequence.</para>
+<para id="fs-id1167834063240">Let’s write the first few terms of a sequence where the first term is <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and the common difference is <emphasis effect="italics">d</emphasis>. We will then look for a pattern.</para>
+<para id="fs-id1167834423838">As we look for a pattern we see that each term starts with <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> .</para>
+<media id="fs-id1167835340070" alt="This figures shows an image of a sequence.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_12_02_002_img.jpg"/>
+</media>
+<para id="fs-id1167835346003">The first term adds 0<emphasis effect="italics">d</emphasis> to the <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> , the second term adds 1<emphasis effect="italics">d</emphasis>, the third term adds 2<emphasis effect="italics">d</emphasis>, the fourth term adds 3<emphasis effect="italics">d</emphasis>, and the fifth term adds 4<emphasis effect="italics">d</emphasis>. The number of <emphasis effect="italics">d</emphasis>s that were added to <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> is one less than the number of the term. We then have the formula for the general term of an arithmetic sequence.</para>
+<note id="eip-772"><title>General term (nth term) of an arithmetic sequence</title>The general term of an arithmetic sequence with first term <m:math><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math> and the common difference <m:math><m:mi>d</m:mi></m:math> is<newline/> <m:math><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mi>d</m:mi></m:math>
+</note><example id="eip-994"><para id="eip-218">Find the general term (nth term) of an arithmetic sequence.
+</para><exercise id="eip-644"><problem id="eip-798">
+<list id="eip-idm193945648" list-type="labeled-item"><item><span class="token">ⓐ</span>
+Find the twenty-first term of a sequence where the first term is three and the common difference is eight.<newline/>
+
+</item>
+<item><span class="token">ⓑ</span> 
+Find the eleventh term of a sequence where the third term is 19 and the common difference is five. Give the formula for the general term.<newline/>
+
+</item>
+</list>
+</problem>
+
+<solution id="eip-idm198341600">
+<table id="eip-446" summary="." class="unnumbered unstyled"><label/><tgroup cols="3"><tbody>
+  <row>
+    <entry><span class="token">ⓐ</span> To find the 21st term, use the formula with <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>, <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow></m:math>, and <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>21</m:mn></m:math> </entry>
+    <entry> <m:math><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mi>d</m:mi></m:math> </entry>
+  </row>
+  <row>
+    <entry>Substitute</entry>
+    <entry> <m:math><m:msub><m:mi>a</m:mi><m:mn>21</m:mn></m:msub><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>21</m:mn><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>8</m:mn><m:mo>)</m:mo></m:math> </entry>
+  </row>
+  <row>
+    <entry>Simplify</entry>
+    <entry> <m:math><m:mtable><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>21</m:mn></m:msub><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>20</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>8</m:mn><m:mo>)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>21</m:mn></m:msub><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>160</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>21</m:mn></m:msub><m:mo>=</m:mo><m:mn>163</m:mn></m:mtd></m:mtr></m:mtable></m:math> </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+
+<table id="eip-320" summary="." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><tbody>
+  <row>
+<entry><span class="token">ⓑ</span> 
+Let's first find <m:math><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math>.<newline/>
+Use the formula with <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>19</m:mn></m:mrow></m:math>, <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math>, and <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>.<newline/>
+Substitute these values and simplify
+</entry>
+    <entry> <m:math><m:mtable><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mi>d</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>19</m:mn><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>19</m:mn><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mn>10</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mrow><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:msub></m:mtd></m:mtr></m:mtable></m:math> </entry>
+  </row>
+  <row>
+    <entry>To find the 11th term, use the formula with <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math>, <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math>, and <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>11</m:mn></m:mrow></m:math> <newline/>
+Substitute these values and simplify
+
+</entry>
+    <entry> <m:math><m:mtable><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mi>d</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>11</m:mn></m:msub><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>11</m:mn><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>11</m:mn></m:msub><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>10</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>11</m:mn></m:msub><m:mo>=</m:mo><m:mn>59</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mspace/></m:mtd></m:mtr></m:mtable></m:math> </entry>
+  </row>
+  <row>
+    <entry>To find the general term, substitute <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> into the formula.<newline/></entry>
+    <entry> <m:math><m:mtable><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mi>d</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>11</m:mn></m:msub><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>11</m:mn><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>11</m:mn></m:msub><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>10</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>11</m:mn></m:msub><m:mo>=</m:mo><m:mn>59</m:mn></m:mtd></m:mtr></m:mtable></m:math> </entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table>
+</solution>
+
+</exercise></example><section id="eip-493" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-451">
+Find the general term (nth term) of an arithmetic sequence.
+</para><exercise id="eip-879"><problem id="eip-39">
+  <para id="eip-294">
+Find the sixteenth term of a sequence where the first term is 11 and the common difference is −6.
+  </para>
+<table id="eip-idm373009888" summary="." class="unnumbered"><label/><tgroup cols="2">
+<tbody>
+<row>
+<entry>________________________________________</entry>
+<entry><m:math><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mi>d</m:mi></m:math></entry>
+</row>
+<row>
+<entry>________________________________________</entry>
+<entry>________________________________________</entry>
+</row>
+<row>
+<entry>________________________________________</entry>
+<entry>________________________________________</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+
+</exercise><exercise id="eip-194"><problem id="eip-59">
+  <para id="eip-271">
+Find the 19th term of a sequence where the 5th term is 1 and the common difference is -4. Give the formula for the general term.
+  </para>
+<table id="eip-idm465402704" summary="." class="unnumbered"><label/><tgroup cols="2">
+<tbody>
+<row>
+<entry>________________________________________</entry>
+<entry>________________________________________</entry>
+</row>
+<row>
+<entry>________________________________________</entry>
+<entry>________________________________________</entry>
+</row>
+<row>
+<entry>________________________________________</entry>
+<entry>________________________________________</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+
+</exercise></section></section></section><para id="fs-id1165137594036">Companies often make large purchases, such as computers and vehicles, for business use. The book-value of these supplies decreases each year for tax purposes. This decrease in value is called depreciation. One method of calculating depreciation is straight-line depreciation, in which the value of the asset decreases by the same amount each year.</para>
+
+<para id="fs-id1165137474566">As an example, consider a woman who starts a small contracting business. She purchases a new truck for $25,000. After five years, she estimates that she will be able to sell the truck for $8,000. The loss in value of the truck will therefore be $17,000, which is $3,400 per year for five years. The truck will be worth $21,600 after the first year; $18,200 after two years; $14,800 after three years; $11,400 after four years; and $8,000 at the end of five years. In this section, we will consider specific kinds of sequences that will allow us to calculate depreciation, such as the truck’s value.</para>
+
+<section id="fs-id1165137417740"><title>Finding Common Differences</title><para id="fs-id1165137823944">The values of the truck in the example are said to form an <emphasis>arithmetic sequence</emphasis> because they change by a constant amount each year. Each term increases or decreases by the same constant value called the <emphasis>common difference</emphasis> of the sequence. For this sequence, the common difference is –3,400.</para>
+<media id="fs-id1165135541598" alt="A sequence, {25000, 21600, 18200, 14800, 8000}, that shows the terms differ only by -3400." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_001.jpg"/>
+</media><para id="fs-id1165137639689">The sequence below is another example of an arithmetic sequence. In this case, the constant difference is 3. You can choose any <term class="no-emphasis">term</term> of the <term class="no-emphasis">sequence</term>, and add 3 to find the subsequent term.</para>
+<media id="fs-id1165137644646" alt="A sequence {3, 6, 9, 12, 15, ...} that shows the terms only differ by 3." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_002.jpg"/>
+</media><note id="fs-id1165137855317">
+
+<title>Arithmetic Sequence</title>
+<para id="fs-id1165137805059">An <term>arithmetic sequence</term> is a sequence that has the property that the difference between any two consecutive terms is a constant. This constant is called the <term>common difference</term>. If <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub> </m:mrow>
+</m:math> is the first term of an arithmetic sequence and <m:math>
+    <m:mi>d</m:mi></m:math> is the common difference, the sequence will be:</para> <equation id="fs-id1165132164820" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>}</m:mo><m:mo>=</m:mo><m:mo>{</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>d</m:mi><m:mo>,</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>d</m:mi><m:mo>,</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>d</m:mi><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation></note><example id="Example_11_02_01">
+<exercise id="fs-id1165137656656"><problem id="fs-id1165137404616">
+<title>Finding Common Differences</title>
+<para id="fs-id1165137849000">Is each sequence arithmetic? If so, find the common difference.</para>
+<list id="fs-id1165137664533" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span>
+ <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item><span class="token">ⓑ</span>
+
+ <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>13</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+</list>
+</problem>
+<solution id="fs-id1165137698067">
+<para id="fs-id1165137408239">Subtract each term from the subsequent term to determine whether a common difference exists.</para>
+<list id="fs-id1165137558244" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span>The sequence is not arithmetic because there is no common difference.
+<para id="eip-id1165132959073"><media id="fs-id1165137767692" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_03_001-01.png"/>
+</media></para></item>
+<item><span class="token">ⓑ</span>The sequence is arithmetic because there is a common difference. The common difference is 4.
+<para id="eip-id1165135674049"><media id="eip-id1165137580124" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_03_001-02.png"/>
+</media></para></item>
+</list></solution>
+<commentary id="fs-id1165137677499">
+<title>Analysis</title>
+<para id="fs-id1165137578542">The graph of each of these sequences is shown in <link target-id="CNX_Precalculus_Figure_11_02_003"/>. We can see from the graphs that, although both sequences show growth, <m:math>
+<m:mi>a</m:mi>
+</m:math> is not linear whereas <m:math>
+<m:mi>b</m:mi>
+</m:math> is linear. Arithmetic sequences have a constant rate of change so their graphs will always be points on a line.</para><figure id="CNX_Precalculus_Figure_11_02_003"><media id="fs-id1165137925319" alt="Two graphs of arithmetic sequences. Graph (a) grows exponentially while graph (b) grows linearly.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_003.jpg"/>
+</media>
+</figure></commentary>
+</exercise></example>
+
+<note id="fs-id1165137722470" class="precalculus qa">
+<label>Q&amp;A</label>
+<para id="fs-id1165137477136"><emphasis>If we are told that a sequence is arithmetic, do we have to subtract every term from the following term to find the common difference?</emphasis></para>
+<para id="fs-id1165137605197">
+<emphasis effect="italics"> No. If we know that the sequence is arithmetic, we can choose any one term in the sequence, and subtract it from the subsequent term to find the common difference.</emphasis>
+</para>
+</note>
+
+<note id="fs-id1165135169188" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_11_02_01">
+<problem id="fs-id1165137726089">
+    <para id="fs-id1165135160082">Is the given sequence arithmetic? If so, find the common difference.</para><equation id="fs-id1165137926653" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>18</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>16</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>14</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>12</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>10</m:mn><m:mo>,</m:mo><m:mo>…</m:mo><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </equation></problem>
+<solution id="fs-id1165137570226">
+<para id="fs-id1165137422916">The sequence is arithmetic. The common difference is <m:math>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+<note id="eip-130" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_11_02_02">
+<problem id="fs-id1165135456946">
+    <para id="fs-id1165137786564">Is the given sequence arithmetic? If so, find the common difference.</para><equation id="fs-id1165135503781" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>6</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>10</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>15</m:mn><m:mo>,</m:mo><m:mo>…</m:mo><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165137697039">
+<para id="fs-id1165137453640">The sequence is not arithmetic because <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>≠</m:mo><m:mn>6</m:mn><m:mo>−</m:mo><m:mn>3.</m:mn>
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+</section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137635400"><title>Writing Terms of Arithmetic Sequences</title><para id="fs-id1165137400489">Now that we can recognize an arithmetic sequence, we will find the terms if we are given the first term and the common difference. The terms can be found by beginning with the first term and adding the common difference repeatedly. In addition, any term can also be found by plugging in the values of <m:math>
+<m:mi>n</m:mi>
+</m:math> and <m:math>
+<m:mi>d</m:mi>
+</m:math> into formula below.</para>
+<equation id="fs-id1165137471353" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi>
+ </m:mrow>
+</m:math>
+</equation>
+<note id="fs-id1165135481158" class="how-to-notitle">
+<para id="fs-id1165135508432"><emphasis>Given the first term and the common difference of an arithmetic sequence, find the first several terms.</emphasis></para><list id="fs-id1165137658549" list-type="enumerated" number-style="arabic">
+<item>Add the common difference to the first term to find the second term.</item>
+<item>Add the common difference to the second term to find the third term.</item>
+<item>Continue until all of the desired terms are identified.</item>
+<item>Write the terms separated by commas within brackets.</item>
+</list>
+</note>
+
+<example id="Example_11_02_02">
+<exercise id="fs-id1165135694565">
+<problem id="fs-id1165137745269">
+<title>Writing Terms of Arithmetic Sequences</title>
+<para id="fs-id1165137811740">Write the first five terms of the <term class="no-emphasis">arithmetic sequence</term> with <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>17</m:mn>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math> .</para></problem>
+<solution id="fs-id1165137667025">
+<para id="fs-id1165137643944">Adding <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> is the same as subtracting 3. Beginning with the first term, subtract 3 from each term to find the next term.</para><para id="fs-id1165137450882">The first five terms are <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>17</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>14</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>11</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>8</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>5</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+<commentary id="fs-id1165137871441">
+<title>Analysis</title>
+<para id="fs-id1165137474702">As expected, the graph of the sequence consists of points on a line as shown in <link target-id="CNX_Precalculus_Figure_11_02_004"/>.</para>
+
+<figure id="CNX_Precalculus_Figure_11_02_004"><media id="fs-id1165137574001" alt="Graph of the arithmetic sequence. The points form a negative line.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_004.jpg"/>
+</media>
+</figure></commentary>
+</exercise>
+</example>
+
+<note id="ti_11_02_03" class="precalculus try">
+<label>Try It</label>
+<exercise id="fs-id1165137455517">
+<problem id="fs-id1165137426079">
+<para id="fs-id1165137705697">List the first five terms of the arithmetic sequence with <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>d</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> .</para></problem>
+<solution id="fs-id1165137675374">
+<para id="fs-id1165137723371">
+ <m:math>
+<m:mrow>
+<m:mrow>
+<m:mo>{</m:mo>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>,</m:mo>
+<m:mo> </m:mo>
+<m:mn>6</m:mn>
+<m:mo>,</m:mo>
+<m:mo> </m:mo>
+<m:mn>11</m:mn>
+<m:mo>,</m:mo>
+<m:mo> </m:mo>
+<m:mn>16</m:mn>
+<m:mo>,</m:mo>
+<m:mo> </m:mo>
+<m:mn>21</m:mn>
+</m:mrow>
+<m:mo>}</m:mo>
+</m:mrow>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165135362484" class="how-to-notitle">
+
+<para id="fs-id1165135560821"><emphasis effect="bold">Given any first term and any other term in an arithmetic sequence, find a given term.</emphasis>
+</para><list id="fs-id1165135150662" list-type="enumerated" number-style="arabic"><item>Substitute the values given for <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>,</m:mo><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> into the formula <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi>
+ </m:mrow>
+</m:math> to solve for <m:math>
+ <m:mrow>
+  <m:mi>d</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Find a given term by substituting the appropriate values for <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo><m:mi>n</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>d</m:mi>
+ </m:mrow>
+</m:math> into the formula <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list></note>
+
+<example id="Example_11_02_03">
+<exercise id="fs-id1165137663228">
+<problem id="fs-id1165137444124">
+<title>Writing Terms of Arithmetic Sequences</title>
+<para id="fs-id1165137462631">Given <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>4</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>14</m:mn>
+</m:mrow>
+</m:math> , find <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>5</m:mn>
+</m:msub> </m:mrow>
+</m:math> .</para></problem>
+<solution id="fs-id1165137570239">
+<para id="fs-id1165137401245">The sequence can be written in terms of the initial term 8 and the common difference <m:math>
+<m:mi>d</m:mi>
+</m:math> .</para>
+    <equation id="fs-id1165134058302" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>{</m:mo>
+<m:mrow>
+<m:mn>8</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mi>d</m:mi><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>d</m:mi><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>d</m:mi>
+</m:mrow>
+<m:mo>}</m:mo></m:mrow>
+</m:mrow>
+</m:math> </equation><para id="fs-id1165137705814">We know the fourth term equals 14; we know the fourth term has the form <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo><m:mn>3</m:mn><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>d</m:mi>
+</m:mrow>
+</m:math> .</para><para id="fs-id1165137473517">We can find the common difference <m:math>
+<m:mi>d</m:mi>
+</m:math> .</para><equation id="fs-id1165134388837" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>d</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>4</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>d</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>4</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>d</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Write the fourth term of the sequence in terms of</m:mtext><m:mo> </m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo> </m:mo><m:mtext>and</m:mtext><m:mo> </m:mo><m:mi>d</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>14</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>d</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Substitute</m:mtext><m:mo> </m:mo><m:mn>14</m:mn><m:mo> </m:mo><m:mtext>for</m:mtext><m:mo> </m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>4</m:mn>
+      </m:msub>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo> </m:mo><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Solve for the common difference</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137653720">Find the fifth term by adding the common difference to the fourth term.</para><equation id="fs-id1165137601311" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>5</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:msub>
+<m:mi>a</m:mi>
+<m:mn>4</m:mn>
+</m:msub>
+<m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>16</m:mn>
+</m:mrow>
+</m:math> </equation>
+</solution>
+<commentary id="fs-id1165137642494">
+<title>Analysis</title>
+<para id="fs-id1165137874586">Notice that the common difference is added to the first term once to find the second term, twice to find the third term, three times to find the fourth term, and so on. The tenth term could be found by adding the common difference to the first term nine times or by using the equation <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mi>d</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para></commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137552415" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_11_02_04">
+<problem id="fs-id1165137591465">
+<para id="fs-id1165137471479">Given <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>5</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>17</m:mn>
+</m:mrow>
+</m:math> , find <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>2</m:mn>
+</m:msub> </m:mrow>
+</m:math> .</para></problem>
+<solution id="fs-id1165137424859">
+<para id="fs-id1165137786532">
+ <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137445093"><title>Using Recursive Formulas for Arithmetic Sequences</title><para id="fs-id1165137640288">Some arithmetic sequences are defined in terms of the previous term using a <term class="no-emphasis">recursive formula</term>. The formula provides an algebraic rule for determining the terms of the sequence. A recursive formula allows us to find any term of an arithmetic sequence using a function of the preceding term. Each term is the sum of the previous term and the common difference. For example, if the common difference is 5, then each term is the previous term plus 5. As with any recursive formula, the first term must be given.</para>
+<equation id="fs-id1165135388336" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+      <m:mo>+</m:mo><m:mi>d</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<note id="fs-id1165135341395">
+
+<title>Recursive Formula for an Arithmetic Sequence</title>
+<para id="fs-id1165134378719">The recursive formula for an arithmetic sequence with common difference <m:math>
+<m:mi>d</m:mi>
+</m:math> is:</para><equation id="fs-id1165134318826" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+      <m:mo>+</m:mo><m:mi>d</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></note>
+
+<note id="fs-id1165137592768" class="how-to-notitle">
+
+<para id="fs-id1165137728418">
+<emphasis effect="bold">Given an arithmetic sequence, write its recursive formula.</emphasis>
+</para>
+<list id="fs-id1165137823160" list-type="enumerated" number-style="arabic">
+<item>Subtract any term from the subsequent term to find the common difference.</item>
+<item>State the initial term and substitute the common difference into the recursive formula for arithmetic sequences.</item>
+</list>
+</note>
+
+<example id="Example_11_02_04">
+<exercise id="fs-id1165137401258"><problem id="fs-id1165137602585">
+<title>Writing a Recursive Formula for an Arithmetic Sequence</title>
+<para id="fs-id1165137901281">Write a <term class="no-emphasis">recursive formula</term> for the
+    <term class="no-emphasis">arithmetic sequence</term>.</para><equation id="fs-id1165134164941" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:mo>−</m:mo><m:mn>18</m:mn><m:mtext>, </m:mtext><m:mo>−</m:mo><m:mn>7</m:mn><m:mtext>, </m:mtext><m:mn>4</m:mn><m:mtext>, </m:mtext><m:mn>15</m:mn><m:mtext>, </m:mtext><m:mn>26</m:mn><m:mtext>, …</m:mtext><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137827813">
+<para id="fs-id1165137851333">The first term is given as <m:math>
+<m:mrow>
+<m:mn>−18</m:mn>
+</m:mrow>
+</m:math> . The common difference can be found by subtracting the first term from the second term.</para><equation id="fs-id1165137644432" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>d</m:mi><m:mo>=</m:mo><m:mn>−7</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−18</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>11</m:mn>
+</m:mrow>
+</m:math> </equation><para id="fs-id1165137863170">Substitute the initial term and the common difference into the recursive formula for arithmetic sequences.</para><equation id="fs-id1165137656649" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mo>−</m:mo><m:mn>18</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:msub>
+<m:mi>a</m:mi>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msub>
+<m:mo>+</m:mo><m:mn>11</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext>for </m:mtext><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr> </m:mtable>
+</m:mrow>
+</m:math> </equation>
+</solution>
+<commentary id="fs-id1165137726122">
+<title>Analysis</title>
+<para id="fs-id1165137640097">We see that the common difference is the slope of the line formed when we graph the terms of the sequence, as shown in <link target-id="CNX_Precalculus_Figure_11_02_005"/>. The growth pattern of the sequence shows the constant difference of 11 units.</para>
+
+<figure id="CNX_Precalculus_Figure_11_02_005"><media id="fs-id1165137603859" alt="Graph of the arithmetic sequence. The points form a positive line.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_005.jpg"/>
+</media>
+</figure></commentary>
+</exercise></example>
+
+
+<note id="fs-id1165137664621" class="precalculus qa">
+<label>Q&amp;A</label>
+<para id="eip-id1165137634869"><emphasis>Do we have to subtract the first term from the second term to find the common difference?</emphasis></para>
+<para id="fs-id1165137677938">
+<emphasis effect="italics"> No. We can subtract any term in the sequence from the subsequent term. It is, however, most common to subtract the first term from the second term because it is often the easiest method of finding the common difference.</emphasis>
+</para>
+</note>
+<note id="fs-id1165137472888" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_11_02_05">
+<problem id="fs-id1165135542004">
+<para id="fs-id1165135181244">Write a recursive formula for the arithmetic sequence.
+</para><equation id="fs-id1165137598409" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>25</m:mn><m:mtext>, </m:mtext><m:mo> </m:mo><m:mn>37</m:mn><m:mtext>, </m:mtext><m:mo> </m:mo><m:mn>49</m:mn><m:mtext>, </m:mtext><m:mo> </m:mo><m:mn>61</m:mn><m:mtext>, </m:mtext><m:mo> </m:mo><m:mtext>…</m:mtext><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137527187">
+<para id="fs-id1165137447926"> <m:math>
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>25</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mrow>
+<m:mi>n</m:mi>
+<m:mo>−</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+</m:msub>
+<m:mo>+</m:mo>
+<m:mn>12</m:mn>
+<m:mo>,</m:mo>
+<m:mspace width="0.8em"/><m:mtext>for </m:mtext>
+<m:mi>n</m:mi>
+<m:mo>≥</m:mo>
+<m:mn>2</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137733870"><title>Using Explicit Formulas for Arithmetic Sequences</title><para id="fs-id1165137650868">We can think of an <term class="no-emphasis">arithmetic sequence</term> as a function on the domain of the natural numbers; it is a linear function because it has a constant rate of change. The common difference is the constant rate of change, or the slope of the function. We can construct the linear function if we know the slope and the vertical intercept.</para>
+<equation id="eip-id1165134225673" class="unnumbered"><label/>
+ <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo>
+<m:mi>d</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>−</m:mo>
+<m:mn>1</m:mn>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165137767412">To find the <emphasis effect="italics">y</emphasis>-intercept of the function, we can subtract the common difference from the first term of the sequence. Consider the following sequence.</para>
+<para id="eip-id2247141">
+<media id="fs-id1165135701477" alt="A sequence, {200, 150, 100, 50, 0, ...}, that shows the terms differ only by -50." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_006.jpg"/>
+</media></para>
+<para id="fs-id1165135543365">The common difference is <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>50</m:mn>
+</m:mrow>
+</m:math> , so the sequence represents a linear function with a slope of <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>50</m:mn>
+</m:mrow>
+</m:math> . To find the <m:math>
+<m:mi>y</m:mi>
+</m:math> -intercept, we subtract <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>50</m:mn>
+</m:mrow>
+</m:math> from <m:math>
+ <m:mrow>
+  <m:mn>200</m:mn><m:mo>:</m:mo><m:mspace width="0.8em"/><m:mn>200</m:mn><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>50</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>200</m:mn><m:mo>+</m:mo><m:mn>50</m:mn><m:mo>=</m:mo><m:mn>250</m:mn>
+ </m:mrow>
+</m:math> . You can also find the <m:math>
+<m:mi>y</m:mi>
+</m:math> -intercept by graphing the function and determining where a line that connects the points would intersect the vertical axis. The graph is shown in <link target-id="CNX_Precalculus_Figure_11_02_007"/>.</para>
+<figure id="CNX_Precalculus_Figure_11_02_007">
+<media id="fs-id1165135149213" alt="Graph of the arithmetic sequence. The points form a negative line.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_007.jpg"/>
+</media>
+</figure><para id="fs-id1165137553505">Recall the slope-intercept form of a line is <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When dealing with sequences, we use <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+   </m:mrow>
+</m:math> in place of <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> in place of <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> If we know the slope and vertical intercept of the function, we can substitute them for <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>b</m:mi>
+ </m:mrow>
+</m:math> in the slope-intercept form of a line. Substituting <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>50</m:mn>
+ </m:mrow>
+</m:math> for the slope and <m:math>
+ <m:mrow>
+  <m:mn>250</m:mn>
+ </m:mrow>
+</m:math> for the vertical intercept, we get the following equation:</para><equation id="fs-id1165134151796" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:mo>−</m:mo><m:mn>50</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>250</m:mn>
+</m:mrow>
+</m:math> </equation><para id="fs-id1165137419276">We do not need to find the vertical intercept to write an <term class="no-emphasis">explicit formula</term> for an arithmetic sequence. Another explicit formula for this sequence is <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:mn>200</m:mn><m:mo>−</m:mo><m:mn>50</m:mn><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> , which simplifies to <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>50</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>250.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+<note id="fs-id1165137855306"><title>Explicit Formula for an Arithmetic Sequence</title>
+
+<para id="fs-id1165137894389">An explicit formula for the <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mtext>th</m:mtext>
+ </m:mrow>
+</m:math> term of an arithmetic sequence is given by
+</para><equation id="fs-id1165132167069" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</equation></note><note id="fs-id1165137619575" class="how-to-notitle">
+
+<para id="fs-id1165137530315">
+<emphasis effect="bold">Given the first several terms for an arithmetic sequence, write an explicit formula.</emphasis>
+</para>
+<list id="fs-id1165137732761" list-type="enumerated" number-style="arabic"><item>Find the common difference, <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>−</m:mo><m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Substitute the common difference and the first term into <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+</list></note>
+
+<example id="Example_11_02_05">
+<exercise id="fs-id1165137592291"><problem id="fs-id1165137592294">
+<title>Writing the <emphasis effect="italics">n</emphasis>th Term Explicit Formula for an Arithmetic Sequence</title>
+<para id="fs-id1165137589825">Write an explicit formula for the arithmetic sequence.</para><equation id="fs-id1165135209025" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>2</m:mn><m:mtext>, </m:mtext><m:mn>12</m:mn><m:mtext>, </m:mtext><m:mn>22</m:mn><m:mtext>, </m:mtext><m:mn>32</m:mn><m:mtext>, </m:mtext><m:mn>42</m:mn><m:mtext>, …</m:mtext><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137619155">
+    <para id="fs-id1165135196795">The common difference can be found by subtracting the first term from the second term.</para><equation id="fs-id1165137827643" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mi>d</m:mi>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>−</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>10</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+    </equation><para id="fs-id1165137768648">The common difference is 10. Substitute the common difference and the first term of the sequence into the formula and simplify.</para><equation id="fs-id1165137450966" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:mn>10</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr> </m:mtable>
+</m:mrow>
+</m:math> </equation></solution>
+<commentary id="fs-id1165137769838">
+<title>Analysis</title>
+<para id="fs-id1165135444857">The graph of this sequence, represented in <link target-id="CNX_Precalculus_Figure_11_02_008"/>, shows a slope of 10 and a vertical intercept of <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:math> .</para><figure id="CNX_Precalculus_Figure_11_02_008"><media id="fs-id1165137461154" alt="Graph of the arithmetic sequence. The points form a positive line.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_008.jpg"/>
+</media>
+</figure></commentary>
+</exercise></example>
+
+<note id="fs-id1165137742434" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_11_02_06"><problem id="fs-id1165137596308">
+    <para id="fs-id1165135252117">Write an explicit formula for the following arithmetic sequence.</para><equation id="fs-id1165133247941" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mo>{</m:mo><m:mn>50</m:mn><m:mo>,</m:mo><m:mn>47</m:mn><m:mo>,</m:mo><m:mn>44</m:mn><m:mo>,</m:mo><m:mn>41</m:mn><m:mo>,</m:mo><m:mo>…</m:mo><m:mo>}</m:mo>
+</m:mrow>
+</m:math> </equation></problem>
+<solution id="fs-id1165137757748">
+<para id="fs-id1165137757750">
+ <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>53</m:mn>
+<m:mo>−</m:mo>
+<m:mn>3</m:mn>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise></note>
+
+
+<section id="fs-id1165137454430"><title>Finding the Number of Terms in a Finite Arithmetic Sequence</title><para id="fs-id1165137600326">Explicit formulas can be used to determine the number of terms in a finite arithmetic sequence. We need to find the common difference, and then determine how many times the common difference must be added to the first term to obtain the final term of the sequence.</para>
+
+<note id="fs-id1165137475678" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165137652766">
+<emphasis effect="bold">Given the first three terms and the last term of a finite arithmetic sequence, find the total number of terms.</emphasis>
+</para>
+<list id="fs-id1165135169419" list-type="enumerated" number-style="arabic"><item>Find the common difference <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Substitute the common difference and the first term into <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Substitute the last term for <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub> </m:mrow>
+</m:math> and solve for <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+</list></note>
+
+<example id="Example_11_02_06">
+<exercise id="fs-id1165135199575"><problem id="fs-id1165135199577">
+<title>Finding the Number of Terms in a Finite Arithmetic Sequence</title>
+<para id="fs-id1165137870810">Find the number of terms in the <term class="no-emphasis">finite arithmetic sequence</term>.</para><equation id="fs-id1165135188145" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>8</m:mn><m:mtext>, </m:mtext><m:mn>1</m:mn><m:mtext>, </m:mtext><m:mn>–6</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mtext>, </m:mtext><m:mn>–41</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135237110">
+<para id="fs-id1165135237112">The common difference can be found by subtracting the first term from the second term.</para><equation id="fs-id1165135411367" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135206115">The common difference is <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:math> . Substitute the common difference and the initial term of the sequence into the <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mtext>th</m:mtext>
+</m:mrow>
+</m:math> term formula and simplify.</para><equation id="fs-id1165137643973" class="unnumbered"><label/>
+ <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo>
+<m:mi>d</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>−</m:mo>
+<m:mn>1</m:mn>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>8</m:mn>
+<m:mo>+</m:mo>
+<m:mo>(</m:mo><m:mo>−</m:mo>
+<m:mn>7</m:mn><m:mo>)</m:mo>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>−</m:mo>
+<m:mn>1</m:mn>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>15</m:mn>
+<m:mo>−</m:mo>
+<m:mn>7</m:mn>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165137574401">Substitute <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>41</m:mn>
+</m:mrow>
+</m:math> for <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub> </m:mrow>
+</m:math> and solve for <m:math>
+<m:mi>n</m:mi>
+</m:math> </para><equation id="fs-id1165134138640" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>41</m:mn><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>−</m:mo><m:mn>7</m:mn><m:mi>n</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:mn>8</m:mn><m:mo>=</m:mo><m:mi>n</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135528974">There are eight terms in the sequence.</para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137734532" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_11_02_07">
+<problem id="fs-id1165137526884"><para id="fs-id1165137526885">Find the number of terms in the finite arithmetic sequence.
+</para><equation id="fs-id1165134221772" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>6</m:mn><m:mtext>, </m:mtext><m:mn>11</m:mn><m:mtext>, </m:mtext><m:mn>16</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mtext>, </m:mtext><m:mn>56</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135149263"><para id="fs-id1165135149264">There are 11 terms in the sequence.</para></solution>
+</exercise>
+</note>
+</section><section id="fs-id1165137569473"><title>Solving Application Problems with Arithmetic Sequences</title><para id="fs-id1165135192826">In many application problems, it often makes sense to use an initial term of <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>0</m:mn>
+</m:msub> </m:mrow>
+</m:math> instead of <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> In these problems, we alter the explicit formula slightly to account for the difference in initial terms. We use the following formula:</para><equation id="fs-id1165137936550" class="unnumbered"><label/>
+ <m:math display="block">
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+<m:mo>+</m:mo>
+<m:mi>d</m:mi>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+
+<example id="Example_11_02_07">
+<exercise id="fs-id1165137810075">
+<problem id="fs-id1165137810078">
+<title>Solving Application Problems with Arithmetic Sequences</title>
+<para id="fs-id1165137558482">A five-year old child receives an allowance of $1 each week. His parents promise him an annual increase of $2 per week.</para>
+<list id="fs-id1165137754613" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span>Write a formula for the child’s weekly allowance in a given year.</item>
+<item><span class="token">ⓑ</span>What will the child’s allowance be when he is 16 years old?</item>
+</list>
+</problem>
+<solution id="fs-id1165137442369">
+<list id="fs-id1165137470933" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span>
+<para id="fs-id1165137862332">The situation can be modeled by an arithmetic sequence with an initial term of 1 and a common difference of 2.</para>
+<para id="fs-id1165137431625">Let <m:math>
+<m:mi>A</m:mi>
+</m:math> be the amount of the allowance and <m:math>
+<m:mi>n</m:mi>
+</m:math> be the number of years after age 5. Using the altered explicit formula for an arithmetic sequence we get:</para><equation id="fs-id1165137781581" class="unnumbered"><label/>
+ <m:math display="block">
+<m:mrow>
+<m:msub>
+<m:mi>A</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+<m:mo>+</m:mo>
+<m:mn>2</m:mn>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+</item>
+<item><span class="token">ⓑ</span>
+<para id="fs-id1165135196849">We can find the number of years since age 5 by subtracting.</para>
+    <equation id="fs-id1165135371473" class="unnumbered"><label/>
+ <m:math display="block">
+<m:mrow>
+<m:mn>16</m:mn>
+<m:mo>−</m:mo>
+<m:mn>5</m:mn>
+<m:mo>=</m:mo>
+<m:mn>11</m:mn>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137446464">We are looking for the child’s allowance after 11 years. Substitute 11 into the formula to find the child’s allowance at age 16.</para>
+    <equation id="fs-id1165134031322" class="unnumbered"><label/>
+ <m:math display="block">
+<m:mrow>
+<m:msub>
+<m:mi>A</m:mi>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+<m:mo>+</m:mo>
+<m:mn>2</m:mn>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>11</m:mn>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mn>23</m:mn>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137920806">The child’s allowance at age 16 will be $23 per week.</para>
+</item>
+</list>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137423288" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_11_02_08">
+<problem id="fs-id1165137453247">
+<para id="fs-id1165137755821">A woman decides to go for a 10-minute run every day this week and plans to increase the time of her daily run by 4 minutes each week. Write a formula for the time of her run after n weeks. How long will her daily run be 8 weeks from today?</para></problem>
+<solution id="fs-id1165137423626"><para id="fs-id1165137423627">The formula is <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>T</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>10</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>n</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and it will take her 42 minutes.
+</para></solution>
+</exercise>
+
+
+</note><note id="fs-id1165137731449" class="media-notitle">
+<label>Media</label>
+<para id="fs-id1165137837898">Access this online resource for additional instruction and practice with arithmetic sequences.</para>
+<list id="url-list" list-type="bulleted" display="block">
+<item><link url="http://openstax.org/l/arithmeticseq">Arithmetic Sequences</link></item>
+</list>
+</note>
+</section></section><section id="fs-id1165137442033" class="key-equations">
+<title>Key Equations</title><table id="eip-id1165135528502" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry>recursive formula for nth term of an arithmetic sequence</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo>
+   <m:mrow>
+    <m:msub><m:mi>a</m:mi>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msub>
+    <m:mo>+</m:mo><m:mi>d</m:mi>
+   </m:mrow><m:mo>,</m:mo>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry>explicit formula for nth term of an arithmetic sequence</entry>
+<entry> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:msub>
+     <m:mi>a</m:mi>
+     <m:mi>n</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo><m:msub>
+     <m:mi>a</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mtd>
+  </m:mtr>
+
+ </m:mtable>
+
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+
+
+
+
+
+</tgroup>
+</table></section><section id="fs-id1165134037666" class="key-concepts"><title>Key Concepts</title><list id="fs-id1165135187616" list-type="bulleted">
+<item>An arithmetic sequence is a sequence where the difference between any two consecutive terms is a constant.</item>
+<item>The constant between two consecutive terms is called the common difference.</item>
+<item>The common difference is the number added to any one term of an arithmetic sequence that generates the subsequent term. See <link target-id="Example_11_02_01"/>.</item>
+<item>The terms of an arithmetic sequence can be found by beginning with the initial term and adding the common difference repeatedly. See <link target-id="Example_11_02_02"/> and <link target-id="Example_11_02_03"/>.</item>
+<item>A recursive formula for an arithmetic sequence with common difference <m:math>
+ <m:mi>d</m:mi>
+</m:math> is given by <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>d</m:mi><m:mo>,</m:mo><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> See <link target-id="Example_11_02_04"/>.</item>
+<item>As with any recursive formula, the initial term of the sequence must be given.</item>
+<item>An explicit formula for an arithmetic sequence with common difference <m:math>
+ <m:mi>d</m:mi>
+</m:math> is given by <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> See <link target-id="Example_11_02_05"/>.</item>
+<item>An explicit formula can be used to find the number of terms in a sequence. See <link target-id="Example_11_02_06"/>.</item>
+<item>In application problems, we sometimes alter the explicit formula slightly to <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>d</m:mi><m:mi>n</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> See <link target-id="Example_11_02_07"/>.</item>
+</list></section><section id="fs-id1165137862597" class="section-exercises">
+<title>Section Exercises</title>
+<section id="fs-id1165137806994">
+<title>Verbal</title>
+<exercise id="fs-id1165137443202">
+<problem id="fs-id1165137443204">
+<para id="fs-id1165137443206">What is an arithmetic sequence?</para>
+</problem>
+<solution id="fs-id1165137605230">
+<para id="fs-id1165137605232">A sequence where each successive term of the sequence increases (or decreases) by a constant value.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135641668"><problem id="fs-id1165135205879">
+<para id="fs-id1165135205881">How is the common difference of an arithmetic sequence found?</para>
+</problem>
+</exercise><exercise id="fs-id1165137454593">
+<problem id="fs-id1165137454595">
+<para id="fs-id1165137454597">How do we determine whether a sequence is arithmetic?</para>
+</problem>
+<solution id="fs-id1165137843849">
+<para id="fs-id1165137843851">We find whether the difference between all consecutive terms is the same. This is the same as saying that the sequence has a common difference.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135296347"><problem id="fs-id1165135296349">
+<para id="fs-id1165135296351">What are the main differences between using a recursive formula and using an explicit formula to describe an arithmetic sequence?</para>
+</problem>
+
+</exercise><exercise id="fs-id1165137628379">
+<problem id="fs-id1165137628382">
+<para id="fs-id1165135687866">Describe how linear functions and arithmetic sequences are similar. How are they different?</para>
+</problem>
+<solution id="fs-id1165135687870">
+<para id="fs-id1165137836482">Both arithmetic sequences and linear functions have a constant rate of change. They are different because their domains are not the same; linear functions are defined for all real numbers, and arithmetic sequences are defined for natural numbers or a subset of the natural numbers.</para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-id1165135245639">
+<title>Algebraic</title>
+<para id="fs-id1165134069164">For the following exercises, find the common difference for the arithmetic sequence provided.</para>
+
+<exercise id="fs-id1165135187016"><problem id="fs-id1165135187019">
+<para id="fs-id1165135187021">
+ <m:math>
+<m:mrow>
+<m:mo>{</m:mo>
+<m:mn>5</m:mn>
+<m:mo>,</m:mo>
+<m:mn>11</m:mn>
+<m:mo>,</m:mo>
+<m:mn>17</m:mn>
+<m:mo>,</m:mo>
+<m:mn>23</m:mn>
+<m:mo>,</m:mo>
+<m:mn>29</m:mn>
+<m:mo>,</m:mo>
+<m:mn>...</m:mn>
+<m:mo>}</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise><exercise id="fs-id1165137794232">
+<problem id="fs-id1165137794234">
+<para id="fs-id1165137794236">
+ <m:math>
+<m:mrow>
+<m:mrow>
+<m:mo>{</m:mo>
+<m:mrow>
+<m:mn>0</m:mn>
+<m:mo>,</m:mo>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+<m:mn>1</m:mn>
+<m:mo>,</m:mo>
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+<m:mn>2</m:mn>
+<m:mo>,</m:mo>
+<m:mn>...</m:mn>
+</m:mrow>
+<m:mo>}</m:mo>
+</m:mrow>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137823149">
+<para id="fs-id1165137654842">The common difference is <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac> </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165137611113">For the following exercises, determine whether the sequence is arithmetic. If so find the common difference.</para>
+
+<exercise id="fs-id1165137461257">
+<problem id="fs-id1165137461259">
+<para id="fs-id1165137461261">
+ <m:math>
+<m:mrow>
+<m:mo>{</m:mo>
+<m:mn>11.4</m:mn>
+<m:mo>,</m:mo>
+<m:mn>9.3</m:mn>
+<m:mo>,</m:mo>
+<m:mn>7.2</m:mn>
+<m:mo>,</m:mo>
+<m:mn>5.1</m:mn>
+<m:mo>,</m:mo>
+<m:mn>3</m:mn>
+<m:mo>,</m:mo>
+<m:mn>...</m:mn>
+<m:mo>}</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137453581">
+<problem id="fs-id1165137453584">
+<para id="fs-id1165137453586">
+ <m:math>
+<m:mrow>
+<m:mo>{</m:mo>
+<m:mn>4</m:mn>
+<m:mo>,</m:mo>
+<m:mn>16</m:mn>
+<m:mo>,</m:mo>
+<m:mn>64</m:mn>
+<m:mo>,</m:mo>
+<m:mn>256</m:mn>
+<m:mo>,</m:mo>
+<m:mn>1024</m:mn>
+<m:mo>,</m:mo>
+<m:mn>...</m:mn>
+<m:mo>}</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137593311">
+<para id="fs-id1165135429371">The sequence is not arithmetic because <m:math>
+<m:mrow>
+<m:mn>16</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>≠</m:mo><m:mn>64</m:mn><m:mo>−</m:mo><m:mn>16.</m:mn>
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165137628803">For the following exercises, write the first five terms of the arithmetic sequence given the first term and common difference.</para><exercise id="fs-id1165137834604">
+<problem id="fs-id1165137834606">
+<para id="fs-id1165137834608"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>−25</m:mn>
+</m:mrow>
+</m:math> , <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mo>=</m:mo><m:mn>−9</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137755512">
+<problem id="fs-id1165137755514">
+<para id="fs-id1165137580022"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> , <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac> </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137755793">
+<para id="fs-id1165137438873"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mfrac>
+   <m:mn>8</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<para id="fs-id1165137828050">For the following exercises, write the first five terms of the arithmetic series given two terms.</para><exercise id="fs-id1165137443016">
+<problem id="fs-id1165137443018">
+<para id="fs-id1165137443020"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>17</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>7</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>31</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137432027">
+<problem id="fs-id1165137604121">
+<para id="fs-id1165137604123"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>13</m:mn></m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>60</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>33</m:mn></m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>160</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137833021">
+<para id="fs-id1165137833023">
+ <m:math>
+<m:mrow>
+<m:mn>0</m:mn>
+<m:mo>,</m:mo>
+<m:mo>−</m:mo>
+<m:mn>5</m:mn>
+<m:mo>,</m:mo>
+<m:mo>−</m:mo>
+<m:mn>10</m:mn>
+<m:mo>,</m:mo>
+<m:mo>−</m:mo>
+<m:mn>15</m:mn>
+<m:mo>,</m:mo>
+<m:mo>−</m:mo>
+<m:mn>20</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137838376">For the following exercises, find the specified term for the arithmetic sequence given the first term and common difference.</para><exercise id="fs-id1165135572101">
+<problem id="fs-id1165135572103">
+<para id="fs-id1165137762625">First term is 3, common difference is 4, find the 5<sup>th</sup> term.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137462061">
+<problem id="fs-id1165137462064"><para id="fs-id1165137462065">First term is 4, common difference is 5, find the 4<sup>th</sup> term.</para></problem>
+<solution id="fs-id1165137936647">
+<para id="fs-id1165137460595"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>4</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>19</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137580727">
+<problem id="fs-id1165137580729">
+<para id="fs-id1165137580731">First term is 5, common difference is 6, find the 8<sup>th</sup> term.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137445882">
+<problem id="fs-id1165137445884">
+<para id="fs-id1165137445886">First term is 6, common difference is 7, find the 6<sup>th</sup> term.</para>
+</problem>
+<solution id="fs-id1165134164069">
+<para id="fs-id1165137628270"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>6</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>41</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137732594">
+<problem id="fs-id1165137732596">
+<para id="fs-id1165137732598">First term is 7, common difference is 8, find the 7<sup>th</sup> term.</para>
+</problem>
+</exercise>
+
+<para id="fs-id1165137451360">For the following exercises, find the first term given two terms from an arithmetic sequence.</para><exercise id="fs-id1165137451364">
+<problem id="fs-id1165137445645">
+<para id="fs-id1165137445648">Find the first term or <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+ </m:mrow>
+</m:math> of an arithmetic sequence if <m:math>
+ <m:mrow>
+<m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>6</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>12</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>14</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>28.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137770281">
+<para id="fs-id1165137664354"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="eip-889"><problem id="eip-863">
+  <para id="eip-917">Find the first term or <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+ </m:mrow>
+</m:math> of an arithmetic sequence if <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>7</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>21</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>42.</m:mn>
+ </m:mrow>
+</m:math> </para></problem></exercise><exercise id="fs-id1165137536158">
+<problem id="fs-id1165137756094">
+<para id="fs-id1165137756096">Find the first term or <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> of an arithmetic sequence if <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>8</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>40</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>23</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>115.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137424883">
+<para id="fs-id1165137597826"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137456275">
+<problem id="fs-id1165137807536">
+<para id="fs-id1165137807538">Find the first term or <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> of an arithmetic sequence if <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>9</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>54</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>17</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>102.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137404685">
+<problem id="fs-id1165137612251">
+<para id="fs-id1165137612253">Find the first term or <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> of an arithmetic sequence if <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>11</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>11</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>21</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>16.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137645559">
+<para id="fs-id1165137645561"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137874823">For the following exercises, find the specified term given two terms from an arithmetic sequence.</para><exercise id="fs-id1165137640865">
+<problem id="fs-id1165137640867">
+<para id="fs-id1165137640869"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>33</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>7</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>15.</m:mn>
+ </m:mrow>
+</m:math> Find <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>4</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137668391">
+<problem id="fs-id1165137668394">
+<para id="fs-id1165137668396"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>17.1</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>15.7.</m:mn>
+ </m:mrow>
+</m:math> Find <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>21</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137812705">
+<para id="fs-id1165137812707"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>21</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>13.5</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137736232">For the following exercises, use the recursive formula to write the first five terms of the arithmetic sequence.</para><exercise id="fs-id1165137900351">
+<problem id="fs-id1165137900353">
+<para id="fs-id1165137900355"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>39</m:mn><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mtext/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>−</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137443989">
+<problem id="fs-id1165137443992">
+<para id="fs-id1165137675444"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>19</m:mn><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mtext/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>−</m:mo><m:mn>1.4</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135542702">
+<para id="fs-id1165135542705"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>19</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>20.4</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>21.8</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>23.2</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>24.6</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135471109">For the following exercises, write a recursive formula for each arithmetic sequence.</para>
+
+<exercise id="fs-id1165134200171">
+<problem id="fs-id1165134200173">
+<para id="fs-id1165134200175"> <m:math>
+ <m:mrow>
+   <m:mi>a</m:mi>
+   <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>40</m:mn><m:mo>,</m:mo><m:mn>60</m:mn><m:mo>,</m:mo><m:mn>80</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135190243">
+<problem id="fs-id1165135190246">
+<para id="fs-id1165135190993"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>17</m:mn><m:mo>,</m:mo><m:mn>26</m:mn><m:mo>,</m:mo><m:mn>35</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135168066">
+<para id="fs-id1165135168069"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>17</m:mn><m:mo>;</m:mo><m:mo> </m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+      <m:mo>+</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137736031">
+<problem id="fs-id1165137736033">
+<para id="fs-id1165137736035"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135253828">
+<problem id="fs-id1165135253830">
+<para id="fs-id1165135253832"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>17</m:mn><m:mo>,</m:mo><m:mn>22</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137757964">
+<para id="fs-id1165137757966"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>12</m:mn><m:mo>;</m:mo><m:mo> </m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+      <m:mo>+</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137628141">
+<problem id="fs-id1165137761720">
+<para id="fs-id1165137761722"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mo>−</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137757350">
+<problem id="fs-id1165135390990">
+<para id="fs-id1165135390992"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>8.9</m:mn><m:mo>,</m:mo><m:mn>10.3</m:mn><m:mo>,</m:mo><m:mn>11.7</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137871677">
+<para id="fs-id1165137871679"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>8.9</m:mn><m:mo>;</m:mo><m:mo> </m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+      <m:mo>+</m:mo><m:mn>1.4</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137722265">
+<problem id="fs-id1165137722268">
+<para id="fs-id1165137387534"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mo>−</m:mo><m:mn>0.52</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>1.02</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>1.52</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137921629">
+<problem id="fs-id1165137595277">
+<para id="fs-id1165137595279"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>5</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>9</m:mn>
+    <m:mrow>
+     <m:mn>20</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>7</m:mn>
+    <m:mrow>
+     <m:mn>10</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137556832">
+<para id="fs-id1165137556834"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mo>;</m:mo><m:mo> </m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135242878">
+<problem id="fs-id1165135242880">
+<para id="fs-id1165137675626"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo>−</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>2</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac>
+    <m:mn>5</m:mn>
+    <m:mn>4</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+
+<exercise id="fs-id1165137446556">
+<problem id="fs-id1165137446558">
+<para id="fs-id1165137446561"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>6</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac>
+    <m:mrow>
+     <m:mn>11</m:mn>
+    </m:mrow>
+    <m:mrow>
+     <m:mn>12</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137601139">
+<para id="fs-id1165137601142"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mrow/>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>;</m:mo><m:mo> </m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>13</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<para id="fs-id1165137850291">For the following exercises, write a recursive formula for the given arithmetic sequence, and then find the specified term.</para>
+
+<exercise id="fs-id1165135187433"><problem id="fs-id1165135187435">
+<para id="fs-id1165135187437"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>7</m:mn><m:mtext>, </m:mtext><m:mn>4</m:mn><m:mtext>, </m:mtext><m:mn>1</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mo>}</m:mo><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> Find the 17<sup>th</sup> term.</para></problem>
+</exercise><exercise id="fs-id1165137436124">
+<problem id="fs-id1165137436126">
+<para id="fs-id1165137436129"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>4</m:mn><m:mtext>, </m:mtext><m:mn>11</m:mn><m:mtext>, </m:mtext><m:mn>18</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mo>}</m:mo><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> Find the 14<sup>th</sup> term.</para></problem>
+<solution id="fs-id1165137738063">
+<para id="fs-id1165137738065"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mtext/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>+</m:mo><m:mn>7</m:mn><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mtext/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>14</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>95</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137462539">
+<problem id="fs-id1165137462541">
+<para id="fs-id1165137462544"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>2</m:mn><m:mtext>, </m:mtext><m:mn>6</m:mn><m:mtext>, </m:mtext><m:mn>10</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mo>}</m:mo><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> Find the 12<sup>th</sup> term.</para></problem>
+</exercise>
+
+<para id="fs-id1165137757972">For the following exercises, use the explicit formula to write the first five terms of the arithmetic sequence.</para><exercise id="fs-id1165137757976">
+<problem id="fs-id1165137757978">
+<para id="fs-id1165137601510"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>24</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135194498">
+<para id="fs-id1165135194500">First five terms: <m:math>
+ <m:mrow>
+  <m:mn>20</m:mn><m:mo>,</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137657613">
+<problem id="fs-id1165137657615">
+<para id="fs-id1165137462350"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>n</m:mi><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<para id="fs-id1165137898052">For the following exercises, write an explicit formula for each arithmetic sequence.</para>
+
+<exercise id="fs-id1165137898056">
+<problem id="fs-id1165137898058">
+<para id="fs-id1165137574550"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137732173">
+<para id="fs-id1165137911607"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137425689">
+<problem id="fs-id1165135453351">
+<para id="fs-id1165135453353"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>32</m:mn><m:mo>,</m:mo><m:mn>24</m:mn><m:mo>,</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137400838">
+<problem id="fs-id1165137400840">
+<para id="fs-id1165137400842"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mo>−</m:mo><m:mn>5</m:mn><m:mtext>, </m:mtext><m:mn>95</m:mn><m:mtext>, </m:mtext><m:mn>195</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137933221">
+<para id="fs-id1165137933223"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>105</m:mn><m:mo>+</m:mo><m:mn>100</m:mn><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135390900">
+<problem id="fs-id1165135264749">
+<para id="fs-id1165135264752"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>−17</m:mn><m:mtext>, </m:mtext><m:mn>−217</m:mn><m:mtext>, </m:mtext><m:mn>−417</m:mn><m:mtext>,</m:mtext><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137597973">
+<problem id="fs-id1165135169141">
+<para id="fs-id1165135169143"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>1.8</m:mn><m:mtext>, </m:mtext><m:mn>3.6</m:mn><m:mtext>, </m:mtext><m:mn>5.4</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135332857">
+<para id="fs-id1165135332859"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>1.8</m:mn><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137827566">
+<problem id="fs-id1165137827568">
+<para id="fs-id1165135195519"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>−18.1</m:mn><m:mo>,</m:mo><m:mn>−16.2</m:mn><m:mo>,</m:mo><m:mn>−14.3</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137540888"><problem id="fs-id1165137540891">
+<para id="fs-id1165137863388"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>15.8</m:mn><m:mo>,</m:mo><m:mn>18.5</m:mn><m:mo>,</m:mo><m:mn>21.2</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137422379">
+<para id="fs-id1165137698681"> <m:math>
+ <m:mrow>
+  <m:msub>
+    <m:mi>a</m:mi>
+    <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>13.1</m:mn><m:mo>+</m:mo><m:mn>2.7</m:mn><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise><exercise id="fs-id1165137778952">
+<problem id="fs-id1165137704612">
+<para id="fs-id1165137704614"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo><m:mrow>
+   <m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac>
+    <m:mn>4</m:mn>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>−3</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn>
+  </m:mrow><m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137647272">
+<problem id="fs-id1165137647274">
+<para id="fs-id1165137647277"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>2</m:mn>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135452427">
+<para id="fs-id1165137851969"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>n</m:mi><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135487119"><problem id="fs-id1165135487121">
+<para id="fs-id1165135487123"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo>−</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac>
+    <m:mrow>
+     <m:mn>10</m:mn>
+    </m:mrow>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac>
+    <m:mn>5</m:mn>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>…</m:mo>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise><para id="fs-id1165135160917">For the following exercises, find the number of terms in the given finite arithmetic sequence.</para>
+
+<exercise id="fs-id1165135160921">
+<problem id="fs-id1165137748441">
+<para id="fs-id1165137748443"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>3</m:mn><m:mtext>,</m:mtext><m:mo>−</m:mo><m:mn>4</m:mn><m:mtext>,</m:mtext><m:mo>−</m:mo><m:mn>11</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mtext>,</m:mtext><m:mo>−</m:mo><m:mn>60</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137535636">
+<para id="fs-id1165137535639">There are 10 terms in the sequence.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137817430">
+<problem id="fs-id1165137817432">
+<para id="fs-id1165137817434"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mn>1.2</m:mn><m:mo>,</m:mo><m:mn>1.4</m:mn><m:mo>,</m:mo><m:mn>1.6</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>,</m:mo><m:mn>3.8</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137843924"><problem id="fs-id1165137843927">
+<para id="fs-id1165137843929"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>2</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mfrac>
+    <m:mn>7</m:mn>
+    <m:mn>2</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn><m:mo>,</m:mo><m:mn>8</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137782392">
+<para id="fs-id1165137782394">There are 6 terms in the sequence.</para>
+</solution>
+</exercise></section>
+
+<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137659723"><title>Graphical</title><para id="fs-id1165137659728">For the following exercises, determine whether the graph shown represents an arithmetic sequence.</para>
+<exercise id="fs-id1165137605906" class="material-set-2">
+<problem id="fs-id1165137605908">
+
+<media id="fs-id1165137452753" alt="Graph of a scattered plot with labeled points: (1, -4), (2, -2), (3, 0), (4, 2), and (5, 4). The x-axis is labeled n and the y-axis is labeled a_n." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_201.jpg"/>
+</media>
+
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137697189" class="material-set-2">
+<problem id="fs-id1165137697191">
+
+<media id="fs-id1165137640848" alt="Graph of a scattered plot with labeled points: (1, 1.5), (2, 2.25), (3, 3.375), (4, 5.0625), and (5, 7.5938). The x-axis is labeled n and the y-axis is labeled a_n." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_202.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165135186573">
+<para id="fs-id1165137676403">The graph does not represent an arithmetic sequence.</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137676408">For the following exercises, use the information provided to graph the first 5 terms of the arithmetic sequence.</para>
+
+<exercise id="fs-id1165137768048">
+<problem id="fs-id1165137768050">
+<para id="fs-id1165137768052"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137507791"><problem id="fs-id1165137507793">
+<para id="fs-id1165135188493"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>9</m:mn><m:mo>;</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>−</m:mo><m:mn>10</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137532662">
+
+<media id="fs-id1165134065142" alt="Graph of a scattered plot with labeled points: (1, 9), (2, -1), (3, -11), (4, -21), and (5, -31). The x-axis is labeled n and the y-axis is labeled a_n.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_204.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165135185958">
+<problem id="fs-id1165135185960">
+<para id="fs-id1165135185962"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>12</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+</section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137723291"><title>Technology</title><para id="fs-id1165137723296">For the following exercises, follow the steps to work with the arithmetic sequence <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> using a graphing calculator:</para>
+<para id="eip-idm403000176">
+<list id="fs-id1165137748523" list-type="bulleted" bullet-style="bullet"><item>Press <emphasis>[MODE]</emphasis>
+    <list id="fs-id1165137399747" list-type="bulleted" bullet-style="dash">
+    <item>Select SEQ in the fourth line</item>
+    <item>Select DOT in the fifth line</item>
+    <item>Press <emphasis>[ENTER]</emphasis></item>
+    </list>
+</item>
+<item>Press <emphasis>[Y=]</emphasis>
+<list id="fs-id1165134079601" list-type="bulleted" bullet-style="dash"><item> <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mtext>Min</m:mtext>
+ </m:mrow>
+</m:math> is the first counting number for the sequence. Set <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mtext>Min</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </item>
+    <item> <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> is the pattern for the sequence. Set <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+    <item> <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mtext>Min)</m:mtext>
+ </m:mrow>
+</m:math> is the first number in the sequence. Set <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mtext>Min)</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+    </list></item>
+<item>Press <emphasis>[2ND]</emphasis> then <emphasis>[WINDOW]</emphasis> to go to <emphasis>TBLSET</emphasis>
+    <list id="fs-id1165137401268" list-type="bulleted" bullet-style="dash">
+<item>Set <m:math>
+ <m:mrow>
+  <m:mtext>TblStart</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </item>
+    <item>Set <m:math>
+ <m:mrow>
+  <m:mi>Δ</m:mi><m:mtext>Tbl</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </item>
+    <item>Set Indpnt: Auto and Depend: Auto</item>
+    </list></item>
+<item>Press <emphasis>[2ND]</emphasis> then <emphasis>[GRAPH]</emphasis> to go to the <emphasis>TABLE</emphasis></item>
+</list></para>
+<exercise id="fs-id1165135369627">
+<problem id="fs-id1165135369630">
+<para id="fs-id1165135369632">What are the first seven terms shown in the column with the heading <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>?</m:mtext>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137834422">
+<para id="fs-id1165137834424"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>13</m:mn><m:mo>,</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mn>19</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135203701">
+<problem id="fs-id1165135203703">
+<para id="fs-id1165137761453">Use the scroll-down arrow to scroll to <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>=</m:mo><m:mn>50.</m:mn>
+ </m:mrow>
+</m:math> What value is given for <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>?</m:mtext>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137806911"><problem id="fs-id1165137806913">
+<para id="fs-id1165137806915">Press <emphasis>[WINDOW]</emphasis>. Set <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mtext>Min</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>, <m:math><m:mrow><m:mi>n</m:mi><m:mtext>Max</m:mtext><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math>, <m:math><m:mrow><m:mi>x</m:mi><m:mtext>Min</m:mtext><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, <m:math><m:mrow><m:mi>x</m:mi><m:mtext>Max</m:mtext><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math>, <m:math><m:mrow><m:mi>y</m:mi><m:mtext>Min</m:mtext><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math>, and 
+
+<m:math><m:mrow>
+  <m:mi>y</m:mi><m:mtext>Max</m:mtext><m:mo>=</m:mo><m:mn>14.</m:mn>
+ </m:mrow>
+</m:math> Then press <emphasis>[GRAPH]</emphasis>. Graph the sequence as it appears on the graphing calculator.</para></problem>
+<solution id="fs-id1165137828039">
+<media id="fs-id1165137831199" alt="Graph of a scattered plot with labeled points: (1, 1), (2, 4), (3, 7), (4, 10), and (5, 13). The x-axis is labeled n and the y-axis is labeled a_n.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_206.jpg"/>
+</media>
+</solution>
+</exercise><para id="fs-id1165137754896">For the following exercises, follow the steps given above to work with the arithmetic sequence <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> using a graphing calculator.</para><exercise id="fs-id1165135351605">
+<problem id="fs-id1165135351607">
+<para id="fs-id1165135351609">What are the first seven terms shown in the column with the heading <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> in the TABLE feature?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137736192"><problem id="fs-id1165137736195">
+<para id="fs-id1165137736197">Graph the sequence as it appears on the graphing calculator. Be sure to adjust the WINDOW settings as needed.</para>
+</problem>
+<solution id="fs-id1165135307896">
+<media id="fs-id1165137473103" alt="Graph of a scattered plot with labeled points: (1, 5.5), (2, 6), (3, 6.5), (4, 7), and (5, 7.5). The x-axis is labeled n and the y-axis is labeled a_n.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_02_207.jpg"/>
+</media>
+</solution>
+</exercise></section><section id="fs-id1165137697185">
+<title>Extensions</title>
+<exercise id="fs-id1165137772359">
+<problem id="fs-id1165137772361">
+<para id="fs-id1165137772363">Give two examples of arithmetic sequences whose 4<sup>th</sup> terms are <m:math>
+ <m:mrow>
+  <m:mn>9.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135198529">
+<problem id="fs-id1165135198531">
+<para id="fs-id1165135194560">Give two examples of arithmetic sequences whose 10<sup>th</sup> terms are <m:math>
+ <m:mrow>
+  <m:mn>206.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135203799"><para id="fs-id1165135203800">Answers will vary. Examples: <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>20.6</m:mn><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>20.4</m:mn><m:mi>n.</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135245567">
+<problem id="fs-id1165135245570">
+<para id="fs-id1165137679215">Find the 5<sup>th</sup> term of the arithmetic sequence <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>9</m:mn><m:mi>b</m:mi><m:mo>,</m:mo><m:mn>5</m:mn><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mo>…</m:mo><m:mo>}</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135341373">
+<problem id="fs-id1165135341376">
+<para id="fs-id1165135341378">Find the 11<sup>th</sup> term of the arithmetic sequence <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>3</m:mn><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>b</m:mi><m:mo>,</m:mo><m:mo>−</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>b</m:mi><m:mo>…</m:mo><m:mo>}</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135208952">
+<para id="fs-id1165135208954"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>11</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>17</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>38</m:mn><m:mi>b</m:mi>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137453158">
+<problem id="fs-id1165135452490">
+<para id="fs-id1165135452492">At which term does the sequence <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>5.4</m:mn><m:mo>,</m:mo><m:mn>14.5</m:mn><m:mo>,</m:mo><m:mn>23.6</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> exceed 151?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137736075">
+<problem id="fs-id1165137736077">
+<para id="fs-id1165137736079">At which term does the sequence <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mrow>
+     <m:mn>17</m:mn>
+    </m:mrow>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mrow>
+     <m:mn>31</m:mn>
+    </m:mrow>
+    <m:mn>6</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mrow>
+     <m:mn>14</m:mn>
+    </m:mrow>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> begin to have negative values?</para></problem>
+<solution id="fs-id1165137767976"><para id="fs-id1165137767978">The sequence begins to have negative values at the 13<sup>th</sup> term, <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>13</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137805518">
+<problem id="fs-id1165137805520">
+<para id="fs-id1165137805522">For which terms does the finite arithmetic sequence <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mn>5</m:mn>
+    <m:mn>2</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mrow>
+     <m:mn>19</m:mn>
+    </m:mrow>
+    <m:mn>8</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>9</m:mn>
+    <m:mn>4</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn><m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>8</m:mn>
+   </m:mfrac>
+
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> have integer values?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137811777">
+<problem id="fs-id1165137811780">
+<para id="fs-id1165137811782">Write an arithmetic sequence using a recursive formula. Show the first 4 terms, and then find the 31<sup>st</sup> term.</para>
+</problem>
+<solution id="fs-id1165137812674">
+<para id="fs-id1165137812676">Answers will vary. Check to see that the sequence is arithmetic. Example: Recursive formula: <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>−</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> First 4 terms: <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mn>31</m:mn>
+       </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>87</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135188236">
+<problem id="fs-id1165135188238">
+<para id="fs-id1165135188240">Write an arithmetic sequence using an explicit formula. Show the first 4 terms, and then find the 28<sup>th</sup> term.</para>
+</problem>
+</exercise>
+</section>
+</section>
+</content>
+<glossary>
+<definition id="fs-id1165137415238">
+<term>arithmetic sequence</term>
+<meaning id="fs-id1165137415244">a sequence in which the difference between any two consecutive terms is a constant</meaning>
+</definition>
+<definition id="fs-id1165137415248">
+<term>common difference</term>
+<meaning id="fs-id1165135174993">the difference between any two consecutive terms in an arithmetic sequence</meaning>
+</definition>
+</glossary>
+</document>

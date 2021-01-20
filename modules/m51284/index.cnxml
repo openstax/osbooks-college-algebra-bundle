@@ -1,0 +1,3410 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Right Triangle Trigonometry</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m51284</md:content-id>
+  <md:title>Right Triangle Trigonometry</md:title>
+  <md:abstract><para>In this section you will:</para><list>
+<item>Use right triangles to evaluate trigonometric functions.</item>
+<item>Find function values for <m:math>
+ <m:mrow>
+  <m:mn>30°</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>45°</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mn>60°</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item>Use equal cofunctions of complementary angles.</item>
+<item>Use the deﬁnitions of trigonometric functions of any angle.</item>
+<item>Use right-triangle trigonometry to solve applied problems.</item>
+</list></md:abstract>
+  <md:uuid>7375cfa6-269c-4e0d-a567-bc6a4c66b1f4</md:uuid>
+<md:canonical-book-uuid>13ac107a-f15f-49d2-97e8-60ab2e3b519c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+<para id="fs-id1504394">
+Mt. Everest, which straddles the border between China and Nepal, is the tallest mountain in the world. Measuring its height is no easy task and, in fact, the actual measurement has been a source of controversy for hundreds of years. The measurement process involves the use of triangles and a branch of mathematics known as trigonometry. In this section, we will define a new group of functions known as trigonometric functions, and find out how they can be used to measure heights, such as those of the tallest mountains.
+</para>
+
+
+<section id="fs-id1571067">
+<title>Using Right Triangles to Evaluate Trigonometric Functions</title>
+<para id="fs-id1589261"><link target-id="Figure_07_02_001"/> shows a <term class="no-emphasis">right triangle</term> with a vertical side of length <m:math>
+<m:mrow>
+<m:mi>y</m:mi>
+</m:mrow>
+</m:math> and a horizontal side has length <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Notice that the triangle is inscribed in a circle of radius 1. Such a circle, with a center at the origin and a radius of 1, is known as a <term>unit circle</term>.</para>
+
+
+<figure id="Figure_07_02_001" class="small">
+<media id="fs-id2382285" alt="Graph of quarter circle with radius of 1. Inscribed triangle with an angle of t. Point of (x,y) is at intersection of terminal side of angle and edge of circle.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_001.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1634674">We can define the trigonometric functions in terms an angle <emphasis effect="italics">t</emphasis> and the lengths of the sides of the triangle. The <term>adjacent side</term> is the side closest to the angle, <emphasis effect="italics">x</emphasis>. (Adjacent means “next to.”) The <term>opposite side</term> is the side across from the angle, <emphasis effect="italics">y</emphasis>. The <term>hypotenuse</term> is the side of the triangle opposite the right angle, 1. These sides are labeled in <link target-id="Figure_07_02_002"/>.</para>
+
+<figure id="Figure_07_02_002" class="small"><media id="fs-id1561570" alt="A right triangle with hypotenuse, opposite, and adjacent sides labeled.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_002.jpg"/>
+</media>
+
+<caption>The sides of a right triangle in relation to angle <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math>
+</caption></figure><para id="fs-id2066694">Given a right triangle with an acute angle of <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> the first three trigonometric functions are listed.</para>
+
+<equation id="fs-id1057877" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="2.5em"/><m:mtext>Sine</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>sin </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>opposite</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation><equation id="fs-id2197597" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1.5em"/><m:mtext>Cosine</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>cos </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>adjacent</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation><equation id="fs-id2097173" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>Tangent</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>tan </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>opposite</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>adjacent</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation><para id="fs-id1526800">A common mnemonic for remembering these relationships is SohCahToa, formed from the first letters of “<emphasis effect="underline"><emphasis>S</emphasis></emphasis>ine is <emphasis effect="underline"><emphasis>o</emphasis></emphasis>pposite over <emphasis effect="underline"><emphasis>h</emphasis></emphasis>ypotenuse, <emphasis effect="underline"><emphasis>C</emphasis></emphasis>osine is <emphasis effect="underline"><emphasis>a</emphasis></emphasis>djacent over <emphasis effect="underline"><emphasis>h</emphasis></emphasis>ypotenuse, <emphasis effect="underline"><emphasis>T</emphasis></emphasis>angent is <emphasis effect="underline"><emphasis>o</emphasis></emphasis>pposite over <emphasis effect="underline"><emphasis>a</emphasis></emphasis>djacent.”</para><para id="fs-id1713473">For the triangle shown in <link target-id="Figure_07_02_001"/>, we have the following.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1769965" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>sin </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mn>1</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>cos </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mn>1</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>tan </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation><note id="fs-id2147087" class="precalculus howto">
+<label>How To</label>
+<para id="fs-id1711104"><emphasis>Given the side lengths of a right triangle and one of the acute angles, find the sine, cosine, and tangent of that angle.
+</emphasis></para>
+<list id="fs-id1157635" list-type="enumerated" number-style="arabic"><item>Find the sine as the ratio of the opposite side to the hypotenuse.</item>
+<item>Find the cosine as the ratio of the adjacent side to the hypotenuse.</item>
+<item>Find the tangent as the ratio of the opposite side to the adjacent side.</item>
+</list></note>
+
+<example id="Example_07_02_01">
+<exercise id="fs-id2060701">
+<problem id="fs-id1702059">
+<title>Evaluating a Trigonometric Function of a Right Triangle</title>
+<para id="fs-id1609382">Given the triangle shown in <link target-id="Figure_07_02_003"/>, find the value of <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+</para><figure id="Figure_07_02_003" class="small"><media id="fs-id1724219" alt="A right triangle with side lengths of 8, 15, and 17. Angle alpha also labeled which is opposite to the side labeled 8.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_003.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id2108722">
+
+<para id="fs-id2159428">The side adjacent to the angle is 15, and the hypotenuse of the triangle is 17.</para>
+<equation id="fs-id1545013" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mtext>adjacent</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>15</m:mn></m:mrow>
+       <m:mrow>
+        <m:mn>17</m:mn></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1172032" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_07_02_01">
+<problem id="fs-id1726787"><para id="fs-id2168235">Given the triangle shown in <link target-id="Figure_07_02_004"/>, find the value of <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><figure id="Figure_07_02_004" class="small"><media id="fs-id2196780" alt="A right triangle with sides of 7, 24, and 25. Also labeled is angle t which is opposite the side labeled 7.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_004.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1590112"><para id="fs-id1632957"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>7</m:mn>
+<m:mrow>
+<m:mn>25</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<section id="fs-id2059465">
+<title>Reciprocal Functions</title>
+<para id="fs-id2158560">In addition to sine, cosine, and tangent, there are three more functions. These too are defined in terms of the sides of the triangle.</para>
+
+<equation id="fs-id1487415" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="2em"/><m:mtext>Secant</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>sec </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>adjacent</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation><equation id="fs-id1534917" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="1.3em"/><m:mtext>Cosecant</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>csc </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>opposite</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation><equation id="fs-id2182704" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>Cotangent</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>cot </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>adjacent</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>opposite</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation><para id="fs-id1347493">Take another look at these definitions. These functions are the reciprocals of the first three functions.</para>
+<equation id="fs-id2211547" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>sin </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>csc </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="2em"/><m:mtext>csc </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>sin </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>cos </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>sec </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="2em"/><m:mtext>sec </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>cos </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>tan </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>cot </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="2em"/><m:mtext>cot </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>tan </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation><para id="fs-id1621896">When working with right triangles, keep in mind that the same rules apply regardless of the orientation of the triangle. In fact, we can evaluate the six trigonometric functions of either of the two acute angles in the triangle in <link target-id="Figure_07_02_005"/>. The side opposite one acute angle is the side adjacent to the other acute angle, and vice versa.</para>
+
+<figure id="Figure_07_02_005" class="small">
+<media id="fs-id1585661" alt="Right triangle with angles alpha and beta. Sides are labeled hypotenuse, adjacent to alpha/opposite to beta, and adjacent to beta/opposite alpha.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_005.jpg"/>
+</media>
+<caption>The side adjacent to one angle is opposite the other angle.</caption>
+</figure>
+
+<para id="fs-id1709732">Many problems ask for all six trigonometric functions for a given angle in a triangle. A possible strategy to use is to find the sine, cosine, and tangent of the angles first. Then, find the other trigonometric functions easily using the reciprocals.</para>
+
+<note id="fs-id1544845" class="precalculus howto">
+<label>How To</label>
+<para id="fs-id1566721"><emphasis>Given the side lengths of a right triangle, evaluate the six trigonometric functions of one of the acute angles.
+</emphasis></para>
+<list id="fs-id1431006" list-type="enumerated" number-style="arabic">
+<item>If needed, draw the right triangle and label the angle provided.</item>
+<item>Identify the angle, the adjacent side, the side opposite the angle, and the hypotenuse of the right triangle.</item>
+<item>Find the required function:
+<list id="fs-id2568902" list-type="bulleted"><item>sine as the ratio of the opposite side to the hypotenuse</item>
+<item>cosine as the ratio of the adjacent side to the hypotenuse</item>
+<item>tangent as the ratio of the opposite side to the adjacent side</item>
+<item>secant as the ratio of the hypotenuse to the adjacent side</item>
+<item>cosecant as the ratio of the hypotenuse to the opposite side</item>
+<item>cotangent as the ratio of the adjacent side to the opposite side</item>
+</list></item>
+</list>
+</note>
+
+<example id="Example_07_02_02">
+<exercise id="fs-id2211361">
+<problem id="fs-id1719395">
+<title>Evaluating Trigonometric Functions of Angles Not in Standard Position</title>
+<para id="fs-id1339127">Using the triangle shown in <link target-id="Figure_07_02_006"/>, evaluate <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>,</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>,</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>,</m:mo><m:mtext>sec</m:mtext><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>,</m:mo><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>,</m:mo><m:mtext>and</m:mtext><m:mspace width="0.3em"/><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+</para><figure id="Figure_07_02_006" class="small">
+<media id="fs-id1603496" alt="Right triangle with sides of 3, 4, and 5. Angle alpha is also labeled which is opposite the side labeled 4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_006.jpg"/>
+</media>
+</figure>
+
+</problem>
+<solution id="fs-id2211290">
+<equation id="fs-id1572160" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>sin </m:mtext><m:mi>α</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>opposite </m:mtext><m:mi>α</m:mi></m:mrow>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>cos </m:mtext><m:mi>α</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>adjacent to </m:mtext><m:mi>α</m:mi></m:mrow>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>tan </m:mtext><m:mi>α</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>opposite </m:mtext><m:mi>α</m:mi></m:mrow>
+       <m:mrow>
+        <m:mtext>adjacent to </m:mtext><m:mi>α</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>sec </m:mtext><m:mi>α</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>adjacent to </m:mtext><m:mi>α</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>csc </m:mtext><m:mi>α</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>opposite </m:mtext><m:mi>α</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>cot </m:mtext><m:mi>α</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>adjacent to </m:mtext><m:mi>α</m:mi></m:mrow>
+       <m:mrow>
+        <m:mtext>opposite </m:mtext><m:mi>α</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation></solution>
+<commentary id="fs-id1524219">
+<title>Analysis</title>
+<para id="fs-id1471100">Another approach would have been to find sine, cosine, and tangent first. Then find their reciprocals to determine the other functions.</para>
+
+<equation id="fs-id1682466" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtext>sec </m:mtext><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mtext>cos </m:mtext><m:mi>α</m:mi></m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</equation>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id2169287" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtext>csc </m:mtext><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mtext>sin </m:mtext><m:mi>α</m:mi></m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>4</m:mn>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</equation><equation id="fs-id2990016" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtext>cot </m:mtext><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mtext>tan </m:mtext><m:mi>α</m:mi></m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>4</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</equation></commentary>
+</exercise>
+</example>
+
+<note id="fs-id1484942" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_07_02_02">
+<problem id="fs-id1475669"><para id="fs-id1681664">Using the triangle shown in <link target-id="Figure_07_02_007"/>,evaluate <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:mtext>cos</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:mtext>tan</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:mtext>sec</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:mtext>csc</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo><m:mtext>and</m:mtext><m:mspace width="0.3em"/><m:mtext>cot</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+</para><figure id="Figure_07_02_007" class="small">
+<media id="fs-id1633379" alt="Right triangle with sides 33, 56, and 65. Angle t is also labeled which is opposite to the side labeled 33. ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_007.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1541339"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1482962"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>sin </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>33</m:mn></m:mrow>
+       <m:mrow>
+        <m:mn>65</m:mn></m:mrow>
+      </m:mfrac>
+      <m:mo>,</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>cos </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>56</m:mn></m:mrow>
+       <m:mrow>
+        <m:mn>65</m:mn></m:mrow>
+      </m:mfrac>
+      <m:mo>,</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>tan </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>33</m:mn></m:mrow>
+       <m:mrow>
+        <m:mn>56</m:mn></m:mrow>
+      </m:mfrac>
+      <m:mo>,</m:mo></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>sec </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>65</m:mn></m:mrow>
+       <m:mrow>
+        <m:mn>56</m:mn></m:mrow>
+      </m:mfrac>
+      <m:mo>,</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>csc </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>65</m:mn></m:mrow>
+       <m:mrow>
+        <m:mn>33</m:mn></m:mrow>
+      </m:mfrac>
+      <m:mo>,</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>cot </m:mtext><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>56</m:mn></m:mrow>
+       <m:mrow>
+        <m:mn>33</m:mn></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+
+</section>
+<section id="fs-id926559"><title>Finding Trigonometric Functions of Special Angles Using Side Lengths</title><para id="fs-id1718919">It is helpful to evaluate the trigonometric functions as they relate to the special angles—multiples of <m:math>
+<m:mrow>
+<m:mn>30°</m:mn><m:mo>,</m:mo><m:mn>60°</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mn>45°</m:mn><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Remember, however, that when dealing with right triangles, we are limited to angles between <m:math>
+<m:mrow>
+<m:mn>0°</m:mn><m:mtext> and 90°</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:math>
+</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1487847">Suppose we have a <m:math>
+<m:mrow>
+<m:mn>30°</m:mn><m:mo>,</m:mo><m:mn>60°</m:mn><m:mo>,</m:mo><m:mn>90°</m:mn>
+</m:mrow>
+</m:math> triangle, which can also be described as a <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> triangle. The sides have lengths in the relation <m:math>
+<m:mrow>
+<m:mi>s</m:mi><m:mo>,</m:mo><m:msqrt>
+<m:mn>3</m:mn>
+</m:msqrt><m:mi>s</m:mi>
+<m:mo>,</m:mo><m:mn>2</m:mn><m:mi>s</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> The sides of a <m:math>
+<m:mrow>
+<m:mn>45°</m:mn><m:mo>,</m:mo><m:mn>45°</m:mn><m:mo/><m:mo>,</m:mo><m:mn>90°</m:mn>
+</m:mrow>
+</m:math> triangle, which can also be described as a <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> triangle, have lengths in the relation <m:math>
+<m:mrow>
+<m:mi>s</m:mi><m:mo>,</m:mo><m:mi>s</m:mi><m:mo>,</m:mo><m:msqrt>
+<m:mn>2</m:mn>
+</m:msqrt>
+<m:mi>s</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> These relations are shown in <link target-id="Figure_07_02_008"/>.</para><figure id="Figure_07_02_008">
+<media id="fs-id2085477" alt="Two side-by-side graphs of circles with inscribed angles. First circle has angle of pi/3 inscribed, radius of 2s, base of length s and height of length . Second circle has angle of pi/4 inscribed with radius , base of length s and height of length s.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_008.jpg"/>
+</media>
+<caption>Side lengths of special triangles</caption>
+</figure>
+<para id="fs-id1552842">We can then use the ratios of the side lengths to evaluate trigonometric functions of special angles.</para>
+
+<note id="fs-id1431935" class="precalculus howto">
+<label>How To</label>
+<para id="fs-id1611518"><emphasis>Given trigonometric functions of a special angle, evaluate using side lengths.
+</emphasis></para>
+<list id="fs-id1563099" list-type="enumerated" number-style="arabic">
+<item>Use the side lengths shown in <link target-id="Figure_07_02_008"/> for the special angle you wish to evaluate.</item>
+<item>Use the ratio of side lengths appropriate to the function you wish to evaluate.</item>
+</list>
+</note>
+
+<example id="Example_07_02_03"><exercise id="fs-id2095532">
+<problem id="fs-id1453919">
+<title>Evaluating Trigonometric Functions of Special Angles Using Side Lengths</title>
+<para id="fs-id1125495">Find the exact value of the trigonometric functions of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> using side lengths.</para>
+</problem>
+<solution id="fs-id1736320">
+<equation id="fs-id1706204" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>opp</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>hyp</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mrow>
+          <m:mn>3</m:mn><m:mi>s</m:mi></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>s</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>adj</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>hyp</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mi>s</m:mi>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>s</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>opp</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>adj</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        <m:mi>s</m:mi></m:mrow>
+       <m:mi>s</m:mi>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>sec</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>hyp</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>adj</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>s</m:mi></m:mrow>
+       <m:mi>s</m:mi>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>csc</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>hyp</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>opp</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>s</m:mi></m:mrow>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        <m:mi>s</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        </m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>cot</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>adj</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>opp</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mi>s</m:mi>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        <m:mi>s</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        </m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation></solution>
+</exercise>
+</example><note id="fs-id1501618" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_07_02_03">
+<problem id="fs-id2040853"><para id="fs-id1842330">Find the exact value of the trigonometric functions of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> using side lengths.</para></problem>
+<solution id="fs-id1396332"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1590664"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>sec</m:mtext><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      <m:mo>,</m:mo><m:mtext>csc</m:mtext><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      <m:mo>,</m:mo><m:mtext>cot</m:mtext><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+
+</section></section>
+
+<section id="fs-id1720304">
+<title>Using Equal Cofunction of Complements </title>
+<para id="fs-id2146886">If we look more closely at the relationship between the sine and cosine of the special angles, we notice a pattern. In a right triangle with angles of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>6</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> we see that the sine of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> namely <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msqrt>
+<m:mn>3</m:mn>
+</m:msqrt>
+
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> is also the cosine of <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> while the sine of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> namely <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> is also the cosine of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+<equation id="fs-id1572449" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>sin</m:mi><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mi>cos</m:mi><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        <m:mi>s</m:mi></m:mrow>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>s</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>sin</m:mi><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mi>cos</m:mi><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mi>s</m:mi>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>s</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation><para id="fs-id1477160">See <link target-id="Figure_07_02_009"/>.</para>
+
+<figure id="Figure_07_02_009" class="small"><media id="fs-id2093822" alt="A graph of circle with angle pi/3 inscribed with a radius of 2s, a base with length s and a height of.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_009.jpg"/>
+</media>
+
+<caption>The sine of <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> equals the cosine of <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> and vice versa.</caption></figure><para id="fs-id1576297">This result should not be surprising because, as we see from <link target-id="Figure_07_02_009"/>, the side opposite the angle of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> is also the side adjacent to <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> so <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>6</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> are exactly the same ratio of the same two sides, <m:math>
+<m:mrow>
+<m:msqrt>
+<m:mn>3</m:mn>
+</m:msqrt>
+<m:mi>s</m:mi>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>s</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Similarly, <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>6</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> are also the same ratio using the same two sides, <m:math>
+<m:mrow>
+<m:mi>s</m:mi>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>s</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+<para id="fs-id1380586">The interrelationship between the sines and cosines of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>6</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> also holds for the two acute angles in any right triangle, since in every case, the ratio of the same two sides would constitute the sine of one angle and the cosine of the other. Since the three angles of a triangle add to <m:math>
+<m:mrow>
+<m:mi>π</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> and the right angle is <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> the remaining two angles must also add up to <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> That means that a right triangle can be formed with any two angles that add to <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> —in other words, any two complementary angles. So we may state a <emphasis effect="italics">cofunction identity</emphasis>: If any two angles are complementary, the sine of one is the cosine of the other, and vice versa. This identity is illustrated in <link target-id="Figure_07_02_010"/>.</para>
+
+<figure id="Figure_07_02_010" class="small">
+<media id="fs-id1711669" alt="Right triangle with angles alpha and beta. Equivalence between sin alpha and cos beta. Equivalence between sin beta and cos alpha.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_010.jpg"/>
+</media>
+<caption>Cofunction identity of sine and cosine of complementary angles</caption>
+</figure>
+<para id="fs-id1709836">Using this identity, we can state without calculating, for instance, that the sine of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> equals the cosine of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>5</m:mn><m:mi>π</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> and that the sine of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>5</m:mn><m:mi>π</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> equals the cosine of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> We can also state that if, for a given angle <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>,</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> then <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>−</m:mo><m:mi>t</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> as well.</para>
+
+<note id="fs-id1604971">
+
+<title>Cofunction Identities</title>
+<para id="fs-id1554425">The <term>cofunction identities</term> in radians are listed in <link target-id="Table_07_02_01"/>.</para>
+
+<table id="Table_07_02_01" summary="This table has three rows, two columns. The table has ordered pairs of these row values: (sin(theta) = cos(pi/2 - theta), cos(theta) = sin(pi/2 - theta)), (tan(theta) = cot(pi/2 - theta), cot(theta) = tan(pi/2 - theta)), and (sec(theta) = csc(pi/2 - theta), csc(theta) = sec(pi/2 - theta)).">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>cot</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>sec</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>csc</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>sec</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table></note>
+
+<note id="fs-id1548741" class="precalculus howto">
+<label>How To</label>
+<para id="fs-id888669"><emphasis>Given the sine and cosine of an angle, find the sine or cosine of its complement.
+</emphasis></para>
+<list id="fs-id2062064" list-type="enumerated" number-style="arabic">
+<item>To find the sine of the complementary angle, find the cosine of the original angle.</item>
+<item>To find the cosine of the complementary angle, find the sine of the original angle.</item>
+</list>
+</note>
+
+<example id="Example_07_02_04">
+<exercise id="fs-id1634364">
+<problem id="fs-id1744813">
+<title>Using Cofunction Identities</title>
+<para id="fs-id1552407">If <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mn>12</m:mn></m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> find <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>−</m:mo><m:mi>t</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2026175">
+<para id="fs-id700303">According to the cofunction identities for sine and cosine, we have the following.</para>
+<equation id="fs-id2147049" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</equation><para id="fs-id2041244">So</para>
+<equation id="fs-id2169197" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mn>12</m:mn></m:mrow>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id2181922" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_07_02_04">
+<problem id="fs-id2098273"><para id="fs-id2098274">If <m:math>
+ <m:mrow>
+  <m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> find <m:math>
+ <m:mrow>
+  <m:mtext>sec</m:mtext><m:mspace width="0.3em"/><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1551182"><para id="fs-id1551183">2</para></solution>
+</exercise>
+</note>
+
+</section>
+ <section id="fs-id1621636">
+    <title>Using Trigonometric Functions</title>
+    <para id="fs-id1791203">In previous examples, we evaluated the sine and cosine in triangles where we knew all three sides. But the real power of right-triangle trigonometry emerges when we look at triangles in which we know an angle but do not know all the sides.</para>
+
+    <note id="fs-id1553929" class="precalculus howto">
+      <label>How To</label>
+      <para id="fs-id1503207"><emphasis>Given a right triangle, the length of one side, and the measure of one acute angle, find the remaining sides.
+      </emphasis></para>
+      <list id="fs-id1415581" list-type="enumerated" number-style="arabic">
+        <item>For each side, select the trigonometric function that has the unknown side as either the numerator or the denominator. The known side will in turn be the denominator or the numerator.</item>
+      <item>Write an equation setting the function value of the known angle equal to the ratio of the corresponding sides.</item>
+      <item>Using the value of the trigonometric function and the known side length, solve for the missing side length.</item>
+      </list>
+    </note>
+
+    <example id="Example_07_02_05">
+      <exercise id="fs-id1460285">
+        <problem id="fs-id1607953">
+          <title>Finding Missing Side Lengths Using Trigonometric Ratios</title>
+          <para id="fs-id1633900">Find the unknown sides of the triangle in <link target-id="Figure_07_02_011"/>.</para>
+
+          <figure id="Figure_07_02_011" class="small">
+            <media id="fs-id1416312" alt="A right triangle with sides a, c, and 7. Angle of 30 degrees is also labeled which is opposite the side labeled 7. ">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_011.jpg"/>
+            </media>
+          </figure>
+
+        </problem>
+        <solution id="fs-id1567362">
+
+        <para id="fs-id1498470">We know the angle and the opposite side, so we can use the tangent to find the adjacent side.</para>
+          <equation id="fs-id2172697" class="unnumbered"><label/> <m:math display="block">
+            <m:mrow>
+              <m:mi>tan</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+                <m:mn>7</m:mn>
+                <m:mi>a</m:mi>
+              </m:mfrac>
+
+            </m:mrow>
+          </m:math>
+          </equation><para id="fs-id1555832">We rearrange to solve for <m:math>
+            <m:mrow>
+              <m:mi>a</m:mi><m:mo>.</m:mo>
+            </m:mrow>
+          </m:math> </para>
+<equation id="fs-id1768234" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mi>a</m:mi>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>7</m:mn>
+       <m:mrow>
+        <m:mi>tan</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>≈</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mn>12.1</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1735296">We can use the sine to find the hypotenuse.</para>
+  <equation id="fs-id1556365" class="unnumbered"><label/> <m:math display="block">
+    <m:mrow>
+      <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+        <m:mn>7</m:mn>
+        <m:mi>c</m:mi>
+      </m:mfrac>
+
+    </m:mrow>
+  </m:math>
+  </equation>
+<para id="fs-id1574537">Again, we rearrange to solve for <m:math>
+    <m:mrow>
+      <m:mi>c</m:mi><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+  </para>
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1553662" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mi>c</m:mi>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>7</m:mn>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mn>14</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation></solution>
+      </exercise>
+    </example>
+
+    <note id="fs-id1843218" class="precalculus try">
+      <label>Try It</label>
+      <exercise id="ti_07_02_05">
+        <problem id="fs-id2193825"><para id="fs-id2193826">A right triangle has one angle of <m:math>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>π</m:mi>
+              <m:mn>3</m:mn>
+            </m:mfrac>
+
+          </m:mrow>
+        </m:math> and a hypotenuse of 20. Find the unknown sides and angle of the triangle.</para></problem>
+        <solution id="fs-id2353469"><para id="fs-id2353470"> <m:math>
+          <m:mrow>
+            <m:mtext>adjacent</m:mtext><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>;</m:mo><m:mtext>opposite</m:mtext><m:mo>=</m:mo><m:mn>10</m:mn><m:msqrt>
+              <m:mn>3</m:mn>
+            </m:msqrt>
+            <m:mo>;</m:mo>
+          </m:mrow>
+        </m:math> missing angle is <m:math>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>π</m:mi>
+              <m:mn>6</m:mn>
+            </m:mfrac>
+
+          </m:mrow>
+        </m:math>
+        </para></solution>
+      </exercise>
+    </note>
+
+  </section>
+<section id="fs-id1379853">
+<title>Using Right Triangle Trigonometry to Solve Applied Problems</title>
+<para id="fs-id1376257">Right-triangle trigonometry has many practical applications. For example, the ability to compute the lengths of sides of a triangle makes it possible to find the height of a tall object without climbing to the top or having to extend a tape measure along its height. We do so by measuring a distance from the base of the object to a point on the ground some distance away, where we can look up to the top of the tall object at an angle. The <term>angle of elevation</term> of an object above an observer relative to the observer is the angle between the horizontal and the line from the object to the observer's eye. The right triangle this position creates has sides that represent the unknown height, the measured distance from the base, and the angled line of sight from the ground to the top of the object. Knowing the measured distance to the base of the object and the angle of the line of sight, we can use trigonometric functions to calculate the unknown height.</para>
+<para id="fs-id2054797">Similarly, we can form a triangle from the top of a tall object by looking downward. The <term>angle of depression</term> of an object below an observer relative to the observer is the angle between the horizontal and the line from the object to the observer's eye. See <link target-id="Figure_07_02_013"/>.</para>
+
+<figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="Figure_07_02_013" class="small"><media id="fs-id1695773" alt="Diagram of a radio tower with line segments extending from the top and base of the tower to a point on the ground some distance away. The two lines and the tower form a right triangle. The angle near the top of the tower is the angle of depression. The angle on the ground at a distance from the tower is the angle of elevation.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_013.jpg"/>
+</media>
+</figure><note id="fs-id1416497" class="precalculus howto">
+<label>How To</label>
+<para id="fs-id1715207"><emphasis>Given a tall object, measure its height indirectly.
+</emphasis></para>
+<list id="fs-id1621367" list-type="enumerated" number-style="arabic">
+<item>Make a sketch of the problem situation to keep track of known and unknown information.</item>
+<item>Lay out a measured distance from the base of the object to a point where the top of the object is clearly visible.</item>
+<item>At the other end of the measured distance, look up to the top of the object. Measure the angle the line of sight makes with the horizontal.</item>
+<item>Write an equation relating the unknown height, the measured distance, and the tangent of the angle of the line of sight.</item>
+<item>Solve the equation for the unknown height.</item>
+</list>
+</note>
+
+<example id="Example_07_02_06">
+<exercise id="fs-id1552934">
+<problem id="fs-id1577774">
+<title>Measuring a Distance Indirectly</title>
+<para id="fs-id1631962">To find the height of a tree, a person walks to a point 30 feet from the base of the tree. She measures an angle of <m:math>
+<m:mrow>
+<m:mn>57°</m:mn>
+</m:mrow>
+</m:math> between a line of sight to the top of the tree and the ground, as shown in <link target-id="Figure_07_02_012"/>. Find the height of the tree.</para><figure id="Figure_07_02_012" class="small">
+<media id="fs-id2178515" alt="A tree with angle of 57 degrees from vantage point. Vantage point is 30 feet from tree.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_012.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1450308">
+<para id="fs-id2189191">We know that the angle of elevation is <m:math>
+<m:mrow>
+<m:mn>57°</m:mn>
+</m:mrow>
+</m:math> and the adjacent side is 30 ft long. The opposite side is the unknown height.</para><para id="fs-id1374598">The trigonometric function relating the side opposite to an angle and the side adjacent to the angle is the tangent. So we will state our information in terms of the tangent of <m:math>
+<m:mrow>
+<m:mn>57°</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> letting <m:math>
+<m:mrow>
+<m:mi>h</m:mi>
+</m:mrow>
+</m:math> be the unknown height.</para>
+<equation id="fs-id2112490" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mrow>
+      <m:mtext>tan </m:mtext><m:mi>θ</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mtext>opposite</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>adjacent</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>tan</m:mtext><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>57°</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>h</m:mi>
+       <m:mrow>
+        <m:mn>30</m:mn></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>Solve for </m:mtext><m:mi>h</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mi>h</m:mi>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>30tan</m:mtext><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtext>57°</m:mtext></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>Multiply</m:mtext><m:mtext>.</m:mtext></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mi>h</m:mi>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>≈</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>46.2</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>Use a calculator</m:mtext><m:mtext>.</m:mtext></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1629300">The tree is approximately 46 feet tall.</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1615118" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_07_02_06">
+<problem id="fs-id1556182"><para id="fs-id1556183">How long a ladder is needed to reach a windowsill 50 feet above the ground if the ladder rests against the building making an angle of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>5</m:mn><m:mi>π</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> with the ground? Round to the nearest foot.</para></problem>
+<solution id="fs-id2128792"><para id="fs-id2128793">About 52 ft</para></solution>
+</exercise>
+</note>
+
+<note id="fs-id1549810" class="precalculus media">
+<label>Media</label>
+<para id="fs-id1430785">Access these online resources for additional instruction and practice with right triangle trigonometry.</para>
+<list id="fs-id2158581" list-type="bulleted">
+<item><link url="http://openstax.org/l/findtrigcal">Finding Trig Functions on Calculator</link></item>
+<item><link url="http://openstax.org/l/trigrttri">Finding Trig Functions Using a Right Triangle</link></item>
+<item><link url="http://openstax.org/l/reltrigtri">Relate Trig Functions to Sides of a Right Triangle</link></item>
+<item><link url="http://openstax.org/l/sixtrigfunc">Determine Six Trig Functions from a Triangle</link></item>
+<item><link url="http://openstax.org/l/rttriside">Determine Length of Right Triangle Side</link></item>
+</list>
+</note>
+</section>
+<section id="fs-id1800200" class="key-equations"><title>Key Equations</title><table id="fs-id2133503" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2" colsep="0" rowsep="0"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">Trigonometric Functions</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sine</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>sin </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>opposite</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Cosine</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>cos </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>adjacent</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Tangent</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>tan </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>opposite</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>adjacent</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Secant</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>sec </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>adjacent</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Cosecant</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>csc </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>hypotenuse</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>opposite</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Cotangent</m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>cot </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>adjacent</m:mtext></m:mrow>
+       <m:mrow>
+        <m:mtext>opposite</m:mtext></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">Reciprocal Trigonometric Functions</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>sin </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>csc </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>csc </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>sin </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>cos </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>sec </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>sec </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>cos </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>tan </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>cot </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mtext>cot </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mtext>tan </m:mtext><m:mi>t</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">Cofunction Identities</entry>
+<entry align="center">
+ <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>cos </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>sin </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>tan </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>cot</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>cot </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>sec </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>csc</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></section><section id="fs-id2091048" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1629484" list-type="bulleted">
+<item>We can define trigonometric functions as ratios of the side lengths of a right triangle. See <link target-id="Example_07_02_01"/>.</item>
+<item>The same side lengths can be used to evaluate the trigonometric functions of either acute angle in a right triangle. See <link target-id="Example_07_02_02"/>.</item>
+<item>We can evaluate the trigonometric functions of special angles, knowing the side lengths of the triangles in which they occur. See <link target-id="Example_07_02_03"/>.</item>
+<item>Any two complementary angles could be the two acute angles of a right triangle.</item>
+<item>If two angles are complementary, the cofunction identities state that the sine of one equals the cosine of the other and vice versa. See <link target-id="Example_07_02_04"/>.</item>
+<item>We can use trigonometric functions of an angle to find unknown side lengths.</item>
+<item>Select the trigonometric function representing the ratio of the unknown side to the known side. See <link target-id="Example_07_02_05"/>.</item>
+<item>Right-triangle trigonometry facilitates the measurement of inaccessible heights and distances.</item>
+<item>The unknown height or distance can be found by creating a right triangle in which the unknown height or distance is one of the sides, and another side and angle are known. See <link target-id="Example_07_02_06"/>.</item>
+</list>
+</section>
+<section id="fs-id917826" class="section-exercises">
+<title>Section Exercises</title>
+<section id="fs-id1709355">
+<title>Verbal</title>
+<exercise id="fs-id1549952"><problem id="fs-id1689794">
+<para id="fs-id1376367">For the given right triangle, label the adjacent side, opposite side, and hypotenuse for the indicated angle.</para>
+<para id="eip-id2193708"><newline/>
+<media id="fs-id1702764" alt="A right triangle.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_201.jpg"/>
+</media>
+</para>
+</problem>
+<solution id="fs-id1411763">
+<para id="fs-id2133705"><newline/>
+<media id="fs-id1571740" alt="A right triangle with side opposite, adjacent, and hypotenuse labeled.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_202.jpg"/>
+</media>
+</para>
+</solution>
+</exercise><exercise id="fs-id2202759">
+<problem id="fs-id1626486"><para id="fs-id1626487">When a right triangle with a hypotenuse of 1 is placed in a circle of radius 1, which sides of the triangle correspond to the <emphasis effect="italics">x</emphasis>- and <emphasis effect="italics">y</emphasis>-coordinates?</para></problem>
+</exercise>
+<exercise id="fs-id1310960">
+<problem id="fs-id1606735"><para id="fs-id1606736">The tangent of an angle compares which sides of the right triangle?</para></problem>
+<solution id="fs-id2546064"><para id="fs-id2546065"> The tangent of an angle is the ratio of the opposite side to the adjacent side.</para></solution>
+</exercise>
+<exercise id="fs-id1964613">
+<problem id="fs-id1332638"><para id="fs-id1690238">What is the relationship between the two acute angles in a right triangle?</para></problem>
+</exercise>
+<exercise id="fs-id2166344">
+<problem id="fs-id1365133"><para id="fs-id1365134">Explain the cofunction identity.</para></problem>
+<solution id="fs-id1367072"><para id="fs-id1367073"> For example, the sine of an angle is equal to the cosine of its complement; the cosine of an angle is equal to the sine of its complement.</para></solution>
+</exercise>
+</section>
+<section id="fs-id1569844">
+<title>Algebraic</title>
+<para id="fs-id1429738">For the following exercises, use cofunctions of complementary angles.</para>
+<exercise id="fs-id1677279"><problem id="fs-id2128761"><para id="fs-id2128762"> <m:math>
+    <m:mrow>
+      <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>34°</m:mn>
+        </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mo>___°</m:mo>
+          </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+</exercise><exercise id="fs-id893567">
+  <problem id="fs-id2053821"><para id="fs-id1330748"> <m:math>
+    <m:mrow>
+      <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mi>π</m:mi>
+            <m:mn>3</m:mn>
+          </m:mfrac>
+
+        </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mo>___</m:mo>
+          </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+  <solution id="fs-id1452410"><para id="fs-id2674305"> <m:math>
+    <m:mrow>
+      <m:mfrac>
+        <m:mi>π</m:mi>
+        <m:mn>6</m:mn>
+      </m:mfrac>
+
+    </m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id2382537">
+  <problem id="fs-id1760199"><para id="fs-id1760200"> <m:math>
+    <m:mrow>
+      <m:mi>csc</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>21°</m:mn>
+        </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sec</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mo>___°</m:mo>
+          </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+</exercise>
+<exercise id="fs-id1632613">
+  <problem id="fs-id1391667"><para id="fs-id2098913"> <m:math>
+    <m:mrow>
+      <m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mi>π</m:mi>
+            <m:mn>4</m:mn>
+          </m:mfrac>
+
+        </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cot</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mo>___</m:mo>
+          </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+  <solution id="fs-id932114"><para id="fs-id1901278"> <m:math>
+    <m:mrow>
+      <m:mfrac>
+        <m:mi>π</m:mi>
+        <m:mn>4</m:mn>
+      </m:mfrac>
+
+    </m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+  <para id="fs-id1768070">For the following exercises, find the lengths of the missing sides if side <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi>
+    </m:mrow>
+  </m:math> is opposite angle <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi><m:mo>,</m:mo>
+    </m:mrow>
+  </m:math> side <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi>
+    </m:mrow>
+  </m:math> is opposite angle <m:math>
+    <m:mrow>
+      <m:mi>B</m:mi><m:mo>,</m:mo>
+    </m:mrow>
+  </m:math> and side <m:math>
+    <m:mrow>
+      <m:mi>c</m:mi>
+    </m:mrow>
+  </m:math> is the hypotenuse.</para>
+<exercise id="fs-id2096438">
+  <problem id="fs-id1588551"><para id="fs-id1588552"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id2169219">
+  <problem id="fs-id1701130"><para id="fs-id1701131"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow>
+</m:math>
+</para></problem>
+  <solution id="fs-id2209832"><para id="fs-id2196577"> <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>=</m:mo><m:mfrac>
+        <m:mrow>
+          <m:mn>20</m:mn><m:msqrt>
+            <m:mn>3</m:mn>
+          </m:msqrt>
+
+        </m:mrow>
+        <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mfrac>
+        <m:mrow>
+          <m:mn>40</m:mn><m:msqrt>
+            <m:mn>3</m:mn>
+          </m:msqrt>
+
+        </m:mrow>
+        <m:mn>3</m:mn>
+      </m:mfrac>
+
+    </m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+  <exercise id="fs-id1531290">
+    <problem id="fs-id1540912"><para id="fs-id1699210"> <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mn>12</m:mn></m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow>
+</m:math>
+</para></problem>
+  </exercise>
+  <exercise id="fs-id1544797">
+    <problem id="fs-id2212022"><para id="fs-id2212023"> <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>100</m:mn></m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1714555"><para id="fs-id1714556"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>10,000</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>10,00.5</m:mn>
+      </m:mrow>
+    </m:math>
+    </para></solution>
+  </exercise>
+  <exercise id="fs-id1435950">
+    <problem id="fs-id2674329"><para id="fs-id2176460"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math>
+</para></problem>
+  </exercise>
+  <exercise id="fs-id2247963">
+    <problem id="fs-id2217094"><para id="fs-id1694335"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mo>∡</m:mo><m:mspace width="0.3em"/><m:mi>A</m:mi><m:mo>=</m:mo><m:mn>60°</m:mn></m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1596949"><para id="fs-id1596950"> <m:math>
+      <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mfrac>
+          <m:mrow>
+            <m:mn>5</m:mn><m:msqrt>
+              <m:mn>3</m:mn>
+            </m:msqrt>
+
+          </m:mrow>
+          <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mfrac>
+          <m:mrow>
+            <m:mn>10</m:mn><m:msqrt>
+              <m:mn>3</m:mn>
+            </m:msqrt>
+
+          </m:mrow>
+          <m:mn>3</m:mn>
+        </m:mfrac>
+
+      </m:mrow>
+    </m:math>
+    </para></solution>
+  </exercise>
+<exercise id="fs-id1797187">
+  <problem id="fs-id1707731"><para id="fs-id1707732"> <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mo>∡</m:mo><m:mspace width="0.3em"/><m:mi>A</m:mi><m:mo>=</m:mo><m:mn>45°</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+</section>
+<section id="fs-id2247884"><title>Graphical</title><para id="fs-id1253401">For the following exercises, use <link target-id="Figure_07_04_203"/> to evaluate each trigonometric function of angle <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+  </para>
+<figure id="Figure_07_04_203" class="small">
+  <media id="fs-id1691840" alt="A right triangle with sides 4 and 10 and angle of A labeled which is opposite the side labeled 10.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_203-fe74.jpg"/>
+  </media>
+</figure>
+<exercise id="fs-id1582486">
+  <problem id="fs-id893144"><para id="fs-id1735576"> <m:math>
+    <m:mrow>
+      <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+  <solution id="fs-id1858743"><para id="fs-id1450359"> <m:math>
+    <m:mrow>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>5</m:mn><m:msqrt>
+            <m:mrow>
+              <m:mn>29</m:mn>
+            </m:mrow>
+          </m:msqrt>
+
+        </m:mrow>
+        <m:mrow>
+          <m:mn>29</m:mn>
+        </m:mrow>
+      </m:mfrac>
+
+    </m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id2259074">
+  <problem id="fs-id2183670"><para id="fs-id2183671"> <m:math>
+    <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+</exercise>
+  <exercise id="fs-id2674346">
+    <problem id="fs-id1968097"><para id="fs-id2084470"> <m:math>
+      <m:mrow>
+        <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+    <solution id="fs-id2673682"><para id="fs-id2183198"> <m:math>
+      <m:mrow>
+        <m:mfrac>
+          <m:mn>5</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+
+      </m:mrow>
+    </m:math>
+    </para></solution>
+  </exercise>
+  <exercise id="fs-id2164986">
+    <problem id="fs-id1759695"><para id="fs-id1759696"> <m:math>
+      <m:mrow>
+        <m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+  </exercise>
+  <exercise id="fs-id1308213">
+    <problem id="fs-id1504246"><para id="fs-id2251637"> <m:math>
+      <m:mrow>
+        <m:mtext>sec</m:mtext><m:mspace width="0.3em"/><m:mi>A</m:mi>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+    <solution id="fs-id1738090"><para id="fs-id2674056"> <m:math>
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:msqrt>
+              <m:mrow>
+                <m:mn>29</m:mn>
+              </m:mrow>
+            </m:msqrt>
+
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+
+      </m:mrow>
+    </m:math>
+    </para></solution>
+  </exercise>
+  <exercise id="fs-id2247736">
+    <problem id="fs-id1347180"><para id="fs-id1347181"> <m:math>
+      <m:mrow>
+        <m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+  </exercise>
+
+  <para id="fs-id2090767">For the following exercises, use <link target-id="Figure_07_04_204"/> to evaluate each trigonometric function of angle <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+  </para>
+
+<figure id="Figure_07_04_204" class="small">
+  <media id="fs-id1679873" alt="A right triangle with sides of 10 and 8 and angle of A labeled which is opposite the side labeled 10.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_204-a997.jpg"/>
+</media>
+</figure>
+
+<exercise id="fs-id2196782">
+  <problem id="fs-id2566242"><para id="fs-id2566243"> <m:math>
+    <m:mrow>
+      <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+  <solution id="fs-id2363601"><para id="fs-id2363602"> <m:math>
+    <m:mrow>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>5</m:mn><m:msqrt>
+            <m:mrow>
+              <m:mn>41</m:mn>
+            </m:mrow>
+          </m:msqrt>
+
+        </m:mrow>
+        <m:mrow>
+          <m:mn>41</m:mn>
+        </m:mrow>
+      </m:mfrac>
+
+    </m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id1841846">
+  <problem id="fs-id2168669"><para id="fs-id2168670"> <m:math>
+    <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+</exercise>
+  <exercise id="fs-id2216588">
+    <problem id="fs-id2353623"><para id="fs-id2353624"> <m:math>
+      <m:mrow>
+        <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+    <solution id="fs-id1609938"><para id="fs-id2256725"> <m:math>
+      <m:mrow>
+        <m:mfrac>
+          <m:mn>5</m:mn>
+          <m:mn>4</m:mn>
+        </m:mfrac>
+
+      </m:mrow>
+    </m:math>
+    </para></solution>
+  </exercise>
+  <exercise id="fs-id2269366">
+    <problem id="fs-id2269368"><para id="fs-id1598041"> <m:math>
+      <m:mrow>
+        <m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+  </exercise>
+  <exercise id="fs-id1968069">
+    <problem id="fs-id2077091"><para id="fs-id2077092"> <m:math>
+      <m:mrow>
+        <m:mtext>sec</m:mtext><m:mspace width="0.3em"/><m:mi>A</m:mi>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+    <solution id="fs-id2027627"><para id="fs-id2027628"> <m:math>
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:msqrt>
+              <m:mrow>
+                <m:mn>41</m:mn>
+              </m:mrow>
+            </m:msqrt>
+
+          </m:mrow>
+          <m:mn>4</m:mn>
+        </m:mfrac>
+
+      </m:mrow>
+    </m:math>
+    </para></solution>
+  </exercise>
+  <exercise id="fs-id2375018">
+    <problem id="fs-id2538092"><para id="fs-id2538093"> <m:math>
+      <m:mrow>
+        <m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>A</m:mi>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+  </exercise>
+
+<para id="fs-id2627316">For the following exercises, solve for the unknown sides of the given triangle.</para>
+
+  <exercise id="fs-id2281076">
+    <problem id="fs-id2281078">
+      <media id="fs-id1544838" alt="A right triangle with sides of 7, b, and c labeled. Angles of B and 30 degrees also labeled.  The 30 degree angle is opposite the side labeled 7.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_205.jpg"/>
+      </media>
+    </problem>
+    <solution id="fs-id2160700"><para id="fs-id1504623"> <m:math>
+      <m:mrow>
+        <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>14</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:msqrt>
+          <m:mn>3</m:mn>
+        </m:msqrt>
+
+      </m:mrow>
+    </m:math>
+    </para></solution>
+  </exercise>
+  <exercise id="fs-id2674199"><problem id="fs-id2134218">
+      <media id="fs-id1284526" alt="A right triangle with sides of 10, a, and c. Angles of 60 degrees and A also labeled.  The 60 degree angle is opposite the side labeled 10.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_206.jpg"/>
+      </media>
+    </problem>
+
+  </exercise><exercise id="fs-id1555858">
+    <problem id="fs-id1760911">
+      <media id="fs-id2374683" alt="A right triangle with corners labeled A, B, and C. Hypotenuse has length of 15 times square root of 2. Angle B is 45 degrees.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_207.jpg"/>
+      </media>
+    </problem>
+    <solution id="fs-id2240072"><para id="fs-id2240073"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>15</m:mn>
+      </m:mrow>
+    </m:math>
+    </para></solution>
+  </exercise>
+
+
+</section><section id="fs-id1801729">
+<title>Technology</title>
+<para id="fs-id1902106">For the following exercises, use a calculator to find the length of each side to four decimal places.</para>
+  <exercise id="fs-id2247530">
+    <problem id="fs-id2247532">
+      <media id="fs-id2242544" alt="A right triangle with sides of 10, a, and c. Angles of A and 62 degrees are also labeled.  The 62 degree angle is opposite the side labeled 10.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_208-d641.jpg"/>
+      </media>
+    </problem>
+    </exercise>
+
+  <exercise id="fs-id1622924">
+    <problem id="fs-id1622926">
+      <media id="fs-id2216886" alt="A right triangle with sides of 7, b, and c. Angles of 35 degrees and B are also labeled.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_209.jpg"/>
+      </media>
+    </problem>
+    <solution id="fs-id2566187"><para id="fs-id2566188"> <m:math>
+      <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>9.9970</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>12.2041</m:mn>
+      </m:mrow>
+    </m:math>
+    </para></solution>
+  </exercise>
+
+  <exercise id="fs-id2510471">
+    <problem id="fs-id1703985">
+      <media id="fs-id1703987" alt="A right triangle with sides of a, b, and 10 labeled. Angles of 65 degrees and B are also labeled.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_210-d14b.jpg"/>
+      </media>
+    </problem>
+  </exercise>
+
+
+  <exercise id="fs-id1735342">
+    <problem id="fs-id1735344">
+      <media id="fs-id1855773" alt="A right triangle with sides a, b, and 12. Angles of 10 degrees and B are also labeled.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_211.jpg"/>
+      </media>
+    </problem>
+    <solution id="fs-id2513968"><para id="fs-id2513969"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2.0838</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>11.8177</m:mn>
+      </m:mrow>
+    </m:math>
+    </para></solution>
+  </exercise>
+
+  <exercise id="fs-id1828944">
+    <problem id="fs-id2257689">
+      <media id="fs-id2257692" alt="A right triangle with corners labeled A, B, and C. Sides labeled b, c, and 16.5. Angle of 81 degrees also labeled.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_212.jpg"/>
+      </media>
+    </problem>
+  </exercise>
+
+<exercise id="fs-id1586757">
+  <problem id="fs-id1586759"><para id="fs-id2095525"> <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mo>∡</m:mo><m:mspace width="0.3em"/><m:mi>B</m:mi><m:mo>=</m:mo><m:mn>15°</m:mn></m:mrow>
+</m:math>
+</para></problem>
+  <solution id="fs-id2571996"><para id="fs-id2571997"> <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>55.9808</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>57.9555</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id1587676">
+  <problem id="fs-id1587678"><para id="fs-id2595754"> <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>200</m:mn><m:mo>,</m:mo><m:mo>∡</m:mo><m:mspace width="0.3em"/><m:mi>B</m:mi><m:mo>=</m:mo><m:mn>5°</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id2028502">
+  <problem id="fs-id2128313"><para id="fs-id2128314"> <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>50</m:mn><m:mo>,</m:mo><m:mo>∡</m:mo><m:mspace width="0.3em"/><m:mi>B</m:mi><m:mo>=</m:mo><m:mn>21°</m:mn></m:mrow>
+</m:math>
+</para></problem>
+  <solution id="fs-id2251439"><para id="fs-id2251440"> <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>46.6790</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>17.9184</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id1800074">
+  <problem id="fs-id1683820"><para id="fs-id1683821"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>,</m:mo><m:mo>∡</m:mo><m:mspace width="0.3em"/><m:mi>A</m:mi><m:mo>=</m:mo><m:mn>27°</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id2595747">
+  <problem id="fs-id2182159"><para id="fs-id2182160"> <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>3.5</m:mn><m:mo>,</m:mo><m:mo>∡</m:mo><m:mspace width="0.3em"/><m:mi>A</m:mi><m:mo>=</m:mo><m:mn>78°</m:mn></m:mrow>
+</m:math> </para></problem>
+  <solution id="fs-id2248438"><para id="fs-id2248439"> <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>16.4662</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>16.8341</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+
+
+</section>
+<section id="fs-id1622995">
+<title>Extensions</title>
+  <exercise id="fs-id2216932"><problem id="fs-id2242484"><para id="fs-id2216933">Find <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+  </para>
+<para id="eip-id1167336881735"><newline/>
+  <media id="fs-id2077116" alt="A triangle with angles of 63 degrees and 39 degrees and side x. Bisector in triangle with length of 82.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_213.jpg"/>
+  </media></para>
+</problem>
+</exercise><exercise id="fs-id1684158"><problem id="fs-id1680038"><para id="fs-id1684159">Find <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+  </para>
+<para id="eip-id1164448533822"><newline/>
+    <media id="fs-id2673672" alt="A triangle with angles of 36 degrees and 50 degrees and side x. Bisector in triangle with length of 85.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_214.jpg"/>
+    </media></para>
+</problem>
+    <solution id="fs-id1451845"><para id="fs-id2084785"> 188.3159</para></solution>
+  </exercise><exercise id="fs-id2606047"><problem id="fs-id2256641"><para id="fs-id2606048">Find <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+  </para>
+<para id="eip-id1164450898301"><newline/>
+    <media id="fs-id2595719" alt="A right triangle with side of 115 and angle of 35 degrees. Within right triangle there is another right triangle with angle of 56 degrees. Side length difference between two triangles is x.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_215.jpg"/>
+    </media></para>
+</problem>
+  </exercise><exercise id="fs-id1577489"><problem id="fs-id2218066"><para id="fs-id2257380">Find <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+  </para>
+<para id="eip-id1164447436116"><newline/>
+    <media id="fs-id2257422" alt="A right triangle with side of 119 and angle of 26 degrees. Within right triangle there is another right triangle with angle of 70 degrees instead of 26 degrees. Difference in side length between two triangles is x.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_04_216.jpg"/>
+    </media>
+</para>
+</problem>
+    <solution id="fs-id1307784"><para id="fs-id1307785">200.6737</para></solution>
+  </exercise><exercise id="fs-id2247776">
+  <problem id="fs-id1863080"><para id="fs-id1863081">A radio tower is located 400 feet from a building. From a window in the building, a person determines that the angle of elevation to the top of the tower is <m:math>
+    <m:mrow>
+      <m:mn>36°</m:mn><m:mo>,</m:mo>
+    </m:mrow>
+  </m:math> and that the angle of depression to the bottom of the tower is <m:math>
+    <m:mrow>
+      <m:mn>23°</m:mn><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math> How tall is the tower?</para></problem>
+</exercise>
+  <exercise id="fs-id2529841"><problem id="fs-id2529842"><para id="fs-id2526332">A radio tower is located 325 feet from a building. From a window in the building, a person determines that the angle of elevation to the top of the tower is <m:math>
+    <m:mrow>
+      <m:mn>43°</m:mn><m:mo>,</m:mo>
+    </m:mrow>
+  </m:math> and that the angle of depression to the bottom of the tower is <m:math>
+    <m:mrow>
+      <m:mn>31°</m:mn><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math> How tall is the tower?</para></problem>
+<solution id="fs-id2160789"><para id="fs-id2160790"> 498.3471 ft </para></solution>
+</exercise>
+<exercise id="fs-id888679">
+  <problem id="fs-id888681"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id888682">A 200-foot tall monument is located in the distance. From a window in a building, a person determines that the angle of elevation to the top of the monument is <m:math>
+    <m:mrow>
+      <m:mn>15°</m:mn><m:mo/><m:mo>,</m:mo>
+    </m:mrow>
+  </m:math> and that the angle of depression to the bottom of the monument is <m:math>
+    <m:mrow>
+      <m:mn>2°</m:mn><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math> How far is the person from the monument?</para></problem>
+</exercise>
+<exercise id="fs-id2293173"><problem id="fs-id2293174"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id2293175">A 400-foot tall monument is located in the distance. From a window in a building, a person determines that the angle of elevation to the top of the monument is <m:math>
+    <m:mrow>
+      <m:mn>18°</m:mn><m:mo>,</m:mo>
+    </m:mrow>
+  </m:math> and that the angle of depression to the bottom of the monument is <m:math>
+    <m:mrow>
+      <m:mn>3°</m:mn><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math> How far is the person from the monument?</para></problem>
+<solution id="fs-id2189403"><para id="fs-id2189404">1060.09 ft</para></solution>
+</exercise>
+<exercise id="fs-id2375070">
+  <problem id="fs-id2375072"><para id="fs-id2375073">There is an antenna on the top of a building. From a location 300 feet from the base of the building, the angle of elevation to the top of the building is measured to be <m:math>
+    <m:mrow>
+      <m:mn>40°</m:mn><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math> From the same location, the angle of elevation to the top of the antenna is measured to be <m:math>
+    <m:mrow>
+      <m:mn>43°</m:mn><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math> Find the height of the antenna.</para></problem>
+</exercise>
+<exercise id="fs-id2183207">
+  <problem id="fs-id712478"><para id="fs-id712479">There is lightning rod on the top of a building. From a location 500 feet from the base of the building, the angle of elevation to the top of the building is measured to be <m:math>
+    <m:mrow>
+      <m:mn>36°</m:mn><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math> From the same location, the angle of elevation to the top of the lightning rod is measured to be <m:math>
+    <m:mrow>
+      <m:mn>38°</m:mn><m:mo>.</m:mo>
+    </m:mrow>
+  </m:math> Find the height of the lightning rod.</para></problem>
+<solution id="fs-id2242442"><para id="fs-id2165385">27.372 ft</para></solution></exercise>
+
+</section>
+<section id="fs-id2165390">
+  <title>Real-World Applications</title>
+  <exercise id="fs-id1737870">
+    <problem id="fs-id2186287"><para id="fs-id2186288">A 33-ft ladder leans against a building so that the angle between the ground and the ladder is <m:math>
+      <m:mrow>
+        <m:mn>80°</m:mn><m:mo>.</m:mo>
+      </m:mrow>
+    </m:math> How high does the ladder reach up the side of the building?</para></problem>
+  </exercise>
+  <exercise id="fs-id1275788">
+    <problem id="fs-id1700736"><para id="fs-id1700737">A 23-ft ladder leans against a building so that the angle between the ground and the ladder is <m:math>
+      <m:mrow>
+        <m:mn>80°</m:mn><m:mo>.</m:mo>
+      </m:mrow>
+    </m:math> How high does the ladder reach up the side of the building?</para></problem>
+    <solution id="fs-id2204153"><para id="fs-id2204154"> 22.6506 ft  </para></solution>
+  </exercise>
+  <exercise id="fs-id1701037">
+    <problem id="fs-id1701039"><para id="fs-id1701040">The angle of elevation to the top of a building in New York is found to be 9 degrees from the ground at a distance of 1 mile from the base of the building. Using this information, find the height of the building.</para></problem>
+  </exercise>
+  <exercise id="fs-id1623020">
+    <problem id="fs-id1714146"><para id="fs-id1714147">The angle of elevation to the top of a building in Seattle is found to be 2 degrees from the ground at a distance of 2 miles from the base of the building. Using this information, find the height of the building. </para></problem>
+  <solution id="fs-id1571544"><para id="fs-id2528007"> 368.7633 ft </para></solution>
+  </exercise>
+  <exercise id="fs-id2182588">
+    <problem id="fs-id2182590"><para id="fs-id2182591">Assuming that a 370-foot tall giant redwood grows vertically, if I walk a certain distance from the tree and measure the angle of elevation to the top of the tree to be <m:math>
+      <m:mrow>
+        <m:mn>60°</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+    </m:math> how far from the base of the tree am I?</para></problem>
+  </exercise>
+</section>
+</section>
+</content>
+<glossary>
+  <definition id="fs-id1675570"><term>adjacent side</term><meaning id="fs-id1675574"> in a right triangle, the side between a given angle and the right angle</meaning></definition>
+  <definition id="fs-id1734755"><term>angle of depression </term><meaning id="fs-id1734758">the angle between the horizontal and the line from the object to the observer’s eye, assuming the object is positioned lower than the observer</meaning></definition>
+  <definition id="fs-id2674027"><term>angle of elevation </term><meaning id="fs-id2538162">the angle between the horizontal and the line from the object to the observer’s eye, assuming the object is positioned higher than the observer</meaning></definition>
+  <definition id="fs-id1602361"><term>opposite side</term><meaning id="fs-id1602364"> in a right triangle, the side most distant from a given angle</meaning></definition>
+  <definition id="fs-id1700424"><term>hypotenuse</term><meaning id="fs-id1700427"> the side of a right triangle opposite the right angle</meaning></definition>
+  <definition id="fs-id2168306"><term>unit circle </term><meaning id="fs-id2168309">a circle with a center at <m:math>
+    <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+    </m:mrow>
+  </m:math> and radius 1</meaning></definition>
+  </glossary>
+</document>

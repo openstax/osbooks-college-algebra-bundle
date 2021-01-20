@@ -1,0 +1,4967 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Systems of Linear Equations: Two Variables</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m49420</md:content-id>
+  <md:title>Systems of Linear Equations: Two Variables</md:title>
+  <md:abstract><para>In this section, you will:</para><list>
+<item>Solve systems of equations by graphing.</item>
+<item>Solve systems of equations by substitution.</item>
+<item>Solve systems of equations by addition.</item>
+<item>Identify inconsistent systems of equations containing two variables.</item>
+<item>Express the solution of a system of dependent equations containing two variables.</item>
+</list></md:abstract>
+  <md:uuid>0bb1dacf-671b-4fe5-a5a4-e67ad9a48d54</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+
+<section id="eip-897" class="coreq-skills"><section id="eip-344" class="learning-objectives"><title>Learning Objectives</title><list id="eip-597"><item>Determine whether an ordered pair is a solution of a system of equations (IA 4.1.1) </item>
+<item>Solve a system of linear equations by graphing (IA 4.1.2)</item></list></section><section id="eip-584"><title>Determine whether an ordered pair is a solution of a system of equations (IA 4.1.1) </title><para id="eip-265">A <emphasis>system</emphasis> of linear equations is a group of two or more linear equations.  For example,
+</para><equation id="eip-505" class="unnumbered"><label/> <m:math><m:mfenced open="{" close=""><m:mtable columnalign="left"><m:mtr><m:mtd><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math> </equation><para id="eip-828">is a system of linear equations
+</para><para id="eip-366">A <emphasis>solution</emphasis> to a system of linear equations is an ordered pair x,y that is a solution to every equation in the system.
+</para><example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-288"><para id="eip-27">
+Determine whether the ordered pairs are solutions to the given system.
+
+</para><exercise id="eip-774"><problem id="eip-15">
+  <para id="eip-519"><m:math><m:mfenced open="{" close=""><m:mrow><m:mtable columnalign="left"><m:mtr><m:mtd><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mtd></m:mtr></m:mtable></m:mrow></m:mfenced></m:math> at <m:math><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>, </m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:math> and <m:math><m:mrow><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>, </m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:math>
+  </para>
+</problem>
+
+<solution id="eip-296">
+<para id="eip-301">We substitute (3, 1) into both equations:</para>
+
+<table id="eip-699" summary="." class="unnumbered unstyled"><tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+  <row>
+    <entry><m:math><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math> </entry>
+    <entry><m:math><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left"><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mn>2</m:mn><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mn>6</m:mn><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable></m:math> True</entry>
+    <entry align="left"><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mn>3</m:mn><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mn>9</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>5</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>5</m:mn></m:mtd></m:mtr></m:mtable></m:math> True</entry>
+  </row>
+  <row>
+    <entry> <m:math><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:math> is a solution to <m:math><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math></entry>
+    <entry> <m:math><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:math> is a solution to <m:math><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry namest="c1" nameend="c2">Conclusion: since <m:math><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> is a solution to both equations, then it is a solution to the system <m:math><m:mfenced open="{" close=""><m:mtable columnalign="left"><m:mtr><m:mtd><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn><m:mi mathvariant="normal">x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math> </entry>
+
+  </row>
+</tbody>
+</tgroup>
+</table><para id="eip-404">Next we substitute (-3, -1) into both equations:
+</para>
+
+
+<table id="eip-700" summary="." class="unnumbered unstyled"><label/><tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+  <row>
+    <entry><m:math><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math> </entry>
+    <entry><m:math><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left"><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mn>2</m:mn><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr></m:mtable></m:math>  True</entry>
+    <entry align="left"><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mn>3</m:mn><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mo>-</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>5</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>5</m:mn></m:mtd></m:mtr></m:mtable></m:math> False</entry>
+  </row>
+  <row>
+    <entry> <m:math><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:math> is a solution to <m:math><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math> </entry>
+    <entry> <m:math><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:math> is <emphasis>not</emphasis> a solution to <m:math><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry namest="c1" nameend="c2">Conclusion: Since <m:math><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:math> is not a solution to one of the equations, then it is not a solution to the system <m:math><m:mfenced open="{" close=""><m:mtable columnalign="left"><m:mtr><m:mtd><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math> </entry>
+
+  </row>
+</tbody>
+</tgroup>
+</table></solution>
+</exercise></example><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-37" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-974">Determine whether the ordered pairs are solutions to the given system.
+</para><para id="eip-346"><m:math><m:mfenced open="{" close=""><m:mtable columnalign="left"><m:mtr><m:mtd><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math> at <m:math><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:math> and <m:math><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:math> </para><exercise id="eip-149"><problem id="eip-719">
+  <para id="eip-588">
+At (0, 0):
+  </para>
+<table id="eip-idm510053120" summary="." class="unnumbered"><label/><tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+  <row>
+    <entry align="center"> <m:math><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math> </entry>
+    <entry align="center"> <m:math><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>–5</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry>________________________<newline/>________________________</entry>
+    <entry>________________________<newline/>________________________</entry>
+  </row>
+  <row>
+    <entry>________________________<newline/>________________________</entry>
+    <entry>________________________<newline/>________________________</entry>
+  </row>
+  <row>
+    <entry namest="c1" nameend="c2">Conclusion: ________________________</entry>
+
+  </row>
+</tbody>
+</tgroup>
+</table></problem>
+
+</exercise><exercise id="eip-551"><problem id="eip-928">
+  <para id="eip-345">At (1, –3)
+  </para><table id="eip-idm465470000" summary="." class="unnumbered"><label/><tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+  <row>
+    <entry align="center"> <m:math><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math> </entry>
+    <entry align="center"> <m:math><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>–5</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry>________________________<newline/>________________________</entry>
+    <entry>________________________<newline/>________________________</entry>
+  </row>
+  <row>
+    <entry>________________________<newline/>________________________</entry>
+    <entry>________________________<newline/>________________________</entry>
+  </row>
+  <row>
+    <entry namest="c1" nameend="c2">Conclusion: ________________________</entry>
+
+  </row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+
+</exercise></section></section><section id="eip-121"><title>Solve a system of linear equations by graphing (IA 4.1.2)</title><note xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-867" class="how-to-notitle"><title>Solve a system of linear equations by graphing</title><list id="eip-idm264452624" list-type="enumerated" number-style="arabic" class="stepwise"><item>Graph the first equation.</item>
+<item>Graph the second equation on the same rectangular coordinate system.</item>
+<item>Determine whether the lines intersect, are parallel, or are the same line.</item>
+<item>Identify the solution to the system.</item>
+<item>Check the solution in both equations.</item>
+</list><table id="eip-384" summary="." class="unnumbered">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry align="left">If the lines intersect, identify the point of intersection. This is the solution to the system.</entry>
+    <entry><media id="eip-idm447026784" alt="."><image mime-type="image/jpg" src="../../media/CNX_IntAlg_Figure_04_01_008a_img.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry align="left">If the lines are parallel, the system has no solutions.</entry>
+    <entry><media id="eip-idm483836912" alt="."><image mime-type="image/jpg" src="../../media/CNX_IntAlg_Figure_04_01_008b_img.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry align="left">If the lines are the same, the system has an infinite number of solutions.</entry>
+    <entry align="left"><media id="eip-idm676376128" alt="."><image mime-type="image/jpg" src="../../media/CNX_IntAlg_Figure_04_01_008c_img.jpg"/></media></entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table></note><example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-385"><para id="eip-21">
+Solve the system by graphing.
+</para><exercise id="eip-422"><problem id="eip-133"><title>Solve the system by graphing.</title>
+  <para id="eip-333">
+ <m:math><m:mfenced open="{" close=""><m:mtable columnalign="left"><m:mtr><m:mtd><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math>
+  </para>
+</problem>
+
+<solution id="eip-454">
+<table id="eip-737" summary="." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>Step 1</entry>
+    <entry>
+Graph <m:math><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math> <newline/>
+We can use the slope intercept – form: <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:math> <newline/>
+Slope  = 1  <newline/>
+y-intercept: (0, 1)<newline/>
+<media id="eip-idm230081488" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_07_01_001.jpg"/></media>
+</entry>
+  </row>
+  <row>
+    <entry>Step 2</entry>
+    <entry>
+Graph <m:math><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:math> <newline/>
+We can use the slope intercept – form: <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn></m:math> <newline/>
+Slope  = –2  <newline/>
+y-intercept: (0, 10)<newline/>
+<media id="eip-idm506197872" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_07_01_002.jpg"/></media>
+
+</entry>
+  </row>
+  <row>
+    <entry>Step 3</entry>
+    <entry>The lines intersect</entry>
+  </row>
+  <row>
+    <entry>Step 4</entry>
+    <entry>The solution is the point (3, 4)</entry>
+  </row>
+  <row>
+    <entry>Step 5</entry>
+    <entry>
+Let’s check the solution:<newline/>
+ <m:math><m:mtable><m:mtr><m:mtd><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mtd><m:mtd><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>1</m:mn></m:mtd><m:mtd><m:mn>2</m:mn><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>10</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>1</m:mn></m:mtd><m:mtd><m:mn>10</m:mn><m:mo>=</m:mo><m:mn>10</m:mn></m:mtd></m:mtr></m:mtable></m:math>
+<newline/>
+Since (3,  4) is a solution to both equations, then it <emphasis>is a solution</emphasis> to the system<newline/>
+ <m:math><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math> <newline/>
+ <m:math><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:math>
+
+</entry>
+  </row>
+</tbody></tgroup>
+</table></solution>
+</exercise></example><note xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-520" class="try"><para id="eip-idm514357072">Solve a system of linear equations by graphing
+<m:math><m:mfenced open="{" close=""><m:mtable columnalign="left"><m:mtr><m:mtd><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math> </para>
+<table id="eip-281" summary="." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>Step 1</entry>
+    <entry>Graph <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:math> <newline/>
+Slope = ________<newline/>
+y-intercept = ________
+</entry>
+  </row>
+  <row>
+    <entry>Step 2</entry>
+    <entry>Graph <m:math><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:math><newline/>
+Slope = ________<newline/>
+y-intercept = ________<newline/><media id="eip-idm511324656" alt="blank graph"><image mime-type="image/png" src="../../media/blankplot6.4-604f.png"/></media> </entry>
+
+  </row>
+  <row>
+    <entry>Step 3</entry>
+    <entry>Do the lines intersect?<newline/>________</entry>
+  </row>
+  <row>
+    <entry>Step 4</entry>
+    <entry>Read from the graph the point of intersection.<newline/>________</entry>
+  </row>
+  <row>
+    <entry>Step 5</entry>
+    <entry>Check the solution in both equations.<newline/>________</entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table></note><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-147" class="practice-perfect"><title>Practice Makes Perfect</title><exercise id="eip-791"><problem id="eip-489">
+  <para id="eip-201">
+Determine whether the ordered pair is a solution to the given system
+
+ <m:math><m:mfenced open="{" close=""><m:mtable columnalign="left"><m:mtr><m:mtd><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>8</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math>
+  </para>
+</problem>
+</exercise><exercise id="eip-106"><problem id="eip-771">
+  <para id="eip-259">Solve the following system by graphing.
+ <m:math><m:mfenced open="{" close=""><m:mtable columnalign="left"><m:mtr><m:mtd><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math><newline/>
+  <media id="eip-idm499810176" alt="blank graph"><image mime-type="image/png" src="../../media/blankplot6.4-604f.png"/></media></para></problem>
+</exercise></section></section></section><figure id="Figure_09_01_001" class="small">
+<media id="fs-id1165137938552" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_001.jpg"/>
+</media>
+<caption>(credit: Thomas Sørenes)</caption>
+</figure>
+
+<para id="fs-id1165134188850">A skateboard manufacturer introduces a new line of boards. The manufacturer tracks its costs, which is the amount it spends to produce the boards, and its revenue, which is the amount it earns through sales of its boards. How can the company determine if it is making a profit with its new line? How many skateboards must be produced and sold before a profit is possible? In this section, we will consider linear equations with two variables to answer these and similar questions.</para>
+
+<section id="fs-id1165133236395">
+<title>Introduction to Systems of Equations</title>
+<para id="fs-id1165137448108">In order to investigate situations such as that of the skateboard manufacturer, we need to recognize that we are dealing with more than one variable and likely more than one equation. A <term>system of linear equations</term> consists of two or more linear equations made up of two or more variables such that all equations in the system are considered simultaneously. To find the unique solution to a system of linear equations, we must find a numerical value for each variable in the system that will satisfy all equations in the system at the same time. Some linear systems may not have a solution and others may have an infinite number of solutions. In order for a linear system to have a unique solution, there must be at least as many equations as there are variables. Even so, this does not guarantee a unique solution.</para>
+<para id="fs-id1165137885053">In this section, we will look at systems of linear equations in two variables, which consist of two equations that contain two different variables. For example, consider the following system of linear equations in two variables.</para>
+<equation id="fs-id1165134179562" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>15</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>5</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation>
+<para id="fs-id1165135596356">The <emphasis effect="italics">solution</emphasis> to a system of linear equations in two variables is any ordered pair that satisfies each equation independently. In this example, the ordered pair (4, 7) is the solution to the system of linear equations. We can verify the solution by substituting the values into each equation to see if the ordered pair satisfies both equations. Shortly we will investigate methods of finding such a solution if it exists.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137666087" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>15</m:mn><m:mspace width="0.8em"/><m:mtext>True</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.8em"/><m:mtext>True</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165132912573">In addition to considering the number of equations and variables, we can categorize systems of linear equations by the number of solutions. A <term>consistent system</term> of equations has at least one solution. A consistent system is considered to be an <emphasis>independent system</emphasis> if it has a single solution, such as the example we just explored. The two lines have different slopes and intersect at one point in the plane. A consistent system is considered to be a <emphasis>dependent system</emphasis> if the equations have the same slope and the same <emphasis effect="italics">y</emphasis>-intercepts. In other words, the lines coincide so the equations represent the same line. Every point on the line represents a coordinate pair that satisfies the system. Thus, there are an infinite number of solutions.</para><para id="fs-id1165135262630">Another type of system of linear equations is an <emphasis>inconsistent system</emphasis>, which is one in which the equations represent two parallel lines. The lines have the same slope and different <emphasis effect="italics">y-</emphasis>intercepts. There are no points common to both lines; hence, there is no solution to the system.</para>
+
+<note id="fs-id1165137642700"><title>Types of Linear Systems </title>
+
+<para id="fs-id1165137655489">There are three types of systems of linear equations in two variables, and three types of solutions.
+<list id="fs-id1165135430223" list-type="bulleted">
+<item>An <term>independent system</term> has exactly one solution pair <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> The point where the two lines intersect is the only solution.</item>
+<item>An <term>inconsistent system</term> has no solution. Notice that the two lines are parallel and will never intersect.</item>
+<item>A <term>dependent system</term> has infinitely many solutions. The lines are coincident. They are the same line, so every coordinate pair on the line is a solution to both equations.</item>
+</list>
+</para>
+
+<para id="fs-id1165134540073"><link target-id="Figure_09_01_002"/> compares graphical representations of each type of system.</para>
+<figure id="Figure_09_01_002"><media id="fs-id1165134137725" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_002n.jpg"/>
+</media>
+</figure></note><note id="fs-id1165137838246" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165134325199"><emphasis>Given a system of linear equations and an ordered pair, determine whether the ordered pair is a solution.</emphasis></para>
+
+<list id="fs-id1165134117256" list-type="enumerated" number-style="arabic">
+<item>Substitute the ordered pair into each equation in the system.</item>
+<item>Determine whether true statements result from the substitution in both equations; if so, the ordered pair is a solution.</item>
+</list>
+</note>
+<example id="Example_09_01_01">
+<exercise id="fs-id1165135658058"><problem id="fs-id1165137942382">
+<title>Determining Whether an Ordered Pair Is a Solution to a System of Equations</title>
+<para id="fs-id1165137734698">Determine whether the ordered pair <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> is a solution to the given system of equations.</para><equation id="fs-id1165134386589" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135547124">
+<para id="fs-id1165135448282">Substitute the ordered pair <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> into both equations.</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135602262" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>True</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mtext>1=1</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>True</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135254607">The ordered pair <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> satisfies both equations, so it is the solution to the system.</para></solution>
+<commentary id="fs-id1165135388571">
+<title>Analysis </title>
+<para id="fs-id1165132935132">We can see the solution clearly by plotting the graph of each equation. Since the solution is an ordered pair that satisfies both equations, it is a point on both of the lines and thus the point of intersection of the two lines. See <link target-id="Figure_09_01_003"/>.</para>
+
+<figure id="Figure_09_01_003" class="small">
+<media id="fs-id1165135528468" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_003.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+<note id="fs-id1165137758492" class="precalculus try">
+<label>Try It</label>
+<exercise id="fs-id1165137892619"><problem id="fs-id1165135149914"><para id="fs-id1165135149915">Determine whether the ordered pair <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>8</m:mn><m:mo>,</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> is a solution to the following system.</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134380339" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>x</m:mi><m:mn>−4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>20</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135513561"><para id="fs-id1165134254086">Not a solution.</para></solution></exercise>
+</note>
+</section>
+
+<section id="fs-id1165134573832">
+<title> Solving Systems of Equations by Graphing</title>
+<para id="fs-id1165137911750">There are multiple methods of solving systems of linear equations. For a <term class="no-emphasis">system of linear equations</term> in two variables, we can determine both the type of system and the solution by graphing the system of equations on the same set of axes.</para>
+<example id="Example_09_01_02">
+<exercise id="fs-id1165137893297"><problem id="fs-id1165135309691">
+<title>Solving a System of Equations in Two Variables by Graphing</title>
+<para id="fs-id1165135187742">Solve the following system of equations by graphing. Identify the type of system.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137685434" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+
+<solution id="eip-id2923071">
+<para id="fs-id1165137456534">Solve the first equation for <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135370758" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mi>x</m:mi><m:mn>−8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134137738">Solve the second equation for <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135634067" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135621960">Graph both equations on the same set of axes as in <link target-id="Figure_09_01_012"/>.</para>
+
+<figure id="Figure_09_01_012" class="small">
+<media id="fs-id1165135186614" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_012.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165135350498">The lines appear to intersect at the point <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+<m:mn>−3,</m:mn><m:mn>−2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> We can check to make sure that this is the solution to the system by substituting the ordered pair into both equations.</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134237266" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−8</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>−8</m:mn><m:mo>=</m:mo><m:mn>−8</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>True</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>−1</m:mn><m:mo>=</m:mo><m:mn>−1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>True</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135672798">The solution to the system is the ordered pair <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+<m:mn>−3,</m:mn><m:mn>−2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> so the system is independent.</para>
+</solution></exercise></example>
+
+<note id="fs-id1165133184270" class="precalculus try"><label>Try It</label>
+<exercise id="fs-id1165135190552"><problem id="fs-id1165137805333"><para id="fs-id1165137805334">Solve the following system of equations by graphing.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137591168" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−25</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>35</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137401107"><para id="fs-id1165137401108">The solution to the system is the ordered pair <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>−5</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+
+
+<media id="fs-id1165135330938" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_013.jpg"/>
+</media>
+</solution></exercise></note><note id="fs-id1165132036982" class="precalculus qa">
+<label>Q&amp;A</label>
+<para id="fs-id1165137443116"><emphasis>Can graphing be used if the system is inconsistent or dependent?</emphasis></para>
+<para id="fs-id1165133015238"><emphasis effect="italics">Yes, in both cases we can still graph the system to determine the type of system and solution. If the two lines are parallel, the system has no solution and is inconsistent. If the two lines are identical, the system has infinite solutions and is a dependent system.</emphasis></para>
+</note>
+</section>
+
+<section id="fs-id1165135192374">
+<title>Solving Systems of Equations by Substitution</title>
+<para id="fs-id1165134361391">Solving a linear system in two variables by graphing works well when the solution consists of integer values, but if our solution contains decimals or fractions, it is not the most precise method. We will consider two more methods of solving a <term class="no-emphasis">system of linear equations</term> that are more precise than graphing. One such method is solving a system of equations by the <term>substitution method</term>, in which we solve one of the equations for one variable and then substitute the result into the second equation to solve for the second variable. Recall that we can solve for only one variable at a time, which is the reason the substitution method is both valuable and practical.</para>
+
+<note id="fs-id1165137730313" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165137897042"><emphasis>Given a system of two equations in two variables, solve using the substitution method.</emphasis></para>
+<list id="fs-id1165137550726" list-type="enumerated" number-style="arabic">
+<item>Solve one of the two equations for one of the variables in terms of the other.</item>
+<item>Substitute the expression for this variable into the second equation, then solve for the remaining variable.</item>
+<item>Substitute that solution into either of the original equations to find the value of the first variable. If possible, write the solution as an ordered pair.</item>
+<item>Check the solution in both equations.</item>
+</list>
+</note>
+
+<example id="Example_09_01_03">
+<exercise id="fs-id1165137770184">
+<problem id="fs-id1165137602393">
+<title>Solving a System of Equations in Two Variables by Substitution</title>
+<para id="fs-id1165137735732">Solve the following system of equations by substitution.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137445889" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137849396">
+
+<para id="fs-id1165137768074">First, we will solve the first equation for <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134113719" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mn>−5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137812824">Now we can substitute the expression <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi><m:mn>−5</m:mn>
+ </m:mrow>
+</m:math> for <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> in the second equation.</para>
+	<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134165449" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>25</m:mn><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−24</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165131892586">Now, we substitute <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math> into the first equation and solve for <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+	<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134066565" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135500998">Our solution is <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+   <m:mn>8</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165134356834">Check the solution by substituting <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>8</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> into both equations.</para>
+	<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135699138" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>True</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>True</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135450312" class="precalculus try">
+<label>Try It</label>
+<exercise id="fs-id1165135160482"><problem id="fs-id1165135160483"><para id="fs-id1165135160484">Solve the following system of equations by substitution.</para>
+<equation id="fs-id1165132059620" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mn>−2</m:mn><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135516681"><para id="fs-id1165135516682"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1165137598962" class="precalculus qa"><label>Q&amp;A</label>
+<para id="eip-id3042099"><emphasis>Can the substitution method be used to solve any linear system in two variables?</emphasis></para>
+<para id="fs-id1165132973467"><emphasis effect="italics">Yes, but the method works best if one of the equations contains a coefficient of 1 or –1 so that we do not have to deal with fractions.</emphasis></para>
+</note></section>
+
+<section id="fs-id1165132972949">
+<title>Solving Systems of Equations in Two Variables by the Addition Method</title>
+<para id="fs-id1165131968519">A third method of <term class="no-emphasis">solving systems of linear equations</term> is the <term>addition method</term>. In this method, we add two terms with the same variable, but opposite coefficients, so that the sum is zero. Of course, not all systems are set up with the two terms of one variable having opposite coefficients. Often we must adjust one or both of the equations by multiplication so that one variable will be eliminated by addition.</para>
+
+<note id="fs-id1165134555002" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165135155300"><emphasis>Given a system of equations, solve using the addition method.</emphasis></para>
+<list id="fs-id1165135638539" list-type="enumerated" number-style="arabic"><item>Write both equations with <emphasis effect="italics">x</emphasis>- and <emphasis effect="italics">y</emphasis>-variables on the left side of the equal sign and constants on the right.</item>
+<item>Write one equation above the other, lining up corresponding variables. If one of the variables in the top equation has the opposite coefficient of the same variable in the bottom equation, add the equations together, eliminating one variable. If not, use multiplication by a nonzero number so that one of the variables in the top equation has the opposite coefficient of the same variable in the bottom equation, then add the equations to eliminate the variable.</item>
+<item>Solve the resulting equation for the remaining variable.</item>
+<item>Substitute that value into one of the original equations and solve for the second variable.</item>
+<item>Check the solution by substituting the values into the other equation.</item>
+</list></note>
+
+<example id="Example_09_01_04">
+<exercise id="fs-id1165137760592">
+<problem id="fs-id1165134152521">
+<title>Solving a System by the Addition Method</title>
+<para id="fs-id1165137456041">Solve the given system of equations by addition.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137456044" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165132078090">
+<para id="fs-id1165133409999">Both equations are already set equal to a constant. Notice that the coefficient of <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> in the second equation, –1, is the opposite of the coefficient of <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> in the first equation, 1. We can add the two equations to eliminate <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> without needing to multiply by a constant.</para>
+	<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135339577" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow/>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext/><m:mtext/><m:mtext/><m:mtext/><m:mtext/><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135523279">Now that we have eliminated <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> we can solve the resulting equation for <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137921567" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135546806">Then, we substitute this value for <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi><m:mspace width="0.8"/><m:mtext> </m:mtext>
+ </m:mrow>
+</m:math> into one of the original equations and solve for <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135257023" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>7</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>7</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135333762">The solution to this system is <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mfrac>
+     <m:mn>7</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mn>2</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<para id="fs-id1165135678637">Check the solution in the first equation.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137557817" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mfrac>
+         <m:mn>7</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>2</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>−</m:mo><m:mfrac>
+       <m:mn>7</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>−</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>−1</m:mn><m:mo>=</m:mo><m:mn>−1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>True</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1165135190076">
+<title>Analysis </title>
+
+<para id="fs-id1165135648608">We gain an important perspective on systems of equations by looking at the graphical representation. See <link target-id="Figure_09_01_004"/> to find that the equations intersect at the solution. We do not need to ask whether there may be a second solution because observing the graph confirms that the system has exactly one solution.</para>
+
+<figure id="Figure_09_01_004" class="small">
+<media id="fs-id1165133055135" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_004.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise>
+</example>
+
+<example id="Example_09_01_05">
+<exercise id="fs-id1165134409145">
+<problem id="fs-id1165137727665">
+<title>Using the Addition Method When Multiplication of One Equation Is Required</title>
+<para id="fs-id1165137727670">Solve the given system of equations by the <term class="no-emphasis">addition method</term>.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165131963805" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−11</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>11</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137611459">
+
+
+<para id="fs-id1165133359271">Adding these equations as presented will not eliminate a variable. However, we see that the first equation has <m:math>
+ <m:mrow>
+ <m:mn>3</m:mn><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> in it and the second equation has <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> So if we multiply the second equation by <m:math>
+ <m:mrow>
+ <m:mn>−3</m:mn><m:mo>,</m:mo><m:mspace width="0.8"/><m:mtext/>
+ </m:mrow>
+</m:math> the <emphasis effect="italics">x</emphasis>-terms will add to zero.</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137921470" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mn>−2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>11</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−3</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mn>−2</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiply both sides by </m:mtext><m:mn>−3.</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>−3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−33</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Use the distributive property</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134567942">Now, let’s add them.</para>
+<equation id="fs-id1165134567946" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder>
+       <m:mrow>
+        <m:mtable columnalign="left">
+         <m:mtr columnalign="left">
+          <m:mtd columnalign="left">
+           <m:mrow/>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr columnalign="left">
+          <m:mtd columnalign="left">
+           <m:mrow>
+            <m:mtable columnalign="left">
+             <m:mtr columnalign="left">
+              <m:mtd columnalign="left">
+               <m:mrow>
+                <m:mspace width="0.8em"/><m:mtext>  </m:mtext><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−11</m:mn>
+               </m:mrow>
+              </m:mtd>
+             </m:mtr>
+             <m:mtr columnalign="left">
+              <m:mtd columnalign="left">
+               <m:mrow>
+                <m:mn>−3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−33</m:mn>
+               </m:mrow>
+              </m:mtd>
+             </m:mtr>
+
+            </m:mtable>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+       <m:mo stretchy="true">_______________</m:mo>
+      </m:munder>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>        </m:mtext><m:mn>11</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−44</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>            </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137714850">For the last step, we substitute <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn><m:mtext>  </m:mtext>
+ </m:mrow>
+</m:math> into one of the original equations and solve for <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134301482" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>11</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>11</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>20</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>11</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165132005290">Our solution is the ordered pair <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> See <link target-id="Figure_09_01_005"/>. Check the solution in the original second equation.</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137863988" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>11</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>11</m:mn><m:mo>=</m:mo><m:mn>11</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>True</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><figure id="Figure_09_01_005" class="small">
+<media id="fs-id1165137641223" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_005.jpg"/>
+</media>
+</figure>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165132914098" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_09_01_05">
+<problem id="fs-id1165137697048"><para id="fs-id1165137697049">Solve the system of equations by addition.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137697052" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mn>−7</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−20</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137884374"><para id="fs-id1165137884375"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+<m:mn>−6</m:mn><m:mo>,</m:mo><m:mn>−2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<example id="Example_09_01_06">
+<exercise id="fs-id1165137698088">
+<problem id="fs-id1165135593606">
+<title>Using the Addition Method When Multiplication of Both Equations Is Required</title>
+<para id="fs-id1165132949906">Solve the given system of equations in two variables by addition.</para>
+	<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165132949909" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−16</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow><m:mn>5</m:mn><m:mi>x</m:mi><m:mn>−10</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>30</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165134547404">
+<para id="fs-id1165137415015">One equation has <m:math>
+ <m:mrow>
+ <m:mn>2</m:mn><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> and the other has <m:math>
+ <m:mrow>
+ <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> The least common multiple is <m:math>
+ <m:mrow>
+ <m:mn>10</m:mn><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> so we will have to multiply both equations by a constant in order to eliminate one variable. Let’s eliminate <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> by multiplying the first equation by <m:math>
+ <m:mrow>
+ <m:mn>−5</m:mn>
+ </m:mrow>
+</m:math> and the second equation by <m:math>
+ <m:mrow>
+ <m:mn>2.</m:mn>
+ </m:mrow>
+</m:math>
+</para><equation id="fs-id1165132947360" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo> </m:mo><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>−16</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>   </m:mtext><m:mo>−</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>15</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>80</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>     </m:mtext><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>10</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>        </m:mtext><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>20</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>60</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134430431">Then, we add the two equations together.</para>
+	<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165133391517" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder accentunder="true">
+       <m:mrow>
+        <m:mtable columnalign="left">
+         <m:mtr columnalign="left">
+          <m:mtd columnalign="left">
+           <m:mrow/>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr columnalign="left">
+          <m:mtd columnalign="left">
+           <m:mrow>
+            <m:mtable columnalign="left">
+             <m:mtr columnalign="left">
+              <m:mtd columnalign="left">
+               <m:mrow>
+                <m:mn>−10</m:mn><m:mi>x</m:mi><m:mn>−15</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>80</m:mn><m:mspace width="0.8em"/><m:mtext>  </m:mtext>
+               </m:mrow>
+              </m:mtd>
+             </m:mtr>
+             <m:mtr columnalign="left">
+              <m:mtd columnalign="left">
+               <m:mrow><m:mn>10</m:mn><m:mi>x</m:mi><m:mn>−20</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>60</m:mn>
+               </m:mrow>
+              </m:mtd>
+             </m:mtr>
+
+            </m:mtable>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+       <m:mo stretchy="true">________________</m:mo>
+      </m:munder>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>−35</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>140</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133239816">Substitute <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn><m:mtext>  </m:mtext>
+ </m:mrow>
+</m:math> into the original first equation.</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165131857354" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>−4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−16</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>12</m:mn><m:mo>=</m:mo><m:mn>−16</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134301325">The solution is <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+<m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Check it in the other equation.</para><equation id="fs-id1165135354953" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="right">
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>         </m:mtext><m:mn>5</m:mn><m:mi>x</m:mi><m:mn>−10</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>30</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo><m:mn>−10</m:mn><m:mo stretchy="false">(</m:mo><m:mn>−4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>30</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>        </m:mtext><m:mn>−10</m:mn><m:mo>+</m:mo><m:mn>40</m:mn><m:mo>=</m:mo><m:mn>30</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>                   </m:mtext><m:mn>30</m:mn><m:mo>=</m:mo><m:mn>30</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133276174">See <link class="small" target-id="Figure_09_01_006"/>.</para><figure id="Figure_09_01_006">
+<media id="fs-id1165134073788" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_006.jpg"/>
+</media>
+</figure>
+</solution>
+</exercise>
+</example>
+
+<example id="Example_09_01_07">
+<exercise id="fs-id1165134342382"><problem id="fs-id1165134342384">
+<title>Using the Addition Method in Systems of Equations Containing Fractions</title>
+<para id="fs-id1165134254318">Solve the given system of equations in two variables by addition.</para>
+	<equation id="fs-id1165134254322" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mtext>​</m:mtext><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165135154453">
+<para id="fs-id1165135154456">First clear each equation of fractions by multiplying both sides of the equation by the least common denominator.</para>
+<equation id="eip-id1165137428223" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>6</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>x</m:mi>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mo>+</m:mo><m:mfrac>
+         <m:mi>y</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>   </m:mtext><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>18</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>−</m:mo><m:mfrac>
+         <m:mi>y</m:mi>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>   </m:mtext><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137846173">Now multiply the second equation by <m:math>
+ <m:mrow>
+ <m:mn>−1</m:mn>
+ </m:mrow>
+</m:math> so that we can eliminate the <emphasis effect="italics">x</emphasis>-variable.</para><equation id="fs-id1165133437189" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−1</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>   </m:mtext><m:mn>−2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133103851">Add the two equations to eliminate the <emphasis effect="italics">x</emphasis>-variable and solve the resulting equation.</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135432734" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>18</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder accentunder="true">
+       <m:mrow>
+        <m:mn>−2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn>
+       </m:mrow>
+       <m:mo stretchy="true">_____________</m:mo>
+      </m:munder>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>14</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135394046">Substitute <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> into the first equation.</para>
+<equation id="fs-id1165132079320" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>18</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>        </m:mtext><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>11</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>          </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>11</m:mn>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>            </m:mtext><m:mo>=</m:mo><m:mn>5.5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135639176">The solution is <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Check it in the other equation.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134301375" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>11</m:mn>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>7</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mfrac>
+       <m:mrow>
+        <m:mn>11</m:mn>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>7</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example>
+
+<note id="fs-id1165134485606" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_09_01_06">
+<problem id="fs-id1165134485616"><para id="fs-id1165134485617">Solve the system of equations by addition.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165133110179" class="unnumbered"><m:math><m:mtable><m:mtr><m:mtd columnalign="left"><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="right"><m:mn>8</m:mn></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="right"><m:mn>10</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation></problem>
+<solution id="fs-id1165135547107"><para id="fs-id1165135547108"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>10</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+
+<section id="fs-id1165135462954">
+<title>Identifying Inconsistent Systems of Equations Containing Two Variables</title>
+<para id="fs-id1165135462960">Now that we have several methods for solving systems of equations, we can use the methods to identify inconsistent systems. Recall that an <term class="no-emphasis">inconsistent system</term> consists of parallel lines that have the same slope but different <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> -intercepts. They will never intersect. When searching for a solution to an inconsistent system, we will come up with a false statement, such as <m:math>
+ <m:mrow>
+ <m:mn>12</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math>
+</para><example id="Example_09_01_08">
+<exercise id="fs-id1165137701571">
+<problem id="fs-id1165135263527">
+<title>Solving an Inconsistent System of Equations</title>
+<para id="fs-id1165135263532">Solve the following system of equations.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135263536" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mn>−2</m:mn><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>13</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135369110">
+<para id="fs-id1165135369112">We can approach this problem in two ways. Because one equation is already solved for <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the most obvious step is to use substitution.</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135606813" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>13</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>13</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>13</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>13</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134039252">Clearly, this statement is a contradiction because <m:math>
+ <m:mrow>
+ <m:mn>9</m:mn><m:mo>≠</m:mo><m:mn>13.</m:mn>
+ </m:mrow>
+</m:math> Therefore, the system has no solution.</para>
+<para id="fs-id1165137742034">The second approach would be to first manipulate the equations so that they are both in slope-intercept form. We manipulate the first equation as follows.</para>
+	<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137742038" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mn>−2</m:mn><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135403368">We then convert the second equation expressed to slope-intercept form.</para>
+	<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135403371" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>13</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>13</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>13</m:mn>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134117273">Comparing the equations, we see that they have the same slope but different <emphasis effect="italics">y</emphasis>-intercepts. Therefore, the lines are parallel and do not intersect.</para><equation id="fs-id1165131892402" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+         <m:mn>9</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>13</m:mn>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1165134116945">
+<title>Analysis </title>
+<para id="fs-id1165134176014">Writing the equations in slope-intercept form confirms that the system is inconsistent because all lines will intersect eventually unless they are parallel. Parallel lines will never intersect; thus, the two lines have no points in common. The graphs of the equations in this example are shown in <link target-id="Figure_09_01_007"/>.</para><figure id="Figure_09_01_007" class="small">
+<media id="fs-id1165134176028" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_007.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise>
+</example>
+<note id="fs-id1165134258368" class="precalculus try">
+<label>Try It</label>
+<exercise id="fs-id1165135613523"><problem id="fs-id1165135613524"><para id="fs-id1165135613525">Solve the following system of equations in two variables.</para>
+	<equation id="fs-id1165135613529" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mn>2</m:mn><m:mi>y</m:mi><m:mn>−2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>2</m:mn><m:mi>y</m:mi><m:mn>−2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135189710"><para id="fs-id1165135189711">No solution. It is an inconsistent system.</para></solution></exercise>
+</note>
+</section>
+
+<section id="fs-id1165135189716">
+<title>Expressing the Solution of a System of Dependent Equations Containing Two Variables </title>
+<para id="fs-id1165133200582">Recall that a <term class="no-emphasis">dependent system</term> of equations in two variables is a system in which the two equations represent the same line. Dependent systems have an infinite number of solutions because all of the points on one line are also on the other line. After using substitution or addition, the resulting equation will be an identity, such as <m:math>
+ <m:mrow>
+ <m:mn>0</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+
+<example id="Example_09_01_09"><exercise id="fs-id1165133299011">
+<problem id="fs-id1165133299013">
+<title>Finding a Solution to a Dependent System of Linear Equations </title>
+<para id="fs-id1165134199526">Find a solution to the system of equations using the <term class="no-emphasis">addition method</term>.</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134199529" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165134339902">
+<para id="fs-id1165135612011">With the addition method, we want to eliminate one of the variables by adding the equations. In this case, let’s focus on eliminating <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> If we multiply both sides of the first equation by <m:math>
+ <m:mrow>
+ <m:mn>−3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> then we will be able to eliminate the <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> -variable.</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134042379" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>  </m:mo><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>−3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="eip-id1817181">Now add the equations.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165132035919" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder accentunder="true">
+       <m:mrow>
+        <m:mtable columnalign="left">
+         <m:mtr columnalign="left">
+          <m:mtd columnalign="left">
+           <m:mrow>
+            <m:mspace width="0.8em"/><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9</m:mn><m:mi>y</m:mi>
+           </m:mrow>
+          </m:mtd>
+          <m:mtd columnalign="left">
+           <m:mrow>
+            <m:mo>=</m:mo><m:mn>−6</m:mn>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr columnalign="left">
+          <m:mtd columnalign="left">
+           <m:mrow>
+            <m:mo>+</m:mo><m:mspace width="0.8em"/><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi>
+           </m:mrow>
+          </m:mtd>
+          <m:mtd columnalign="left">
+           <m:mrow>
+            <m:mo>=</m:mo><m:mn>6</m:mn>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+       <m:mo stretchy="true">______________</m:mo>
+      </m:munder>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mspace width="0.8em"/><m:mn>0</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mo>=</m:mo><m:mn>0</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133188516">We can see that there will be an infinite number of solutions that satisfy both equations.</para>
+</solution>
+<commentary id="fs-id1165133188520">
+<title>Analysis </title>
+<para id="fs-id1165137756871">If we rewrote both equations in the slope-intercept form, we might know what the solution would look like before adding. Let’s look at what happens when we convert the system to slope-intercept form.</para>
+<equation id="fs-id1165137756878" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext> </m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>       </m:mtext><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>         </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>       </m:mtext><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>         </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>6</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>         </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135207240">See <link target-id="Figure_09_01_008"/>. Notice the results are the same. The general solution to the system is <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>, −</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mn>2</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><figure id="Figure_09_01_008" class="small"><media id="fs-id1165135523321" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_008_revised.jpg"/>
+</media>
+</figure></commentary>
+</exercise>
+</example><note id="fs-id1165135536131" class="precalculus try">
+<label>Try It</label>
+<exercise id="fs-id1165135536137"><problem id="fs-id1165135536138"><para id="fs-id1165135536139">Solve the following system of equations in two variables.</para>
+	<equation id="fs-id1165135536143" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mspace width="0.8em"/><m:mtext>   </m:mtext><m:mtext/><m:mtext/><m:mi>y</m:mi><m:mn>−2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−15</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135176847"><para id="fs-id1165135176848">The system is dependent so there are infinite solutions of the form <m:math>
+ <m:mrow>
+ <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+</note>
+
+</section>
+
+
+<section id="fs-id1165135559421">
+<title> Using Systems of Equations to Investigate Profits</title>
+<para id="fs-id1165135559426">Using what we have learned about systems of equations, we can return to the skateboard manufacturing problem at the beginning of the section. The skateboard manufacturer’s <term>revenue function</term> is the function used to calculate the amount of money that comes into the business. It can be represented by the equation <m:math>
+ <m:mrow>
+ <m:mi>R</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>p</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo>
+ </m:mrow>
+</m:math> quantity and <m:math>
+ <m:mrow>
+ <m:mi>p</m:mi><m:mo>=</m:mo>
+ </m:mrow>
+</m:math> price. The revenue function is shown in orange in <link target-id="Figure_09_01_009"/>.</para><para id="fs-id1165135459707">The <term>cost function</term> is the function used to calculate the costs of doing business. It includes fixed costs, such as rent and salaries, and variable costs, such as utilities. The cost function is shown in blue in <link target-id="Figure_09_01_009"/>. The <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> -axis represents quantity in hundreds of units. The <emphasis effect="italics">y</emphasis>-axis represents either cost or revenue in hundreds of dollars.</para><figure id="Figure_09_01_009" class="small">
+<media id="fs-id1165134381431" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_009.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165135449745">The point at which the two lines intersect is called the <term>break-even point</term>. We can see from the graph that if 700 units are produced, the cost is $3,300 and the revenue is also $3,300. In other words, the company breaks even if they produce and sell 700 units. They neither make money nor lose money.</para>
+<para id="fs-id1165135449753">The shaded region to the right of the break-even point represents quantities for which the company makes a profit. The shaded region to the left represents quantities for which the company suffers a loss. The <term>profit function</term> is the revenue function minus the cost function, written as <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>R</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Clearly, knowing the quantity for which the cost equals the revenue is of great importance to businesses.</para>
+
+<example id="Example_09_01_010">
+<exercise id="fs-id1165134040438"><problem id="fs-id1165134040440">
+<title>Finding the Break-Even Point and the Profit Function Using Substitution</title>
+<para id="fs-id1165134040445">Given the cost function <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.85</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>35,000</m:mn>
+ </m:mrow>
+</m:math> and the revenue function <m:math>
+ <m:mrow>
+ <m:mi>R</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1.55</m:mn><m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> find the break-even point and the profit function.</para></problem>
+<solution id="fs-id1165135417008">
+<para id="fs-id1165135417010">Write the system of equations using <m:math>
+ <m:mrow>
+  <m:mspace width="0.8"/><m:mtext> </m:mtext><m:mi>y</m:mi><m:mtext>  </m:mtext>
+ </m:mrow>
+</m:math> to replace function notation.</para><equation id="fs-id1165134311198" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.85</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>35,000</m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.55</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133324060">Substitute the expression <m:math>
+ <m:mrow>
+ <m:mn>0.85</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>35,000</m:mn><m:mtext>  </m:mtext>
+ </m:mrow>
+</m:math> from the first equation into the second equation and solve for <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134154592" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>0.85</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>35,000</m:mn><m:mo>=</m:mo><m:mn>1.55</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>35,000</m:mn><m:mo>=</m:mo><m:mn>0.7</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>50,000</m:mn><m:mo>=</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134386693">Then, we substitute <m:math>
+ <m:mrow>
+  <m:mtext>  </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>50,000</m:mn><m:mspace width="0.8"/><m:mtext> </m:mtext>
+ </m:mrow>
+</m:math> into either the cost function or the revenue function.</para><equation id="fs-id1165134277192" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mn>1.55</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+<m:mn>50,000</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>77,500</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133366175">The break-even point is <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+<m:mn>50,000</m:mn><m:mo>,</m:mo><m:mn>77,500</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165134199380">The profit function is found using the formula <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>R</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+	<equation id="fs-id1165135450285" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1.55</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.85</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>35</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>       </m:mtext><m:mo>=</m:mo><m:mn>0.7</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>35</m:mn><m:mo>,</m:mo><m:mn>000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135551679">The profit function is <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.7</m:mn><m:mi>x</m:mi><m:mn>−35,000.</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+<commentary id="fs-id1165131987013">
+<title>Analysis </title>
+<para id="fs-id1165137683008">The cost to produce 50,000 units is $77,500, and the revenue from the sales of 50,000 units is also $77,500. To make a profit, the business must produce and sell more than 50,000 units. See <link target-id="Figure_09_01_010"/>.</para>
+
+<figure id="Figure_09_01_010" class="small">
+<media id="fs-id1165137683020" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_010.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165133311941">We see from the graph in <link target-id="Figure_09_01_011"/> that the profit function has a negative value until <m:math>
+ <m:mrow>
+  <m:mtext>  </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>50,000</m:mn><m:mo>,</m:mo>
+ </m:mrow></m:math> when the graph crosses the <emphasis effect="italics">x</emphasis>-axis. Then, the graph emerges into positive <emphasis effect="italics">y</emphasis>-values and continues on this path as the profit function is a straight line. This illustrates that the break-even point for businesses occurs when the profit function is 0. The area to the left of the break-even point represents operating at a loss.</para><figure id="Figure_09_01_011">
+<media id="fs-id1165137480080" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_01_011.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+
+<example id="Example_09_01_011">
+<exercise id="fs-id1165135202419">
+<problem id="fs-id1165135202422">
+<title>Writing and Solving a System of Equations in Two Variables</title>
+<para id="fs-id1165135202427">The cost of a ticket to the circus is <m:math>
+ <m:mrow>
+ <m:mtext>$</m:mtext><m:mn>25.00</m:mn>
+ </m:mrow>
+</m:math> for children and <m:math>
+ <m:mrow>
+ <m:mtext>$</m:mtext><m:mn>50.00</m:mn>
+ </m:mrow>
+</m:math> for adults. On a certain day, attendance at the circus is <m:math>
+ <m:mrow>
+ <m:mn>2,000</m:mn>
+ </m:mrow>
+</m:math> and the total gate revenue is <m:math>
+ <m:mrow>
+ <m:mtext>$</m:mtext><m:mn>70,000.</m:mn>
+ </m:mrow>
+</m:math> How many children and how many adults bought tickets?</para></problem>
+<solution id="fs-id1165135173070">
+<para id="fs-id1165135173072">Let <emphasis effect="italics">c</emphasis> = the number of children and <emphasis effect="italics">a</emphasis> = the number of adults in attendance.</para><para id="fs-id1165134480848">The total number of people is <m:math>
+ <m:mrow>
+ <m:mn>2,000.</m:mn>
+ </m:mrow>
+</m:math> We can use this to write an equation for the number of people at the circus that day.</para><equation id="fs-id1165133294309" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2,000</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133194620">The revenue from all children can be found by multiplying <m:math>
+ <m:mrow>
+ <m:mtext>$</m:mtext><m:mn>25.00</m:mn>
+ </m:mrow>
+</m:math> by the number of children, <m:math>
+ <m:mrow>
+ <m:mn>25</m:mn><m:mi>c</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> The revenue from all adults can be found by multiplying <m:math>
+ <m:mrow>
+ <m:mtext>$</m:mtext><m:mn>50.00</m:mn>
+ </m:mrow>
+</m:math> by the number of adults, <m:math>
+ <m:mrow>
+ <m:mn>50</m:mn><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> The total revenue is <m:math>
+ <m:mrow>
+<m:mtext>$</m:mtext><m:mn>70,000.</m:mn>
+ </m:mrow>
+</m:math> We can use this to write an equation for the revenue.</para><equation id="fs-id1165135253116" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mn>25</m:mn><m:mi>c</m:mi><m:mo>+</m:mo><m:mn>50</m:mn><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>70,000</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135650583">We now have a system of linear equations in two variables.</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135650586" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow><m:mspace width="0.8em"/><m:mi>c</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2,000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>25</m:mn><m:mi>c</m:mi><m:mo>+</m:mo><m:mn>50</m:mn><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>70,000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135475866">In the first equation, the coefficient of both variables is 1. We can quickly solve the first equation for either <m:math>
+ <m:mrow>
+ <m:mi>c</m:mi>
+ </m:mrow>
+</m:math> or <m:math>
+ <m:mrow><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> We will solve for <m:math>
+ <m:mrow>
+ <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165133348846" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2,000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2,000</m:mn><m:mo>−</m:mo><m:mi>c</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133074804">Substitute the expression <m:math>
+ <m:mrow>
+ <m:mn>2,000</m:mn><m:mo>−</m:mo><m:mi>c</m:mi>
+ </m:mrow>
+</m:math> in the second equation for <m:math>
+ <m:mrow>
+ <m:mi>a</m:mi>
+ </m:mrow>
+</m:math> and solve for <m:math>
+ <m:mrow>
+ <m:mi>c</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165133364760" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>25</m:mn><m:mi>c</m:mi><m:mo>+</m:mo><m:mn>50</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2,000</m:mn><m:mo>−</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>70,000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>25</m:mn><m:mi>c</m:mi><m:mo>+</m:mo><m:mn>100,000</m:mn><m:mo>−</m:mo><m:mn>50</m:mn><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>70,000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>−</m:mo><m:mn>25</m:mn><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>−30,000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>1,200</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135309876">Substitute <m:math>
+ <m:mrow>
+ <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>1,200</m:mn>
+ </m:mrow>
+</m:math> into the first equation to solve for <m:math>
+ <m:mrow>
+ <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135372924" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>1,200</m:mn><m:mo>+</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2,000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>800</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135640567">We find that <m:math>
+ <m:mrow>
+ <m:mn>1,200</m:mn>
+ </m:mrow>
+</m:math> children and <m:math>
+ <m:mrow>
+ <m:mn>800</m:mn>
+ </m:mrow>
+</m:math> adults bought tickets to the circus that day.</para></solution>
+</exercise>
+</example>
+<note id="fs-id1165135257013" class="precalculus try">
+<label>Try It</label>
+<exercise id="fs-id1165135257020"><problem id="fs-id1165135257021"><para id="fs-id1165137895098">Meal tickets at the circus cost <m:math>
+ <m:mrow>
+ <m:mtext>$</m:mtext><m:mn>4.00</m:mn>
+ </m:mrow>
+</m:math> for children and <m:math>
+ <m:mrow>
+ <m:mtext>$</m:mtext><m:mn>12.00</m:mn>
+ </m:mrow>
+</m:math> for adults. If <m:math>
+ <m:mrow>
+ <m:mn>1,650</m:mn>
+ </m:mrow>
+</m:math> meal tickets were bought for a total of <m:math>
+ <m:mrow>
+ <m:mtext>$</m:mtext><m:mn>14,200</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> how many children and how many adults bought meal tickets?</para></problem>
+<solution id="fs-id1165134483375"><para id="fs-id1165134483376">700 children, 950 adults</para></solution></exercise>
+</note>
+
+<note id="fs-id1165134483380" class="media-notitle">
+<label>Media</label>
+<para id="fs-id1165135649499">Access these online resources for additional instruction and practice with systems of linear equations.</para>
+
+<list id="fs-id1165135649502" list-type="bulleted">
+<item><link url="http://openstax.org/l/syssubst">Solving Systems of Equations Using Substitution</link></item>
+<item><link url="http://openstax.org/l/syselim">Solving Systems of Equations Using Elimination</link></item>
+<item><link url="http://openstax.org/l/sysapp">Applications of Systems of Equations</link></item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165133308519" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1165133308526" list-type="bulleted"><item>A system of linear equations consists of two or more equations made up of two or more variables such that all equations in the system are considered simultaneously.</item>
+<item>The solution to a system of linear equations in two variables is any ordered pair that satisfies each equation independently. See <link target-id="Example_09_01_01"/>.</item>
+<item>Systems of equations are classified as independent with one solution, dependent with an infinite number of solutions, or inconsistent with no solution.</item>
+<item>One method of solving a system of linear equations in two variables is by graphing. In this method, we graph the equations on the same set of axes. See <link target-id="Example_09_01_02"/>.</item>
+<item>Another method of solving a system of linear equations is by substitution. In this method, we solve for one variable in one equation and substitute the result into the second equation. See <link target-id="Example_09_01_03"/>.</item>
+<item>A third method of solving a system of linear equations is by addition, in which we can eliminate a variable by adding opposite coefficients of corresponding variables. See <link target-id="Example_09_01_04"/>.</item>
+<item>It is often necessary to multiply one or both equations by a constant to facilitate elimination of a variable when adding the two equations together. See <link target-id="Example_09_01_05"/>, <link target-id="Example_09_01_06"/>, and <link target-id="Example_09_01_07"/>.</item>
+<item>Either method of solving a system of equations results in a false statement for inconsistent systems because they are made up of parallel lines that never intersect. See <link target-id="Example_09_01_08"/>.</item>
+<item>The solution to a system of dependent equations will always be true because both equations describe the same line. See <link target-id="Example_09_01_09"/>.</item>
+<item>Systems of equations can be used to solve real-world problems that involve more than one variable, such as those relating to revenue, cost, and profit. See <link target-id="Example_09_01_010"/> and <link target-id="Example_09_01_011"/>.</item>
+</list></section>
+
+
+
+<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135186955" class="section-exercises"><title>Section Exercises</title><section id="fs-id1165135186958">
+<title>Verbal</title>
+<exercise id="fs-id1165133393400"><problem id="fs-id1165133393402"><para id="fs-id1165133393403">Can a system of linear equations have exactly two solutions? Explain why or why not.</para></problem>
+<solution id="fs-id1165133393406"><para id="fs-id1165133393407">No, you can either have zero, one, or infinitely many. Examine graphs.</para></solution></exercise>
+<exercise id="fs-id1165133393410"><problem id="fs-id1165133393411"><para id="fs-id1165133393412">If you are performing a break-even analysis for a business and their cost and revenue equations are dependent, explain what this means for the company’s profit margins.</para></problem></exercise>
+<exercise id="fs-id1165133393418"><problem id="fs-id1165133393419"><para id="fs-id1165133393420">If you are solving a break-even analysis and get a negative break-even point, explain what this signifies for the company?</para></problem>
+<solution id="fs-id1165133305360"><para id="fs-id1165133305361">This means there is no realistic break-even point. By the time the company produces one unit they are already making profit.</para></solution></exercise>
+<exercise id="fs-id1165133305366"><problem id="fs-id1165133305367"><para id="fs-id1165133305368">If you are solving a break-even analysis and there is no break-even point, explain what this means for the company. How should they ensure there is a break-even point?</para></problem></exercise>
+<exercise id="fs-id1165133305372"><problem id="fs-id1165133305374"><para id="fs-id1165133305375">Given a system of equations, explain at least two different methods of solving that system.</para></problem>
+<solution id="fs-id1165133305378"><para id="fs-id1165132005139">You can solve by substitution (isolating <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> or <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> ), graphically, or by addition.</para></solution></exercise>
+
+</section>
+
+<section id="fs-id1165133232429">
+<title>Algebraic</title>
+<para id="fs-id1165133232434">For the following exercises, determine whether the given ordered pair is a solution to the system of equations.</para>
+<exercise id="fs-id1165133232439"><problem id="fs-id1165133232440"><para id="fs-id1165133232441"> <m:math>
+ <m:mtable>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.8em"/>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> and <m:math>
+ <m:mrow>
+ <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165132934456"><problem id="fs-id1165132934457"><para id="fs-id1165132934458"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>13</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo> </m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>10</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>−6</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135199325"><para id="fs-id1165133294266">Yes</para></solution></exercise>
+<exercise id="fs-id1165133294269"><problem id="fs-id1165133294270"><para id="fs-id1165133294271"> <m:math>
+ <m:mtable>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mspace width="0.8em"/>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> and <m:math>
+ <m:mrow>
+ <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165135255522"><problem id="fs-id1165135255523"><para id="fs-id1165135255524"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext> </m:mtext><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134350004"><para id="fs-id1165134350005">Yes</para></solution></exercise>
+<exercise id="fs-id1165134350008"><problem id="fs-id1165134350009"><para id="fs-id1165134350010"> <m:math>
+ <m:mtable>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>43</m:mn><m:mspace width="0.8em"/>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mn>−2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> and <m:math>
+ <m:mrow>
+ <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+<para id="fs-id1165134556458">For the following exercises, solve each system by substitution.</para>
+<exercise id="fs-id1165134556461"><problem id="fs-id1165134556462"><para id="fs-id1165134556463"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext> </m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135539001"><para id="fs-id1165135539002"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165137666024"><problem id="fs-id1165137666025"><para id="fs-id1165137666026"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext/><m:mn>3</m:mn><m:mi>x</m:mi><m:mn>−2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>18</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−10</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165134254239"><problem id="fs-id1165134254240"><para id="fs-id1165134254241"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−10</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem>
+<solution id="fs-id1165134323576"><para id="fs-id1165134323577"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165133265018"><problem id="fs-id1165133265020"><para id="fs-id1165133265021"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−3.8</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>9</m:mn><m:mi>x</m:mi><m:mn>−5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.3</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165134171257"><problem id="fs-id1165134171258"><para id="fs-id1165134171259"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mtable columnalign="left">
+         <m:mtr columnalign="left">
+          <m:mtd columnalign="left">
+           <m:mrow>
+            <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.2</m:mn>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr columnalign="left">
+          <m:mtd columnalign="left">
+           <m:mrow>
+            <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.8</m:mn>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137938420"><para id="fs-id1165137938421"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165137696015"><problem id="fs-id1165137696016"><para id="fs-id1165134564083"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>  </m:mtext><m:mi>x</m:mi><m:mn>−0.2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−10</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165133447806"><problem id="fs-id1165133447807"><para id="fs-id1165133447808"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>   </m:mtext><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>30</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>50</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−90</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165133370749"><para id="fs-id1165133370750">No solutions exist.</para></solution></exercise>
+<exercise id="fs-id1165133370753"><problem id="fs-id1165133370754"><para id="fs-id1165133370755"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mspace width="0.8em"/><m:mtext/><m:mn>−3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mn>12</m:mn><m:mi>x</m:mi><m:mn>−4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165134162139"><problem id="fs-id1165134162140"><para id="fs-id1165134162141"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>16</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>9</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem>
+<solution id="fs-id1165134087628"><para id="fs-id1165134087629"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>72</m:mn>
+     </m:mrow>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>132</m:mn>
+     </m:mrow>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165134319658"><problem id="fs-id1165134319659"><para id="fs-id1165134319660"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mrow/>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mo>−</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+         <m:mn>3</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>11</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mo>−</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>8</m:mn>
+        </m:mfrac>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem></exercise>
+
+<para id="fs-id1165134568907">For the following exercises, solve each system by addition.</para>
+<exercise id="fs-id1165134568910"><problem id="fs-id1165134568911"><para id="fs-id1165134568912"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mn>−2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−42</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mspace width="0.8em"/><m:mtext> </m:mtext><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>30</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165133237152"><para id="fs-id1165133237153"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mo>,</m:mo><m:mn>−6</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165135407254"><problem id="fs-id1165135407255"><para id="fs-id1165135407256"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mn>6</m:mn><m:mi>x</m:mi><m:mn>−5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−34</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165134554922"><problem id="fs-id1165134554923"><para id="fs-id1165134554924"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>   </m:mtext><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−2.6</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−4</m:mn><m:mi>x</m:mi><m:mn>−6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137835514"><para id="fs-id1165137835515"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165134357764"><problem id="fs-id1165134357765"><para id="fs-id1165134357766"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mn>7</m:mn><m:mi>x</m:mi><m:mn>−2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3.25</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165132919470"><problem id="fs-id1165132919471"><para id="fs-id1165132919472"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mspace width="0.8em"/><m:mtext/><m:mi>−x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mn>5</m:mn><m:mi>x</m:mi><m:mn>−10</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134179654"><para id="fs-id1165133109444">No solutions exist.</para></solution></exercise>
+<exercise id="fs-id1165133109448"><problem id="fs-id1165133109449"><para id="fs-id1165133109450"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>     </m:mtext><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−28</m:mn><m:mi>x</m:mi><m:mn>−24</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165132924229"><problem id="fs-id1165132924230"><para id="fs-id1165132924231"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mn>5</m:mn>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>43</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>120</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem>
+<solution id="fs-id1165134116811"><para id="fs-id1165134116812"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mn>2</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165132931032"><problem id="fs-id1165132931033"><para id="fs-id1165132931034"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext> </m:mtext><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165135183918"><problem id="fs-id1165135183919"><para id="fs-id1165135183920"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mn>−0.2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.6</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mspace width="0.8em"/><m:mtext>          </m:mtext><m:mi>x</m:mi><m:mn>−2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165132041743"><para id="fs-id1165132041744"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165131991291"><problem id="fs-id1165131991292"><para id="fs-id1165131991293"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mn>−0.1</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.6</m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>5</m:mn><m:mi>x</m:mi><m:mn>−10</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></problem></exercise>
+
+<para id="fs-id1165134278608">For the following exercises, solve each system by any method.</para>
+<exercise id="fs-id1165134278611"><problem id="fs-id1165134278612"><para id="fs-id1165134278613"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>16</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext> </m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135397097"><para id="fs-id1165135397098"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>−4</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165133172708"><problem id="fs-id1165133172709"><para id="fs-id1165133172710"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mn>6</m:mn><m:mi>x</m:mi><m:mn>−8</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−0.6</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.9</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165134430261"><problem id="fs-id1165134430262"><para id="fs-id1165134430263"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mn>5</m:mn><m:mi>x</m:mi><m:mn>−2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2.25</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>7</m:mn><m:mi>x</m:mi><m:mn>−4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem>
+<solution id="fs-id1165135586948"><para id="fs-id1165135586949"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165135705758"><problem id="fs-id1165135705759"><para id="fs-id1165135705760"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mspace width="0.8em"/><m:mtext> </m:mtext><m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+           <m:mn>5</m:mn>
+           <m:mrow>
+            <m:mn>12</m:mn>
+           </m:mrow>
+          </m:mfrac>
+          <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mn>55</m:mn>
+           </m:mrow>
+           <m:mrow>
+            <m:mn>12</m:mn>
+           </m:mrow>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>55</m:mn>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165134329672"><problem id="fs-id1165134329673"><para id="fs-id1165134329674"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mrow/>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mn>7</m:mn><m:mi>x</m:mi><m:mn>−4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mn>7</m:mn>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem>
+<solution id="fs-id1165135555431"><para id="fs-id1165135555432"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165134272660"><problem id="fs-id1165134272661"><para id="fs-id1165134272662"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>11</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>9</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165132939103"><problem id="fs-id1165132939104"><para id="fs-id1165132939106"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>     </m:mtext><m:mfrac>
+       <m:mn>7</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>21</m:mn>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134167283"><para id="fs-id1165134167284"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mn>−6</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165131893549"><problem id="fs-id1165131893550"><para id="fs-id1165131893551"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165135299787"><problem id="fs-id1165135299788"><para id="fs-id1165135299789"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mn>2.2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1.3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−0.1</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>4.2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4.2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2.1</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem>
+<solution id="fs-id1165134118216"><para id="fs-id1165134118217"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mfrac>
+     <m:mn>5</m:mn>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mn>4</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165135702539"><problem id="fs-id1165135702540"><para id="fs-id1165135702541"><m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>0.1</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>0.35</m:mn><m:mi>x</m:mi><m:mn>−0.3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+</section>
+
+
+<section id="fs-id1165135518201">
+<title>Graphical</title>
+<para id="fs-id1165135518207">For the following exercises, graph the system of equations and state whether the system is consistent, inconsistent, or dependent and whether the system has one solution, no solution, or infinite solutions.</para>
+<exercise id="fs-id1165135518212"><problem id="fs-id1165135518213"><para id="fs-id1165135518214"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.6</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mn>−2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.3</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem>
+<solution id="fs-id1165134279202"><para id="fs-id1165134279203">Consistent with one solution</para></solution></exercise>
+<exercise id="fs-id1165134279206"><problem id="fs-id1165134279207"><para id="fs-id1165134279208"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext/><m:mn>2</m:mn><m:mi>x</m:mi><m:mn>−4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165132957245"><problem id="fs-id1165132957246"><para id="fs-id1165132957247"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext> </m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134475652"><para id="fs-id1165134475653">Consistent with one solution</para></solution></exercise>
+<exercise id="fs-id1165133074995"><problem id="fs-id1165133074996"><para id="fs-id1165133074997"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mn>−5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext> </m:mtext><m:mi>x</m:mi><m:mn>−2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165133243607"><problem id="fs-id1165133243608"><para id="fs-id1165133243609"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext> </m:mtext><m:mn>3</m:mn><m:mi>x</m:mi><m:mn>−2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−9</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−15</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165133290327"><para id="fs-id1165133290328">Dependent with infinitely many solutions</para></solution></exercise>
+
+</section>
+
+<section id="fs-id1165133290332">
+<title>Technology</title>
+<para id="fs-id1165135388295">For the following exercises, use the intersect function on a graphing device to solve each system. Round all answers to the nearest hundredth.</para>
+
+<exercise id="fs-id1165135388300"><problem id="fs-id1165135388301"><para id="fs-id1165135388302"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>  </m:mtext><m:mn>0.1</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−0.3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137836999"><problem id="fs-id1165137837000"><para id="fs-id1165137837001"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mn>−0.01</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.12</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.62</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mspace width="0.8em"/><m:mn>0.15</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.20</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.52</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134186354"><para id="fs-id1165134186355"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>−3.08</m:mn><m:mo>,</m:mo><m:mn>4.91</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165134035993"><problem id="fs-id1165134035994"><para id="fs-id1165134035995"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>0.5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>0.25</m:mn><m:mi>x</m:mi><m:mn>−0.9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.46</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165134361357"><problem id="fs-id1165134361358"><para id="fs-id1165134361359"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>0.15</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.27</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.39</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−0.34</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.56</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165131880336"><para id="fs-id1165131880337"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>−1.52</m:mn><m:mo>,</m:mo><m:mn>2.29</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165134485557"><problem id="fs-id1165134485558"><para id="fs-id1165134485560"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mn>−0.71</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.92</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.13</m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mn>0.83</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.05</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2.1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+</section>
+
+
+
+
+
+<section id="fs-id1165134113096">
+<title>Extensions</title>
+<para id="fs-id1165134113102">For the following exercises, solve each system in terms of <m:math>
+ <m:mrow>
+ <m:mi>A</m:mi><m:mo>,</m:mo><m:mi>B</m:mi><m:mo>,</m:mo><m:mi>C</m:mi><m:mo>,</m:mo><m:mi>D</m:mi><m:mo>,</m:mo><m:mi>E</m:mi><m:mo>,</m:mo><m:mspace width="0.8"/><m:mtext/>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+ <m:mi>F</m:mi>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+ <m:mi>A</m:mi><m:mo>–</m:mo><m:mi>F</m:mi>
+ </m:mrow>
+</m:math> are nonzero numbers. Note that <m:math>
+ <m:mrow>
+ <m:mi>A</m:mi><m:mo>≠</m:mo><m:mi>B</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+ <m:mi>A</m:mi><m:mi>E</m:mi><m:mo>≠</m:mo><m:mi>B</m:mi><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><exercise id="fs-id1165132923031"><problem id="fs-id1165132923032"><para id="fs-id1165132923033"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>B</m:mi>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem>
+<solution id="fs-id1165137832653"><para id="fs-id1165137832654"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo>+</m:mo><m:mi>B</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo>−</m:mo><m:mi>B</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165135621951"><problem id="fs-id1165134385523"><para id="fs-id1165134385524"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>A</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>B</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165132972781"><problem id="fs-id1165132972782"><para id="fs-id1165132972783"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>A</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem>
+<solution id="fs-id1165134494238"><para id="fs-id1165134494239"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>−1</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo>−</m:mo><m:mi>B</m:mi>
+     </m:mrow>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mi>A</m:mi>
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo>−</m:mo><m:mi>B</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165137848824"><problem id="fs-id1165137848825"><para id="fs-id1165137848826"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>A</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>B</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>C</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165133210727"><problem id="fs-id1165133210728"><para id="fs-id1165133210729"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>A</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>B</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>C</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>D</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>E</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>F</m:mi>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem>
+<solution id="fs-id1165133252901"><para id="fs-id1165133252902"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>C</m:mi><m:mi>E</m:mi><m:mo>−</m:mo><m:mi>B</m:mi><m:mi>F</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>B</m:mi><m:mi>D</m:mi><m:mo>−</m:mo><m:mi>A</m:mi><m:mi>E</m:mi>
+     </m:mrow>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mi>A</m:mi><m:mi>F</m:mi><m:mo>−</m:mo><m:mi>C</m:mi><m:mi>D</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>B</m:mi><m:mi>D</m:mi><m:mo>−</m:mo><m:mi>A</m:mi><m:mi>E</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+
+</section>
+
+
+<section id="fs-id1165135702580">
+<title>Real-World Applications</title>
+<para id="fs-id1165135702585">For the following exercises, solve for the desired quantity.</para>
+
+<exercise id="fs-id1165135702588"><problem id="fs-id1165135702589"><para id="fs-id1165135702590">A stuffed animal business has a total cost of production <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>30</m:mn>
+ </m:mrow>
+</m:math> and a revenue function <m:math>
+ <m:mrow>
+ <m:mi>R</m:mi><m:mo>=</m:mo><m:mn>20</m:mn><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Find the break-even point.</para></problem></exercise>
+<exercise id="fs-id1165135486976"><problem id="fs-id1165135486977"><para id="fs-id1165135486978">A fast-food restaurant has a cost of production <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>120</m:mn>
+ </m:mrow>
+</m:math> and a revenue function <m:math>
+ <m:mrow>
+ <m:mi>R</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When does the company start to turn a profit?</para></problem>
+<solution id="fs-id1165133315058"><para id="fs-id1165133315059">They never turn a profit.</para></solution></exercise>
+<exercise id="fs-id1165133315062"><problem id="fs-id1165133315063"><para id="fs-id1165133315064">A cell phone factory has a cost of production <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>150</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>000</m:mn>
+ </m:mrow>
+</m:math> and a revenue function <m:math>
+ <m:mrow>
+ <m:mi>R</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>200</m:mn><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> What is the break-even point?</para></problem></exercise>
+<exercise id="fs-id1165133249125"><problem id="fs-id1165133249126"><para id="fs-id1165133249127">A musician charges <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>64</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>20,000</m:mn>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> is the total number of attendees at the concert. The venue charges $80 per ticket. After how many people buy tickets does the venue break even, and what is the value of the total tickets sold at that point?</para></problem>
+<solution id="fs-id1165135633718"><para id="fs-id1165135633720"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>250</m:mn><m:mo>,</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165134231536"><problem id="fs-id1165134231537"><para id="fs-id1165134231538">A guitar factory has a cost of production <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>75</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>50,000.</m:mn><m:mtext>  </m:mtext>
+ </m:mrow>
+</m:math> If the company needs to break even after 150 units sold, at what price should they sell each guitar? Round up to the nearest dollar, and write the revenue function.</para></problem></exercise>
+
+<para id="fs-id1165131863006">For the following exercises, use a system of linear equations with two variables and two equations to solve.</para>
+<exercise id="fs-id1165131863011"><problem id="fs-id1165131863012"><para id="fs-id1165131863013">Find two numbers whose sum is 28 and difference is 13.</para></problem>
+<solution id="fs-id1165131863016"><para id="fs-id1165131863017">The numbers are 7.5 and 20.5.</para></solution></exercise>
+<exercise id="fs-id1165131863020"><problem id="fs-id1165131863021"><para id="fs-id1165131863022">A number is 9 more than another number. Twice the sum of the two numbers is 10. Find the two numbers.</para></problem></exercise>
+<exercise id="fs-id1165131863026"><problem id="fs-id1165131863027"><para id="fs-id1165131863028">The startup cost for a restaurant is $120,000, and each meal costs $10 for the restaurant to make. If each meal is then sold for $15, after how many meals does the restaurant break even?</para></problem>
+<solution id="fs-id1165134199409"><para id="fs-id1165134199410">24,000</para></solution></exercise>
+<exercise id="fs-id1165134199413"><problem id="fs-id1165134199414"><para id="fs-id1165134199415">A moving company charges a flat rate of $150, and an additional $5 for each box. If a taxi service would charge $20 for each box, how many boxes would you need for it to be cheaper to use the moving company, and what would be the total cost?</para></problem></exercise>
+<exercise id="fs-id1165134199420"><problem id="fs-id1165134199422"><para id="fs-id1165134199423">A total of 1,595 first- and second-year college students gathered at a pep rally. The number of freshmen exceeded the number of sophomores by 15. How many freshmen and sophomores were in attendance?</para></problem>
+<solution id="fs-id1165134199428"><para id="fs-id1165134199429">790 sophomores, 805 freshman</para></solution></exercise>
+<exercise id="fs-id1165134199432"><problem id="fs-id1165134199433"><para id="fs-id1165134199434">276 students enrolled in a freshman-level chemistry class. By the end of the semester, 5 times the number of students passed as failed. Find the number of students who passed, and the number of students who failed.</para></problem></exercise>
+<exercise id="fs-id1165134199439"><problem id="fs-id1165134199440"><para id="fs-id1165134254369">There were 130 faculty at a conference. If there were 18 more women than men attending, how many of each gender attended the conference?</para></problem>
+<solution id="fs-id1165134254374"><para id="fs-id1165134254375">56 men, 74 women</para></solution></exercise>
+<exercise id="fs-id1165134254378"><problem id="fs-id1165134254379"><para id="fs-id1165134254380">A jeep and BMW enter a highway running east-west at the same exit heading in opposite directions. The jeep entered the highway 30 minutes before the BMW did, and traveled 7 mph slower than the BMW. After 2 hours from the time the BMW entered the highway, the cars were 306.5 miles apart. Find the speed of each car, assuming they were driven on cruise control.</para></problem></exercise>
+<exercise id="fs-id1165134254387"><problem id="fs-id1165134254388"><para id="fs-id1165134254389">If a scientist mixed 10% saline solution with 60% saline solution to get 25 gallons of 40% saline solution, how many
+gallons of 10% and 60% solutions were mixed?</para></problem>
+<solution id="fs-id1165134254393"><para id="fs-id1165134254394">10 gallons of 10% solution, 15 gallons of 60% solution</para></solution></exercise>
+<exercise id="fs-id1165134254398"><problem id="fs-id1165134254399"><para id="fs-id1165134254400">An investor earned triple the profits of what she earned last year. If she made $500,000.48 total for both years, how much did she earn in profits each year?</para></problem></exercise>
+<exercise id="fs-id1165133227637"><problem id="fs-id1165133227638"><para id="fs-id1165133227640">An investor who dabbles in real estate invested 1.1 million dollars into two land investments. On the first investment, Swan Peak, her return was a 110% increase on the money she invested. On the second investment, Riverside Community, she earned 50% over what she invested. If she earned $1 million in profits, how much did she invest in each of the land deals?</para></problem>
+<solution id="fs-id1165133227646"><para id="fs-id1165133227647">Swan Peak: $750,000, Riverside: $350,000</para></solution></exercise>
+<exercise id="fs-id1165133227650"><problem id="fs-id1165133227651"><para id="fs-id1165133227652">If an investor invests a total of $25,000 into two bonds, one that pays 3% simple interest, and the other that pays <m:math>
+ <m:mrow>
+ <m:mn>2</m:mn><m:mfrac>
+   <m:mn>7</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mtext>%</m:mtext>
+ </m:mrow>
+</m:math> interest, and the investor earns $737.50 annual interest, how much was invested in each account?</para></problem></exercise>
+<exercise id="fs-id1165134061792"><problem id="fs-id1165134061793"><para id="fs-id1165134061794">If an investor invests $23,000 into two bonds, one that pays 4% in simple interest, and the other paying 2% simple interest, and the investor earns $710.00 annual interest, how much was invested in each account?</para></problem>
+<solution id="fs-id1165134061799"><para id="fs-id1165134061800">$12,500 in the first account, $10,500 in the second account.</para></solution></exercise>
+<exercise id="fs-id1165134061803"><problem id="fs-id1165134061804"><para id="fs-id1165134061805">CDs cost $5.96 more than DVDs at All Bets Are Off Electronics. How much would 6 CDs and 2 DVDs cost if 5 CDs and 2 DVDs cost $127.73?</para></problem></exercise>
+<exercise id="fs-id1165134061810"><problem id="fs-id1165134061811"><para id="fs-id1165134061812">A store clerk sold 60 pairs of sneakers. The high-tops sold for $98.99 and the low-tops sold for $129.99. If the receipts for the two types of sales totaled $6,404.40, how many of each type of sneaker were sold?</para></problem>
+<solution id="fs-id1165134061817"><para id="fs-id1165135363398">High-tops: 45, Low-tops: 15</para></solution></exercise>
+<exercise id="fs-id1165135363402"><problem id="fs-id1165135363403"><para id="fs-id1165135363404">A concert manager counted 350 ticket receipts the day after a concert. The price for a student ticket was $12.50, and the price for an adult ticket was $16.00. The register confirms that $5,075 was taken in. How many student tickets and adult tickets were sold?</para></problem></exercise>
+<exercise id="fs-id1165135363409"><problem id="fs-id1165135363410"><para id="fs-id1165135363411">Admission into an amusement park for 4 children and 2 adults is $116.90. For 6 children and 3 adults, the admission is $175.35. Assuming a different price for children and adults, what is the price of the child’s ticket and the price of the adult ticket?</para></problem>
+<solution id="fs-id1165135363419"><para id="fs-id1165135363420">Infinitely many solutions. We need more information.</para></solution></exercise>
+</section>
+
+
+</section></content>
+
+<glossary>
+<definition id="fs-id1165135363429"><term>addition method</term><meaning id="fs-id1165135363432">an algebraic technique used to solve systems of linear equations in which the equations are added in a way that eliminates one variable, allowing the resulting equation to be solved for the remaining variable; substitution is then used to solve for the first variable</meaning></definition>
+<definition id="fs-id1165137783245"><term>break-even point</term><meaning id="fs-id1165137783248">the point at which a cost function intersects a revenue function; where profit is zero</meaning></definition>
+<definition id="fs-id1165137783251"><term>consistent system</term><meaning id="fs-id1165137783255">a system for which there is a single solution to all equations in the system and it is an independent system, or if there are an infinite number of solutions and it is a dependent system</meaning></definition>
+<definition id="fs-id1165137783260"><term>cost function</term><meaning id="fs-id1165137783263">the function used to calculate the costs of doing business; it usually has two parts, fixed costs and variable costs</meaning></definition>
+<definition id="fs-id1165137783267"><term>dependent system</term><meaning id="fs-id1165137783270">a system of linear equations in which the two equations represent the same line; there are an infinite number of solutions to a dependent system</meaning></definition>
+<definition id="fs-id1165137783275"><term>inconsistent system</term><meaning id="fs-id1165135629528">a system of linear equations with no common solution because they represent parallel lines, which have no point or line in common</meaning></definition>
+<definition id="fs-id1165135629532"><term>independent system</term><meaning id="fs-id1165135629535">a system of linear equations with exactly one solution pair <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</meaning></definition>
+<definition id="fs-id1165134257493"><term>profit function</term><meaning id="fs-id1165134257496">the profit function is written as <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>R</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> revenue minus cost</meaning></definition>
+<definition id="fs-id1165135192950"><term>revenue function</term> <meaning id="fs-id1165137414497">the function that is used to calculate revenue, simply written as <m:math>
+ <m:mrow>
+ <m:mi>R</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>p</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo>
+ </m:mrow>
+</m:math> quantity and <m:math>
+ <m:mrow>
+ <m:mi>p</m:mi><m:mo>=</m:mo>
+ </m:mrow>
+</m:math> price</meaning></definition>
+<definition id="fs-id1165135203239"><term>substitution method</term><meaning id="fs-id1165135203242">an algebraic technique used to solve systems of linear equations in which one of the two equations is solved for one variable and then substituted into the second equation to solve for the second variable</meaning></definition>
+<definition id="fs-id1165135203247"><term>system of linear equations</term><meaning id="fs-id1165135203250">a set of two or more equations in two or more variables that must  be considered simultaneously.</meaning></definition>
+</glossary>
+</document>

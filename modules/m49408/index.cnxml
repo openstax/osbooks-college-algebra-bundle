@@ -1,0 +1,4685 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Polar Form of Complex Numbers</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m49408</md:content-id>
+  <md:title>Polar Form of Complex Numbers</md:title>
+  <md:abstract><para>In this section, you will:</para>
+<list>
+<item>Plot complex numbers in the complex plane.</item>
+<item>Find the absolute value of a complex number.</item>
+<item>Write complex numbers in polar form.</item>
+<item>Convert a complex number from polar to rectangular form.</item>
+<item>Find products of complex numbers in polar form.</item>
+<item>Find quotients of complex numbers in polar form.</item>
+<item>Find powers of complex numbers in polar form.</item>
+<item>Find roots of complex numbers in polar form.</item>
+</list></md:abstract>
+  <md:uuid>5217ca36-7905-420a-b241-8d24df993e56</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1165137543411">“God made the integers; all else is the work of man.” This rather famous quote by nineteenth-century German mathematician Leopold <term class="no-emphasis">Kronecker</term> sets the stage for this section on the polar form of a complex number. Complex numbers were invented by people and represent over a thousand years of continuous investigation and struggle by mathematicians such as <term class="no-emphasis">Pythagoras</term>, <term class="no-emphasis">Descartes</term>, De Moivre, <term class="no-emphasis">Euler</term>, <term class="no-emphasis">Gauss</term>, and others. Complex numbers answered questions that for centuries had puzzled the greatest minds in science.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134035955">We first encountered complex numbers in <link document="m51255">Complex Numbers</link>. In this section, we will focus on the mechanics of working with complex numbers: translation of complex numbers from polar form to rectangular form and vice versa, interpretation of complex numbers in the scheme of applications, and application of De Moivre’s Theorem.</para><section id="fs-id1165133355948"><title>Plotting Complex Numbers in the Complex Plane</title><para id="fs-id1165134037549">Plotting a <term class="no-emphasis">complex number</term> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi></m:mrow>
+</m:math> is similar to plotting a real number, except that the horizontal axis represents the real part of the number, <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> and the vertical axis represents the imaginary part of the number, <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+
+<note id="fs-id1165137938490" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165134079788"><emphasis>Given a complex number <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> plot it in the complex plane.</emphasis></para><list id="fs-id1165133192906" list-type="enumerated" number-style="arabic"><item>Label the horizontal axis as the <emphasis effect="italics">real</emphasis> axis and the vertical axis as the <emphasis effect="italics">imaginary axis.</emphasis></item>
+<item>Plot the point in the complex plane by moving <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi></m:mrow>
+</m:math> units in the horizontal direction and <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi></m:mrow>
+</m:math> units in the vertical direction.</item>
+</list></note>
+
+<example id="Example_08_05_01">
+<exercise id="fs-id1165137628795">
+<problem id="fs-id1165137465062">
+<title>Plotting a Complex Number in the Complex Plane</title>
+<para id="fs-id1165134331107">Plot the complex number <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> in the <term class="no-emphasis">complex plane</term>.</para>
+</problem>
+<solution id="fs-id1165137834397">
+<para id="fs-id1165137704829">From the origin, move two units in the positive horizontal direction and three units in the negative vertical direction. See <link target-id="Figure_08_05_001"/>.</para>
+
+
+<figure id="Figure_08_05_001" class="small"><media id="fs-id1165132034236" alt="Plot of 2-3i in the complex plane (2 along the real axis, -3 along the imaginary axis).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_001.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+
+<note id="fs-id1165135581219" class="precalculus try"><label>Try It</label>
+<exercise id="ti_08_05_01">
+ <problem id="fs-id1165135586379"><para id="fs-id1165135514726">Plot the point <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> in the complex plane.</para></problem>
+<solution id="fs-id1165134167302">
+
+<media id="fs-id1165137938804" alt="Plot of 1+5i in the complex plane (1 along the real axis, 5 along the imaginary axis)." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_002.jpg"/>
+</media>
+
+</solution>
+</exercise>
+</note></section><section id="fs-id1165137542524">
+<title>Finding the Absolute Value of a Complex Number</title>
+<para id="fs-id1165134325179">The first step toward working with a complex number in <term class="no-emphasis">polar form</term> is to find the absolute value. The absolute value of a complex number is the same as its <term class="no-emphasis">magnitude</term>, or <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> It measures the distance from the origin to a point in the plane. For example, the graph of <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> in <link target-id="Figure_08_05_003"/>, shows <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><figure id="Figure_08_05_003" class="small"><media id="fs-id1165134293070" alt="Plot of 2+4i in the complex plane and its magnitude, |z| = rad 20.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_003.jpg"/>
+</media>
+</figure><note id="fs-id1165134541127">
+
+<title>Absolute Value of a Complex Number</title>
+<para id="fs-id1165133353946">Given <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> a complex number, the absolute value of <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi></m:mrow>
+</m:math> is defined as</para>
+<equation id="fs-id1165135340598" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165134199373">It is the distance from the origin to the point <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<para id="fs-id1165135203416">Notice that the absolute value of a real number gives the distance of the number from 0, while the absolute value of a complex number gives the distance of the number from the origin, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>0</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</note>
+
+
+<example id="Example_08_05_02">
+<exercise id="fs-id1165137921556">
+<problem id="fs-id1165135190837">
+<title>Finding the Absolute Value of a Complex Number with a Radical</title>
+<para id="fs-id1165134232230">Find the absolute value of <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mn>5</m:mn>
+  </m:msqrt>
+  <m:mo>−</m:mo><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133024224">
+<para id="fs-id1165137464603">Using the formula, we have</para>
+
+  <equation id="fs-id1165137602050" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:msqrt>
+             <m:mn>5</m:mn>
+            </m:msqrt>
+            </m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mn>6</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165133324050">See <link target-id="Figure_08_05_004"/>.</para><figure id="Figure_08_05_004" class="small"><media id="fs-id1165135333398" alt="Plot of z=(rad5 - i) in the complex plane and its magnitude rad6.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_004.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+
+<note id="fs-id1165137461107" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_08_05_02">
+<problem id="fs-id1165137553007"><para id="fs-id1165134401602">Find the absolute value of the complex number <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>  </para></problem>
+<solution id="fs-id1165137771102"><para id="fs-id1165135403265">13</para></solution>
+</exercise>
+</note>
+
+<example id="Example_08_05_03">
+<exercise id="fs-id1165137454990">
+<problem id="fs-id1165137645660">
+<title>Finding the Absolute Value of a Complex Number</title>
+<para id="fs-id1165137662370">Given <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> find <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137419461">
+<para id="fs-id1165133233012">Using the formula, we have</para><equation id="fs-id1165137410180" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mn>3</m:mn>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>9</m:mn><m:mo>+</m:mo><m:mn>16</m:mn></m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+         <m:mrow>
+          <m:mn>25</m:mn></m:mrow>
+        </m:msqrt>
+
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165135553504">The absolute value <m:math>
+ <m:mrow>
+  <m:mrow><m:mi>z</m:mi></m:mrow></m:mrow>
+</m:math> is 5. See <link target-id="Figure_08_05_005"/>. </para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="Figure_08_05_005" class="small"><media id="fs-id1165135194751" alt="Plot of (3-4i) in the complex plane and its magnitude |z| =5.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_005.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137911592" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_08_05_03">
+<problem id="fs-id1165137812757"><para id="fs-id1165137812758">Given <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>7</m:mn><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> find <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137643164"><para id="fs-id1165135237187"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>50</m:mn></m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:mn>5</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165135530150">
+<title>Writing Complex Numbers in Polar Form</title>
+<para id="fs-id1165132928617">The <term>polar form of a complex number</term> expresses a number in terms of an angle <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> and its distance from the origin <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Given a complex number in <term class="no-emphasis">rectangular form</term> expressed as <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> we use the same conversion formulas as we do to write the number in trigonometric form:</para>
+  	<equation id="fs-id1165137442107" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165135161485">We review these relationships in <link target-id="Figure_08_05_006"/>.</para>
+
+<figure id="Figure_08_05_006" class="small"><media id="fs-id1165135508549" alt="Triangle plotted in the complex plane (x axis is real, y axis is imaginary). Base is along the x/real axis, height is some y/imaginary value in Q 1, and hypotenuse r extends from origin to that point (x+yi) in Q 1. The angle at the origin is theta. There is an arc going through (x+yi).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_006.jpg"/>
+</media>
+</figure><para id="fs-id1165135245777">We use the term <emphasis>modulus</emphasis> to represent the absolute value of a complex number, or the distance from the origin to the point <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> The modulus, then, is the same as <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> the radius in polar form. We use <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> to indicate the angle of direction (just as with polar coordinates). Substituting, we have</para><equation id="fs-id1165137835830" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>i</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>r</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>i</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><note id="fs-id1165135505465"><label>a general note label</label><title>Polar Form of a Complex Number</title>
+
+<para id="fs-id1165137643584">Writing a complex number in polar form involves the following conversion formulas:</para>
+  <equation id="fs-id1165134566530" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134073108">Making a direct substitution, we have</para>
+  <equation id="fs-id1165135613632" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>i</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>z</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>r</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137628482">where <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> is the <term>modulus</term> and <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math>  is the <term>argument</term>. We often use the abbreviation <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mtext>cis</m:mtext><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> to represent <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></note><example id="Example_08_05_04">
+<exercise id="fs-id1165137454742">
+<problem id="fs-id1165132959045">
+<title>Expressing a Complex Number Using Polar Coordinates</title>
+<para id="fs-id1165137804036">Express the complex number <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> using polar coordinates.</para>
+</problem>
+<solution id="fs-id1165137595455">
+<para id="fs-id1165137803541">On the complex plane, the number <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> is the same as <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Writing it in polar form, we have to calculate <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> first. </para>
+
+  <equation id="fs-id1165137483073" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mn>0</m:mn>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mn>4</m:mn>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>16</m:mn></m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137540200">Next, we look at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> If <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> In polar coordinates, the complex number <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> can be written as <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> or <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mspace width="0.3em"/><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> See <link target-id="Figure_08_05_007"/>.</para><figure id="Figure_08_05_007" class="small"><media id="fs-id1165137460482" alt="Plot of z=4i in the complex plane, also shows that the in polar coordinate it would be (4,pi/2).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_007.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+
+<note id="fs-id1165135175110" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_08_05_04">
+<problem id="fs-id1165134550614"><para id="fs-id1165134550616">Express <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>  as <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mspace width="0.3em"/><m:mtext>cis</m:mtext><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math>  in polar form.</para></problem>
+<solution id="fs-id1165137397894"><para id="fs-id1165137397895"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<example id="Example_08_05_05">
+<exercise id="fs-id1165135533080">
+<problem id="fs-id1165137851363">
+<title>Finding the Polar Form of a Complex Number</title>
+<para id="fs-id1165133097232">Find the polar form of <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165134077346">
+<para id="fs-id1165135499750">First, find the value of <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </para>
+
+<equation id="fs-id1165137405565" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:msup>
+           <m:mn>4</m:mn>
+           <m:mn>2</m:mn>
+          </m:msup>
+          </m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>32</m:mn></m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165133141427">Find the angle <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> using the formula:</para><equation id="fs-id1165133155817" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mi>r</m:mi>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+       <m:mrow>
+        <m:mn>4</m:mn><m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+        </m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+        </m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi></m:mrow>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:msqrt>
+           <m:mn>2</m:mn>
+          </m:msqrt>
+          </m:mrow>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165134184438">Thus, the solution is <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135475905" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_08_05_05">
+<problem id="fs-id1165137451880"><para id="fs-id1165137451882">Write <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mi>i</m:mi></m:mrow>
+</m:math> in polar form.</para></problem>
+<solution id="fs-id1165137603699"><para id="fs-id1165137603700"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+
+<section id="fs-id1165135311667">
+<title>Converting a Complex Number from Polar to Rectangular Form</title>
+<para id="fs-id1165135664797">Converting a complex number from polar form to rectangular form is a matter of evaluating what is given and using the distributive property. In other words, given <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> first evaluate the trigonometric functions <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Then, multiply through by <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><example id="Example_08_05_06"><exercise id="fs-id1165135187864">
+<problem id="fs-id1165135187866">
+<title>Converting from Polar to Rectangular Form</title>
+<para id="fs-id1165137732869">Convert the polar form of the given complex number to rectangular form:</para>
+<equation id="fs-id1165137732872" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165137827978">
+<para id="fs-id1165134279359">We begin by evaluating the trigonometric expressions.</para>
+
+<equation id="eip-id811719" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mspace width="0.3em"/><m:mtext>and</m:mtext><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation><para id="eip-id1472898">After substitution, the complex number is</para>
+  <equation id="fs-id1165137723445" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+      </m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>+</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>i</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135517158">We apply the distributive property:</para>
+  <equation id="fs-id1165135517161" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:msqrt>
+           <m:mn>3</m:mn>
+          </m:msqrt>
+          </m:mrow>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>+</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>i</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>12</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>12</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>i</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>6</m:mn><m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+      <m:mo>+</m:mo><m:mn>6</m:mn><m:mi>i</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137733561">The rectangular form of the given point in complex form is <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>6</m:mn><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</example><example id="Example_08_05_07">
+<exercise id="fs-id1165135571758">
+<problem id="fs-id1165135571760">
+<title>Finding the Rectangular Form of a Complex Number</title>
+<para id="fs-id1165137844019">Find the rectangular form of the complex number given <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>13</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mn>12</m:mn></m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165133210162">
+<para id="fs-id1165134537174">If <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mn>12</m:mn></m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>y</m:mi>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> we first determine <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mn>12</m:mn></m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mn>5</m:mn>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:mn>13</m:mn><m:mtext>. </m:mtext></m:mrow>
+</m:math>  We then find <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>x</m:mi>
+   <m:mi>r</m:mi>
+  </m:mfrac>
+  </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>y</m:mi>
+   <m:mi>r</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><equation id="fs-id1165137443057" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>13</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>13</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>12</m:mn>
+         </m:mrow>
+         <m:mrow>
+          <m:mn>13</m:mn>
+         </m:mrow>
+        </m:mfrac>
+        <m:mo>+</m:mo><m:mfrac>
+         <m:mn>5</m:mn>
+         <m:mrow>
+          <m:mn>13</m:mn>
+         </m:mrow>
+        </m:mfrac>
+        <m:mi>i</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>12</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135160119">The rectangular form of the given number in complex form is <m:math>
+ <m:mrow>
+  <m:mn>12</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135511380" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_08_05_06">
+<problem id="fs-id1165137571081"><para id="fs-id1165137571082">Convert the complex number to rectangular form:</para>
+  <equation id="fs-id1165137571086" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mfrac>
+     <m:mrow>
+      <m:mn>11</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    <m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mfrac>
+     <m:mrow>
+      <m:mn>11</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165137444688"><para id="fs-id1165137444689"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165134324933">
+<title>Finding Products of Complex Numbers in Polar Form</title>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137660156">Now that we can convert complex numbers to polar form we will learn how to perform operations on complex numbers in polar form. For the rest of this section, we will work with formulas developed by French mathematician Abraham <term class="no-emphasis">De Moivre</term> (1667-1754). These formulas have made working with products, quotients, powers, and roots of complex numbers much simpler than they appear. The rules are based on multiplying the moduli and adding the arguments.</para><note id="fs-id1165137473607">
+
+<title>Products of Complex Numbers in Polar Form </title>
+<para id="fs-id1165135178402">If <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math>  then the product of these numbers is given as:</para><equation id="fs-id1165137844291" class="unnumbered"><label/> <m:math display="block">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:msub>
+           <m:mi>z</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:msub>
+           <m:mi>z</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo><m:msub>
+           <m:mi>r</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:msub>
+           <m:mi>r</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mrow><m:mo>[</m:mo> <m:mrow>
+           <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+            <m:mrow>
+             <m:msub>
+              <m:mi>θ</m:mi>
+              <m:mn>1</m:mn>
+             </m:msub>
+             <m:mo>+</m:mo><m:msub>
+              <m:mi>θ</m:mi>
+              <m:mn>2</m:mn>
+             </m:msub>
+
+            </m:mrow>
+           <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+            <m:mrow>
+             <m:msub>
+              <m:mi>θ</m:mi>
+              <m:mn>1</m:mn>
+             </m:msub>
+             <m:mo>+</m:mo><m:msub>
+              <m:mi>θ</m:mi>
+              <m:mn>2</m:mn>
+             </m:msub>
+
+            </m:mrow>
+           <m:mo>)</m:mo></m:mrow>
+          </m:mrow> <m:mo>]</m:mo></m:mrow>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:msub>
+           <m:mi>z</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:msub>
+           <m:mi>z</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo><m:msub>
+           <m:mi>r</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:msub>
+           <m:mi>r</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:msub>
+             <m:mi>θ</m:mi>
+             <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo><m:msub>
+             <m:mi>θ</m:mi>
+             <m:mn>2</m:mn>
+            </m:msub>
+
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137738246">Notice that the product calls for multiplying the moduli and adding the angles.</para>
+</note>
+
+<example id="Example_08_05_08">
+<exercise id="fs-id1165137665678">
+<problem id="fs-id1165137665680">
+<title>Finding the Product of Two Complex Numbers in Polar Form </title>
+<para id="fs-id1165137583978">Find the product of <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> given <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>80°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>80°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>145°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>145°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135369384">
+<para id="fs-id1165137531259">Follow the formula</para>
+
+<equation id="fs-id1165137531262" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mo stretchy="false">[</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>80°</m:mn><m:mo>+</m:mo><m:mn>145°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>80°</m:mn><m:mo>+</m:mo><m:mn>145°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>8</m:mn><m:mo stretchy="false">[</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>225°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>225°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>8</m:mn><m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>5</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>5</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>8</m:mn><m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mo>−</m:mo><m:mfrac>
+        <m:mrow>
+         <m:msqrt>
+          <m:mn>2</m:mn>
+         </m:msqrt>
+
+        </m:mrow>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+       <m:mo>+</m:mo><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mo>−</m:mo><m:mfrac>
+          <m:mrow>
+           <m:msqrt>
+            <m:mn>2</m:mn>
+           </m:msqrt>
+
+          </m:mrow>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+</section>
+
+<section id="fs-id1165137736474">
+<title>Finding Quotients of Complex Numbers in Polar Form</title>
+<para id="fs-id1165134389944">The quotient of two complex numbers in polar form is the quotient of the two moduli and the difference of the two arguments.</para>
+
+<note id="fs-id1165137892433">
+
+<title>Quotients of Complex Numbers in Polar Form</title>
+<para id="fs-id1165135541727">If <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math>  then the quotient of these numbers is</para><equation id="fs-id1165135316034" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      </m:mrow>
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      </m:mrow>
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      </m:mrow>
+    </m:mfrac>
+    <m:mrow><m:mo>[</m:mo> <m:mrow>
+     <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mo>−</m:mo><m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>2</m:mn>
+       </m:msub>
+       </m:mrow>
+     <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mo>−</m:mo><m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>2</m:mn>
+       </m:msub>
+       </m:mrow>
+     <m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:msub>
+     <m:mi>z</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>≠</m:mo><m:mn>0</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      </m:mrow>
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      </m:mrow>
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      </m:mrow>
+    </m:mfrac>
+    <m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msub>
+       <m:mi>θ</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>−</m:mo><m:msub>
+       <m:mi>θ</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:msub>
+     <m:mi>z</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>≠</m:mo><m:mn>0</m:mn><m:mspace width="0.3em"/>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> </equation>
+<para id="fs-id1165135332827">Notice that the moduli are divided, and the angles are subtracted.</para>
+</note>
+
+<note id="fs-id1165137897028" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165135189946"><emphasis>Given two complex numbers in polar form, find the quotient.
+</emphasis></para>
+<list id="fs-id1165135260707" list-type="enumerated" number-style="arabic"><item>Divide <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> </item>
+<item>Find <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>−</m:mo><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> </item>
+<item>Substitute the results into the formula: <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Replace <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> with <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> and replace <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> with <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>−</m:mo><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item>Calculate the new trigonometric expressions and multiply through by <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+</list></note>
+
+<example id="Example_08_05_09">
+<exercise id="fs-id1165134329605">
+<problem id="fs-id1165134329607">
+<title>Finding the Quotient of Two Complex Numbers </title>
+<para id="fs-id1165135436548">Find the quotient of <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>213°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>213°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>33°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>33°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165133318744">
+<para id="fs-id1165134129652">Using the formula, we have</para>
+
+<equation id="fs-id1165134129655" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">[</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>213°</m:mn><m:mo>−</m:mo><m:mn>33°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>213°</m:mn><m:mo>−</m:mo><m:mn>33°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">[</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>180°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>180°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">[</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mi>i</m:mi><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mn>0</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135593394" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_08_05_07">
+<problem id="fs-id1165134568987"><para id="fs-id1165134568988">Find the product and the quotient of <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>150°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>150°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135707943"><para id="fs-id1165135707944"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>;</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>z</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>z</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+    </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>i</m:mi></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+
+<section id="fs-id1165137673550">
+<title>Finding Powers of Complex Numbers in Polar Form</title>
+<para id="fs-id1165137673556">Finding powers of complex numbers is greatly simplified using <term>De Moivre’s Theorem</term>. It states that, for a positive integer <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>,</m:mo><m:msup>
+   <m:mi>z</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  </m:mrow>
+</m:math> is found by raising the modulus to the <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mtext>th</m:mtext></m:mrow>
+</m:math> power and multiplying the argument by <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> It is the standard method used in modern mathematics.</para><note id="fs-id1165135388434">
+
+<title>De Moivre’s Theorem</title>
+<para id="fs-id1165133349328">If <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> is a complex number, then</para><equation id="fs-id1165135299806" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>z</m:mi>
+     <m:mi>n</m:mi>
+    </m:msup>
+    <m:mo>=</m:mo><m:msup>
+     <m:mi>r</m:mi>
+     <m:mi>n</m:mi>
+    </m:msup>
+    <m:mrow><m:mo>[</m:mo> <m:mrow>
+     <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow>
+     <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow>
+     <m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>z</m:mi>
+     <m:mi>n</m:mi>
+    </m:msup>
+    <m:mo>=</m:mo><m:msup>
+     <m:mi>r</m:mi>
+     <m:mi>n</m:mi>
+    </m:msup>
+    <m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation>
+<para id="fs-id1165137846221">where <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi></m:mrow>
+</m:math>
+is a positive integer.</para>
+</note>
+
+<example id="Example_08_05_10">
+<exercise id="fs-id1165133103896">
+<problem id="fs-id1165133103898">
+<title>Evaluating an Expression Using De Moivre’s Theorem</title>
+<para id="fs-id1165131884600">Evaluate the expression <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> using De Moivre’s Theorem.</para>
+</problem>
+<solution id="fs-id1165132959150">
+<para id="fs-id1165132959153">Since De Moivre’s Theorem applies to complex numbers written in polar form, we must first write <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> in polar form. Let us find <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+
+<equation id="fs-id1165135365743" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mn>1</m:mn>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mn>1</m:mn>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165135200427">Then we find <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Using the formula <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>y</m:mi>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  </m:mrow>
+</m:math> gives</para><equation id="fs-id1165134130860" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>1</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135415590">Use De Moivre’s Theorem to evaluate the expression.</para><equation id="fs-id1165135415594" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mi>n</m:mi>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>r</m:mi>
+       <m:mi>n</m:mi>
+      </m:msup>
+      <m:mo stretchy="false">[</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:msqrt>
+           <m:mn>2</m:mn>
+          </m:msqrt>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mn>5</m:mn><m:mo>⋅</m:mo><m:mfrac>
+          <m:mi>π</m:mi>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mn>5</m:mn><m:mo>⋅</m:mo><m:mfrac>
+          <m:mi>π</m:mi>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>4</m:mn><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>5</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>5</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>4</m:mn><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mo>−</m:mo><m:mfrac>
+        <m:mrow>
+         <m:msqrt>
+          <m:mn>2</m:mn>
+         </m:msqrt>
+
+        </m:mrow>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+       <m:mo>+</m:mo><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mo>−</m:mo><m:mfrac>
+          <m:mrow>
+           <m:msqrt>
+            <m:mn>2</m:mn>
+           </m:msqrt>
+
+          </m:mrow>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+</section>
+<section id="fs-id1165135204415">
+<title>Finding Roots of Complex Numbers in Polar Form</title>
+<para id="fs-id1165135204421">To find the <term class="no-emphasis"><emphasis effect="italics">n</emphasis>th root of a complex number</term> in polar form, we use the <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mtext>th</m:mtext></m:mrow>
+</m:math> Root Theorem or <term class="no-emphasis">De Moivre’s Theorem</term> and raise the complex number to a power with a rational exponent. There are several ways to represent a formula for finding <m:math> <m:mrow>
+  <m:mspace width="0.3em"/><m:mi>n</m:mi><m:mtext>th</m:mtext></m:mrow>
+</m:math> roots of complex numbers in polar form.</para><note id="fs-id1165135420398"><label>A General Note label</label><title>The <emphasis effect="italics">n</emphasis>th Root Theorem</title>
+
+<para id="fs-id1165135436403">To find the <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mtext>th</m:mtext></m:mrow>
+</m:math> root of a complex number in polar form, use the formula given as</para>
+<equation id="fs-id1165134281475" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mi>n</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>r</m:mi>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mi>n</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mfrac>
+      <m:mi>θ</m:mi>
+      <m:mi>n</m:mi>
+     </m:mfrac>
+     <m:mo>+</m:mo><m:mfrac>
+      <m:mrow>
+       <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+      </m:mrow>
+      <m:mi>n</m:mi>
+     </m:mfrac>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mfrac>
+      <m:mi>θ</m:mi>
+      <m:mi>n</m:mi>
+     </m:mfrac>
+     <m:mo>+</m:mo><m:mfrac>
+      <m:mrow>
+       <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+      </m:mrow>
+      <m:mi>n</m:mi>
+     </m:mfrac>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134485535">where <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mo>.</m:mo><m:mspace width="1em"/><m:mo>.</m:mo><m:mspace width="1em"/><m:mo>.</m:mo><m:mspace width="1em"/><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math> We add <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi></m:mrow>
+   <m:mi>n</m:mi>
+  </m:mfrac>
+  <m:mspace width="0.3em"/></m:mrow>
+</m:math> to <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>θ</m:mi>
+   <m:mi>n</m:mi>
+  </m:mfrac>
+  </m:mrow>
+</m:math> in order to obtain the periodic roots.</para>
+</note><example id="Example_08_05_11">
+<exercise id="fs-id1165133341021">
+<problem id="fs-id1165133341023">
+<title>Finding the <emphasis effect="italics">n</emphasis>th Root of a Complex Number</title>
+<para id="fs-id1165133046793">Evaluate the cube roots of <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137656965">
+<para id="fs-id1165137656967">We have</para>
+
+  <equation id="fs-id1165137656970" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>z</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mn>8</m:mn>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mfrac>
+            <m:mrow>
+             <m:mn>2</m:mn><m:mi>π</m:mi>
+            </m:mrow>
+            <m:mn>3</m:mn>
+           </m:mfrac>
+
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mfrac>
+            <m:mrow>
+             <m:mn>2</m:mn><m:mi>π</m:mi>
+            </m:mrow>
+            <m:mn>3</m:mn>
+           </m:mfrac>
+
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>z</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134060257">There will be three roots: <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mn>2.</m:mn></m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> we have</para>
+  <equation id="fs-id1165135365831" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135510902">When <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> we have</para>
+  <equation id="fs-id1165134258392" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>z</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>6</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>6</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable><m:mtext>    Add </m:mtext><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mtext> to each angle.</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>z</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mrow>
+            <m:mn>8</m:mn><m:mi>π</m:mi>
+           </m:mrow>
+           <m:mn>9</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mrow>
+            <m:mn>8</m:mn><m:mi>π</m:mi>
+           </m:mrow>
+           <m:mn>9</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134311190">When <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math>  we have</para><equation id="fs-id1165133221800" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>z</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>12</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>12</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Add </m:mtext><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mtext> to each angle.</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>z</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mrow>
+            <m:mn>14</m:mn><m:mi>π</m:mi>
+           </m:mrow>
+           <m:mn>9</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mrow>
+            <m:mn>14</m:mn><m:mi>π</m:mi>
+           </m:mrow>
+           <m:mn>9</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133102510">Remember to find the common denominator to simplify fractions in situations like this one. For <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> the angle simplification is</para>
+<equation id="fs-id1165134192876" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>2</m:mn><m:mi>π</m:mi>
+         </m:mrow>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>3</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>8</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135404709" class="precalculus try">
+<label>Try It</label>
+<exercise id="fs-id1165135404715">
+<problem id="fs-id1165135404718"><para id="fs-id1165135329823">Find the four fourth roots of <m:math>
+ <m:mrow>
+  <m:mn>16</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>120°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>120°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134356866">
+<para id="fs-id1165133111152"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165134234229"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>120°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>120°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137428218"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>210°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>210°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165134166590"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>300°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>300°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<note id="fs-id1165133361907" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165133361914">Access these online resources for additional instruction and practice with polar forms of complex numbers.</para>
+  <list id="fs-id1165135329691">
+<item><link url="http://openstax.org/l/prodquocomplex">The Product and Quotient of Complex Numbers in Trigonometric Form</link></item>
+  <item><link url="http://openstax.org/l/demoivre">De Moivre’s Theorem</link></item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165134129902" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1165134129908"><item>Complex numbers in the form <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi></m:mrow>
+</m:math> are plotted in the complex plane similar to the way rectangular coordinates are plotted in the rectangular plane. Label the <emphasis effect="italics">x-</emphasis>axis as the <emphasis effect="italics">real </emphasis>axis and the <emphasis effect="italics">y-</emphasis>axis as the <emphasis effect="italics">imaginary</emphasis> axis. See <link target-id="Example_08_05_01"/>.</item>
+<item>The absolute value of a complex number is the same as its magnitude. It is the distance from the origin to the point: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>a</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>b</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> See <link target-id="Example_08_05_02"/> and <link target-id="Example_08_05_03"/>.</item>
+<item>To write complex numbers in polar form, we use the formulas <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Then, <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> See <link target-id="Example_08_05_04"/> and <link target-id="Example_08_05_05"/>.</item>
+<item>To convert from polar form to rectangular form, first evaluate the trigonometric functions. Then, multiply through by <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> See <link target-id="Example_08_05_06"/> and <link target-id="Example_08_05_07"/>.</item>
+<item>To find the product of two complex numbers, multiply the two moduli and add the two angles. Evaluate the trigonometric functions, and multiply using the distributive property. See <link target-id="Example_08_05_08"/>.</item>
+<item>To find the quotient of two complex numbers in polar form, find the quotient of the two moduli and the difference of the two angles. See <link target-id="Example_08_05_09"/>.</item>
+<item>To find the power of a complex number <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> raise <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math>  to the power <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math>  and multiply <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math>  by <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> See <link target-id="Example_08_05_10"/>.</item>
+<item>Finding the roots of a complex number is the same as raising a complex number to a power, but using a rational exponent. See <link target-id="Example_08_05_11"/>.</item>
+</list></section>
+
+
+  <section id="fs-id1165134370081" class="section-exercises">
+<title>Section Exercises</title>
+  <section id="fs-id1165135613677">
+  <title>Verbal</title>
+<exercise id="fs-id1165135613682">
+<problem id="fs-id1165135613684">
+<para id="fs-id1165135613686">A complex number is <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Explain each part.</para>
+</problem>
+<solution id="fs-id1165134395224">
+<para id="fs-id1165134395227">
+<emphasis effect="italics">a</emphasis> is the real part, <emphasis effect="italics">b</emphasis> is the imaginary part, and <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135586313">
+<problem id="fs-id1165131926307">
+<para id="fs-id1165131926309">What does the absolute value of a complex number represent?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165131926314">
+<problem id="fs-id1165131926316">
+<para id="fs-id1165131926319">How is a complex number converted to polar form?</para>
+</problem>
+<solution id="fs-id1165131926323">
+<para id="fs-id1165131926325">Polar form converts the real and imaginary part of the complex number in polar form using <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mi>θ</m:mi></m:mrow>
+</m:math>  and <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sin</m:mi><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134205897">
+<problem id="fs-id1165134205899">
+<para id="fs-id1165134205901">How do we find the product of two complex numbers?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165134205906">
+<problem id="fs-id1165133309248">
+<para id="fs-id1165133309250">What is De Moivre’s Theorem and what is it used for?</para></problem>
+<solution id="fs-id1165133309255">
+<para id="fs-id1165133309257"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>r</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> It is used to simplify polar form when a number has been raised to a power. </para>
+</solution>
+</exercise>
+
+  </section>
+
+  <section id="fs-id1165134183779">
+  <title>Algebraic</title>
+  <para id="fs-id1165135665413">For the following exercises, find the absolute value of the given complex number.</para>
+<exercise id="fs-id1165135665416">
+<problem id="fs-id1165135665418">
+<para id="fs-id1165135665420"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mo>+</m:mo><m:mtext>​</m:mtext><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134385720">
+<problem id="fs-id1165134385722">
+<para id="fs-id1165134385725"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mtext>​</m:mtext><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135499578">
+<para id="fs-id1165135499580"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135541528">
+<problem id="fs-id1165134481951">
+<para id="fs-id1165134481953"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135633877">
+<problem id="fs-id1165135633879">
+<para id="fs-id1165135633881"> <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mo>−</m:mo><m:mn>6</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133213891">
+<para id="fs-id1165133213893"> <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mn>38</m:mn></m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135694472">
+<problem id="fs-id1165135694474">
+<para id="fs-id1165137843211"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137843226">
+<problem id="fs-id1165137843228">
+<para id="fs-id1165134116954"> <m:math>
+ <m:mrow>
+  <m:mn>2.2</m:mn><m:mo>−</m:mo><m:mn>3.1</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134116972">
+<para id="fs-id1165137843105"> <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mn>14.45</m:mn></m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+  <para id="fs-id1165134386618">For the following exercises, write the complex number in polar form.</para>
+<exercise id="fs-id1165134386621">
+<problem id="fs-id1165134386623">
+<para id="fs-id1165134386625"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134178500">
+<problem id="fs-id1165134178502">
+<para id="fs-id1165134178504"> <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134129997">
+<para id="fs-id1165134129999"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msqrt>
+   <m:mn>5</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>333.4°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165132959023">
+<problem id="fs-id1165132959025">
+<para id="fs-id1165132959027"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mtext>​</m:mtext><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135633990">
+<problem id="fs-id1165135633992">
+<para id="fs-id1165135317569"> <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165131993571">
+<para id="fs-id1165131993573"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135207298">
+<problem id="fs-id1165135207300">
+<para id="fs-id1165135207302"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+
+<para id="fs-id1165135499587">For the following exercises, convert the complex number from polar to rectangular form.</para>
+<exercise id="fs-id1165135499590">
+<problem id="fs-id1165135499592">
+<para id="fs-id1165135499594"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135367688">
+<para id="fs-id1165135367691"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+    </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mi>i</m:mi><m:mfrac>
+   <m:mn>7</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135532374">
+<problem id="fs-id1165135532376">
+<para id="fs-id1165135407393"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134089467">
+<problem id="fs-id1165134089469">
+<para id="fs-id1165134089471"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134573209">
+<para id="fs-id1165134573211"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134190676">
+<problem id="fs-id1165134190678">
+<para id="fs-id1165134190680"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>25°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135388835">
+<problem id="fs-id1165135388838">
+<para id="fs-id1165135388840"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>240°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135640462">
+<para id="fs-id1165135640464"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>1.5</m:mn><m:mo>−</m:mo><m:mi>i</m:mi><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+    </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135519200">
+<problem id="fs-id1165135519202">
+<para id="fs-id1165135519205"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>100°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+
+  <para id="fs-id1165134357546">For the following exercises, find <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  </m:mrow>
+</m:math> in polar form.</para>
+<exercise id="fs-id1165133078076" class="material-set-2">
+<problem id="fs-id1165133078079">
+<para id="fs-id1165134130033"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>116°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.3em"/><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>82°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135419732">
+<para id="fs-id1165135419734"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>198°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134430434" class="material-set-2">
+<problem id="fs-id1165134430436">
+<para id="fs-id1165134430438"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>205°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>118°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137756875" class="material-set-2">
+<problem id="fs-id1165137756878">
+<para id="fs-id1165137756880"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>120°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>60°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135472921">
+<para id="fs-id1165135472923"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>180°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134093149" class="material-set-2">
+<problem id="fs-id1165134093151">
+<para id="fs-id1165133023575"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>5</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165131863233" class="material-set-2">
+<problem id="fs-id1165131863235">
+<para id="fs-id1165131863237"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mn>5</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>15</m:mn></m:mrow>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mrow>
+      <m:mn>12</m:mn></m:mrow>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133077994">
+<para id="fs-id1165135518168"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>17</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mrow>
+      <m:mn>24</m:mn></m:mrow>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134088751" class="material-set-2">
+<problem id="fs-id1165134088753">
+<para id="fs-id1165134088755"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+  <para id="fs-id1165135662421">For the following exercises, find <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>z</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>z</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    </m:mrow>
+  </m:mfrac>
+  </m:mrow>
+</m:math> in polar form.</para>
+<exercise id="fs-id1165134160326" class="material-set-2">
+<problem id="fs-id1165134160328">
+<para id="fs-id1165134160330"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>21</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>135°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>65°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+  <solution id="fs-id1165134174904">
+<para id="fs-id1165134174906"> <m:math>
+ <m:mrow>
+  <m:mn>7</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>70°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134221768" class="material-set-2">
+<problem id="fs-id1165134221770">
+<para id="fs-id1165134221772"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>90°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>60°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134325223" class="material-set-2">
+<problem id="fs-id1165134325225">
+<para id="fs-id1165131863137"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>15</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>120°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>40°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137480080">
+<para id="fs-id1165137480082"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>80°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134279277" class="material-set-2">
+<problem id="fs-id1165134279279">
+<para id="fs-id1165134279281"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>6</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135652331" class="material-set-2">
+<problem id="fs-id1165134401618">
+<para id="fs-id1165134401620"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>5</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>π</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134388962">
+<para id="fs-id1165134388964"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134534047" class="material-set-2">
+<problem id="fs-id1165134534049">
+<para id="fs-id1165134534051"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+  <para id="fs-id1165133028482">For the following exercises, find the powers of each complex number in polar form.</para>
+
+<exercise id="fs-id1165133028485">
+<problem id="fs-id1165133028487">
+<para id="fs-id1165133028489">Find <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>45°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165133349423">
+<para id="fs-id1165133349425"> <m:math>
+ <m:mrow>
+  <m:mn>125</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>135°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135523252">
+<problem id="fs-id1165135523254">
+<para id="fs-id1165135523256">Find <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>70°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135440037">
+<problem id="fs-id1165135440039">
+<para id="fs-id1165135440041">Find <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>120°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135512799">
+<para id="fs-id1165135512801"> <m:math>
+ <m:mrow>
+  <m:mn>9</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>240°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165134113850">
+<problem id="fs-id1165134113852">
+<para id="fs-id1165135619413">Find <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134070876">
+<problem id="fs-id1165134070879">
+<para id="fs-id1165134070881">Find <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mrow>
+      <m:mn>16</m:mn></m:mrow>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134177544">
+<para id="fs-id1165134177546"> <m:math>
+ <m:mrow>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134128415">
+<problem id="fs-id1165134128417">
+<para id="fs-id1165134128419">Find <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+  <para id="fs-id1165135352989">For the following exercises, evaluate each root.</para>
+
+<exercise id="fs-id1165135352992">
+<problem id="fs-id1165134039259">
+<para id="fs-id1165134039261">Evaluate the cube root of <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>27</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>240°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135609212">
+<para id="fs-id1165135609214"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>80°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>200°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>320°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165135170392">
+<problem id="fs-id1165135170394">
+<para id="fs-id1165135170396">Evaluate the square root of <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>16</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>100°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134534293">
+<problem id="fs-id1165133243591">
+<para id="fs-id1165133243593">Evaluate the cube root of <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>32</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135238453">
+<para id="fs-id1165137780013"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mroot>
+   <m:mn>4</m:mn>
+   <m:mn>3</m:mn>
+  </m:mroot>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>9</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>2</m:mn><m:mroot>
+   <m:mn>4</m:mn>
+   <m:mn>3</m:mn>
+  </m:mroot>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>8</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>9</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>2</m:mn><m:mroot>
+   <m:mn>4</m:mn>
+   <m:mn>3</m:mn>
+  </m:mroot>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>14</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>9</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134378611">
+<problem id="fs-id1165134378613">
+<para id="fs-id1165134378615">Evaluate the square root of <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>32</m:mn><m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mi>π</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134356902">
+<problem id="fs-id1165134356904">
+<para id="fs-id1165134356906">Evaluate the cube root of <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165131907304">
+<para id="fs-id1165131907306"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>2</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>15</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+  </section>
+  <section id="fs-id1165135586834">
+  <title>Graphical</title>
+
+  <para id="fs-id1165137895099">For the following exercises, plot the complex number in the complex plane.</para>
+<exercise id="fs-id1165137895102">
+<problem id="fs-id1165137895104">
+<para id="fs-id1165137895107"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135621933"><problem id="fs-id1165135621935">
+<para id="fs-id1165135621938"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133221775"><media id="fs-id1165133221780" alt="Plot of -3 -3i in the complex plane (-3 along real axis, -3 along imaginary axis).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_202.jpg"/>
+  </media></solution>
+</exercise><exercise id="fs-id1165135457049">
+<problem id="fs-id1165135457051">
+<para id="fs-id1165135457054"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137835713"><problem id="fs-id1165137835715">
+<para id="fs-id1165137835717"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133260388"><media id="fs-id1165133260393" alt="Plot of -1 -5i in the complex plane (-1 along real axis, -5 along imaginary axis).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_204.jpg"/>
+  </media></solution>
+</exercise><exercise id="fs-id1165135664876">
+<problem id="fs-id1165135664878">
+<para id="fs-id1165135664880"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135251281"><problem id="fs-id1165135251283">
+<para id="fs-id1165135251285"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135702570"><media id="fs-id1165135702576" alt="Plot of 2i in the complex plane (0 along the real axis, 2 along the imaginary axis).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_206.jpg"/>
+  </media></solution>
+</exercise><exercise id="fs-id1165134254413">
+<problem id="fs-id1165134254415">
+<para id="fs-id1165134254418"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134254432"><problem id="fs-id1165135160374">
+<para id="fs-id1165135160376"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135672734"><media id="fs-id1165135672739" alt="Plot of 6-2i in the complex plane (6 along the real axis, -2 along the imaginary axis).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_208.jpg"/>
+  </media></solution>
+</exercise><exercise id="fs-id1165135672751">
+<problem id="fs-id1165135672753">
+<para id="fs-id1165133359361"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165133359380"><problem id="fs-id1165137580684">
+<para id="fs-id1165137580686"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137580704">
+<media id="fs-id1165132949966" alt="Plot of 1-4i in the complex plane (1 along the real axis, -4 along the imaginary axis).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_210.jpg"/>
+  </media></solution></exercise></section>
+  <section id="fs-id1165132949979">
+  <title>Technology</title>
+
+
+
+<para id="fs-id1165137647538">For the following exercises, find all answers rounded to the nearest hundredth.</para>
+
+<exercise id="fs-id1165137647541">
+<problem id="fs-id1165137647543">
+<para id="fs-id1165137647545">Use the rectangular to polar feature on the graphing calculator to change <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> to polar form.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135186955">
+<problem id="fs-id1165135186958">
+<para id="fs-id1165135186960">Use the rectangular to polar feature on the graphing calculator to change <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+to polar form.</para>
+</problem>
+<solution id="fs-id1165134329643">
+<para id="fs-id1165132972772"> <m:math>
+ <m:mrow>
+  <m:mn>3.61</m:mn><m:msup>
+   <m:mi>e</m:mi>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>0.59</m:mn><m:mi>i</m:mi></m:mrow>
+  </m:msup>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165133243512">
+<problem id="fs-id1165133243514">
+<para id="fs-id1165133243516">Use the rectangular to polar feature on the graphing calculator to change <m:math>
+ <m:mrow>
+ <m:mo>−</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+to polar form.</para></problem>
+</exercise>
+<exercise id="fs-id1165135189784">
+<problem id="fs-id1165135189786">
+<para id="fs-id1165135189788">Use the polar to rectangular feature on the graphing calculator to change <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>120°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> to rectangular form.</para></problem>
+<solution id="fs-id1165135694966">
+<para id="fs-id1165135694969"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3.46</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165132945471">
+<problem id="fs-id1165132945473">
+<para id="fs-id1165132945475">Use the polar to rectangular feature on the graphing calculator to change <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>45°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> to rectangular form.</para></problem>
+</exercise>
+<exercise id="fs-id1165135546054">
+<problem id="fs-id1165135546056">
+<para id="fs-id1165135546058">Use the polar to rectangular feature on the graphing calculator to change <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>210°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> to rectangular form.</para></problem>
+<solution id="fs-id1165135252140">
+<para id="fs-id1165135252142"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>4.33</m:mn><m:mo>−</m:mo><m:mn>2.50</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</section>
+</section>
+</content>
+
+<glossary>
+<definition id="fs-id1165135344835">
+<term>argument</term> <meaning id="fs-id1165135344841">the angle associated with a complex number; the angle between the line from the origin to the point and the positive real axis</meaning>
+</definition>
+<definition id="fs-id1165135344846">
+<term>De Moivre’s Theorem</term>
+<meaning id="fs-id1165134357535">formula used to find the <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mtext>th</m:mtext></m:mrow>
+</m:math> power or <emphasis effect="italics">n</emphasis>th roots of a complex number; states that, for a positive integer <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>,</m:mo><m:msup>
+   <m:mi>z</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  </m:mrow>
+</m:math> is found by raising the modulus to the <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mtext>th</m:mtext></m:mrow>
+</m:math> power and multiplying the angles by <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi></m:mrow>
+</m:math>
+</meaning>
+</definition>
+<definition id="fs-id1165134279306">
+<term>modulus</term>
+<meaning id="fs-id1165134279312">the absolute value of a complex number, or the distance from the origin to the point <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo></m:mrow>
+</m:math> also called the amplitude</meaning></definition>
+<definition id="fs-id1165133162992">
+<term>polar form of a complex number</term>
+<meaning id="fs-id1165133162998">a complex number expressed in terms of an angle <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math>  and its distance from the origin <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>;</m:mo></m:mrow>
+</m:math> can be found by using conversion formulas <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+</m:mrow>
+</m:math>
+</meaning></definition>
+</glossary>
+</document>

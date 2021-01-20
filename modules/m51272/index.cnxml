@@ -1,0 +1,2902 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Fitting Linear Models to Data</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m51272</md:content-id>
+  <md:title>Fitting Linear Models to Data</md:title>
+  <md:abstract><para>In this section you will:</para><list>
+<item>Draw and interpret scatter diagrams.</item>
+<item>Use a graphing utility to find the line of best fit.</item>
+<item>Distinguish between linear and nonlinear relations.</item>
+<item>Fit a regression line to a set of data and use the linear model to make predictions.</item>
+</list></md:abstract>
+  <md:uuid>e9d5f844-6760-4f85-8f79-67292a6703dc</md:uuid>
+<md:canonical-book-uuid>13ac107a-f15f-49d2-97e8-60ab2e3b519c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+  <section id="eip-334" class="coreq-skills"><section id="eip-762" class="learning-objectives"><title>Learning Objectives</title>
+<list id="eip-609"><item>Plot points in a rectangular coordinate system (IA 3.1.1).</item>
+<item>Find an equation of the line given two points (IA 3.3.3).</item></list></section><section id="eip-302"><title>Objectives: Plot points in a rectangular coordinate system (IA 3.1.1) and find an equation of the line given two points. (IA 3.3.3)</title><para id="eip-142">In this section we will be plotting collections of data points and looking for patterns in these data sets. A <term>scatterplot</term> is a collection of points plotted on the same coordinate system. When trying to fit a function to a data set it is important to note if there is a pattern to the data set and whether that pattern is <term>linear</term> or nonlinear. If the dependent variable increases as the independent variable increases, we call this a <term>positive association</term>. If the dependent variable decreases as the independent variable increases, we call this a <term>negative association</term>.
+</para><note id="fs-id1572652" class="try">
+<para id="fs-id2134775">Plot points in a rectangular coordinate system, then find a line through two of the data points.</para><exercise id="fs-id1402228"><problem id="fs-id1931803">
+<para id="eip-idm687612448">A precalculus instructor is looking at a random sample of students to see if there is a relationship between the number of hours spent working in a homework platform for a given chapter, and the score for the chapter exam.
+
+<table id="fs-id1167833056787" class="unnumbered" summary="."><label/>
+<tgroup cols="10"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row valign="top">
+<entry>Hours spent doing homework, x</entry>
+<entry>10</entry>
+  <entry>8</entry>
+    <entry>0</entry>
+    <entry>13</entry>
+    <entry>21</entry>
+    <entry>11</entry>
+    <entry>5</entry>
+    <entry>9</entry>
+    <entry>18</entry>
+  </row>
+<row valign="top">
+<entry>Exam score, y</entry>
+<entry>72</entry>
+  <entry>68</entry>
+    <entry>38</entry>
+    <entry>80</entry>
+    <entry>93</entry>
+    <entry>76</entry>
+    <entry>62</entry>
+    <entry>71</entry>
+    <entry>85</entry>
+  </row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></para><para id="eip-idm398862608"><span class="token">ⓐ</span> Plot each of the data points on a coordinate system below. You may either plot the points by hand or using a graphing utility. Be sure to label your x and y axes. <newline/> <media id="fs-id2573209" alt="Scatter plot, titled 'Final Exam Score VS Age'. The x-axis is the age, and the y-axis is the final exam score. The range of ages are between 20s - 50s, and the range for scores are between upper 50s and 90s.">
+  <image mime-type="image/jpg" src="../../media/blanklineplot.png"/>
+  </media>
+  </para>
+<para id="eip-idm407175232"><span class="token">ⓑ</span> Observe any patterns in the data points. Do you think the association between the variables is positive or negative? Is the pattern linear or nonlinear?</para>
+<para id="eip-idm405771840">
+          <span class="token">ⓒ</span> What would you suggest to a friend enrolled in this course based on the data set you graphed?
+     </para>
+     <para id="eip-idm405770720">
+          <span class="token">ⓓ</span> Choose two points that seem to represent the general pattern in the data set. Write these points as ordered pairs below.<newline/>
+ <m:math><m:mo>(</m:mo><m:mspace width="1.5em"/><m:mo>,</m:mo><m:mspace width="1.5em"/><m:mo>)</m:mo></m:math> <newline/>
+ <m:math><m:mo>(</m:mo><m:mspace width="1.5em"/><m:mo>,</m:mo><m:mspace width="1.5em"/><m:mo>)</m:mo></m:math>
+     </para>
+     <para id="eip-idm401147568">
+          <span class="token">ⓔ</span> Find the slope of a line passing through these two points. Interpret its value in terms of the variables being measured. <newline/> <m:math><m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo></m:math>
+     </para>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-idm402207120"><span class="token">ⓕ</span>Use point-slope form or slope intercept form to write the equation of the line passing through these data points. <newline/>
+ <m:math><m:mi>y</m:mi><m:mo>–</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>m</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:math> or <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:math> </para><para id="eip-idm403860000"><span class="token">ⓖ</span> Write this equation in slope-intercept form. <newline/> <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:math> </para>
+     <para id="eip-idm402246016"><span class="token">ⓗ</span> Rewrite this equation using function notation.<newline/>
+ <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo></m:math> </para>
+     <para id="eip-idm402243584"><span class="token">ⓘ</span> This equation is a linear model. Sketch the line on the graph created in part a.</para>
+      <para id="eip-idm391218512"><span class="token">ⓙ</span> Use this mathematical linear model to predict the exam score for a student who spent 15 hours working on this chapter in their homework system. Show your work below.</para></problem>
+</exercise></note><section id="eip-290" class="practice-perfect"><title>Practice Makes Perfect</title><exercise id="eip-96"><problem id="fs-id1933803">
+<para id="eip-idm687612148">The data below shows the relationship between the mass of an automobile (measured in kg) and the fuel efficiency of the car (measured in miles per gallon) for 7 automobiles.
+
+
+<table id="fs-id1167833056737" class="unnumbered" summary="."><label/>
+<tgroup cols="8"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row valign="top">
+<entry>Mass (kg), x</entry>
+<entry>1305</entry>
+  <entry>1150</entry>
+    <entry>1925</entry>
+    <entry>1628</entry>
+    <entry>1506</entry>
+    <entry>1452</entry>
+    <entry>1835</entry>
+  </row>
+<row valign="top">
+<entry>Fuel Efficiency (MPG), y</entry>
+<entry>27</entry>
+  <entry>28</entry>
+    <entry>15</entry>
+    <entry>24</entry>
+    <entry>23</entry>
+    <entry>25</entry>
+    <entry>19</entry>
+  </row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table></para><para id="eip-idm402736112"><span class="token">ⓐ</span> Draw a scatter plot (by hand or using a graphing utility) for the data provided being sure to label your axes.
+  </para>
+<para id="eip-idm402735104"><span class="token">ⓑ</span> Does the data appear to be linearly related? Is the association between the variables positive or negative?</para>
+<para id="eip-idm402734096">
+          <span class="token">ⓒ</span> Choose two points that seem to represent the general pattern in the data set. Write these points as ordered pairs below.<newline/> <m:math><m:mo>(</m:mo><m:mspace width="1.5em"/><m:mo>,</m:mo><m:mspace width="1.5em"/><m:mo>)</m:mo></m:math> <newline/>
+ <m:math><m:mo>(</m:mo><m:mspace width="1.5em"/><m:mo>,</m:mo><m:mspace width="1.5em"/><m:mo>)</m:mo></m:math>
+     </para>
+     <para id="eip-idm405684880">
+          <span class="token">ⓓ</span> Write the equation of the line passing through the points you listed in part c. in slope intercept form. Show your work below.
+     </para>
+     <para id="eip-idm405072656">
+          <span class="token">ⓔ</span> Use the linear function you found in part d. to predict the fuel efficiency of an Audi A5 Quattro whose mass is 1610 kg.</para></problem>
+</exercise><exercise id="eip-490"><problem id="fs-id1933804">
+<para id="eip-idm687612348">The data set below shows the relationship between the number of hours worked and the tips received by Nyla, a server at Pi Pizzeria.
+
+<table id="fs-id1167333056737" class="unnumbered" summary="."><label/>
+<tgroup cols="8"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row valign="top">
+<entry>Hours worked in a week, x</entry>
+<entry>10</entry>
+  <entry>15</entry>
+    <entry>20</entry>
+    <entry>25</entry>
+    <entry>30</entry>
+    <entry>35</entry>
+    <entry>40</entry>
+  </row>
+<row valign="top">
+<entry>Tips received, y</entry>
+<entry>$66</entry>
+  <entry>$100</entry>
+    <entry>$118</entry>
+    <entry>$160</entry>
+    <entry>$190</entry>
+    <entry>$235</entry>
+    <entry>$272</entry>
+  </row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table></para><para id="eip-idm208190080"><span class="token">ⓐ</span> Draw a scatter plot (by hand or using a graphing utility) for the data provided being sure to label your axes.
+  </para>
+<para id="eip-idm243559904"><span class="token">ⓑ</span> Does the data appear to be linearly related? Is the association between the variables positive or negative?</para>
+<para id="eip-idm243558896">
+          <span class="token">ⓒ</span> Choose two points that seem to represent the general pattern in the data set. Write these points as ordered pairs below.<newline/> <m:math><m:mo>(</m:mo><m:mspace width="1.5em"/><m:mo>,</m:mo><m:mspace width="1.5em"/><m:mo>)</m:mo></m:math> <newline/>
+ <m:math><m:mo>(</m:mo><m:mspace width="1.5em"/><m:mo>,</m:mo><m:mspace width="1.5em"/><m:mo>)</m:mo></m:math>
+     </para>
+     <para id="eip-idm208630944">
+          <span class="token">ⓓ</span> Write the equation of the line passing through the points you listed in part c. in slope intercept form. Show your work below.
+     </para>
+     <para id="eip-idm208629792">
+          <span class="token">ⓔ</span> Based on the linear function you found in part d, how much could Nyla expect to make in tips if they work 38 hours in a given week?</para></problem>
+</exercise></section></section></section><para id="fs-id2164914">A professor is attempting to identify trends among final exam scores. His class has a mixture of students, so he wonders if there is any relationship between age and final exam scores. One way for him to analyze the scores is by creating a diagram that relates the age of each student to the exam score received. In this section, we will examine one such diagram known as a scatter plot.</para>
+  <section id="fs-id2188781">
+  <title>Drawing and Interpreting Scatter Plots</title>
+  <para id="fs-id1618160">A <term class="no-emphasis">scatter plot</term> is a graph of plotted points that may show a relationship between two sets of data. If the relationship is from a <term class="no-emphasis">linear model</term>, or a model that is nearly linear, the professor can draw conclusions using his knowledge of linear functions. <link target-id="Figure_04_03_001"/> shows a sample scatter plot.</para>
+  <figure id="Figure_04_03_001" class="small">
+  <media id="fs-id2575209" alt="Scatter plot, titled 'Final Exam Score VS Age'. The x-axis is the age, and the y-axis is the final exam score. The range of ages are between 20s - 50s, and the range for scores are between upper 50s and 90s.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_001.jpg"/>
+  </media>
+  <caption>A scatter plot of age and final exam score variables </caption>
+  </figure>
+  <para id="fs-id1621860">Notice this scatter plot does <emphasis effect="italics">not</emphasis> indicate a <term class="no-emphasis">linear relationship</term>. The points do not appear to follow a trend. In other words, there does not appear to be a relationship between the age of the student and the score on the final exam.</para>
+
+  <example id="Example_04_03_01">
+  <exercise id="fs-id1802821">
+  <problem id="fs-id1798376">
+  <title>Using a Scatter Plot to Investigate Cricket Chirps</title>
+  <para id="fs-id1797122"><link target-id="Table_04_03_01"/> shows the number of cricket chirps in 15 seconds, for several different air temperatures, in degrees Fahrenheit<footnote id="fs-id1535429">Selected data from http://classic.globe.gov/fsl/scientistsblog/2007/10/. Retrieved Aug 3, 2010</footnote>. Plot this data, and determine whether the data appears to be linearly related.</para>
+
+  <table id="Table_04_03_01" summary="Table with two rows and ten columns. The first column is labeled: “Chirps” and the second is labeled: “Temperature”. The values for chirps are: 44, 35, 20.4, 33, 31, 35, 18.5, 37, 26. The values for Temperature are: 80.5, 70.5, 57, 66, 68, 72, 52, 73.5, 53."><title>Cricket Chirps vs Air Temperature</title>
+  <tgroup cols="10"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <colspec colnum="7" colname="c7"/>
+  <colspec colnum="8" colname="c8"/>
+  <colspec colnum="9" colname="c9"/>
+  <colspec colnum="10" colname="c10"/>
+
+  <tbody>
+  <row>
+  <entry align="center"><emphasis>Chirps</emphasis></entry>
+  <entry align="center">44</entry>
+  <entry align="center">35</entry>
+  <entry align="center">20.4</entry>
+  <entry align="center">33</entry>
+  <entry align="center">31</entry>
+  <entry align="center">35</entry>
+  <entry align="center">18.5</entry>
+  <entry align="center">37</entry>
+  <entry align="center">26</entry>
+  </row>
+
+  <row>
+  <entry align="center"><emphasis>Temperature</emphasis></entry>
+  <entry align="center">80.5</entry>
+  <entry align="center">70.5</entry>
+  <entry align="center">57</entry>
+  <entry align="center">66</entry>
+  <entry align="center">68</entry>
+  <entry align="center">72</entry>
+  <entry align="center">52</entry>
+  <entry align="center">73.5</entry>
+  <entry align="center">53</entry>
+  </row>
+  </tbody>
+
+
+
+  </tgroup>
+  </table></problem>
+  <solution id="fs-id1798762">
+  <para id="fs-id2064463">Plotting this data, as depicted in <link target-id="Figure_04_03_002"/> suggests that there may be a trend. We can see from the trend in the data that the number of chirps increases as the temperature increases. The trend appears to be roughly linear, though certainly not perfectly so.</para>
+  <figure id="Figure_04_03_002" class="small">
+  <media id="fs-id2637811" alt="Scatter plot, titled 'Cricket Chirps vs. Air Temperature'. The x-axis is the Cricket Chirps in 15 Seconds, and the y-axis is the Temperature (F). The line regression is generally positive.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_002.jpg"/>
+  </media>
+  </figure>
+  </solution>
+  </exercise>
+  </example>
+  </section>
+
+  <section id="fs-id2672477">
+  <title>Finding the Line of Best Fit</title>
+  <para id="fs-id1798587">Once we recognize a need for a linear function to model that data, the natural follow-up question is “what is that linear function?” One way to approximate our linear function is to sketch the line that seems to best fit the data. Then we can extend the line until we can verify the <emphasis effect="italics">y</emphasis>-intercept. We can approximate the slope of the line by extending it until we can estimate the <m:math>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mtext>rise</m:mtext>
+     </m:mrow>
+     <m:mrow>
+      <m:mtext>run</m:mtext>
+     </m:mrow>
+    </m:mfrac>
+    <m:mo>.</m:mo>
+   </m:mrow>
+  </m:math> </para>
+
+  <example id="Example_04_03_02">
+  <exercise id="fs-id2262247">
+  <problem id="fs-id1575271">
+  <title>Finding a Line of Best Fit</title>
+  <para id="fs-id2268675">Find a linear function that fits the data in <link target-id="Table_04_03_01"/> by “eyeballing” a line that seems to fit.</para>
+  </problem>
+  <solution id="fs-id2510553">
+  <para id="fs-id1497780">On a graph, we could try sketching a line. Using the starting and ending points of our hand drawn line, points (0, 30) and (50, 90), this graph has a slope of</para>
+  <equation id="fs-id1801316" class="unnumbered"><label/> <m:math display="block">
+    <m:mtable>
+     <m:mtr>
+          <m:mtd columnalign="right">
+            <m:mi>m</m:mi></m:mtd>
+            <m:mtd><m:mo>=</m:mo></m:mtd>
+            <m:mtd columnalign="left"><m:mfrac>
+             <m:mrow>
+              <m:mn>60</m:mn>
+             </m:mrow>
+             <m:mrow>
+              <m:mn>50</m:mn>
+             </m:mrow>
+            </m:mfrac>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+     <m:mtd columnalign="right">
+       </m:mtd>
+       <m:mtd><m:mo>=</m:mo></m:mtd>
+       <m:mtd columnalign="left"><m:mn>1.2</m:mn>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+  </m:math>
+  </equation><para id="fs-id2651822">and a <emphasis effect="italics">y</emphasis>-intercept at 30. This gives an equation of</para>
+  <equation id="fs-id1676754" class="unnumbered"><label/> <m:math display="block">
+   <m:mrow>
+    <m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1.2</m:mn><m:mi>c</m:mi><m:mo>+</m:mo><m:mn>30</m:mn>
+   </m:mrow>
+  </m:math>
+  </equation><para id="fs-id2099384">where <m:math>
+   <m:mrow>
+    <m:mi>c</m:mi>
+   </m:mrow>
+  </m:math> is the number of chirps in 15 seconds, and <m:math>
+   <m:mrow>
+    <m:mi>T</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>c</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:math> is the temperature in degrees Fahrenheit. The resulting equation is represented in <link target-id="Figure_04_03_003"/>.</para>
+  <figure id="Figure_04_03_003" class="small">
+  <media id="fs-id1434802" alt="Scatter plot, showing the line of best fit: T(c) = 1.2c + 30. It is titled 'Cricket Chirps Vs Air Temperature'. The x-axis is 'c, Number of Chirps', and the y-axis is 'T(c), Temperature (F)'.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_003.jpg"/>
+  </media>
+  </figure>
+  </solution>
+  <commentary id="fs-id1486842">
+  <title>Analysis </title>
+  <para id="fs-id1720506">This linear equation can then be used to approximate answers to various questions we might ask about the trend.</para>
+  </commentary>
+
+  </exercise>
+  </example>
+
+  <section id="fs-id1720372">
+  <title>Recognizing Interpolation or Extrapolation</title>
+  <para id="fs-id1711565">While the data for most examples does not fall perfectly on the line, the equation is our best guess as to how the relationship will behave outside of the values for which we have data. We use a process known as <emphasis>interpolation </emphasis>when we predict a value inside the domain and range of the data. The process of <emphasis>extrapolation </emphasis>is used when we predict a value outside the domain and range of the data.</para>
+  <para id="fs-id2208869"><link target-id="Figure_04_03_004"/> compares the two processes for the cricket-chirp data addressed in <link target-id="Example_04_03_02"/>. We can see that interpolation would occur if we used our model to predict temperature when the values for chirps are between 18.5 and 44. Extrapolation would occur if we used our model to predict temperature when the values for chirps are less than 18.5 or greater than 44.</para>
+  <para id="fs-id2560478">There is a difference between making predictions inside the domain and range of values for which we have data and outside that domain and range. Predicting a value outside of the domain and range has its limitations. When our model no longer applies after a certain point, it is sometimes called <term>model breakdown</term>. For example, predicting a cost function for a period of two years may involve examining the data where the input is the time in years and the output is the cost. But if we try to extrapolate a cost when <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>50</m:mn><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> that is in 50 years, the model would not apply because we could not account for factors fifty years in the future.</para><figure id="Figure_04_03_004" class="small">
+  <media id="fs-id2757799" alt="Scatter plot, showing the line of best fit. It is titled 'Cricket Chirps Vs Air Temperature'. The x-axis is 'c, Number of Chirps', and the y-axis is 'T(c), Temperature (F)'.  The area around the scattered points is enclosed in a box labeled: Interpolation.  The area outside of this box is labeled: Extrapolation.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_004.jpg"/>
+  </media>
+  <caption>Interpolation occurs within the domain and range of the provided data whereas extrapolation occurs outside. </caption>
+  </figure>
+  <note id="fs-id2570361"><title>Interpolation and Extrapolation</title>
+
+  <para id="fs-id1633393">Different methods of making predictions are used to analyze data.
+  </para><para id="eip-872">The method of <term>interpolation</term> involves predicting a value inside the domain and/or range of the data.<newline/>
+  The method of <term>extrapolation</term> involves predicting a value outside the domain and/or range of the data.<newline/>
+  Model breakdown occurs at the point when the model no longer applies.
+  </para></note><example id="Example_04_03_03">
+  <exercise id="fs-id1691726">
+  <problem id="fs-id1620023">
+  <title>Understanding Interpolation and Extrapolation</title>
+  <para id="fs-id1842101">Use the cricket data from <link target-id="Table_04_03_01"/> to answer the following questions:</para>
+  <list id="fs-id1713857" list-type="enumerated" number-style="arabic" class="circled">
+  <item><span class="token">ⓐ</span>Would predicting the temperature when crickets are chirping 30 times in 15 seconds be interpolation or extrapolation? Make the prediction, and discuss whether it is reasonable.</item>
+  <item><span class="token">ⓑ</span>Would predicting the number of chirps crickets will make at 40 degrees be interpolation or extrapolation? Make the prediction, and discuss whether it is reasonable.</item>
+  </list></problem>
+  <solution id="fs-id1275922">
+  <list id="fs-id1570270" list-type="enumerated" number-style="arabic" class="circled">
+  <item><span class="token">ⓐ</span>The number of chirps in the data provided varied from 18.5 to 44. A prediction at 30 chirps per 15 seconds is inside the domain of our data, so would be interpolation. Using our model:<equation id="fs-id1202174" class="unnumbered"><label/><m:math>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd columnalign="right">
+        <m:mtext>T (30)</m:mtext>
+      </m:mtd>
+      <m:mtd>
+        <m:mo>=</m:mo>
+      </m:mtd>
+      <m:mtd columnalign="left">
+      <m:mtext>30 + 1.2(30)</m:mtext>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+      </m:mtd>
+      <m:mtd>
+       <m:mo>=</m:mo>
+      </m:mtd>
+      <m:mtd columnalign="left">
+  <m:mtext>66 degrees</m:mtext>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  </m:math>
+  </equation><para id="fs-id1555289">Based on the data we have, this value seems reasonable.</para></item>
+
+  <item><span class="token">ⓑ</span>The temperature values varied from 52 to 80.5. Predicting the number of chirps at 40 degrees is extrapolation because 40 is outside the range of our data. Using our model:<equation id="fs-id1251848" class="unnumbered"><label/><m:math display="block">
+   <m:mrow>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mn>40</m:mn><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>+</m:mo><m:mn>1.2</m:mn><m:mi>c</m:mi></m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mn>10</m:mn><m:mo>=</m:mo><m:mn>1.2</m:mn><m:mi>c</m:mi></m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mspace width="0.8em"/><m:mtext> </m:mtext><m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>8.33</m:mn></m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable></m:mrow>
+  </m:math>
+  </equation></item>
+
+  </list>
+  <para id="fs-id1594157">We can compare the regions of interpolation and extrapolation using <link target-id="Figure_04_03_005"/>.</para>
+  <figure id="Figure_04_03_005" class="small">
+  <media id="fs-id1284983" alt="Scatter plot, showing the line of best fit and where interpolation and extrapolation occurs. It is titled 'Cricket Chirps vs. Air Temperature'. The x-axis is 'c, Number of Chirps', and the y-axis is 'T(c), Temperature (F)'.  An additional point is plotted inside of the box to represent an interpolated point.  There is another additional point plotted outside of the box to represent an extrapolated point.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_005.jpg"/>
+  </media>
+  </figure>
+  </solution>
+  <commentary id="fs-id1422108">
+  <title>Analysis</title>
+  <para id="fs-id1768136">Our model predicts the crickets would chirp 8.33 times in 15 seconds. While this might be possible, we have no reason to believe our model is valid outside the domain and range. In fact, generally crickets stop chirping altogether below around 50 degrees.</para>
+  </commentary>
+  </exercise>
+  </example>
+
+  <note id="fs-id2181223" class="precalculus try">
+  <label>Try It</label>
+  <exercise id="ti_04_03_01">
+  <problem id="fs-id1589415"><para id="fs-id1585053">According to the data from <link target-id="Table_04_03_01"/>, what temperature can we predict it is if we counted 20 chirps in 15 seconds?</para></problem>
+  <solution id="fs-id1114973"><para id="fs-id1685205"> <m:math>
+   <m:mrow>
+    <m:mn>54</m:mn><m:mo>°</m:mo><m:mtext>F</m:mtext>
+   </m:mrow>
+  </m:math> </para></solution>
+  </exercise>
+  </note>
+
+  </section>
+  <section id="fs-id2064185">
+  <title>Finding the Line of Best Fit Using a Graphing Utility </title>
+  <para id="fs-id2293766">While eyeballing a line works reasonably well, there are statistical techniques for fitting a line to data that minimize the differences between the line and data values<footnote id="fs-id1476079">Technically, the method minimizes the sum of the squared differences in the vertical direction between the line and the data values.</footnote>. One such technique is called <term>least squares regression</term> and can be computed by many graphing calculators, spreadsheet software, statistical software, and many web-based calculators<footnote id="fs-id1502309">For example, http://www.shodor.org/unchem/math/lls/leastsq.html</footnote>. Least squares regression is one means to determine the line that best fits the data, and here we will refer to this method as linear regression.</para>
+  <note id="fs-id2627255" class="how-to-notitle">
+  <label>How To</label>
+  <para id="fs-id2251507"><emphasis>Given data of input and corresponding outputs from a linear function, find the best fit line using linear regression.</emphasis></para>
+  <list id="fs-id1503997" list-type="enumerated" number-style="arabic">
+  <item>Enter the input in List 1 (L1).</item>
+  <item>Enter the output in List 2 (L2).</item>
+  <item>On a graphing utility, select Linear Regression (LinReg).</item></list>
+  </note>
+
+  <example id="Example_04_03_04">
+  <exercise id="fs-id2065536">
+  <problem id="fs-id1632771">
+  <title>Finding a Least Squares Regression Line</title>
+  <para id="fs-id2575012">Find the least squares <term class="no-emphasis">regression line</term> using the cricket-chirp data in <link target-id="Table_04_03_02"/>.</para>
+  </problem>
+  <solution id="fs-id1183549">
+  <list id="fs-id1587366" list-type="enumerated" number-style="arabic">
+  <item>Enter the input (chirps) in List 1 (L1).</item>
+  <item>Enter the output (temperature) in List 2 (L2). See <link target-id="Table_04_03_02"/>.<table id="Table_04_03_02" summary="This table has two rows and ten columns. The first row is labeled: “L1” and the second is labeled: “L2”. The values in the first row are: 44, 35, 20.4, 33, 31, 35, 18.5, 37, 26. The values in the second row are: 80.5, 70.5, 57, 66, 68, 72, 52, 73.5, 53.">
+  <tgroup cols="10"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <colspec colnum="7" colname="c7"/>
+  <colspec colnum="8" colname="c8"/>
+  <colspec colnum="9" colname="c9"/>
+  <colspec colnum="10" colname="c10"/>
+
+  <tbody>
+  <row>
+  <entry align="center"><emphasis>L1</emphasis></entry>
+  <entry align="center">44</entry>
+  <entry align="center">35</entry>
+  <entry align="center">20.4</entry>
+  <entry align="center">33</entry>
+  <entry align="center">31</entry>
+  <entry align="center">35</entry>
+  <entry align="center">18.5</entry>
+  <entry align="center">37</entry>
+  <entry align="center">26</entry>
+  </row>
+
+  <row>
+  <entry align="center"><emphasis>L2</emphasis></entry>
+  <entry align="center">80.5</entry>
+  <entry align="center">70.5</entry>
+  <entry align="center">57</entry>
+  <entry align="center">66</entry>
+  <entry align="center">68</entry>
+  <entry align="center">72</entry>
+  <entry align="center">52</entry>
+  <entry align="center">73.5</entry>
+  <entry align="center">53</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table></item>
+
+
+  <item>On a graphing utility, select Linear Regression (LinReg). Using the cricket chirp data from earlier, with technology we obtain the equation:</item>
+  </list>
+  <equation id="fs-id1618400" class="unnumbered"><label/><m:math>
+   <m:mrow>
+    <m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>30.281</m:mn><m:mo>+</m:mo><m:mn>1.143</m:mn><m:mi>c</m:mi>
+   </m:mrow>
+  </m:math> </equation>
+  </solution>
+  <commentary id="fs-id1594310">
+  <title>Analysis </title>
+  <para id="fs-id1695711">Notice that this line is quite similar to the equation we “eyeballed” but should fit the data better. Notice also that using this equation would change our prediction for the temperature when hearing 30 chirps in 15 seconds from 66 degrees to:</para>
+  <equation id="fs-id2136214" class="unnumbered"><label/><m:math display="block">
+   <m:mrow>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>30.281</m:mn><m:mo>+</m:mo><m:mn>1.143</m:mn><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mspace width="0.8em"/><m:mtext>        </m:mtext><m:mo>=</m:mo><m:mn>64.571</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mspace width="0.8em"/><m:mtext>        </m:mtext><m:mo>≈</m:mo><m:mn>64.6</m:mn><m:mspace width="0.8em"/><m:mtext>degrees</m:mtext>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  </m:math>
+  </equation><para id="fs-id1552163">The graph of the scatter plot with the least squares regression line is shown in <link target-id="Figure_04_03_006"/>.</para>
+  <figure id="Figure_04_03_006" class="small">
+  <media id="fs-id2099377" alt="Scatter plot, showing the line of best fit: T(c) = 30.281 + 1.143c. It is titled 'Cricket Chirps vs. Air Temperature'. The x-axis is 'c, Number of Chirps', and the y-axis is 'T(c), Temperature (F)'.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_006.jpg"/>
+  </media>
+  </figure>
+  </commentary>
+
+  </exercise>
+  </example>
+  <note id="fs-id1592598" class="precalculus qa">
+  <label>Q&amp;A</label>
+  <para id="fs-id2181364"><emphasis>Will there ever be a case where two different lines will serve as the best fit for the data? </emphasis></para>
+  <para id="fs-id1688806"><emphasis effect="italics">No. There is only one best fit line.</emphasis></para>
+  </note>
+  </section>
+  </section>
+
+  <section id="fs-id1459299"><title>Distinguishing Between Linear and Nonlinear Models</title><para id="fs-id1586029">As we saw above with the cricket-chirp model, some data exhibit strong linear trends, but other data, like the final exam scores plotted by age, are clearly nonlinear. Most calculators and computer software can also provide us with the <term class="no-emphasis">correlation coefficient</term>, which is a measure of how closely the line fits the data. Many graphing calculators require the user to turn a "diagnostic on" selection to find the correlation coefficient, which mathematicians label as <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi>
+   </m:mrow>
+  </m:math> The correlation coefficient provides an easy way to get an idea of how close to a line the data falls.</para><para id="fs-id2674051">We should compute the correlation coefficient only for data that follows a linear pattern or to determine the degree to which a data set is linear. If the data exhibits a nonlinear pattern, the correlation coefficient for a linear regression is meaningless. To get a sense for the relationship between the value of <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi>
+   </m:mrow>
+  </m:math> and the graph of the data, <link target-id="Figure_04_03_007"/> shows some large data sets with their correlation coefficients. Remember, for all plots, the horizontal axis shows the input and the vertical axis shows the output.</para>
+  <figure id="Figure_04_03_007">
+  <media id="fs-id1450932" alt="Correlation coefficients values range from -1.0 - 1.0.  Collections of dots representing an example of each kind of correlation coefficient are plotted underneath them.  The closer to 1.0 the more the points are grouped tightly to form a line in the positive direction.  The closer to -1.0 the more the points are grouped tightly to form a line in the negative direction.  The closer to 0 the points are very scattered and do not form a line.  Several shapes are displayed at the bottom row, none of which are lines, but all of them have values of 0.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_007.jpg"/>
+  </media>
+  <caption>Plotted data and related correlation coefficients. (credit: “DenisBoigelot,” Wikimedia Commons)</caption>
+  </figure>
+
+  <note id="fs-id1415360">
+  <label/>
+  <title>Correlation Coefficient</title>
+  <para id="fs-id1589701">The <emphasis>correlation coefficient</emphasis> is a value, <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> between –1 and 1.</para>
+  <list id="fs-id1963658" list-type="bulleted">
+  <item> <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  </m:math> suggests a positive (increasing) relationship</item>
+  <item> <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  </m:math> suggests a negative (decreasing) relationship</item>
+  <item>The closer the value is to 0, the more scattered the data.</item>
+  <item>The closer the value is to 1 or –1, the less scattered the data is.</item></list>
+  </note>
+
+  <example id="Example_04_03_05">
+  <exercise id="fs-id1367501">
+  <problem id="fs-id1703090">
+  <title>Finding a Correlation Coefficient </title>
+  <para id="fs-id2165511">Calculate the correlation coefficient for cricket-chirp data in <link target-id="Table_04_03_01"/>.</para>
+  </problem>
+  <solution id="fs-id1472565">
+  <para id="fs-id2164982">Because the data appear to follow a linear pattern, we can use technology to calculate <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi>
+   </m:mrow>
+  </m:math> Enter the inputs and corresponding outputs and select the Linear Regression. The calculator will also provide you with the correlation coefficient, <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.9509.</m:mn>
+   </m:mrow>
+  </m:math> This value is very close to 1, which suggests a strong increasing linear relationship.</para>
+  <para id="fs-id1154034">Note: For some calculators, the Diagnostics must be turned "on" in order to get the correlation coefficient when linear regression is performed: [2nd]&gt;[0]&gt;[alpha][x–1], then scroll to <emphasis>DIAGNOSTICSON</emphasis>.</para></solution>
+  </exercise>
+  </example>
+  </section><section id="fs-id1840824">
+  <title>Fitting a Regression Line to a Set of Data </title>
+  <para id="fs-id1685569">Once we determine that a set of data is linear using the correlation coefficient, we can use the regression line to make predictions. As we learned above, a regression line is a line that is closest to the data in the scatter plot, which means that only one such line is a best fit for the data.</para>
+  <example id="Example_04_03_06">
+  <exercise id="fs-id917127"><problem id="fs-id1827875">
+  <title>Using a Regression Line to Make Predictions</title>
+  <para id="fs-id1587319">Gasoline consumption in the United States has been steadily increasing. Consumption data from 1994 to 2004 is shown in <link target-id="Table_04_03_03"/>.<footnote id="eip-id1796890">http://www.bts.gov/publications/national_transportation_statistics/2005/html/table_04_10.html</footnote> Determine whether the trend is linear, and if so, find a model for the data. Use the model to predict the consumption in 2008.</para>
+
+  <table id="Table_04_03_03" summary="This table has two rows and twelve columns. The first row is labeled: “Year” and the second is labeled: “Consumption (billions of gallons)”. The values in the first row are: ’94, ’95, ’96, ’97, ’98, ’99, ’00, ’01, ’02, ’03, ’04. The values in the second row are: 113, 116, 118, 119, 123, 125, 126, 128, 131, 133, 136.">
+  <tgroup cols="12"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <colspec colnum="7" colname="c7"/>
+  <colspec colnum="8" colname="c8"/>
+  <colspec colnum="9" colname="c9"/>
+  <colspec colnum="10" colname="c10"/>
+  <colspec colnum="11" colname="c11"/>
+  <colspec colnum="12" colname="c12"/>
+  <tbody>
+  <row>
+  <entry align="center"><emphasis>Year</emphasis></entry>
+  <entry align="center">'94</entry>
+  <entry align="center">'95</entry>
+  <entry align="center">'96</entry>
+  <entry align="center">'97</entry>
+  <entry align="center">'98</entry>
+  <entry align="center">'99</entry>
+  <entry align="center">'00</entry>
+  <entry align="center">'01</entry>
+  <entry align="center">'02</entry>
+  <entry align="center">'03</entry>
+  <entry align="center">'04</entry>
+  </row>
+
+  <row>
+  <entry align="center"><emphasis>Consumption (billions of gallons)</emphasis></entry>
+  <entry align="center">113</entry>
+  <entry align="center">116</entry>
+  <entry align="center">118</entry>
+  <entry align="center">119</entry>
+  <entry align="center">123</entry>
+  <entry align="center">125</entry>
+  <entry align="center">126</entry>
+  <entry align="center">128</entry>
+  <entry align="center">131</entry>
+  <entry align="center">133</entry>
+  <entry align="center">136</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table><para id="fs-id1460109">The scatter plot of the data, including the least squares regression line, is shown in <link target-id="Figure_04_03_008"/>.</para>
+  <figure id="Figure_04_03_008" class="small">
+  <media id="fs-id2529687" alt="Scatter plot, showing the line of best fit. It is titled 'Gas Consumption VS Year'. The x-axis is 'Year After 1994', and the y-axis is 'Gas Consumption (billions of gallons)'. The points are strongly positively correlated and the line of best fit goes through most of the points completely. ">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_008.jpg"/>
+  </media>
+  </figure>
+  </problem>
+  <solution id="fs-id1421219">
+  <para id="fs-id1588946">We can introduce a new input variable, <m:math>
+   <m:mrow>
+    <m:mi>t</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> representing years since 1994.</para><para id="fs-id1565498">The least squares regression equation is:</para>
+  <equation id="fs-id2065061" class="unnumbered"><label/><m:math>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>113.318</m:mn><m:mo>+</m:mo><m:mn>2.209</m:mn><m:mi>t</m:mi>
+   </m:mrow>
+  </m:math> </equation>
+  <para id="fs-id1503420">Using technology, the correlation coefficient was calculated to be 0.9965, suggesting a very strong increasing linear trend.</para>
+  <para id="fs-id2786561">Using this to predict consumption in 2008 <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> </para>
+  <equation id="fs-id1737282" class="unnumbered"><label/><m:math display="block">
+   <m:mrow>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>113.318</m:mn><m:mo>+</m:mo><m:mn>2.209</m:mn><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mspace width="0.8em"/><m:mtext>        </m:mtext><m:mo>=</m:mo><m:mn>144.244</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  </m:math>
+  </equation><para id="fs-id1716786">The model predicts 144.244 billion gallons of gasoline consumption in 2008.</para>
+  </solution>
+  </exercise></example>
+  <note id="fs-id1799110" class="precalculus try">
+  <label>Try It</label>
+  <exercise id="ti_04_03_02">
+  <problem id="fs-id1549586"><para id="fs-id1619902">Use the model we created using technology in <link target-id="Example_04_03_06"/> to predict the gas consumption in 2011. Is this an interpolation or an extrapolation? </para></problem>
+  <solution id="fs-id2165151"><para id="fs-id1608557"> 150.871 billion gallons; extrapolation </para></solution>
+  </exercise>
+  </note>
+
+  <note id="fs-id1551115" class="media-notitle">
+  <label>Media</label>
+  <para id="fs-id1582076">Access these online resources for additional instruction and practice with fitting linear models to data.</para>
+  <list id="bulleted">
+  <item><link url="http://openstax.org/l/introregress">Introduction to Regression Analysis</link></item>
+  <item><link url="http://openstax.org/l/linearregress">Linear Regression</link></item>
+  </list>
+  </note>
+  </section>
+  <section id="fs-id1486512" class="key-concepts">
+  <title>Key Concepts</title>
+
+  <list id="fs-id1862819" list-type="bulleted"><item>Scatter plots show the relationship between two sets of data. See <link target-id="Example_04_03_01"/>.</item>
+  <item>Scatter plots may represent linear or non-linear models.</item>
+  <item>The line of best fit may be estimated or calculated, using a calculator or statistical software. See <link target-id="Example_04_03_02"/>.</item>
+  <item>Interpolation can be used to predict values inside the domain and range of the data, whereas extrapolation can be used to predict values outside the domain and range of the data. See <link target-id="Example_04_03_03"/>.</item>
+  <item>The correlation coefficient, <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> indicates the degree of linear relationship between data. See <link target-id="Example_04_03_04"/>.</item>
+  <item>A regression line best fits the data. See <link target-id="Example_04_03_05"/>.</item>
+  <item>The least squares regression line is found by minimizing the squares of the distances of points from a line passing through the data and may be used to make predictions regarding either of the variables. See <link target-id="Example_04_03_06"/>.</item>
+  </list></section>
+  <section id="fs-id1799811" class="section-exercises">
+      <title>Section Exercises</title>
+  <section id="fs-id942179">
+  <title>Verbal</title>
+  <exercise id="fs-id2598318"><problem id="fs-id2248686"><para id="fs-id1598256">Describe what it means if there is a model breakdown when using a linear model.</para></problem>
+  <solution id="fs-id1698868"><para id="fs-id1412205">When our model no longer applies, after some value in the domain, the model itself doesn’t hold.</para></solution></exercise>
+  <exercise id="fs-id2638023"><problem id="fs-id1690731"><para id="fs-id2090338">What is interpolation when using a linear model?</para></problem></exercise>
+  <exercise id="fs-id888239"><problem id="fs-id940827"><para id="fs-id1709982">What is extrapolation when using a linear model?</para></problem>
+  <solution id="fs-id926962"><para id="fs-id2113896">We predict a value outside the domain and range of the data.</para></solution></exercise>
+  <exercise id="fs-id918008"><problem id="fs-id1472127"><para id="fs-id894113">Explain the difference between a positive and a negative correlation coefficient.</para></problem></exercise>
+  <exercise id="fs-id2158268"><problem id="fs-id2098659"><para id="fs-id1791770">Explain how to interpret the absolute value of a correlation coefficient.</para></problem>
+  <solution id="fs-id1228961"><para id="fs-id1570206">The closer the number is to 1, the less scattered the data, the closer the number is to 0, the more scattered the data.</para></solution></exercise>
+  </section>
+
+
+
+
+  <section id="fs-id1619206"><title>Algebraic</title><exercise id="fs-id2484796" class="material-set-2"><problem id="fs-id1540854"><para id="fs-id2552133">A regression was run to determine whether there is a relationship between hours of TV watched per day <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math> and number of sit-ups a person can do <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+   </m:mrow>
+  </m:math> The results of the regression are given below. Use this to predict the number of sit-ups a person who watches 11 hours of TV can do.</para>
+  <equation id="fs-id1487852" class="unnumbered"><label/><m:math display="block">
+   <m:mrow>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>−1.341</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>32.234</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mspace width="0.8em"/><m:mtext/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>−0.896</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  </m:math>
+  </equation></problem></exercise>
+  <exercise id="fs-id1541363" class="material-set-2"><problem id="fs-id2643682"><para id="fs-id1626298">A regression was run to determine whether there is a relationship between the diameter of a tree ( <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  </m:math> , in inches) and the tree’s age ( <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi>
+   </m:mrow>
+  </m:math> , in years). The results of the regression are given below. Use this to predict the age of a tree with diameter 10 inches.</para>
+  <equation id="fs-id1474007" class="unnumbered"><label/><m:math display="block">
+   <m:mrow>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>6.301</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>−1.044</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mspace width="0.8em"/><m:mtext/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>−0.970</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  </m:math>
+  </equation></problem>
+  <solution id="fs-id2593843"><para id="fs-id2159539">61.966 years</para></solution></exercise><para id="fs-id2051997">For the following exercises, draw a scatter plot for the data provided. Does the data appear to be linearly related?</para>
+  <exercise id="fs-id1790165" class="material-set-2"><problem id="fs-id2634740">
+  <table id="Table_04_03_04" summary="This table includes two rows and six columns. The values in the first row are 0, 2, 4, 6, 8, 10. The values in the second row are: -22, -19, -15, -11, -6, -2." class="unnumbered">
+  <tgroup cols="6"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+
+  <tbody>
+  <row>
+  <entry align="center">0</entry>
+  <entry align="center">2</entry>
+  <entry align="center">4</entry>
+  <entry align="center">6</entry>
+  <entry align="center">8</entry>
+  <entry align="center">10</entry>
+  </row>
+
+  <row>
+  <entry align="center">–22</entry>
+  <entry align="center">–19</entry>
+  <entry align="center">–15</entry>
+  <entry align="center">–11</entry>
+  <entry align="center">–6</entry>
+  <entry align="center">–2</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table></problem></exercise><exercise id="fs-id2217614" class="material-set-2"><problem id="fs-id2097711">
+  <table id="Table_04_03_35" summary="This table has two rows and six columns. The values in the first row are: 1, 2, 3, 4, 5, 6. The values in the second row are 46, 50, 59, 75, 100, 136." class="unnumbered">
+  <tgroup cols="6"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+
+  <tbody>
+  <row>
+  <entry align="center">1</entry>
+  <entry align="center">2</entry>
+  <entry align="center">3</entry>
+  <entry align="center">4</entry>
+  <entry align="center">5</entry>
+  <entry align="center">6</entry>
+  </row>
+
+  <row>
+  <entry align="center">46</entry>
+  <entry align="center">50</entry>
+  <entry align="center">59</entry>
+  <entry align="center">75</entry>
+  <entry align="center">100</entry>
+  <entry align="center">136</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table></problem>
+  <solution id="fs-id1412608">
+  <media id="fs-id1552024" alt="Scatter plot with a collection of points appearing at (1,46); (2,50); (3,59); (4,75); (5, 100); and (6,136); they do not appear linear">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_234.jpg"/>
+  </media>
+  <para id="fs-id1534066">No.</para></solution></exercise><exercise id="fs-id1541935" class="material-set-2"><problem id="fs-id1374381">
+  <table id="Table_04_03_05" summary="Two rows and six columns. The values in the first row are: 100, 250, 300, 450, 600, 750. The values in the second row are: 12, 12.6, 13.1, 14, 14.5, 15.2." class="unnumbered">
+  <tgroup cols="6"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+
+  <tbody>
+  <row>
+  <entry align="center">100</entry>
+  <entry align="center">250</entry>
+  <entry align="center">300</entry>
+  <entry align="center">450</entry>
+  <entry align="center">600</entry>
+  <entry align="center">750</entry>
+  </row>
+
+  <row>
+  <entry align="center">12</entry>
+  <entry align="center">12.6</entry>
+  <entry align="center">13.1</entry>
+  <entry align="center">14</entry>
+  <entry align="center">14.5</entry>
+  <entry align="center">15.2</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table></problem></exercise><exercise id="fs-id894444" class="material-set-2"><problem id="fs-id893652"><table id="Table_04_03_06" summary="Two rows and six columns. The values in the first row are: 1, 3, 5, 7, 9, 11. The values in the second row are 1, 9, 28, 65, 125, 216." class="unnumbered">
+  <tgroup cols="6"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+
+  <tbody>
+  <row>
+  <entry align="center">1</entry>
+  <entry align="center">3</entry>
+  <entry align="center">5</entry>
+  <entry align="center">7</entry>
+  <entry align="center">9</entry>
+  <entry align="center">11</entry>
+  </row>
+
+  <row>
+  <entry align="center">1</entry>
+  <entry align="center">9</entry>
+  <entry align="center">28</entry>
+  <entry align="center">65</entry>
+  <entry align="center">125</entry>
+  <entry align="center">216</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table></problem>
+
+  <solution id="fs-id1326815">
+  <media id="fs-id1382151" alt="Scatterplot with a collection of points at (1,1); (3,9); (5,28); (7,65); (9,125); and (11,216); they do not appear linear">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_236.jpg"/>
+  </media>
+  <para id="fs-id1542149">No.</para></solution></exercise><exercise id="fs-id1549099" class="material-set-2"><problem id="fs-id2257504"><para id="fs-id1536153">For the following data, draw a scatter plot. If we wanted to know when the population would reach 15,000, would the answer involve interpolation or extrapolation? Eyeball the line, and estimate the answer.</para>
+  <table id="Table_04_03_07" summary="This table includes two columns and six rows. The first column is labeled: “Year” and the second is labeled: “Population”. The values in the first column are: 1990, 1995, 2000, 2005, 2010. The values in the second column are 11,500; 12,100; 12,700; 13,000; 13,750." class="unnumbered">
+  <tgroup cols="2"><thead>
+  <row>
+  <entry align="center"><emphasis>Year</emphasis></entry>
+  <entry align="center"><emphasis>Population</emphasis></entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry align="center">1990</entry><entry align="center">11,500</entry>
+  </row>
+  <row>
+  <entry align="center">1995</entry><entry align="center">12,100</entry>
+  </row>
+  <row>
+  <entry align="center">2000</entry><entry align="center">12,700</entry>
+  </row>
+  <row>
+  <entry align="center">2005</entry><entry align="center">13,000</entry>
+  </row>
+  <row>
+  <entry align="center">2010</entry><entry align="center">13,750</entry>
+  </row>
+  </tbody>
+
+
+  </tgroup>
+  </table></problem></exercise><exercise id="fs-id2202140"><problem id="fs-id1737923" class="material-set-2"><para id="fs-id1604883">For the following data, draw a scatter plot. If we wanted to know when the temperature would reach 28°F, would the answer involve interpolation or extrapolation? Eyeball the line and estimate the answer.</para>
+
+  <table id="Table_04_03_08" summary="This table includes two rows and six columns.  The first column is labeled: “Temperature, °F” and the second is labeled: “Time, seconds”.  The values in the first row are 16, 18, 20, 25, 30.  The values in the second row are: 46, 50, 54, 55, 62." class="unnumbered">
+  <title/>
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+
+  <tbody>
+  <row>
+  <entry align="center"><emphasis>Temperature,°F</emphasis></entry>
+  <entry align="center">16</entry>
+  <entry align="center">18</entry>
+  <entry align="center">20</entry>
+  <entry align="center">25</entry>
+  <entry align="center">30</entry>
+  </row>
+  <row>
+  <entry align="center"><emphasis>Time, seconds</emphasis></entry>
+  <entry align="center">46</entry>
+  <entry align="center">50</entry>
+  <entry align="center">54</entry>
+  <entry align="center">55</entry>
+  <entry align="center">62</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </problem>
+  <solution id="fs-id2078772">
+  <media id="fs-id2099243" alt="Scatterplot with a collection of points at (16,46); (18,50); (20,54); (25,55); and (30,62); they appear nonlinear">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_238.jpg"/>
+  </media>
+  <para id="fs-id1470010">Interpolation. About <m:math>
+   <m:mrow>
+    <m:mn>60</m:mn><m:mo>°</m:mo><m:mi>F</m:mi><m:mo>.</m:mo>
+   </m:mrow>
+  </m:math> </para></solution>
+  </exercise></section><section id="fs-id1475649"><title>Graphical</title><para id="fs-id2570326">For the following exercises, match each scatterplot with one of the four specified correlations in <link target-id="Figure_04_03_201"/> and <link target-id="Figure_04_03_202a"/><emphasis>.</emphasis></para>
+  <figure id="Figure_04_03_201"><media id="fs-id1566729" alt="Side-by-side scatter plots.  The first is a scattered correlation in the positive direction.  The second is a scattered correlation in the negative direction">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_204ab.jpg"/>
+  </media>
+  </figure><figure id="Figure_04_03_202a">
+  <media id="fs-id1561291" alt="Side-by-side scatter plots.  The first has a strong negative correlation with all the points spaced out evenly near the top and center, but more spread out near the bottom.  The second has a strong positive correlation, with the points more spread out near the bottom and closer together near the center and top.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_204cd.jpg"/>
+  </media>
+  </figure>
+  <exercise id="fs-id1284066"><problem id="fs-id1364781"><para id="fs-id1380305"> <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn><m:mtext>95</m:mtext>
+   </m:mrow>
+  </m:math> </para></problem></exercise>
+  <exercise id="fs-id1619998"><problem id="fs-id834228"><para id="fs-id2477405"> <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>−0.</m:mn><m:mtext>89</m:mtext>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="fs-id2135920"><para id="fs-id1395980"> <m:math>
+   <m:mrow>
+    <m:mtext>This value of r indicates a strong negative correlation or slope, so C</m:mtext>
+   </m:mrow>
+  </m:math>
+  </para></solution></exercise>
+  <exercise id="fs-id2281428"><problem id="fs-id1501585"><para id="fs-id1738451"> <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>−0.26</m:mn>
+   </m:mrow>
+  </m:math> </para></problem></exercise>
+  <exercise id="fs-id2660448"><problem id="fs-id1412044"><para id="fs-id1575825"> <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>−0.39</m:mn>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="fs-id995908"><para id="fs-id1708754"> <m:math>
+   <m:mrow>
+    <m:mtext>This value of r indicates a weak negative correlation, so B</m:mtext>
+   </m:mrow>
+  </m:math> </para></solution></exercise>
+
+  <para id="fs-id1691868">For the following exercises, draw a best-fit line for the plotted data.</para>
+  <exercise id="fs-id1374546" class="material-set-2"><problem id="fs-id1694634">
+  <media id="fs-id2094007" alt="Scatter plot with a domain of 0 to 10 and a range of 4 to 9.  The points are at (0,5); (2.1,4.2); (3.5,6); (4.5,6.5); (5.5,6.8); (7,7.4); (8,8.5); (9,8); and (10,9).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_02_04_202.jpg"/>
+  </media>
+  </problem></exercise><exercise id="fs-id2366654" class="material-set-2"><problem id="fs-id2366655">
+  <media id="fs-id2157593" alt="Scatter plot with a domain of 0 to 10 and a range of -1 to 4.  The points are at (0,1.5); (1.5, -0.1); (2.1,1.9); (3.4, 1.5); (4.5,2.5); (5.8,2.2); (6.8,3.8); (7.8,3.6); (8.8,2); and (10,2.4).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_204-b8a4.jpg"/>
+  </media>
+  </problem>
+  <solution id="fs-id1729040">
+  <media id="fs-id1565517" alt="Scatter plot with domain 0 to 10 and a range from -1 to 4 with the line of best fit drawn going through the points: (0,1.5); (1.5, -0.1); (2.1,1.9); (3.4, 1.5); (4.5,2.5); (5.8,2.2); (6.8,3.8); (7.8,3.6); (8.8,2); and (10,2.4).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_205.jpg"/>
+  </media>
+  </solution></exercise><exercise id="fs-id1703008" class="material-set-2"><problem id="fs-id1703009">
+  <media id="fs-id1630678" alt="Scatter plot with a domain of 0 to 10 and range of 0 to 7 with the points: (0,7.3); (1,7); (2.2,6); (3.6,7); (4.8,6.2); (5.8,4); (6.6,3.8); (7.9,2.4); (8.8,2); and (10,0.1).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_206-a048.jpg"/>
+  </media>
+  </problem></exercise><exercise id="fs-id1581440" class="material-set-2"><problem id="fs-id1581441">
+  <media id="fs-id1451072" alt="Scatter plot with a domain of 0 to 10 and a range of 2 to 6 with the points: (0,2.1); (1,3.9); (2.1,3.6); (3.6,3.9); (4.4,4); (5.6,4.2); (6.8,5); (7.8,5); (9,5.6); and (10,6).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_208-1265.jpg"/>
+  </media>
+  </problem>
+  <solution id="fs-id1702047">
+  <media id="fs-id1968088" alt="Scatter plot with a domain of 0 to 10 and a range of 2 to 6 and the line of best fit going through the points: (0,2.1); (1,3.9); (2.1,3.6); (3.6,3.9); (4.4,4); (5.6,4.2); (6.8,5); (7.8,5); (9,5.6); and (10,6)">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_210.jpg"/>
+  </media>
+  </solution>
+  </exercise></section><section id="fs-id2464699">
+  <title>Numeric</title>
+  <exercise id="fs-id1690887"><problem id="fs-id1690888"><para id="fs-id1695773">The U.S. Census tracks the percentage of persons 25 years or older who are college graduates. That data for several years is given in <link target-id="Table_04_03_11"/>.<footnote id="fs-id2758031">Based on data from http://www.census.gov/hhes/socdemo/education/data/cps/historical/index.html. Accessed 5/1/2014.</footnote> Determine whether the trend appears linear. If so, and assuming the trend continues, in what year will the percentage exceed 35%?</para>
+  <table id="Table_04_03_11" summary="This table includes two columns and eleven rows. The first column is labeled: “Year” and the second is labeled: “Percent Graduates”. The values in the first column are: 1990, 1992, 1994, 1996, 1998, 2000, 2002, 2004, 2006, 2008. The values in the second column are: 21.3, 21.4, 22.2, 23.6, 24.4, 25.6, 26.7, 27.7, 28, 29.4">
+  <tgroup cols="2"><thead>
+  <row>
+  <entry align="center"><emphasis>Year</emphasis></entry>
+  <entry align="center"><emphasis>Percent Graduates</emphasis></entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry align="center">1990</entry><entry align="center">21.3</entry>
+  </row>
+  <row>
+  <entry align="center">1992</entry><entry align="center">21.4</entry>
+  </row>
+  <row>
+  <entry align="center">1994</entry><entry align="center">22.2</entry>
+  </row>
+  <row>
+  <entry align="center">1996</entry><entry align="center">23.6</entry>
+  </row>
+  <row>
+  <entry align="center">1998</entry><entry align="center">24.4</entry>
+  </row>
+  <row>
+  <entry align="center">2000</entry><entry align="center">25.6</entry>
+  </row>
+  <row>
+  <entry align="center">2002</entry><entry align="center">26.7</entry>
+  </row>
+  <row>
+  <entry align="center">2004</entry><entry align="center">27.7</entry>
+  </row>
+  <row>
+  <entry align="center">2006</entry><entry align="center">28</entry>
+  </row>
+  <row>
+  <entry align="center">2008</entry><entry align="center">29.4</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table></problem></exercise>
+  <exercise id="fs-id1798367"><problem id="fs-id1565618"><para id="fs-id1565619">The U.S. import of wine (in hectoliters) for several years is given in <link target-id="Table_04_03_12"/>. Determine whether the trend appears linear. If so, and assuming the trend continues, in what year will imports exceed 12,000 hectoliters?</para>
+  <table id="Table_04_03_12" summary="This table includes two columns and eleven rows. The first column is labeled: “Year” and the second is labeled: “Imports”. The values in the first column are: 1992, 1994, 1996, 1998, 2000, 2002, 2004, 2006, 2008, 2009. The values in the second solumn are: 2665, 2688, 3565, 4129, 4584, 5655, 6549, 7950, 8487, 9462">
+  <tgroup cols="2"><thead>
+  <row>
+  <entry align="center"><emphasis>Year</emphasis></entry>
+  <entry align="center"><emphasis>Imports</emphasis></entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry align="center">1992</entry><entry align="center">2665</entry>
+  </row>
+  <row>
+  <entry align="center">1994</entry><entry align="center">2688</entry>
+  </row>
+  <row>
+  <entry align="center">1996</entry><entry align="center">3565</entry>
+  </row>
+  <row>
+  <entry align="center">1998</entry><entry align="center">4129</entry>
+  </row>
+  <row>
+  <entry align="center">2000</entry><entry align="center">4584</entry>
+  </row>
+  <row>
+  <entry align="center">2002</entry><entry align="center">5655</entry>
+  </row>
+  <row>
+  <entry align="center">2004</entry><entry align="center">6549</entry>
+  </row>
+  <row>
+  <entry align="center">2006</entry><entry align="center">7950</entry>
+  </row>
+  <row>
+  <entry align="center">2008</entry><entry align="center">8487</entry>
+  </row>
+  <row>
+  <entry align="center">2009</entry><entry align="center">9462</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table></problem>
+  <solution id="fs-id1629449"><para id="fs-id1629450">Yes, trend appears linear because <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn><m:mtext>985</m:mtext>
+   </m:mrow>
+  </m:math> and will exceed 12,000 near midyear, 2016, 24.6 years since 1992.</para></solution></exercise>
+  <exercise id="fs-id1487111"><problem id="fs-id1900537"><para id="fs-id1900538"><link target-id="Table_04_03_13"/> shows the year and the number of people unemployed in a particular city for several years. Determine whether the trend appears linear. If so, and assuming the trend continues, in what year will the number of unemployed reach 5?</para>
+  <table id="Table_04_03_13" summary="This table includes two columns and eleven rows. The first column is labeled: “Year” and the second is labeled: “Number Unemployed”. The values in the first column are: 1990, 1992, 1994, 1996, 1998, 2000, 2002, 2004, 2006, 2008. The values in the second column are: 750, 670, 650, 605, 550, 510, 460, 420, 380, 320.">
+  <tgroup cols="2"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+
+  <thead>
+  <row>
+  <entry align="center"><emphasis>Year</emphasis></entry>
+  <entry align="center"><emphasis>Number Unemployed</emphasis></entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry align="center">1990</entry><entry align="center">750</entry>
+  </row>
+  <row>
+  <entry align="center">1992</entry><entry align="center">670</entry>
+  </row>
+  <row>
+  <entry align="center">1994</entry><entry align="center">650</entry>
+  </row>
+  <row>
+  <entry align="center">1996</entry><entry align="center">605</entry>
+  </row>
+  <row>
+  <entry align="center">1998</entry><entry align="center">550</entry>
+  </row>
+  <row>
+  <entry align="center">2000</entry><entry align="center">510</entry>
+  </row>
+  <row>
+  <entry align="center">2002</entry><entry align="center">460</entry>
+  </row>
+  <row>
+  <entry align="center">2004</entry><entry align="center">420</entry>
+  </row>
+  <row>
+  <entry align="center">2006</entry><entry align="center">380</entry>
+  </row>
+  <row>
+  <entry align="center">2008</entry><entry align="center">320</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table></problem>
+  </exercise>
+  </section>
+
+  <section id="fs-id1390394"><title>Technology</title><para id="fs-id2368077">For the following exercises, use each set of data to calculate the regression line using a calculator or other technology tool, and determine the correlation coefficient to 3 decimal places of accuracy.</para>
+  <exercise id="fs-id1712789" class="material-set-2"><problem id="fs-id2041879"><table id="Table_04_03_14" summary="This table includes two rows and six columns. The first row is labeled: “x” and the second is labeled: “y”. The values in the first row are: 8, 15, 26, 31, 56. The values in the second row are: 23, 41, 53, 72, 103." class="unnumbered">
+  <tgroup cols="6"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <tbody>
+  <row>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>x</m:mi>
+  </m:math> </emphasis></entry>
+  <entry align="center">8</entry>
+  <entry align="center">15</entry>
+  <entry align="center">26</entry>
+  <entry align="center">31</entry>
+  <entry align="center">56</entry>
+  </row>
+  <row>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>y</m:mi>
+  </m:math> </emphasis></entry>
+  <entry align="center">23</entry>
+  <entry align="center">41</entry>
+  <entry align="center">53</entry>
+  <entry align="center">72</entry>
+  <entry align="center">103</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table></problem>
+
+  <solution id="fs-id2158724"><para id="fs-id1689902"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>1</m:mtext><m:mo>.</m:mo><m:mtext>64</m:mtext><m:mn>0</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>13</m:mtext><m:mo>.</m:mo><m:mtext>8</m:mtext><m:mn>00</m:mn><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn><m:mtext>987</m:mtext>
+   </m:mrow>
+  </m:math> </para></solution></exercise><exercise id="fs-id1595978" class="material-set-2"><problem id="fs-id1595979">
+  <table id="Table_04_03_15" summary="This table has two rows and six columns. The first row is labeled: “x” and the second is labeled: “y”. The values in the first row are: 5, 7, 10, 12, 15. The values in the second row are: 4, 12, 17, 22, 24" class="unnumbered">
+  <tgroup cols="6"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <tbody>
+  <row>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>x</m:mi>
+  </m:math> </emphasis></entry>
+  <entry align="center">5</entry>
+  <entry align="center">7</entry>
+  <entry align="center">10</entry>
+  <entry align="center">12</entry>
+  <entry align="center">15</entry>
+  </row>
+  <row>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>y</m:mi>
+  </m:math> </emphasis></entry>
+  <entry align="center">4</entry>
+  <entry align="center">12</entry>
+  <entry align="center">17</entry>
+  <entry align="center">22</entry>
+  <entry align="center">24</entry>
+  </row>
+  </tbody>
+
+
+  </tgroup>
+  </table></problem></exercise><exercise id="fs-id1474083" class="material-set-2"><problem id="fs-id1429608">
+  <table id="Table_04_03_16" summary="This table has two columns and sixteen rows. The first column is labeled: “x” and the second is labeled: “y”. The values in the first column are: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18. The values in the second column are: 21.9, 22.22, 22.74, 22.26, 20.78, 17.6, 16.52, 18.54, 15.76, 13.68, 14.1, 14.02, 11.94, 12.76, 11.28, 9.1." class="unnumbered">
+  <tgroup cols="8">
+
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+
+  <thead>
+  <row>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>x</m:mi>
+  </m:math> </emphasis>
+  </entry>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>y</m:mi>
+  </m:math> </emphasis></entry>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>x</m:mi>
+  </m:math> </emphasis></entry>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>y</m:mi>
+  </m:math> </emphasis></entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry align="center">3</entry><entry align="center">21.9</entry><entry align="center">10</entry><entry align="center">18.54</entry>
+  </row>
+  <row>
+  <entry align="center">4</entry><entry align="center">22.22</entry><entry align="center">11</entry><entry align="center">15.76</entry>
+  </row>
+  <row>
+  <entry align="center">5</entry><entry align="center">22.74</entry><entry align="center">12</entry><entry align="center">13.68</entry>
+  </row>
+  <row>
+  <entry align="center">6</entry><entry align="center">22.26</entry><entry align="center">13</entry><entry align="center">14.1</entry>
+  </row>
+  <row>
+  <entry align="center">7</entry><entry align="center">20.78</entry><entry align="center">14</entry><entry align="center">14.02</entry>
+  </row>
+  <row>
+  <entry align="center">8</entry><entry align="center">17.6</entry><entry align="center">15</entry><entry align="center">11.94</entry>
+  </row>
+  <row>
+  <entry align="center">9</entry><entry align="center">16.52</entry><entry align="center">16</entry><entry align="center">12.76</entry>
+  </row>
+
+  </tbody>
+
+  </tgroup>
+  </table>
+  </problem>
+
+  <solution id="fs-id1859116"><para id="fs-id1843470"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.962</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>26.86</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mo> </m:mo><m:mo> </m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.965</m:mn>
+   </m:mrow>
+  </m:math> </para></solution></exercise><exercise id="fs-id1862833" class="material-set-2"><problem id="fs-id1862834">
+  <table id="Table_04_03_17" summary="This table has two columns and eleven rows. The first column is labeled: “x” and the second is labeled: “y”. The values in the first column are: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13. The values in the second column are: 44.8, 43.1, 38.8, 39, 38, 32.7, 30.1, 29.3, 27, 25.8" class="unnumbered">
+  <tgroup cols="11"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <thead>
+  <row>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>x</m:mi>
+  </m:math> </emphasis></entry>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>y</m:mi>
+  </m:math> </emphasis></entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry align="center">4</entry><entry align="center">44.8</entry>
+  </row>
+  <row>
+  <entry align="center">5</entry><entry align="center">43.1</entry>
+  </row>
+  <row>
+  <entry align="center">6</entry><entry align="center">38.8</entry>
+  </row>
+  <row>
+  <entry align="center">7</entry><entry align="center">39</entry>
+  </row>
+  <row>
+  <entry align="center">8</entry><entry align="center">38</entry>
+  </row>
+  <row>
+  <entry align="center">9</entry><entry align="center">32.7</entry>
+  </row>
+  <row>
+  <entry align="center">10</entry><entry align="center">30.1</entry>
+  </row>
+  <row>
+  <entry align="center">11</entry><entry align="center">29.3</entry>
+  </row>
+  <row>
+  <entry align="center">12</entry><entry align="center">27</entry>
+  </row>
+  <row>
+  <entry align="center">13</entry><entry align="center">25.8</entry>
+  </row>
+
+  </tbody>
+
+
+
+
+
+
+  </tgroup>
+  </table></problem></exercise><exercise id="fs-id1621529" class="material-set-2"><problem id="fs-id1713613">
+  <table id="Table_04_03_18" summary="This table has two rows and seven columns.  The first row is labeled: “x” and the second is labeled: “y”.  The values in the first row are: 21, 25, 30, 31, 40, 50.  The values in the second row are: 17, 11, 2, -1, -18, -40." class="unnumbered">
+  <title/>
+  <tgroup cols="7">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <colspec colnum="7" colname="c7"/>
+
+  <tbody>
+  <row>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>x</m:mi>
+  </m:math> </emphasis></entry>
+  <entry align="center">21</entry>
+  <entry align="center">25</entry>
+  <entry align="center">30</entry>
+  <entry align="center">31</entry>
+  <entry align="center">40</entry>
+  <entry align="center">50</entry>
+  </row>
+
+  <row>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>y</m:mi>
+  </m:math> </emphasis></entry>
+  <entry align="center">17</entry>
+  <entry align="center">11</entry>
+  <entry align="center">2</entry>
+  <entry align="center">–1</entry>
+  <entry align="center">–18</entry>
+  <entry align="center">–40</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+
+  </problem>
+  <solution id="fs-id1704739"><para id="fs-id1704740"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mtext>1</m:mtext><m:mo>.</m:mo><m:mtext>981</m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>6</m:mtext><m:mn>0.</m:mn><m:mtext>197;</m:mtext>
+   </m:mrow>
+  </m:math> <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.</m:mn><m:mtext>998</m:mtext>
+   </m:mrow>
+  </m:math> </para></solution></exercise><exercise id="fs-id1301552" class="material-set-2"><problem id="fs-id2061731">
+
+  <table id="Table_04_03_19" summary="This table has two columns and seven rows. The first column is labeled: “x” and the second is labeled: “y”. The values in the first column are: 100, 80, 60, 55, 40, 20. The values in the second column are: 2000, 1798, 1589, 1580, 1390, 1202." class="unnumbered">
+  <tgroup cols="7"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+
+  <thead>
+  <row>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>x</m:mi>
+  </m:math> </emphasis></entry>
+  <entry align="center"><emphasis> <m:math>
+   <m:mi>y</m:mi>
+  </m:math> </emphasis></entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry align="center">100</entry><entry align="center">2000</entry>
+  </row>
+  <row>
+  <entry align="center">80</entry><entry align="center">1798</entry>
+  </row>
+  <row>
+  <entry align="center">60</entry><entry align="center">1589</entry>
+  </row>
+  <row>
+  <entry align="center">55</entry><entry align="center">1580</entry>
+  </row>
+  <row>
+  <entry align="center">40</entry><entry align="center">1390</entry>
+  </row>
+  <row>
+  <entry align="center">20</entry><entry align="center">1202</entry>
+  </row>
+
+  </tbody>
+
+
+
+  </tgroup>
+  </table></problem></exercise><exercise id="fs-id1549953" class="material-set-2"><problem id="fs-id1450966">
+  <table id="Table_04_03_20" summary="This table has two rows and seven columns.  The first row is labeled: “x” and the second is labeled: “y”.  The values in the first row are: 900, 988, 1000, 1010, 1200, 1205.  The values in the second row are: 70, 80, 82, 84, 105, 108." class="unnumbered">
+  <title/>
+  <tgroup cols="7">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <colspec colnum="7" colname="c7"/>
+  <tbody>
+  <row>
+  <entry align="center"> <m:math>
+   <m:mi>x</m:mi>
+  </m:math>
+  </entry>
+  <entry align="center">900</entry>
+  <entry align="center">988</entry>
+  <entry align="center">1000</entry>
+  <entry align="center">1010</entry>
+  <entry align="center">1200</entry>
+  <entry align="center">1205</entry>
+  </row>
+  <row>
+  <entry align="center"> <m:math>
+   <m:mi>y</m:mi>
+  </m:math> </entry>
+  <entry align="center">70</entry>
+  <entry align="center">80</entry>
+  <entry align="center">82</entry>
+  <entry align="center">84</entry>
+  <entry align="center">105</entry>
+  <entry align="center">108</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </problem>
+  <solution id="fs-id1967826"><para id="fs-id1475836"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn><m:mtext>121</m:mtext><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>38.841</m:mn><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.998</m:mn>
+   </m:mrow>
+  </m:math> </para></solution>
+  </exercise></section><section id="fs-id2040607"><title>Extensions</title><exercise id="fs-id2066641" class="material-set-2"><problem id="fs-id1701380"><para id="fs-id1701381">Graph <m:math>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10.</m:mn>
+  </m:math> Pick a set of five ordered pairs using inputs <m:math>
+   <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mtext>1</m:mtext><m:mo>,</m:mo><m:mtext>5</m:mtext><m:mo>,</m:mo><m:mtext>6</m:mtext><m:mo>,</m:mo><m:mn>9</m:mn>
+  </m:math> and use linear regression to verify that the function is a good fit for the data.</para></problem></exercise>
+  <exercise id="fs-id1334127" class="material-set-2"><problem id="fs-id1334128"><para id="fs-id1678235">Graph <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>10.</m:mn>
+   </m:mrow>
+  </m:math> Pick a set of five ordered pairs using inputs <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mtext>1</m:mtext><m:mo>,</m:mo><m:mtext>5</m:mtext><m:mo>,</m:mo><m:mtext>6</m:mtext><m:mo>,</m:mo><m:mn>9</m:mn>
+   </m:mrow>
+  </m:math> and use linear regression to verify the function.</para></problem>
+  <solution id="fs-id1720451"><para id="fs-id1452340"> <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext>−12</m:mtext><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>−20</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mtext>−22</m:mtext><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mtext>−28</m:mtext><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo>
+   </m:mrow>
+  </m:math> Yes, the function is a good fit.</para></solution></exercise>
+  <para id="fs-id2476616">For the following exercises, consider this scenario: The profit of a company decreased steadily over a ten-year span. The following ordered pairs shows dollars and the number of units sold in hundreds and the profit in thousands of over the ten-year span, (number of units sold, profit) for specific recorded years:</para>
+  <para id="fs-id456742"><m:math display="block">
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>46</m:mn><m:mo>,</m:mo><m:mn>1,600</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>48</m:mn><m:mo>,</m:mo><m:mn>1,550</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>50</m:mn><m:mo>,</m:mo><m:mn>1,505</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>52</m:mn><m:mo>,</m:mo><m:mn>1,540</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>54</m:mn><m:mo>,</m:mo><m:mn>1,495</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+   </m:mrow>
+  </m:math>
+</para><exercise id="fs-id1288856"><problem id="fs-id1288858"><para id="fs-id2097965">Use linear regression to determine a function <m:math>
+   <m:mrow>
+    <m:mi>P</m:mi>
+   </m:mrow>
+  </m:math> where the profit in thousands of dollars depends on the number of units sold in hundreds.</para></problem></exercise>
+  <exercise id="fs-id2178129"><problem id="fs-id2178130"><para id="fs-id2406756">Find to the nearest tenth and interpret the <emphasis effect="italics">x</emphasis>-intercept.</para></problem>
+  <solution id="fs-id2094339"><para id="fs-id2490923"> <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mtext>189</m:mtext><m:mn>.8</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math> If 18,980 units are sold, the company will have a profit of zero dollars.</para></solution></exercise>
+  <exercise id="fs-id1841800"><problem id="fs-id1579613"><para id="fs-id1579614">Find to the nearest tenth and interpret the <emphasis effect="italics">y</emphasis>-intercept.</para></problem></exercise>
+  </section><section id="fs-id2429851"><title>Real-World Applications</title><para id="fs-id2673753">For the following exercises, consider this scenario: The population of a city increased steadily over a ten-year span. The following ordered pairs shows the population and the year over the ten-year span, (population, year) for specific recorded years:</para>
+  <para id="fs-id2459368"><space count="5"/> <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mtext>25</m:mtext><m:mn>00</m:mn><m:mo>,</m:mo><m:mn>2000</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>265</m:mtext><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2001</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3000</m:mn><m:mo>,</m:mo><m:mn>2003</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>35</m:mtext><m:mn>00</m:mn><m:mo>,</m:mo><m:mn>2006</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>42</m:mtext><m:mn>00</m:mn><m:mo>,</m:mo><m:mn>2010</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math>
+  </para><exercise id="fs-id2651915" class="material-set-2"><problem id="fs-id2111924"><para id="fs-id2111925">Use linear regression to determine a function <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> where the year depends on the population. Round to three decimal places of accuracy.</para></problem>
+  <solution id="fs-id1392160"><para id="fs-id1794393"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.00587</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>1985</m:mtext><m:mn>.4</m:mn><m:mtext>1</m:mtext>
+   </m:mrow>
+  </m:math> </para></solution></exercise>
+  <exercise id="fs-id2621050" class="material-set-2"><problem id="fs-id2621051"><para id="fs-id1469913">Predict when the population will hit 8,000.</para></problem></exercise>
+  <para id="fs-id1901427">For the following exercises, consider this scenario: The profit of a company increased steadily over a ten-year span. The following ordered pairs show the number of units sold in hundreds and the profit in thousands of over the ten year span, (number of units sold, profit) for specific recorded years:</para>
+  <para id="fs-id1798995"><space count="5"/> <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mtext>46</m:mtext><m:mo>,</m:mo><m:mtext>25</m:mtext><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>48</m:mtext><m:mo>,</m:mo><m:mtext>3</m:mtext><m:mn>05</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>50</m:mn><m:mo>,</m:mo><m:mtext>35</m:mtext><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>52</m:mtext><m:mo>,</m:mo><m:mtext>39</m:mtext><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>54</m:mtext><m:mo>,</m:mo><m:mtext>41</m:mtext><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+   </m:mrow>
+  </m:math>
+  </para><exercise id="fs-id2202291" class="material-set-2"><problem id="fs-id2634058"><para id="fs-id2634059">Use linear regression to determine a function <emphasis effect="italics">y</emphasis>, where the profit in thousands of dollars depends on the number of units sold in hundreds.</para></problem>
+  <solution id="fs-id1433208"><para id="fs-id2523562"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>2</m:mtext><m:mn>0.</m:mn><m:mtext>25</m:mtext><m:mi>x</m:mi><m:mo>−</m:mo><m:mtext>671</m:mtext><m:mo>.</m:mo><m:mtext>5</m:mtext>
+   </m:mrow>
+  </m:math> </para></solution></exercise>
+  <exercise id="fs-id2095664" class="material-set-2"><problem id="fs-id2095665"><para id="fs-id2522917">Predict when the profit will exceed one million dollars.</para></problem></exercise>
+  <para id="fs-id2227780">For the following exercises, consider this scenario: The profit of a company decreased steadily over a ten-year span. The following ordered pairs show dollars and the number of units sold in hundreds and the profit in thousands of over the ten-year span (number of units sold, profit) for specific recorded years:</para>
+  <para id="fs-id2227782"><space count="5"/> <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mtext>46</m:mtext><m:mo>,</m:mo><m:mtext>25</m:mtext><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>48</m:mtext><m:mo>,</m:mo><m:mtext>225</m:mtext><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>50</m:mn><m:mo>,</m:mo><m:mtext>2</m:mtext><m:mn>05</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>52</m:mtext><m:mo>,</m:mo><m:mtext>18</m:mtext><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>54</m:mtext><m:mo>,</m:mo><m:mtext>165</m:mtext><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+   </m:mrow>
+  </m:math>
+  </para><exercise id="fs-id2575116" class="material-set-2"><problem id="fs-id1592705"><para id="fs-id1592706">Use linear regression to determine a function <emphasis effect="italics">y</emphasis>, where the profit in thousands of dollars depends on the number of units sold in hundreds.</para></problem>
+  <solution id="fs-id2591901"><para id="fs-id2591902"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mtext>1</m:mtext><m:mn>0.</m:mn><m:mtext>75</m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>742</m:mtext><m:mo>.</m:mo><m:mtext>5</m:mtext><m:mn>0</m:mn>
+   </m:mrow>
+  </m:math> </para></solution></exercise>
+  <exercise id="fs-id2395926" class="material-set-2"><problem id="fs-id2395927"><para id="fs-id2395928">Predict when the profit will dip below the $25,000 threshold.</para></problem></exercise>
+  </section></section>
+      <section id="fs-id3638138" class="review-exercises">
+          <title>Chapter Review Exercises</title>
+  <section id="fs-id2521178"><title><link document="m51270">Linear Functions</link></title><exercise id="fs-id2806383"><problem id="fs-id2806384"><para id="fs-id2477392">Determine whether the algebraic equation is linear. <m:math>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="fs-id2095695"><para id="fs-id2095696">Yes</para></solution></exercise>
+  <exercise id="fs-id2779858"><problem id="fs-id2779859"><para id="fs-id2779860">Determine whether the algebraic equation is linear. <m:math>
+   <m:mrow>
+    <m:mn>6</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  </m:math> </para></problem></exercise><exercise id="fs-id2372659"><problem id="fs-id2372660"><para id="fs-id2372662">Determine whether the function is increasing or decreasing.</para>
+  <para id="fs-id2060828"> <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="fs-id2601930"><para id="fs-id1625952">Increasing</para></solution></exercise>
+  <exercise id="fs-id1625955"><problem id="fs-id2755050"><para id="fs-id2755051">Determine whether the function is increasing or decreasing.</para>
+  <para id="fs-id2490966"> <m:math>
+   <m:mrow>
+    <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:math> </para></problem></exercise><exercise id="fs-id2275942"><problem id="fs-id2275943"><para id="fs-id2275944">Given each set of information, find a linear equation that satisfies the given conditions, if possible.</para>
+  <para id="fs-id2560758">Passes through <m:math>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mtext>7</m:mtext><m:mo>,</m:mo><m:mtext>5</m:mtext>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mtext>3</m:mtext><m:mo>,</m:mo><m:mtext>17</m:mtext>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="fs-id2589260"><para id="fs-id2589261"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mtext>3</m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>26</m:mtext>
+   </m:mrow>
+  </m:math> </para></solution></exercise>
+  <exercise id="fs-id2523185"><problem id="fs-id2241203"><para id="fs-id2241204">Given each set of information, find a linear equation that satisfies the given conditions, if possible.</para>
+  <para id="fs-id1726321"><emphasis effect="italics">x</emphasis>-intercept at <m:math>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mtext>6</m:mtext><m:mo>,</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:math> and <emphasis effect="italics">y</emphasis>-intercept at <m:math>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>,</m:mo><m:mtext>1</m:mtext><m:mn>0</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:math> </para></problem></exercise><exercise id="fs-id2748158" class="material-set-2">
+  <problem id="fs-id2748160">
+  <para id="fs-id2748161">Find the slope of the line shown in the graph.<newline/></para>
+  <media id="fs-id2593769" alt="This is a graph of an increasing line with a y-intercept of -3 and x-intercept of 1 on an x, y coordinate plane.  The x and y-axis range from -6 to 6.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_211-603f.jpg"/>
+  </media>
+  </problem>
+  <solution id="fs-id1799100"><para id="fs-id2555716">3</para></solution></exercise><exercise id="fs-id2555719" class="material-set-2"><problem id="fs-id2571097"><para id="fs-id2571098">Find the slope of the line graphed.<newline/></para>
+  <media id="fs-id2267005" alt="This is a graph of a line with a y-intercept of -2 and no x-intercepts on an x, y coordinate plane.  The x- and y-axis range from -6 to 6">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_212-3b7e.jpg"/>
+  </media>
+  </problem></exercise><exercise id="fs-id2799886" class="material-set-2"><problem id="fs-id2799888"><para id="fs-id1433211">Write an equation in slope-intercept form for the line shown.<newline/></para>
+  <media id="fs-id2755625" alt="This is a graph of a line with a y-intercept of -2 and x-intercept of 1 on an x, y coordinate plane.  The x- and y-axis both range from -6 to 6.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_213-5863.jpg"/>
+  </media>
+  </problem>
+  <solution id="fs-id2134829"><para id="fs-id2134830"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>2</m:mtext><m:mi>x</m:mi><m:mo>−</m:mo><m:mtext>2</m:mtext>
+   </m:mrow>
+  </m:math> </para></solution></exercise><exercise id="fs-id2568491"><problem id="fs-id2568492"><para id="fs-id1828687">Does the following table represent a linear function? If so, find the linear equation that models the data.</para>
+
+  <table id="Table_04_03_21" summary="This table has two rows and five columns.  The first row is labeled: “x” and the second is labeled: “g(x)”.  The values in the first row are: -4, 0, 2, 10.  The values in the second row are: 18, -2, -12, -52." class="unnumbered">
+  <title/>
+  <tgroup cols="5">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <tbody>
+  <row>
+  <entry align="center"><emphasis><emphasis effect="italics">x</emphasis></emphasis></entry>
+  <entry align="center">–4</entry>
+  <entry align="center">0</entry>
+  <entry align="center">2</entry>
+  <entry align="center">10</entry>
+  </row>
+  <row>
+  <entry align="center"><emphasis><emphasis effect="italics">g(x)</emphasis></emphasis></entry>
+  <entry align="center">18</entry>
+  <entry align="center">–2</entry>
+  <entry align="center">–12</entry>
+  <entry align="center">–52</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </problem></exercise><exercise id="fs-id2193041"><problem id="fs-id2193042"><para id="fs-id2193043">Does the following table represent a linear function? If so, find the linear equation that models the data.</para><table id="Table_04_03_22" summary="This table has two rows and five columns.  The first row is labeled: “x” and the second is labeled: “” and the second is labeled: “g(x)”.  The values in the first row are: 6, 8, 12, 26.  The values in the second row are: -8, -12, -18, -46." class="unnumbered">
+  <title/>
+  <tgroup cols="5">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <tbody>
+  <row>
+  <entry align="center"><emphasis><emphasis effect="italics">x</emphasis></emphasis></entry>
+  <entry align="center">6</entry>
+  <entry align="center">8</entry>
+  <entry align="center">12</entry>
+  <entry align="center">26</entry>
+  </row>
+  <row>
+  <entry align="center"><emphasis><emphasis effect="italics">g(x)</emphasis></emphasis></entry>
+  <entry align="center">–8</entry>
+  <entry align="center">–12</entry>
+  <entry align="center">–18</entry>
+  <entry align="center">–46</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </problem>
+  <solution id="fs-id2113223"><para id="fs-id2113224">Not linear.</para></solution></exercise><exercise id="fs-id2241122"><problem id="fs-id2241123"><para id="fs-id2241124">On June 1<sup>st</sup>, a company has $4,000,000 profit. If the company then loses 150,000 dollars per day thereafter in the month of June, what is the company’s profit <emphasis effect="italics">n<sup>th</sup> </emphasis>day after June 1<sup>st</sup>?</para></problem> </exercise><para id="fs-id2078767">For the following exercises, determine whether the lines given by the equations below are parallel, perpendicular, or neither parallel nor perpendicular:</para>
+  <exercise id="fs-id2468288"><problem id="fs-id2468289"><para id="fs-id2468290"> <m:math>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>12</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="fs-id2757778"><para id="fs-id2757779">parallel</para></solution></exercise>
+  <exercise id="fs-id2757782"><problem id="fs-id2637956"><para id="fs-id2637957"> <m:math>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>9</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  </m:math> </para></problem></exercise><para id="fs-id2616282">For the following exercises, find the <emphasis effect="italics">x</emphasis>- and <emphasis effect="italics">y</emphasis>- intercepts of the given equation</para>
+  <exercise id="fs-id2489259"><problem id="fs-id2489260"><para id="fs-id2489262"> <m:math>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>63</m:mn>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="fs-id2459232"><para id="fs-id2459233"> <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>–9</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>–7</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math>
+  </para></solution></exercise>
+  <exercise id="fs-id2779958"><problem id="fs-id2779959"><para id="fs-id1600522"> <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:math> </para></problem></exercise><para id="fs-id2128502">For the following exercises, use the descriptions of the pairs of lines to find the slopes of Line 1 and Line 2. Is each pair of lines parallel, perpendicular, or neither?</para>
+  <exercise id="fs-id1828556"><problem id="fs-id1828557"><para id="fs-id1828558">Line 1: Passes through <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math>
+  </para><para id="fs-id1623644">Line 2: Passes through <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>−5</m:mn><m:mo>,</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="fs-id1718503"><para id="fs-id1718504">Line 1: <m:math>
+   <m:mrow>
+    <m:mi>m</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>;</m:mo>
+   </m:mrow>
+  </m:math> Line 2: <m:math>
+   <m:mrow>
+    <m:mi>m</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>;</m:mo>
+   </m:mrow>
+  </m:math> Parallel</para></solution></exercise>
+  <exercise id="fs-id889716"><problem id="fs-id889717"><para id="fs-id889718">Line 1: Passes through <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>−10</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−26</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math>
+  </para><para id="fs-id1598366">Line 2: Passes through <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math>
+  </para></problem></exercise><exercise id="fs-id2420694"><problem id="fs-id2480225"><para id="fs-id2480226">Write an equation for a line perpendicular to <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:math> and passing through the point (5, 20).</para></problem>
+  <solution id="fs-id1798495"><para id="fs-id2202404"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>21</m:mn>
+   </m:mrow>
+  </m:math> </para></solution></exercise>
+  <exercise id="fs-id1675129"><problem id="fs-id2779876"><para id="fs-id2779877">Find the equation of a line with a <emphasis effect="italics">y</emphasis>- intercept of <m:math>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:math> and slope <m:math>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>.</m:mo>
+   </m:mrow>
+  </m:math> </para></problem></exercise><exercise id="fs-id1694239"><problem id="fs-id1694240">
+  <para id="fs-id1694242">Sketch a graph of the linear function <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>5.</m:mn>
+   </m:mrow>
+  </m:math> </para>
+  </problem>
+  <solution id="fs-id1798839">
+  <para id="eip-id2545197"><newline/>
+  <media id="fs-id2437747" alt="This is a graph of f of t = 2 times t minus 5 on a x, y coordinate plane.  The x-axis ranges from -4 to 6 and the y-axis ranges from -6 to 6. The curve is an increasing linear function that goes through the points (0,-5) and (2.5,0). ">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_214.jpg"/>
+  </media></para>
+  </solution></exercise><exercise id="fs-id2489570"><problem id="fs-id2489571"><para id="fs-id1966917">Find the point of intersection for the 2 linear functions: <m:math>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>13</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable><m:mo>.</m:mo>
+   </m:mrow>
+  </m:math> </para></problem></exercise><exercise id="fs-id2062262"><problem id="fs-id2062263"><para id="fs-id2395879">A car rental company offers two plans for renting a car.</para>
+  <para id="fs-id2395882">Plan A: 25 dollars per day and 10 cents per mile</para>
+  <para id="fs-id2486072">Plan B: 50 dollars per day with free unlimited mileage</para>
+  <para id="fs-id2486075">How many miles would you need to drive for plan B to save you money?</para></problem>
+  <solution id="fs-id1093900"><para id="fs-id1093901">More than 250</para></solution></exercise>
+  </section><section id="fs-id1093904"><title><link document="m51271">Modeling with Linear Functions</link></title><exercise id="fs-id1293909"><problem id="fs-id1293910"><para id="fs-id1293911">Find the area of a triangle bounded by the <emphasis effect="italics">y</emphasis> axis, the line <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> and the line perpendicular to <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi>
+   </m:mrow>
+  </m:math> that passes through the origin.</para></problem>
+  </exercise><exercise id="fs-id2063497"><problem id="fs-id2063498"><para id="fs-id2063499">A town’s population increases at a constant rate. In 2010 the population was 55,000. By 2012 the population had increased to 76,000. If this trend continues, predict the population in 2016.</para></problem>
+  <solution id="fs-id2276059"><para id="fs-id2276060">118,000</para></solution></exercise>
+  <exercise id="fs-id1843378"><problem id="fs-id1843379"><para id="fs-id1843380">The number of people afflicted with the common cold in the winter months dropped steadily by 50 each year since 2004 until 2010. In 2004, 875 people were inflicted.</para>
+  <para id="fs-id1484577">Find the linear function that models the number of people afflicted with the common cold <emphasis effect="italics">C</emphasis> as a function of the year, <m:math>
+   <m:mrow>
+    <m:mi>t</m:mi><m:mo>.</m:mo>
+   </m:mrow>
+  </m:math> When will no one be afflicted?</para></problem></exercise><para id="fs-id2748176">For the following exercises, use the graph in <link target-id="Figure_04_03_202"/> showing the profit, <m:math>
+   <m:mrow>
+   <m:mi>y</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> in thousands of dollars, of a company in a given year, <m:math>
+   <m:mrow>
+   <m:mi>x</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> where <m:math>
+   <m:mrow>
+   <m:mi>x</m:mi>
+   </m:mrow>
+  </m:math> represents years since 1980.</para><figure id="Figure_04_03_202" class="small"><media id="fs-id2208795" alt="This graph shows profits starting at 1985 at $10,000 and ending at 2005 at $4,000.  The x-axis ranges from 0 to 30 in intervals of 5 and the y –axis goes from 0 to 12,000 in intervals of 2,000.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_215.jpg"/>
+  </media>
+  </figure><exercise id="fs-id1429436" class="material-set-2"><problem id="fs-id1429437"><para id="fs-id2662623">Find the linear function <emphasis effect="italics">y</emphasis>, where <emphasis effect="italics">y</emphasis> depends on <m:math>
+   <m:mrow>
+   <m:mi>x</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> the number of years since 1980.</para></problem>
+  <solution id="fs-id2637048"><para id="fs-id2637049"> <m:math>
+   <m:mrow> <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mtext>3</m:mtext><m:mn>00</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>11</m:mtext><m:mo>,</m:mo><m:mtext>5</m:mtext><m:mn>00</m:mn>
+   </m:mrow>
+  </m:math> </para></solution></exercise>
+  <exercise id="fs-id2527720" class="material-set-2"><problem id="fs-id2527721"><para id="fs-id2527722">Find and interpret the <emphasis effect="italics">y</emphasis>-intercept.</para></problem></exercise><para id="fs-id2552031">For the following exercise, consider this scenario: In 2004, a school population was 1,700. By 2012 the population had grown to 2,500.</para>
+  <exercise id="fs-id2518478" class="material-set-2"><problem id="fs-id2518479"><para id="fs-id2518480">Assume the population is changing linearly.</para>
+  <list id="fs-id2518483" list-type="enumerated" number-style="arabic" class="circled">
+  <item><span class="token">ⓐ</span>How much did the population grow between the year 2004 and 2012?</item>
+  <item><span class="token">ⓑ</span>What is the average population growth per year?</item>
+  <item><span class="token">ⓒ</span>Find an equation for the population, <emphasis effect="italics">P</emphasis>, of the school <emphasis effect="italics">t</emphasis> years after 2004.</item></list></problem>
+  <solution id="fs-id2468245"><para id="fs-id2468246">
+    <list id="eip-2769989" list-type="enumerated" number-style="arabic" class="circled">
+      <item>
+          <span class="token">ⓐ</span> 800
+     </item>
+     <item>
+          <span class="token">ⓑ</span> 100 students per year
+     </item>
+     <item>
+     <span class="token">ⓒ</span><m:math>
+        <m:mrow>
+         <m:mi>P</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>1</m:mtext><m:mn>00</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mtext>17</m:mtext><m:mn>00</m:mn>
+        </m:mrow>
+      </m:math>
+</item>
+</list> </para></solution></exercise>
+  <para id="fs-id888455">For the following exercises, consider this scenario: In 2000, the moose population in a park was measured to be 6,500. By 2010, the population was measured to be 12,500. Assume the population continues to change linearly.</para>
+  <exercise id="fs-id2424214"><problem id="fs-id2424215"><para id="fs-id888457">Find a formula for the moose population, <m:math>
+   <m:mrow>
+   <m:mi>P</m:mi>
+   </m:mrow>
+  </m:math>.</para></problem></exercise><exercise id="fs-id2411048"><problem id="fs-id1016508"><para id="fs-id1016509">What does your model predict the moose population to be in 2020?</para></problem>
+  <solution id="fs-id1016512"><para id="fs-id1016513">18,500</para></solution></exercise>
+  <para id="fs-id2637890">For the following exercises, consider this scenario: The median home values in subdivisions Pima Central and East Valley (adjusted for inflation) are shown in <link target-id="Table_04_03_23"/>. Assume that the house values are changing linearly.</para>
+  <table id="Table_04_03_23" summary="This table has three rows and three columns.  The first column is labeled: “Year” the second column is labeled: “Pima Central” and the third column is labeled: “East Valley”.  The values for the first column are: 1970 and 2010.  The values for the second column are: 32,000 and 85,000.  The values for the third column are: 120,250 and 150,000.">
+  <title/>
+  <tgroup cols="3">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <thead>
+  <row>
+  <entry align="center">Year</entry>
+  <entry align="center">Pima Central</entry>
+  <entry align="center">East Valley</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry align="center">1970</entry>
+  <entry align="center">32,000</entry>
+  <entry align="center">120,250</entry>
+  </row>
+  <row>
+  <entry align="center">2010</entry>
+  <entry align="center">85,000</entry>
+  <entry align="center">150,000</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <exercise id="fs-id1802777"><problem id="fs-id1802778"><para id="fs-id1802779">In which subdivision have home values increased at a higher rate?</para></problem></exercise><exercise id="fs-id1855668"><problem id="fs-id1855669"><para id="fs-id1855670">If these trends were to continue, what would be the median home value in Pima Central in 2015?</para></problem>
+  <solution id="fs-id1794326"><para id="fs-id1794327">$91,625</para></solution></exercise>
+  </section><section id="fs-id2267333"><title><link document="m51272">Fitting Linear Models to Data</link></title><exercise id="fs-id2395889"><problem id="fs-id2395890"><para id="fs-id2395891">Draw a scatter plot for the data in <link target-id="Table_04_03_24"/>. Then determine whether the data appears to be linearly related.</para>
+  <table id="Table_04_03_24" summary="This table shows two rows and six columns. The values in the first row are: 0, 2, 4, 6, 8, 10. The values in the second row are: -105, -50, 1, 55, 105, 160.">
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+
+  <tbody>
+  <row>
+  <entry align="center">0</entry>
+  <entry align="center">-105</entry>
+  </row>
+  <row>
+  <entry align="center">2</entry>
+  <entry align="center">-50</entry>
+  </row>
+  <row>
+  <entry align="center">4</entry>
+  <entry align="center">1</entry>
+  </row>
+  <row>
+  <entry align="center">6</entry>
+  <entry align="center">55</entry>
+  </row>
+  <row>
+  <entry align="center">8</entry>
+  <entry align="center">105</entry>
+  </row>
+  <row>
+  <entry align="center">10</entry>
+  <entry align="center">160</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table></problem></exercise><exercise id="fs-id1739382"><problem id="fs-id1739383"><para id="fs-id1739384">Draw a scatter plot for the data in <link target-id="Table_04_03_25"/>. If we wanted to know when the population would reach 15,000, would the answer involve interpolation or extrapolation?</para>
+
+  <table id="Table_04_03_25" summary="This table has two columns and six rows. The first column is labeled: “Year” and the second is labeled: “Population”. The values in the first column are: 1990, 1995, 2000, 2005, 2010. The values in the second column are: 5,600; 5,950; 6,300; 6,600; 6,900.">
+  <tgroup cols="2"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+
+  <thead>
+  <row>
+  <entry align="center"><emphasis>Year</emphasis></entry><entry align="center"><emphasis>Population</emphasis></entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry align="center">1990</entry><entry align="center">5,600</entry>
+  </row>
+  <row>
+  <entry align="center">1995</entry><entry align="center">5,950</entry>
+  </row>
+  <row>
+  <entry align="center">2000</entry><entry align="center">6,300</entry>
+  </row>
+  <row>
+  <entry align="center">2005</entry><entry align="center">6,600</entry>
+  </row>
+  <row>
+  <entry align="center">2010</entry><entry align="center">6,900</entry>
+  </row>
+  </tbody>
+
+  </tgroup>
+  </table></problem>
+  <solution id="fs-id2208904"><para id="fs-id2208906">Extrapolation</para>
+  <para id="eip-id1505656"><newline/>
+  <media id="fs-id2240962" alt="Scatter plot with the points (1990,5600); (1995,5950); (2000,6300); (2005,6600); and (2010,6900).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_226.jpg"/>
+  </media></para>
+
+  </solution></exercise><exercise id="fs-id2267039"><problem id="fs-id2267040"><para id="fs-id2267041">Eight students were asked to estimate their score on a 10-point quiz. Their estimated and actual scores are given in <link target-id="Table_04_03_26"/>. Plot the points, then sketch a line that fits the data.</para>
+  <table id="Table_04_03_26" summary="This table shows two columns and nine rows. The first column is labeled: “Predicted” and the second is labeled: “Actual”. The values in the first column are: 6, 7, 7, 8, 7, 9, 10, 10. The values in the second column are: 6, 7, 8, 8, 9, 10, 10, 9.">
+  <tgroup cols="2"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+
+  <thead>
+  <row>
+  <entry align="center"><emphasis>Predicted</emphasis></entry><entry align="center"><emphasis>Actual</emphasis></entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry align="center">6</entry><entry align="center">6</entry>
+  </row>
+  <row>
+  <entry align="center">7</entry><entry align="center">7</entry>
+  </row>
+  <row>
+  <entry align="center">7</entry><entry align="center">8</entry>
+  </row>
+  <row>
+  <entry align="center">8</entry><entry align="center">8</entry>
+  </row>
+  <row>
+  <entry align="center">7</entry><entry align="center">9</entry>
+  </row>
+  <row>
+  <entry align="center">9</entry><entry align="center">10</entry>
+  </row>
+  <row>
+  <entry align="center">10</entry><entry align="center">10</entry>
+  </row>
+  <row>
+  <entry align="center">10</entry><entry align="center">9</entry>
+  </row>
+
+  </tbody>
+
+  </tgroup>
+  </table></problem></exercise><exercise id="fs-id2578689"><problem id="fs-id2578690"><para id="fs-id2578691">Draw a best-fit line for the plotted data.<newline/></para>
+
+  <media id="fs-id2464743" alt="Scatter plot of the points: (2,78); (4,81); (6,85); (8,90); and (10,99).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_216.jpg"/>
+  </media>
+
+  </problem>
+  <solution id="fs-id2160490">
+  <para id="eip-id2601966"><newline/>
+  <media id="fs-id2160495" alt="Scatter plot of: (2,78); (4,81); (6,85); (8,90); and (10,99) and the line of best fit running through these points.  The line of best fit goes through most of the points.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_217.jpg"/>
+  </media></para>
+  </solution>
+  </exercise><para id="fs-id2755468">For the following exercises, consider the data in <link target-id="Table_04_03_27"/>, which shows the percent of unemployed in a city of people 25 years or older who are college graduates is given below, by year. </para>
+  <table id="Table_04_03_27" summary="This table has two rows and six columns.  The first row is labeled: “Year” and the second is labeled: “Percent Graduates”.  The values in the first row are: 2000, 2002, 2005, 2007, 2010.  The values in the second row are: 6.5, 7.0, 7.4, 8.2, 9.0">
+  <title/>
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <tbody>
+  <row>
+  <entry align="center"><emphasis>Year</emphasis></entry>
+  <entry align="center">2000</entry>
+  <entry align="center">2002</entry>
+  <entry align="center">2005</entry>
+  <entry align="center">2007</entry>
+  <entry align="center">2010</entry>
+  </row>
+  <row>
+  <entry align="center"><emphasis>Percent Graduates</emphasis></entry>
+  <entry align="center">6.5</entry>
+  <entry align="center">7.0</entry>
+  <entry align="center">7.4</entry>
+  <entry align="center">8.2</entry>
+  <entry align="center">9.0</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+
+  <exercise id="fs-id2489600"><problem id="fs-id2489245"><para id="fs-id2489246">Determine whether the trend appears to be linear. If so, and assuming the trend continues, find a linear regression model to predict the percent of unemployed in a given year to three decimal places.</para></problem></exercise><exercise id="fs-id2552236"><problem id="fs-id2552237"><para id="fs-id2552238">In what year will the percentage exceed 12%?</para></problem>
+  <solution id="fs-id2448108"><para id="fs-id2448110"> 2023</para></solution></exercise>
+  <exercise id="fs-id2448113"><problem id="fs-id2448114"><para id="fs-id1351720">Based on the set of data given in <link target-id="Table_04_03_28"/>, calculate the regression line using a calculator or other technology tool, and determine the correlation coefficient to three decimal places.</para>
+  <table id="Table_04_03_28" summary="This table has two rows and six columns.  The first row is labeled: “x” and the second is labeled: “y”.  The values of the first row are: 17, 20, 23, 26, 29.  The values of the second row are: 15, 25, 31, 37, 40.">
+  <title/>
+  <tgroup cols="5">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <tbody>
+  <row>
+  <entry align="center"> <m:math>
+   <m:mi>x</m:mi>
+  </m:math> </entry>
+  <entry align="center">17</entry>
+  <entry align="center">20</entry>
+  <entry align="center">23</entry>
+  <entry align="center">26</entry>
+  <entry align="center">29</entry>
+  </row>
+  <row>
+  <entry align="center"> <m:math>
+   <m:mi>y</m:mi>
+  </m:math> </entry>
+  <entry align="center">15</entry>
+  <entry align="center">25</entry>
+  <entry align="center">31</entry>
+  <entry align="center">37</entry>
+  <entry align="center">40</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+   </problem></exercise><exercise id="fs-id2674532"><problem id="fs-id2164258"><para id="fs-id2164259">Based on the set of data given in <link target-id="Table_04_03_29"/>, calculate the regression line using a calculator or other technology tool, and determine the correlation coefficient to three decimal places.</para>
+  <table id="Table_04_03_29" summary="This table has two rows and six columns.  The first row is labeled: “x” and the second is labeled: “y”.  The values of the first row are: 10, 12, 15, 18, 20.  The values of the second row are: 36, 34, 30, 28, 22.  ">
+  <title/>
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <tbody>
+  <row>
+  <entry align="center"> <m:math>
+   <m:mi>x</m:mi>
+  </m:math> </entry>
+  <entry align="center">10</entry>
+  <entry align="center">12</entry>
+  <entry align="center">15</entry>
+  <entry align="center">18</entry>
+  <entry align="center">20</entry>
+  </row>
+  <row>
+  <entry align="center"> <m:math>
+   <m:mi>y</m:mi>
+  </m:math> </entry>
+  <entry align="center">36</entry>
+  <entry align="center">34</entry>
+  <entry align="center">30</entry>
+  <entry align="center">28</entry>
+  <entry align="center">22</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </problem>
+  <solution id="fs-id2489279"><para id="fs-id2489280"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.294</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>49.412</m:mn><m:mo>;</m:mo><m:mo> </m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.974</m:mn>
+   </m:mrow>
+  </m:math>
+  </para></solution></exercise>
+  <para id="fs-id2589276">For the following exercises, consider this scenario: The population of a city increased steadily over a ten-year span. The following ordered pairs show the population and the year over the ten-year span (population, year) for specific recorded years:</para>
+  <para id="fs-id1802875"> <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mtext>3,6</m:mtext><m:mn>00</m:mn><m:mo>,</m:mo><m:mn>2000</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>4,</m:mtext><m:mn>000</m:mn><m:mo>,</m:mo><m:mn>2001</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>4,7</m:mtext><m:mn>00</m:mn><m:mo>,</m:mo><m:mn>2003</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>6,</m:mtext><m:mn>000</m:mn><m:mo>,</m:mo><m:mn>2006</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math>
+  </para><exercise id="fs-id1967151"><problem id="fs-id1967152"><para id="fs-id1967153">Use linear regression to determine a function <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> where the year depends on the population, to three decimal places of accuracy.</para></problem>
+  </exercise><exercise id="fs-id2574347"><problem id="fs-id2574348"><para id="fs-id2574350">Predict when the population will hit 12,000.</para></problem>
+  <solution id="fs-id2275846"><para id="fs-id2275847">2027</para></solution></exercise>
+  <exercise id="fs-id2275850"><problem id="fs-id2275852"><para id="fs-id2275853">What is the correlation coefficient for this model to three decimal places of accuracy?</para></problem></exercise><exercise id="fs-id1505691"><problem id="fs-id1505692"><para id="fs-id1505693">According to the model, what is the population in 2014?</para></problem>
+  <solution id="fs-id1505697"><para id="fs-id1505698">7,660</para></solution></exercise>
+  </section></section>
+
+      <section id="fs-id1505702" class="practice-test"><title>Chapter Practice Test</title><exercise id="fs-id2560601"><problem id="fs-id2560602"><para id="fs-id2560603">Determine whether the following algebraic equation can be written as a linear function. <m:math>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="eip-idm369023648">
+  <para id="eip-idm369023392">
+  Yes
+  </para>
+  </solution></exercise><exercise id="fs-id1803014"><problem id="fs-id1803015"><para id="fs-id1803016">Determine whether the following function is increasing or decreasing. <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  </m:math> </para></problem>
+  <!--<solution id="fs-id2176626"><para id="fs-id2176627">Decreasing</para></solution>--></exercise><exercise id="fs-id2560692"><problem id="fs-id2560693"><para id="fs-id2560694">Determine whether the following function is increasing or decreasing. <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="eip-idm314485872">
+  <para id="eip-idm314485616">
+  Increasing</para>
+  </solution></exercise><exercise id="fs-id2424337"><problem id="fs-id2424338"><para id="fs-id2489227">Find a linear equation that passes through (5, 1) and (3, –9), if possible.</para></problem>
+  <!--<solution id="fs-id2489232"><para id="fs-id2489233"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>&#8722;</m:mo><m:mn>24</m:mn>
+   </m:mrow>
+  </m:math> </para></solution>--></exercise><exercise id="fs-id1967119"><problem id="fs-id1967120"><para id="fs-id2429855">Find a linear equation, that has an <emphasis effect="italics">x</emphasis> intercept at (–4, 0) and a <emphasis effect="italics">y</emphasis>-intercept at (0, –6), if possible.</para></problem>
+
+  <solution id="eip-idm624541776">
+  <para id="eip-idm624541520">
+  y = −1.5x − 6
+  </para>
+  </solution></exercise><exercise id="fs-id2489441"><problem id="fs-id2489442"><para id="fs-id2757895">Find the slope of the line in <link target-id="Image_04_03_220"/>.</para>
+  <figure id="Image_04_03_220" class="small">
+  <media id="fs-id2757905" alt="This image is a graph of a decreasing linear function on an x, y coordinate plane. The x and y-axis range from -6 to 6. The line passes through the points (0,2) and (1,0). ">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_218-250a.jpg"/>
+  </media>
+  </figure>
+  </problem>
+  <!--<solution id="fs-id2136526"><para id="fs-id2136527"> <m:math>
+   <m:mrow>
+    <m:mi>m</m:mi><m:mo>=</m:mo><m:mo>&#8722;</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:math> </para></solution>--></exercise>
+  <exercise id="fs-id2429836" class="material-set-2"><problem id="fs-id2429838"><para id="fs-id2429839">Write an equation for line in <link target-id="Image_04_03_221"/>.</para>
+  <figure id="Image_04_03_221" class="small">
+  <media id="fs-id2674489" alt="This image is a graph showing a decreasing linear function on an x, y coordinate plane. The x and y axis range from -6 to 6. The line passes through the points (0,-1) and (-.5,0).  ">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_219-415a.jpg"/>
+  </media>
+  </figure>
+  </problem>
+  <solution id="eip-idm1165169040">
+  <para id="eip-idm1165168784">
+  y = −2x − 1
+  </para>
+  </solution></exercise><exercise id="fs-id1795368" class="material-set-2"><problem id="fs-id1795369"><para id="fs-id1795370">Does <link target-id="Table_04_03_30"/> represent a linear function? If so, find a linear equation that models the data.</para>
+  <table id="Table_04_03_30" summary="The table shows two rows and five columns.  The first row is labeled: “x” and the second is labeled: “g(x)”.  The values of the first row are: -6, 0, 2, 4.  The values of the second row are: 14, 32, 38, 44.">
+  <title/>
+  <tgroup cols="5">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <tbody>
+  <row>
+  <entry align="center"> <m:math>
+   <m:mi>x</m:mi>
+  </m:math> </entry>
+  <entry align="center">–6</entry>
+  <entry align="center">0</entry>
+  <entry align="center">2</entry>
+  <entry align="center">4</entry>
+  </row>
+  <row>
+  <entry align="center"> <m:math>
+   <m:mrow>
+    <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:math> </entry>
+  <entry align="center">14</entry>
+  <entry align="center">32</entry>
+  <entry align="center">38</entry>
+  <entry align="center">44</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </problem>
+  <!--<solution id="fs-id2590721"><para id="fs-id2590722"> Yes, <m:math>
+   <m:mrow>
+    <m:mtext>&#8201;</m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>32</m:mn>
+   </m:mrow>
+  </m:math> </para></solution>--></exercise><exercise id="fs-id2448065" class="material-set-2"><problem id="fs-id2674652"><para id="fs-id2448066">Does <link target-id="Table_04_03_31"/> represent a linear function? If so, find a linear equation that models the data.</para>
+  <table id="Table_04_03_31" summary="The table shows two rows and five columns.  The first row is labeled: “x” and the second is labeled: “g(x)”.  The values of the first row are: 1, 3, 7, 11.  The values of the second row are: 4, 9, 19, 12.">
+  <title/>
+  <tgroup cols="5">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <tbody>
+  <row>
+  <entry align="center"><emphasis><emphasis effect="italics">x</emphasis></emphasis></entry>
+  <entry align="center">1</entry>
+  <entry align="center">3</entry>
+  <entry align="center">7</entry>
+  <entry align="center">11</entry>
+  </row>
+  <row>
+  <entry align="center"><emphasis><emphasis effect="italics">g</emphasis>(<emphasis effect="italics">x</emphasis>)</emphasis></entry>
+  <entry align="center">4</entry>
+  <entry align="center">9</entry>
+  <entry align="center">19</entry>
+  <entry align="center">12</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table></problem>
+
+  <solution id="eip-idm979469136">
+  <para id="eip-idm979468880">
+  No
+  </para>
+  </solution></exercise><exercise id="fs-id2448041"><problem id="fs-id2448042"><para id="fs-id2448044">At 6 am, an online company has sold 120 items that day. If the company sells an average of 30 items per hour for the remainder of the day, write an expression to represent the number of items that were sold <m:math>
+   <m:mrow>
+    <m:mi>n</m:mi>
+   </m:mrow>
+  </m:math> after 6 am.</para></problem>
+  <!--<solution id="fs-id2549692"><para id="fs-id2549693"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>120</m:mn>
+   </m:mrow>
+  </m:math> </para></solution>--></exercise><para id="fs-id2241342">For the following exercises, determine whether the lines given by the equations below are parallel, perpendicular, or neither parallel nor perpendicular.</para>
+  <exercise id="fs-id2241346"><problem id="fs-id2241347"><para id="fs-id2241348"> <m:math>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mn>3</m:mn>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="eip-idm387802048">
+  <para id="eip-idm387801792">
+  Perpendicular
+  </para>
+  </solution></exercise><exercise id="fs-id2674691"><problem id="fs-id2674692"><para id="fs-id2674693"> <m:math>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+         <m:mn>3</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  </m:math> </para></problem>
+  <!--<solution id="fs-id2590763"><para id="fs-id2590764">Neither</para></solution>--></exercise><exercise id="fs-id2590768"><problem id="fs-id2590769"><para id="fs-id2590770">Find the <emphasis effect="italics">x</emphasis>- and <emphasis effect="italics">y</emphasis>-intercepts of the equation <m:math>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>14.</m:mn>
+   </m:mrow>
+  </m:math>
+  </para></problem>
+  <solution id="eip-idm675861184">
+  <para id="eip-idm235470896">
+  (−7, 0); (0, −2)
+  </para>
+  </solution></exercise><exercise id="fs-id2489142"><problem id="fs-id2489143"><para id="fs-id2489144">Given below are descriptions of two lines. Find the slopes of Line 1 and Line 2. Is the pair of lines parallel, perpendicular, or neither?</para>
+  <para id="fs-id2489148">Line 1: Passes through <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>−6</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math>
+  </para><para id="fs-id1505527">Line 2: Passes through <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math> </para></problem>
+  <!--<solution id="fs-id2365320"><para id="fs-id2365321">Line 1: <m:math>
+   <m:mrow>
+    <m:mtext>&#8201;</m:mtext><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>;</m:mo>
+   </m:mrow>
+  </m:math> Line 2: <m:math>
+   <m:mrow>
+    <m:mtext>&#8201;</m:mtext><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>;</m:mo>
+   </m:mrow>
+  </m:math> parallel</para></solution>--></exercise><exercise id="fs-id2267122"><problem id="fs-id2267123"><para id="fs-id2267124">Write an equation for a line perpendicular to <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:math> and passing through the point <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+   </m:mrow>
+  </m:math>
+  </para></problem>
+  <solution id="eip-idm428944800">
+  <para id="eip-idm428941088">
+  y = −0.25x + 12
+  </para>
+  </solution></exercise><exercise id="fs-id2437806"><problem id="fs-id2437807"><para id="fs-id1720532">Sketch a line with a <emphasis effect="italics">y</emphasis>-intercept of <m:math>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>,</m:mo><m:mtext>5</m:mtext>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:math> and slope <m:math>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mfrac>
+     <m:mn>5</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>.</m:mo>
+   </m:mrow>
+  </m:math> </para></problem>
+  <!--<solution id="fs-id1801251">
+  <para id="eip-id2768001"><newline/>
+  <media id="fs-id1801256" alt="This image is a graph showing a decreasing linear function on an x, y coordinate plane. The x and y-axis range from -6 to 6. The line passes through the points (0,5) and (2,0) and a slope of: -5/2. ">
+  <image mime-type="image/jpg" src="CNX_Precalc_Figure_02_04_220.jpg"/>
+  </media></para>
+
+  </solution>--></exercise><exercise id="fs-id1801268"><problem id="fs-id1801269"><para id="fs-id2406692">Graph of the linear function <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6.</m:mn>
+   </m:mrow>
+  </m:math> </para></problem>
+  <solution id="eip-idm458844272">
+  <media id="eip-idm430922064" alt=""><image mime-type="jpeg" src="../../media/CNX_ColAlg_Figure_04_217.jpg"/></media>
+  <para id="eip-idm453499792">
+  Slope = −1 and
+  y-intercept = 6
+  </para>
+  </solution></exercise><exercise id="fs-id2800116"><problem id="fs-id2800118"><para id="fs-id2800119">For the two linear functions, find the point of intersection: <m:math>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable><m:mo>.</m:mo>
+   </m:mrow>
+  </m:math>
+  </para></problem>
+  <!--<solution id="fs-id2436156"><para id="fs-id2436158"> <m:math>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mo>,</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:math> </para></solution>--></exercise><exercise id="fs-id2436183"><problem id="fs-id2436184"><para id="fs-id2436185">A car rental company offers two plans for renting a car.</para>
+  <para id="fs-id2436188">Plan A: $25 per day and $0.10 per mile</para>
+  <para id="fs-id2436192">Plan B: $40 per day with free unlimited mileage</para>
+  <para id="fs-id2436195">How many miles would you need to drive for plan B to save you money?</para></problem>
+  <solution id="eip-idm339304400">
+  <para id="eip-idm339304144">
+  150
+  </para>
+  </solution></exercise><exercise id="fs-id2436202"><problem id="fs-id2436203"><para id="fs-id2436204">Find the area of a triangle bounded by the <emphasis effect="italics">y</emphasis> axis, the line <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> and the line perpendicular to <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi>
+   </m:mrow>
+  </m:math> that passes through the origin.</para></problem>
+  <!--<solution id="fs-id2804284"><para id="fs-id2804285">16.94 square units</para></solution>--></exercise><exercise id="fs-id2804288"><problem id="fs-id2804289"><para id="fs-id2804290">A town’s population increases at a constant rate. In 2010 the population was 65,000. By 2012 the population had increased to 90,000. Assuming this trend continues, predict the population in 2018.</para></problem>
+  <solution id="eip-idm444184032">
+  <para id="eip-idm259003664">
+  165,000
+  </para>
+  </solution></exercise><exercise id="fs-id2804301"><problem id="fs-id2804302"><para id="fs-id2804303">The number of people afflicted with the common cold in the winter months dropped steadily by 25 each year since 2002 until 2012. In 2002, 8,040 people were inflicted. Find the linear function that models the number of people afflicted with the common cold <m:math>
+   <m:mrow>
+    <m:mi>C</m:mi>
+   </m:mrow>
+  </m:math> as a function of the year, <m:math>
+   <m:mrow>
+    <m:mi>t</m:mi><m:mo>.</m:mo>
+   </m:mrow>
+  </m:math> When will less than 6,000 people be afflicted?</para></problem>
+  <!--<solution id="fs-id2436240"><para id="fs-id2436241">2083</para></solution>--></exercise><para id="fs-id2436244">For the following exercises, use the graph in <link target-id="Figure_04_03_224"/>, showing the profit, <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> in thousands of dollars, of a company in a given year, <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> where <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  </m:math> represents years since 1980.</para>
+
+  <para id="eip-id1167337358428"><figure id="Figure_04_03_224" class="small">
+  <media id="fs-id2436294" alt="This image is a graph showing the company's profit from 1985 at around $15,000 to 2010 at about $32,500.  The x-axis goes from 0 to 30 in intervals of 5 and the y-axis goes from 0 to 35,000 in intervals of 5,000.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_222.jpg"/>
+  </media>
+  </figure>
+  </para>
+  <exercise id="fs-id2436305"><problem id="fs-id2436306"><para id="fs-id2436307">Find the linear function <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> where <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi>
+   </m:mrow>
+  </m:math> depends on <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+  </m:math> the number of years since 1980.</para></problem>
+  <solution id="eip-idm459216784">
+  <para id="eip-idm459216528">
+  y = 875x + 10,625
+  </para>
+  </solution></exercise><exercise id="fs-id2363849"><problem id="fs-id2363850"><para id="fs-id2363851">Find and interpret the <emphasis effect="italics">y</emphasis>-intercept.</para></problem>
+  <!--<solution id="fs-id2363858"><para id="fs-id2363860"> <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>625</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo>
+   </m:mrow>
+  </m:math> In 1980, the profit was $10,625,000.</para></solution>--></exercise><exercise id="fs-id2387148"><problem id="fs-id2387149"><para id="fs-id2387150">In 2004, a school population was 1250. By 2012 the population had dropped to 875. Assume the population is changing linearly.</para>
+  <list id="fs-id2387155" list-type="enumerated" number-style="arabic" class="circled">
+  <item><span class="token">ⓐ</span>How much did the population drop between the year 2004 and 2012?</item>
+  <item><span class="token">ⓑ</span>What is the average population decline per year?</item>
+  <item><span class="token">ⓒ</span>Find an equation for the population, <emphasis effect="italics">P</emphasis>, of the school <emphasis effect="italics">t</emphasis> years after 2004.</item></list></problem>
+
+  <solution id="eip-idm400833104">
+  <list id="eip-idm400832848" list-type="enumerated" number-style="arabic" class="circled">
+  <item><span class="token">ⓐ</span>375 </item>
+  <item><span class="token">ⓑ</span>dropped an average of 46.875, or about 47 people per year</item>
+  <item><span class="token">ⓒ</span>y = −46.875t + 1250</item>
+  </list></solution></exercise><exercise id="fs-id2387205" class="material-set-2"><problem id="fs-id2387206"><para id="fs-id2387207">Draw a scatter plot for the data provided in <link target-id="Table_04_03_32"/>. Then determine whether the data appears to be linearly related.</para>
+  <table id="Table_04_03_32" summary="This table shows two rows and six columns.  The values in the first row are: 0, 2, 4, 6, 8, 10.  The values in the second row are: -450, -200, 10, 265, 500 and 755.">
+  <title/>
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <tbody>
+  <row>
+  <entry align="center">0</entry>
+  <entry align="center">2</entry>
+  <entry align="center">4</entry>
+  <entry align="center">6</entry>
+  <entry align="center">8</entry>
+  <entry align="center">10</entry>
+  </row>
+  <row>
+  <entry align="center">–450</entry>
+  <entry align="center">–200</entry>
+  <entry align="center">10</entry>
+  <entry align="center">265</entry>
+  <entry align="center">500</entry>
+  <entry align="center">755</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </problem>
+  <!--<solution id="fs-id2804389">
+  <para id="eip-id2372490"><newline/>
+  <media id="fs-id2804395" alt="Scatterplot with a collection of points: (0,-450); (2,-200); (4,10); (6,265); (8,500) and (10,755). The data appears linear.">
+  <image mime-type="image/jpg" src="CNX_Precalc_Figure_02_04_231.jpg"/>
+  </media><newline/></para></solution>--></exercise><exercise id="fs-id2804427" class="material-set-2"><problem id="fs-id2804428"><para id="fs-id2804429">Draw a best-fit line for the plotted data.<newline/></para>
+
+  <media id="fs-id2804435" alt="Scatterplot with domain from 2 to 10 and range from 20 from 33.  The points plotted are (2,20); (4,23); (6,26); (8,26); and (10,32).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_223.jpg"/>
+  </media>
+
+  </problem>
+  <solution id="eip-idm438133904">
+  <media id="eip-idm438133648" alt=""><image mime-type="jpeg" src="../../media/CNX_ColAlg_Figure_04_227.jpg"/></media>
+  </solution></exercise><para id="fs-id2804465">For the following exercises, use <link target-id="Table_04_03_33"/>, which shows the percent of unemployed persons 25 years or older who are college graduates in a particular city, by year.</para>
+  <table id="Table_04_03_33" summary="This table shows two rows and six columns.  The first row is labeled: “Year” and the second is labeled: “Percent Graduates”.  The values in the first row are: 2000, 2002, 2005, 2007, 2010.  The values in the second row are: 8.5, 8.0, 7.2, 6.7 and 6.4">
+  <title/>
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <tbody>
+  <row>
+  <entry align="center"><emphasis>Year</emphasis></entry>
+  <entry align="center">2000</entry>
+  <entry align="center">2002</entry>
+  <entry align="center">2005</entry>
+  <entry align="center">2007</entry>
+  <entry align="center">2010</entry>
+  </row>
+  <row>
+  <entry align="center"><emphasis>Percent Graduates</emphasis></entry>
+  <entry align="center">8.5</entry>
+  <entry align="center">8.0</entry>
+  <entry align="center">7.2</entry>
+  <entry align="center">6.7</entry>
+  <entry align="center">6.4</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <exercise id="fs-id2406470"><problem id="fs-id2406471"><para id="fs-id2406472">Determine whether the trend appears linear. If so, and assuming the trend continues, find a linear regression model to predict the percent of unemployed in a given year to three decimal places.</para></problem>
+  <!--<solution id="fs-id2406477">
+  <para id="eip-id2083346"><newline/>
+  <media id="fs-id2406482" alt="Scatterplot with a collection of points: (2000,8.5); (2002,8); (2005,7.2); (2007,6.7); and (2010,6.4). The data appears linear">
+  <image mime-type="image/jpg" src="CNX_Precalc_Figure_02_04_232.jpg"/>
+  </media><newline/></para>
+
+  <para id="fs-id2406495"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>&#8722;</m:mo><m:mn>0.219</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>445.990</m:mn>
+   </m:mrow>
+  </m:math> </para>
+   </solution>--></exercise><exercise id="fs-id2363667"><problem id="fs-id2406523"><para id="fs-id2406524">In what year will the percentage drop below 4%?</para></problem>
+  <solution id="eip-idm341732704">
+  <para id="eip-idm341732448">
+  In early 2018
+  </para>
+  </solution></exercise><exercise id="fs-id2406532"><problem id="fs-id2406533"><para id="fs-id2406534">Based on the set of data given in <link target-id="Table_04_03_34"/>, calculate the regression line using a calculator or other technology tool, and determine the correlation coefficient. Round to three decimal places of accuracy.</para>
+  <table id="Table_04_03_34" summary="This table shows two rows and six columns.  The first row is labeled: “x” and the second is labeled: “y”.  The values in the first row are: 16, 18, 20, 24, 26.  The values in the second row are: 106, 110, 115, 120, 125.">
+  <title/>
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <tbody>
+  <row>
+  <entry align="center"><emphasis> <emphasis effect="italics">x</emphasis></emphasis></entry>
+  <entry align="center">16</entry>
+  <entry align="center">18</entry>
+  <entry align="center">20</entry>
+  <entry align="center">24</entry>
+  <entry align="center">26</entry>
+  </row>
+  <row>
+  <entry align="center"><emphasis><emphasis effect="italics">y</emphasis></emphasis></entry>
+  <entry align="center">106</entry>
+  <entry align="center">110</entry>
+  <entry align="center">115</entry>
+  <entry align="center">120</entry>
+  <entry align="center">125</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table></problem>
+  <!--<solution id="fs-id2406660"><para id="fs-id2406661"> <m:math>
+   <m:mrow>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.820</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>77.349</m:mn><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.986</m:mn>
+   </m:mrow>
+  </m:math> </para></solution>--></exercise><para id="fs-id2406691">For the following exercises, consider this scenario: The population of a city increased steadily over a ten-year span. The following ordered pairs shows the population (in hundreds) and the year over the ten-year span, (population, year) for specific recorded years:</para>
+  <para id="fs-id2406697"> <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>500</m:mn><m:mo>,</m:mo><m:mn>2000</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>700</m:mn><m:mo>,</m:mo><m:mn>2001</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>200</m:mn><m:mo>,</m:mo><m:mn>2003</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>800</m:mn><m:mo>,</m:mo><m:mn>2006</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:math>
+  </para><exercise id="fs-id2621231"><problem id="fs-id2621232"><para id="fs-id2621233">Use linear regression to determine a function <emphasis effect="italics">y</emphasis>, where the year depends on the population. Round to three decimal places of accuracy.</para></problem>
+  <solution id="eip-idm556580192">
+  <para id="eip-idm505473328">
+  y = 0.00455x + 1979.5
+  </para>
+  </solution></exercise><exercise id="fs-id2621264"><problem id="fs-id2621265"><para id="fs-id2621266">Predict when the population will hit 20,000.</para></problem>
+  <!--<solution id="fs-id2621269"><para id="fs-id2621270">2070</para></solution>--></exercise><exercise id="fs-id2621274"><problem id="fs-id2621275"><para id="fs-id2621276">What is the correlation coefficient for this model?</para></problem>
+  <solution id="eip-idm1154624224">
+  <para id="eip-idm1154623968">
+  r = 0.999
+  </para>
+  </solution></exercise></section></content>
+<glossary>
+<definition id="fs-id2621300"><term>correlation coefficient </term><meaning id="fs-id2621304">a value, <m:math>
+ <m:mrow><m:mi>r</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> between –1 and 1 that indicates the degree of linear correlation of variables, or how closely a regression line fits a data set.</meaning></definition>
+<definition id="fs-id1672566"><term>extrapolation </term><meaning id="fs-id1672569">predicting a value outside the domain and range of the data</meaning></definition>
+<definition id="fs-id1672572"><term>interpolation </term><meaning id="fs-id1672575">predicting a value inside the domain and range of the data</meaning></definition>
+<definition id="fs-id1672579"><term>least squares regression </term><meaning id="fs-id1672582">a statistical technique for fitting a line to data in a way that minimizes the differences between the line and data values</meaning></definition>
+<definition id="fs-id1672586"><term>model breakdown </term><meaning id="fs-id1672589">when a model no longer applies after a certain point </meaning></definition>
+</glossary>
+</document>

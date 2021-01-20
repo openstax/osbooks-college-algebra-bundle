@@ -1,0 +1,4500 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Modeling Using Variation</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+<md:content-id>m49353</md:content-id>
+<md:title>Modeling Using Variation</md:title>
+<md:abstract><para>In this section, you will:</para>
+<list>
+<item>Solve direct variation problems.</item>
+<item>Solve inverse variation problems.</item>
+<item>Solve problems involving joint variation.</item>
+</list></md:abstract>
+<md:uuid>ebad2205-2527-4216-bdae-2f2e5e1ab5c8</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+ <para id="fs-id1165135356540">A used-car company has just offered their best candidate, Nicole, a position in sales. The position offers 16% commission on her sales. Her earnings depend on the amount of her sales. For instance, if she sells a vehicle for $4,600, she will earn $736. She wants to evaluate the offer, but she is not sure how. In this section, we will look at relationships, such as this one, between earnings, sales, and commission rate.</para>
+
+ <section id="fs-id1165137730306"><title>Solving Direct Variation Problems</title><para id="fs-id1165137823230">In the example above, Nicole’s earnings can be found by multiplying her sales by her commission. The formula <m:math>
+<m:mrow>
+ <m:mi>e</m:mi><m:mo>=</m:mo><m:mn>0.16</m:mn><m:mi>s</m:mi></m:mrow>
+</m:math> tells us her earnings, <m:math>
+<m:mrow>
+ <m:mi>e</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> come from the product of 0.16, her commission, and the sale price of the vehicle. If we create a table, we observe that as the sales price increases, the earnings increase as well, which should be intuitive. See <link target-id="Table_03_09_01"/>.</para>
+
+<table id="Table_03_09_01" summary="..">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+ <colspec colnum="2" colname="c2"/>
+ <colspec colnum="3" colname="c3"/>
+ <thead>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+<m:mi>s</m:mi></m:mrow>
+</m:math>, sales prices</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+<m:mi>e</m:mi><m:mo>=</m:mo><m:mn>0.16</m:mn><m:mi>s</m:mi></m:mrow>
+</m:math>
+</entry>
+<entry align="center">Interpretation </entry>
+</row>
+ </thead>
+ <tbody>
+<row>
+<entry align="center">$4,600</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+<m:mi>e</m:mi><m:mo>=</m:mo><m:mn>0.16</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+ <m:mn>4,600</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>736</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center">A sale of a $4,600 vehicle results in $736 earnings.</entry>
+</row>
+<row>
+<entry align="center">$9,200</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+<m:mi>e</m:mi><m:mo>=</m:mo><m:mn>0.16</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+ <m:mn>9,200</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1,472</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center">A sale of a $9,200 vehicle results in $1472 earnings.</entry>
+</row>
+<row>
+<entry align="center">$18,400</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+<m:mi>e</m:mi><m:mo>=</m:mo><m:mn>0.16</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+ <m:mn>18,400</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2,944</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center">A sale of a $18,400 vehicle results in $2944 earnings.</entry>
+</row>
+ </tbody></tgroup>
+</table><para id="fs-id1165135188294"> Notice that earnings are a multiple of sales. As sales increase, earnings increase in a predictable way. Double the sales of the vehicle from $4,600 to $9,200, and we double the earnings from $736 to $1,472. As the input increases, the output increases as a multiple of the input. A relationship in which one quantity is a constant multiplied by another quantity is called <emphasis>direct variation</emphasis>. Each variable in this type of relationship <emphasis>varies directly </emphasis>with the other.</para>
+
+<para id="fs-id1165137937533"><link target-id="Figure_03_09_001"/> represents the data for Nicole’s potential earnings. We say that earnings vary directly with the sales price of the car. The formula <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>k</m:mi><m:msup>
+<m:mi>x</m:mi>
+<m:mi>n</m:mi>
+ </m:msup>
+ </m:mrow>
+</m:math> is used for direct variation. The value <m:math>
+<m:mrow>
+ <m:mi>k</m:mi></m:mrow>
+</m:math> is a nonzero constant greater than zero and is called the <emphasis>constant of variation</emphasis>. In this case, <m:math>
+<m:mrow>
+ <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0.16</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+</para><figure id="Figure_03_09_001" class="small">
+<media id="fs-id1165137507296" alt="Graph of y=(0.16)x where the horizontal axis is labeled, “s, Sales Price in Dollars”, and the vertical axis is labeled, “e, Earnings, $”.">
+ <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_001.jpg"/>
+</media>
+</figure>
+
+<note id="fs-id1165137730075"><title>Direct Variation</title>
+
+<para id="fs-id1165137827458">If <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mspace width="0.8em"/><m:mtext>and</m:mtext><m:mspace width="0.8em"/><m:mi>y</m:mi>
+ </m:mrow>
+</m:math> are related by an equation of the form</para>
+<equation id="fs-id1165135437156" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>k</m:mi><m:msup>
+<m:mi>x</m:mi>
+<m:mi>n</m:mi>
+</m:msup>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165133155266">then we say that the relationship is <term>direct variation</term> and <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math>
+ <term>varies directly</term> with the <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mtext>th</m:mtext></m:mrow>
+ </m:math> power of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> In direct variation relationships, there is a nonzero constant ratio <m:math>
+<m:mrow>
+<m:mi>k</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mi>y</m:mi>
+ <m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mi>n</m:mi>
+</m:msup>
+ </m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+ </m:math> where <m:math>
+<m:mrow>
+<m:mi>k</m:mi></m:mrow>
+ </m:math> is called the <term>constant of variation</term>, which help defines the relationship between the variables.</para></note><note id="fs-id1165137550958" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165137723932"><emphasis>Given a description of a direct variation problem, solve for an unknown.
+</emphasis></para>
+<list id="fs-id1165137724401" list-type="enumerated" number-style="arabic"><item>Identify the input, <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and the output, <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+ </m:math>
+ </item>
+ <item>Determine the constant of variation. You may need to divide <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> by the specified power of <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> to determine the constant of variation.</item>
+<item>Use the constant of variation to write an equation for the relationship.</item>
+<item>Substitute known values into the equation to find the unknown.</item>
+</list></note>
+
+<example id="Example_03_09_01"><exercise id="fs-id1165137676066"><problem id="fs-id1165137434564">
+<title>Solving a Direct Variation Problem</title>
+<para id="fs-id1165137849016">The quantity <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> varies directly with the cube of <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> If <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow>
+</m:math> when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> find <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi></m:mrow>
+</m:math> is 6.</para>
+ </problem>
+ <solution id="fs-id1165137642960">
+<para id="fs-id1165137659713">The general formula for direct variation with a cube is <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>k</m:mi><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>.</m:mo></m:mrow>
+</m:math> The constant can be found by dividing <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> by the cube of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<equation id="eip-id1165134084945" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtable>
+<m:mtr>
+ <m:mtd>
+<m:mtable columnalign="left">
+<m:mtr>
+ <m:mtd>
+<m:mrow/>
+ </m:mtd>
+</m:mtr>
+<m:mtr>
+ <m:mtd>
+<m:mi>k</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mi>y</m:mi>
+<m:mrow>
+ <m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+
+</m:mrow>
+</m:mfrac>
+
+ </m:mtd>
+</m:mtr>
+</m:mtable>
+
+ </m:mtd>
+</m:mtr>
+<m:mtr>
+ <m:mtd>
+<m:mrow>
+<m:mspace width="0.8em"/><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>25</m:mn>
+ </m:mrow>
+ <m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+
+ </m:mrow>
+</m:mfrac>
+
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+<m:mtr>
+ <m:mtd>
+<m:mrow>
+<m:mspace width="0.8em"/><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>25</m:mn>
+ </m:mrow>
+ <m:mn>8</m:mn>
+</m:mfrac>
+
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+
+</m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137628102">Now use the constant to write an equation that represents this relationship.</para>
+<equation id="eip-id1165135440091" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+ <m:mn>25</m:mn>
+</m:mrow>
+<m:mn>8</m:mn>
+</m:mfrac>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135432964">Substitute <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow>
+</m:math> and solve for <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<equation id="eip-id1165135207297" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>25</m:mn>
+ </m:mrow>
+ <m:mn>8</m:mn>
+</m:mfrac>
+<m:msup>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+ <m:mn>3</m:mn>
+</m:msup>
+
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>675</m:mn>
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+
+</m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+ <commentary id="fs-id1165135533140">
+<title>Analysis </title>
+<para id="fs-id1165134557390">The graph of this equation is a simple cubic, as shown in <link target-id="Figure_03_09_002"/>.</para>
+
+<figure id="Figure_03_09_002" class="small">
+<media id="fs-id1165137645610" alt="Graph of y=25/8(x^3) with the labeled points (2, 25) and (6, 675).">
+ <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_002.jpg"/>
+</media>
+</figure>
+ </commentary>
+</exercise></example><note id="fs-id1165137736204" class="precalculus qa"><label>Q&amp;A</label>
+<para id="eip-id1165137772190"><emphasis effect="bold">Do the graphs of all direct variation equations look like <link target-id="Example_03_09_01"/>?</emphasis></para><para id="fs-id1165137596402"><emphasis effect="italics">No. Direct variation equations are power functions—they may be linear, quadratic, cubic, quartic, radical, etc. But all of the graphs pass through <m:math>
+ <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+ <m:mn>0,0</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</emphasis></para></note><note id="fs-id1165137783766" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_03_09_01">
+ <problem id="fs-id1165137645447"><para id="fs-id1165135160334">The quantity <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies directly with the square of <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+ </m:math> If <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>24</m:mn></m:mrow>
+ </m:math> when <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+ </m:math> find <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> when <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> is 4.</para></problem>
+ <solution id="fs-id1165137659774"><para id="fs-id1165137558700"> <m:math>
+<m:mrow>
+<m:mfrac>
+ <m:mrow>
+<m:mn>128</m:mn></m:mrow>
+ <m:mn>3</m:mn>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+ </para></solution>
+</exercise>
+</note>
+ </section><section id="fs-id1165137758211"><title>Solving Inverse Variation Problems</title><para id="fs-id1165137734583">Water temperature in an ocean varies inversely to the water’s depth. Between the depths of 250 feet and 500 feet, the formula <m:math>
+<m:mrow>
+ <m:mi>T</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>14,000</m:mn></m:mrow>
+<m:mi>d</m:mi>
+ </m:mfrac>
+ </m:mrow>
+</m:math> gives us the temperature in degrees Fahrenheit at a depth in feet below Earth’s surface. Consider the Atlantic Ocean, which covers 22% of Earth’s surface. At a certain location, at the depth of 500 feet, the temperature may be 28°F.</para><para id="fs-id1165137761800">If we create <link target-id="Table_03_09_02"/>, we observe that, as the depth increases, the water temperature decreases.</para>
+
+<table id="Table_03_09_02" summary="..">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+ <colspec colnum="2" colname="c2"/>
+ <colspec colnum="3" colname="c3"/>
+ <thead>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+<m:mi>d</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> depth</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+<m:mi>T</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+ <m:mtext>14,000</m:mtext>
+</m:mrow>
+<m:mi>d</m:mi>
+</m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center">Interpretation </entry>
+</row>
+ </thead>
+ <tbody>
+<row>
+<entry align="center">500 ft</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+<m:mfrac>
+<m:mrow>
+ <m:mn>14,000</m:mn></m:mrow>
+<m:mrow>
+ <m:mn>500</m:mn></m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>28</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center">At a depth of 500 ft, the water temperature is 28° F.</entry>
+</row>
+<row>
+<entry align="center">350 ft</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+<m:mfrac>
+<m:mrow>
+ <m:mn>14,000</m:mn></m:mrow>
+<m:mrow>
+ <m:mn>350</m:mn></m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>40</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center">At a depth of 350 ft, the water temperature is 40° F.</entry>
+</row>
+<row>
+<entry align="center">250 ft</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+<m:mfrac>
+<m:mrow>
+ <m:mn>14,000</m:mn></m:mrow>
+<m:mrow>
+ <m:mn>250</m:mn></m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>56</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center">At a depth of 250 ft, the water temperature is 56° F.</entry>
+</row>
+ </tbody>
+
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id1165137645896">We notice in the relationship between these variables that, as one quantity increases, the other decreases. The two quantities are said to be <emphasis>inversely proportional</emphasis> and each term <emphasis>varies inversely</emphasis> with the other. Inversely proportional relationships are also called <emphasis>inverse variations</emphasis>.</para>
+<para id="fs-id1165137805474">For our example, <link target-id="Figure_03_09_003"/> depicts the <term class="no-emphasis">inverse variation</term>. We say the water temperature varies inversely with the depth of the water because, as the depth increases, the temperature decreases. The formula <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mi>k</m:mi>
+<m:mi>x</m:mi>
+ </m:mfrac>
+ </m:mrow>
+</m:math> for inverse variation in this case uses <m:math>
+<m:mrow>
+ <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>14,000.</m:mn></m:mrow>
+</m:math>
+</para><figure id="Figure_03_09_003" class="small">
+<media id="fs-id1165135161265" alt="Graph of y=(14000)/x where the horizontal axis is labeled, “Depth, d (ft)”, and the vertical axis is labeled, “Temperature, T (Degrees Fahrenheit)”.">
+ <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_003-0a3b.jpg"/>
+</media>
+</figure>
+
+<note id="fs-id1165135397976"><title>Inverse Variation</title>
+
+<para id="fs-id1165137536242"> If <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> are related by an equation of the form</para>
+
+<equation id="fs-id1165137571596" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mi>k</m:mi>
+<m:mrow>
+ <m:msup>
+<m:mi>x</m:mi>
+<m:mi>n</m:mi>
+ </m:msup>
+ </m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165137843973">where <m:math>
+ <m:mrow>
+<m:mi>k</m:mi></m:mrow>
+</m:math> is a nonzero constant, then we say that <m:math>
+ <m:mrow>
+<m:mi>y</m:mi>
+ </m:mrow>
+</m:math> <term>varies inversely</term> with the <m:math>
+ <m:mrow>
+<m:mi>n</m:mi><m:mtext>th</m:mtext></m:mrow>
+</m:math> power of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> In <term>inversely proportional</term> relationships, or <term>inverse variations</term>, there is a constant multiple <m:math>
+ <m:mrow>
+<m:mi>k</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mi>n</m:mi>
+</m:msup>
+<m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></note><example id="Example_03_09_02">
+<exercise id="fs-id1165137641735"><problem id="fs-id1165137658061">
+<title>Writing a Formula for an Inversely Proportional Relationship</title>
+<para id="fs-id1165131797298">A tourist plans to drive 100 miles. Find a formula for the time the trip will take as a function of the speed the tourist drives.</para>
+ </problem>
+ <solution id="fs-id1165137654947">
+<para id="fs-id1165137827766">Recall that multiplying speed by time gives distance. If we let <m:math>
+<m:mrow>
+ <m:mi>t</m:mi></m:mrow>
+</m:math> represent the drive time in hours, and <m:math>
+<m:mrow>
+ <m:mi>v</m:mi></m:mrow>
+</m:math> represent the velocity (speed or rate) at which the tourist drives, then <m:math>
+<m:mrow>
+ <m:mi>v</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mtext>distance</m:mtext><m:mtext>.</m:mtext></m:mrow>
+</m:math> Because the distance is fixed at 100 miles, <m:math>
+<m:mrow>
+ <m:mi>v</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>100.</m:mn></m:mrow>
+</m:math> Solving this relationship for the time gives us our function.</para>
+
+<equation id="eip-id1165134094568" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mi>t</m:mi><m:mo stretchy="false">(</m:mo><m:mi>v</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>100</m:mn>
+ </m:mrow>
+ <m:mi>v</m:mi>
+</m:mfrac>
+
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>      </m:mtext><m:mo>=</m:mo><m:mn>100</m:mn><m:msup>
+ <m:mi>v</m:mi>
+ <m:mrow>
+<m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:msup>
+
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+
+</m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137748472">We can see that the constant of variation is 100 and, although we can write the relationship using the negative exponent, it is more common to see it written as a fraction.</para>
+ </solution>
+</exercise></example>
+<note id="fs-id1165135187117" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165137677962"><emphasis>Given a description of an indirect variation problem, solve for an unknown.
+</emphasis></para>
+<list id="fs-id1165137662822" list-type="enumerated" number-style="arabic"><item>Identify the input, <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo></m:mrow>
+ </m:math> and the output, <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+ </m:math>
+ </item>
+ <item>Determine the constant of variation. You may need to multiply <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> by the specified power of <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> to determine the constant of variation.</item>
+<item>Use the constant of variation to write an equation for the relationship.</item>
+<item>Substitute known values into the equation to find the unknown.
+</item>
+</list></note>
+
+<example id="Example_03_09_03"><exercise id="fs-id1165134328944"><problem id="fs-id1165137581324">
+<title>Solving an Inverse Variation Problem</title>
+<para id="fs-id1165135209804">A quantity <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> varies inversely with the cube of <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> If <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow>
+</m:math> when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> find <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi></m:mrow>
+</m:math> is 6.</para>
+ </problem>
+ <solution id="fs-id1165137547532">
+<para id="fs-id1165137627457">The general formula for inverse variation with a cube is <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mi>k</m:mi>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+ </m:mfrac>
+ <m:mo>.</m:mo></m:mrow>
+</m:math> The constant can be found by multiplying <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> by the cube of <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+
+<equation id="eip-id1165132213474" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mi>k</m:mi><m:mo>=</m:mo><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+<m:mi>y</m:mi>
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>  </m:mtext><m:mo>=</m:mo><m:msup>
+ <m:mn>2</m:mn>
+ <m:mn>3</m:mn>
+</m:msup>
+<m:mo>⋅</m:mo><m:mn>25</m:mn>
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>200</m:mn>
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+
+</m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135188786">Now we use the constant to write an equation that represents this relationship.</para>
+
+<equation id="eip-id1165133333885" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mi>k</m:mi>
+ <m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+
+ </m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>200</m:mn>
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>200</m:mn>
+ </m:mrow>
+ <m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+
+ </m:mrow>
+</m:mfrac>
+
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+
+</m:mtable>
+ </m:mrow>
+</m:math> </equation>
+
+<para id="fs-id1165137653904">Substitute <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow>
+</m:math> and solve for <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<equation id="eip-id1165131878567" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>200</m:mn>
+ </m:mrow>
+ <m:mrow>
+<m:msup>
+<m:mn>6</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+
+ </m:mrow>
+</m:mfrac>
+
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>25</m:mn>
+ </m:mrow>
+ <m:mrow>
+<m:mn>27</m:mn>
+ </m:mrow>
+</m:mfrac>
+
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+
+</m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+ <commentary id="fs-id1165137573081">
+<title>Analysis </title>
+<para id="fs-id1165137852181">The graph of this equation is a rational function, as shown in <link target-id="Figure_03_09_004"/>. </para><figure id="Figure_03_09_004" class="small">
+<media id="fs-id1165135631535" alt="Graph of y=25/(x^3) with the labeled points (2, 25) and (6, 25/27).">
+ <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_004.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example><note id="fs-id1165135178098" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_03_09_02">
+ <problem id="fs-id1165137810877"><para id="fs-id1165137810878">A quantity <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely with the square of <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+ </m:math> If <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow>
+ </m:math> when <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+ </m:math> find <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> when <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> is 4.</para></problem>
+ <solution id="fs-id1165137683037"><para id="fs-id1165137683038"> <m:math>
+<m:mrow>
+<m:mfrac>
+ <m:mn>9</m:mn>
+ <m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+</para></solution>
+</exercise>
+</note>
+ </section><section id="fs-id1165134054044">
+<title>Solving Problems Involving Joint Variation</title>
+<para id="fs-id1165137558033">Many situations are more complicated than a basic direct variation or inverse variation model. One variable often depends on multiple other variables. When a variable is dependent on the product or quotient of two or more variables, this is called <term>joint variation</term>. For example, the cost of busing students for each school trip varies with the number of students attending and the distance from the school. The variable <m:math>
+ <m:mrow>
+<m:mi>c</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> cost, varies jointly with the number of students, <m:math>
+ <m:mrow>
+<m:mi>n</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and the distance, <m:math>
+<m:mrow>
+ <m:mi>d</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><note id="fs-id1165135177639">
+
+<title>Joint Variation</title>
+<para id="fs-id1165135195246">Joint variation occurs when a variable varies directly or inversely with multiple variables.</para><para id="fs-id1165137678943">For instance, if <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> varies directly with both <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> and <m:math>
+<m:mrow>
+<m:mi>z</m:mi><m:mo>,</m:mo></m:mrow>
+ </m:math> we have <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mi>k</m:mi><m:mi>y</m:mi><m:mi>z</m:mi><m:mo>.</m:mo></m:mrow>
+ </m:math> If <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> varies directly with <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> and inversely with <m:math>
+<m:mrow>
+<m:mi>z</m:mi><m:mo>,</m:mo></m:mrow>
+ </m:math> we have <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mi>k</m:mi><m:mi>y</m:mi></m:mrow>
+ <m:mi>z</m:mi>
+</m:mfrac>
+<m:mo>.</m:mo></m:mrow>
+ </m:math> Notice that we only use one constant in a joint variation equation.</para></note>
+
+<example id="Example_03_09_04">
+<exercise id="fs-id1165137673524"><problem id="fs-id1165135394333">
+<title>Solving Problems Involving Joint Variation</title>
+ <para id="fs-id1165137452990">A quantity <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> varies directly with the square of <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> and inversely with the cube root of <m:math>
+<m:mrow>
+<m:mi>z</m:mi><m:mo>.</m:mo></m:mrow>
+ </m:math> If <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow>
+ </m:math> when <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+ </m:math>
+and <m:math>
+<m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo></m:mrow>
+ </m:math> find <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> when <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+ </m:math> and <m:math>
+<m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>27.</m:mn></m:mrow>
+ </m:math>
+ </para></problem>
+<solution id="fs-id1165135438444">
+<para id="fs-id1165133213902">Begin by writing an equation to show the relationship between the variables.</para>
+
+<equation id="eip-id1165133305360" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+ <m:mi>k</m:mi><m:msup>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+
+</m:mrow>
+<m:mrow>
+ <m:mroot>
+<m:mi>z</m:mi>
+<m:mn>3</m:mn>
+ </m:mroot>
+
+</m:mrow>
+</m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135190190">Substitute <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:mrow>
+ </m:math> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+ </m:math> and <m:math>
+<m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow>
+ </m:math> to find the value of the constant <m:math>
+<m:mrow>
+<m:mi>k</m:mi><m:mo>.</m:mo></m:mrow>
+ </m:math>
+ </para>
+<equation id="eip-id1165133420152" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mtable columnalign="left">
+<m:mtr>
+ <m:mtd>
+<m:mrow/>
+ </m:mtd>
+</m:mtr>
+<m:mtr>
+ <m:mtd>
+<m:mn>6</m:mn><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+ <m:mi>k</m:mi><m:msup>
+<m:mn>2</m:mn>
+<m:mn>2</m:mn>
+ </m:msup>
+
+</m:mrow>
+<m:mrow>
+ <m:mroot>
+<m:mn>8</m:mn>
+<m:mn>3</m:mn>
+ </m:mroot>
+
+</m:mrow>
+</m:mfrac>
+
+ </m:mtd>
+</m:mtr>
+</m:mtable>
+
+ </m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mn>6</m:mn><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>4</m:mn><m:mi>k</m:mi>
+ </m:mrow>
+ <m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mn>3</m:mn><m:mo>=</m:mo><m:mi>k</m:mi>
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+
+</m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165137863719">Now we can substitute the value of the constant into the equation for the relationship.</para>
+<equation id="eip-id1165134503062" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>3</m:mn><m:msup>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+ </m:mrow>
+ <m:mrow>
+<m:mroot>
+<m:mi>z</m:mi>
+<m:mn>3</m:mn>
+</m:mroot>
+ </m:mrow>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+</equation>
+ <para id="fs-id1165137742401">To find <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> when <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+ </m:math> and <m:math>
+<m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>27</m:mn><m:mo>,</m:mo></m:mrow>
+ </m:math> we will substitute values for <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> and <m:math>
+<m:mrow>
+<m:mi>z</m:mi></m:mrow>
+ </m:math> into our equation.</para>
+<equation id="eip-id1165131924522" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow/>
+ </m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>3</m:mn><m:msup>
+<m:mrow>
+ <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+ </m:mrow>
+ <m:mrow>
+<m:mroot>
+<m:mrow>
+ <m:mn>27</m:mn>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mroot>
+
+ </m:mrow>
+</m:mfrac>
+
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+ <m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+ </m:mtd>
+</m:mtr>
+
+</m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+ </exercise></example>
+
+<note id="fs-id1165135508625" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_03_09_03">
+ <problem id="fs-id1165137588085"><para id="fs-id1165137588086"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> varies directly with the square of <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> and inversely with <m:math>
+<m:mrow>
+<m:mi>z</m:mi><m:mo>.</m:mo></m:mrow>
+ </m:math> If <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>40</m:mn></m:mrow>
+ </m:math> when <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+ </m:math> and <m:math>
+<m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+ </m:math> find <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> when <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow>
+ </m:math>
+and <m:math>
+<m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>25.</m:mn></m:mrow>
+ </m:math> </para></problem>
+ <solution id="fs-id1165137755838"><para id="fs-id1165137755840"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow>
+ </m:math>
+ </para></solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137425403" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165137844171">Access these online resources for additional instruction and practice with direct and inverse variation.</para>
+ <list id="fs-id1165137854996" list-type="bulleted">
+<item><link url="http://openstax.org/l/directvariation">Direct Variation</link></item>
+ <item><link url="http://openstax.org/l/inversevariatio">Inverse Variation</link></item>
+ <item><link url="http://openstax.org/l/directinverse">Direct and Inverse Variation</link></item>
+ <item><link url="http://openstax.org/l/PreCalcLPC03">Additional Learningpod Practice Questions</link></item>
+ </list>
+</note></section>
+
+<section id="fs-id1165137898092" class="key-equations"><title>Key Equations</title><table id="eip-id1165133094986" summary=".." class="unnumbered unstyled"><label/><tgroup cols="1">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center">Direct variation</entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>k</m:mi><m:msup>
+<m:mi>x</m:mi>
+<m:mi>n</m:mi>
+</m:msup>
+<m:mo>,</m:mo><m:mi>k</m:mi><m:mtext> is a nonzero constant</m:mtext><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Inverse variation</entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mi>k</m:mi>
+<m:mrow>
+ <m:msup>
+<m:mi>x</m:mi>
+<m:mi>n</m:mi>
+ </m:msup>
+
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mi>k</m:mi><m:mtext> is a nonzero constant</m:mtext><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+</tgroup>
+</table></section><section id="fs-id1165137419773" class="key-concepts">
+ <title>Key Concepts</title>
+<list id="fs-id1165137723142" list-type="bulleted"><item>A relationship where one quantity is a constant multiplied by another quantity is called direct variation. See <link target-id="Example_03_09_01"/>.</item>
+<item>Two variables that are directly proportional to one another will have a constant ratio.</item>
+ <item>A relationship where one quantity is a constant divided by another quantity is called inverse variation. See <link target-id="Example_03_09_02"/>.</item>
+ <item>Two variables that are inversely proportional to one another will have a constant multiple. See <link target-id="Example_03_09_03"/>.</item>
+ <item>In many problems, a variable varies directly or inversely with multiple variables. We call this type of relationship joint variation. See <link target-id="Example_03_09_04"/>.</item>
+</list></section>
+
+
+<section id="fs-id1165131958288" class="section-exercises"><title>Section Exercises</title><section id="fs-id1165137430832">
+<title>Verbal</title>
+<exercise id="fs-id1165134389954">
+ <problem id="fs-id1165134389956">
+<para id="fs-id1165137612339">What is true of the appearance of graphs that reflect a direct variation between two variables?</para>
+ </problem>
+<solution id="fs-id1165137759992">
+ <para id="fs-id1165137646694">The graph will have the appearance of a power function.</para> </solution>
+</exercise>
+<exercise id="fs-id1165137386819">
+ <problem id="fs-id1165137386821">
+<para id="fs-id1165137581165">If two variables vary inversely, what will an equation representing their relationship look like?</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137641727">
+ <problem id="fs-id1165135522169">
+<para id="fs-id1165135522171">Is there a limit to the number of variables that can jointly vary? Explain.</para>
+ </problem>
+<solution id="fs-id1165134192951">
+ <para id="fs-id1165137598495">No. Multiple variables may jointly vary.</para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-id1165131959628">
+<title>Algebraic</title>
+<para id="fs-id1165137507782">For the following exercises, write an equation describing the relationship of the given variables.</para>
+<exercise id="fs-id1165137611285">
+ <problem id="fs-id1165137611287">
+<para id="fs-id1165137535129"> <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> varies directly as <m:math>
+<m:mrow>
+ <m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>12.</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165135176447">
+ <problem id="fs-id1165135176449">
+<para id="fs-id1165135250657"> <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> varies directly as the square of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>80</m:mn><m:mtext>. </m:mtext></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134381645">
+ <para id="fs-id1165134381647"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+ <exercise id="fs-id1165134108533"><problem id="fs-id1697066"><para id="fs-id1165135332727"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies directly as the square root of <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> and when <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>36</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>24.</m:mn></m:mrow>
+ </m:math> </para></problem>
+ </exercise>
+<exercise id="fs-id1165134192961">
+ <problem id="fs-id1165135496491">
+<para id="fs-id1165135496493"> <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> varies directly as the cube of <m:math>
+<m:mrow>
+ <m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>36</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>24.</m:mn>
+ </m:mrow>
+</m:math></para></problem>
+<solution id="fs-id1165137760761">
+ <para id="fs-id1165137760763"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>1944</m:mn></m:mrow></m:mfrac><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137809885">
+ <problem id="fs-id1165137679904">
+<para id="fs-id1165137679906"> <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> varies directly as the cube root of <m:math>
+<m:mrow>
+ <m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>27</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>15.</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+ <exercise id="fs-id1165137924366">
+<problem id="fs-id1165137924368">
+<para id="fs-id1165137748522"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies directly as the fourth power of <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> and when <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6.</m:mn></m:mrow>
+ </m:math>
+
+</para></problem>
+<solution id="fs-id1165137667538"><para id="fs-id1165137740851"> <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+ </m:msup>
+</m:mrow>
+</m:math> </para>
+</solution></exercise>
+<exercise id="fs-id1165137400639">
+ <problem id="fs-id1165137465246">
+<para id="fs-id1165137465248"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely as <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137447334">
+ <problem id="fs-id1165137447336">
+<para id="fs-id1165133030852"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely as the square of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137662476">
+ <para id="fs-id1165137706986"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>18</m:mn></m:mrow>
+ <m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+ </m:mrow>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137766904">
+ <problem id="fs-id1165135528413">
+<para id="fs-id1165135528415"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely as the cube of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137805102"><problem id="fs-id1165137805103"><para id="fs-id1165137805104"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely as the fourth power of <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> and when <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+ </m:math>
+</para></problem>
+ <solution id="fs-id1165135524553"> <para id="fs-id1165135524556"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>81</m:mn></m:mrow>
+ <m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+</m:msup>
+ </m:mrow>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+ </para></solution></exercise>
+<exercise id="fs-id1165137898971">
+ <problem id="fs-id1165137656213">
+<para id="fs-id1165137656216"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely as the square root of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>25</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137627360">
+ <problem id="fs-id1165137627362">
+<para id="fs-id1165137843982"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely as the cube root of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>64</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137664262">
+ <para id="fs-id1165137664264"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>20</m:mn></m:mrow>
+ <m:mrow>
+<m:mroot>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:mroot>
+ </m:mrow>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137549427">
+ <problem id="fs-id1165137549429">
+<para id="fs-id1165137541589"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly with <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>z</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> and <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math>, <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>36.</m:mn>
+</m:math></para></problem>
+</exercise>
+<exercise id="fs-id1165137658781">
+ <problem id="fs-id1165137507651">
+<para id="fs-id1165137507654"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow></m:math>, <m:math><m:mi>z</m:mi></m:math>, and <m:math><m:mi>w</m:mi>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>, <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math>, <m:math><m:mi>w</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>100.</m:mn>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137563934">
+ <para id="fs-id1165137563936"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mi>z</m:mi><m:mi>w</m:mi></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135686721">
+ <problem id="fs-id1165135686723">
+<para id="fs-id1165135237103"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as the square of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and the square of <m:math>
+ <m:mrow>
+<m:mi>z</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>and <m:math> <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>72.</m:mn>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135203444">
+ <problem id="fs-id1165135408490">
+<para id="fs-id1165135408493"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> varies jointly as <m:math>
+<m:mrow>
+ <m:mi>x</m:mi></m:mrow>
+</m:math> and the square root of <m:math>
+<m:mrow>
+ <m:mi>z</m:mi></m:mrow>
+</m:math> and when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> and <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>25</m:mn></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>100.</m:mn>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134323767">
+ <para id="fs-id1165134323770"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:msqrt>
+ <m:mi>z</m:mi>
+</m:msqrt>
+</m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137675512">
+ <problem id="fs-id1165135445761">
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135445763"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as the square of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> the cube of <m:math>
+ <m:mrow>
+<m:mi>z</m:mi></m:mrow>
+</m:math> and the square root of <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>,<m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math>, and <m:math><m:mi>w</m:mi><m:mo>=</m:mo><m:mn>36</m:mn><m:mo>,</m:mo><m:mtext> then </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>48.</m:mn>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134047625">
+ <problem id="fs-id1165134047627">
+<para id="fs-id1165137758007"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math>
+varies jointly as <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow></m:math>and <m:math><m:mi>z</m:mi>
+</m:math> and inversely as <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>, <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:math>, and  <m:math><m:mi>w</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:math>, then  <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>10.</m:mn>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137723403">
+ <para id="fs-id1165137723405"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mfrac>
+ <m:mrow>
+<m:mi>x</m:mi><m:mi>z</m:mi></m:mrow>
+ <m:mi>w</m:mi>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137661782"><problem id="fs-id1165137661783"><para id="fs-id1165137661784"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as the square of <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> and the square root of <m:math>
+<m:mrow>
+<m:mi>z</m:mi></m:mrow>
+ </m:math> and inversely as the cube of <m:math>
+<m:mrow>
+<m:mi>w</m:mi><m:mtext>. </m:mtext></m:mrow>
+ </m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mtext> and </m:mtext><m:mi>w</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mtext> then </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6.</m:mn>
+ </m:mrow>
+</m:math>
+
+</para></problem></exercise><exercise id="eip-387"><problem id="eip-811">
+<para id="eip-646"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> and <m:math>
+<m:mrow>
+<m:mi>z</m:mi></m:mrow>
+ </m:math> and inversely as the square root of <m:math>
+<m:mrow>
+<m:mi>w</m:mi></m:mrow>
+ </m:math> and the square of <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mtext> .</m:mtext></m:mrow>
+ </m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>, <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>w</m:mi><m:mo>=</m:mo><m:mn>25</m:mn></m:math>, and <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6.</m:mn>
+</m:math> </para></problem>
+
+<solution id="eip-id1165135353049">
+<para id="eip-id1165135353052">
+ <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>40</m:mn><m:mfrac>
+ <m:mrow>
+<m:mi>x</m:mi><m:mi>z</m:mi></m:mrow>
+ <m:mrow>
+<m:msqrt>
+<m:mi>w</m:mi>
+</m:msqrt>
+<m:msup>
+<m:mi>t</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+ </m:mrow>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+</para>
+</solution>
+</exercise></section>
+<section id="fs-id1165137741107">
+<title>Numeric</title>
+
+<para id="fs-id1165137476436">For the following exercises, use the given information to find the unknown value.</para>
+
+ <exercise id="fs-id1165137476439">
+<problem id="fs-id1165135511345">
+<para id="fs-id1165135511347"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies directly as <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow></m:math>. When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>12</m:mn></m:math>. Find <m:math><m:mi>y</m:mi></m:math>when <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>20.</m:mn>
+</m:math>
+</para></problem>
+ </exercise>
+<exercise id="fs-id1165137619342">
+ <problem id="fs-id1165137619344">
+<para id="fs-id1165137677831"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies directly as the square of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi>
+ </m:mrow>
+</m:math>. When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>16</m:mn></m:math>. Find <m:math><m:mi>y</m:mi></m:math> when <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>8</m:mn>
+</m:math>. </para></problem>
+<solution id="fs-id1165135194956">
+ <para id="fs-id1165137476412"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>256</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137638624">
+ <problem id="fs-id1165137638626">
+<para id="fs-id1165137805207"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies directly as the cube of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi>
+ </m:mrow>
+</m:math>. When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:math>. Find <m:math><m:mi>y</m:mi></m:math> when <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+</m:math>. </para></problem>
+</exercise>
+<exercise id="fs-id1165137722717">
+ <problem id="fs-id1165137722720">
+<para id="fs-id1165137737434"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies directly as the square root of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:math>. Find <m:math><m:mi>y</m:mi><m:mtext> when </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>36</m:mn>
+</m:math>. </para></problem>
+<solution id="fs-id1165137571788">
+ <para id="fs-id1165134042922"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137812573">
+ <problem id="fs-id1165137812576">
+<para id="fs-id1165137693975"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies directly as the cube root of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>125</m:mn></m:mrow></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math>. Find <m:math><m:mi>y</m:mi></m:math> when <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>, <m:math><m:mn>000.</m:mn>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165137476513">
+ <problem id="fs-id1165137476515">
+<para id="fs-id1165137476517"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely with <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math>. Find <m:math><m:mi>y</m:mi></m:math> when <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:math>. </para></problem>
+<solution id="fs-id1165137445714">
+ <para id="fs-id1165137651705"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137627408">
+ <problem id="fs-id1165137627410">
+<para id="fs-id1165134306730"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely with the square of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi>
+ </m:mrow>
+</m:math>. When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math>. Find <m:math><m:mi>y</m:mi></m:math> when <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+</m:math>. </para></problem>
+</exercise>
+<exercise id="fs-id1165135545751">
+ <problem id="fs-id1165135545753">
+<para id="fs-id1165135545756"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely with the cube of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>, then <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>. Find <m:math><m:mi>y</m:mi></m:math> when <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:math>. </para></problem>
+<solution id="fs-id1165137431582">
+ <para id="fs-id1165135535029"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>27</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137932431">
+ <problem id="fs-id1165137932433">
+<para id="fs-id1165135403502"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely with the square root of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>64</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>12.</m:mn>
+ </m:mrow>
+</m:math> Find <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>36.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165137696700">
+ <problem id="fs-id1165137579619">
+<para id="fs-id1165137579622"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely with the cube root of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>27</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math> Find <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>125.</m:mn></m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137542372">
+ <para id="fs-id1165137542374"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137706810">
+ <problem id="fs-id1165137885943">
+<para id="fs-id1165137885945"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mspace width="0.8em"/><m:mtext>and</m:mtext><m:mspace width="0.8em"/><m:mi>z</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>16.</m:mn></m:mrow>
+</m:math> Find <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134401069">
+ <problem id="fs-id1165134401071">
+<para id="fs-id1165137863353"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>z</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext>and</m:mtext><m:mspace width="0.8em"/><m:mi>w</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>72.</m:mn></m:mrow>
+</m:math> Find <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math>
+and <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137406882">
+ <para id="fs-id1165137444724"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>18</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135411328">
+ <problem id="fs-id1165135411330">
+<para id="fs-id1165137393586"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and the square of <m:math>
+ <m:mrow>
+<m:mi>z.</m:mi></m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>144.</m:mn></m:mrow>
+</m:math> Find <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137737695">
+ <problem id="fs-id1165137662665">
+<para id="fs-id1165137662667"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as the square of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and the square root of <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>24.</m:mn></m:mrow>
+</m:math> Find <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>25.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135543455">
+ <para id="fs-id1165135543457"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>90</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137637576">
+ <problem id="fs-id1165137637578">
+<para id="fs-id1165137637581"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>z</m:mi></m:mrow>
+</m:math> and inversely as <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+</m:math> Find <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>=</m:mo><m:mn>48.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135440221">
+ <problem id="fs-id1165135194226">
+<para id="fs-id1165135194229"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as the square of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and the cube of <m:math>
+ <m:mrow>
+<m:mi>z</m:mi></m:mrow>
+</m:math> and inversely as the square root of <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mtext>. </m:mtext></m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>=</m:mo><m:mn>64</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>12.</m:mn></m:mrow>
+</m:math> Find <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137470711">
+ <para id="fs-id1165137470713"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>81</m:mn></m:mrow>
+ <m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137451415">
+ <problem id="fs-id1165137663674">
+<para id="fs-id1165137663676"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as the square of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and of <m:math>
+ <m:mrow>
+<m:mi>z</m:mi></m:mrow>
+</m:math> and inversely as the square root of <m:math>
+ <m:mrow>
+<m:mi>w</m:mi></m:mrow>
+</m:math> and of <m:math>
+ <m:mrow>
+<m:mi>t</m:mi><m:mtext> .</m:mtext></m:mrow>
+</m:math> When <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>=</m:mo><m:mn>16</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math> Find <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>=</m:mo><m:mn>36</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn></m:mrow>
+</m:math> </para></problem>
+</exercise>
+</section>
+<section id="fs-id1165135496464">
+<title>Technology</title>
+
+<para id="fs-id1165137758637">For the following exercises, use a calculator to graph the equation implied by the given variation.</para>
+
+<exercise id="fs-id1165137758640"><problem id="fs-id1165137560300">
+<para id="fs-id1165137560302"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies directly with the square of <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> and when <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+ </m:math> </para></problem>
+
+ <solution id="fs-id1165137832227">
+<para id="fs-id1165137748367"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mn>3</m:mn>
+ <m:mn>4</m:mn>
+</m:mfrac>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+ </m:math>
+</para>
+
+ <media id="fs-id1165137441679" alt="Graph of y=3/4(x^2).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_201.jpg"/>
+</media>
+
+ </solution></exercise><exercise id="fs-id1165137785175">
+ <problem id="fs-id1165137785177">
+<para id="fs-id1165137811898"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies directly as the cube of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137481150"><problem id="fs-id1165137735571">
+<para id="fs-id1165137735573"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies directly as the square root of <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>36</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137936864">
+ <para id="fs-id1165137936866"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+ <m:mn>1</m:mn>
+ <m:mn>3</m:mn>
+</m:mfrac>
+<m:msqrt>
+ <m:mi>x</m:mi>
+</m:msqrt>
+</m:mrow>
+ </m:math>
+</para>
+
+ <media id="fs-id1165135358030" alt="Graph of y=1/3sqrt(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_203.jpg"/>
+</media>
+
+</solution></exercise><exercise id="fs-id1165137460988">
+ <problem id="fs-id1165137460990">
+<para id="fs-id1165137460992"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely with <m:math>
+ <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+ <exercise id="fs-id1165137472903"><problem id="fs-id1165137472905">
+<para id="fs-id1165137638128"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies inversely as the square of <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> and when <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+ </m:math>
+</para></problem>
+<solution id="fs-id1165134248054"><para id="fs-id1165134248055"> <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+
+ <media id="fs-id1165137742313" alt="Graph of y=4/(x^2).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_205.jpg"/>
+</media>
+
+</solution></exercise></section>
+<section id="fs-id1165135193362">
+<title> Extensions</title>
+ <para id="fs-id1165137762704">For the following exercises, use Kepler’s Law, which states that the square of the time, <m:math>
+<m:mrow>
+<m:mi>T</m:mi><m:mo>,</m:mo></m:mrow>
+ </m:math> required for a planet to orbit the Sun varies directly with the cube of the mean distance, <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>,</m:mo></m:mrow>
+ </m:math> that the planet is from the Sun.</para><exercise id="fs-id1165137401766">
+ <problem id="fs-id1165137805286">
+<para id="fs-id1165137805288">Using the Earth’s time of 1 year and mean distance of 93 million miles, find the equation relating
+ <m:math>
+<m:mrow>
+ <m:mi>T</m:mi></m:mrow>
+</m:math>
+and
+ <m:math>
+ <m:mrow>
+<m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135433006">
+ <problem id="fs-id1165137812556">
+<para id="fs-id1165137677528">Use the result from the previous exercise to determine the time required for Mars to orbit the Sun if its mean distance is 142 million miles.</para>
+ </problem>
+<solution id="fs-id1165137871569">
+ <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137871571">≈ 1.89 years</para></solution>
+</exercise>
+<exercise id="fs-id1165137417733">
+ <problem id="fs-id1165137417735">
+<para id="fs-id1165137417737">Using Earth’s distance of 150 million kilometers, find the equation relating <m:math>
+<m:mrow>
+ <m:mi>T</m:mi></m:mrow>
+</m:math>
+and
+ <m:math>
+<m:mrow>
+ <m:mi>a.</m:mi></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137552664">
+ <problem id="fs-id1165137552667">
+<para id="fs-id1165137552669">Use the result from the previous exercise to determine the time required for Venus to orbit the Sun if its mean distance is 108 million kilometers.</para>
+ </problem>
+<solution id="fs-id1165137668810">
+ <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137807323">≈ 0.61 years</para></solution>
+</exercise>
+<exercise id="fs-id1165135503720">
+ <problem id="fs-id1165135500737">
+<para id="fs-id1165135500739">Using Earth’s distance of 1 astronomical unit (A.U.), determine the time for Saturn to orbit the Sun if its mean distance is 9.54 A.U.</para>
+ </problem>
+</exercise>
+
+</section>
+<section id="fs-id1165137407207">
+<title> Real-World Applications</title>
+<para id="fs-id1165137407212">For the following exercises, use the given information to answer the questions.</para>
+<exercise id="fs-id1165137662862">
+ <problem id="fs-id1165137662864">
+<para id="fs-id1165137843829">The distance <m:math>
+<m:mrow>
+ <m:mi>s</m:mi></m:mrow>
+</m:math> that an object falls varies directly with the square of the time, <m:math>
+ <m:mrow>
+<m:mi>t</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> of the fall. If an object falls 16 feet in one se<emphasis>c</emphasis>ond, how long for it to fall 144 feet?</para>
+ </problem>
+<solution id="fs-id1165133101738">
+ <para id="fs-id1165133101740">3 seconds</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137810169">
+ <problem id="fs-id1165137810171">
+<para id="fs-id1165134374051">The velocity <m:math>
+<m:mrow>
+ <m:mi>v</m:mi></m:mrow>
+</m:math> of a falling object varies directly to the time, <m:math>
+ <m:mrow>
+<m:mi>t</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> of the fall. If after 2 seconds, the velocity of the object is 64 feet per second, what is the velocity after 5 seconds?</para>
+ </problem>
+</exercise>
+
+<exercise id="fs-id1165137731890">
+ <problem id="fs-id1165137731892">
+<para id="fs-id1165137731894">The rate of vibration of a string under constant tension varies inversely with the length of the string. If a string is 24 inches long and vibrates 128 times per second, what is the length of a string that vibrates 64 times per second?</para></problem>
+<solution id="fs-id1165137728416"> <para id="fs-id1165137728418">48 inches</para></solution></exercise>
+<exercise id="fs-id1165137619719">
+ <problem id="fs-id1165137619721">
+<para id="fs-id1165137658372">The volume of a gas held at constant temperature varies indirectly as the pressure of the gas. If the volume of a gas is 1200 cubic centimeters when the pressure is 200 millimeters of mercury, what is the volume when the pressure is 300 millimeters of mercury?</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165135613164">
+ <problem id="fs-id1165135613167">
+<para id="fs-id1165135613169">The weight of an object above the surface of the Earth varies inversely with the square of the distance from the center of the Earth. If a body weighs 50 pounds when it is 3960 miles from Earth’s center, what would it weigh it were 3970 miles from Earth’s center?</para>
+ </problem>
+<solution id="fs-id1165137760888">
+ <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137760890">≈ 49.75 pounds</para></solution>
+</exercise>
+<exercise id="fs-id1165135545895">
+ <problem id="fs-id1165135545898">
+<para id="fs-id1165137598943">The intensity of light measured in foot-candles varies inversely with the square of the distance from the light source. Suppose the intensity of a light bulb is 0.08 foot-candles at a distance of 3 meters. Find the intensity level at 8 meters.</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137836546">
+ <problem id="fs-id1165137836548">
+<para id="fs-id1165134118360">The current in a circuit varies inversely with its resistance measured in ohms. When the current in a circuit is 40 amperes, the resistance is 10 ohms. Find the current if the resistance is 12 ohms.</para>
+ </problem>
+<solution id="fs-id1165135194664">
+ <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135194666">≈ 33.33 amperes</para></solution>
+</exercise>
+<exercise id="fs-id1165137535610">
+ <problem id="fs-id1165137535612">
+<para id="fs-id1165137535614">The force exerted by the wind on a plane surface varies jointly with the square of the velocity of the wind and with the area of the plane surface. If the area of the surface is 40 square feet surface and the wind velocity is 20 miles per hour, the resulting force is 15 pounds. Find the force on a surface of 65 square feet with a velocity of 30 miles per hour.</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137676536"><problem id="fs-id1165137676537"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137676538">The horsepower (hp) that a shaft can safely transmit varies jointly with its speed (in revolutions per minute (rpm)) and the cube of the diameter. If the shaft of a certain material 3 inches in diameter can transmit 45 hp at 100 rpm, what must the diameter be in order to transmit 60 hp at 150 rpm?</para></problem>
+<solution id="fs-id1165137641112"> <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137676540">≈ 2.88 inches</para></solution></exercise>
+<exercise id="fs-id1165137605795">
+ <problem id="fs-id1165137605797">
+<para id="fs-id1165137462259">The kinetic energy <m:math>
+<m:mrow>
+ <m:mi>K</m:mi></m:mrow>
+</m:math> of a moving object varies jointly with its mass <m:math>
+<m:mrow>
+ <m:mi>m</m:mi></m:mrow>
+</m:math> and the square of its velocity <m:math>
+ <m:mrow>
+<m:mi>v</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> If an object weighing 40 kilograms with a velocity of 15 meters per second has a kinetic energy of 1000 joules, find the kinetic energy if the velocity is increased to 20 meters per second.</para>
+ </problem>
+</exercise>
+</section>
+</section>
+<section id="fs-id1165135208752" class="review-exercises">
+<title>Chapter Review Exercises</title><para id="eip-685">You have reached the end of Chapter 3: Polynomial and Rational Functions. Let’s review some of the Key Terms, Concepts and Equations you have learned.</para>
+
+<section id="fs-id1165135499870">
+<title><link document="m49335">Complex Numbers</link></title><para id="fs-id1165137611422">Perform the indicated operation with complex numbers.</para>
+
+<exercise id="fs-id1165137611425">
+ <problem id="fs-id1165137611961">
+<para id="fs-id1165137611963"> <m:math>
+<m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+ <m:mo>−</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>i</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137874463">
+ <para id="fs-id1165137874466"> <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+ <exercise id="fs-id1165137874652">
+<problem id="fs-id1165137874654">
+<para id="fs-id1165137446593"> <m:math>
+ <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+ <m:mn>6</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>i</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+<m:mn>10</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+ <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+ <exercise id="fs-id1165137526394">
+<problem id="fs-id1165137582354">
+<para id="fs-id1165137582356"> <m:math>
+ <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+ <m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+<m:mn>3</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>i</m:mi></m:mrow>
+ <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137827901">
+<para id="fs-id1165137638506"> <m:math>
+ <m:mrow>
+<m:mn>24</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</solution>
+ </exercise>
+ <exercise id="fs-id1165137469578">
+<problem id="fs-id1165137469581">
+<para id="fs-id1165137469583"> <m:math>
+ <m:mrow>
+<m:mfrac>
+<m:mrow>
+ <m:mn>2</m:mn><m:mo>−</m:mo><m:mi>i</m:mi></m:mrow>
+<m:mrow>
+ <m:mn>2</m:mn><m:mo>+</m:mo><m:mi>i</m:mi></m:mrow>
+</m:mfrac>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+ </exercise>
+<para id="fs-id1165135458562">Solve the following equations over the complex number system.</para>
+<exercise id="fs-id1165137634442">
+ <problem id="fs-id1165137634444">
+<para id="fs-id1165137937638"> <m:math>
+ <m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137667018">
+ <para id="fs-id1165134224515"> <m:math>
+<m:mrow>
+<m:mo>{</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>2</m:mn><m:mo>−</m:mo><m:mi>i</m:mi><m:mo>}</m:mo></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137433513">
+ <problem id="fs-id1165137433515">
+<para id="fs-id1165137433517"> <m:math>
+<m:mrow>
+ <m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+</section><section id="fs-id1165137548191"><title><link document="m49337">Quadratic Functions</link></title><para id="fs-id1165137639859">For the following exercises, write the quadratic function in standard form. Then, give the vertex and axes intercepts. Finally, graph the function.</para>
+
+<exercise id="fs-id1165137477136"><problem id="fs-id1165137477138">
+<para id="fs-id1165137477140"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+ <solution id="fs-id1165137935589">
+<para id="fs-id1165137811941"> <m:math>
+ <m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+ <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>9</m:mn><m:mspace width="0.8em"/><m:mtext>vertex</m:mtext><m:mspace width="0.8em"/><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>–9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext>intercepts</m:mtext><m:mspace width="0.8em"/><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>–5</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+<newline count="1"/></para><para id="eip-id1165134241030">
+ <media id="fs-id1165137460981" alt="Graph of f(x)=x^2-4x-5.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_206.jpg"/>
+</media>
+</para>
+</solution></exercise><exercise id="fs-id1165137863438">
+ <problem id="fs-id1165137626743">
+<para id="fs-id1165137626745"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+<para id="fs-id1165137923495">For the following problems, find the equation of the quadratic function using the given information.</para>
+
+<exercise id="fs-id1165137923498">
+ <problem id="fs-id1165135445905">
+<para id="fs-id1165135445907">The vertex is <m:math>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and a point on the graph is <m:math>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math></para>
+ </problem>
+<solution id="fs-id1165137724885">
+ <para id="fs-id1165137398179"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+ <m:mn>3</m:mn>
+ <m:mrow>
+<m:mn>25</m:mn></m:mrow>
+</m:mfrac>
+<m:msup>
+ <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135457900">
+ <problem id="fs-id1165135457902">
+<para id="fs-id1165135457904">The vertex is <m:math>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>6.5</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and a point on the graph is <m:math>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math></para>
+ </problem>
+</exercise>
+
+
+<para id="fs-id1165135443862">Answer the following questions.</para>
+
+<exercise id="fs-id1165135443865" class="material-set-2">
+ <problem id="fs-id1165135443867">
+<para id="fs-id1165137767424">A rectangular plot of land is to be enclosed by fencing. One side is along a river and so needs no fence. If the total fencing available is 600 meters, find the dimensions of the plot to have maximum area.</para>
+ </problem>
+<solution id="fs-id1165137725075">
+ <para id="fs-id1165137725077">300 meters by 150 meters, the longer side parallel to river.</para> </solution>
+</exercise>
+
+<exercise id="fs-id1165137422734" class="material-set-2">
+ <problem id="fs-id1165137422736">
+<para id="fs-id1165135706774">An object projected from the ground at a 45 degree angle with initial velocity of 120 feet per second has height, <m:math>
+ <m:mrow>
+<m:mi>h</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> in terms of horizontal distance traveled, <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> given by <m:math>
+<m:mrow>
+ <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>32</m:mn></m:mrow>
+<m:mrow>
+<m:msup>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>120</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+ <m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+ </m:mfrac>
+ <m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Find the maximum height the object attains.</para></problem>
+</exercise>
+</section><section id="fs-id1165133233027"><title><link document="m49346">Power Functions and Polynomial Functions</link></title><para id="fs-id1165137596106">For the following exercises, determine if the function is a polynomial function and, if so, give the degree and leading coefficient.</para>
+<exercise id="fs-id1165137596111">
+ <problem id="fs-id1165137927725">
+<para id="fs-id1165137927727"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>5</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> </para>
+ </problem>
+
+<solution id="fs-id1165137451016"><para id="fs-id1165137430842"> Yes, degree = 5, leading coefficient = 4</para></solution>
+
+</exercise>
+<exercise id="fs-id1165137786551">
+ <problem id="fs-id1165137786554">
+<para id="fs-id1165137595265"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+ </m:msup>
+ <m:mo>−</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+<exercise id="fs-id1165135407052">
+ <problem id="fs-id1165135407054">
+<para id="fs-id1165135407057"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137453950"> <para id="fs-id1165137453952">Yes, degree = 4, leading coefficient = 1</para></solution>
+</exercise>
+<para id="fs-id1165135181695">For the following exercises, determine end behavior of the polynomial function.</para>
+<exercise id="fs-id1165135181698">
+ <problem id="fs-id1165137735839">
+<para id="fs-id1165137735841"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>5</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>7</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137643403">
+ <problem id="fs-id1165137643405">
+<para id="fs-id1165137643407"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>6</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165134155145">
+ <para id="fs-id1165137386933"> <m:math>
+<m:mrow>
+<m:mtext>As</m:mtext><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext>as</m:mtext><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>∞</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>∞</m:mi></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137601687"><problem id="fs-id1165137601688"><para id="fs-id1165137601689"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para></problem></exercise>
+
+ </section><section id="fs-id1165135169092"><title><link document="m49347">Graphs of Polynomial Functions</link></title><para id="fs-id1165137451676">For the following exercises, find all zeros of the polynomial function, noting multiplicities.</para>
+ <exercise id="fs-id1165137451679"><problem id="fs-id1165137557555"><para id="fs-id1165137557556"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+ <m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+ </m:math>
+</para>
+</problem>
+<solution id="fs-id1165137432758"><para id="fs-id1165137806236">–3 with multiplicity 2, <m:math>
+<m:mrow>
+ <m:mo>−</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+ </m:mfrac>
+</m:mrow>
+</m:math> with multiplicity 1, –1 with multiplicity 3 </para></solution></exercise>
+ <exercise id="fs-id1165135683516">
+<problem id="fs-id1165135683518">
+<para id="fs-id1165137402103"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>5</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>4</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>4</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>4</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+ </m:math>
+</para>
+</problem>
+ </exercise>
+<exercise id="fs-id1165137645405">
+ <problem id="fs-id1165137404519">
+<para id="fs-id1165137404521"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137722556">
+ <para id="fs-id1165137749873">4 with multiplicity 1</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137846483">For the following exercises, based on the given graph, determine the zeros of the function and note multiplicity.</para>
+<exercise id="fs-id1165137846487" class="material-set-2"><problem id="fs-id1165137697060">
+
+<media id="fs-id1165135368421" alt="Graph of an odd-degree polynomial with two turning points.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_208.jpg"/>
+</media>
+ </problem>
+</exercise><exercise id="fs-id1165135192893" class="material-set-2"><problem id="fs-id1165137742630">
+
+<media id="fs-id1165134313923" alt="Graph of an even-degree polynomial with two turning points.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_209.jpg"/>
+</media>
+ </problem>
+<solution id="fs-id1165137539727">
+ <para id="fs-id1165137648165"> <m:math>
+<m:mrow>
+<m:mfrac>
+ <m:mn>1</m:mn>
+ <m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+ </m:math> with multiplicity 1, 3 with multiplicity 3</para>
+</solution>
+</exercise><exercise id="fs-id1165137557643" class="material-set-2">
+ <problem id="fs-id1165135694414">
+<para id="fs-id1165135694416">Use the Intermediate Value Theorem to show that at least one zero lies between 2 and 3 for the function <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+</section><section id="fs-id1165137920803"><title><link document="m49348">Dividing Polynomials</link></title><para id="fs-id1165137749390">For the following exercises, use long division to find the quotient and remainder.</para>
+<exercise id="fs-id1165137696726">
+ <problem id="fs-id1165137696728">
+<para id="fs-id1165137696730"> <m:math>
+<m:mrow>
+ <m:mfrac>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137423736">
+ <para id="fs-id1165137423738"> <m:math>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+ </m:math>with remainder 12</para></solution>
+</exercise>
+<exercise id="fs-id1165135446689">
+ <problem id="fs-id1165135446691">
+<para id="fs-id1165135446693"> <m:math>
+<m:mrow>
+ <m:mfrac>
+<m:mrow>
+<m:mn>3</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>4</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>4</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+<para id="fs-id1165132944971">For the following exercises, use synthetic division to find the quotient. If the divisor is a factor, then write the factored form.</para><exercise id="fs-id1165134378622">
+ <problem id="fs-id1165134378624">
+<para id="fs-id1165134378626"> <m:math>
+<m:mrow>
+ <m:mfrac>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+ <solution id="fs-id1165135365932">
+<para id="fs-id1165135365934"> <m:math>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>20</m:mn><m:mo>−</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>61</m:mn></m:mrow>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+ </m:math> </para>
+ </solution>
+</exercise>
+<exercise id="fs-id1165135560695">
+ <problem id="fs-id1165135560697">
+<para id="fs-id1165137762397"> <m:math>
+<m:mrow>
+ <m:mfrac>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137935190">
+ <problem id="fs-id1165137935192">
+<para id="fs-id1165135176562"> <m:math>
+<m:mrow>
+ <m:mfrac>
+<m:mrow>
+<m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>6</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137772480">
+ <para id="fs-id1165135558432"> <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+ </m:math>, so factored form is <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+ </m:math>
+ </para></solution>
+</exercise>
+ <exercise id="fs-id1165135414382"><problem id="fs-id1165135414383"><para id="fs-id1165137735052"> <m:math>
+<m:mrow>
+<m:mfrac>
+ <m:mrow>
+<m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+ </para></problem></exercise>
+
+</section><section id="fs-id1165135194274"><title><link document="m49349">Zeros of Polynomial Functions</link></title><para id="fs-id1165137653216">For the following exercises, use the Rational Zero Theorem to help you solve the polynomial equation.</para>
+<exercise id="fs-id1165134248795" class="material-set-2">
+ <problem id="fs-id1165134248797">
+<para id="fs-id1165134248799"> <m:math>
+<m:mrow>
+ <m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>18</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137780754">
+ <para id="fs-id1165137780756"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>{</m:mo> <m:mrow>
+ <m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mo>−</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+ </m:mfrac>
+</m:mrow> <m:mo>}</m:mo></m:mrow></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137901245" class="material-set-2">
+ <problem id="fs-id1165137901248">
+<para id="fs-id1165137901250"> <m:math>
+<m:mrow>
+ <m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>11</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137452024" class="material-set-2">
+ <problem id="fs-id1165135640601">
+<para id="fs-id1165135640603"> <m:math>
+<m:mrow>
+ <m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>17</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>46</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>43</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137654771">
+ <para id="fs-id1165137654773"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>{</m:mo> <m:mrow>
+ <m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+ </m:mfrac>
+</m:mrow> <m:mo>}</m:mo></m:mrow></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135531610" class="material-set-2">
+ <problem id="fs-id1165135531612">
+<para id="fs-id1165137770047"> <m:math>
+<m:mrow>
+ <m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>8</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>19</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>32</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+<para id="fs-id1165137407778">For the following exercises, use Descartes’ Rule of Signs to find the possible number of positive and negative solutions.</para>
+<exercise id="fs-id1165134573782" class="material-set-2">
+ <problem id="fs-id1165134573784">
+<para id="fs-id1165134573786"> <m:math>
+<m:mrow>
+ <m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165134108392">
+ <para id="fs-id1165134108394">0 or 2 positive, 1 negative</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135613231" class="material-set-2">
+ <problem id="fs-id1165135613233">
+<para id="fs-id1165134224004"> <m:math>
+<m:mrow>
+ <m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+ </section><section id="fs-id1165134224073"><title><link document="m49351">Rational Functions</link></title><para id="fs-id1165135176618">For the following rational functions, find the intercepts and the vertical and horizontal asymptotes, and then use them to sketch a graph.</para>
+
+<exercise id="fs-id1165135176623"><problem id="fs-id1165135516926">
+<para id="fs-id1165135516928"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+ <solution id="fs-id1165137740757"> <para id="fs-id1165137740759">Intercepts <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>–2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>and</m:mtext><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+ </m:mrow>
+ <m:mo>)</m:mo></m:mrow></m:mrow>
+ </m:math>, Asymptotes <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow>
+ </m:math>
+and <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+<newline count="1"/></para><para id="eip-id1165134201651">
+ <media id="fs-id1165135538551" alt="Graph of f(x)=(x+1)/(x-5).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_210.jpg"/>
+</media>
+</para>
+</solution></exercise><exercise id="fs-id1165135205950">
+ <problem id="fs-id1165135529121">
+<para id="fs-id1165135529123"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137863121"><problem id="fs-id1165137863124">
+<para id="fs-id1165137863126"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>3</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>27</m:mn></m:mrow>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137452244">
+ <para id="fs-id1165137452246">Intercepts (3, 0), (-3, 0), and <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+<m:mrow>
+ <m:mn>27</m:mn></m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+ </m:mrow>
+ <m:mo>)</m:mo></m:mrow></m:mrow>
+ </m:math>, Asymptotes <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+ </m:math>
+<newline count="1"/></para><para id="eip-id1165132972907">
+ <media id="fs-id1165135178389" alt="Graph of f(x)=(3x^2-27)/(x^2+x-2).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_212.jpg"/>
+</media>
+</para>
+</solution></exercise><exercise id="fs-id1165134226797">
+ <problem id="fs-id1165134226799">
+<para id="fs-id1165134226801"> <m:math>
+ <m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+<m:mrow>
+ <m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>9</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<para id="fs-id1165137848972">For the following exercises, find the slant asymptote.</para>
+<exercise id="fs-id1165137842426">
+ <problem id="fs-id1165137842428">
+<para id="fs-id1165137842430"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137642577">
+ <para id="fs-id1165135252057"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137438219">
+ <problem id="fs-id1165135508577">
+<para id="fs-id1165135508579"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+</section><section id="fs-id1165135484148"><title><link document="m49352">Inverses and Radical Functions</link></title><para id="fs-id1165134104980">For the following exercises, find the inverse of the function with the domain given.</para>
+
+<exercise id="fs-id1165134104983">
+ <problem id="fs-id1165135458657">
+<para id="fs-id1165135458659"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165135640618">
+ <para id="fs-id1165135593176"> <m:math>
+<m:mrow>
+<m:msup>
+ <m:mi>f</m:mi>
+ <m:mrow>
+<m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+</m:msup>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+ <m:mi>x</m:mi>
+</m:msqrt>
+<m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165133103950">
+ <problem id="fs-id1165133103952">
+<para id="fs-id1165133103954"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+ <exercise id="fs-id1165137770318">
+<problem id="fs-id1165137770321">
+<para id="fs-id1165137770323"> <m:math>
+ <m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135210050">
+<para id="fs-id1165135210052"> <m:math>
+ <m:mrow>
+<m:msup>
+<m:mi>f</m:mi>
+<m:mrow>
+ <m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+</m:msup>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>11</m:mn></m:mrow>
+</m:msqrt>
+<m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+ </exercise>
+ <exercise id="fs-id1165135301653">
+<problem id="fs-id1165135301655">
+<para id="fs-id1165137619912"> <m:math>
+ <m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+ </exercise>
+ <exercise id="fs-id1165137749717">
+<problem id="fs-id1165137749719">
+<para id="fs-id1165137692176"> <m:math>
+ <m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+ <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+</m:msqrt>
+<m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134224016">
+<para id="fs-id1165134224018"> <m:math>
+ <m:mrow>
+<m:msup>
+<m:mi>f</m:mi>
+<m:mrow>
+ <m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+</m:msup>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+ <m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>5</m:mn></m:mrow>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+ </exercise>
+ <exercise id="fs-id1165135591017">
+<problem id="fs-id1165135342998">
+<para id="fs-id1165135343000"> <m:math>
+ <m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+<m:mrow>
+ <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mfrac>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+ </exercise>
+</section><section id="fs-id1165135245788"><title><link document="m49353">Modeling Using Variation</link></title><para id="fs-id1165137462872">For the following exercises, find the unknown value.</para>
+
+<exercise id="fs-id1165137462875">
+<problem id="fs-id1165137462877">
+ <para id="fs-id1165137939566"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math>
+varies directly as the square of <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+If when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>36</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> find <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> if <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+</m:math>
+ </para>
+</problem>
+<solution id="fs-id1165135319534">
+ <para id="fs-id1165135203742"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>64</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137872027">
+<problem id="fs-id1165137872029">
+ <para id="fs-id1165137696624"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math>
+varies inversely as the square root of <m:math>
+<m:mrow>
+ <m:mi>x</m:mi></m:mrow>
+</m:math>
+If when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>25</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> find <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> if <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+</m:math>
+ </para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135209414">
+<problem id="fs-id1165135378843">
+ <para id="fs-id1165135378845"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as the cube of <m:math>
+<m:mrow>
+ <m:mi>x</m:mi></m:mrow>
+</m:math> and as <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> If when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+ <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> find <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> if <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+ <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+</m:math>
+ </para></problem>
+<solution id="fs-id1165137934401">
+ <para id="fs-id1165137452780"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mspace width="0.8em"/><m:mo>=</m:mo><m:mspace width="0.8em"/><m:mn>72</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137456499">
+<problem id="fs-id1165137456502">
+ <para id="fs-id1165137469729"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+ </m:math> varies jointly as <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+ </m:math> and the square of <m:math>
+<m:mrow>
+ <m:mi>z</m:mi></m:mrow>
+</m:math> and inversely as the cube of <m:math>
+ <m:mrow>
+<m:mi>w</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> If when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+<m:mrow>
+ <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+ <m:mi>w</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>48</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> find <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> if <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+<m:mrow>
+ <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+ <m:mi>w</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+</m:math>
+ </para></problem>
+</exercise>
+
+<para id="fs-id1165137435024">For the following exercises, solve the application problem.</para>
+<exercise id="fs-id1165137435027" class="material-set-2">
+<problem id="fs-id1165137435029">
+ <para id="fs-id1165135169106">The weight of an object above the surface of the earth varies inversely with the distance from the center of the earth. If a person weighs 150 pounds when he is on the surface of the earth (3,960 miles from center), find the weight of the person if he is 20 miles above the surface.</para>
+</problem>
+<solution id="fs-id1165135698641">
+ <para id="fs-id1165135698644">148.5 pounds</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135698649" class="material-set-2">
+<problem id="fs-id1165135536256">
+ <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135536258">The volume <m:math>
+<m:mrow>
+<m:mi>V</m:mi></m:mrow>
+ </m:math> of an ideal gas varies directly with the temperature <m:math>
+<m:mrow>
+<m:mi>T</m:mi></m:mrow>
+ </m:math> and inversely with the pressure <m:math><m:mi>P</m:mi></m:math>. A cylinder contains oxygen at a temperature of 310 degrees K and a pressure of 18 atmospheres in a volume of 120 liters. Find the pressure if the volume is decreased to 100 liters and the temperature is increased to 320 degrees K.</para></problem>
+</exercise>
+ </section></section><section id="fs-id1165137602034" class="practice-test"><title>Chapter Test</title><para id="fs-id1165137602037">Perform the indicated operation or solve the equation.</para>
+
+<exercise id="fs-id1165135460929">
+<problem id="fs-id1165135460931">
+ <para id="fs-id1165135460933"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+<m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+ <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+ </m:math>
+ </para>
+</problem>
+<solution id="fs-id1165135541796">
+ <para id="fs-id1165135541798"> <m:math>
+<m:mrow>
+<m:mn>20</m:mn><m:mo>−</m:mo><m:mn>10</m:mn><m:mi>i</m:mi></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134106036">
+ <problem id="fs-id1165134106039">
+<para id="fs-id1165137602549"> <m:math>
+<m:mrow>
+ <m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137409412">
+ <problem id="fs-id1165137409414">
+<para id="fs-id1165137409416"> <m:math>
+<m:mrow>
+ <m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>13</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+ <solution id="fs-id1165135196779">
+<para id="fs-id1165137656795"> <m:math>
+<m:mrow>
+ <m:mo>{</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>i</m:mi><m:mo>}</m:mo></m:mrow>
+</m:math>
+</para>
+ </solution>
+</exercise>
+
+<para id="fs-id1165134262509">Give the degree and leading coefficient of the following polynomial function.</para>
+<exercise id="fs-id1165134262512">
+ <problem id="fs-id1165134211394">
+<para id="fs-id1165134211396"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+<para id="fs-id1165135424704">Determine the end behavior of the polynomial function.</para>
+<exercise id="fs-id1165137394106">
+<problem id="fs-id1165137394108">
+ <para id="fs-id1165137394110"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+ </m:math>
+ </para>
+</problem>
+<solution id="fs-id1165135192394">
+ <para id="fs-id1165135192396"> <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mi>s</m:mi><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>a</m:mi><m:mi>s</m:mi><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>∞</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>∞</m:mi></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135389013">
+ <problem id="fs-id1165135389015">
+<para id="fs-id1165135503719"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+<para id="fs-id1165135264630">Write the quadratic function in standard form. Determine the vertex and axes intercepts and graph the function.</para>
+<exercise id="fs-id1165137732249"><problem id="fs-id1165137732251">
+<para id="fs-id1165137732253"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165135503809">
+ <para id="fs-id1165135694562"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+ <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>9</m:mn></m:mrow>
+ </m:math>, vertex <m:math>
+<m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>−9</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>, intercepts <m:math>
+<m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>−4</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−8</m:mn></m:mrow>
+ <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+ <newline count="1"/></para><para id="eip-id1165131922591">
+ <media id="fs-id1165137653687" alt="Graph of f(x)=x^2+2x-8.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_214.jpg"/>
+ </media></para>
+</solution></exercise><para id="fs-id1165135354880">Given information about the graph of a quadratic function, find its equation.</para>
+
+<exercise id="fs-id1165137736986">
+ <problem id="fs-id1165137736988">
+<para id="fs-id1165137736990">Vertex <m:math>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> and point on graph <m:math>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<para id="fs-id1165137892521">Solve the following application problem.</para>
+<exercise id="fs-id1165131797287" class="material-set-2">
+ <problem id="fs-id1165131797290">
+<para id="fs-id1165131797292">A rectangular field is to be enclosed by fencing. In addition to the enclosing fence, another fence is to divide the field into two parts, running parallel to two sides. If 1,200 feet of fencing is available, find the maximum area that can be enclosed.</para>
+ </problem>
+<solution id="fs-id1165137673750">
+ <para id="fs-id1165137673752">60,000 square feet</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135454021">Find all zeros of the following polynomial functions, noting multiplicities.</para>
+<exercise id="fs-id1165135454024">
+ <problem id="fs-id1165137726459">
+<para id="fs-id1165137726461"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>2</m:mn>
+ </m:msup>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+<exercise id="fs-id1165135453256">
+ <problem id="fs-id1165135453258">
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135453260"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>6</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>12</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>5</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>18</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+ </m:msup>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134040553">
+ <para id="fs-id1165134040555">0 with multiplicity 4, 3 with multiplicity 2</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165134040560">Based on the graph, determine the zeros of the function and multiplicities.</para>
+<exercise id="fs-id1165137871376"><problem id="fs-id1165137871378">
+
+ <media id="fs-id1165135264841" alt="Graph of an odd-degree polynomial with two turning points.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_215.jpg"/>
+ </media>
+
+ </problem>
+</exercise><para id="fs-id1165135191491">Use long division to find the quotient.</para>
+<exercise id="fs-id1165135191495">
+ <problem id="fs-id1165135191497">
+<para id="fs-id1165134122806"> <m:math>
+<m:mrow>
+ <m:mfrac>
+<m:mrow>
+<m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137427782">
+ <para id="fs-id1165137427784"> <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>11</m:mn><m:mo>−</m:mo><m:mfrac>
+ <m:mrow>
+<m:mn>26</m:mn></m:mrow>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<para id="fs-id1165135342123">Use synthetic division to find the quotient. If the divisor is a factor, write the factored form.</para>
+<exercise id="fs-id1165135342127">
+ <problem id="fs-id1165135342129">
+<para id="fs-id1165137732538"> <m:math>
+<m:mrow>
+ <m:mfrac>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>4</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+<exercise id="fs-id1165137833008">
+ <problem id="fs-id1165137833010">
+<para id="fs-id1165137827866"> <m:math>
+<m:mrow>
+ <m:mfrac>
+<m:mrow>
+<m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165135152117">
+ <para id="fs-id1165135152119"> <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+ </m:math>. So factored form is <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<para id="fs-id1165135694398">Use the Rational Zero Theorem to help you find the zeros of the polynomial functions.</para>
+<exercise id="fs-id1165135694401" class="material-set-2">
+ <problem id="fs-id1165135694403">
+<para id="fs-id1165137407530"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165135161247" class="material-set-2">
+ <problem id="fs-id1165135161249">
+<para id="fs-id1165135161251"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>8</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>21</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>17</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165135188171">
+ <para id="fs-id1165135188173"> <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mfrac>
+ <m:mn>1</m:mn>
+ <m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+ </m:math>
+(has multiplicity 2), <m:math>
+<m:mrow>
+ <m:mfrac>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>1</m:mn><m:mo>±</m:mo><m:mi>i</m:mi><m:msqrt>
+ <m:mrow>
+<m:mn>15</m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+<m:mn>2</m:mn>
+ </m:mfrac>
+ </m:mrow>
+</m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135192046" class="material-set-2">
+ <problem id="fs-id1165135192048">
+<para id="fs-id1165135192050"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>16</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>13</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>15</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>18</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137758031" class="material-set-2">
+ <problem id="fs-id1165137758034">
+<para id="fs-id1165134190707"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>5</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>6</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>13</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>14</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137427321">
+ <para id="fs-id1165137427323"> <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+ </m:math> (has multiplicity 3), <m:math>
+<m:mrow>
+<m:mo>±</m:mo><m:mi>i</m:mi></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<para id="fs-id1165135689439">Given the following information about a polynomial function, find the function.</para>
+<exercise id="fs-id1165135689443" class="material-set-2">
+ <problem id="fs-id1165135689445">
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135632104">It has a double zero at <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math> and zeroes at <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math>. Its <emphasis effect="italics">y</emphasis>-intercept is <m:math>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165132011285" class="material-set-2">
+ <problem id="fs-id1165135205666">
+<para id="fs-id1165135205668">It has a zero of multiplicity 3 at <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+ </m:mfrac>
+ </m:mrow>
+</m:math> and another zero at <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>. It contains the point <m:math>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137595278">
+ <para id="fs-id1165137595280"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+ <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+ <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+ <m:mn>3</m:mn>
+</m:msup>
+<m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+ <m:mo>)</m:mo></m:mrow></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135177605">Use Descartes’ Rule of Signs to determine the possible number of positive and negative solutions.</para>
+<exercise id="fs-id1165134065115">
+ <problem id="fs-id1165134065117">
+<para id="fs-id1165134065119"> <m:math>
+<m:mrow>
+ <m:mn>8</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>21</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+ </m:msup>
+ <m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+<para id="fs-id1165137722354">For the following rational functions, find the intercepts and horizontal and vertical asymptotes, and sketch a graph.</para>
+<exercise id="fs-id1165137722359"><problem id="fs-id1165137722361">
+<para id="fs-id1165135188256"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165135208461">
+ <para id="fs-id1165135208464">Intercepts <m:math>
+ <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+ <m:mn>0</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>3</m:mn>
+ </m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>, Asymptotes <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mspace width="0.8em"/><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+ </m:math>.
+<newline count="1"/></para><para id="eip-id1165135516724">
+ <media id="fs-id1165137736076" alt="Graph of f(x)=(x+4)/(x^2-2x-3).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_09_216.jpg"/>
+ </media>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165135650721">
+ <problem id="fs-id1165135650723">
+<para id="fs-id1165135650725"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+<para id="fs-id1165137567083">Find the slant asymptote of the rational function.</para>
+<exercise id="fs-id1165137567086">
+ <problem id="fs-id1165137567088">
+<para id="fs-id1165137567090"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+ <m:mi>x</m:mi>
+ <m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165135151319">
+ <para id="fs-id1165135151321"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137570255">Find the inverse of the function.</para>
+<exercise id="fs-id1165137834208">
+ <problem id="fs-id1165137834210">
+<para id="fs-id1165137834212"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+ </m:msqrt>
+ <m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+<exercise id="fs-id1165137723709">
+ <problem id="fs-id1165137723711">
+<para id="fs-id1165135194622"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+ </m:msup>
+ <m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137920721">
+ <para id="fs-id1165137805519"> <m:math>
+<m:mrow>
+<m:msup>
+ <m:mi>f</m:mi>
+ <m:mrow>
+<m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+</m:msup>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+ <m:mrow>
+<m:mfrac>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+ </m:mrow>
+ <m:mn>3</m:mn>
+</m:mroot>
+</m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137502317">
+ <problem id="fs-id1165137502320">
+<para id="fs-id1165135521251"> <m:math>
+<m:mrow>
+ <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+ </m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+ </problem>
+</exercise>
+
+<para id="fs-id1165137401572">Find the unknown value.</para>
+
+<exercise id="fs-id1165137401576" class="material-set-2">
+ <problem id="fs-id1165137401578">
+<para id="fs-id1165137848951"> <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> varies inversely as the square of <m:math>
+<m:mrow>
+ <m:mi>x</m:mi></m:mrow>
+</m:math> and when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math> Find <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> if <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+</para>
+ </problem>
+<solution id="fs-id1165137722658">
+ <para id="fs-id1165137722660"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>18</m:mn></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135559531" class="material-set-2">
+ <problem id="fs-id1165137425333">
+<para id="fs-id1165137425335"> <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> varies jointly with <m:math>
+<m:mrow>
+ <m:mi>x</m:mi></m:mrow>
+</m:math> and the cube root of <m:math>
+ <m:mrow>
+<m:mi>z</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> If when <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+ <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>27</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+<m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> find <m:math>
+<m:mrow>
+ <m:mi>y</m:mi></m:mrow>
+</m:math> if <m:math>
+<m:mrow>
+ <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+ <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>8.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<para id="fs-id1165137416076">Solve the following application problem.</para>
+
+<exercise id="fs-id1165137427522" class="material-set-2">
+ <problem id="fs-id1165137427524">
+<para id="fs-id1165137427526">The distance a body falls varies directly as the square of the time it falls. If an object falls 64 feet in 2 seconds, how long will it take to fall 256 feet?</para>
+ </problem>
+<solution id="fs-id1165137734636">
+ <para id="fs-id1165137734638">4 seconds</para>
+</solution>
+</exercise>
+</section></content>
+ <glossary>
+<definition id="fs-id1165137735724">
+<term>constant of variation</term>
+<meaning id="fs-id1165137735729">the non-zero value <m:math>
+ <m:mrow>
+<m:mi>k</m:mi></m:mrow>
+</m:math>
+that helps define the relationship between variables in direct or inverse variation</meaning></definition>
+<definition id="fs-id1165137762202">
+<term>direct variation</term>
+<meaning id="fs-id1165137762208">the relationship between two variables that are a constant multiple of each other; as one quantity increases, so does the other</meaning></definition>
+<definition id="fs-id1165137462046">
+<term>inverse variation</term>
+<meaning id="fs-id1165137462052">the relationship between two variables in which the product of the variables is a constant</meaning></definition>
+<definition id="fs-id1165135501040">
+<term>inversely proportional</term>
+<meaning id="fs-id1165137874542">a relationship where one quantity is a constant divided by the other quantity; as one quantity increases, the other decreases</meaning></definition>
+<definition id="fs-id1165137874546">
+<term>joint variation</term>
+<meaning id="fs-id1165135696715">a relationship where a variable varies directly or inversely with multiple variables</meaning></definition>
+<definition id="fs-id1165135696718">
+<term>varies directly</term>
+<meaning id="fs-id1165137432955">a relationship where one quantity is a constant multiplied by the other quantity</meaning></definition>
+<definition id="fs-id1165137432958">
+<term>varies inversely</term>
+<meaning id="fs-id1165135439853">a relationship where one quantity is a constant divided by the other quantity</meaning></definition>
+
+ </glossary>
+</document>

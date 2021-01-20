@@ -1,0 +1,3468 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Rates of Change and Behavior of Graphs</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m51263</md:content-id>
+  <md:title>Rates of Change and Behavior of Graphs</md:title>
+  <md:abstract><para>In this section, you will:</para><list>
+<item>Find the average rate of change of a function.</item>
+<item>Use a graph to determine where a function is increasing, decreasing, or constant.</item>
+<item>Use a graph to locate local maxima and local minima.</item>
+<item>Use a graph to locate the absolute maximum and absolute minimum.</item>
+</list></md:abstract>
+  <md:uuid>f37919d7-b496-4e36-8196-431ae4733a64</md:uuid>
+<md:canonical-book-uuid>13ac107a-f15f-49d2-97e8-60ab2e3b519c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+<section id="fs-idm364153936" class="coreq-skills">
+<section id="fs-idm347966032" class="learning-objectives">
+   <title>Learning Objectives</title><list id="fs-idm371081712"><item>Find the slope of a line (IA 3.2.1)</item></list>
+</section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-5"><title>Objective: Find the slope of a line (IA 3.2.1)</title><para id="eip-248">
+In our work with functions we will make observations about when the function increases or decreases and how quickly this change takes place. The <term>average rate of change</term> is a measure of change of a function and tells us how an output quantity, or y value, changes relative to an input quantity, or x value. Finding the average rate of change between two points is equivalent to finding the <term>slope</term> of the line segment connecting these two data points.
+</para><para id="eip-871"><m:math><m:mtext>average rate of change</m:mtext><m:mo>=</m:mo><m:mfrac><m:mtext>change in output</m:mtext><m:mtext>change in input</m:mtext></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>Δ</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>Δ</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mtext>rise</m:mtext><m:mtext>run</m:mtext></m:mfrac></m:math> </para><para id="eip-700">When interpreting an average rate of change it will be important to consider the units of measurement. Make sure to always attach these units to both the numerator and denominator when they are provided to you.</para>
+<note id="eip-idm320577248"><label/><title>Quick Guide to the Slopes of Lines</title><media id="fs-id1167835420474" alt="The image shows four arrows. The first arrow is slanted and pointing up and to the right and is labeled “positive”. The second arrow is slanted and pointing down and to the right and labeled “negative”. The third arrow is horizontal and labeled “zero”. The fourth arrow is vertical and labeled “undefined”.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_02_006_img_new.jpg"/>
+</media></note>
+<example id="fs-id1167835309939">
+<exercise id="fs-id1167835335299"><problem id="fs-id1167834472479">
+<para id="fs-id1167835297415">Find the slope of the line shown.</para>
+<media id="fs-id1167834094757" alt="This figure shows the graph of a straight line on the x y-coordinate plane. The x-axis runs from negative 1 to 9. The y-axis runs from negative 1 to 7. The line goes through the points (0, 5), (3, 3), and (6, 1).">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_02_002_img_new-2c04.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167831887592"><para id="eip-idm369217712">Locate two points on the graph whose coordinates are integers.</para>
+<para id="eip-idm378884144"> <m:math>
+<m:mo>(</m:mo>
+<m:mn>0</m:mn>
+<m:mo>,</m:mo>
+<m:mn>5</m:mn>
+<m:mo>)</m:mo>
+<m:mo>=</m:mo>
+<m:mo>(</m:mo>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>,</m:mo>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>)</m:mo>
+</m:math>
+<newline/>
+ <m:math>
+<m:mrow>
+<m:mrow>
+<m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn>
+<m:mo>,</m:mo>
+<m:mn>3</m:mn>
+</m:mrow>
+<m:mo>)</m:mo>
+
+<m:mo>=</m:mo>
+<m:mo>(</m:mo>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>,</m:mo>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>)</m:mo>
+</m:mrow>
+</m:mrow>
+</m:math> </para>
+
+<media id="fs-id1167826940711" alt=".">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_03_02_003a_img-4a96.jpg"/>
+</media>
+<para id="eip-idm380898352">It may help to visualize this change as <m:math>
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mtext>rise</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>run</m:mtext>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> .
+
+Count the rise between the points: down 2 units. Then count the run, or horizontal change: to the right 3 units. Note, since the line goes down, the slope is negative.
+Use the slope formula: <m:math>
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mtext>rise</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>run</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac><m:mrow>
+<m:mo>(</m:mo>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>-</m:mo>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>-</m:mo>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>)</m:mo></m:mrow></m:mfrac>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mfrac><m:mrow><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow><m:mrow><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>0</m:mn></m:mrow></m:mfrac>
+<m:mfrac><m:mrow><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mn>3</m:mn></m:mrow></m:mfrac>
+</m:math> </para></solution>
+</exercise></example><section id="eip-851"><title>Activity: Finding slopes of lines.</title>
+<media id="eip-idm363880624" alt=" ">
+<image mime-type="image/png" src="../../media/CNX_Coreq_Figure_03_03_001.jpg"/></media>
+<para id="eip-idm308448352">
+          <span class="token">ⓐ</span> Which pair of lines appear parallel?  ________ and ________.
+          Find their slopes: ________;  _________<newline/>
+
+          <span class="token">ⓑ</span> Which pair of lines appear perpendicular?  ________ and ________.
+Find their slopes: ________;  _________
+<newline/>
+          <span class="token">ⓒ</span> Complete the following:
+Two lines are parallel if their slopes are _________.
+Two lines are perpendicular if their slopes are _________.
+
+</para></section><section id="eip-329" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-850">Find the slope of a line and the average rate of change.
+</para><exercise id="eip-593"><problem id="eip-415">
+  <para id="eip-792">
+Complete this table’s y-values, and then graph the line. <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:math>
+  </para>
+
+<table id="eip-excontain" summary="." class="unnumbered unstyled" colsep="0" rowsep="0" frame="none"><label/>
+<tgroup cols="2"><colspec colnum="1" align="left" colname="c1"/>
+<colspec colnum="2" align="left" colname="c2"/>
+<tbody>
+<row>
+<entry>
+
+<table id="eip-ex" summary="." class="unnumbered"><label/>
+<tgroup cols="2"><colspec colnum="1" align="left" colname="c1"/>
+<colspec colnum="2" align="left" colname="c2"/>
+<thead>
+<row>
+<entry> <m:math><m:mi>x</m:mi>
+</m:math> </entry>
+<entry> <m:math><m:mi>y</m:mi>
+</m:math>
+</entry>
+</row></thead>
+<tbody>
+
+<row>
+<entry>-6</entry>
+<entry/>
+</row>
+<row>
+<entry>-3</entry>
+<entry/>
+</row>
+<row>
+<entry>0</entry>
+<entry/>
+</row>
+<row>
+<entry>3</entry>
+<entry/>
+</row>
+<row>
+<entry>6</entry>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+</entry>
+<entry>
+<media id="eip-idm368404624" alt="blank graph">
+<image mime-type="image/png" src="../../media/CNX_Coreq_Figure_03_03_002.png"/>
+</media>
+
+</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table><para id="eip-idm393271312">What is the slope of this line? ________   What is the y-intercept of this line?  ( ________ , ________ )</para></problem></exercise><exercise id="eip-971"><problem id="eip-824">
+  <para id="eip-741">
+The following table shows the number of Associates degrees awarded (in thousands) in the US for several years.
+ </para>
+
+<table id="eip-545" class="unnumbered" summary="."><label/>
+<tgroup cols="2"><thead>
+  <row>
+    <entry>Year</entry>
+    <entry>Number of Associate’s Degrees Earned (in thousands)</entry>
+
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry>2000</entry>
+    <entry>569</entry>
+  </row>
+  <row>
+    <entry>2001</entry>
+    <entry>579</entry>
+  </row>
+  <row>
+    <entry>2005</entry>
+    <entry>668</entry>
+  </row>
+  <row>
+    <entry>2010</entry>
+    <entry>719</entry>
+  </row>
+  <row>
+    <entry>2014</entry>
+    <entry>1,003</entry>
+  </row>
+</tbody>
+</tgroup><caption>Source: U.S. National Center for Education Statistics.</caption>
+</table><para id="eip-idm376611488">Find the following average rates of change, being careful to attach units to your answers.</para>
+
+          <para id="eip-idm264682512"> <span class="token">ⓐ</span> Between 2005 and 2000. Average rate of change= <m:math><m:mfrac><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:math>
+</para>
+           <para id="eip-idm227276976"> <span class="token">ⓑ</span> Between 2001 and 2010. Average rate of change= <m:math><m:mfrac><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:math>
+</para>
+          <para id="eip-idm251524928"> <span class="token">ⓒ</span> Between 2014 and 2010. Average rate of change= <m:math><m:mfrac><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:math>
+</para>
+
+</problem></exercise><exercise id="eip-184"><problem id="eip-idm364981216">
+
+     <para id="eip-idm359287024"><span class="token">ⓐ</span>  Complete the following table of values for <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>8</m:mn></m:math> <newline/>
+<table id="eip-999" class="unnumbered" summary="."><label/>
+<tgroup cols="2"><thead>
+<row>    <entry>x</entry>
+    <entry>f(x)</entry></row>
+</thead>
+<tbody>
+  <row>
+    <entry>–2</entry>
+    <entry/>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry/>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry/>
+  </row>
+</tbody>
+</tgroup>
+</table>
+     </para>
+     <para id="eip-idm401055872">
+          <span class="token">ⓑ</span> Use the table above to find the average rate of change between <emphasis effect="italics">x</emphasis>=–2 and <emphasis effect="italics">x</emphasis>=2.
+     </para>
+     <para id="eip-idm390402816">
+          <span class="token">ⓒ</span> Use the table above to find the average rate of change between <emphasis effect="italics">x</emphasis>=2 and <emphasis effect="italics">x</emphasis>=4
+     </para>
+     <para id="eip-idm405918880"><span class="token">ⓓ</span> Sketch the graph of <emphasis effect="italics">f</emphasis>(<emphasis effect="italics">x</emphasis>) below and graph the lines with slopes equal to the average rates of change found in parts <span class="token">ⓑ</span> and <span class="token">ⓒ</span>.
+     </para></problem></exercise><exercise id="eip-578"><problem id="eip-idm981216">
+  <para id="eip-idm36490960">
+<list id="eip-idm36498004" list-type="enumerated" number-style="arabic" class="circled"><item>
+          <span class="token">ⓐ</span>  Complete the following table of values for <m:math><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:mfrac></m:math> <newline/>
+<table id="eip-666-666-666" class="unnumbered unstyled" summary="."><label/>
+<tgroup cols="2"><thead>
+<row>    <entry>x</entry>
+    <entry>g(x)</entry></row>
+</thead>
+<tbody>
+  <row>
+    <entry>–1</entry>
+    <entry/>
+  </row>
+  <row>
+    <entry>0</entry>
+    <entry/>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry/>
+  </row>
+</tbody>
+</tgroup>
+</table>
+     </item>
+     <item>
+          <span class="token">ⓑ</span> Use the table above to find the average rate of change between <emphasis effect="italics">x</emphasis>=–1 and <emphasis effect="italics">x</emphasis>=0.
+     </item>
+     <item>
+          <span class="token">ⓒ</span> Use the table above to find the average rate of change between <emphasis effect="italics">x</emphasis>=–1 and <emphasis effect="italics">x</emphasis>=2.
+     </item>
+     <item>
+          <span class="token">ⓓ</span> Sketch the graph of <emphasis effect="italics">g</emphasis>(<emphasis effect="italics">x</emphasis>) below and graph the lines with slopes equal to the average rates of change found in parts ⓑ and ⓒ.
+     </item>
+</list></para>
+</problem></exercise>
+</section></section></section>
+
+ <para id="fs-id1165135194500">Gasoline costs have experienced some wild fluctuations over the last several decades. <link target-id="Table_01_03_01"/><footnote id="fs-id1165137642606">http://www.eia.gov/totalenergy/data/annual/showtext.cfm?t=ptb0524. Accessed 3/5/2014.</footnote> lists the average cost, in dollars, of a gallon of gasoline for the years 2005–2012. The cost of gasoline can be considered as a function of year.</para><table id="Table_01_03_01" summary="Two rows and nine columns. The first row is labeled, “y”, and the second row is labeled, “C(y)”. Reading the rows as ordered pairs, we have: (2005, 2.31), (2006, 2.62), (2007, 2.84), (2008, 3.30), (2009, 2.41), (2010, 2.84), (2011, 3.58), and (2012, 3.68).">
+<tgroup cols="9"><colspec colnum="1" colname="c1" colwidth="40"/>
+   <colspec colnum="2" colname="c2" colwidth="40"/>
+   <colspec colnum="3" colname="c3" colwidth="40"/>
+   <colspec colnum="4" colname="c4" colwidth="40"/>
+   <colspec colnum="5" colname="c5" colwidth="40"/>
+   <colspec colnum="6" colname="c6" colwidth="40"/>
+   <colspec colnum="7" colname="c7" colwidth="40"/>
+   <colspec colnum="8" colname="c8" colwidth="40"/>
+   <colspec colnum="9" colname="c9" colwidth="40"/>
+   <tbody>
+    <row>
+     <entry align="center"><emphasis> <m:math>
+      <m:mi>y</m:mi>
+     </m:math> </emphasis>
+     </entry>
+     <entry align="center">2005</entry>
+     <entry align="center">2006</entry>
+     <entry align="center">2007</entry>
+     <entry align="center">2008</entry>
+     <entry align="center">2009</entry>
+     <entry align="center">2010</entry>
+     <entry align="center">2011</entry>
+     <entry align="center">2012</entry>
+    </row>
+
+    <row>
+     <entry align="center"><emphasis> <m:math>
+      <m:mrow>
+       <m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>y</m:mi>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+     </m:math>
+</emphasis>
+     </entry>
+     <entry align="center">2.31</entry>
+     <entry align="center">2.62</entry>
+     <entry align="center">2.84</entry>
+     <entry align="center">3.30</entry>
+     <entry align="center">2.41</entry>
+     <entry align="center">2.84</entry>
+     <entry align="center">3.58</entry>
+     <entry align="center">3.68</entry>
+    </row>
+   </tbody>
+
+
+</tgroup>
+</table><para id="fs-id1165133097252">If we were interested only in how the gasoline prices changed between 2005 and 2012, we could compute that the cost per gallon had increased from $2.31 to $3.68, an increase of $1.37. While this is interesting, it might be more useful to look at how much the price changed <emphasis effect="italics">per year</emphasis>. In this section, we will investigate changes such as these.</para>
+
+ <section id="fs-id1165137645483">
+  <title>Finding the Average Rate of Change of a Function</title>
+  <para id="fs-id1165137834011">The price change per year is a <term>rate of change</term> because it describes how an output quantity changes relative to the change in the input quantity. We can see that the price of gasoline in <link target-id="Table_01_03_01"/> did not change by the same amount each year, so the rate of change was not constant. If we use only the beginning and ending data, we would be finding the <term>average rate of change</term> over the specified period of time. To find the average rate of change, we divide the change in the output value by the change in the input value.</para>
+  <equation id="fs-id1165135452482" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mtext>Average rate of change</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mtext>Change in output</m:mtext>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>Change in input</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>Δ</m:mi><m:mi>y</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>Δ</m:mi><m:mi>x</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>−</m:mo><m:msub>
+         <m:mi>y</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>−</m:mo><m:msub>
+         <m:mi>x</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mo>(</m:mo><m:msub>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>)</m:mo><m:mo>−</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:msub>
+         <m:mi>x</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>−</m:mo><m:msub>
+         <m:mi>x</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+
+</equation><para id="fs-id1165135471272">The Greek letter <m:math>
+ <m:mrow>
+  <m:mtext>Δ</m:mtext></m:mrow>
+</m:math> (delta) signifies the change in a quantity; we read the ratio as “delta-<emphasis effect="italics">y</emphasis> over delta-<emphasis effect="italics">x</emphasis>” or “the change in <m:math>
+   <m:mrow>
+   <m:mi>y</m:mi></m:mrow>
+  </m:math> divided by the change in <m:math>
+   <m:mrow>
+   <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math>” Occasionally we write <m:math>
+ <m:mrow>
+  <m:mtext>Δ</m:mtext><m:mi>f</m:mi></m:mrow>
+</m:math> instead of <m:math>
+ <m:mrow>
+  <m:mtext>Δ</m:mtext><m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> which still represents the change in the function’s output value resulting from a change to its input value. It does not mean we are changing the function into some other function.</para><para id="fs-id1165137539940">In our example, the gasoline price increased by $1.37 from 2005 to 2012. Over 7 years, the average rate of change was</para>
+<equation id="fs-id1165137526960" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mtext>Δ</m:mtext><m:mi>y</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>Δ</m:mtext><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mtext>$</m:mtext><m:mn>1.37</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>7 years</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>≈</m:mo><m:mn>0.196</m:mn><m:mspace width="0.8em"/><m:mtext>dollars per year</m:mtext>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137418924">On average, the price of gas increased by about 19.6¢ each year.</para>
+  <para id="fs-id1165135397217">Other examples of rates of change include:</para>
+  <list id="fs-id1165137424067" list-type="bulleted">
+  <item>A population of rats increasing by 40 rats per week</item>
+  <item>A car traveling 68 miles per hour (distance traveled changes by 68 miles each hour as time passes)</item>
+  <item>A car driving 27 miles per gallon (distance traveled changes by 27 miles for each gallon)</item>
+  <item>The current through an electrical circuit increasing by 0.125 amperes for every volt of increased voltage</item>
+  <item>The amount of money in a college account decreasing by $4,000 per quarter</item>
+  </list>
+
+  <note id="fs-id1165137642836">
+
+   <title>Rate of Change</title>
+   <para id="fs-id1165137780744">A rate of change describes how an output quantity changes relative to the change in the input quantity. The units on a rate of change are “output units per input units.”</para>
+   <para id="fs-id1165137544638">The average rate of change between two input values is the total change of the function values (output values) divided by the change in the input values.</para>
+
+   <equation id="fs-id1165134060431" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>Δ</m:mi><m:mi>y</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>Δ</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msub>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msub>
+       <m:mi>x</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo><m:msub>
+     <m:mi>x</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation></note>
+
+  <note id="fs-id1165135530407" class="how-to-notitle">
+   <label>How To</label>
+   <para id="fs-id1165137762240"><emphasis>Given the value of a function at different points, calculate the average rate of change of a function for the interval between two values <m:math>
+    <m:mrow><m:msub>
+      <m:mi>x</m:mi>
+      <m:mn>1</m:mn>
+     </m:msub>
+     </m:mrow>
+   </m:math> and <m:math>
+    <m:mrow><m:msub>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+     </m:msub>
+     <m:mo>.</m:mo></m:mrow>
+   </m:math>
+   </emphasis></para>
+   <list id="fs-id1165137442714" list-type="enumerated" number-style="arabic"><item>Calculate the difference <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>−</m:mo><m:msub>
+   <m:mi>y</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mtext>Δ</m:mtext><m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+    </item>
+    <item>Calculate the difference <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>−</m:mo><m:msub>
+   <m:mi>x</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mtext>Δ</m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+    </item>
+    <item>Find the ratio <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mtext>Δ</m:mtext><m:mi>y</m:mi></m:mrow>
+   <m:mrow>
+    <m:mtext>Δ</m:mtext><m:mi>x</m:mi></m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> </item>
+   </list></note>
+
+  <example id="Example_01_03_01">
+   <exercise id="fs-id1165135485962">
+    <problem id="fs-id1165137464225">
+     <title>Computing an Average Rate of Change</title>
+     <para id="fs-id1165137603118">Using the data in <link target-id="Table_01_03_01"/>, find the average rate of change of the price of gasoline between 2007 and 2009.</para>
+    </problem>
+    <solution id="fs-id1165137593409">
+     <para id="fs-id1165135209401">In 2007, the price of gasoline was $2.84. In 2009, the cost was $2.41. The average rate of change is</para>
+     <equation id="fs-id1165137812332" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>Δ</m:mi><m:mi>y</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>Δ</m:mi><m:mi>x</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>−</m:mo><m:msub>
+         <m:mi>y</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>−</m:mo><m:msub>
+         <m:mi>x</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>$</m:mi><m:mn>2.41</m:mn><m:mo>−</m:mo><m:mi>$</m:mi><m:mn>2.84</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>2009</m:mn><m:mo>−</m:mo><m:mn>2007</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mi>$</m:mi><m:mn>0.43</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mspace width="0.8em"/><m:mtext>years</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mi>$</m:mi><m:mn>0.22</m:mn><m:mspace width="0.8em"/><m:mtext>per year</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+
+</equation></solution>
+    <commentary id="fs-id1165135705087">
+     <title>Analysis </title>
+     <para id="fs-id1165137784092">Note that a decrease is expressed by a negative change or “negative increase.” A rate of change is negative when the output decreases as the input increases or when the output increases as the input decreases.</para>
+     </commentary>
+   </exercise>
+  </example>
+
+  <note id="fs-id1165133267246" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_03_01">
+    <problem id="fs-id1165135160758"><para id="fs-id1165135160759">Using the data in <link target-id="Table_01_03_01"/>, find the average rate of change between 2005 and 2010.</para></problem>
+    <solution id="fs-id1165137401356"><para id="fs-id1165137453887"> <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>$</m:mi><m:mn>2.84</m:mn><m:mo>−</m:mo><m:mi>$</m:mi><m:mn>2.31</m:mn></m:mrow>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mspace width="0.8em"/><m:mtext>years</m:mtext></m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>$</m:mi><m:mn>0.53</m:mn></m:mrow>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mspace width="0.8em"/><m:mtext>years</m:mtext></m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>$</m:mi><m:mn>0.106</m:mn></m:mrow>
+    </m:math> per year.</para></solution>
+   </exercise>
+  </note>
+
+  <example id="Example_01_03_02">
+   <exercise id="fs-id1165137851963">
+    <problem id="fs-id1165137437853">
+     <title>Computing Average Rate of Change from a Graph</title>
+     <para id="fs-id1165137415140">Given the function <m:math>
+      <m:mrow>
+       <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+     </m:math> shown in <link target-id="Figure_01_03_001"/>, find the average rate of change on the interval <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+     </m:math> </para>
+
+
+     <figure id="Figure_01_03_001" class="small">
+      <media id="fs-id1165137838377" alt="Graph of a parabola.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_001-81a9.jpg"/>
+      </media>
+     </figure>
+
+    </problem>
+    <solution id="fs-id1165137501924">
+     <para id="fs-id1165137598939">At <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+     </m:math> <link target-id="Figure_01_03_002"/> shows <m:math>
+      <m:mrow>
+       <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+<m:mn>−1</m:mn></m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+     </m:math> At <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the graph shows <m:math>
+      <m:mrow>
+       <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mn>2</m:mn>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+     </m:math>
+     </para><figure id="Figure_01_03_002" class="small">
+     <media id="fs-id1165137387448" alt="Graph of a parabola with a line from points (-1, 4) and (2, 1) to show the changes for g(t) and t.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_002.jpg"/>
+     </media>
+    </figure>
+
+     <para id="fs-id1165137591169">The horizontal change <m:math>
+ <m:mrow>
+  <m:mtext>Δ</m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math> is shown by the red arrow, and the vertical change <m:math>
+ <m:mrow>
+  <m:mtext>Δ</m:mtext><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> is shown by the turquoise arrow. The average rate of change is shown by the slope of the orange line segment. The output changes by –3 while the input changes by 3, giving an average rate of change of</para><equation id="fs-id1165137414241" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mfrac>
+        <m:mrow>
+         <m:mn>1</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+        <m:mrow>
+         <m:mn>2</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+           <m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+       </m:mfrac>
+       <m:mo>=</m:mo><m:mfrac>
+        <m:mrow>
+         <m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+        <m:mn>3</m:mn>
+       </m:mfrac>
+       <m:mo>=</m:mo><m:mn>−1</m:mn></m:mrow>
+     </m:math>
+     </equation></solution>
+    <commentary id="fs-id1165137582316">
+     <title>Analysis	</title>
+     <para id="fs-id1165135538482">Note that the order we choose is very important. If, for example, we use <m:math>
+      <m:mrow>
+       <m:mfrac>
+        <m:mrow>
+         <m:msub>
+          <m:mi>y</m:mi>
+          <m:mn>2</m:mn>
+         </m:msub>
+         <m:mo>−</m:mo><m:msub>
+          <m:mi>y</m:mi>
+          <m:mn>1</m:mn>
+         </m:msub>
+        </m:mrow>
+        <m:mrow>
+         <m:msub>
+          <m:mi>x</m:mi>
+          <m:mn>1</m:mn>
+         </m:msub>
+         <m:mo>−</m:mo><m:msub>
+          <m:mi>x</m:mi>
+          <m:mn>2</m:mn>
+         </m:msub>
+        </m:mrow>
+       </m:mfrac>
+       <m:mo>,</m:mo></m:mrow>
+     </m:math> we will not get the correct answer. Decide which point will be 1 and which point will be 2, and keep the coordinates fixed as <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msub>
+     <m:mi>x</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>y</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+and <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msub>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+     </para></commentary>
+   </exercise>
+  </example>
+
+  <example id="Example_01_03_03">
+   <exercise id="fs-id1165135536188">
+    <problem id="fs-id1165137835656">
+     <title>Computing Average Rate of Change from a Table</title>
+     <para id="fs-id1165135515898">After picking up a friend who lives 10 miles away and leaving on a trip, Anna records her distance from home over time. The values are shown in <link target-id="Table_01_03_02"/>. Find her average speed over the first 6 hours.</para><table id="Table_01_03_02" summary="Two rows and nine columns. The first row is labeled, “t (hours)”, and the second row is labeled, “D(t) (miles)”. Reading the rows as ordered pairs, we have: (0, 10), (1, 55), (2, 90), (3, 153), (4, 214), (5, 240), (6, 292), and (7, 300).">
+<tgroup cols="9"><colspec colnum="1" colname="c1"/>
+       <colspec colnum="2" colname="c2" colwidth="50"/>
+       <colspec colnum="3" colname="c3" colwidth="50"/>
+       <colspec colnum="4" colname="c4" colwidth="50"/>
+       <colspec colnum="5" colname="c5" colwidth="50"/>
+       <colspec colnum="6" colname="c6" colwidth="50"/>
+       <colspec colnum="7" colname="c7" colwidth="50"/>
+       <colspec colnum="8" colname="c8" colwidth="50"/>
+       <colspec colnum="9" colname="c9" colwidth="50"/>
+       <tbody>
+        <row>
+         <entry align="center"><emphasis><emphasis effect="italics">t</emphasis> (hours)</emphasis></entry>
+         <entry align="center">0</entry>
+         <entry align="center">1</entry>
+         <entry align="center">2</entry>
+         <entry align="center">3</entry>
+         <entry align="center">4</entry>
+         <entry align="center">5</entry>
+         <entry align="center">6</entry>
+         <entry align="center">7</entry>
+        </row>
+
+
+        <row>
+         <entry align="center"><emphasis><emphasis effect="italics">D</emphasis>(<emphasis effect="italics">t</emphasis>) (miles)</emphasis></entry>
+         <entry align="center">10</entry>
+         <entry align="center">55</entry>
+         <entry align="center">90</entry>
+         <entry align="center">153</entry>
+         <entry align="center">214</entry>
+         <entry align="center">240</entry>
+         <entry align="center">292</entry>
+         <entry align="center">300</entry>
+        </row>
+       </tbody>
+
+
+
+
+
+
+
+
+
+</tgroup>
+</table></problem>
+    <solution id="fs-id1165137934383">
+     <para id="fs-id1165137891478">Here, the average speed is the average rate of change. She traveled 282 miles in 6 hours.</para><equation id="fs-id1165137789030" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>292</m:mn><m:mo>−</m:mo><m:mn>10</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mo>−</m:mo><m:mn>0</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>282</m:mn>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mn>47</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+
+</equation><para id="fs-id1165135400200">The average speed is 47 miles per hour.</para>
+    </solution>
+    <commentary id="fs-id1165137651998">
+     <title>Analysis </title>
+     <para id="fs-id1165137731074">Because the speed is not constant, the average speed depends on the interval chosen. For the interval [2,3], the average speed is 63 miles per hour.</para></commentary>
+   </exercise>
+  </example>
+
+  <example id="Example_01_03_04">
+   <exercise id="fs-id1165135353057">
+    <problem id="fs-id1165135383644">
+     <title>Computing Average Rate of Change for a Function Expressed as a Formula</title>
+     <para id="fs-id1165131958324">Compute the average rate of change of <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       <m:mo>−</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mi>x</m:mi>
+       </m:mfrac>
+       </m:mrow>
+     </m:math> on the interval <m:math>
+ <m:mrow>
+  <m:mtext>[2,</m:mtext><m:mspace width="0.8em"/><m:mtext>4].</m:mtext>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165137595439">
+     <para id="fs-id1165137595441">We can start by computing the function values at each <term class="no-emphasis">endpoint</term> of the interval.</para>
+
+    <equation id="fs-id1165137701107" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:msup>
+       <m:mn>2</m:mn>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="right" rowalign="center"><m:mspace width="2em"/>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:msup>
+       <m:mn>4</m:mn>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mn>16</m:mn><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>7</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>63</m:mn>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+
+</equation><para id="fs-id1165137427523">Now we compute the average rate of change.</para>
+    <equation id="fs-id1165137401823" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mtext>Average rate of change</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>4</m:mn><m:mo>−</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>63</m:mn>
+         </m:mrow>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        <m:mo>−</m:mo><m:mfrac>
+         <m:mn>7</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mn>4</m:mn><m:mo>−</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>49</m:mn>
+         </m:mrow>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>49</m:mn>
+       </m:mrow>
+       <m:mn>8</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+
+</equation></solution>
+   </exercise>
+  </example>
+
+  <note id="fs-id1165137436764" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_03_02">
+    <problem id="fs-id1165137832323"><para id="fs-id1165137832324">Find the average rate of change of <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>x</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:msqrt>
+        <m:mi>x</m:mi>
+       </m:msqrt>
+      </m:mrow>
+    </m:math> on the interval <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>9</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+    </para></problem>
+    <solution id="fs-id1165137455570"><para id="fs-id1165137455571"> <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+  </note>
+
+  <example id="Example_01_03_05">
+   <exercise id="fs-id1165137772170">
+    <problem id="fs-id1165137772173">
+     <title>Finding the Average Rate of Change of a Force</title>
+     <para id="fs-id1165135443718">The <term class="no-emphasis">electrostatic force</term> <m:math>
+      <m:mrow>
+       <m:mi>F</m:mi><m:mo>,</m:mo></m:mrow>
+     </m:math> measured in newtons, between two charged particles can be related to the distance between the particles <m:math>
+      <m:mrow>
+       <m:mi>d</m:mi><m:mo>,</m:mo></m:mrow>
+     </m:math> in centimeters, by the formula <m:math>
+      <m:mrow>
+       <m:mi>F</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>d</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+         <m:mn>2</m:mn>
+         <m:mrow>
+          <m:msup>
+           <m:mi>d</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+         </m:mrow>
+        </m:mfrac>
+       <m:mo>.</m:mo></m:mrow>
+     </m:math> Find the average rate of change of force if the distance between the particles is increased from 2 cm to 6 cm.</para></problem>
+    <solution id="fs-id1165137696464">
+     <para id="fs-id1165137770364">We are computing the average rate of change of <m:math>
+      <m:mrow>
+       <m:mi>F</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>d</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+         <m:mn>2</m:mn>
+         <m:mrow>
+          <m:msup>
+           <m:mi>d</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+         </m:mrow>
+        </m:mfrac>
+       </m:mrow>
+     </m:math> on the interval <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </para>
+
+     <equation id="fs-id1165135613444" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mtext>Average rate of change</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext/><m:mfrac>
+       <m:mrow>
+        <m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mo>−</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>2</m:mn>
+         <m:mrow>
+          <m:msup>
+           <m:mn>6</m:mn>
+           <m:mn>2</m:mn>
+          </m:msup>
+
+         </m:mrow>
+        </m:mfrac>
+        <m:mo>−</m:mo><m:mfrac>
+         <m:mn>2</m:mn>
+         <m:mrow>
+          <m:msup>
+           <m:mn>2</m:mn>
+           <m:mn>2</m:mn>
+          </m:msup>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mo>−</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mtext>Simplify</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>2</m:mn>
+         <m:mrow>
+          <m:mn>36</m:mn>
+         </m:mrow>
+        </m:mfrac>
+        <m:mo>−</m:mo><m:mfrac>
+         <m:mn>2</m:mn>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mfrac>
+         <m:mrow>
+          <m:mn>16</m:mn>
+         </m:mrow>
+         <m:mrow>
+          <m:mn>36</m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mtext>Combine numerator terms</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mtext>Simplify</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+
+</equation><para id="fs-id1165135543242">The average rate of change is <m:math>
+      <m:mrow>
+        <m:mo>−</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>9</m:mn>
+       </m:mfrac>
+       </m:mrow>
+     </m:math> newton per centimeter.</para></solution>
+   </exercise>
+  </example>
+
+  <example id="Example_01_03_06">
+   <exercise id="fs-id1165135174952">
+    <problem id="fs-id1165135174954">
+     <title>Finding an Average Rate of Change as an Expression</title>
+     <para id="fs-id1165135155397">Find the average rate of change of <m:math>
+      <m:mrow>
+       <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+         <m:mi>t</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> on the interval <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>a</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> The answer will be an expression involving <m:math>
+      <m:mrow>
+       <m:mi>a</m:mi></m:mrow>
+     </m:math> in simplest form.
+
+     </para></problem>
+    <solution id="fs-id1165137418911">
+     <para id="fs-id1165137418913">We use the average rate of change formula.<newline/></para>
+<equation id="fs-id1165134198703" class="unnumbered"><label/> <m:math display="block">
+    <m:mrow>
+        <m:mtable>
+            <m:mtr rowalign="center">
+                <m:mtd columnalign="right" rowalign="center">
+                    <m:mrow>
+                        <m:mtext>Average rate of change</m:mtext>
+                    </m:mrow>
+                </m:mtd>
+                <m:mtd rowalign="center">
+                    <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left" rowalign="center">
+                    <m:mrow>
+                        <m:mfrac>
+                            <m:mrow>
+                                <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+                            </m:mrow>
+                            <m:mrow>
+                                <m:mi>a</m:mi><m:mo>−</m:mo><m:mn>0</m:mn>
+                            </m:mrow>
+                        </m:mfrac>
+
+                    </m:mrow>
+                </m:mtd>
+                <m:mtd columnalign="left" rowalign="center">
+                    <m:mrow>
+                        <m:mtext>Evaluate</m:mtext><m:mo>.</m:mo>
+                    </m:mrow>
+                </m:mtd>
+            </m:mtr>
+            <m:mtr rowalign="center">
+                <m:mtd rowalign="center"/>
+                <m:mtd rowalign="center">
+                    <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left" rowalign="center">
+                    <m:mrow>
+                        <m:mfrac>
+                            <m:mrow>
+                                <m:mo>(</m:mo><m:msup>
+                                    <m:mi>a</m:mi>
+                                    <m:mn>2</m:mn>
+                                </m:msup>
+                                <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>−</m:mo><m:mo>(</m:mo><m:msup>
+                                    <m:mn>0</m:mn>
+                                    <m:mn>2</m:mn>
+                                </m:msup>
+                                <m:mo>+</m:mo><m:mn>3</m:mn><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo>
+                            </m:mrow>
+                            <m:mrow>
+                                <m:mi>a</m:mi><m:mo>−</m:mo><m:mn>0</m:mn>
+                            </m:mrow>
+                        </m:mfrac>
+
+                    </m:mrow>
+                </m:mtd>
+                <m:mtd columnalign="left" rowalign="center">
+                    <m:mrow>
+                        <m:mtext>Simplify</m:mtext><m:mo>.</m:mo>
+                    </m:mrow>
+                </m:mtd>
+            </m:mtr>
+            <m:mtr rowalign="center">
+                <m:mtd rowalign="center"/>
+                <m:mtd rowalign="center">
+                    <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left" rowalign="center">
+                    <m:mrow>
+                        <m:mfrac>
+                            <m:mrow>
+                                <m:msup>
+                                    <m:mi>a</m:mi>
+                                    <m:mn>2</m:mn>
+                                </m:msup>
+                                <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>1</m:mn>
+                            </m:mrow>
+                            <m:mi>a</m:mi>
+                        </m:mfrac>
+
+                    </m:mrow>
+                </m:mtd>
+                <m:mtd columnalign="left" rowalign="center">
+                    <m:mrow>
+                        <m:mtext>Simplify and factor</m:mtext><m:mo>.</m:mo>
+                    </m:mrow>
+                </m:mtd>
+            </m:mtr>
+            <m:mtr rowalign="center">
+                <m:mtd rowalign="center"/>
+                <m:mtd rowalign="center">
+                    <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left" rowalign="center">
+                    <m:mrow>
+                        <m:mfrac>
+                            <m:mrow>
+                                <m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+                            </m:mrow>
+                            <m:mi>a</m:mi>
+                        </m:mfrac>
+
+                    </m:mrow>
+                </m:mtd>
+                <m:mtd columnalign="left" rowalign="center">
+                    <m:mrow>
+                        <m:mtext>Divide by the common factor </m:mtext><m:mi>a</m:mi><m:mo>.</m:mo>
+                    </m:mrow>
+                </m:mtd>
+            </m:mtr>
+            <m:mtr rowalign="center">
+                <m:mtd rowalign="center"/>
+                <m:mtd rowalign="center">
+                    <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left" rowalign="center">
+                    <m:mrow>
+                        <m:mi>a</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+                    </m:mrow>
+                </m:mtd>
+                <m:mtd rowalign="center"/>
+            </m:mtr>
+
+        </m:mtable>
+    </m:mrow>
+</m:math>
+
+</equation><para id="fs-id1165133316469">This result tells us the average rate of change in terms of <m:math>
+      <m:mrow>
+       <m:mi>a</m:mi></m:mrow>
+     </m:math> between <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+     </m:math> and any other point <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow>
+     </m:math> For example, on the interval <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">]</m:mo><m:mo>,</m:mo></m:mrow>
+     </m:math> the average rate of change would be <m:math>
+      <m:mrow>
+       <m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>8.</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </solution>
+   </exercise>
+  </example>
+
+  <note id="fs-id1165137453128" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_03_03"><problem id="fs-id1165134149845"><para id="fs-id1165134149846">Find the average rate of change of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math> on the interval <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo stretchy="false">]</m:mo>
+ </m:mrow>
+</m:math> in simplest forms in terms <newline/>of <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+    </para></problem>
+    <solution id="fs-id1165133065696"><para id="fs-id1165133065698"> <m:math>
+     <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise></note>
+ </section>
+
+ <section id="fs-id1165135440486"><title>Using a Graph to Determine Where a Function is Increasing, Decreasing, or Constant</title><para id="fs-id1165137784644">As part of exploring how functions change, we can identify intervals over which the function is changing in specific ways. We say that a function is increasing on an interval if the function values increase as the input values increase within that interval. Similarly, a function is decreasing on an interval if the function values decrease as the input values increase over that interval. The average rate of change of an increasing function is positive, and the average rate of change of a decreasing function is negative. <link target-id="Figure_01_03_004"/> shows examples of increasing and decreasing intervals on a function.</para><figure id="Figure_01_03_004" class="small"><media id="fs-id1165135390884" alt="Graph of a polynomial that shows the increasing and decreasing intervals and local maximum and minimum.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_004-2b4a.jpg"/>
+   </media>
+
+  <caption>The function <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+     <m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi></m:mrow>
+   </m:math> is increasing on <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mi>∞</m:mi><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mo>−</m:mo><m:mtext>2</m:mtext>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mrow>
+    <m:msup>
+     <m:mstyle mathsize="140%" displaystyle="true"><m:mo>∪</m:mo></m:mstyle>
+     <m:mtext>​</m:mtext>
+    </m:msup>
+
+   </m:mrow>
+   <m:mtext>​</m:mtext>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>∞</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> and is decreasing on <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </caption></figure><para id="fs-id1165134272749">While some functions are increasing (or decreasing) over their entire domain, many others are not. A value of the input where a function changes from increasing to decreasing (as we go from left to right, that is, as the input variable increases) is the location of a  <term>local maximum</term>. The function value at that point is the local maximum. If a function has more than one, we say it has local maxima. Similarly, a value of the input where a function changes from decreasing to increasing as the input variable increases is the location of a <term>local minimum</term>. The function value at that point is the local minimum. The plural form is “local minima.” Together, local maxima and minima are called <term>local extrema</term>, or local extreme values, of the function. (The singular form is “extremum.”) Often, the term <emphasis effect="italics">local</emphasis> is replaced by the term <emphasis effect="italics">relative</emphasis>. In this text, we will use the term <emphasis effect="italics">local</emphasis>.</para>
+  <para id="fs-id1165134547216">Clearly, a function is neither increasing nor decreasing on an interval where it is constant. A function is also neither increasing nor decreasing at extrema. Note that we have to speak of <emphasis effect="italics">local</emphasis> extrema, because any given local extremum as defined here is not necessarily the highest maximum or lowest minimum in the function’s entire domain.</para>
+  <para id="fs-id1165135333162">For the function whose graph is shown in <link target-id="Figure_01_03_015"/>, the local maximum is 16, and it occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2.</m:mn>
+ </m:mrow>
+</m:math> The local minimum is <m:math>
+   <m:mrow>
+   <m:mn>−16</m:mn></m:mrow>
+  </m:math> and it occurs at <m:math>
+   <m:mrow>
+   <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+  </m:math>
+  </para><figure id="Figure_01_03_015" class="medium"><media id="fs-id1165137459600" alt="A graph is shown on a set of x and y axes. The scale is minus five to plus five for x and minus twenty to twenty for y. The graph rises from below in the third quadrant, crossing the x-axis between negative three and negative four, has a turning point at minus two, sixteen, crosses the x-axis again at the origin, has another turning point at two, minus sixteen, and crosses the x-axis one last time between three and four, rising from there. The turning points are labeled local maximum and local minimum respectively. The curve is labeled increasing or decreasing as appropriate.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_014-ba4c.jpg"/>
+   </media>
+  </figure><para id="fs-id1165133316450">To locate the local maxima and minima from a graph, we need to observe the graph to determine where the graph attains its highest and lowest points, respectively, within an open interval. Like the summit of a roller coaster, the graph of a function is higher at a local maximum than at nearby points on both sides. The graph will also be lower at a local minimum than at neighboring points. <link target-id="Figure_01_03_005"/> illustrates these ideas for a local maximum.</para><figure id="Figure_01_03_005" class="small">
+   <media id="fs-id1165137724379" alt="Graph of a polynomial that shows the increasing and decreasing intervals and local maximum.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_005.jpg"/>
+   </media>
+   <caption>Definition of a local maximum</caption>
+  </figure>
+
+  <para id="eip-673">These observations lead us to a formal definition of local extrema.</para>
+<note id="fs-id1165134169419">
+
+   <title>Local Minima and Local Maxima</title>
+   <para id="fs-id1165134169426">A function <m:math>
+    <m:mrow><m:mi>f</m:mi></m:mrow>
+   </m:math> is an <term>increasing function</term> on an open interval if <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>b</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>a</m:mi>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> for any two input values <m:math>
+    <m:mrow><m:mi>a</m:mi></m:mrow>
+   </m:math> and <m:math>
+    <m:mrow><m:mi>b</m:mi></m:mrow>
+   </m:math> in the given interval where <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mo>&gt;</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165137668624">A function <m:math>
+    <m:mrow><m:mi>f</m:mi></m:mrow>
+   </m:math> is a <term>decreasing function</term> on an open interval if <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>b</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>a</m:mi>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> for any two input values <m:math>
+    <m:mrow><m:mi>a</m:mi></m:mrow>
+   </m:math> and <m:math>
+    <m:mrow><m:mi>b</m:mi></m:mrow>
+   </m:math> in the given interval where <m:math>
+    <m:mrow><m:mi>b</m:mi><m:mo>&gt;</m:mo><m:mi>a</m:mi><m:mo>.</m:mo></m:mrow>
+   </m:math>
+   </para>
+   <para id="fs-id1165135389881">A function <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi></m:mrow>
+   </m:math> has a local maximum at <m:math>
+    <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mrow>
+   </m:math> if there exists an interval <m:math>
+    <m:mrow><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> with <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mo>&lt;</m:mo><m:mi>c</m:mi></m:mrow>
+   </m:math> such that, for any <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi></m:mrow>
+   </m:math> in the interval <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+   </m:math> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>≤</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>b</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+   </m:math> Likewise, <m:math>
+    <m:mi>f</m:mi>
+   </m:math> has a local minimum at <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mrow>
+   </m:math> if there exists an interval <m:math>
+    <m:mrow>
+     <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> with <m:math>
+    <m:mrow>
+     <m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mo>&lt;</m:mo><m:mi>c</m:mi></m:mrow>
+   </m:math> such that, for any <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi></m:mrow>
+   </m:math> in the interval <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>c</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+   </m:math> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>≥</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>b</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+   </m:math>
+
+   </para></note>
+
+  <example id="Example_01_03_07">
+   <exercise id="fs-id1165134266716">
+    <problem id="fs-id1165134266718">
+     <title>Finding Increasing and Decreasing Intervals on a Graph</title>
+     <para id="fs-id1165134266723">Given the function <m:math>
+      <m:mrow>
+       <m:mi>p</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+     </m:math> in <link target-id="Figure_01_03_006"/>, identify the intervals on which the function appears to be increasing.</para>
+
+     <figure id="Figure_01_03_006" class="small">
+      <media id="fs-id1165134106001" alt="Graph of a polynomial.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_006.jpg"/>
+      </media>
+     </figure>
+
+    </problem>
+    <solution id="fs-id1165133067194">
+     <para id="fs-id1165133067197">We see that the function is not constant on any interval. The function is increasing where it slants upward as we move to the right and decreasing where it slants downward as we move to the right. The function appears to be increasing from <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> to <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+     </m:math> and from <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+     </m:math> on. </para><para id="fs-id1165135369127">In <term class="no-emphasis">interval notation</term>, we would say the function appears to be increasing on the interval (1,3) and the interval <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math>
+     </para></solution>
+    <commentary id="fs-id1165134104015">
+     <title>Analysis </title>
+     <para id="fs-id1165134104021">Notice in this example that we used open intervals (intervals that do not include the endpoints), because the function is neither increasing nor decreasing at <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> , <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+     </m:math> , and <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+     </m:math> . These points are the local extrema (two minima and a maximum). </para></commentary>
+   </exercise>
+  </example>
+
+  <example id="Example_01_03_08"><exercise id="fs-id1165135261521"><problem id="fs-id1165135261523">
+     <title>Finding Local Extrema from a Graph</title>
+     <para id="fs-id1165135261528">Graph the function <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+         <m:mn>2</m:mn>
+         <m:mi>x</m:mi>
+        </m:mfrac>
+       <m:mo>+</m:mo><m:mfrac>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:mfrac>
+       <m:mo>.</m:mo></m:mrow>
+     </m:math> Then use the graph to estimate the local extrema of the function and to determine the intervals on which the function is increasing.</para>
+    </problem>
+    <solution id="fs-id1165134255027">
+     <para id="fs-id1165134255029">Using technology, we find that the graph of the function looks like that in <link target-id="Figure_01_03_007"/>. It appears there is a low point, or local minimum, between <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+     </m:math> and <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+     </m:math> and a mirror-image high point, or local maximum, somewhere between <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2.</m:mn>
+ </m:mrow>
+</m:math> </para>
+<figure id="Figure_01_03_007" class="small">
+     <media id="fs-id1165137888935" alt="Graph of a reciprocal function.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_007.jpg"/>
+     </media>
+    </figure>
+    </solution>
+    <commentary id="fs-id1165133320713">
+     <title>Analysis </title>
+     <para id="fs-id1165133320718">Most graphing calculators and graphing utilities can estimate the location of maxima and minima. <link target-id="Figure_01_03_008"/> provides screen images from two different technologies, showing the estimate for the local maximum and minimum.</para>
+<figure id="Figure_01_03_008"><media id="fs-id1165134377142" alt="Graph of the reciprocal function on a graphing calculator.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_008ab_CAT.jpg"/>
+      </media>
+     </figure><para id="fs-id1165134075625">Based on these estimates, the function is increasing on the interval <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>∞</m:mi><m:mtext>,</m:mtext><m:mo>−</m:mo><m:mtext>2</m:mtext><m:mtext>.449)</m:mtext>
+ </m:mrow>
+</m:math>
+and <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>2.449</m:mn><m:mtext>,</m:mtext><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Notice that, while we expect the extrema to be symmetric, the two different technologies agree only up to four decimals due to the differing approximation algorithms used by each. (The exact location of the extrema is at <m:math>
+ <m:mrow>
+  <m:mo>±</m:mo><m:msqrt>
+   <m:mn>6</m:mn>
+  </m:msqrt>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> but determining this requires calculus.)</para></commentary>
+   </exercise></example><note id="fs-id1165135160233" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_01_03_04"><problem id="fs-id1165135640966"><para id="fs-id1165135640967">Graph the function <m:math>
+     <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>x</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+      <m:mo>−</m:mo><m:mn>6</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>15</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>20</m:mn></m:mrow>
+    </m:math> to estimate the local extrema of the function. Use these to determine the intervals on which the function is increasing and decreasing.</para></problem>
+    <solution id="fs-id1165135471082"><para id="fs-id1165135471083">The local maximum appears to occur at <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>28</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> and the local minimum occurs at <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>80</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+    </m:math> The function is increasing on <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> and decreasing on <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </para>
+    <media id="fs-id1165134043615" alt="Graph of a polynomial with a local maximum at (-1, 28) and local minimum at (5, -80).">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_010.jpg"/>
+    </media>
+    </solution></exercise></note>
+
+  <example id="Example_01_03_09">
+   <exercise id="fs-id1165135367558">
+    <problem id="fs-id1165137896103">
+     <title>Finding Local Maxima and Minima from a Graph</title>
+     <para id="fs-id1165135209636">For the function <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi></m:mrow>
+     </m:math> whose graph is shown in <link target-id="Figure_01_03_011"/>, find all local maxima and minima.</para><figure id="Figure_01_03_011" class="small">
+      <media id="fs-id1165135516800" alt="Graph of a polynomial.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_011.jpg"/>
+      </media>
+     </figure>
+    </problem>
+    <solution id="fs-id1165135527083">
+     <para id="fs-id1165135527085">Observe the graph of <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+     </m:math> The graph attains a local maximum at <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> because it is the highest point in an open interval around <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+     </m:math> The local maximum is the <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi></m:mrow>
+     </m:math> -coordinate at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> which is <m:math>
+      <m:mrow>
+       <m:mn>2.</m:mn></m:mrow>
+     </m:math>
+     </para><para id="fs-id1165134485672">The graph attains a local minimum at <m:math>
+ <m:mrow>
+  <m:mtext/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn>
+ </m:mrow>
+</m:math> because it is the lowest point in an open interval around <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−1.</m:mn></m:mrow>
+     </m:math> The local minimum is the <emphasis effect="italics">y</emphasis>-coordinate at <m:math>
+     <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo></m:mrow>
+    </m:math> which is <m:math>
+     <m:mrow>
+  <m:mn>−2.</m:mn></m:mrow>
+     </m:math>
+     </para></solution>
+   </exercise>
+  </example>
+   </section><section id="fs-id1165134544960">
+  <title>Analyzing the Toolkit Functions for Increasing or Decreasing Intervals </title>
+  <para id="fs-id1165135704895">We will now return to our toolkit functions and discuss their graphical behavior in <link target-id="Figure_01_03_012"/>, <link target-id="Figure_01_03_016"/>, and <link target-id="Figure_01_03_017"/>.</para>
+
+  <figure id="Figure_01_03_012">
+   <media id="fs-id1165135186344" alt="Table showing the increasing and decreasing intervals of the toolkit functions.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_012a.jpg"/>
+   </media>
+  </figure>
+  <figure id="Figure_01_03_016">
+   <media id="fs-id1165137834947" alt="Table showing the increasing and decreasing intervals of the toolkit functions.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_012b.jpg"/>
+   </media>
+  </figure>
+  <figure id="Figure_01_03_017">
+   <media id="fs-id1165137834962" alt="Table showing the increasing and decreasing intervals of the toolkit functions.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_012c.jpg"/>
+   </media>
+  </figure>
+ </section>
+
+ <section id="fs-id1165134381626">
+  <title> Use A Graph to Locate the Absolute Maximum and Absolute Minimum</title>
+  <para id="fs-id1165134381632">There is a difference between locating the highest and lowest points on a graph in a region around an open interval (locally) and locating the highest and lowest points on the graph for the entire domain. The <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mtext>-</m:mtext>
+ </m:mrow>
+</m:math> coordinates (output) at the highest and lowest points are called the <emphasis>absolute maximum </emphasis>and<emphasis> absolute minimum</emphasis>, respectively.</para><para id="fs-id1165131833490">To locate absolute maxima and minima from a graph, we need to observe the graph to determine where the graph attains it highest and lowest points on the domain of the function. See <link target-id="Figure_01_03_014"/>.</para>
+
+  <figure id="Figure_01_03_014" class="small"><media id="fs-id1165134153022" alt="Graph of a segment of a parabola with an absolute minimum at (0, -2) and absolute maximum at (2, 2).">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_015.jpg"/>
+   </media>
+  </figure><para id="fs-id1165137692066">Not every function has an absolute maximum or minimum value. The toolkit function <m:math>
+   <m:mrow>
+   <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+     <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+    </m:mrow>
+  </m:math> is one such function.</para>
+
+  <note id="fs-id1165135251290">
+
+   <title>Absolute Maxima and Minima</title>
+   <para id="fs-id1165132939786">The <term>absolute maximum</term> of <m:math>
+    <m:mrow><m:mi>f</m:mi></m:mrow>
+   </m:math> at <m:math>
+    <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi></m:mrow>
+   </m:math> is <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>c</m:mi>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> where <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>c</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>≥</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>x</m:mi>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> for all <m:math>
+    <m:mrow><m:mi>x</m:mi></m:mrow>
+   </m:math> in the domain of <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+   </m:math>
+   </para>
+   <para id="fs-id1165137932685">The <term>absolute minimum</term> of <m:math>
+    <m:mrow><m:mi>f</m:mi></m:mrow>
+   </m:math> at <m:math>
+    <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>d</m:mi></m:mrow>
+   </m:math> is <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>d</m:mi>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> where <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>d</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>≤</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>x</m:mi>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> for all <m:math>
+    <m:mrow><m:mi>x</m:mi></m:mrow>
+   </m:math> in the domain of <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+   </m:math>
+   </para>
+  </note>
+
+  <example id="Example_01_03_10">
+   <exercise id="fs-id1165134047533">
+    <problem id="fs-id1165134047535">
+     <title>Finding Absolute Maxima and Minima from a Graph</title>
+     <para id="fs-id1165133394704">For the function <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi></m:mrow>
+     </m:math> shown in <link target-id="Figure_01_03_013"/>, find all absolute maxima and minima.</para><figure id="Figure_01_03_013" class="small">
+      <media id="fs-id1165134360890" alt="Graph of a polynomial.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_013.jpg"/>
+      </media>
+     </figure>
+
+    </problem>
+    <solution id="fs-id1165135532368">
+     <para id="fs-id1165135532371">Observe the graph of <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+     </m:math> The graph attains an absolute maximum in two locations, <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn></m:mrow>
+     </m:math> and <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+     </m:math> because at these locations, the graph attains its highest point on the domain of the function. The absolute maximum is the <emphasis effect="italics">y</emphasis>-coordinate at <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn></m:mrow>
+     </m:math> and <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+     </m:math> which is <m:math>
+      <m:mrow>
+       <m:mn>16.</m:mn></m:mrow>
+     </m:math>
+     </para><para id="fs-id1165137863670">The graph attains an absolute minimum at <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+     </m:math> because it is the lowest point on the domain of the function’s graph. The absolute minimum is the <emphasis effect="italics">y</emphasis>-coordinate at <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+      </m:math> which is <m:math>
+       <m:mrow><m:mn>−10.</m:mn></m:mrow>
+      </m:math>
+     </para></solution>
+   </exercise>
+  </example>
+
+  <note id="fs-id1165135708033" class="media-notitle">
+   <label>Media</label>
+   <para id="fs-id1165135708038">Access this online resource for additional instruction and practice with rates of change.</para>
+   <list id="fs-id1165135708041"><item><link url="http://openstax.org/l/aroc">Average Rate of Change</link></item>
+   </list></note>
+
+
+ </section>
+
+ <section id="fs-id1165135541564" class="key-equations"><title>Key Equations</title><table id="eip-id1165135358784" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" align="left" colname="c1"/>
+<colspec colnum="2" align="left" colname="c2"/>
+<tbody>
+<row>
+<entry align="center">Average rate of change</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>Δ</m:mi><m:mi>y</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>Δ</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msub>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msub>
+       <m:mi>x</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo><m:msub>
+     <m:mi>x</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table></section><section id="fs-id1165135481945" class="key-concepts">
+  <title>Key Concepts</title>
+  <list id="fs-id1165135481952" list-type="bulleted">
+   <item>A rate of change relates a change in an output quantity to a change in an input quantity. The average rate of change is determined using only the beginning and ending data. See <link target-id="Example_01_03_01"/>.</item>
+   <item>Identifying points that mark the interval on a graph can be used to find the average rate of change. See <link target-id="Example_01_03_02"/>.</item>
+   <item>Comparing pairs of input and output values in a table can also be used to find the average rate of change. See <link target-id="Example_01_03_03"/>.</item>
+   <item>An average rate of change can also be computed by determining the function values at the endpoints of an interval described by a formula. See <link target-id="Example_01_03_04"/> and <link target-id="Example_01_03_05"/>.</item>
+   <item>The average rate of change can sometimes be determined as an expression. See <link target-id="Example_01_03_06"/>.</item>
+   <item>A function is increasing where its rate of change is positive and decreasing where its rate of change is negative. See <link target-id="Example_01_03_07"/>.</item>
+  <item>A local maximum is where a function changes from increasing to decreasing and has an output value larger (more positive or less negative) than output values at neighboring input values.</item>
+  <item>A local minimum is where the function changes from decreasing to increasing (as the input increases) and has an output value smaller (more negative or less positive) than output values at neighboring input values.</item>
+  <item>Minima and maxima are also called extrema.</item>
+   <item>We can find local extrema from a graph. See <link target-id="Example_01_03_08"/> and <link target-id="Example_01_03_09"/>.</item>
+   <item>The highest and lowest points on a graph indicate the maxima and minima. See <link target-id="Example_01_03_10"/>.</item>
+  </list>
+ </section>
+
+ <section id="fs-id1165135457748" class="section-exercises"><title>Section Exercises</title><section id="fs-id1165135457752">
+   <title>Verbal</title>
+   <exercise id="fs-id1165135457758">
+    <problem id="fs-id1165135457760">
+     <para id="fs-id1165135457762">Can the average rate of change of a function be constant?</para>
+    </problem>
+   <solution id="fs-id1165135457766">
+    <para id="fs-id1165135457768">Yes, the average rate of change of all linear functions is constant.</para>
+   </solution>
+   </exercise>
+   <exercise id="fs-id1165135536268">
+    <problem id="fs-id1165135536270">
+     <para id="fs-id1165135536272">If a function <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi></m:mrow>
+     </m:math> is increasing on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> and decreasing on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+     </m:math> then what can be said about the local extremum of <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi></m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo></m:mrow>
+     </m:math>
+    </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165137704665">
+    <problem id="fs-id1165137911347">
+     <para id="fs-id1165137911349">How are the absolute maximum and minimum similar to and different from the local extrema?</para>
+    </problem>
+   <solution id="fs-id1165137911354">
+    <para id="fs-id1165137911356">The absolute maximum and minimum relate to the entire graph, whereas the local extrema relate only to a specific region around an open interval.</para>
+   </solution>
+   </exercise>
+   <exercise id="fs-id1165137911363">
+    <problem id="fs-id1165137911365">
+     <para id="fs-id1165137911367">How does the graph of the absolute value function compare to the graph of the quadratic function, <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+       <m:mo>,</m:mo></m:mrow>
+     </m:math> in terms of increasing and decreasing intervals?</para>
+    </problem>
+   </exercise>
+  </section>
+
+
+  <section id="fs-id1165134259215">
+   <title>Algebraic</title>
+   <para id="fs-id1165134259221">For the following exercises, find the average rate of change of each function on the interval specified for real numbers <m:math>
+    <m:mrow><m:mi>b</m:mi></m:mrow>
+   </m:math> or <m:math>
+    <m:mrow><m:mi>h</m:mi></m:mrow>
+   </m:math> in simplest form.
+</para><exercise id="fs-id1165134486779">
+    <problem id="fs-id1165134486781">
+     <para id="fs-id1165134486783"> <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       <m:mo>−</m:mo><m:mn>7</m:mn></m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mi>b</m:mi><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+   </para>
+    </problem>
+   <solution id="fs-id1165137527521">
+    <para id="fs-id1165137527523"> <m:math>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>b</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise>
+   <exercise id="fs-id1165134158932">
+    <problem id="fs-id1165134158934">
+     <para id="fs-id1165134158936"> <m:math>
+      <m:mrow>
+       <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       <m:mo>−</m:mo><m:mn>9</m:mn></m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mi>b</m:mi></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165135403475">
+    <problem id="fs-id1165135403477">
+     <para id="fs-id1165135403480"> <m:math>
+      <m:mrow>
+       <m:mi>p</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165135237060">
+     <para id="fs-id1165135237062">3</para>
+    </solution>
+   </exercise>
+   <exercise id="fs-id1165135237067">
+    <problem id="fs-id1165135237069">
+     <para id="fs-id1165135237072"> <m:math>
+      <m:mrow>
+       <m:mi>k</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>3</m:mn><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165137579498">
+    <problem id="fs-id1165137579500">
+     <para id="fs-id1165137579502"> <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       <m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165134495237">
+     <para id="fs-id1165134495239"> <m:math>
+      <m:mrow>
+       <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>h</m:mi></m:mrow>
+     </m:math>
+     </para>
+    </solution>
+   </exercise>
+   <exercise id="fs-id1165134495260">
+    <problem id="fs-id1165135409395">
+     <para id="fs-id1165135409397"> <m:math>
+      <m:mrow>
+       <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       <m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165134374799">
+    <problem id="fs-id1165134374801">
+     <para id="fs-id1165135209619"> <m:math>
+      <m:mrow>
+       <m:mi>a</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:mi>t</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+        </m:mfrac>
+       </m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165135436244">
+     <para id="fs-id1165135436247"> <m:math>
+      <m:mrow>
+       <m:mfrac>
+        <m:mrow>
+         <m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+        <m:mrow>
+         <m:mn>13</m:mn><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+           <m:mn>13</m:mn><m:mo>+</m:mo><m:mi>h</m:mi></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+       </m:mfrac>
+      </m:mrow>
+     </m:math>
+     </para>
+    </solution>
+   </exercise>
+   <exercise id="fs-id1165137693536">
+    <problem id="fs-id1165137693538">
+     <para id="fs-id1165137693540"> <m:math>
+      <m:mrow>
+       <m:mi>b</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+        </m:mfrac>
+       </m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165134104075">
+    <problem id="fs-id1165134104077">
+     <para id="fs-id1165134104080"> <m:math>
+      <m:mrow>
+       <m:mi>j</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>3</m:mn>
+        </m:msup>
+       </m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165137404762">
+     <para id="fs-id1165137404764"> <m:math>
+      <m:mrow>
+       <m:mn>3</m:mn><m:msup>
+        <m:mi>h</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>9</m:mn><m:mi>h</m:mi><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </solution>
+   </exercise>
+   <exercise id="fs-id1165137851687">
+    <problem id="fs-id1165137851690">
+     <para id="fs-id1165137851692"> <m:math>
+      <m:mrow>
+       <m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+         <m:mi>t</m:mi>
+         <m:mn>3</m:mn>
+        </m:msup>
+       </m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+
+   <exercise id="fs-id1165137432064">
+    <problem id="fs-id1165137432066">
+     <para id="fs-id1165137432068"> <m:math>
+      <m:mrow>
+       <m:mfrac>
+        <m:mrow>
+         <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+           <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi></m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+           <m:mi>x</m:mi>
+           <m:mo>)</m:mo></m:mrow></m:mrow>
+        <m:mi>h</m:mi>
+       </m:mfrac>
+       </m:mrow>
+     </m:math> given <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165137756878">
+    <para id="fs-id1165137756880"> <m:math>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>h</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise>
+  </section>
+
+
+  <section id="fs-id1165135409367"><title>Graphical</title><para id="fs-id1165135409372">For the following exercises, consider the graph of <m:math>
+    <m:mrow><m:mi>f</m:mi></m:mrow>
+   </m:math> shown in <link target-id="Figure_01_03_201"/>.</para>
+
+   <figure id="Figure_01_03_201" class="medium">
+    <media id="fs-id1165135581139" alt="Graph of a polynomial.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_201.jpg"/>
+    </media>
+   </figure>
+
+   <exercise id="fs-id1165135701406">
+    <problem id="fs-id1165135701408">
+     <para id="fs-id1165135701411">Estimate the average rate of change from <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> to <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+  <exercise id="fs-id1165137769703">
+   <problem id="fs-id1165137769705">
+    <para id="fs-id1165137769707">Estimate the average rate of change from <m:math>
+     <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+    </m:math> to <m:math>
+     <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn></m:mrow>
+    </m:math>
+    </para>
+   </problem>
+   <solution id="fs-id1165135394063">
+    <para id="fs-id1165135394065"> <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para>
+   </solution>
+  </exercise>
+
+   <para id="fs-id1165133213910">For the following exercises, use the graph of each function to estimate the intervals on which the function is increasing or decreasing.</para>
+
+ <exercise id="fs-id1165133213915"><problem id="fs-id1165133213917">
+   <media id="fs-id1165133213923" alt="Graph of an absolute function." display="block">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_202.jpg"/>
+    </media>
+</problem>
+ </exercise><exercise id="fs-id1165137897938"><problem id="fs-id1165137897940">
+
+      <media id="fs-id1165137897946" alt="Graph of a cubic function." display="block">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_203.jpg"/>
+    </media>
+
+    </problem>
+   <solution id="fs-id1165137897960">
+    <para id="fs-id1165137897962">increasing on <m:math>
+     <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>2.5</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mn>1</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi></m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+    </m:math> decreasing on <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2.5</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise><exercise id="fs-id1165135600844"><problem id="fs-id1165135600846">
+
+      <media id="fs-id1165135422552" alt="Graph of a cubic function." display="block">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_204.jpg"/>
+    </media>
+
+    </problem>
+   </exercise><exercise id="fs-id1165135422567"><problem id="fs-id1165135422569">
+
+     <media id="fs-id1165134080979" alt="Graph of a reciprocal function." display="block">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_205.jpg"/>
+    </media>
+
+   </problem>
+   <solution id="fs-id1165134080992">
+    <para id="fs-id1165134080994">increasing on <m:math>
+     <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+    </m:math> decreasing on <m:math>
+     <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mn>4</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi></m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+  </exercise><para id="fs-id1165134373457">For the following exercises, consider the graph shown in <link target-id="Figure_01_03_206"/>.</para>
+
+   <figure id="Figure_01_03_206" class="medium">
+    <media id="fs-id1165134373469" alt="Graph of a cubic function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_206.jpg"/>
+    </media>
+   </figure>
+
+   <exercise id="fs-id1165134373481">
+    <problem id="fs-id1165134373483">
+     <para id="fs-id1165134149082">Estimate the intervals where the function is increasing or decreasing.</para>
+    </problem>
+   </exercise>
+
+  <exercise id="fs-id1165134149087">
+   <problem id="fs-id1165134149090">
+    <para id="fs-id1165134149092">Estimate the point(s) at which the graph of <m:math>
+     <m:mrow>
+  <m:mi>f</m:mi></m:mrow>
+    </m:math> has a local maximum or a local minimum.</para>
+   </problem>
+   <solution id="fs-id1165135183941">
+    <para id="fs-id1165135183943">local maximum: <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>60</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> local minimum: <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mo>−</m:mo><m:mn>60</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math>
+    </para> </solution>
+  </exercise>
+
+   <para id="fs-id1165135404176">For the following exercises, consider the graph in <link target-id="Figure_01_03_207"/>.</para>
+
+   <figure id="Figure_01_03_207" class="medium">
+    <media id="fs-id1165135404188" alt="Graph of a cubic function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_207.jpg"/>
+    </media>
+   </figure>
+
+   <exercise id="fs-id1165135428496">
+    <problem id="fs-id1165135428498">
+     <para id="fs-id1165135428500">If the complete graph of the function is shown, estimate the intervals where the function is increasing or decreasing.</para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165135428507">
+    <problem id="fs-id1165135428509">
+     <para id="fs-id1165135428511">If the complete graph of the function is shown, estimate the absolute maximum and absolute minimum.</para>
+    </problem>
+   <solution id="fs-id1165135428516">
+    <para id="fs-id1165134094452">absolute maximum at approximately <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>150</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> absolute minimum at approximately <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>−7.5</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>−220</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+  </section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134043819"><title>Numeric</title><exercise id="fs-id1165134043824"><problem id="fs-id1165134043826" class="material-set-2"><para id="fs-id1165134043828"><link target-id="Table_01_03_03"/> gives the annual sales (in millions of dollars) of a product from 1998 to 2006. What was the average rate of change of annual sales (a) between 2001 and 2002, and (b) between 2001 and 2004?</para>
+
+   <table id="Table_01_03_03" summary="Two columns and ten rows. The first row is labeled, “Year”, and the second row is labeled, “Sales (millions of dollars)”. Reading the rows as ordered pairs, we have: (1998, 201), (1999, 219), (2000, 233), (2001, 243), (2002, 249), (2003, 251), (2004, 243), (2005, 243) and (2006, 233).">
+<tgroup cols="2"><colspec colnum="1" colname="c1" align="center"/>
+<colspec colnum="2" colname="c2" align="center"/>
+
+<thead>
+<row>
+<entry align="center"><emphasis>Year</emphasis></entry>
+<entry align="center"><emphasis>Sales<newline/> (millions of dollars)</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">1998</entry><entry align="center">201</entry>
+</row>
+<row>
+<entry align="center">1999</entry><entry align="center">219</entry>
+</row>
+<row>
+<entry align="center">2000</entry><entry align="center">233</entry>
+</row>
+<row>
+<entry align="center">2001</entry><entry align="center">243</entry>
+</row>
+<row>
+<entry align="center">2002</entry><entry align="center">249</entry>
+</row>
+<row>
+<entry align="center">2003</entry><entry align="center">251</entry>
+</row>
+<row>
+<entry align="center">2004</entry><entry align="center">249</entry>
+</row>
+<row>
+<entry align="center">2005</entry><entry align="center">243</entry>
+</row>
+<row>
+<entry align="center">2006</entry><entry align="center">233</entry>
+</row>
+</tbody>
+
+
+
+
+
+
+
+
+
+</tgroup>
+</table></problem>
+   </exercise><exercise id="fs-id1165135547288" class="material-set-2"><problem id="fs-id1165135547289">
+<para id="fs-id1165135689537"><link target-id="Table_01_03_04"/> gives the population of a town (in thousands) from 2000 to 2008. What was the average rate of change of population (a) between 2002 and 2004, and (b) between 2002 and 2006?</para><table id="Table_01_03_04" summary="Two rows and ten columns. The first column is labeled, “Year”, and the second column is labeled, “Population (thousands)”. Reading the columns as ordered pairs, we have: (2000, 87), (2001, 84), (2002, 83), (2003, 80), (2004, 77), (2005, 76), (2006, 78), (2007, 81), and (2008, 85).">
+<tgroup cols="2" align="center"><colspec colnum="1" colname="c1" align="center"/>
+<colspec colnum="2" colname="c2" align="center"/>
+
+<thead>
+  <row>
+    <entry align="center"><emphasis>Year</emphasis></entry>
+    <entry align="center"><emphasis>Population<newline/>(thousands)</emphasis></entry>
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry align="center">2000</entry><entry align="center">87</entry>
+  </row>
+  <row>
+    <entry align="center">2001</entry><entry align="center">84</entry>
+  </row>
+  <row>
+    <entry align="center">2002</entry><entry align="center">83</entry>
+  </row>
+  <row>
+    <entry align="center">2003</entry><entry align="center">80</entry>
+  </row>
+  <row>
+    <entry align="center">2004</entry><entry align="center">77</entry>
+  </row>
+  <row>
+    <entry align="center">2005</entry><entry align="center">76</entry>
+  </row>
+  <row>
+    <entry align="center">2006</entry><entry align="center">78</entry>
+  </row>
+  <row>
+    <entry align="center">2007</entry><entry align="center">81</entry>
+  </row>
+  <row>
+    <entry align="center">2008</entry><entry align="center">85</entry>
+  </row>
+</tbody>
+
+
+
+
+
+
+
+
+</tgroup>
+</table></problem>
+
+   <solution id="fs-id1165134547375">
+    <list id="fs-id1165134547377" list-type="enumerated" number-style="arabic" class="circled">      <item>
+          <span class="token">ⓐ</span> –3000
+     </item>
+     <item>
+     <span class="token">ⓑ</span> –1250
+</item> </list>
+   </solution>
+   </exercise><para id="fs-id1165134547382">For the following exercises, find the average rate of change of each function on the interval specified.</para>
+   <exercise id="fs-id1165134547387">
+    <problem id="fs-id1165134547389">
+     <para id="fs-id1165134547391"> <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       </m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>5</m:mn><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+   <exercise id="fs-id1165137851207">
+    <problem id="fs-id1165137851209">
+     <para id="fs-id1165137851212"> <m:math>
+      <m:mrow>
+       <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       </m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mtext>4</m:mtext><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para></problem>
+   <solution id="fs-id1165134384568">
+    <para id="fs-id1165134384570">-4</para>
+   </solution>
+   </exercise>
+   <exercise id="fs-id1165134384576">
+    <problem id="fs-id1165134384578">
+     <para id="fs-id1165134384580"> <m:math>
+      <m:mrow>
+       <m:mi>q</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>3</m:mn>
+        </m:msup>
+       </m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>−4</m:mn><m:mo>,</m:mo><m:mtext>2</m:mtext><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para></problem>
+   </exercise>
+   <exercise id="fs-id1165135453186">
+    <problem id="fs-id1165135453188">
+     <para id="fs-id1165135453190"> <m:math>
+      <m:mrow>
+       <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>3</m:mn>
+        </m:msup>
+       <m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>−3</m:mn><m:mo>,</m:mo><m:mtext>3</m:mtext><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para></problem>
+   <solution id="fs-id1165131911953">
+    <para id="fs-id1165131911955">27</para>
+   </solution>
+   </exercise>
+   <exercise id="fs-id1165134199306">
+    <problem id="fs-id1165134199308">
+     <para id="fs-id1165134199310"> <m:math>
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mi>x</m:mi>
+       </m:mfrac>
+       </m:mrow>
+     </m:math> on <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext>3</m:mtext><m:mo stretchy="false">]</m:mo></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+  <exercise id="fs-id1165135317474">
+   <problem id="fs-id1165135317476">
+    <para id="fs-id1165135317478"> <m:math>
+     <m:mrow>
+      <m:mi>p</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+        <m:mrow>
+         <m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+           <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+           </m:msup>
+           <m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+           <m:mo>)</m:mo></m:mrow></m:mrow>
+        <m:mrow>
+         <m:msup>
+          <m:mi>t</m:mi>
+          <m:mn>2</m:mn>
+         </m:msup>
+         <m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+       </m:mfrac>
+      </m:mrow>
+    </m:math> on <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>−3</m:mn><m:mo>,</m:mo><m:mtext>1</m:mtext><m:mo stretchy="false">]</m:mo></m:mrow>
+    </m:math>
+    </para></problem>
+   <solution id="fs-id1165135208852">
+    <para id="fs-id1165135208854">–0.167</para>
+   </solution>
+  </exercise>
+  <exercise id="fs-id1165135208859">
+   <problem id="fs-id1165135208861">
+    <para id="fs-id1165135698607"> <m:math>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mrow>
+        <m:msup>
+         <m:mi>t</m:mi>
+         <m:mn>3</m:mn>
+        </m:msup>
+       </m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:math> on <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">]</m:mo></m:mrow>
+    </m:math>
+    </para></problem>
+  </exercise>
+  </section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135347321"><title>Technology</title><para id="fs-id1165135347326">For the following exercises, use a graphing utility to estimate the local extrema of each function and to estimate the intervals on which the function is increasing and decreasing.</para>
+
+   <exercise id="fs-id1165134043700">
+    <problem id="fs-id1165134043703">
+     <para id="fs-id1165134043705"> <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>4</m:mn>
+        </m:msup>
+       <m:mo>−</m:mo><m:mn>4</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165134043567">
+    <para id="fs-id1165134043569">Local minimum at <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>22</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> decreasing on <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> increasing on <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise>
+   <exercise id="fs-id1165137836516" class="material-set-2">
+    <problem id="fs-id1165137836518">
+     <para id="fs-id1165135487253"> <m:math>
+      <m:mrow>
+       <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>5</m:mn>
+        </m:msup>
+       <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+       <m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+
+   <exercise id="fs-id1165135257278">
+    <problem id="fs-id1165135257281">
+     <para id="fs-id1165135257283"> <m:math>
+      <m:mrow>
+       <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:msqrt>
+         <m:mrow>
+          <m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+        </m:msqrt>
+      </m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165132935144">
+    <para id="fs-id1165132935146">Local minimum at <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> decreasing on <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> increasing on <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+   <exercise id="fs-id1165137892185">
+    <problem id="fs-id1165137892188">
+     <para id="fs-id1165137892190"> <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>t</m:mi>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>2</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mo>−</m:mo><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> </para></problem>
+   </exercise>
+
+   <exercise id="fs-id1165135602253" class="material-set-2">
+    <problem id="fs-id1165135602256">
+     <para id="fs-id1165135602258"> <m:math>
+      <m:mrow>
+       <m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>4</m:mn>
+        </m:msup>
+       <m:mo>+</m:mo><m:mn>2</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>−</m:mo><m:mn>12</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+       <m:mo>−</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   <solution id="fs-id1165132976191">
+    <para id="fs-id1165132976193">Local maximum at <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>0.5</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> local minima at <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>3.25</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>47</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> and <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>2.1</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>32</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> decreasing on <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>3.25</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> and <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>0.5</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>2.1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> increasing on <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>3.25</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mo>−</m:mo><m:mn>0.5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> and <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>2.1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+   </exercise>
+
+   <exercise id="fs-id1165137400141" class="material-set-2">
+    <problem id="fs-id1165137400143">
+     <para id="fs-id1165137400145"> <m:math>
+      <m:mrow>
+       <m:mi>n</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>4</m:mn>
+        </m:msup>
+       <m:mo>−</m:mo><m:mn>8</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>18</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+       <m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+  </section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135536251"><title>Extension</title><exercise id="fs-id1165135536257" class="material-set-2"><problem id="fs-id1165135536258"><para id="fs-id1165135536259">The graph of the function <m:math>
+    <m:mrow><m:mi>f</m:mi></m:mrow>
+   </m:math> is shown in <link target-id="Figure_01_03_213"/>.</para><figure id="Figure_01_03_213"><media id="fs-id1165134298977" alt="Graph of f(x) on a graphing calculator.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_213n.jpg"/>
+    </media>
+   </figure><para id="fs-id1165134298989">Based on the calculator screen shot, the point <m:math>
+     <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>1.333</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext/><m:mn>5.185</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math>
+     is which of the following?</para><list id="fs-id1165133194029" list-type="enumerated" number-style="arabic" class="circled">
+    <item><span class="token">ⓐ</span>a relative (local) maximum of the function</item>
+   <item><span class="token">ⓑ</span>the vertex of the function</item>
+   <item><span class="token">ⓒ</span>the absolute maximum of the function</item>
+   <item> <span class="token">ⓓ</span>a zero of the function</item>
+   </list>
+   </problem>
+    <solution id="fs-id1165134378682"><para id="fs-id1165134138631">A</para></solution>
+   </exercise>
+
+   <exercise id="fs-id1165134378686">
+    <problem id="fs-id1165134378688">
+     <para id="fs-id1165134378691">Let <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Find a number <m:math>
+      <m:mrow>
+       <m:mi>c</m:mi></m:mrow>
+     </m:math> such that the average rate of change of the function <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi></m:mrow>
+     </m:math> on the interval <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> is <m:math>
+      <m:mrow>
+       <m:mo>−</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>4</m:mn>
+       </m:mfrac>
+       <m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </para></problem>
+   </exercise>
+
+ <exercise id="fs-id1165134299101">
+  <problem id="fs-id1165134299103">
+   <para id="fs-id1165134299106">Let <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+    </m:mrow>
+   </m:math> . Find the number <m:math>
+    <m:mrow><m:mi>b</m:mi></m:mrow>
+   </m:math> such that the average rate of change of <m:math>
+    <m:mrow><m:mi>f</m:mi></m:mrow>
+   </m:math> on the interval <m:math>
+    <m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> is <m:math>
+    <m:mrow><m:mo>−</m:mo><m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mrow>
+       <m:mn>10</m:mn></m:mrow>
+     </m:mfrac>
+     <m:mo>.</m:mo></m:mrow>
+   </m:math>
+   </para>
+  </problem>
+   <solution id="fs-id1165134151816">
+    <para id="fs-id1165134151818"> <m:math>
+     <m:mrow>
+      <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow>
+    </m:math>
+    </para>
+   </solution>
+ </exercise>
+  </section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134151836"><title>Real-World Applications</title><exercise id="fs-id1165134151841">
+    <problem id="fs-id1165134151843">
+     <para id="fs-id1165134151845">At the start of a trip, the odometer on a car read 21,395. At the end of the trip, 13.5 hours later, the odometer read 22,125. Assume the scale on the odometer is in miles. What is the average speed the car traveled during this trip?</para>
+    </problem>
+   </exercise>
+
+   <exercise id="fs-id1165135387234">
+    <problem id="fs-id1165135387236">
+     <para id="fs-id1165135387238">A driver of a car stopped at a gas station to fill up his gas tank. He looked at his watch, and the time read exactly 3:40 p.m. At this time, he started pumping gas into the tank. At exactly 3:44, the tank was full and he noticed that he had pumped 10.7 gallons. What is the average rate of flow of the gasoline into the gas tank?</para></problem>
+   <solution id="fs-id1165135387245">
+    <para id="fs-id1165135387248">2.7 gallons per minute</para>
+   </solution>
+   </exercise>
+
+   <exercise id="fs-id1165135387253">
+    <problem id="fs-id1165135387255">
+     <para id="fs-id1165135387257">Near the surface of the moon, the distance that an object falls is a function of time. It is given by <m:math>
+      <m:mrow>
+       <m:mi>d</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2.6667</m:mn><m:msup>
+         <m:mi>t</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       <m:mo>,</m:mo></m:mrow>
+     </m:math> where <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi></m:mrow>
+     </m:math> is in seconds and <m:math>
+      <m:mrow>
+       <m:mi>d</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+     </m:math> is in feet. If an object is dropped from a certain height, find the average velocity of the object from <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> to <m:math>
+      <m:mrow>
+       <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+   </exercise>
+
+   <exercise id="fs-id1165135571880" class="material-set-2"><problem id="fs-id1165135571881"><para id="fs-id1165135571882">The graph in <link target-id="Figure_01_03_214"/> illustrates the decay of a radioactive substance over <m:math>
+    <m:mrow><m:mi>t</m:mi></m:mrow>
+   </m:math> days.</para>
+
+<figure id="Figure_01_03_214" class="medium"><media id="fs-id1165135517159" alt="Graph of an exponential function.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_03_214n.jpg"/>
+    </media>
+   </figure>
+<para id="fs-id1165135517172">Use the graph to estimate the average decay rate from <m:math>
+     <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow>
+    </m:math> to <m:math>
+     <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>15.</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+   <solution id="fs-id1165133045354">
+    <para id="fs-id1165133052892"> approximately –0.6 milligrams per day</para>
+   </solution>
+   </exercise></section></section></content>
+ <glossary>
+ <definition id="fs-id1165133052903">
+  <term>absolute maximum</term>
+  <meaning id="fs-id1165133052908">the greatest value of a function over an interval</meaning></definition>
+
+  <definition id="fs-id1165133052911">
+   <term>absolute minimum</term>
+   <meaning id="fs-id1165133052916">the lowest value of a function over an interval</meaning>
+  </definition>
+
+  <definition id="fs-id1165133052921">
+   <term>average rate of change</term>
+   <meaning id="fs-id1165133052926">the difference in the output values of a function found for two values of the input divided by the difference between the inputs</meaning>
+  </definition>
+
+  <definition id="fs-id1165135264639">
+   <term>decreasing function</term>
+   <meaning id="fs-id1165135264645">a function is decreasing in some open interval if <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>b</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>a</m:mi>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> for any two input values <m:math>
+    <m:mrow><m:mi>a</m:mi></m:mrow>
+   </m:math> and <m:math>
+    <m:mrow><m:mi>b</m:mi></m:mrow>
+   </m:math> in the given interval where <m:math>
+    <m:mrow><m:mi>b</m:mi><m:mo>&gt;</m:mo><m:mi>a</m:mi></m:mrow>
+   </m:math>
+   </meaning>
+  </definition>
+
+  <definition id="fs-id1165135639824">
+   <term>increasing function</term>
+   <meaning id="fs-id1165135639829">a function is increasing in some open interval if <m:math>
+    <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>b</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>a</m:mi>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> for any two input values <m:math>
+    <m:mrow><m:mi>a</m:mi></m:mrow>
+   </m:math> and <m:math>
+    <m:mrow><m:mi>b</m:mi></m:mrow>
+   </m:math> in the given interval where <m:math>
+    <m:mrow><m:mi>b</m:mi><m:mo>&gt;</m:mo><m:mi>a</m:mi></m:mrow>
+   </m:math>
+   </meaning>
+  </definition>
+
+  <definition id="fs-id1165135536408">
+   <term>local extrema</term>
+   <meaning id="fs-id1165135536413">collectively, all of a function's local maxima and minima</meaning></definition>
+
+  <definition id="fs-id1165135536416">
+   <term>local maximum</term>
+   <meaning id="fs-id1165135412035">a value of the input where a function changes from increasing to decreasing as the input value increases.</meaning>
+  </definition>
+
+  <definition id="fs-id1165135412040">
+   <term>local minimum</term>
+   <meaning id="fs-id1165135412046">a value of the input where a function changes from decreasing to increasing as the input value increases.</meaning></definition>
+
+
+   <definition id="fs-id1165135412050"><term>rate of change</term>
+   <meaning id="fs-id1165135412054">the change of an output quantity relative to the change of the input quantity</meaning></definition>
+
+ </glossary>
+</document>

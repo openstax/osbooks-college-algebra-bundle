@@ -1,0 +1,4706 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Quadratic Equations</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m51256</md:content-id>
+  <md:title>Quadratic Equations</md:title>
+  <md:abstract/>
+  <md:uuid>00138001-23fe-4ec9-b2c6-000f3f28ee23</md:uuid>
+<md:canonical-book-uuid>13ac107a-f15f-49d2-97e8-60ab2e3b519c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+<section id="eip-650" class="coreq-skills"><section id="eip-221" class="learning-objectives"><title>Learning Objectives</title><list id="eip-465"><item>Recognize and use the appropriate method to factor a polynomial completely (IA 6.4.1)</item>
+</list></section><section id="eip-948"><title>Objective 1: Recognize and use the appropriate method to factor a polynomial completely  (IA 6.4.1)</title><para id="eip-147">
+The following chart summarizes the factoring methods and outlines a strategy you should use when factoring polynomials.
+</para>
+<figure id="Figure_02_02_001" class="medium"><title>General Strategy for Factoring Polynomials</title><media id="fs-id1294390" alt="This chart shows the general strategies for factoring polynomials. It shows ways to find GCF of binomials, trinomials and polynomials with more than 3 terms. For binomials, we have difference of squares: a squared minus b squared equals a minus b, a plus b; sum of squares do not factor; sub of cubes: a cubed plus b cubed equals open parentheses a plus b close parentheses open parentheses a squared minus ab plus b squared close parentheses; difference of cubes: a cubed minus b cubed equals open parentheses a minus b close parentheses open parentheses a squared plus ab plus b squared close parentheses. For trinomials, we have x squared plus bx plus c where we put x as a term in each factor and we have a squared plus bx plus c. Here, if a and c are squares, we have a plus b whole squared equals a squared plus 2 ab plus b squared and a minus b whole squared equals a squared minus 2 ab plus b squared. If a and c are not squares, we use the ac method. For polynomials with more than 3 terms, we use grouping.">
+<image mime-type="image/jpg" src="../../media/CNX_IntAlg_Figure_06_04_002_img_new.jpg"/>
+</media>
+</figure><note id="eip-743" class="how-to-notitle"><list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167836525628" list-type="enumerated" number-style="arabic" class="stepwise"><item>Is there a factor common to all terms? Factor it out.</item>
+<item>Consider the number of terms in the original polynomial.
+<list id="fs-id1167829590645" list-type="bulleted" bullet-style="bullet"><title>Two Terms? We refer to this as a binomial.</title><item>If it is a sum of squared terms, this does not factor further. We refer to this as prime.</item>
+<item>If it is a difference of perfect square terms, factor using the difference of two squares form.</item>
+<item>If it is a sum of perfect cubed terms, factor using the sum of two cubes form.</item>
+<item>If it is a difference of perfect cubed terms, factor using the difference of two cubes form.</item>
+</list><list id="eip-682"><title>Three terms? We refer to this as a trinomial.</title><item>If the coefficient of <m:math><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:math> is <m:math><m:mn>1</m:mn></m:math> , <m:math><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:math> , try to find two factors of <m:math><m:mi>c</m:mi></m:math> that add to <m:math><m:mi>b</m:mi></m:math> . If you find these, the trinomial is factorable.</item>
+<item>If the coefficient of <m:math><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:math> is not <m:math><m:mn>1</m:mn></m:math> , <m:math><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:math> , try to find two factors of <m:math><m:mi>a</m:mi><m:mi>c</m:mi></m:math> that add to <m:math><m:mi>b</m:mi></m:math> . If you find these, the trinomial is factorable. You can factor using trial and error or the <m:math><m:mi>a</m:mi><m:mi>c</m:mi></m:math> method from here.</item>
+<item>If you notice that <m:math><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:math> and <m:math><m:mi>c</m:mi></m:math> are perfect squares, you are working with a perfect square trinomial which can be factored as the square of a binomial.</item></list><list id="eip-800"><title>Four terms?</title><item>Try to factor by grouping two terms, or three terms and finding factors common to those terms.</item>
+</list></item>
+
+<item>Check your work. Is the polynomial factored completely? Do the factors multiply to give you the original polynomial?</item>
+</list></note><example id="eip-961"><para id="eip-104">
+  Recognize and use the appropriate method to factor a polynomial completely.
+</para><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-833"><problem id="eip-851">
+    <list id="eip-idm489795280" list-type="enumerated" number-style="arabic" class="circled"><item>
+          <span class="token">ⓐ</span> <m:math><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>15</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>50</m:mn><m:mi>x</m:mi></m:math>
+     </item>
+     <item>
+          <span class="token">ⓑ</span> <m:math><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>20</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>25</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:math>
+     </item>
+     <item>
+          <span class="token">ⓒ</span> <m:math><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>16</m:mn></m:math>
+     </item>
+     <item>
+          <span class="token">ⓓ</span> <m:math><m:mn>8</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>27</m:mn><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup></m:math>
+     </item>
+     <item>
+          <span class="token">ⓔ</span> <m:math><m:mn>16</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>24</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>y</m:mi></m:math>
+     </item>
+</list>
+</problem>
+
+<solution id="fs-id1784499">
+<table id="eip-id1168469451188" class="unnumbered unstyled" summary="."><label/>
+<tgroup cols="2"><tbody>
+ <row>
+ <entry><span class="token">ⓐ</span></entry>
+ <entry> <m:math><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>15</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>50</m:mn><m:mi>x</m:mi></m:math> </entry>
+</row>
+ <row>
+ <entry>First let's factor out the common factor of <m:math><m:mn>5</m:mn><m:mi>x</m:mi></m:math> .</entry>
+ <entry align="center"> <m:math><m:mn>5</m:mn><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo></m:math> </entry>
+ </row>
+ <row>
+ <entry>Consider the resulting trinomial with a leading coefficient of <m:math><m:mn>1</m:mn></m:math> . Are there two factors of <m:math><m:mn>-10</m:mn></m:math> that add to <m:math><m:mn>-3</m:mn></m:math> ? Yes, <m:math><m:mn>-5</m:mn></m:math> and <m:math><m:mn>2</m:mn></m:math> , multiply to <m:math><m:mn>-10</m:mn></m:math> and add to <m:math><m:mn>-3</m:mn></m:math> . Use these factors.	</entry>
+ <entry align="center"> <m:math><m:mn>5</m:mn><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:math> </entry>
+ </row>
+
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table><table id="eip-id1168047561610" class="unnumbered unstyled" summary="."><label/>
+<tgroup cols="2"><tbody>
+
+ <row>
+ <entry><span class="token">ⓑ</span></entry>
+ <entry> <m:math><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>20</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>25</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:math> </entry>
+ </row>
+ <row>
+ <entry>There are no factors common to all three terms in the trinomial. Notice that the first term, <m:math><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:math> is a perfect square <m:math><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mn>2</m:mn></m:msup></m:math> and last term, <m:math><m:mn>25</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:math> , is a perfect square <m:math><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mn>2</m:mn></m:msup></m:math> , so this may be a perfect square trinomial. </entry>
+ <entry align="center"> <m:math><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup></m:math> </entry>
+ </row>
+ <row>
+ <entry>Check the middle term to see if it is equivalent to <m:math><m:mn>2</m:mn><m:mi>a</m:mi><m:mi>b</m:mi></m:math> , or <m:math><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>20</m:mn><m:mi>x</m:mi><m:mi>y</m:mi></m:math> , and it is.</entry>
+ <entry align="center"> <m:math><m:mi>a</m:mi><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mn>2</m:mn></m:msup></m:math> </entry>
+ </row>
+</tbody>
+
+
+
+
+
+
+
+
+</tgroup>
+</table><table id="eip-id1168047441610" class="unnumbered unstyled" summary="."><label/>
+<tgroup cols="2"><tbody>
+
+ <row>
+ <entry><span class="token">ⓒ</span></entry>
+ <entry> <m:math><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>16</m:mn></m:math> </entry>
+ </row>
+ <row>
+ <entry align="center">There are no factors common to both terms in the binomial. Notice that the first term, <m:math><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:math> is a perfect square <m:math><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mn>2</m:mn></m:msup></m:math> and last term, <m:math><m:mn>16</m:mn></m:math> , is a perfect square <m:math><m:msup><m:mn>4</m:mn><m:mn>2</m:mn></m:msup></m:math> , so this form is a difference of two squares.
+</entry>
+ <entry align="center"> <m:math><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:math> </entry>
+ </row>
+ <row>
+ <entry/>
+ <entry align="center"> <m:math><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>16</m:mn><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:math> </entry>
+ </row>
+</tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tgroup>
+</table><table id="eip-id1168047448610" class="unnumbered unstyled" summary="."><label/>
+<tgroup cols="2"><tbody>
+
+ <row>
+ <entry><span class="token">ⓓ</span></entry>
+ <entry> <m:math><m:mn>8</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>27</m:mn><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup></m:math> </entry>
+ </row>
+ <row>
+ <entry>There are no factors common to both terms in the binomial. Notice that the first term, <m:math><m:mn>8</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:math> is a perfect cube <m:math><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mn>3</m:mn></m:msup></m:math> and last term, <m:math><m:mn>27</m:mn><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup></m:math> , so this form is a sum of two cubes.</entry>
+ <entry align="center"> <m:math><m:msup><m:mi>a</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>3</m:mn></m:msup><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>+</m:mo><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo></m:math> </entry>
+ </row>
+ <row>
+ <entry/>
+ <entry align="center"> <m:math><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>3</m:mn></m:msup><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">)</m:mo></m:math> </entry>
+ </row>
+
+</tbody>
+
+
+
+
+
+
+
+</tgroup>
+</table><table id="eip-id1168047441870" class="unnumbered unstyled" summary="."><label/>
+<tgroup cols="2"><tbody>
+
+ <row>
+ <entry><span class="token">ⓔ</span></entry>
+ <entry> <m:math><m:mn>16</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>24</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo> </m:mo></m:math> </entry>
+ </row>
+ <row>
+ <entry>First, let’s factor out the common factor of <m:math><m:mn>2</m:mn></m:math> .</entry>
+ <entry align="center"> <m:math><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:math> </entry>
+ </row>
+ <row>
+ <entry>The first two terms in the parentheses have a 4x in common, let’s factor that out. Since the second two terms have nothing in common, but are both negative, we’ll factor out a negative <m:math><m:mn>1</m:mn></m:math> . </entry>
+ <entry align="center"> <m:math><m:mn>2</m:mn><m:mo>[</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>]</m:mo></m:math> </entry>
+ </row>
+ <row>
+ <entry>Inside the parentheses, the four terms have become two terms with a common factor of <m:math><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:math> Factor this from the two terms</entry>
+ <entry align="center"> <m:math><m:mn>2</m:mn><m:mo>[</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>]</m:mo></m:math> </entry>
+ </row>
+</tbody>
+
+
+
+
+
+
+
+</tgroup>
+</table></solution></exercise></example><section id="eip-306" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-576"><title>Recognize and use the appropriate method to factor a polynomial completely. </title>Factor each of the following polynomials completely, if a polynomial does not factor label it as prime.
+</para><exercise id="eip-520"><problem id="eip-644">
+  <para id="eip-374">
+ <m:math><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>24</m:mn></m:math>
+  </para>
+</problem>
+</exercise><exercise id="eip-759"><problem id="eip-171">
+  <para id="eip-458">
+ <m:math><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>20</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>36</m:mn></m:math>
+  </para>
+</problem>
+
+</exercise><exercise id="eip-912"><problem id="eip-679">
+  <para id="eip-354">
+ <m:math><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>16</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>30</m:mn></m:math>
+  </para>
+</problem>
+
+</exercise><exercise id="eip-3"><problem id="eip-498">
+  <para id="eip-206">
+ <m:math><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>42</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>49</m:mn></m:math>
+  </para>
+</problem>
+
+</exercise><exercise id="eip-332"><problem id="eip-166">
+  <para id="eip-814">
+ <m:math><m:mn>25</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>90</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>81</m:mn></m:math>
+  </para>
+</problem>
+</exercise><exercise id="eip-80"><problem id="eip-263">
+  <para id="eip-251">
+ <m:math><m:mn>10</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>65</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>35</m:mn><m:mi>x</m:mi><m:mi>y</m:mi></m:math>
+  </para>
+</problem>
+
+</exercise><exercise id="eip-704"><problem id="eip-988">
+  <para id="eip-802">
+ <m:math><m:mn>121</m:mn><m:msup><m:mi>q</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>100</m:mn></m:math>
+  </para>
+</problem>
+</exercise><exercise id="eip-295"><problem id="eip-867">
+  <para id="eip-466">
+ <m:math><m:mn>50</m:mn><m:msup><m:mi>m</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>72</m:mn></m:math>
+  </para>
+</problem>
+</exercise><exercise id="eip-765"><problem id="eip-127">
+  <para id="eip-226">
+ <m:math><m:mn>125</m:mn><m:msup><m:mi>z</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>27</m:mn></m:math>
+  </para>
+</problem>
+
+</exercise><exercise id="eip-736"><problem id="eip-892">
+  <para id="eip-277">
+ <m:math><m:mn>12</m:mn><m:mi>a</m:mi><m:mi>b</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>b</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:math>
+  </para>
+</problem>
+</exercise><exercise id="eip-87"><problem id="eip-629">
+  <para id="eip-451">
+ <m:math><m:mn>18</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>98</m:mn></m:math>
+  </para>
+</problem>
+
+</exercise><exercise id="eip-188"><problem id="eip-770">
+  <para id="eip-278">
+ <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>7</m:mn><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mn>12</m:mn></m:math> </para>
+</problem>
+</exercise></section></section></section><figure id="Figure_02_05_001" class="medium">
+<media id="fs-id1278656" alt="Two televisions side-by-side. The right television is slightly larger than the left. ">
+<image mime-type="image/jpg" src="../../media/CNX_CAT_Figure_02_05_001.jpg"/>
+</media>
+</figure>
+<para id="fs-id1087569">The computer monitor on the left in <link target-id="Figure_02_05_001"/> is a 23.6-inch model and the one on the right is a 27-inch model. Proportionally, the monitors appear very similar. If there is a limited amount of space and we desire the largest monitor possible, how do we decide which one to choose? In this section, we will learn how to solve problems such as this using four different methods.</para>
+<section id="fs-id3182628">
+<title>Solving Quadratic Equations by Factoring</title>
+<para id="fs-id2980280">An equation containing a second-degree polynomial is called a <term class="no-emphasis">quadratic equation</term>. For example, equations such as <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> are quadratic equations. They are used in countless ways in the fields of engineering, architecture, finance, biological science, and, of course, mathematics.</para><para id="fs-id1385706">Often the easiest method of solving a quadratic equation is <term class="no-emphasis">factoring</term>. Factoring means finding expressions that can be multiplied together to give the expression on one side of the equation.</para>
+<para id="fs-id2521760">If a quadratic equation can be factored, it is written as a product of linear terms. Solving by factoring depends on the zero-product property, which states that if <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>⋅</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> or <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where <emphasis effect="italics">a </emphasis>and <emphasis effect="italics">b </emphasis>are real numbers or algebraic expressions. In other words, if the product of two numbers or two expressions equals zero, then one of the numbers or one of the expressions must equal zero because zero multiplied by anything equals zero.</para>
+<para id="fs-id1338084">Multiplying the factors expands the equation to a string of terms separated by plus or minus signs. So, in that sense, the operation of multiplication undoes the operation of factoring. For example, expand the factored expression <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> by multiplying the two factors together.</para>
+<equation id="fs-id2921580" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation><para id="fs-id1280231">The product is a quadratic expression. Set equal to zero, <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> is a quadratic equation. If we were to factor the equation, we would get back the factors we multiplied.</para>
+<para id="fs-id2996324">The process of factoring a quadratic equation depends on the leading coefficient, whether it is 1 or another integer. We will look at both situations; but first, we want to confirm that the equation is written in standard form, <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where <emphasis effect="italics">a</emphasis>, <emphasis effect="italics">b</emphasis>, and <emphasis effect="italics">c</emphasis> are real numbers, and <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> The equation <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> is in standard form.</para><para id="fs-id3176714">We can use the zero-product property to solve quadratic equations in which we first have to factor out the <term class="no-emphasis">greatest common factor</term> (GCF), and for equations that have special factoring formulas as well, such as the difference of squares, both of which we will see later in this section.</para>
+<note id="fs-id1318343">
+
+<title>The Zero-Product Property and Quadratic Equations </title>
+<para id="fs-id2437408">The <term>zero-product property</term> states</para>
+<equation id="fs-id3130490" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtext>If </m:mtext><m:mi>a</m:mi><m:mo>⋅</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mtext>then </m:mtext><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="0.8em"/><m:mtext>or </m:mtext><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id2001660">where <emphasis effect="italics">a </emphasis>and <emphasis effect="italics">b </emphasis>are real numbers or algebraic expressions.</para>
+<para id="fs-id1297051">A <term>quadratic equation</term> is an equation containing a second-degree polynomial; for example</para>
+<equation id="fs-id2714980" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1274659">where <emphasis effect="italics">a</emphasis>, <emphasis effect="italics">b</emphasis>, and <emphasis effect="italics">c</emphasis> are real numbers, and if <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> it is in standard form.</para>
+</note>
+<section id="fs-id1752173">
+<title>Solving Quadratics with a Leading Coefficient of 1</title>
+<para id="fs-id2049812">In the quadratic equation <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> the leading coefficient, or the coefficient of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> is 1. We have one method of factoring quadratic equations in this form.</para><note id="fs-id2048827" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1279785"><emphasis>Given a quadratic equation with the leading coefficient of 1, factor it.</emphasis></para>
+<list id="fs-id2436584" list-type="enumerated" number-style="arabic"><item>Find two numbers whose product equals <emphasis effect="italics">c</emphasis> and whose sum equals <emphasis effect="italics">b</emphasis>.</item>
+<item>Use those numbers to write two factors of the form <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>k</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mspace width="0.8em"/><m:mtext>or </m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>k</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where <emphasis effect="italics">k </emphasis>is one of the numbers found in step 1. Use the numbers exactly as they are. In other words, if the two numbers are 1 and <m:math>
+ <m:mrow>
+  <m:mn>−2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> the factors are <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> </item>
+<item>Solve using the zero-product property by setting each factor equal to zero and solving for the variable.</item>
+</list></note>
+
+<example id="Example_02_05_01">
+<exercise id="fs-id1315053"><problem id="fs-id2697997">
+<title>Factoring and Solving a Quadratic with Leading Coefficient of 1</title>
+<para id="fs-id1207622">Factor and solve the equation: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id2508977">
+<para id="fs-id1815377">To factor <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> we look for two numbers whose product equals <m:math>
+ <m:mrow>
+  <m:mn>−6</m:mn>
+ </m:mrow>
+</m:math> and whose sum equals 1. Begin by looking at the possible factors of <m:math>
+ <m:mrow>
+  <m:mn>−6.</m:mn>
+ </m:mrow>
+</m:math> </para><equation id="fs-id2771168" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>−6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation><para id="fs-id1722929">The last pair, <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>⋅</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>−2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> sums to 1, so these are the numbers. Note that only one pair of numbers will work. Then, write the factors.</para>
+<equation id="fs-id1466455" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1779896">To solve this equation, we use the zero-product property. Set each factor equal to zero and solve.</para>
+<equation id="fs-id2437878" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mi>x</m:mi></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>2</m:mn></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mi>x</m:mi></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mrow><m:mn>−3</m:mn></m:mrow></m:mtd>
+   </m:mtr>
+  </m:mtable></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id2753851">The two solutions are <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mn>−3.</m:mn>
+ </m:mrow>
+</m:math> We can see how the solutions relate to the graph in <link target-id="Figure_02_05_002"/>. The solutions are the <emphasis effect="italics">x-</emphasis>intercepts of <m:math>
+ <m:mrow>
+
+  <m:mi>y</m:mi>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow>
+</m:math>
+</para><figure id="Figure_02_05_002" class="small">
+<media id="fs-id2381086" alt="Coordinate plane with the x-axis ranging from negative 5 to 5 and the y-axis ranging from negative 7 to 7. The function x squared plus x minus six equals zero is graphed, with the x-intercepts (-3,0) and (2,0), plotted as well.">
+<image mime-type="image/jpg" src="../../media/CNX_CAT_Figure_02_05_002.jpg"/>
+</media>
+</figure>
+</solution>
+</exercise></example>
+<note id="fs-id1510352" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_05_01"><problem id="fs-id1769680"><para id="fs-id2294713">Factor and solve the quadratic equation: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1930379"><para id="fs-id2501096"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>, </m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para></solution></exercise>
+</note>
+<example id="Example_02_05_02">
+<exercise id="fs-id3052323">
+<problem id="fs-id1996793">
+<title>Solve the Quadratic Equation by Factoring</title>
+<para id="fs-id1045593">Solve the quadratic equation by factoring: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1834290">
+<para id="fs-id1690316">Find two numbers whose product equals <m:math>
+ <m:mrow>
+  <m:mn>15</m:mn>
+ </m:mrow>
+</m:math> and whose sum equals <m:math>
+ <m:mrow>
+  <m:mn>8.</m:mn>
+ </m:mrow>
+</m:math> List the factors of <m:math>
+ <m:mrow>
+  <m:mn>15.</m:mn>
+ </m:mrow>
+</m:math> </para>
+<equation id="fs-id2892822" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="left"><m:mrow><m:mn>1</m:mn><m:mo>⋅</m:mo><m:mn>15</m:mn></m:mrow></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left"><m:mrow><m:mn>3</m:mn><m:mo>⋅</m:mo><m:mn>5</m:mn></m:mrow></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left"><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>−1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−15</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="left"><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mn>−5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id2629248">The numbers that add to 8 are 3 and 5. Then, write the factors, set each factor equal to zero, and solve.</para>
+<equation id="fs-id2364916" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−3</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−5</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1288611">The solutions are <m:math>
+ <m:mrow>
+  <m:mn>−3</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mn>−5.</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</example>
+<note id="fs-id2431514" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_05_02"><problem id="fs-id1515965"><para id="fs-id1545876">Solve the quadratic equation by factoring: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>21</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2364435"><para id="fs-id2390008"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mn>−7</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>, </m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−3.</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+</note>
+ <example id="Example_02_05_03">
+<exercise id="fs-id1442204">
+<problem id="fs-id1766773">
+<title>Using the Zero-Product Property to Solve a Quadratic Equation Written as the Difference of Squares</title>
+<para id="fs-id1007551">Solve the difference of squares equation using the zero-product property: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1467645">
+<para id="fs-id1342314">Recognizing that the equation represents the difference of squares, we can write the two factors by taking the square root of each term, using a minus sign as the operator in one factor and a plus sign as the operator in the other. Solve using the zero-factor property.</para>
+<equation id="fs-id1723089" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+   <m:mspace width="2em"/>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mi>x</m:mi></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>3</m:mn></m:mtd>
+   </m:mtr>
+   <m:mspace width="2em"/>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mi>x</m:mi></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mrow><m:mn>−3</m:mn></m:mrow></m:mtd>
+   </m:mtr>
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1759726">The solutions are <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mn>−3.</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</example>
+<note id="fs-id2029177" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_05_03"><problem id="fs-id1322224"><para id="fs-id2751610">Solve by factoring: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>25</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id3048522"><para id="fs-id1561505"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mn>−5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+</note>
+</section>
+<section id="fs-id2876101">
+<title>Solving a Quadratic Equation by Factoring when the Leading Coefficient is not 1</title><para id="fs-id2802890">When the leading coefficient is not 1, we factor a quadratic equation using the method called grouping, which requires four terms. With the equation in standard form, let’s review the grouping procedures:</para><list id="fs-id1445659" list-type="enumerated" number-style="arabic">
+<item>With the quadratic in standard form, <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> multiply <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>⋅</m:mo><m:mi>c</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Find two numbers whose product equals <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mi>c</m:mi>
+ </m:mrow>
+</m:math> and whose sum equals <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Rewrite the equation replacing the <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> term with two terms using the numbers found in step 1 as coefficients of <emphasis effect="italics">x.</emphasis></item>
+<item>Factor the first two terms and then factor the last two terms. The expressions in parentheses must be exactly the same to use grouping.</item>
+<item>Factor out the expression in parentheses.</item>
+<item>Set the expressions equal to zero and solve for the variable.</item>
+</list>
+<example id="Example_02_05_04">
+<exercise id="fs-id2917470"><problem id="fs-id2505105">
+<title>Solving a Quadratic Equation Using Grouping</title>
+<para id="fs-id2638849">Use grouping to factor and solve the quadratic equation: <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>15</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1223661">
+<para id="fs-id1558604">First, multiply <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mi>c</m:mi><m:mo>:</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mn>9</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>36.</m:mn></m:mrow>
+</m:math> Then list the factors of <m:math>
+ <m:mrow>
+  <m:mn>36.</m:mn>
+ </m:mrow>
+</m:math> </para>
+<equation id="fs-id1449438" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>⋅</m:mo><m:mn>36</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>⋅</m:mo><m:mn>18</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>3</m:mn><m:mo>⋅</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>6</m:mn><m:mo>⋅</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id3107108">The only pair of factors that sums to <m:math>
+ <m:mrow>
+  <m:mn>15</m:mn>
+ </m:mrow>
+</m:math> is <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>12.</m:mn>
+ </m:mrow>
+</m:math> Rewrite the equation replacing the <emphasis effect="italics">b </emphasis>term, <m:math>
+ <m:mrow>
+  <m:mn>15</m:mn><m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> with two terms using 3 and 12 as coefficients of <emphasis effect="italics">x</emphasis>. Factor the first two terms, and then factor the last two terms.</para>
+<equation id="fs-id1417674" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mn>4</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable></m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1579301">Solve using the zero-product property.</para>
+<equation id="fs-id2502349" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+    <m:mspace width="2em"/>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mi>x</m:mi></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+    <m:mspace width="2em"/>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mi>x</m:mi></m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:mtd>
+   </m:mtr>
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id2432037">The solutions are <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>, </m:mo>
+ </m:mrow>
+</m:math>  and <m:math>
+ <m:mrow>
+  <m:mn>−3.</m:mn>
+ </m:mrow>
+</m:math> See <link target-id="Figure_02_05_003"/>.</para><figure id="Figure_02_05_003" class="small">
+<media id="fs-id1269396" alt="Coordinate plane with the x-axis ranging from negative 6 to 2 with every other tick mark labeled and the y-axis ranging from negative 6 to 2 with each tick mark numbered. The equation: four x squared plus fifteen x plus nine is graphed with its x-intercepts: (-3/4,0) and (-3,0) plotted as well.">
+<image mime-type="image/jpg" src="../../media/CNX_CAT_Figure_02_05_003n.jpg"/>
+</media>
+</figure>
+</solution>
+</exercise></example>
+<note id="fs-id1554615" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_05_04"><problem id="fs-id2629095"><para id="fs-id2697369">Solve using factoring by grouping: <m:math>
+ <m:mrow>
+  <m:mn>12</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id768476"><para id="fs-id2390052"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+</note>
+<example id="Example_02_05_05">
+<exercise id="fs-id3115239"><problem id="fs-id1561758">
+<title>Solving a Polynomial of Higher Degree by Factoring </title>
+<para id="fs-id3182370">Solve the equation by factoring: <m:math>
+ <m:mrow>
+  <m:mn>−3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1400268">
+<para id="fs-id2440018">This equation does not look like a quadratic, as the highest power is 3, not 2. Recall that the first thing we want to do when solving any equation is to factor out the GCF, if one exists. And it does here. We can factor out <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> from all of the terms and then proceed with grouping.</para>
+<equation id="fs-id2367474" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mn>−3</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>5</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mi>x</m:mi><m:mo>(</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mn>0</m:mn></m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1752856">Use grouping on the expression in parentheses.</para>
+<equation id="fs-id2869363" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mi>x</m:mi><m:mo>(</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">[</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1552054">Now, we use the zero-product property. Notice that we have three factors.</para>
+<equation id="fs-id1200475" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mi>x</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−1</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id2655312">The solutions are <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mn>−1.</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise></example>
+<note id="fs-id2500651" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_05_05"><problem id="fs-id1254757"><para id="fs-id1254758">Solve by factoring: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>11</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id2722623"><para id="fs-id2722624"> <m:math>
+ <m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−10</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+</note>
+</section>
+</section>
+<section id="fs-id1402144">
+<title>Using the Square Root Property</title>
+<para id="fs-id1923792">When there is no linear term in the equation, another method of solving a quadratic equation is by using the <term>square root property</term>, in which we isolate the <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> term and take the square root of the number on the other side of the equals sign. Keep in mind that sometimes we may have to manipulate the equation to isolate the <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> term so that the square root property can be used.</para>
+<note id="fs-id1831215">
+
+<title>The Square Root Property</title>
+<para id="fs-id1569584">With the <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> term isolated, the square root property states that:</para>
+<equation id="fs-id1499182" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtext>if</m:mtext><m:mspace width="0.8em"/><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mi>k</m:mi><m:mo>,</m:mo><m:mtext>then</m:mtext><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt>
+   <m:mi>k</m:mi>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id2875920">where <emphasis effect="italics">k </emphasis>is a nonzero real number.</para>
+</note>
+<note id="fs-id1521248" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1155370"><emphasis>Given a quadratic equation with an <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> term but no <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> term, use the square root property to solve it.</emphasis></para>
+<list id="fs-id3081167" list-type="enumerated" number-style="arabic">
+<item>Isolate the <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> term on one side of the equal sign.</item>
+<item>Take the square root of both sides of the equation, putting a <m:math>
+ <m:mrow>
+  <m:mo>±</m:mo>
+ </m:mrow>
+</m:math> sign before the expression on the side opposite the squared term.</item>
+<item>Simplify the numbers on the side with the <m:math>
+ <m:mrow>
+  <m:mo>±</m:mo>
+ </m:mrow>
+</m:math> sign.</item>
+</list>
+</note>
+<example id="Example_02_05_06">
+<exercise id="fs-id1905142">
+<problem id="fs-id1579057">
+<title>Solving a Simple Quadratic Equation Using the Square Root Property</title>
+<para id="fs-id1467277">Solve the quadratic using the square root property: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>8.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1514577">
+<para id="fs-id1515767">Take the square root of both sides, and then simplify the radical. Remember to use a <m:math>
+ <m:mrow>
+  <m:mo>±</m:mo>
+ </m:mrow>
+</m:math> sign before the radical symbol.</para>
+<equation id="fs-id2437570" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mn>8</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mo>±</m:mo><m:msqrt>
+       <m:mn>8</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mo>±</m:mo><m:mn>2</m:mn><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id2437670">The solutions are <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mn>−2</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</example>
+<example id="Example_02_05_07">
+<exercise id="fs-id862941">
+<problem id="fs-id1340166">
+<title>Solving a Quadratic Equation Using the Square Root Property</title>
+<para id="fs-id2497523">Solve the quadratic equation: <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mtext>7.</m:mtext></m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1482615">
+<para id="fs-id1568725">First, isolate the <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> term. Then take the square root of both sides.</para>
+<equation id="fs-id2317298" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mn>4</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>7</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mn>4</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>6</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>6</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>±</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>6</m:mn>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1522278">The solutions are <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>6</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>, </m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>6</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</example>
+
+<note id="fs-id1257773" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_05_06"><problem id="fs-id1913154"><para id="fs-id1913155">Solve the quadratic equation using the square root property: <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>15.</m:mn></m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1548971"><para id="fs-id1793755"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>±</m:mo><m:msqrt>
+   <m:mn>5</m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+</note>
+</section>
+<section id="fs-id1956704">
+<title>Completing the Square</title>
+<para id="fs-id1793627">Not all quadratic equations can be factored or can be solved in their original form using the square root property. In these cases, we may use a method for solving a <term class="no-emphasis">quadratic equation</term> known as <term>completing the square</term>. Using this method, we add or subtract terms to both sides of the equation until we have a perfect square trinomial on one side of the equal sign. We then apply the square root property. To complete the square, the leading coefficient, <emphasis effect="italics">a</emphasis>, must equal 1. If it does not, then divide the entire equation by <emphasis effect="italics">a</emphasis>. Then, we can use the following procedures to solve a quadratic equation by completing the square.</para>
+<para id="fs-id1538204">We will use the example <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> to illustrate each step.</para>
+<list id="fs-id1234074" list-type="enumerated" number-style="arabic">
+<item><para id="fs-id1583461">Given a quadratic equation that cannot be factored, and with <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> first add or subtract the constant term to the right sign of the equal sign.</para>
+<equation id="fs-id1512735" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−1</m:mn>
+ </m:mrow>
+</m:math> </equation></item>
+<item><para id="fs-id1175291">Multiply the <emphasis effect="italics">b </emphasis>term by <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> and square it.</para>
+<equation id="fs-id1410870" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>2</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mn>2</m:mn>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>4</m:mn>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation></item>
+<item>
+<para id="fs-id1514197">Add <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>b</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> to both sides of the equal sign and simplify the right side. We have</para>
+<equation id="fs-id1526634" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>3</m:mn>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation></item>
+<item><para id="fs-id1538635">The left side of the equation can now be factored as a perfect square.</para>
+<equation id="fs-id1719027" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>3</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>3</m:mn>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation></item>
+<item><para id="fs-id2707455">Use the square root property and solve.</para>
+<equation id="fs-id2385243" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>±</m:mo><m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>±</m:mo><m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>−2</m:mn><m:mo>±</m:mo><m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation></item>
+<item><para id="fs-id3263921">The solutions are <m:math>
+ <m:mrow>
+  <m:mn>−2</m:mn><m:mo>+</m:mo><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>,</m:mo><m:mo> </m:mo>
+ </m:mrow>
+</m:math>  and <m:math>
+ <m:mrow>
+  <m:mn>−2</m:mn><m:mo>−</m:mo><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></item>
+</list>
+<example id="Example_02_05_08">
+<exercise id="fs-id1884309">
+<problem id="fs-id1199291">
+<title>Solving a Quadratic by Completing the Square</title>
+<para id="fs-id2979951">Solve the quadratic equation by completing the square: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2933237">
+<para id="fs-id2523221">First, move the constant term to the right side of the equal sign.</para>
+<equation id="fs-id1560122" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow>
+</m:math>
+</equation><para id="fs-id1701880">Then, take <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> of the <emphasis effect="italics">b </emphasis>term and square it.</para>
+<equation id="fs-id1700237" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>−</m:mo><m:mfrac>
+           <m:mn>3</m:mn>
+           <m:mn>2</m:mn>
+          </m:mfrac>
+          </m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id3116426">Add the result to both sides of the equal sign.</para>
+<equation id="fs-id1919626" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>−</m:mo><m:mfrac>
+           <m:mn>3</m:mn>
+           <m:mn>2</m:mn>
+          </m:mfrac>
+          </m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>5</m:mn><m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>−</m:mo><m:mfrac>
+           <m:mn>3</m:mn>
+           <m:mn>2</m:mn>
+          </m:mfrac>
+          </m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>5</m:mn><m:mo>+</m:mo><m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id2495836">Factor the left side as a perfect square and simplify the right side.</para>
+<equation id="fs-id3176685" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>29</m:mn>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1482511">Use the square root property and solve.</para>
+<equation id="fs-id1545239" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+             <m:mn>3</m:mn>
+             <m:mn>2</m:mn>
+            </m:mfrac>
+            </m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>29</m:mn></m:mrow>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+         <m:mn>3</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>±</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mrow>
+          <m:mn>29</m:mn></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>±</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mrow>
+          <m:mn>29</m:mn></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+
+</equation><para id="fs-id2628693">The solutions are <m:math>
+  <m:mfrac>
+    <m:mrow>
+   <m:mn>3</m:mn><m:mo>+</m:mo>
+   <m:msqrt>
+      <m:mn>29</m:mn>
+    </m:msqrt>
+  </m:mrow>
+  <m:mrow>
+   <m:mn>2</m:mn>
+    </m:mrow>
+  </m:mfrac>
+</m:math>
+
+
+  and <m:math>
+  <m:mfrac>
+    <m:mrow>
+   <m:mn>3</m:mn><m:mo>-</m:mo>
+   <m:msqrt>
+      <m:mn>29</m:mn>
+    </m:msqrt>
+  </m:mrow>
+  <m:mrow>
+   <m:mn>2</m:mn>
+    </m:mrow>
+  </m:mfrac>
+</m:math> .</para></solution>
+</exercise>
+</example>
+<note id="fs-id2410455" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_05_07"><problem id="fs-id3086043"><para id="fs-id3086044">Solve by completing the square: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>13.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1031862"><para id="fs-id1830005"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>±</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>22</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+</note>
+</section>
+<section id="fs-id2979976">
+<title>Using the Quadratic Formula</title>
+<para id="fs-id2367499">The fourth method of solving a <term class="no-emphasis">quadratic equation</term> is by using the <term class="no-emphasis">quadratic formula</term>, a formula that will solve all quadratic equations. Although the quadratic formula works on any quadratic equation in standard form, it is easy to make errors in substituting the values into the formula. Pay close attention when substituting, and use parentheses when inserting a negative number.</para><para id="fs-id1335013">We can derive the quadratic formula by <term class="no-emphasis">completing the square</term>. We will assume that the leading coefficient is positive; if it is negative, we can multiply the equation by <m:math>
+ <m:mrow>
+  <m:mn>−1</m:mn>
+ </m:mrow>
+</m:math> and obtain a positive <emphasis effect="italics">a</emphasis>. Given <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> we will complete the square as follows:</para>
+<list id="fs-id1894962" list-type="enumerated" number-style="arabic">
+<item><para id="fs-id2429906">First, move the constant term to the right side of the equal sign:</para>
+<equation id="fs-id1547656" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>c</m:mi>
+ </m:mrow>
+</m:math> </equation></item>
+<item><para id="fs-id1569987">As we want the leading coefficient to equal 1, divide through by <emphasis effect="italics">a</emphasis>:</para>
+<equation id="fs-id1528274" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mi>b</m:mi>
+   <m:mi>a</m:mi>
+  </m:mfrac>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mi>c</m:mi>
+   <m:mi>a</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation></item>
+<item><para id="fs-id2906392">Then, find <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> of the middle term, and add <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mfrac>
+       <m:mi>b</m:mi>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>b</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:msup>
+     <m:mi>a</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> to both sides of the equal sign:</para>
+<equation id="fs-id2443764" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mi>b</m:mi>
+   <m:mi>a</m:mi>
+  </m:mfrac>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>b</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:msup>
+     <m:mi>a</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>b</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:msup>
+     <m:mi>a</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mi>c</m:mi>
+   <m:mi>a</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation></item>
+<item><para id="fs-id1719390">Next, write the left side as a perfect square. Find the common denominator of the right side and write it as a single fraction:</para>
+<equation id="fs-id3148450" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mi>b</m:mi>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>a</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>b</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:msup>
+     <m:mi>a</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation></item>
+<item><para id="fs-id2307686">Now, use the square root property, which gives</para>
+<equation id="fs-id1937587" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mi>b</m:mi>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>a</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:msup>
+           <m:mi>b</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow>
+         <m:mrow>
+          <m:mn>4</m:mn><m:msup>
+           <m:mi>a</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+          </m:mrow>
+        </m:mfrac>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mi>b</m:mi>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>a</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:msup>
+           <m:mi>b</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>a</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation></item>
+<item><para id="fs-id1977996">Finally, add <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mi>b</m:mi>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>a</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> to both sides of the equation and combine the terms on the right side. Thus,</para>
+<equation id="fs-id2440094" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt>
+     <m:mrow>
+      <m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>a</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation></item>
+</list>
+<note id="fs-id2500151">
+
+<title>The Quadratic Formula</title>
+  <para id="fs-id1278348">Written in standard form, <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> any quadratic equation can be solved using the <term>quadratic formula</term>:</para>
+<equation id="fs-id1959865" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt>
+     <m:mrow>
+      <m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>a</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1930451">where <emphasis effect="italics">a</emphasis>, <emphasis effect="italics">b</emphasis>, and <emphasis effect="italics">c</emphasis> are real numbers and <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</note>
+
+<note id="fs-id1480868" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id2385664"><emphasis>Given a quadratic equation, solve it using the quadratic formula</emphasis></para>
+<list id="fs-id1973820" list-type="enumerated" number-style="arabic"><item>Make sure the equation is in standard form: <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item>Make note of the values of the coefficients and constant term, <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Carefully substitute the values noted in step 2 into the equation. To avoid needless errors, use parentheses around each number input into the formula.</item>
+<item>Calculate and solve.</item>
+</list></note>
+<example id="Example_02_05_09">
+<exercise id="fs-id2979701"><problem id="fs-id2979703">
+<title>Solve the Quadratic Equation Using the Quadratic Formula</title>
+<para id="fs-id2442582">Solve the quadratic equation: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id3034009">
+<para id="fs-id1800418">Identify the coefficients: <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> Then use the quadratic formula.</para>
+<equation id="fs-id1813797" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:msup>
+           <m:mrow>
+            <m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>5</m:mn><m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:mn>25</m:mn><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>5</m:mn><m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:mn>21</m:mn></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example>
+ <example id="Example_02_05_10">
+<exercise id="fs-id1561272">
+<problem id="fs-id1457087">
+<title>Solving a Quadratic Equation with the Quadratic Formula </title>
+<para id="fs-id1457092">Use the quadratic formula to solve <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1717549">
+<para id="fs-id1717551">First, we identify the coefficients: <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math> </para><para id="fs-id1531480">Substitute these values into the quadratic formula.</para>
+<equation id="fs-id2486075" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:msup>
+           <m:mi>b</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>a</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:msup>
+           <m:mrow>
+            <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo>⋅</m:mo><m:mn>1</m:mn></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:mn>1</m:mn><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:mo>−</m:mo><m:mn>7</m:mn></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>±</m:mo><m:mi>i</m:mi><m:msqrt>
+         <m:mn>7</m:mn>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1798703">The solutions to the equation are <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:msqrt>
+     <m:mn>7</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>i</m:mi><m:msqrt>
+     <m:mn>7</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</example>
+<note id="fs-id2370081" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_05_08"><problem id="fs-id2933152"><para id="fs-id2933153">Solve the quadratic equation using the quadratic formula: <m:math>
+ <m:mrow>
+  <m:mn>9</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id2437186"><para id="fs-id2437187"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+</note>
+</section>
+<section id="fs-id2932184">
+<title>The Discriminant</title>
+<para id="fs-id1965271">The <term class="no-emphasis">quadratic formula</term> not only generates the solutions to a quadratic equation, it tells us about the nature of the solutions when we consider the <term class="no-emphasis">discriminant</term>, or the expression under the radical, <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> The discriminant tells us whether the solutions are real numbers or complex numbers, and how many solutions of each type to expect. <link target-id="Table_02_05_01"/> relates the value of the discriminant to the solutions of a quadratic equation.</para><table id="Table_02_05_01" summary="A table with 5 rows and 2 columns. The entries in the first row are: Value of Discriminant and Results. The entries in the second row are: b squared minus four times a times c equals zero and One rational solution (double solution). The entries in the third row are: b squared minus four times a times c is greater than zero, perfect square and Two rational solutions. The entries in the fourth row are: b squared minus four times a times c is greater than zero, not a perfect square and Two irrational solutions. The entries in the fifth row are: b squared minus four times a times c is less than zero and Two complex solutions.">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row>
+<entry align="center">Value of Discriminant</entry>
+<entry align="center">Results</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> </entry>
+<entry align="center">One rational solution (double solution)</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> perfect square</entry>
+<entry align="center">Two rational solutions</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> not a perfect square</entry>
+<entry align="center">Two irrational solutions</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> </entry>
+<entry align="center">Two complex solutions</entry>
+</row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table><note id="fs-id2495380">
+
+<title>The Discriminant</title>
+<para id="fs-id1150951">For <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> , where <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+ </m:mrow>
+</m:math> , <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi>
+ </m:mrow>
+</m:math> , and <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi>
+ </m:mrow>
+</m:math> are real numbers, the <term>discriminant</term> is the expression under the radical in the quadratic formula: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> It tells us whether the solutions are real numbers or complex numbers and how many solutions of each type to expect.</para></note>
+<example id="Example_02_05_11">
+<exercise id="fs-id1340700">
+<problem id="fs-id1340702">
+<title>Using the Discriminant to Find the Nature of the Solutions to a Quadratic Equation</title>
+<para id="fs-id2515703">Use the discriminant to find the nature of the solutions to the following quadratic equations:</para>
+<list id="fs-id2515706" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>14</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> </item>
+<item><span class="token">ⓒ</span> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> </item>
+<item> <span class="token">ⓓ</span> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> </item>
+</list></problem>
+<solution id="fs-id2508928">
+<para id="fs-id2508930">Calculate the discriminant <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow>
+</m:math> for each equation and state the expected type of solutions.</para><list id="fs-id1385650" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span><para id="fs-id1699199"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id2390532"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mn>4</m:mn>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mn>1</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mn>4</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.</m:mn></m:mrow>
+</m:math> There will be one rational double solution.</para></item>
+<item><span class="token">ⓑ</span><para id="fs-id2933880"> <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>14</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id2422396"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>14</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mn>8</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mn>3</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>100.</m:mn></m:mrow>
+</m:math> As <m:math>
+ <m:mrow>
+  <m:mn>100</m:mn>
+ </m:mrow>
+</m:math> is a perfect square, there will be two rational solutions.</para></item>
+<item><span class="token">ⓒ</span><para id="fs-id1690680"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para><para id="fs-id1804761"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>−5</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mn>3</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>−2</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>49.</m:mn></m:mrow>
+</m:math> As <m:math>
+ <m:mrow>
+  <m:mn>49</m:mn>
+ </m:mrow>
+</m:math> is a perfect square, there will be two rational solutions.</para></item>
+<item><span class="token">ⓓ</span><para id="fs-id2016618"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mn>−10</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id2905584"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>−10</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mn>3</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>15</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−80.</m:mn></m:mrow>
+</m:math> There will be two complex solutions.</para></item></list>
+</solution>
+</exercise>
+</example>
+</section>
+<section id="fs-id2443208"><title>Using the Pythagorean Theorem</title><para id="fs-id2454436">One of the most famous formulas in mathematics is the <term>Pythagorean Theorem</term>. It is based on a right triangle, and states the relationship among the lengths of the sides as <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi>
+ </m:mrow>
+</m:math> refer to the legs of a right triangle adjacent to the <m:math>
+ <m:mrow>
+  <m:mn>90°</m:mn></m:mrow>
+</m:math> angle, and <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi>
+ </m:mrow>
+</m:math> refers to the hypotenuse. It has immeasurable uses in architecture, engineering, the sciences, geometry, trigonometry, and algebra, and in everyday applications.</para><para id="fs-id2797112">We use the Pythagorean Theorem to solve for the length of one side of a triangle when we have the lengths of the other two. Because each of the terms is squared in the theorem, when we are solving for a side of a triangle, we have a quadratic equation. We can use the methods for solving quadratic equations that we learned in this section to solve for the missing side.</para>
+<para id="fs-id2382116">The Pythagorean Theorem is given as</para>
+<equation id="fs-id2797115" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1297273">where <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi>
+ </m:mrow>
+</m:math> refer to the legs of a right triangle adjacent to the <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>90</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+
+ </m:mrow>
+</m:math> angle, and <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi>
+ </m:mrow>
+</m:math> refers to the hypotenuse, as shown in <link target-id="Figure_02_05_004"/>.</para>
+<figure id="Figure_02_05_004" class="small">
+<media id="fs-id3040390" alt="Right triangle with the base labeled: a, the height labeled: b, and the hypotenuse labeled: c">
+<image mime-type="image/jpg" src="../../media/CNX_CAT_Figure_02_05_004.jpg"/>
+</media>
+</figure>
+<example id="Example_02_05_12">
+<exercise id="fs-id2700450"><problem id="fs-id2700452">
+<title>Finding the Length of the Missing Side of a Right Triangle</title>
+<para id="fs-id1887267">Find the length of the missing side of the right triangle in <link target-id="Figure_02_05_005"/>.</para>
+<figure id="Figure_02_05_005" class="small">
+<media id="fs-id3155491" alt="Right triangle with the base labeled: a, the height labeled: 4, and the hypotenuse labeled 12.">
+<image mime-type="image/jpg" src="../../media/CNX_CAT_Figure_02_05_005.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id2308574">
+<para id="fs-id2528218">As we have measurements for side <emphasis effect="italics">b</emphasis> and the hypotenuse, the missing side is <emphasis effect="italics">a.</emphasis></para>
+<equation id="fs-id2294487" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>c</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>16</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mn>144</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mn>128</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mi>a</m:mi>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>128</m:mn></m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mn>8</m:mn><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example><note id="fs-id1918460" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_02_05_09"><problem id="fs-id2381994"><para id="fs-id2381996">Use the Pythagorean Theorem to solve the right triangle problem: Leg <emphasis effect="italics">a </emphasis>measures 4 units, leg <emphasis effect="italics">b </emphasis>measures 3 units. Find the length of the hypotenuse.</para></problem>
+<solution id="fs-id1574189"><para id="fs-id1574190"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn>
+ </m:mrow>
+</m:math> units</para></solution></exercise>
+</note>
+
+
+<note id="fs-id1762359" class="media-notitle">
+<label>Media</label>
+<para id="fs-id2666327">Access these online resources for additional instruction and practice with quadratic equations.</para>
+<list id="fs-id2666330" list-type="bulleted"><item><link url="http://openstax.org/l/quadreqfactor">Solving Quadratic Equations by Factoring</link></item>
+<item><link url="http://openstax.org/l/zeroprodprop">The Zero-Product Property</link></item>
+<item><link url="http://openstax.org/l/complthesqr">Completing the Square</link></item>
+<item><link url="http://openstax.org/l/quadrformrat">Quadratic Formula with Two Rational Solutions</link></item>
+<item><link url="http://openstax.org/l/leglengthtri">Length of a leg of a right triangle</link></item>
+</list></note>
+</section><section id="fs-id2331676" class="key-equations">
+  <title>Key Equations</title>
+<table id="fs-id1571594" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center">quadratic formula</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt>
+     <m:mrow>
+      <m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>a</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+
+
+</tgroup>
+</table></section>
+<section id="fs-id1353579" class="key-concepts">
+<title>Key Concepts</title>
+
+<list id="fs-id1594727"><item>Many quadratic equations can be solved by factoring when the equation has a leading coefficient of 1 or if the equation is a difference of squares. The zero-product property is then used to find solutions. See <link target-id="Example_02_05_01"/>, <link target-id="Example_02_05_02"/>, and <link target-id="Example_02_05_03"/>.</item>
+<item>Many quadratic equations with a leading coefficient other than 1 can be solved by factoring using the grouping method. See <link target-id="Example_02_05_04"/> and <link target-id="Example_02_05_05"/>.</item>
+<item>Another method for solving quadratics is the square root property. The variable is squared. We isolate the squared term and take the square root of both sides of the equation. The solution will yield a positive and negative solution. See <link target-id="Example_02_05_06"/> and <link target-id="Example_02_05_07"/>.</item>
+<item>Completing the square is a method of solving quadratic equations when the equation cannot be factored. See <link target-id="Example_02_05_08"/>.</item>
+<item>A highly dependable method for solving quadratic equations is the quadratic formula, based on the coefficients and the constant term in the equation. See <link target-id="Example_02_05_09"/> and <link target-id="Example_02_05_10"/>.</item>
+<item>The discriminant is used to indicate the nature of the roots that the quadratic equation will yield: real or complex, rational or irrational, and how many of each. See <link target-id="Example_02_05_11"/>.</item>
+<item>The Pythagorean Theorem, among the most famous theorems in history, is used to solve right-triangle problems and has applications in numerous fields. Solving for the length of one side of a right triangle requires solving a quadratic equation. See <link target-id="Example_02_05_12"/>.</item>
+</list></section>
+<section id="fs-id1685751" class="section-exercises">
+<title>Section Exercises</title>
+<section id="fs-id1685757">
+<title>Verbal</title>
+<exercise id="fs-id1752696"><problem id="fs-id1752698"><para id="fs-id1752699">How do we recognize when an equation is quadratic?</para></problem>
+<solution id="fs-id1752702"><para id="fs-id1752703">It is a second-degree equation (the highest variable exponent is 2).</para></solution></exercise>
+<exercise id="fs-id1686335"><problem id="fs-id1686336"><para id="fs-id1686337">When we solve a quadratic equation, how many solutions should we always start out seeking? Explain why when solving a quadratic equation in the form <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> we may graph the equation <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi>
+ </m:mrow>
+</m:math> and have no zeroes (<emphasis effect="italics">x</emphasis>-intercepts).</para></problem></exercise>
+<exercise id="fs-id2440111"><problem id="fs-id3094972"><para id="fs-id3094973">When we solve a quadratic equation by factoring, why do we move all terms to one side, having zero on the other side?</para></problem>
+<solution id="fs-id3094977"><para id="fs-id3094978">We want to take advantage of the zero property of multiplication in the fact that if <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>⋅</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> then it must follow that each factor separately offers a solution to the product being zero: <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="0.8em"/><m:mtext/><m:mi>o</m:mi><m:mi>r</m:mi><m:mspace width="0.8em"/><m:mtext>b</m:mtext><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id1540842"><problem id="fs-id1540843"><para id="fs-id1540844">In the quadratic formula, what is the name of the expression under the radical sign <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and how does it determine the number of and nature of our solutions?</para></problem></exercise>
+<exercise id="fs-id2439837"><problem id="fs-id2439838"><para id="fs-id2439839">Describe two scenarios where using the square root property to solve a quadratic equation would be the most efficient method.</para></problem>
+<solution id="fs-id2439843"><para id="fs-id1579361">One, when no linear term is present (no <emphasis effect="italics">x</emphasis> term), such as <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>16.</m:mn>
+ </m:mrow>
+</m:math> Two, when the equation is already in the form <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mi>d</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+</section>
+<section id="fs-id3039271">
+<title>Algebraic</title>
+<para id="fs-id3070461">For the following exercises, solve the quadratic equation by factoring.</para>
+<exercise id="fs-id3070464"><problem id="fs-id3070466"><para id="fs-id3070467"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>21</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1227822"><problem id="fs-id1227823"><para id="fs-id1227824"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>18</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2707465"><para id="fs-id2707466"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id2029003"><problem id="fs-id2029004"><para id="fs-id2029005"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1333066"><problem id="fs-id1333067"><para id="fs-id1333068"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>17</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1951697"><para id="fs-id1951698"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id2957156"><problem id="fs-id2957157"><para id="fs-id2957158"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2708935"><problem id="fs-id2708936"><para id="fs-id2708937"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>75</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2390150"><para id="fs-id2390151"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−5</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id2933002"><problem id="fs-id2933003"><para id="fs-id2933004"> <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1417836"><problem id="fs-id1417837"><para id="fs-id1417838"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>9</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id3207107"><para id="fs-id3207108"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id1762775"><problem id="fs-id1762776"><para id="fs-id1762777"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>14</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>36</m:mn>
+ </m:mrow>
+</m:math> </para></problem></exercise>
+<exercise id="fs-id3207565"><problem id="fs-id3207566"><para id="fs-id3207567"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>30</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id2520811"><para id="fs-id2520812"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id1929832"><problem id="fs-id1929833"><para id="fs-id1395974"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> </para></problem></exercise>
+<exercise id="fs-id1520388"><problem id="fs-id1520389"><para id="fs-id1520390"> <m:math>
+ <m:mrow>
+  <m:mn>7</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id2725530"><para id="fs-id2725532"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+   <m:mn>7</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id2438766"><problem id="fs-id2438767"><para id="fs-id2438768"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>9</m:mn>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> </para></problem></exercise>
+<para id="fs-id2370838">For the following exercises, solve the quadratic equation by using the square root property.</para>
+<exercise id="fs-id2370842"><problem id="fs-id2370843"><para id="fs-id1353332"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>36</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1593244"><para id="fs-id1593245"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id2049646"><problem id="fs-id2049648"><para id="fs-id2049649"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>49</m:mn>
+ </m:mrow>
+</m:math> </para></problem></exercise>
+<exercise id="fs-id1354953"><problem id="fs-id1354954"><para id="fs-id1846535"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>25</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3105700"><para id="fs-id3105701"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id2519565"><problem id="fs-id2519566"><para id="fs-id2519567"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>7</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2977340"><problem id="fs-id2977341"><para id="fs-id2977342"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>9</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1518489"><para id="fs-id1518490"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id2643328"><problem id="fs-id2643329"><para id="fs-id2643330"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<para id="fs-id2432296">For the following exercises, solve the quadratic equation by completing the square. Show each step.</para>
+<exercise id="fs-id2432300"><problem id="fs-id2432301"><para id="fs-id2432302"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>22</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2946106"><para id="fs-id2946107"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>11</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id3215750"><problem id="fs-id3215751"><para id="fs-id3215752"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2980329"><problem id="fs-id2980330"><para id="fs-id2980331"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>13</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3236176"><para id="fs-id3236177"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>±</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>22</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id2020955"><problem id="fs-id2020956"><para id="fs-id2020957"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para></problem></exercise>
+<exercise id="fs-id1840550"><problem id="fs-id1840551"><para id="fs-id1840552"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>+</m:mo><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:msup>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1334841"><para id="fs-id1334842"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id1552019"><problem id="fs-id1552020"><para id="fs-id1552022"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:msup>
+   <m:mi>p</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>7</m:mn><m:mi>p</m:mi><m:mo>−</m:mo><m:mn>20</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1225471"><problem id="fs-id1225472"><para id="fs-id1225473"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3048221"><para id="fs-id3048222"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>±</m:mo><m:msqrt>
+     <m:mrow>
+      <m:mn>17</m:mn>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<para id="fs-id1351674">For the following exercises, determine the discriminant, and then state how many solutions there are and the nature of the solutions. Do not solve.</para>
+<exercise id="fs-id1351679"><problem id="fs-id1351680"><para id="fs-id1351681"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2762702"><problem id="fs-id2762703"><para id="fs-id2762704"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id2734014"><para id="fs-id2734015">Not real</para></solution></exercise>
+<exercise id="fs-id2734018"><problem id="fs-id2734019"><para id="fs-id2734020"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id3142966"><problem id="fs-id3142967"><para id="fs-id3142968"> <m:math>
+ <m:mrow>
+  <m:mn>9</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>30</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>25</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1357813"><para id="fs-id1357814">One rational</para></solution></exercise>
+<exercise id="fs-id1357817"><problem id="fs-id1845325"><para id="fs-id1845326"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1873764"><problem id="fs-id1873765"><para id="fs-id1873766"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2947598"><para id="fs-id2947599">Two real; rational</para></solution></exercise>
+<para id="fs-id2947602">For the following exercises, solve the quadratic equation by using the quadratic formula. If the solutions are not real, state <emphasis effect="italics">No Real Solution</emphasis>.</para>
+<exercise id="fs-id1883375"><problem id="fs-id1883376"><para id="fs-id1883378"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para></problem></exercise>
+<exercise id="fs-id3070364"><problem id="fs-id3070365"><para id="fs-id3070366"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id2837160"><para id="fs-id1334304"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>±</m:mo><m:msqrt>
+     <m:mrow>
+      <m:mn>17</m:mn>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id1846559"><problem id="fs-id1846560"><para id="fs-id1846561"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1716230"><problem id="fs-id1716231"><para id="fs-id3274906"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2712001"><para id="fs-id2712002"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>±</m:mo><m:msqrt>
+     <m:mrow>
+      <m:mn>13</m:mn>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id1873745"><problem id="fs-id1873746"><para id="fs-id1873747"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para></problem></exercise>
+<exercise id="fs-id2919049"><problem id="fs-id2919050"><para id="fs-id2919051"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1353941"><para id="fs-id1353942"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>±</m:mo><m:msqrt>
+     <m:mrow>
+      <m:mn>17</m:mn>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution></exercise>
+</section>
+<section id="fs-id1421999">
+<title>Technology</title>
+<para id="fs-id1846578">For the following exercises, enter the expressions into your graphing utility and find the zeroes to the equation (the <emphasis effect="italics">x</emphasis>-intercepts) by using <emphasis>2<sup>nd</sup> CALC 2:zero</emphasis>. Recall finding zeroes will ask left bound (move your cursor to the left of the zero,enter), then right bound (move your cursor to the right of the zero,enter), then guess (move your cursor between the bounds near the zero, enter). Round your answers to the nearest thousandth.</para><exercise id="fs-id1846592"><problem id="fs-id1846593"><para id="fs-id1846594"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mtext>Y</m:mtext>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1204326"><problem id="fs-id1204327"><para id="fs-id1204328"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mtext>Y</m:mtext>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>−3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3261333"><para id="fs-id3261334"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≈</m:mo><m:mn>0.131</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≈</m:mo><m:mn>2.535</m:mn></m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id2506957"><problem id="fs-id2506958"><para id="fs-id2506959"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mtext>Y</m:mtext>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>0.5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1442695">
+<problem id="fs-id1442697"><para id="fs-id1442698">To solve the quadratic equation <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> we can graph these two equations</para><para id="fs-id2442829"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:msub>
+           <m:mtext>Y</m:mtext>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo><m:msup>
+           <m:mi>x</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:msub>
+           <m:mtext>Y</m:mtext>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</para><para id="fs-id1240069">and find the points of intersection. Recall 2<sup>nd</sup> CALC 5:intersection. Do this and find the solutions to the nearest tenth.</para></problem>
+<solution id="fs-id2685482"><para id="fs-id2685483"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>6.7</m:mn></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≈</m:mo><m:mn>1.7</m:mn></m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id2697512"><problem id="fs-id2697513"><para id="fs-id2495814">To solve the quadratic equation <m:math>
+ <m:mrow>
+  <m:mn>0.3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> we can graph these two equations</para><para id="fs-id2413227"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:msub>
+           <m:mtext>Y</m:mtext>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo><m:mn>0.3</m:mn><m:msup>
+           <m:mi>x</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:msub>
+           <m:mtext>Y</m:mtext>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</para><para id="fs-id2906629">and find the points of intersection. Recall 2<sup>nd</sup> CALC 5:intersection. Do this and find the solutions to the nearest tenth.</para></problem></exercise>
+</section>
+<section id="fs-id2498853">
+<title>Extensions</title>
+<exercise id="fs-id2498858"><problem id="fs-id2498859"><para id="fs-id2498860">Beginning with the general form of a quadratic equation, <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> solve for <emphasis effect="italics">x</emphasis> by using the completing the square method, thus deriving the quadratic formula.</para></problem>
+<solution id="fs-id2660199"><para id="fs-id2522022"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>a</m:mi><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mi>b</m:mi>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+      <m:mi>x</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mi>c</m:mi></m:mrow>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mi>b</m:mi>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mi>b</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+       <m:mrow>
+        <m:mn>4</m:mn><m:msup>
+         <m:mi>a</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mi>c</m:mi></m:mrow>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mi>b</m:mi>
+       <m:mrow>
+        <m:mn>4</m:mn><m:msup>
+         <m:mi>a</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+           <m:mi>b</m:mi>
+           <m:mrow>
+            <m:mn>2</m:mn><m:mi>a</m:mi></m:mrow>
+          </m:mfrac>
+          </m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mi>b</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow>
+       <m:mrow>
+        <m:mn>4</m:mn><m:msup>
+         <m:mi>a</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mi>b</m:mi>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>a</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:msup>
+           <m:mi>b</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow>
+         <m:mrow>
+          <m:mn>4</m:mn><m:msup>
+           <m:mi>a</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+          </m:mrow>
+        </m:mfrac>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mi>x</m:mi>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:msup>
+           <m:mi>b</m:mi>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow>
+        </m:msqrt>
+        </m:mrow>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>a</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </para></solution></exercise>
+<exercise id="fs-id2428496"><problem id="fs-id2428497"><para id="fs-id2428498">Show that the sum of the two solutions to the quadratic equation is <m:math><m:mo>−</m:mo>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>b</m:mi>
+   </m:mrow>
+   <m:mi>a</m:mi>
+  </m:mfrac>
+</m:math> .</para></problem></exercise>
+<exercise id="fs-id2026640"><problem id="fs-id2021216"><para id="fs-id2021217">A person has a garden that has a length 10 feet longer than the width. Set up a quadratic equation to find the dimensions of the garden if its area is 119 ft.<sup>2</sup>. Solve the quadratic equation to find the length and width.</para></problem>
+<solution id="fs-id2021222"><para id="fs-id2021223"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>119</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> 7 ft. and 17 ft.</para></solution></exercise>
+<exercise id="fs-id2644744"><problem id="fs-id2644745"><para id="fs-id2720880">Abercrombie and Fitch stock had a price given as <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mn>0.2</m:mn><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>5.6</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>50.2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> is the time in months from 1999 to 2001. ( <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> is January 1999). Find the two months in which the price of the stock was $30.</para></problem></exercise>
+<exercise id="fs-id3113026"><problem id="fs-id3113027"><para id="fs-id3113028">Suppose that an equation is given <m:math>
+ <m:mrow>
+  <m:mi>p</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>280</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1000</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> represents the number of items sold at an auction and <m:math>
+ <m:mrow>
+  <m:mi>p</m:mi>
+ </m:mrow>
+</m:math> is the profit made by the business that ran the auction. How many items sold would make this profit a maximum? Solve this by graphing the expression in your graphing utility and finding the maximum using 2<sup>nd</sup> CALC maximum. To obtain a good window for the curve, set <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> [0,200] and <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> [0,10000].</para></problem>
+<solution id="fs-id2513408"><para id="fs-id2513409">maximum at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>70</m:mn>
+ </m:mrow>
+</m:math> </para></solution></exercise>
+</section>
+<section id="fs-id1894925">
+<title>Real-World Applications</title>
+<exercise id="fs-id1894930"><problem id="fs-id2644764"><para id="fs-id2644765">A formula for the normal systolic blood pressure for a man age <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> measured in mmHg, is given as <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mn>0.006</m:mn><m:msup>
+   <m:mi>A</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>0.02</m:mn><m:mi>A</m:mi><m:mo>+</m:mo><m:mn>120.</m:mn></m:mrow>
+</m:math> Find the age to the nearest year of a man whose normal blood pressure measures 125 mmHg.</para></problem></exercise>
+<exercise id="fs-id1700644"><problem id="fs-id1700645"><para id="fs-id1700646">The cost function for a certain company is <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>60</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>300</m:mn>
+ </m:mrow>
+</m:math> and the revenue is given by <m:math>
+ <m:mrow>
+  <m:mi>R</m:mi><m:mo>=</m:mo><m:mn>100</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>0.5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Recall that profit is revenue minus cost. Set up a quadratic equation and find two values of <emphasis effect="italics">x</emphasis> (production level) that will create a profit of $300.</para></problem>
+<solution id="fs-id1919090"><para id="fs-id1919092">The quadratic equation would be <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mi>x</m:mi><m:mn>−0.5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>60</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>300</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>300.</m:mn>
+ </m:mrow>
+</m:math> The two values of <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> are 20 and 60.</para></solution></exercise>
+<exercise id="fs-id2454082"><problem id="fs-id2454083"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id2454084">A falling object travels a distance given by the formula <m:math>
+ <m:mrow>
+  <m:mi>d</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>16</m:mn><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> ft, where <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> is measured in seconds. How long will it take for the object to travel 74 ft?</para></problem></exercise>
+<exercise id="fs-id2413468"><problem id="fs-id2413469"><para id="fs-id2413470">A vacant lot is being converted into a community garden. The garden and the walkway around its perimeter have an area of 378 ft<sup>2</sup>. Find the width of the walkway if the garden is 12 ft. wide by 15 ft. long.</para><media id="fs-id2413475" alt="A rectangle inside of a larger rectangle. The smaller rectangle has the length labeled: 15 feet and the width labeled: 12 feet. The distance between the two rectangles is labeled as x on all four sides.">
+  <image mime-type="image/jpg" src="../../media/CNX_CAT_Figure_02_05_201.jpg"/>
+ </media>
+ </problem>
+<solution id="fs-id2385539"><para id="fs-id2385540">3 feet</para></solution></exercise>
+<exercise id="fs-id2385543"><problem id="fs-id2385544"><para id="fs-id2385545">An epidemiological study of the spread of a certain influenza strain that hit a small school population found that the total number of students, <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi>
+ </m:mrow>
+</m:math>, who contracted the flu <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> days after it broke out is given by the model <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>13</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>130</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mn>6.</m:mn>
+ </m:mrow>
+</m:math> Find the day that 160 students had the flu. Recall that the restriction on <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> is at most 6.</para></problem></exercise>
+</section>
+</section>
+</content>
+<glossary>
+<definition id="fs-id2506482"><term>completing the square</term><meaning id="fs-id2506485"> a process for solving quadratic equations in which terms are added to or subtracted from both sides of the equation in order to make one side a perfect square</meaning></definition>
+<definition id="fs-id2506490"><term>discriminant</term><meaning id="fs-id2506493">the expression under the radical in the quadratic formula that indicates the nature of the solutions, real or complex, rational or irrational, single or double roots.</meaning></definition>
+<definition id="fs-id2506498"><term>Pythagorean Theorem</term><meaning id="fs-id2506501">a theorem that states the relationship among the lengths of the sides of a right triangle, used to solve right triangle problems</meaning></definition>
+<definition id="fs-id2841866"><term>quadratic equation</term><meaning id="fs-id2841869">an equation containing a second-degree polynomial; can be solved using multiple methods</meaning></definition>
+<definition id="fs-id2841872"><term>quadratic formula</term><meaning id="fs-id2841876">a formula that will solve all quadratic equations</meaning></definition>
+<definition id="fs-id2841879"><term>square root property</term><meaning id="fs-id2841882">one of the methods used to solve a quadratic equation, in which the <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> term is isolated so that the square root of both sides of the equation can be taken to solve for <emphasis effect="italics">x</emphasis></meaning></definition>
+<definition id="fs-id2956858"><term>zero-product property</term><meaning id="fs-id2956862">the property that formally states that multiplication by zero is zero, so that each factor of a quadratic equation can be set equal to zero to solve equations</meaning></definition>
+</glossary>
+</document>

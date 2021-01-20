@@ -1,0 +1,3297 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Complex Numbers</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m49335</md:content-id>
+  <md:title>Complex Numbers</md:title>
+  <md:abstract><para>In this section, you will:</para>
+<list><item>Express square roots of negative numbers as multiples of   <m:math><m:mi>i</m:mi></m:math>.
+</item>
+<item>Plot complex numbers on the complex plane.</item>
+<item>    Add and subtract complex numbers.</item>
+<item>    Multiply and divide complex numbers.</item></list></md:abstract>
+  <md:uuid>f40160e5-2774-4abb-9c52-e4408588068a</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+ <para id="fs-id1165135307920">The study of mathematics continuously builds upon itself. Negative integers, for example, fill a void left by the set of positive integers. The set of rational numbers, in turn, fills a void left by the set of integers. The set of real numbers fills a void left by the set of rational numbers. Not surprisingly, the set of real numbers has voids as well. For example, we still have no solution to equations such as</para>
+ <equation id="fs-id1165134069249" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135628660">Our best guesses might be +2 or –2. But if we test +2 in this equation, it does not work. If we test –2, it does not work. If we want to have a solution for this equation, we will have to go farther than we have so far. After all, to this point we have described the square root of a negative number as undefined. Fortunately, there is another system of numbers that provides solutions to problems such as these. In this section, we will explore this number system and how to work within it.</para>
+
+ <section id="fs-id1165137565769"><title>Expressing Square Roots of Negative Numbers as Multiples of <emphasis effect="italics">i</emphasis></title><para id="fs-id1165137724853">We know how to find the square root of any positive real number. In a similar way, we can find the square root of a negative number. The difference is that the root is not real. If the value in the radicand is negative, the root is said to be an <term>imaginary number</term><emphasis>. </emphasis>The imaginary number <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> is defined as the square root of negative 1.</para><equation id="eip-886" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </equation>
+  <para id="fs-id1165137437579">So, using properties of radicals,</para>
+  <equation id="eip-598" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135532540">We can write the square root of any negative number as a multiple of <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Consider the square root of –25.</para><equation id="eip-482" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:msqrt>
+           <m:mrow>
+            <m:mo>−</m:mo><m:mn>25</m:mn>
+           </m:mrow>
+          </m:msqrt>
+          <m:mo>=</m:mo><m:msqrt>
+           <m:mrow>
+            <m:mn>25</m:mn><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+          </m:msqrt>
+
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>25</m:mn>
+       </m:mrow>
+      </m:msqrt>
+      <m:msqrt>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134192998">We use <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> and not <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mtext>5</m:mtext><m:mi>i</m:mi>
+ </m:mrow>
+</m:math>
+because the principal root of <m:math>
+ <m:mrow>
+  <m:mn>25</m:mn>
+ </m:mrow>
+</m:math> is the positive root.</para><para id="fs-id1165135500790">A <emphasis>complex number</emphasis> is the sum of a real number and an imaginary number. A complex number is expressed in standard form when written <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+ </m:mrow>
+</m:math> is the real part and <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> is the imaginary part. For example, <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> is a complex number. So, too, is <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt><m:mi>i</m:mi>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><media id="fs-id1165137832295" alt="Showing the real and imaginary parts of 5 + 2i. In this complex number, 5 is the real part and 2i is the complex part." display="block">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_01_001.jpg"/>
+   </media>
+<para id="fs-id1165137892327">Imaginary numbers are distinguished from real numbers because a squared imaginary number produces a negative real number. Recall, when a positive real number is squared, the result is a positive real number and when a negative real number is squared, again, the result is a positive real number. Complex numbers are a combination of real and imaginary numbers.</para>
+
+  <note id="fs-id1165134378703">
+   <label>A General Note label</label>
+   <title>Imaginary and Complex Numbers</title>
+    <para id="fs-id1165135169324">A <term>complex number</term> is a number of the form <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> where</para>
+        <list id="fs-id1165133101752" list-type="bulleted">
+        <item> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+ </m:mrow>
+</m:math> is the real part of the complex number.</item>
+        <item> <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> is the imaginary part of the complex number.</item>
+        </list>
+   <para id="fs-id1165135182901">If <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> is a real number. If <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi>
+ </m:mrow>
+</m:math> is not equal to 0, the complex number is called an <emphasis>imaginary number</emphasis>. An imaginary number is an even root of a negative number.</para>
+  </note>
+
+  <note id="fs-id1165137828202" class="how-to-notitle">
+   <label>How to Feature</label>
+   <para id="fs-id1165135526107"><emphasis>Given an imaginary number, express it in standard form.</emphasis></para>
+<list id="fs-id1165137732688" list-type="enumerated" number-style="arabic">
+   <item>Write <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mi>a</m:mi>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> as <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mi>a</m:mi>
+  </m:msqrt>
+  <m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+   <item>Express <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> as <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+   <item>Write <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mi>a</m:mi>
+  </m:msqrt>
+  <m:mo>⋅</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> in simplest form.</item>
+</list>
+  </note>
+
+  <example id="Example_03_01_01">
+   <exercise id="fs-id1165137843777">
+    <problem id="fs-id1165137554027">
+     <title>Expressing an Imaginary Number in Standard Form </title>
+     <para id="fs-id1165135616954">Express <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>9</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> in standard form.</para>
+    </problem>
+    <solution id="fs-id1165135181687">
+     <para id="fs-id1165135209471"> <m:math display="block">
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>9</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mn>9</m:mn>
+  </m:msqrt>
+  <m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para>
+    <para id="fs-id1165137758466">In standard form, this is <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+    </solution>
+   </exercise>
+  </example>
+
+  <note id="fs-id1165137541602" class="precalculus try">
+   <label>Try IT Feature</label>
+   <exercise id="ti_03_01_01">
+    <problem id="fs-id1165134269555"><para id="fs-id1165134269556">Express <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>24</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> in standard form. </para></problem>
+    <solution id="fs-id1165137654923"><para id="fs-id1165137654924"> <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>24</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi><m:msqrt>
+   <m:mn>6</m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+   </exercise>
+  </note>
+ </section><section id="fs-id1165137472253"><title>Plotting a Complex Number on the Complex Plane</title><para id="fs-id1165137551780">We cannot plot complex numbers on a number line as we might real numbers. However, we can still represent them graphically. To represent a complex number we need to address the two components of the number. We use the <term>complex plane</term>, which is a coordinate system in which the horizontal axis represents the real component and the vertical axis represents the imaginary component. Complex numbers are the points on the plane, expressed as ordered pairs <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+ </m:mrow>
+</m:math> represents the coordinate for the horizontal axis and <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi>
+ </m:mrow>
+</m:math> represents the coordinate for the vertical axis.</para><para id="fs-id1165137678642">Let’s consider the number <m:math>
+ <m:mrow>
+<m:mn>−2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> The real part of the complex number is <m:math>
+ <m:mrow>
+<m:mn>−2</m:mn>
+ </m:mrow>
+</m:math> and the imaginary part is <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> We plot the ordered pair <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> to represent the complex number <m:math>
+ <m:mrow>
+<m:mn>−2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> as shown in <link target-id="Figure_03_01_002"/><emphasis>.</emphasis></para>
+
+<figure id="Figure_03_01_002" class="small">
+<media id="fs-id1165135189769" alt="Plot of a complex number, -2 + 3i. Note that the real part (-2) is plotted on the x-axis and the imaginary part (3i) is plotted on the y-axis.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_01_002.jpg"/>
+</media>
+</figure><note id="fs-id1165135160413"><label>A General Note label</label><title>Complex Plane</title>
+
+<para id="fs-id1165137570393">In the <emphasis>complex plane</emphasis>, the horizontal axis is the real axis, and the vertical axis is the imaginary axis as shown in <link target-id="Figure_03_01_003"/><emphasis>.</emphasis></para>
+<figure id="Figure_03_01_003" class="medium"><media id="fs-id1165135189755" alt="The complex plane showing that the horizontal axis (in the real plane, the x-axis) is known as the real axis and the vertical axis (in the real plane, the y-axis) is known as the imaginary axis.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_01_003n.jpg"/>
+</media>
+</figure></note><note id="fs-id1165137461552" class="how-to-notitle">
+<label>How To Feature</label>
+<para id="fs-id1165137771969"><emphasis>Given a complex number, represent its components on the complex plane.</emphasis></para>
+<list id="fs-id1165137762282" list-type="enumerated" number-style="arabic">
+<item>Determine the real part and the imaginary part of the complex number.</item>
+<item>Move along the horizontal axis to show the real part of the number.</item>
+<item>Move parallel to the vertical axis to show the imaginary part of the number.</item>
+<item>Plot the point.</item>
+</list>
+</note>
+
+<example id="Example_03_01_02">
+<exercise id="fs-id1165137447983">
+<problem id="fs-id1165135407100">
+<title>Plotting a Complex Number on the Complex Plane</title>
+<para id="fs-id1165135173567">Plot the complex number <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> on the complex plane.</para>
+</problem>
+<solution id="fs-id1165137443992">
+<para id="fs-id1165137641218">The real part of the complex number is <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and the imaginary part is <m:math>
+ <m:mrow>
+  <m:mn>−4</m:mn><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> We plot the ordered pair <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> as shown in <link target-id="Figure_03_01_004"/>.</para><figure id="Figure_03_01_004"><media id="fs-id1165137386665" alt="Plot of a complex number, 3 - 4i. Note that the real part (3) is plotted on the x-axis and the imaginary part (-4i) is plotted on the y-axis.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_01_004.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137727898" class="precalculus try">
+<label>Try IT label</label>
+<exercise id="ti_03_01_02"><problem id="fs-id1165137556805"><para id="fs-id1165137556806">Plot the complex number <m:math>
+ <m:mrow>
+  <m:mn>−4</m:mn><m:mo>−</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> on the complex plane.</para></problem>
+<solution id="fs-id1165135192307">
+<media id="fs-id1165137827875" alt="Graph of the plotted point, -4-i.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_01_005.jpg"/>
+</media>
+</solution>
+</exercise></note>
+</section><section id="fs-id1165134312139">
+<title>Adding and Subtracting Complex Numbers</title>
+<para id="fs-id1165137452584">Just as with real numbers, we can perform arithmetic operations on complex numbers. To add or subtract complex numbers, we combine the real parts and combine the imaginary parts.</para>
+
+<note id="fs-id1165137506831"><label>A General Note label</label><title>Complex Numbers: Addition and Subtraction</title>
+
+<para id="fs-id1165135545949">Adding complex numbers:</para>
+<equation id="eip-651" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>c</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>c</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>b</m:mi><m:mo>+</m:mo><m:mi>d</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165135695186">Subtracting complex numbers:</para>
+<equation id="eip-652" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>c</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>−</m:mo><m:mi>c</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>b</m:mi><m:mo>−</m:mo><m:mi>d</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mi>i</m:mi>
+ </m:mrow>
+</m:math>
+    </equation></note><note id="fs-id1165137416862" class="how-to-notitle">
+<label>How To Feature</label>
+<para id="fs-id1165134151869"><emphasis>Given two complex numbers, find the sum or difference.</emphasis></para>
+<list id="fs-id1165137430821" list-type="enumerated" number-style="arabic">
+<item>Identify the real and imaginary parts of each number.</item>
+<item>Add or subtract the real parts.</item>
+<item>Add or subtract the imaginary parts.</item>
+</list>
+</note>
+
+<example id="Example_03_01_03">
+<exercise id="fs-id1165135397935"><problem id="fs-id1165135397937">
+<title>Adding Complex Numbers</title>
+<para id="fs-id1165135445895">Add <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137705063">
+<para id="fs-id1165137572079">We add the real parts and add the imaginary parts.</para>
+<equation id="eip-id1165137817634" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                             </m:mtext><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example>
+
+<note id="fs-id1165135190785" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_03_01_03">
+<problem id="fs-id1165137560212"><para id="fs-id1165137560213">Subtract <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> from <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>–</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137597972"><para id="fs-id1165135209306"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>9</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165137417169">
+<title>Multiplying Complex Numbers</title>
+<para id="fs-id1165137832911">Multiplying complex numbers is much like multiplying binomials. The major difference is that we work with the real and imaginary parts separately.</para>
+
+<section id="fs-id1165137575792"><title>Multiplying a Complex Number by a Real Number</title><para id="fs-id1165137628993">Let’s begin by multiplying a complex number by a real number. We distribute the real number just as we would with a binomial. So, for example,</para>
+<media id="fs-id1165137417358" alt="Showing how distribution works for complex numbers. For 3(6+2i), 3 is multiplied to both the real and imaginary parts. So we have (3)(6)+(3)(2i) = 18 + 6i. " display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_01_006.jpg"/>
+</media>
+<note id="fs-id1165137745292" class="how-to-notitle">
+<label>How To Feature</label>
+<para id="fs-id1165137426118"><emphasis>Given a complex number and a real number, multiply to find the product.</emphasis></para>
+<list id="fs-id1165137793647" list-type="enumerated" number-style="arabic">
+<item>Use the distributive property.</item>
+<item>Simplify.</item>
+</list>
+ </note>
+
+<example id="Example_03_01_04">
+<exercise id="fs-id1165137677558"><problem id="fs-id1165137677561">
+<title>Multiplying a Complex Number by a Real Number</title>
+<para id="fs-id1165137663087">Find the product <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137804816">
+<para id="fs-id1165137804818">Distribute the 4.</para>
+<equation id="eip-id1165135436310" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>20</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation></solution>
+</exercise></example>
+
+<note id="fs-id1165135528403" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_03_01_04">
+<problem id="fs-id1165137714730"><para id="fs-id1165137714731">Find the product <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135207442"><para id="fs-id1165135207443"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>24</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+
+</section><section id="fs-id1165137650841"><title>Multiplying Complex Numbers Together</title><para id="fs-id1165137832483">Now, let’s multiply two complex numbers. We can use either the distributive property or the FOIL method. Recall that FOIL is an acronym for multiplying First, Outer, Inner, and Last terms together. Using either the distributive property or the FOIL method, we get</para>
+<equation id="eip-586" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>c</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>d</m:mi><m:mi>i</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>c</m:mi><m:mi>i</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>d</m:mi><m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137734803">Because <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> we have</para>
+<equation id="eip-523" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>c</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>d</m:mi><m:mi>i</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>c</m:mi><m:mi>i</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>d</m:mi>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165135186757">To simplify, we combine the real parts, and we combine the imaginary parts.</para>
+<equation id="eip-794" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>c</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mi>c</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>d</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mi>d</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>c</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mi>i</m:mi>
+ </m:mrow>
+</m:math>
+</equation><note id="fs-id1165137642817" class="how-to-notitle">
+<label>How To Feature</label>
+<para id="fs-id1165137724898"><emphasis>Given two complex numbers, multiply to find the product.</emphasis></para>
+<list id="fs-id1165137561156" list-type="enumerated" number-style="arabic">
+<item>Use the distributive property or the FOIL method.</item>
+<item>Simplify.</item>
+</list>
+</note>
+
+<example id="Example_03_01_05">
+<exercise id="fs-id1165137705688"><problem id="fs-id1165137705690">
+<title>Multiplying a Complex Number by a Complex Number</title>
+<para id="fs-id1165137444189">Multiply <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137459486">
+<para id="fs-id1165137459488">Use <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>c</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>d</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para>
+<equation id="eip-id1165137762412" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                        </m:mtext><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>15</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>20</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                        </m:mtext><m:mo>=</m:mo><m:mn>23</m:mn><m:mo>−</m:mo><m:mn>14</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation></solution></exercise></example>
+
+<note id="fs-id1165137810630" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_03_01_05">
+<problem id="fs-id1165137666791"><para id="fs-id1165137666792">Multiply <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137644679"><para id="fs-id1165137644680"> <m:math>
+ <m:mrow>
+  <m:mn>18</m:mn><m:mo>+</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section></section>
+
+<section id="fs-id1165137445354"><title>Dividing Complex Numbers</title><para id="fs-id1165137612241">Division of two complex numbers is more complicated than addition, subtraction, and multiplication because we cannot divide by an imaginary number, meaning that any fraction must have a real-number denominator. We need to find a term by which we can multiply the numerator and the denominator that will eliminate the imaginary portion of the denominator so that we end up with a real number as the denominator. This term is called the <term>complex conjugate</term> of the denominator, which is found by changing the sign of the imaginary part of the complex number. In other words, the complex conjugate of <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> is <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165137435064">Note that complex conjugates have a reciprocal relationship: The complex conjugate of <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> is <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and the complex conjugate of <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> is <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Further, when a quadratic equation with real coefficients has complex solutions, the solutions are always complex conjugates of one another.</para>
+<para id="fs-id1165137611741">Suppose we want to divide <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> by <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where neither <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+ </m:mrow>
+</m:math> nor <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi>
+ </m:mrow>
+</m:math> equals zero. We first write the division as a fraction, then find the complex conjugate of the denominator, and multiply.</para>
+<equation id="eip-225" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>c</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mtext> where</m:mtext><m:mspace width="0.8em"/><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mtext> and</m:mtext><m:mspace width="0.8em"/><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165134148263">Multiply the numerator and denominator by the complex conjugate of the denominator.</para>
+<equation id="eip-32" class="unnumbered"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>⋅</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165135260723">Apply the distributive property.</para>
+<equation id="eip-736" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>c</m:mi><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>c</m:mi><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>d</m:mi><m:mi>i</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>d</m:mi><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>a</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>−</m:mo><m:msup>
+     <m:mi>b</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137871668">Simplify, remembering that <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>−1.</m:mn>
+ </m:mrow>
+</m:math> </para><equation id="eip-64" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>c</m:mi><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>c</m:mi><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>d</m:mi><m:mi>i</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:msup>
+         <m:mi>a</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>−</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>−</m:mo><m:msup>
+         <m:mi>b</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>d</m:mi><m:mo>−</m:mo><m:mi>c</m:mi><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mi>i</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:msup>
+         <m:mi>a</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>b</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation><note id="fs-id1165135203870">
+<label>A General Note label</label>
+<title>The Complex Conjugate</title>
+<para id="fs-id1165137793758">The <term>complex conjugate</term> of a complex number <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> is <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> It is found by changing the sign of the imaginary part of the complex number. The real part of the number is left unchanged.</para>
+<list id="fs-id1165135487089" list-type="bulleted">
+<item>When a complex number is multiplied by its complex conjugate, the result is a real number.</item>
+<item>When a complex number is added to its complex conjugate, the result is a real number.</item>
+</list></note>
+
+<example id="Example_03_01_06">
+<exercise id="fs-id1165134032261">
+<problem id="fs-id1165134032263">
+<title>Finding Complex Conjugates</title>
+<para id="fs-id1165137896182">Find the complex conjugate of each number.</para>
+<list id="fs-id1165137896185" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:msqrt>
+   <m:mn>5</m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </item>
+</list>
+</problem>
+<solution id="fs-id1165137742667">
+<list id="fs-id1165137742669" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> The number is already in the form <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> The complex conjugate is <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> or <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>−</m:mo><m:mi>i</m:mi><m:msqrt>
+   <m:mn>5</m:mn>
+  </m:msqrt>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">ⓑ</span> We can rewrite this number in the form <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> as <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> The complex conjugate is <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> or <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> This can be written simply as <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list>
+</solution>
+<commentary id="fs-id1165137772480">
+<title>Analysis </title>
+<para id="fs-id1165137762415">Although we have seen that we can find the complex conjugate of an imaginary number, in practice we generally find the complex conjugates of only complex numbers with both a real and an imaginary component. To obtain a real number from an imaginary number, we can simply multiply by <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137409413" class="how-to-notitle">
+<label>How To Feature</label>
+<para id="fs-id1165135471100"><emphasis>Given two complex numbers, divide one by the other.</emphasis></para>
+<list id="fs-id1165135471104" list-type="enumerated" number-style="arabic">
+<item>Write the division problem as a fraction.</item>
+<item>Determine the complex conjugate of the denominator.</item>
+<item>Multiply the numerator and denominator of the fraction by the complex conjugate of the denominator.</item>
+<item>Simplify.</item>
+</list>
+</note>
+
+<example id="Example_03_01_07">
+<exercise id="fs-id1165137806326"><problem id="fs-id1165137806328">
+<title>Dividing Complex Numbers</title>
+<para id="fs-id1165137457089">Divide <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> by <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137605859">
+<para id="fs-id1165137605861">We begin by writing the problem as a fraction. </para>
+<equation id="eip-id1165134234232" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>−</m:mo><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137639613">Then we multiply the numerator and denominator by the complex conjugate of the denominator.</para>
+<equation id="eip-id1165137400110" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>⋅</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137474228">To multiply two complex numbers, we expand the product as we would with polynomials (the process commonly called FOIL).</para>
+<equation id="eip-id1165131986989" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>⋅</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>8</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi><m:mo>+</m:mo><m:mn>20</m:mn><m:mi>i</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+         <m:mi>i</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mn>16</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>−</m:mo><m:msup>
+         <m:mi>i</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                           </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>8</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi><m:mo>+</m:mo><m:mn>20</m:mn><m:mi>i</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>16</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Because</m:mtext><m:mspace width="0.8em"/><m:msup>
+       <m:mi>i</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                           </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>22</m:mn><m:mi>i</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>17</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                           </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mrow>
+        <m:mn>17</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>22</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>17</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Separate real and imaginary parts</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137930346">Note that this expresses the quotient in standard form.</para>
+</solution>
+</exercise></example>
+
+
+<example id="Example_03_01_08"><exercise id="fs-id1165137548740"><problem id="fs-id1165137548742">
+<title>Substituting a Complex Number into a Polynomial Function</title>
+<para id="fs-id1165135381326">Let <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> Evaluate <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>+</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165134046499">
+<para id="fs-id1165134046501">Substitute <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> into the function <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> and simplify.</para>
+<para id="fs-id1165137834909"><media id="eip-id1165137897952" alt="">
+<image mime-type="image/png" src="../../media/CNX_Precalc_Figure_03_01_007.jpg"/>
+</media>
+</para></solution>
+<commentary id="fs-id1165137834913">
+<title>Analysis </title>
+<para id="fs-id1165135407107">We write <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−5</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Notice that the input is <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>+</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> and the output is <m:math>
+ <m:mrow>
+  <m:mn>−5</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></commentary>
+</exercise></example><note id="fs-id1165137456702" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_03_01_06">
+<problem id="fs-id1165137933327"><para id="fs-id1165137933328">Let <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Evaluate <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>8</m:mn><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135506400"><para id="fs-id1165135506401"> <m:math>
+ <m:mrow>
+  <m:mn>102</m:mn><m:mo>−</m:mo><m:mn>29</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<example id="Example_03_01_09">
+<exercise id="fs-id1165135159922"><problem id="fs-id1165135159924">
+<title>Substituting an Imaginary Number in a Rational Function</title>
+<para id="fs-id1165135695169">Let <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Evaluate <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>10</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135666751">
+<para id="fs-id1165135666753">Substitute <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> and simplify.</para>
+<equation id="eip-id1165135699215" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>i</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>10</m:mn><m:mi>i</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Substitute</m:mtext><m:mspace width="0.8em"/><m:mn>10</m:mn><m:mi>i</m:mi><m:mtext> for</m:mtext><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>i</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>i</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Rewrite the denominator in standard form</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>i</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>i</m:mi>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>⋅</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mo>–</m:mo><m:mn>10</m:mn><m:mi>i</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mo>–</m:mo><m:mn>10</m:mn><m:mi>i</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Prepare to multiply the numerator and</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>denominator by the complex conjugate</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>of the denominator</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mo>–</m:mo><m:mn>20</m:mn><m:mi>i</m:mi><m:mo>+</m:mo><m:mn>30</m:mn><m:mi>i</m:mi><m:mo>–</m:mo><m:mn>100</m:mn><m:msup>
+         <m:mi>i</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mn>9</m:mn><m:mo>–</m:mo><m:mn>30</m:mn><m:mi>i</m:mi><m:mo>+</m:mo><m:mn>30</m:mn><m:mi>i</m:mi><m:mo>–</m:mo><m:mn>100</m:mn><m:msup>
+         <m:mi>i</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiply using the distributive property or the FOIL method</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mo>–</m:mo><m:mn>20</m:mn><m:mi>i</m:mi><m:mo>+</m:mo><m:mn>30</m:mn><m:mi>i</m:mi><m:mo>–</m:mo><m:mn>100</m:mn><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>9</m:mn><m:mo>–</m:mo><m:mn>30</m:mn><m:mi>i</m:mi><m:mo>+</m:mo><m:mn>30</m:mn><m:mi>i</m:mi><m:mo>–</m:mo><m:mn>100</m:mn><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Substitute –1 for</m:mtext><m:msup>
+       <m:mi>i</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>106</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>i</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>109</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Simplify</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>106</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>109</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>109</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Separate the real and imaginary parts</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation></solution></exercise></example>
+
+<note id="fs-id1165137760616" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_03_01_07">
+<problem id="fs-id1165137828249"><para id="fs-id1165137828250">Let <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Evaluate <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137656791"><para id="fs-id1165137656792"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mrow>
+    <m:mn>17</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>17</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+
+</section><section id="fs-id1165137848933"><title>Simplifying Powers of <emphasis effect="italics">i</emphasis></title><para id="fs-id1165132919554">The powers of <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> are cyclic. Let’s look at what happens when we raise <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> to increasing powers.</para>
+
+<equation id="eip-783" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>1</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:mi>i</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>i</m:mi><m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>5</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:mi>i</m:mi>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> </equation><para id="fs-id1165137530297">We can see that when we get to the fifth power of <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> it is equal to the first power. As we continue to multiply <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> by itself for increasing powers, we will see a cycle of 4. Let’s examine the next 4 powers of <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><equation id="eip-477" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>6</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>5</m:mn>
+    </m:msup>
+    <m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:mi>i</m:mi><m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>7</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>6</m:mn>
+    </m:msup>
+    <m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>8</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>7</m:mn>
+    </m:msup>
+    <m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:mn>1</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>9</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>8</m:mn>
+    </m:msup>
+    <m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>⋅</m:mo><m:mi>i</m:mi><m:mo>=</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>5</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:mi>i</m:mi>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> </equation><example id="Example_03_01_10">
+<exercise id="fs-id1165137410930"><problem id="fs-id1165137704512">
+<title>Simplifying Powers of <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </title>
+<para id="fs-id1165137704528">Evaluate <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>35</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137728288">
+<para id="fs-id1165137728290">Since <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> we can simplify the problem by factoring out as many factors of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> as possible. To do so, first determine how many times 4 goes into 35: <m:math>
+ <m:mrow>
+  <m:mn>35</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> </para>
+<equation id="eip-id1165134069265" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>35</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>8</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msup>
+       <m:mi>i</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>8</m:mn>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mn>1</m:mn>
+   <m:mn>8</m:mn>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </equation>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137758921" class="precalculus qa">
+<label>QA Feature</label>
+<para id="fs-id1165135186727"><emphasis effect="bold">Can we write <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>35</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> in other helpful ways?</emphasis></para><para id="fs-id1165135444053"><emphasis effect="italics">As we saw in <link target-id="Example_03_01_10"/>, we reduced <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>35</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> to <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> by dividing the exponent by 4 and using the remainder to find the simplified form. But perhaps another factorization of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>35</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> may be more useful. <link target-id="Table_03_01_01"/> shows some other possible factorizations.</emphasis></para><table id="Table_03_01_01" summary="..">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<tbody>
+<row>
+<entry align="center"><emphasis>Factorization of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>35</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>34</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>33</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>31</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>19</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"><emphasis>Reduced form</emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msup>
+       <m:mi>i</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>17</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>33</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>31</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>19</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msup>
+       <m:mi>i</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"><emphasis>Simplified form</emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>17</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>⋅</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>33</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>31</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>19</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><para id="fs-id1165135255472"><emphasis effect="italics">Each of these will eventually result in the answer we obtained above but may require several more steps than our earlier method.</emphasis></para></note>
+
+<note id="fs-id1165135255478" class="precalculus media media-notitle">
+<label>Media Feature label</label>
+<para id="fs-id1165134389917">Access these online resources for additional instruction and practice with complex numbers.</para>
+<list id="fs-id1165134389920" list-type="bulleted">
+<item><link url="http://openstax.org/l/addsubcomplex">Adding and Subtracting Complex Numbers</link></item>
+<item><link url="http://openstax.org/l/multiplycomplex">Multiply Complex Numbers</link></item>
+<item><link url="http://openstax.org/l/multcompconj">Multiplying Complex Conjugates</link></item>
+<item><link url="http://openstax.org/l/raisingi">Raising <emphasis effect="italics">i</emphasis> to Powers</link></item>
+</list>
+</note>
+
+<section id="fs-id1165137733851" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1165135261454" list-type="bulleted"><item>The square root of any negative number can be written as a multiple of <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> See <link target-id="Example_03_01_01"/>.</item>
+<item>To plot a complex number, we use two number lines, crossed to form the complex plane. The horizontal axis is the real axis, and the vertical axis is the imaginary axis. See <link target-id="Example_03_01_02"/>.</item>
+<item>Complex numbers can be added and subtracted by combining the real parts and combining the imaginary parts. See <link target-id="Example_03_01_03"/>.</item>
+<item>Complex numbers can be multiplied and divided.</item>
+<item>To multiply complex numbers, distribute just as with polynomials. See <link target-id="Example_03_01_04"/>, <link target-id="Example_03_01_05"/>, and <link target-id="Example_03_01_08"/>.</item>
+<item>To divide complex numbers, multiply both the numerator and denominator by the complex conjugate of the denominator to eliminate the complex number from the denominator. See <link target-id="Example_03_01_06"/>, <link target-id="Example_03_01_07"/>, and <link target-id="Example_03_01_09"/>.</item>
+<item>The powers of <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> are cyclic, repeating every fourth one. See <link target-id="Example_03_01_10"/>.</item>
+</list></section>
+</section><section id="fs-id1165135195062" class="section-exercises">
+<section id="fs-id1165135195066">
+<title>Verbal</title>
+<exercise id="fs-id1165135199456">
+<problem id="fs-id1165135199458"><para id="fs-id1165135199459">Explain how to add complex numbers.</para></problem>
+<solution id="fs-id1165135199462"><para id="fs-id1165135199464">Add the real parts together and the imaginary parts together.</para></solution>
+</exercise>
+<exercise id="fs-id1165135199468">
+<problem id="fs-id1165135199470"><para id="fs-id1165135199471">What is the basic principle in multiplication of complex numbers?</para></problem>
+</exercise>
+<exercise id="fs-id1165132950594">
+<problem id="fs-id1165132950596"><para id="fs-id1165132950597">Give an example to show the product of two imaginary numbers is not always imaginary.</para></problem>
+<solution id="fs-id1165132950600"><para id="fs-id1165132950601"> <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> times <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> equals –1, which is not imaginary. (answers vary)</para></solution>
+</exercise>
+<exercise id="fs-id1165135572028">
+<problem id="fs-id1165134420730"><para id="fs-id1165134420731">What is a characteristic of the plot of a real number in the complex plane?</para></problem>
+</exercise>
+</section>
+<section id="fs-id1165134420736">
+<title>Algebraic</title>
+<para id="fs-id1165134420742">For the following exercises, evaluate the algebraic expressions.</para>
+<exercise id="fs-id1165134420745">
+<problem id="fs-id1165134420747"><para id="fs-id1165134420748"> <m:math>
+ <m:mrow>
+  <m:mtext>If</m:mtext><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> evaluate <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135360164"><para id="fs-id1165135360165"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165137538789">
+<problem id="fs-id1165137538791"><para id="fs-id1165137538792"> <m:math>
+ <m:mrow>
+  <m:mtext>If</m:mtext><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> evaluate <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135252107">
+<problem id="fs-id1165135252109"><para id="fs-id1165135252110"> <m:math>
+ <m:mrow>
+  <m:mtext>If</m:mtext><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> evaluate <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134356234"><para id="fs-id1165134356235"> <m:math>
+ <m:mrow>
+  <m:mn>14</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135547251">
+<problem id="fs-id1165135547253"><para id="fs-id1165135547254"> <m:math>
+ <m:mrow>
+  <m:mtext>If</m:mtext><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> evaluate <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135342980">
+<problem id="fs-id1165135342982"><para id="fs-id1165135342984"> <m:math>
+ <m:mrow>
+  <m:mtext>If</m:mtext><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>−</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> evaluate <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134284497"><para id="fs-id1165134284498"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>23</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>29</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>29</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137433118">
+<problem id="fs-id1165137433120"><para id="fs-id1165137433121"> <m:math>
+ <m:mrow>
+  <m:mtext>If</m:mtext><m:mspace width="0.8em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> evaluate <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+</section>
+<section id="fs-id1165135332705">
+<title>Graphical</title>
+<para id="fs-id1165135332710">For the following exercises, determine the number of real and nonreal solutions for each quadratic function shown.</para>
+<exercise id="fs-id1165137838261"><problem id="fs-id1165137838263">
+<media id="fs-id1165137838270" alt="Graph of a parabola intersecting the real axis.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_01_201.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165135186976"><para id="fs-id1165135186977">2 real and 0 nonreal</para></solution>
+</exercise><exercise id="fs-id1165135186982"><problem id="fs-id1165135186984"><media id="fs-id1165135186989" alt="Graph of a parabola not intersecting the real axis.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_01_202.jpg"/>
+</media>
+</problem>
+</exercise><para id="fs-id1165134191548">For the following exercises, plot the complex numbers on the complex plane.</para>
+<exercise id="fs-id1165134191551"><problem id="fs-id1165134191554"><para id="fs-id1165134191555"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134093889"><media id="fs-id1165135454899" alt="Graph of the plotted point, 1-2i.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_01_203-6d3b.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165135454913">
+<problem id="fs-id1165135454915"><para id="fs-id1165135454916"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135347293"><problem id="fs-id1165137834528"><para id="fs-id1165137834529"> <m:math>
+ <m:mi>i</m:mi>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137834538"><media id="fs-id1165137834544" alt="Graph of the plotted point, i.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_01_205-b6b4.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165135698643">
+<problem id="fs-id1165135698645"><para id="fs-id1165135698646"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+</section>
+<section id="fs-id1165133008122">
+<title>Numeric</title>
+<para id="fs-id1165137838635">For the following exercises, perform the indicated operation and express the result as a simplified complex number.</para>
+<exercise id="fs-id1165137838639">
+<problem id="fs-id1165137838641"><para id="fs-id1165137838642"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137761712"><para id="fs-id1165137761713"> <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn><m:mo>−</m:mo><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135436216">
+<problem id="fs-id1165135436218"><para id="fs-id1165135436219"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165133257284">
+<problem id="fs-id1165133257286"><para id="fs-id1165133257287"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>−</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135397907"><para id="fs-id1165135397908"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>11</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165134357295">
+<problem id="fs-id1165134357297"><para id="fs-id1165134357298"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135591077">
+<problem id="fs-id1165135591080"><para id="fs-id1165135591081"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137911090"><para id="fs-id1165137911091"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>−</m:mo><m:mn>5</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135317125">
+<problem id="fs-id1165135317128"><para id="fs-id1165135317129"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165134338824">
+<problem id="fs-id1165134338826"><para id="fs-id1165135498695"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134105002"><para id="fs-id1165134105003"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mo>+</m:mo><m:mn>15</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137891293">
+<problem id="fs-id1165137891295"><para id="fs-id1165135630957"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165133178381">
+<problem id="fs-id1165133178383"><para id="fs-id1165133178384"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mn>8</m:mn>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165132929687"><para id="fs-id1165132929688"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>16</m:mn><m:mo>+</m:mo><m:mn>32</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137416110">
+<problem id="fs-id1165137416112"><para id="fs-id1165137416113"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165133014736">
+<problem id="fs-id1165133014738"><para id="fs-id1165133014740"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134573791"><para id="fs-id1165134573792"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>7</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135422920">
+<problem id="fs-id1165135422922"><para id="fs-id1165135422923"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135197496">
+<problem id="fs-id1165135197498"><para id="fs-id1165135197499"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134039319"><para id="fs-id1165134039320">25</para></solution>
+</exercise>
+<exercise id="fs-id1165134039324">
+<problem id="fs-id1165134039326"><para id="fs-id1165134039327"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135684330">
+<problem id="fs-id1165135684332"><para id="fs-id1165135684333"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135456804"><para id="fs-id1165135456805"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>−</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137408024">
+<problem id="fs-id1165137408026"><para id="fs-id1165137408027"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135547410">
+<problem id="fs-id1165135547412"><para id="fs-id1165135547413"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mi>i</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135541654"><para id="fs-id1165135541655"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mo>−</m:mo><m:mn>6</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135187171">
+<problem id="fs-id1165135187173"><para id="fs-id1165135187174"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165134422291">
+<problem id="fs-id1165134422293"><para id="fs-id1165134422294"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135530609"><para id="fs-id1165135530610"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135191481">
+<problem id="fs-id1165135191484"><para id="fs-id1165135191485"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135481302">
+<problem id="fs-id1165135481304"><para id="fs-id1165135481306"> <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>9</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>16</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135596469"><para id="fs-id1165135596470"> <m:math>
+ <m:mrow>
+  <m:mn>15</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135683510">
+<problem id="fs-id1165135683512"><para id="fs-id1165135683514"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>25</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135506341">
+<problem id="fs-id1165135506343"><para id="fs-id1165135506344"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>+</m:mo><m:msqrt>
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137863135"><para id="fs-id1165137863136"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137828046">
+<problem id="fs-id1165137828048"><para id="fs-id1165137828049"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>+</m:mo><m:msqrt>
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>20</m:mn>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165137735130">
+<problem id="fs-id1165137735133"><para id="fs-id1165137735134"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>8</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137595807"><para id="fs-id1165137595808"> <m:math>
+ <m:mn>1</m:mn>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165137595818">
+<problem id="fs-id1165137595820"><para id="fs-id1165137595821"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165134549936">
+<problem id="fs-id1165134549939"><para id="fs-id1165134549940"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+    <m:mn>22</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135176378"><para id="fs-id1165135176379"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</section>
+<section id="fs-id1165137771440">
+<title>Technology</title>
+ <para id="fs-id1165137771445">For the following exercises, use a calculator to help answer the questions.</para>
+<exercise id="fs-id1165137771449">
+<problem id="fs-id1165137771451"><para id="fs-id1165137771452">Evaluate <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>k</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> for <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mtext>4, 8, and 12</m:mtext><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math> Predict the value if <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>16.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135310649">
+<problem id="fs-id1165134108596"><para id="fs-id1165134108597">Evaluate <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>k</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> for <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mtext>2, 6, and 10</m:mtext><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math> Predict the value if <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>14.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135493302"><para id="fs-id1165135493303">128i</para></solution>
+</exercise>
+<exercise id="fs-id1165135493307">
+<problem id="fs-id1165135493309"><para id="fs-id1165135493310">Evaluate <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mi>k</m:mi></m:msup>
+   <m:mo>−</m:mo>
+
+  <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>i</m:mi><m:msup><m:mo stretchy="false">)</m:mo>
+   <m:mi>k</m:mi></m:msup>
+ </m:mrow>
+</m:math> for <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mtext>4, 8, and 12</m:mtext>
+ </m:mrow>
+</m:math>. Predict the value for <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>16.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135695158">
+<problem id="fs-id1165135695161"><para id="fs-id1165135695162">Show that a solution of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>6</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> is <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135678656"><para id="fs-id1165135678657"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135195408">
+<problem id="fs-id1165135195410"><para id="fs-id1165135195411">Show that a solution of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>8</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> is <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>i</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+</section>
+<section id="fs-id1165137726288">
+<title>Extensions</title>
+<para id="fs-id1165137726293">For the following exercises, evaluate the expressions, writing the result as a simplified complex number.</para>
+<exercise id="fs-id1165137526296">
+<problem id="fs-id1165137526299"><para id="fs-id1165137526300"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mi>i</m:mi>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137432394"><para id="fs-id1165137432395"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137761065">
+<problem id="fs-id1165137761067"><para id="fs-id1165137761068"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mi>i</m:mi>
+     <m:mrow>
+      <m:mn>21</m:mn>
+     </m:mrow>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165137935706">
+<problem id="fs-id1165137935708"><para id="fs-id1165137935709"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>7</m:mn>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+     <m:mi>i</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137640956"><para id="fs-id1165137640957">0</para></solution>
+</exercise>
+<exercise id="fs-id1165137387511">
+<problem id="fs-id1165137387513"><para id="fs-id1165137387514"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>i</m:mi>
+   <m:mrow>
+<m:mn>−3</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+   <m:mi>i</m:mi>
+   <m:mn>7</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135536310">
+<problem id="fs-id1165135536312"><para id="fs-id1165134081008"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>+</m:mo><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135663323"><para id="fs-id1165135663324">5 – 5i</para></solution>
+</exercise>
+<exercise id="fs-id1165135358014">
+<problem id="fs-id1165135358016"><para id="fs-id1165135358017"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135658213">
+<problem id="fs-id1165135658215"><para id="fs-id1165135658216"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mo>+</m:mo><m:mi>i</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137846324"><para id="fs-id1165137846325"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165134070008">
+<problem id="fs-id1165134070010"><para id="fs-id1165134070011"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>+</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134037526">
+<problem id="fs-id1165134037528"><para id="fs-id1165134037529"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>+</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mi>i</m:mi>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135487339"><para id="fs-id1165135487340"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>9</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>9</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>i</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135534954">
+<problem id="fs-id1165135534957"><para id="fs-id1165135534958"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>+</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+</section>
+</section>
+ </content>
+<glossary>
+<definition id="fs-id1165135320095">
+<term>complex conjugate</term>
+<meaning id="fs-id1165135320101">the complex number in which the sign of the imaginary part is changed and the real part of the number is left unchanged; when added to or multiplied by the original complex number, the result is a real number</meaning>
+</definition>
+<definition id="fs-id1165135320107">
+<term>complex number</term>
+<meaning id="fs-id1165135320112">the sum of a real number and an imaginary number, written in the standard form <m:math display="block">
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+ </m:mrow>
+</m:math> is the real part, and <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> is the imaginary part</meaning>
+</definition>
+<definition id="fs-id1165133260439">
+<term>complex plane</term>
+<meaning id="fs-id1165133260444">a coordinate system in which the horizontal axis is used to represent the real part of a complex number and the vertical axis is used to represent the imaginary part of a complex number</meaning>
+</definition>
+<definition id="fs-id1165133260450">
+<term>imaginary number</term>
+<meaning id="fs-id1165133260456">a number in the form <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mi>i</m:mi>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+</glossary>
+</document>

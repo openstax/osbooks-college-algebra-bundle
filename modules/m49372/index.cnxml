@@ -1,0 +1,4626 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Unit Circle: Sine and Cosine Functions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m49372</md:content-id>
+  <md:title>Unit Circle: Sine and Cosine Functions</md:title>
+  <md:abstract><para>In this section, you will:</para>
+<list>
+<item>Find function values for the sine and cosine of <m:math>
+ <m:mrow>
+  <m:mn>30°</m:mn><m:mtext> or </m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>45°</m:mn><m:mtext> or </m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac></m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>60°</m:mn></m:mrow>
+     </m:msup>
+  <m:mtext>or </m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item>Identify the domain and range of sine and cosine functions.</item>
+<item>Use reference angles to evaluate trigonometric functions.</item>
+</list></md:abstract>
+  <md:uuid>17a6d7f5-c90c-4047-abac-0376d582549b</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+
+ <figure id="Figure_05_02_001" class="small"><media id="fs-id1165137471061" alt="Photo of a ferris wheel.">
+   <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_001.jpg"/>
+  </media>
+
+ <caption>The Singapore Flyer is the world’s tallest Ferris wheel. (credit: “Vibin JK”/Flickr)</caption></figure><para id="fs-id1165137692173">Looking for a thrill? Then consider a ride on the Singapore Flyer, the world’s tallest Ferris wheel. Located in Singapore, the Ferris wheel soars to a height of 541 feet—a little more than a tenth of a mile! Described as an observation wheel, riders enjoy spectacular views as they travel from the ground to the peak and down again in a repeating pattern. In this section, we will examine this type of revolving motion around a circle. To do so, we need to define the type of circle first, and then place that circle on a coordinate system. Then we can discuss circular motion in terms of the coordinate pairs.</para>
+
+ <section id="fs-id1165137714296">
+  <title> Finding Function Values for the Sine and Cosine</title>
+  <para id="fs-id1165134153045">To define our trigonometric functions, we begin by drawing a unit circle, a circle centered at the origin with radius 1, as shown in <link target-id="Figure_05_02_002"/>. The angle (in radians) that <m:math>
+   <m:mrow>
+    <m:mi>t</m:mi></m:mrow>
+  </m:math> intercepts forms an arc of length <m:math>
+   <m:mrow>
+    <m:mi>s</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math> Using the formula <m:math>
+   <m:mrow>
+    <m:mi>s</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> and knowing that <m:math>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+  </m:math> we see that for a <term class="no-emphasis">unit circle</term>, <m:math>
+   <m:mrow>
+    <m:mi>s</m:mi><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math>  </para><para id="fs-id1165137428004">Recall that the <emphasis effect="italics">x- </emphasis>and <emphasis effect="italics">y-</emphasis>axes divide the coordinate plane into four quarters called quadrants. We label these quadrants to mimic the direction a positive angle would sweep. The four quadrants are labeled I, II, III, and IV.</para>
+  <para id="fs-id1165137837083">For any angle <m:math>
+   <m:mrow>
+    <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> we can label the intersection of the terminal side and the unit circle as by its coordinates, <m:math>
+   <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+      <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+     <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+  </m:math> The coordinates <m:math>
+   <m:mrow>
+    <m:mspace width="0.8em"/><m:mi>x</m:mi><m:mspace width="0.8em"/></m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mspace width="0.8em"/><m:mi>y</m:mi><m:mspace width="0.8em"/></m:mrow>
+  </m:math> will be the outputs of the trigonometric functions <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> respectively.  This means <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+  </para><figure id="Figure_05_02_002" class="small">
+   <media id="fs-id1165135409430" alt="Graph of a circle with angle t, radius of 1, and an arc created by the angle with length s. The terminal side of the angle intersects the circle at the point (x,y).">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_002.jpg"/>
+   </media>
+   <caption>Unit circle where the central angle is <m:math>
+<m:mrow>
+     <m:mi>t</m:mi></m:mrow></m:math>
+    radians</caption>
+  </figure>
+
+  <note id="fs-id1165137638636">
+
+   <title>Unit Circle</title>
+   <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135560820">A <term>unit circle</term> has a center at <m:math>
+<m:mrow>
+     <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and radius <m:math>
+<m:mrow>
+     <m:mn>1</m:mn></m:mrow></m:math>. In a unit circle, the length of the intercepted arc is equal to the radian measure of the central angle <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math>   </para><para id="fs-id1165137714560">Let <m:math>
+<m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow></m:math> be the endpoint on the unit circle of an arc of arc length <m:math>
+<m:mrow>
+     <m:mi>s</m:mi><m:mo>.</m:mo></m:mrow></m:math> The <m:math>
+<m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow></m:math> coordinates of this point can be described as functions of the angle.</para>
+  </note>
+
+  <section id="fs-id1165137726457">
+   <title>Defining Sine and Cosine Functions</title>
+   <para id="fs-id1165137768253">Now that we have our unit circle labeled, we can learn how the <m:math>
+<m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow></m:math> coordinates relate to the <term class="no-emphasis">arc length </term>and <term class="no-emphasis">angle</term>. The <term>sine function </term>relates a real number <m:math>
+<m:mrow>
+     <m:mi>t</m:mi></m:mrow></m:math> to the <emphasis effect="italics">y</emphasis>-coordinate of the point where the corresponding angle intercepts the unit circle. More precisely, the sine of an angle <m:math>
+<m:mrow>
+     <m:mi>t</m:mi></m:mrow></m:math> equals the <emphasis effect="italics">y</emphasis>-value of the endpoint on the unit circle of an arc of length <m:math>
+<m:mrow>
+     <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math>
+    In <link target-id="Figure_05_02_002"/>, the sine is equal to <m:math>
+ <m:mrow>
+      <m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> Like all functions, the sine function has an input and an output. Its input is the measure of the angle; its output is the <emphasis effect="italics">y</emphasis>-coordinate of the corresponding point on the unit circle.</para>
+   <para id="fs-id1165137748691">The <term>cosine function</term> of an angle <m:math>
+<m:mrow>
+     <m:mi>t</m:mi></m:mrow></m:math> equals the <emphasis effect="italics">x</emphasis>-value of the endpoint on the unit circle of an arc of length <m:math>
+<m:mrow>
+     <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> In <link target-id="Figure_05_02_003"/>, the cosine is equal to <m:math>
+<m:mrow>
+     <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math>
+   </para>
+
+   <figure id="Figure_05_02_003" class="small">
+    <media id="fs-id1165137735775" alt="Illustration of an angle t, with terminal side length equal to 1, and an arc created by angle with length t. The terminal side of the angle intersects the circle at the point (x,y), which is equivalent to (cos t, sin t).">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_003.jpg"/>
+    </media>
+   </figure>
+   <para id="fs-id1165137463311">Because it is understood that sine and cosine are functions, we do not always need to write them with parentheses: <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> is the same as <m:math>
+<m:mrow>
+     <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math>
+ is the same as <m:math>
+<m:mrow>
+     <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> Likewise, <m:math>
+<m:mrow>
+     <m:msup>
+  <m:mrow>
+       <m:mi>cos</m:mi></m:mrow>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mi>t</m:mi></m:mrow></m:math> is a commonly used shorthand notation for <m:math>
+<m:mrow>
+<m:msup>
+  <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>.</m:mo></m:mrow></m:math> Be aware that many calculators and computers do not recognize the shorthand notation. When in doubt, use the extra parentheses when entering calculations into a calculator or computer.</para><note id="fs-id1165137635223">
+
+    <title>Sine and Cosine Functions</title>
+    <para id="fs-id1165137793724">If <m:math>
+ <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mspace width="0.8em"/></m:mrow>
+    </m:math> is a real number and a point <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math> on the unit circle corresponds to an angle of <m:math>
+ <m:mrow>
+      <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> then</para>
+
+<equation id="Equation_05_02_01" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_05_02_02" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>y</m:mi>
+ </m:mrow>
+</m:math>
+</equation></note>
+
+   <note id="fs-id1165135251444" class="how-to-notitle">
+    <label>How To</label>
+    <para id="fs-id1165131968080"><emphasis>Given a point <emphasis effect="italics">P</emphasis> <m:math>
+ <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> on the unit circle corresponding to an angle of <m:math>
+ <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> find the sine and cosine.</emphasis></para><list id="fs-id1165134108592" list-type="enumerated" number-style="arabic"><item>The sine of <m:math>
+ <m:mrow>
+      <m:mi>t</m:mi></m:mrow>
+    </m:math> is equal to the <emphasis effect="italics">y</emphasis>-coordinate of point <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>:</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+    </item>
+    <item>The cosine of <m:math>
+ <m:mrow>
+      <m:mi>t</m:mi></m:mrow>
+    </m:math> is equal to the <emphasis effect="italics">x</emphasis>-coordinate of point <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>:</m:mo><m:mspace width="0.8em"/><m:mtext>cos</m:mtext><m:mspace width="0.8em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>    </item>
+   </list></note>
+
+   <example id="Example_05_02_01"><exercise id="fs-id1165137417674">
+     <problem id="fs-id1165137824250">
+      <title>Finding Function Values for Sine and Cosine </title>
+      <para id="fs-id1165137463869">Point <m:math>
+   <m:mrow>
+        <m:mspace width="0.8em"/><m:mi>P</m:mi><m:mspace width="0.8em"/></m:mrow>
+      </m:math> is a point on the unit circle corresponding to an angle of <m:math>
+   <m:mrow>
+        <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+      </m:math> as shown in <link target-id="Figure_05_02_004"/>. Find <m:math>
+   <m:mrow>
+        <m:mspace width="0.8em"/><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+      </m:math> and <m:math>
+ <m:mrow>
+  <m:mspace width="0.8em"/><m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>      </para>
+
+<figure id="Figure_05_02_004" class="small">
+       <media id="fs-id1165137723705" alt="Graph of a circle with angle t, radius of 1, and a terminal side that intersects the circle at the point (1/2, square root of 3 over 2).">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_004.jpg"/>
+       </media>
+      </figure>
+     </problem>
+     <solution id="fs-id1165137436467">
+      <para id="fs-id1165135417749">We know that <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> is the <emphasis effect="italics">x</emphasis>-coordinate of the corresponding point on the unit circle and <m:math>
+ <m:mrow>
+  <m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mspace width="0.8em"/>
+ </m:mrow>
+</m:math> is the <emphasis effect="italics">y</emphasis>-coordinate of the corresponding point on the unit circle. So:
+
+     </para>
+
+<equation id="eip-id1165135678435" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+    </exercise>
+   </example><note id="fs-id1165137723202" class="precalculus try">
+    <label>Try It</label>
+    <exercise id="ti_05_02_01">
+     <problem id="fs-id1165137767886"><para id="fs-id1165137767887">A certain angle <m:math>
+  <m:mrow>
+       <m:mi>t</m:mi></m:mrow>
+     </m:math> corresponds to a point on the unit circle at <m:math>
+  <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+         <m:mo>−</m:mo><m:mfrac>
+  <m:mrow>
+           <m:msqrt>
+            <m:mn>2</m:mn>
+           </m:msqrt>
+          </m:mrow>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+         <m:mo>,</m:mo><m:mfrac>
+  <m:mrow>
+           <m:msqrt>
+            <m:mn>2</m:mn>
+           </m:msqrt>
+          </m:mrow>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+        </m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+     </m:math> as shown in <link target-id="Figure_05_02_005"/>. Find <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math>
+
+ and <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+     </para><figure id="Figure_05_02_005" class="small">
+      <media id="fs-id1165137434263" alt="Graph of a circle with angle t, radius of 1, and a terminal side that intersects the circle at the point (negative square root of 2 over 2, square root of 2 over 2).">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_005.jpg"/>
+      </media>
+     </figure>
+     </problem>
+     <solution id="fs-id1165137604785">
+      <para id="fs-id1165137438734"> <m:math>
+   <m:mrow>
+        <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+ <m:mrow>
+          <m:msqrt>
+           <m:mn>2</m:mn>
+          </m:msqrt>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>,</m:mo><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+ <m:mrow>
+          <m:msqrt>
+           <m:mn>2</m:mn>
+          </m:msqrt>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+       </m:mrow>
+      </m:math>
+      </para></solution>
+    </exercise>
+   </note>
+
+  </section>
+  <section id="fs-id1165135596524">
+   <title>Finding Sines and Cosines of Angles on an Axis</title>
+   <para id="fs-id1165135438852">For quadrantral angles, the corresponding point on the unit circle falls on the <emphasis effect="italics">x- </emphasis>or <emphasis effect="italics">y</emphasis>-axis. In that case, we can easily calculate cosine and sine from the values of <m:math>
+<m:mrow>
+     <m:mi>x</m:mi></m:mrow></m:math> and <m:math>
+<m:mrow>
+     <m:mi>y</m:mi><m:mo>.</m:mo></m:mrow></m:math>
+   </para><example id="Example_05_02_02"><exercise id="fs-id1165135173908">
+     <problem id="fs-id1165137584111">
+      <title>Calculating Sines and Cosines along an Axis</title>
+      <para id="fs-id1165137548354">Find <m:math>
+   <m:mrow>
+        <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>90°</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+      </m:math> and <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>90°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+     <solution id="fs-id1165137418560">
+      <para id="fs-id1165137460268">Moving <m:math>
+   <m:mrow>
+        <m:mn>90°</m:mn></m:mrow>
+      </m:math> counterclockwise around the unit circle from the positive <emphasis effect="italics">x</emphasis>-axis brings us to the top of the circle, where the <m:math>
+   <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+      </m:math> coordinates are (0, 1), as shown in <link target-id="Figure_05_02_006"/>. </para><figure id="Figure_05_02_006" class="small">
+      <media id="fs-id1165135641569" alt="Graph of a circle with angle t, radius of 1, and a terminal side that intersects the circle at the point (0,1).">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_006.jpg"/>
+      </media>
+     </figure>
+     <para id="fs-id1165137399724">Using our definitions of cosine and sine, </para>
+<equation id="eip-id1165135209632" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>90°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>90°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation>
+
+<para id="eip-id1165134388912">The cosine of 90° is 0; the sine of 90° is 1.</para>
+</solution>
+    </exercise>
+   </example><note id="fs-id1165137405943" class="precalculus try">
+    <label>Try It</label>
+    <exercise id="ti_05_02_02">
+     <problem id="fs-id1165134302493">
+      <para id="fs-id1165137386643">Find cosine and sine of the angle <m:math>
+   <m:mrow>
+        <m:mi>π</m:mi><m:mo>.</m:mo></m:mrow>
+      </m:math>
+      </para>
+     </problem>
+     <solution id="fs-id1165137675196">
+      <para id="fs-id1165134205964"> <m:math>
+   <m:mrow>
+        <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+      </m:math> <m:math>
+<m:mrow>
+         <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+       </m:math>
+      </para></solution>
+    </exercise>
+   </note>
+
+  </section>
+  <section id="fs-id1165137864121"><title>The Pythagorean Identity</title><para id="fs-id1165134198719">Now that we can define sine and cosine, we will learn how they relate to each other and the unit circle. Recall that the equation for the unit circle is <m:math>
+<m:mrow>
+     <m:mspace width="0.8em"/><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:msup>
+      <m:mi>y</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>=</m:mo><m:mn>1.</m:mn><m:mspace width="0.8em"/></m:mrow></m:math> Because <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> we can substitute for <m:math>
+<m:mrow>
+     <m:mi>x</m:mi></m:mrow></m:math> and <m:math>
+<m:mrow>
+     <m:mi>y</m:mi></m:mrow></m:math> to get <m:math>
+<m:mrow>
+<m:msup>
+  <m:mrow>
+       <m:mi>cos</m:mi></m:mrow>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mi>t</m:mi><m:mo>+</m:mo><m:msup>
+  <m:mrow>
+       <m:mi>sin</m:mi></m:mrow>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow></m:math> This equation, <m:math>
+<m:mrow>
+     <m:msup>
+  <m:mrow>
+       <m:mi>cos</m:mi></m:mrow>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mi>t</m:mi><m:mo>+</m:mo><m:msup>
+  <m:mrow>
+       <m:mi>sin</m:mi></m:mrow>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> is known as the <emphasis>Pythagorean Identity</emphasis>. See <link target-id="Figure_05_02_007"/>.</para><figure id="Figure_05_02_007" class="small"><media id="fs-id1165137405940" alt="Graph of an angle t, with a point (x,y) on the unit circle. And equation showing the equivalence of 1, x^2 + y^2, and cos^2 t + sin^2 t.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_007.jpg"/>
+    </media>
+   </figure><para id="fs-id1165137925355">We can use the Pythagorean Identity to find the cosine of an angle if we know the sine, or vice versa. However, because the equation yields two solutions, we need additional knowledge of the angle to choose the solution with the correct sign. If we know the quadrant where the angle is, we can easily choose the correct solution.</para>
+
+   <note id="fs-id1165137925357">
+
+    <title>Pythagorean Identity</title>
+    <para id="fs-id1165137453137">The <term>Pythagorean Identity</term> states that, for any real number <m:math>
+ <m:mrow>
+      <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math>
+    </para>
+
+    <equation id="Equation_05_02_03" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sin</m:mi></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</equation></note>
+
+   <note id="fs-id1165137731366" class="how-to-notitle">
+    <label>How To</label>
+    <para id="fs-id1165137934414"><emphasis>Given the sine of some angle <m:math>
+ <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mspace width="0.8em"/></m:mrow>
+    </m:math> and its quadrant location, find the cosine of <m:math>
+ <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </emphasis>
+    </para><list id="fs-id1165137901198" list-type="enumerated" number-style="arabic"><item>Substitute the known value of <m:math>
+ <m:mrow>
+      <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math> into the Pythagorean Identity.</item>
+    <item>Solve for <m:math>
+ <m:mrow>
+      <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </item>
+    <item>Choose the solution with the appropriate sign for the <emphasis effect="italics">x</emphasis>-values in the quadrant where <m:math>
+ <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mspace width="0.8em"/></m:mrow>
+    </m:math> is located.</item>
+   </list></note>
+
+   <example id="Example_05_02_03">
+    <exercise id="fs-id1165137724522"><problem id="fs-id1165135251259">
+      <title>Finding a Cosine from a Sine or a Sine from a Cosine</title>
+      <para id="fs-id1165137434023">If <m:math>
+   <m:mrow>
+        <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+         <m:mn>3</m:mn>
+         <m:mn>7</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      </m:math> and <m:math>
+   <m:mrow>
+        <m:mi>t</m:mi></m:mrow>
+      </m:math> is in the second quadrant, find <m:math>
+   <m:mrow>
+        <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+      </m:math>
+       </para>
+     </problem>
+     <solution id="fs-id1165137812666">
+
+
+    <para id="fs-id1165137405175">If we drop a vertical line from the point on the unit circle corresponding to <m:math>
+ <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> we create a right triangle, from which we can see that the Pythagorean Identity is simply one case of the Pythagorean Theorem. See <link target-id="Figure_05_02_008"/>.</para><figure id="Figure_05_02_008" class="small">
+      <media id="fs-id1165135453869" alt="Graph of a unit circle with an angle that intersects the circle at a point with the y-coordinate equal to 3/7.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_008.jpg"/>
+      </media>
+     </figure>
+<para id="eip-id1165137727966">Substituting the known value for sine into the Pythagorean Identity,</para>
+     <equation id="fs-id1165134393100" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:msup>
+   <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+        <m:mi>sin</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:msup>
+   <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mfrac>
+       <m:mn>9</m:mn>
+   <m:mrow>
+        <m:mn>49</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:msup>
+   <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+        <m:mn>40</m:mn>
+       </m:mrow>
+   <m:mrow>
+        <m:mn>49</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mn>40</m:mn>
+         </m:mrow>
+ <m:mrow>
+          <m:mn>49</m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>=</m:mo><m:mo>±</m:mo><m:mfrac>
+   <m:mrow>
+        <m:msqrt>
+ <m:mrow>
+          <m:mn>40</m:mn>
+         </m:mrow>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>7</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>±</m:mo><m:mfrac>
+   <m:mrow>
+        <m:mn>2</m:mn><m:msqrt>
+ <m:mrow>
+          <m:mn>10</m:mn>
+         </m:mrow>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>7</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135387334">Because the angle is in the second quadrant, we know the <emphasis effect="italics">x-</emphasis>value is a negative real number, so the cosine is also negative. So
+    <m:math display="block">
+ <m:mrow>
+  <m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:msqrt>
+ <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>7</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+
+     </para></solution>
+    </exercise></example>
+
+   <note id="fs-id1165137551557" class="precalculus try">
+    <label>Try It</label>
+    <exercise id="ti_05_02_03">
+     <problem id="fs-id1165137414608"><para id="fs-id1165137414609">If <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>24</m:mn></m:mrow>
+   <m:mrow>
+    <m:mn>25</m:mn></m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mi>t</m:mi>
+</m:math> is in the fourth quadrant, find <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+     </para></problem>
+     <solution id="fs-id1165135678598"><para id="fs-id1165135678599"> <m:math>
+  <m:mrow>
+       <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+        <m:mn>7</m:mn>
+<m:mrow>
+         <m:mn>25</m:mn></m:mrow>
+       </m:mfrac>
+      </m:mrow>
+     </m:math>
+     </para></solution>
+    </exercise>
+   </note>
+  </section></section>
+
+ <section id="fs-id1165137534740">
+  <title>Finding Sines and Cosines of Special Angles</title>
+  <para id="fs-id1165134340068">We have already learned some properties of the special angles, such as the conversion from radians to degrees. We can also calculate sines and cosines of the special angles using the <term class="no-emphasis">Pythagorean Identity</term> and our knowledge of triangles.</para>
+
+  <section id="fs-id1165137727626">
+   <title>Finding Sines and Cosines of 45° Angles</title><para id="fs-id1165137400560">First, we will look at angles of <m:math>
+<m:mrow>
+     <m:mn>45°</m:mn></m:mrow></m:math> or <m:math>
+<m:mrow>
+     <m:mfrac>
+      <m:mi>π</m:mi>
+      <m:mn>4</m:mn>
+     </m:mfrac>
+     <m:mo>,</m:mo></m:mrow></m:math> as shown in <link target-id="Figure_05_02_009"/> . A <m:math>
+<m:mrow>
+     <m:mn>45°</m:mn><m:mo>–</m:mo><m:mn>45°</m:mn><m:mo>–</m:mo><m:mn>90°</m:mn></m:mrow></m:math> triangle is an isosceles triangle, so the <emphasis effect="italics">x-</emphasis> and <emphasis effect="italics">y</emphasis>-coordinates of the corresponding point on the circle are the same. Because the <emphasis effect="italics">x-</emphasis> and <emphasis effect="italics">y</emphasis>-values are the same, the sine and cosine values will also be equal.</para><figure id="Figure_05_02_009" class="small">
+    <media id="fs-id1165134253522" alt="Graph of 45 degree angle inscribed within a circle with radius of 1. Equivalence between point (x,y) and (x,x) shown.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_009.jpg"/>
+    </media>
+   </figure>
+   <para id="fs-id1165137652872">At <m:math>
+<m:mrow>
+     <m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+      <m:mi>π</m:mi>
+      <m:mn>4</m:mn>
+     </m:mfrac>
+     </m:mrow></m:math>, which is 45 degrees, the radius of the unit circle bisects the first <term class="no-emphasis">quadrantal angle</term>. This means the radius lies along the line <m:math>
+<m:mrow>
+     <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> A unit circle has a radius equal to 1. So, the right triangle formed below the line <m:math>
+<m:mrow>
+     <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> has sides <m:math>
+<m:mrow>
+     <m:mi>x</m:mi></m:mrow></m:math> and <m:math>
+<m:mrow>
+     <m:mi>y</m:mi><m:mspace width="0.3em"/><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> and a radius = 1. See <emphasis><link target-id="Figure_05_02_018"/>.</emphasis></para><figure id="Figure_05_02_018" class="small">
+    <media id="fs-id1165137755840" alt="Graph of circle with pi/4 angle inscribed and a radius of 1.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_018.jpg"/>
+    </media>
+   </figure>
+   <para id="fs-id1165137659504">From the Pythagorean Theorem we get</para>
+   <equation id="fs-id1165137407335" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:msup>
+      <m:mi>y</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>
+   </equation>
+   <para id="fs-id1165134047712">Substituting <m:math>
+<m:mrow>
+     <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> we get</para>
+
+<equation id="fs-id1165137401948" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>
+   </equation>
+
+<para id="fs-id1165137889926">Combining like terms we get</para>
+   <equation id="fs-id1165137889929" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+     <m:mn>2</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>
+   </equation>
+   <para id="fs-id1165134118521">And solving for <m:math>
+<m:mrow>
+     <m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> we get</para>
+
+<equation id="fs-id1165134323753" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+ <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr>
+    <m:mtd>
+ <m:mrow>
+      <m:mtext>        </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+        </m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd></m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165135541550">In quadrant I, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+   </para>
+
+<para id="fs-id1165137749034">At <m:math>
+<m:mrow>
+     <m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+      <m:mi>π</m:mi>
+      <m:mn>4</m:mn>
+     </m:mfrac>
+     </m:mrow></m:math> or 45 degrees,
+   </para>
+
+<equation id="eip-834" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+ <m:mrow>
+          <m:msqrt>
+           <m:mn>2</m:mn>
+          </m:msqrt>
+
+         </m:mrow>
+        </m:mfrac>
+        <m:mo>,</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+ <m:mrow>
+          <m:msqrt>
+           <m:mn>2</m:mn>
+          </m:msqrt>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165137470944">If we then rationalize the denominators, we get</para>
+
+<equation id="eip-572" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mfrac>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mfrac>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137554125">Therefore, the <m:math>
+<m:mrow>
+     <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> coordinates of a point on a circle of radius <m:math>
+<m:mrow>
+     <m:mn>1</m:mn></m:mrow></m:math> at an angle of <m:math>
+<m:mrow>
+     <m:mn>45°</m:mn></m:mrow></m:math> are <m:math>
+<m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+<m:mrow>
+         <m:msqrt>
+          <m:mn>2</m:mn>
+         </m:msqrt>
+        </m:mrow>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+       <m:mo>,</m:mo><m:mfrac>
+<m:mrow>
+         <m:msqrt>
+          <m:mn>2</m:mn>
+         </m:msqrt>
+        </m:mrow>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math>
+    </para></section>
+  <section id="fs-id1165135435759">
+   <title>Finding Sines and Cosines of 30° and 60° Angles </title><para id="fs-id1165137762451">Next, we will find the cosine and sine at an angle of <m:math>
+<m:mrow>
+     <m:mn>30°</m:mn><m:mo>,</m:mo></m:mrow></m:math> or <m:math>
+<m:mrow>
+     <m:mfrac>
+      <m:mi>π</m:mi>
+      <m:mn>6</m:mn>
+     </m:mfrac>
+     </m:mrow></m:math>. First, we will draw a triangle inside a circle with one side at an angle of <m:math>
+<m:mrow>
+     <m:mn>30°</m:mn><m:mo>,</m:mo></m:mrow></m:math> and another at an angle of <m:math>
+<m:mrow>
+     <m:mn>−30°</m:mn><m:mo>,</m:mo></m:mrow></m:math> as shown in <link target-id="Figure_05_02_010"/>. If the resulting two right triangles are combined into one large triangle, notice that all three angles of this larger triangle will be <m:math>
+<m:mrow>
+     <m:mn>60°</m:mn><m:mo>,</m:mo></m:mrow></m:math> as shown in <link target-id="Figure_05_02_011"/>.</para><figure id="Figure_05_02_010" class="small">
+    <media id="fs-id1165137846440" alt="Graph of a circle with 30 degree angle and negative 30 degree angle inscribed to form a trangle.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_010.jpg"/>
+    </media>
+   </figure>
+
+   <figure id="Figure_05_02_011" class="small">
+    <media id="fs-id1165137645232" alt="Image of two 30/60/90 triangles back to back. Label for hypoteneuse r and side y.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_011.jpg"/>
+    </media>
+   </figure>
+
+   <para id="fs-id1165137665679">Because all the angles are equal, the sides are also equal. The vertical line has length <m:math>
+<m:mrow>
+     <m:mn>2</m:mn><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> and since the sides are all equal, we can also conclude that <m:math>
+<m:mrow>
+     <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>y</m:mi></m:mrow></m:math> or <m:math>
+<m:mrow>
+     <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+     <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow></m:math> Since <m:math>
+<m:mrow>
+     <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>y</m:mi></m:mrow></m:math>,</para>
+
+<equation id="fs-id1165137863222" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+     <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+        <m:mi>π</m:mi>
+        <m:mn>6</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+     <m:mi>r</m:mi></m:mrow></m:math>
+   </equation>
+
+   <para id="fs-id1165134043842">And since <m:math>
+<m:mrow>
+     <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>
+    in our <term class="no-emphasis">unit circle</term>,</para>
+
+<equation id="fs-id1165135430958" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mtext>            </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165137863878">Using the Pythagorean Identity, we can find the cosine value.</para>
+   <equation id="fs-id1165137645278" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:msup>
+   <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:msup>
+   <m:mrow>
+        <m:mi>sin</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow><m:msup>
+   <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+          <m:mfrac>
+           <m:mn>1</m:mn>
+           <m:mn>2</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow><m:msup>
+   <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mtext>Use the square root property</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mtext>                   </m:mtext><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+        <m:mo>±</m:mo><m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+   <m:mrow>
+        <m:mo>±</m:mo><m:msqrt>
+         <m:mn>4</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mtext>Since </m:mtext><m:mi>y</m:mi><m:mtext> is positive, choose the positive root</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd></m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137629274">The <m:math>
+<m:mrow>
+     <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> coordinates for the point on a circle of radius <m:math>
+<m:mrow>
+     <m:mn>1</m:mn></m:mrow></m:math> at an angle of <m:math>
+<m:mrow>
+     <m:mn>30°</m:mn></m:mrow></m:math> are <m:math>
+<m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+<m:mrow>
+         <m:msqrt>
+          <m:mn>3</m:mn>
+         </m:msqrt>
+        </m:mrow>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+       <m:mo>,</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math>
+    At <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+(60°), the radius of the unit circle, 1, serves as the hypotenuse of a 30-60-90 degree right triangle, <m:math>
+<m:mrow>
+     <m:mi>B</m:mi><m:mi>A</m:mi><m:mi>D</m:mi><m:mo>,</m:mo></m:mrow></m:math> as shown in <link target-id="Figure_05_02_019"/>. Angle <m:math>
+<m:mrow>
+     <m:mi>A</m:mi></m:mrow></m:math> has measure <m:math>
+<m:mrow>
+     <m:mn>60°</m:mn><m:mo>.</m:mo></m:mrow></m:math> At point <m:math>
+<m:mrow>
+     <m:mi>B</m:mi><m:mo>,</m:mo></m:mrow></m:math> we draw an angle <m:math>
+<m:mrow>
+     <m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow></m:math> with measure of <m:math>
+<m:mrow>
+     <m:mn>60°</m:mn><m:mo>.</m:mo></m:mrow></m:math> We know the angles in a triangle sum to <m:math>
+<m:mrow>
+     <m:mn>180°</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the measure of angle <m:math>
+<m:mrow>
+     <m:mi>C</m:mi></m:mrow></m:math> is also <m:math>
+<m:mrow>
+     <m:mn>60°</m:mn><m:mo>.</m:mo></m:mrow></m:math> Now we have an equilateral triangle. Because each side of the equilateral triangle <m:math>
+<m:mrow>
+     <m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow></m:math> is the same length, and we know one side is the radius of the unit circle, all sides must be of length 1.</para><figure id="Figure_05_02_019" class="small"><media id="fs-id1165137653612" alt="Graph of circle with an isoceles triangle inscribed.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_019.jpg"/>
+    </media>
+   </figure><para id="fs-id1165135536258">The measure of angle <m:math>
+<m:mrow>
+     <m:mi>A</m:mi><m:mi>B</m:mi><m:mi>D</m:mi></m:mrow></m:math> is 30°. So, if double, angle <m:math>
+<m:mrow>
+     <m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow></m:math> is 60°. <m:math>
+<m:mrow>
+     <m:mi>B</m:mi><m:mi>D</m:mi></m:mrow></m:math> is the perpendicular bisector of <m:math>
+<m:mrow>
+     <m:mi>A</m:mi><m:mi>C</m:mi><m:mo>,</m:mo></m:mrow></m:math> so it cuts <m:math>
+<m:mrow>
+     <m:mi>A</m:mi><m:mi>C</m:mi></m:mrow></m:math> in half.  This means that <m:math>
+<m:mrow>
+     <m:mi>A</m:mi><m:mi>D</m:mi></m:mrow></m:math> is <m:math>
+<m:mrow>
+     <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+     </m:mrow></m:math> the radius, or <m:math>
+<m:mrow>
+     <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+     <m:mo>.</m:mo></m:mrow></m:math> Notice that <m:math>
+<m:mrow>
+     <m:mi>A</m:mi><m:mi>D</m:mi></m:mrow></m:math> is the <emphasis effect="italics">x</emphasis>-coordinate of point <m:math>
+<m:mrow>
+     <m:mi>B</m:mi><m:mo>,</m:mo></m:mrow></m:math> which is at the intersection of the 60° angle and the unit circle. This gives us a triangle <m:math>
+<m:mrow>
+     <m:mi>B</m:mi><m:mi>A</m:mi><m:mi>D</m:mi></m:mrow></m:math> with hypotenuse of 1 and side <m:math>
+<m:mrow>
+     <m:mi>x</m:mi></m:mrow></m:math> of length <m:math>
+<m:mrow>
+     <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+     <m:mo>.</m:mo></m:mrow></m:math>
+  </para><para id="fs-id1165137442638">From the Pythagorean Theorem, we get</para>
+   <equation id="fs-id1165137784341" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:msup>
+      <m:mi>y</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>
+   </equation>
+   <para id="fs-id1165137442155">Substituting <m:math>
+<m:mrow>
+     <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+     <m:mo>,</m:mo></m:mrow></m:math> we get</para>
+
+<equation id="fs-id1165137849330" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+     <m:msup>
+  <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+         <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+        </m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:msup>
+      <m:mi>y</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>
+   </equation>
+   <para id="fs-id1165137506634">Solving for <m:math>
+<m:mrow>
+     <m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> we get</para>
+
+<equation id="eip-304" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:mn>1</m:mn></m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtext>       </m:mtext><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+</m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtext>       </m:mtext><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+</m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtext>         </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:mfrac>
+ <m:mrow>
+      <m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+      </m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+</m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation>
+
+<para id="fs-id1165137389803">Since <m:math>
+<m:mrow>
+     <m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+      <m:mi>π</m:mi>
+      <m:mn>3</m:mn>
+     </m:mfrac>
+     </m:mrow></m:math> has the terminal side in quadrant I where the <emphasis effect="italics">y-</emphasis>coordinate is positive, we choose <m:math>
+<m:mrow>
+     <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+  <m:mrow>
+       <m:msqrt>
+        <m:mn>3</m:mn>
+       </m:msqrt>
+      </m:mrow>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+     <m:mo>,</m:mo></m:mrow></m:math> the positive value.</para>
+
+   <para id="fs-id1165135542705">At <m:math>
+<m:mrow>
+     <m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+      <m:mi>π</m:mi>
+      <m:mn>3</m:mn>
+     </m:mfrac>
+     </m:mrow></m:math> (60°), the <m:math>
+<m:mrow>
+     <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> coordinates for the point on a circle of radius <m:math>
+<m:mrow>
+     <m:mn>1</m:mn></m:mrow></m:math> at an angle of <m:math>
+<m:mrow>
+     <m:mn>60°</m:mn></m:mrow></m:math> are <m:math>
+<m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+       <m:mo>,</m:mo><m:mfrac>
+<m:mrow>
+         <m:msqrt>
+          <m:mn>3</m:mn>
+         </m:msqrt>
+        </m:mrow>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> so we can find the sine and cosine.</para>
+
+<equation id="fs-id1165135184011" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>,</m:mo><m:mfrac>
+ <m:mrow>
+          <m:msqrt>
+           <m:mn>3</m:mn>
+          </m:msqrt>
+
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134394619">We have now found the cosine and sine values for all of the most commonly encountered angles in the first quadrant of the unit circle. <link target-id="Table_05_02_01"/> summarizes these values.</para><table id="Table_05_02_01" summary="..">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2" colwidth="50"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row>
+<entry align="center"><emphasis>Angle</emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> or 30</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> or 45°</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> or 60°</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> or 90°</entry>
+</row>
+<row>
+<entry align="center"><emphasis>Cosine</emphasis></entry>
+<entry align="center">1</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msqrt>
+<m:mn>3</m:mn>
+</m:msqrt>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msqrt>
+<m:mn>2</m:mn>
+</m:msqrt>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center">0</entry>
+</row>
+<row>
+<entry align="center"><emphasis>Sine</emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msqrt>
+<m:mn>2</m:mn>
+</m:msqrt>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msqrt>
+<m:mn>3</m:mn>
+</m:msqrt>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center">1</entry>
+</row>
+</tbody>
+
+
+
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id1165135423550"><link target-id="Figure_05_02_021"/> shows the common angles in the first quadrant of the unit circle.</para>
+   <figure id="Figure_05_02_021"><media id="fs-id1165135181639" alt="Graph of a quarter circle with angles of 0, 30, 45, 60, and 90 degrees inscribed. Equivalence of angles in radians shown. Points along circle are marked.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_021n.jpg"/>
+    </media>
+   </figure></section>
+  <section id="fs-id1165137425870">
+   <title>Using a Calculator to Find Sine and Cosine</title>
+   <para id="fs-id1165137425875">To find the cosine and sine of angles other than the <term class="no-emphasis">special angles</term>, we turn to a computer or calculator. <emphasis>Be aware</emphasis>: Most calculators can be set into “degree” or “radian” mode, which tells the calculator the units for the input value. When we evaluate <m:math>
+<m:mrow>
+     <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> on our calculator, it will evaluate it as the cosine of 30 degrees if the calculator is in degree mode, or the cosine of 30 radians if the calculator is in radian mode.</para><note id="fs-id1165137892278" class="how-to-notitle">
+    <label>How To</label>
+    <para id="fs-id1165135415735"><emphasis>Given an angle in radians, use a graphing calculator to find the cosine.
+    </emphasis></para>
+    <list id="fs-id1165137534102" list-type="enumerated" number-style="arabic">
+     <item>If the calculator has degree mode and radian mode, set it to radian mode.</item>
+    <item>Press the COS key.</item>
+    <item>Enter the radian value of the angle and press the close-parentheses key ")".</item>
+    <item>Press ENTER.</item>
+    </list>
+   </note>
+
+   <example id="Example_05_02_04">
+    <exercise id="fs-id1165137827676">
+     <problem id="fs-id1165137812122">
+      <title>Using a Graphing Calculator to Find Sine and Cosine</title>
+      <para id="fs-id1165135439982">Evaluate <m:math>
+   <m:mrow>
+        <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+          <m:mfrac>
+   <m:mrow>
+            <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+           <m:mn>3</m:mn>
+          </m:mfrac>
+         </m:mrow>
+         <m:mo>)</m:mo></m:mrow></m:mrow>
+      </m:math> using a graphing calculator or computer.</para>
+     </problem>
+     <solution id="fs-id1165135436451">
+      <para id="fs-id1165137530715">Enter the following keystrokes:</para>
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137530718"><emphasis>COS</emphasis>
+ <m:math>
+   <m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>×</m:mo><m:mi>π</m:mi><m:mo>÷</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow>
+      </m:math>
+      <emphasis>ENTER</emphasis></para><equation id="fs-id1165135190973" class="unnumbered"><label/> <m:math display="block">
+   <m:mrow>
+        <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+          <m:mfrac>
+   <m:mrow>
+            <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+           <m:mn>3</m:mn>
+          </m:mfrac>
+         </m:mrow>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.5</m:mn></m:mrow>
+      </m:math>
+      </equation>
+     </solution>
+     <commentary id="fs-id1165131968061">
+      <title>Analysis </title>
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165131968066">We can find the cosine or sine of an angle in degrees directly on a calculator with degree mode. For calculators or software that use only radian mode, we can find the sine of <m:math>
+   <m:mrow><m:mn>20°</m:mn><m:mo>,</m:mo></m:mrow>
+      </m:math> for example, by including the conversion factor to radians as part of the input:</para>
+
+<para id="fs-idm499961472">
+<emphasis>SIN</emphasis>
+ <m:math>
+   <m:mrow>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>20</m:mn>
+        <m:mo>×</m:mo>
+        <m:mi>π</m:mi>
+        <m:mo>÷</m:mo>
+        <m:mn>180</m:mn>
+        <m:mo>)</m:mo>
+        </m:mrow>
+      </m:math>
+<emphasis>ENTER</emphasis>
+</para>
+     </commentary>
+    </exercise>
+   </example>
+
+   <note id="fs-id1165137628835" class="precalculus try">
+    <label>Try It</label>
+    <exercise id="ti_05_02_04">
+     <problem id="fs-id1165137416877"><para id="fs-id1165137416878">Evaluate <m:math>
+  <m:mrow>
+       <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+         <m:mfrac>
+          <m:mi>π</m:mi>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+        </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </para></problem>
+     <solution id="fs-id1165137733611"><para id="fs-id1165137733612"> approximately 0.866025403</para></solution>
+    </exercise>
+   </note>
+  </section>
+ </section>
+
+
+ <section id="fs-id1165135190240">
+  <title>Identifying the Domain and Range of Sine and Cosine Functions</title>
+  <para id="fs-id1165135190246">Now that we can find the sine and cosine of an angle, we need to discuss their domains and ranges. What are the domains of the sine and cosine functions? That is, what are the smallest and largest numbers that can be inputs of the functions? Because angles smaller than 0 and angles larger than <m:math>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+  </m:math> can still be graphed on the unit circle and have real values of <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>, </m:mo><m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mspace width="0.8em"/><m:mi>r</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> there is no lower or upper limit to the angles that can be inputs to the sine and cosine functions. The input to the sine and cosine functions is the rotation from the positive <emphasis effect="italics">x</emphasis>-axis, and that may be any real number.</para><para id="fs-id1165137835472">What are the ranges of the sine and cosine functions? What are the least and greatest possible values for their output? We can see the answers by examining the <term class="no-emphasis">unit circle</term>, as shown in <link target-id="Figure_05_02_013"/>. The bounds of the <emphasis effect="italics">x</emphasis>-coordinate are <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">[</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow>
+  </m:math> The bounds of the <emphasis effect="italics">y</emphasis>-coordinate are also <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">[</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow>
+  </m:math> Therefore, the range of both the sine and cosine functions is <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">[</m:mo><m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow>
+  </m:math>  </para><figure id="Figure_05_02_013" class="small">
+   <media id="fs-id1165137401841" alt="Graph of unit circle.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_013.jpg"/>
+   </media>
+  </figure>
+ </section>
+ <section id="fs-id1165137453950">
+  <title>Finding Reference Angles</title>
+  <para id="fs-id1165135586345">We have discussed finding the sine and cosine for angles in the first quadrant, but what if our angle is in another quadrant? For any given angle in the first quadrant, there is an angle in the second quadrant with the same sine value. Because the sine value is the <emphasis effect="italics">y</emphasis>-coordinate on the unit circle, the other angle with the same sine will share the same <emphasis effect="italics">y</emphasis>-value, but have the opposite <emphasis effect="italics">x</emphasis>-value. Therefore, its cosine value will be the opposite of the first angle’s cosine value.</para>
+  <para id="fs-id1165137469869">Likewise, there will be an angle in the fourth quadrant with the same cosine as the original angle. The angle with the same cosine will share the same <emphasis effect="italics">x</emphasis>-value but will have the opposite <emphasis effect="italics">y</emphasis>-value. Therefore, its sine value will be the opposite of the original angle’s sine value.</para>
+  <para id="fs-id1165137418799">As shown in <link target-id="Figure_05_02_014"/>, angle <m:math>
+   <m:mrow>
+    <m:mi>α</m:mi><m:mspace width="0.8em"/></m:mrow>
+  </m:math> has the same sine value as angle <m:math>
+   <m:mrow>
+    <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mo>;</m:mo></m:mrow>
+  </m:math> the cosine values are opposites. Angle <m:math>
+   <m:mrow>
+    <m:mi>β</m:mi><m:mspace width="0.8em"/></m:mrow>
+  </m:math> has the same cosine value as angle <m:math>
+   <m:mrow>
+    <m:mi>t</m:mi><m:mo>;</m:mo></m:mrow>
+  </m:math> the sine values are opposites.</para>
+
+<equation id="fs-id1165137433119" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mtext>and</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>α</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>β</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mtext>and</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mspace width="0.8em"/><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>β</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd></m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><figure id="Figure_05_02_014">
+   <media id="fs-id1165134042805" alt="Graph of two side by side circles. First graph has circle with angle t and angle alpha with radius r. Second graph has circle with angle t and angle beta inscribed with radius r.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_014.jpg"/>
+   </media>
+  </figure>
+
+  <para id="fs-id1165134258657">Recall that an angle’s <term class="no-emphasis">reference angle</term> is the acute angle, <m:math>
+   <m:mrow>
+    <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> formed by the terminal side of the angle <m:math>
+   <m:mrow>
+    <m:mi>t</m:mi></m:mrow>
+  </m:math> and the horizontal axis. A reference angle is always an angle between <m:math>
+   <m:mrow>
+    <m:mn>0</m:mn></m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mn>90°</m:mn><m:mo>,</m:mo></m:mrow>
+  </m:math> or <m:math>
+   <m:mrow>
+    <m:mn>0</m:mn></m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  </m:math> radians. As we can see from <link target-id="Figure_05_02_020"/>, for any angle in quadrants II, III, or IV, there is a reference angle in quadrant I.</para><figure id="Figure_05_02_020"><media id="fs-id1165135193245" alt="Four side by side graphs. First graph shows an angle of t in quadrant 1 in it's normal position. Second graph shows an angle of t in quadrant 2 due to a rotation of pi minus t. Third graph shows an angle of t in quadrant 3 due to a rotation of t minus pi. Fourth graph shows an angle of t in quadrant 4 due to a rotation of two pi minus t.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_01_019-5d63.jpg"/>
+   </media>
+  </figure><note id="fs-id1165134122927" class="how-to-notitle">
+   <label>How To</label>
+   <para id="fs-id1165133103951"><emphasis>Given an angle between <m:math>
+<m:mrow>
+     <m:mn>0</m:mn></m:mrow></m:math> and <m:math>
+<m:mrow>
+     <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo></m:mrow></m:math> find its reference angle.</emphasis></para><list id="fs-id1165137696399" list-type="enumerated" number-style="arabic"><item>An angle in the first quadrant is its own reference angle.</item>
+    <item>For an angle in the second or third quadrant, the reference angle is <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>π</m:mi><m:mo>−</m:mo><m:mi>t</m:mi></m:mrow> <m:mo>|</m:mo></m:mrow></m:mrow>
+    </m:math> or <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mn>180°</m:mn><m:mi>−t</m:mi></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+    </m:math>
+ </item>
+    <item>For an angle in the fourth quadrant, the reference angle is <m:math>
+ <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>−</m:mo><m:mi>t</m:mi></m:mrow>
+    </m:math> or <m:math>
+ <m:mrow>
+      <m:mn>360°</m:mn><m:mi>−t</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </item>
+    <item>If an angle is less than <m:math>
+ <m:mrow>
+      <m:mn>0</m:mn></m:mrow>
+    </m:math> or greater than <m:math>
+ <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> add or subtract <m:math>
+ <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+    </m:math> as many times as needed to find an equivalent angle between <m:math>
+ <m:mrow>
+      <m:mn>0</m:mn></m:mrow>
+    </m:math> and <m:math>
+ <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </item>
+   </list></note>
+
+  <example id="Example_05_02_05">
+   <exercise id="fs-id1165137455785">
+    <problem id="fs-id1165137455788">
+     <title>Finding a Reference Angle</title>
+     <para id="fs-id1165135436617">Find the reference angle of <m:math>
+  <m:mrow>
+       <m:mn>225°</m:mn></m:mrow>
+     </m:math> as shown in <link target-id="Figure_05_02_016"/>.</para><figure id="Figure_05_02_016" class="small">
+      <media id="fs-id1165134037472" alt="Graph of circle with 225 degree angle inscribed.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_016.jpg"/>
+      </media>
+     </figure>
+
+    </problem>
+    <solution id="fs-id1165137535343">
+     <para id="fs-id1165137535345">Because <m:math>
+  <m:mrow>
+       <m:mn>225°</m:mn></m:mrow>
+     </m:math> is in the third quadrant, the reference angle is</para>
+
+<equation id="fs-id1165134261648" class="unnumbered"><label/> <m:math display="block">
+  <m:mrow>
+   <m:mrow><m:mo>|</m:mo> <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+          <m:mn>180°</m:mn><m:mn>−225°</m:mn></m:mrow>
+         <m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+          <m:mo>−</m:mo><m:mn>45°</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>45°</m:mn></m:mrow>
+     </m:math>
+     </equation></solution>
+   </exercise>
+  </example>
+
+  <note id="fs-id1165137761979" class="precalculus try">
+   <label>Try It</label>
+   <exercise id="ti_05_02_05">
+    <problem id="fs-id1165137598484"><para id="fs-id1165137598486">Find the reference angle of <m:math>
+ <m:mrow>
+      <m:mfrac>
+   <m:mrow>
+        <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </para></problem>
+    <solution id="fs-id1165137806750"><para id="fs-id1165137806751"> <m:math>
+ <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+  </note>
+ </section>
+
+ <section id="fs-id1165135458607">
+  <title>Using Reference Angles </title>
+  <para id="fs-id1165135477487">Now let’s take a moment to reconsider the Ferris wheel introduced at the beginning of this section. Suppose a rider snaps a photograph while stopped twenty feet above ground level. The rider then rotates three-quarters of the way around the circle. What is the rider’s new elevation? To answer questions such as this one, we need to evaluate the sine or cosine functions at angles that are greater than 90 degrees or at a <term class="no-emphasis">negative angle</term>. Reference angles make it possible to evaluate trigonometric functions for angles outside the first quadrant. They can also be used to find <m:math>
+   <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+      <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+     <m:mo>)</m:mo></m:mrow></m:mrow>
+  </m:math> coordinates for those angles. We will use the <term class="no-emphasis">reference angle</term> of the angle of rotation combined with the quadrant in which the terminal side of the angle lies.</para><section id="fs-id1165134190698">
+   <title>Using Reference Angles to Evaluate Trigonometric Functions</title>
+   <para id="fs-id1165134259243">We can find the cosine and sine of any angle in any quadrant if we know the cosine or sine of its reference angle. The absolute values of the cosine and sine of an angle are the same as those of the reference angle. The sign depends on the quadrant of the original angle. The cosine will be positive or negative depending on the sign of the <emphasis effect="italics">x</emphasis>-values in that quadrant. The sine will be positive or negative depending on the sign of the <emphasis effect="italics">y</emphasis>-values in that quadrant.</para>
+
+   <note id="fs-id1165137451827">
+
+    <title>Using Reference Angles to Find Cosine and Sine</title>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137401077">Angles have cosines and sines with the same absolute value as cosines and sines of their reference angles. The sign (positive or negative) can be determined from the quadrant of the angle.</para></note>
+
+   <note id="fs-id1165137401083" class="how-to-notitle">
+    <label>How To</label>
+    <para id="fs-id1165134047575"><emphasis>Given an angle in standard position, find the reference angle, and the cosine and sine of the original angle.
+    </emphasis></para>
+    <list id="fs-id1165137530558" list-type="enumerated" number-style="arabic">
+     <item>Measure the angle between the terminal side of the given angle and the horizontal axis. That is the reference angle.</item>
+    <item>Determine the values of the cosine and sine of the reference angle.</item>
+    <item>Give the cosine the same sign as the <emphasis effect="italics">x</emphasis>-values in the quadrant of the original angle.</item>
+    <item>Give the sine the same sign as the <emphasis effect="italics">y</emphasis>-values in the quadrant of the original angle.</item>
+    </list>
+   </note>
+
+   <example id="Example_05_02_06">
+    <exercise id="fs-id1165135521301">
+     <problem id="fs-id1165131990665">
+      <title>Using Reference Angles to Find Sine and Cosine</title>
+      <list id="fs-id1165131990670" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> Using a reference angle, find the exact value of <m:math>
+<m:mrow>
+         <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>150°</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+       </m:math> and <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>150°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+       </item>
+       <item><span class="token">ⓑ</span> Using the reference angle, find <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+       </item>
+      </list></problem>
+     <solution id="fs-id1165135534994">
+      <list id="fs-id1165135534996" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> 150° is located in the second quadrant. The angle it makes with the <emphasis effect="italics">x</emphasis>-axis is 180° − 150° = 30°, so the reference angle is 30°.
+
+      <para id="fs-id1165137827895">This tells us that 150° has the same sine and cosine values as 30°, except for the sign. We know that</para>
+<equation id="eip-id1165137673737" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+    </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mspace width="0.8em"/><m:mtext>and</m:mtext><m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</equation>
+      <para id="fs-id1165137445962">Since 150° is in the second quadrant, the <emphasis effect="italics">x</emphasis>-coordinate of the point on the circle is negative, so the cosine value is negative. The <emphasis effect="italics">y</emphasis>-coordinate is positive, so the sine value is positive.</para>
+<equation id="eip-id1165131997806" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>150°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+    </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mspace width="0.8em"/><m:mtext>and</m:mtext><m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>150°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math> </equation>
+       </item>
+       <item><span class="token">ⓑ</span> <m:math>
+<m:mrow>
+         <m:mfrac>
+  <m:mrow>
+           <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+          <m:mn>4</m:mn>
+         </m:mfrac></m:mrow>
+       </m:math> is in the third quadrant. Its reference angle is <m:math>
+<m:mrow>
+         <m:mfrac>
+  <m:mrow>
+           <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+         <m:mo>−</m:mo><m:mi>π</m:mi><m:mo>=</m:mo><m:mfrac>
+          <m:mi>π</m:mi>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+         <m:mo>.</m:mo></m:mrow>
+       </m:math> The cosine and sine of <m:math>
+<m:mrow>
+         <m:mfrac>
+          <m:mi>π</m:mi>
+          <m:mn>4</m:mn>
+         </m:mfrac></m:mrow>
+       </m:math> are both <m:math>
+<m:mrow>
+         <m:mfrac>
+  <m:mrow>
+           <m:msqrt>
+            <m:mn>2</m:mn>
+           </m:msqrt>
+          </m:mrow>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+         <m:mo>.</m:mo></m:mrow>
+       </m:math> In the third quadrant, both <m:math>
+<m:mrow>
+         <m:mi>x</m:mi></m:mrow>
+       </m:math> and <m:math>
+<m:mrow>
+         <m:mi>y</m:mi></m:mrow>
+       </m:math> are negative, so:
+        <equation id="fs-id1165134417904" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mspace width="0.8em"/><m:mtext>and</m:mtext><m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation></item>
+      </list></solution>
+    </exercise>
+   </example>
+
+   <note id="fs-id1165137550671" class="precalculus try">
+    <label>Try It</label>
+    <exercise id="ti_05_02_06">
+     <problem id="fs-id1165134081332">
+     <list id="fs-id1165134081334" list-type="enumerated" number-style="arabic" class="circled">
+       <item><span class="token">ⓐ</span> Use the reference angle of <m:math>
+   <m:mrow>
+        <m:mn>315°</m:mn></m:mrow>
+      </m:math> to find <m:math>
+   <m:mrow>
+        <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>315°</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+      </m:math> and <m:math>
+   <m:mrow>
+        <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo><m:mn>315°</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+      </m:math>
+      </item>
+      <item><span class="token">ⓑ</span> Use the reference angle of <m:math>
+   <m:mrow>
+        <m:mo>−</m:mo><m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      </m:math> to find <m:math>
+   <m:mrow>
+        <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+          <m:mo>−</m:mo><m:mfrac>
+           <m:mi>π</m:mi>
+           <m:mn>6</m:mn>
+          </m:mfrac>
+         </m:mrow>
+         <m:mo>)</m:mo></m:mrow></m:mrow>
+      </m:math> and <m:math>
+   <m:mrow>
+        <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+          <m:mo>−</m:mo><m:mfrac>
+           <m:mi>π</m:mi>
+           <m:mn>6</m:mn>
+          </m:mfrac>
+         </m:mrow>
+         <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+      </m:math>
+      </item>
+     </list></problem>
+     <solution id="fs-id1165135193308"><para id="fs-id1165135193309">
+    <list id="fs-id1165137647526" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>315</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mtext> sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>315</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>–</m:mo><m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+     </item>
+     <item><span class="token">ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi> sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+</m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+
+     </item>
+    </list></para></solution>
+    </exercise>
+
+  </note>
+  </section>
+  <section id="fs-id1165137766908">
+   <title>Using Reference Angles to Find Coordinates</title>
+   <para id="fs-id1165137766914">Now that we have learned how to find the cosine and sine values for special angles in the first quadrant, we can use symmetry and reference angles to fill in cosine and sine values for the rest of the special angles on the unit circle. They are shown in <link target-id="Figure_05_02_017"/>. Take time to learn the <m:math>
+<m:mrow>
+     <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> coordinates of all of the major angles in the first quadrant.</para>
+
+   <figure id="Figure_05_02_017"><media id="fs-id1165137438968" alt="Graph of unit circle with angles in degrees, angles in radians, and points along the circle inscribed.">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_017-6107.jpg"/>
+    </media>
+
+   <caption>Special angles and coordinates of corresponding points on the unit circle</caption></figure><para id="fs-id1165135704914">In addition to learning the values for special angles, we can use reference angles to find <m:math>
+<m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow></m:math> coordinates of any point on the unit circle, using what we know of reference angles along with the <term class="no-emphasis">identities</term></para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-150" class="unnumbered"><label/> <m:math>
+	<m:mtable>
+		<m:mtr>
+			<m:mtd>
+				<m:mi>x</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+			</m:mtd>
+			<m:mtd>
+				<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+			</m:mtd>
+		</m:mtr>
+	</m:mtable>
+</m:math> </equation><para id="fs-id1165137411099">First we find the reference angle corresponding to the given angle. Then we take the sine and cosine values of the <term class="no-emphasis">reference angle</term>, and give them the signs corresponding to the <emphasis effect="italics">y</emphasis>- and <emphasis effect="italics">x</emphasis>-values of the quadrant.</para><note id="fs-id1165137676498" class="how-to-notitle">
+    <label>How To</label>
+    <para id="fs-id1165135381357"><emphasis>Given the angle of a point on a circle and the radius of the circle, find the <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> coordinates of the point.</emphasis></para><list id="fs-id1165134211369" list-type="enumerated" number-style="arabic"><item>Find the reference angle by measuring the smallest angle to the <emphasis effect="italics">x</emphasis>-axis.</item>
+    <item>Find the cosine and sine of the reference angle.</item>
+    <item>Determine the appropriate signs for <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math>
+in the given quadrant.</item>
+    </list></note>
+
+   <example id="Example_05_02_07">
+    <exercise id="fs-id1165137409939">
+     <problem id="fs-id1165137409941">
+      <title>Using the Unit Circle to Find Coordinates</title>
+      <para id="fs-id1165137409947">Find the coordinates of the point on the unit circle at an angle of <m:math>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+        <m:mo>.</m:mo></m:mrow>
+      </m:math>
+      </para>
+     </problem>
+     <solution id="fs-id1165137704533">
+      <para id="fs-id1165137704536">We know that the angle <m:math>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      </m:math> is in the third quadrant. </para>
+
+      <para id="fs-id1165137851856">First, let’s find the reference angle by measuring the angle to the <emphasis effect="italics">x</emphasis>-axis. To find the reference angle of an angle whose terminal side is in quadrant III, we find the difference of the angle and <m:math>
+   <m:mrow>
+        <m:mi>π</m:mi><m:mo>.</m:mo></m:mrow>
+      </m:math>
+      </para>
+      <equation id="fs-id1165134555590" class="unnumbered"><label/> <m:math display="block">
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+        <m:mo>−</m:mo><m:mi>π</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+       </m:mrow>
+      </m:math>
+      </equation>
+     <para id="fs-id1165137394109">Next, we will find the cosine and sine of the reference angle:</para>
+      <equation id="fs-id1165137394112" class="unnumbered"><label/> <m:math display="block">
+   <m:mrow>
+        <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+          <m:mfrac>
+           <m:mi>π</m:mi>
+           <m:mn>6</m:mn>
+          </m:mfrac>
+         </m:mrow>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+  <m:mrow>
+           <m:msqrt>
+            <m:mn>3</m:mn>
+           </m:msqrt>
+          </m:mrow>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+        <m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+          <m:mfrac>
+           <m:mi>π</m:mi>
+           <m:mn>6</m:mn>
+          </m:mfrac>
+         </m:mrow>
+         <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+       </m:mrow>
+      </m:math>
+      </equation>
+      <para id="fs-id1165132011271">We must determine the appropriate signs for <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> in the given quadrant. Because our original angle is in the third quadrant, where both <m:math>
+   <m:mrow>
+        <m:mi>x</m:mi></m:mrow>
+      </m:math> and <m:math>
+   <m:mrow>
+        <m:mi>y</m:mi></m:mrow>
+      </m:math> are negative, both cosine and sine are negative.</para>
+      <equation id="fs-id1165137758918" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mn>7</m:mn><m:mi>π</m:mi>
+         </m:mrow>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+ <m:mrow>
+      <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mn>7</m:mn><m:mi>π</m:mi>
+         </m:mrow>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd></m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135503862">Now we can calculate the <m:math>
+   <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+          <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+         <m:mo>)</m:mo></m:mrow></m:mrow>
+      </m:math> coordinates using the identities <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+
+     </para><para id="fs-id1165137411025">The coordinates of the point are <m:math>
+   <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+          <m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+            <m:msqrt>
+             <m:mn>3</m:mn>
+            </m:msqrt>
+           </m:mrow>
+           <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac>
+           <m:mn>1</m:mn>
+           <m:mn>2</m:mn>
+          </m:mfrac>
+         </m:mrow>
+         <m:mo>)</m:mo></m:mrow></m:mrow>
+      </m:math> on the unit circle.</para>
+     </solution>
+    </exercise>
+   </example>
+
+   <note id="fs-id1165137407555" class="precalculus try">
+    <label>Try It</label>
+    <exercise id="ti_05_02_07">
+     <problem id="fs-id1165137535595"><para id="fs-id1165137535596">Find the coordinates of the point on the unit circle at an angle of <m:math>
+  <m:mrow>
+       <m:mfrac>
+<m:mrow>
+         <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+        <m:mn>3</m:mn>
+       </m:mfrac>
+       <m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </para></problem>
+     <solution id="fs-id1165135530358"><para id="fs-id1165135530359"> <m:math>
+  <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+         <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+         <m:mo>,</m:mo><m:mo>−</m:mo><m:mfrac>
+  <m:mrow>
+           <m:msqrt>
+            <m:mn>3</m:mn>
+           </m:msqrt>
+          </m:mrow>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+        </m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+     </m:math>
+     </para></solution>
+    </exercise>
+   </note>
+
+   <note id="fs-id1165137583095" class="precalculus media media-notitle">
+    <label>Media</label>
+    <para id="fs-id1165137828452">Access these online resources for additional instruction and practice with sine and cosine functions.</para>
+
+   <list id="fs-id1165135160446" list-type="bulleted">
+    <item><link url="http://openstax.org/l/trigunitcir">Trigonometric Functions Using the Unit Circle</link></item>
+    <item><link url="http://openstax.org/l/sincosuc">Sine and Cosine from the Unit Circle</link></item>
+    <item><link url="http://openstax.org/l/sincosmult">Sine and Cosine from the Unit Circle and Multiples of Pi Divided by Six</link></item>
+    <item><link url="http://openstax.org/l/sincosmult4">Sine and Cosine from the Unit Circle and Multiples of Pi Divided by Four</link></item>
+    <item><link url="http://openstax.org/l/trigrefang">Trigonometric Functions Using Reference Angles</link></item>
+   </list>
+   </note>
+   </section>
+ </section>
+ <section id="fs-id1165133238450" class="key-equations"><title>Key Equations</title><table id="eip-id1165134284283" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry>Cosine </entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry>Sine </entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>y</m:mi>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry>Pythagorean Identity</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>t</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sin</m:mi></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></section><section id="fs-id1165137692629" class="key-concepts">
+   <title>Key Concepts</title>
+   <list id="fs-id1165137772132" list-type="bulleted"><item>Finding the function values for the sine and cosine begins with drawing a unit circle, which is centered at the origin and has a radius of 1 unit.</item>
+    <item>Using the unit circle, the sine of an angle <m:math>
+ <m:mrow>
+      <m:mi>t</m:mi></m:mrow>
+    </m:math> equals the <emphasis effect="italics">y</emphasis>-value of the endpoint on the unit circle of an arc of length <m:math>
+ <m:mrow>
+      <m:mi>t</m:mi></m:mrow>
+    </m:math> whereas the cosine of an angle <m:math>
+ <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mspace width="0.8em"/></m:mrow>
+    </m:math> equals the <emphasis effect="italics">x</emphasis>-value of the endpoint. See <link target-id="Example_05_02_01"/>.</item>
+    <item>The sine and cosine values are most directly determined when the corresponding point on the unit circle falls on an axis. See <link target-id="Example_05_02_02"/>.</item>
+    <item>When the sine or cosine is known, we can use the Pythagorean Identity to find the other. The Pythagorean Identity is also useful for determining the sines and cosines of special angles. See <link target-id="Example_05_02_03"/>.</item>
+    <item>Calculators and graphing software are helpful for finding sines and cosines if the proper procedure for entering information is known. See <link target-id="Example_05_02_04"/>.</item>
+   <item>The domain of the sine and cosine functions is all real numbers.</item>
+    <item>The range of both the sine and cosine functions is <m:math>
+ <m:mrow>
+      <m:mo stretchy="false">[</m:mo><m:mi>−</m:mi><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </item>
+   <item>The sine and cosine of an angle have the same absolute value as the sine and cosine of its reference angle.</item>
+   <item>The signs of the sine and cosine are determined from the <emphasis effect="italics">x</emphasis>- and <emphasis effect="italics">y</emphasis>-values in the quadrant of the original angle.</item>
+    <item>An angle’s reference angle is the size angle, <m:math>
+ <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math>
+     formed by the terminal side of the angle <m:math>
+  <m:mrow>
+       <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mspace width="0.8em"/></m:mrow>
+     </m:math> and the horizontal axis. See <link target-id="Example_05_02_05"/>.</item>
+    <item>Reference angles can be used to find the sine and cosine of the original angle. See <link target-id="Example_05_02_06"/>.</item>
+    <item>Reference angles can also be used to find the coordinates of a point on a circle. See <link target-id="Example_05_02_07"/>.</item>
+   </list></section>
+ <section id="fs-id1165134104969" class="section-exercises">
+<title>Section Exercises</title><section id="fs-id1165137723621">
+<title>Verbal</title>
+
+<exercise id="fs-id1165137723626">
+ <problem id="fs-id1165137723628">
+  <para id="fs-id1165135453214">Describe the unit circle.</para>
+ </problem>
+<solution id="fs-id1165135453218">
+ <para id="fs-id1165135453220">The unit circle is a circle of radius 1 centered at the origin.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137634334">
+ <problem id="fs-id1165137634336">
+  <para id="fs-id1165137634338">What do the <emphasis effect="italics">x-</emphasis> and <emphasis effect="italics">y-</emphasis>coordinates of the points on the unit circle represent?</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165135203830"><problem id="fs-id1165135203831"><para id="fs-id1165135203832">Discuss the difference between a coterminal angle and a reference angle.</para></problem>
+ <solution id="fs-id1165135203835"><para id="fs-id1165135264623">Coterminal angles are angles that share the same terminal side. A reference angle is the size of the smallest acute angle, <m:math>
+  <m:mrow>
+   <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+ </m:math> formed by the terminal side of the angle <m:math>
+  <m:mrow>
+   <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mspace width="0.8em"/></m:mrow>
+ </m:math> and the horizontal axis.</para></solution></exercise>
+<exercise id="fs-id1165135581119">
+ <problem id="fs-id1165135581121">
+  <para id="fs-id1165135581123">Explain how the cosine of an angle in the second quadrant differs from the cosine of its reference angle in the unit circle.</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165135386386">
+ <problem id="fs-id1165135386388">
+  <para id="fs-id1165135160169">Explain how the sine of an angle in the second quadrant differs from the sine of its reference angle in the unit circle.</para>
+ </problem>
+<solution id="fs-id1165135160175">
+ <para id="fs-id1165135160177">The sine values are equal.</para>
+</solution>
+</exercise>
+
+</section>
+<section id="fs-id1165134164931">
+<title>Algebraic</title>
+ <para id="fs-id1165137892514">For the following exercises, use the given sign of the sine and cosine functions to find the quadrant in which the terminal point determined by <m:math><m:mrow><m:mi>t</m:mi></m:mrow></m:math> lies.</para><exercise id="fs-id1165137922537">
+ <problem id="fs-id1165137705382">
+  <para id="fs-id1165137705384"> <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>  </para></problem>
+</exercise>
+<exercise id="fs-id1165134033290">
+ <problem id="fs-id1165134033293">
+  <para id="fs-id1165134033295"> <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&gt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165135193433"><para id="fs-id1165137732793">I</para></solution></exercise>
+<exercise id="fs-id1165135193436">
+ <problem id="fs-id1165137550967">
+  <para id="fs-id1165137550969"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&gt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+ and
+ <m:math>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+</exercise>
+<exercise id="fs-id1165134283621">
+ <problem id="fs-id1165134283623">
+  <para id="fs-id1165137758818"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+
+ and <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&gt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+
+  </para></problem>
+<solution id="fs-id1165135436607">
+ <para id="fs-id1165135436609">IV</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135436614">For the following exercises, find the exact value of each trigonometric function.</para>
+<exercise id="fs-id1165137897001">
+ <problem id="fs-id1165137897003">
+  <para id="fs-id1165137897005"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165131958307">
+ <problem id="fs-id1165131958309">
+  <para id="fs-id1165131958311"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135499874">
+ <para id="fs-id1165135499876"> <m:math>
+  <m:mrow>
+   <m:mfrac>
+<m:mrow>
+     <m:msqrt>
+      <m:mn>3</m:mn>
+     </m:msqrt>
+    </m:mrow>
+    <m:mn>2</m:mn></m:mfrac>
+  </m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+ <exercise id="fs-id1165135500809">
+  <problem id="fs-id1165135500811">
+   <para id="fs-id1165137502314"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+ </exercise>
+ <exercise id="fs-id1165135291998">
+  <problem id="fs-id1165135292000">
+   <para id="fs-id1165135292002"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+  <solution id="fs-id1165137667848">
+   <para id="fs-id1165137667850"> <m:math>
+<m:mrow>
+     <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+    </m:mrow></m:math>
+   </para></solution>
+ </exercise>
+ <exercise id="fs-id1165135498709">
+  <problem id="fs-id1165135498711">
+   <para id="fs-id1165137723804"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+ </exercise>
+ <exercise id="fs-id1165137755714">
+  <problem id="fs-id1165137755716">
+   <para id="fs-id1165137755718"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+  <solution id="fs-id1165137823088">
+   <para id="fs-id1165137823090"> <m:math>
+<m:mrow>
+     <m:mfrac>
+  <m:mrow>
+       <m:msqrt>
+        <m:mn>2</m:mn>
+       </m:msqrt>
+      </m:mrow>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+    </m:mrow></m:math>
+   </para>
+  </solution>
+ </exercise>
+ <exercise id="fs-id1165134187203">
+  <problem id="fs-id1165134187205">
+   <para id="fs-id1165134187207"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+ </exercise>
+ <exercise id="fs-id1165134547362">
+  <problem id="fs-id1165135305902">
+   <para id="fs-id1165135305904"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>π</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+  <solution id="fs-id1165133233941">
+   <para id="fs-id1165133233943">0</para>
+  </solution>
+ </exercise>
+ <exercise id="fs-id1165135559477">
+  <problem id="fs-id1165135559479">
+   <para id="fs-id1165135559481"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+ </exercise>
+ <exercise id="fs-id1165132945572">
+  <problem id="fs-id1165132945574">
+   <para id="fs-id1165132945576"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>π</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+  <solution id="fs-id1165134486775">
+   <para id="fs-id1165137433179">−1</para></solution>
+ </exercise>
+ <exercise id="fs-id1165137433184">
+  <problem id="fs-id1165137433186">
+   <para id="fs-id1165135409732"> <m:math>
+<m:mrow>
+     <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>0</m:mn></m:mrow></m:math>
+   </para></problem>
+ </exercise>
+ <exercise id="fs-id1165134199585">
+  <problem id="fs-id1165134199588">
+   <para id="fs-id1165134199590"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+  <solution id="fs-id1165133129088">
+   <para id="fs-id1165137696179"> <m:math>
+<m:mrow>
+     <m:mfrac>
+  <m:mrow>
+       <m:msqrt>
+        <m:mn>3</m:mn>
+       </m:msqrt>
+      </m:mrow>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+    </m:mrow></m:math>
+   </para>
+  </solution>
+ </exercise>
+<exercise id="fs-id1165134257598">
+ <problem id="fs-id1165134257600">
+  <para id="fs-id1165137641456"> <m:math>
+   <m:mrow>
+    <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mn>0</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+</exercise>
+
+</section>
+<section id="fs-id1165137870972">
+<title>Numeric</title>
+
+<para id="fs-id1165137610933">For the following exercises, state the reference angle for the given angle.</para>
+
+<exercise id="fs-id1165137610936">
+ <problem id="fs-id1165137610938">
+  <para id="fs-id1165137610941"> <m:math>
+   <m:mrow>
+    <m:mn>240°</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165137817740">
+ <para id="fs-id1165137817742"> <m:math>
+  <m:mrow>
+   <m:mn>60°</m:mn></m:mrow>
+ </m:math>
+ </para></solution>
+</exercise>
+<exercise id="fs-id1165134149896">
+ <problem id="fs-id1165134149898">
+  <para id="fs-id1165137644419"> <m:math>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>170°</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+</exercise>
+ <exercise id="fs-id1165135487247">
+ <problem id="fs-id1165135487249">
+  <para id="fs-id1165137722301"> <m:math>
+   <m:mrow>
+    <m:mn>100°</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+ <solution id="fs-id1165135571779">
+  <para id="fs-id1165135571782"> <m:math>
+   <m:mrow>
+    <m:mn>80°</m:mn></m:mrow>
+  </m:math>
+  </para></solution>
+ </exercise>
+ <exercise id="fs-id1165135169089">
+  <problem id="fs-id1165134328208">
+   <para id="fs-id1165134328210"> <m:math>
+<m:mrow>
+     <m:mo>−</m:mo><m:mn>315°</m:mn></m:mrow></m:math>
+   </para></problem>
+ </exercise>
+ <exercise id="fs-id1165134151220">
+ <problem id="fs-id1165137735571">
+  <para id="fs-id1165137735573"> <m:math>
+   <m:mrow>
+    <m:mn>135°</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+ <solution id="fs-id1165134112806">
+  <para id="fs-id1165134112808"> <m:math>
+   <m:mrow>
+    <m:mn>45°</m:mn></m:mrow>
+  </m:math>
+  </para></solution>
+ </exercise>
+ <exercise id="fs-id1165135530586">
+  <problem id="fs-id1165135530588">
+   <para id="fs-id1165135530590"> <m:math>
+<m:mrow>
+     <m:mfrac>
+  <m:mrow>
+       <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+      <m:mn>4</m:mn>
+     </m:mfrac>
+    </m:mrow></m:math>
+   </para>
+  </problem>
+ </exercise>
+ <exercise id="fs-id1165135645974">
+ <problem id="fs-id1165135481183">
+  <para id="fs-id1165135481185"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+ <solution id="fs-id1165132032593">
+  <para id="fs-id1165132032596"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </solution>
+ </exercise>
+ <exercise id="fs-id1165134261853">
+  <problem id="fs-id1165134261855">
+   <para id="fs-id1165135613447"> <m:math>
+<m:mrow>
+     <m:mfrac>
+  <m:mrow>
+       <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+      <m:mn>6</m:mn>
+     </m:mfrac>
+    </m:mrow></m:math>
+   </para>
+  </problem>
+ </exercise>
+ <exercise id="fs-id1165134566554">
+ <problem id="fs-id1165134566557">
+  <para id="fs-id1165134566559"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mo>−</m:mo><m:mn>11</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+ <solution id="fs-id1165133078158">
+  <para id="fs-id1165133078160"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </solution>
+ </exercise>
+ <exercise id="fs-id1165135149105">
+  <problem id="fs-id1165135149107">
+   <para id="fs-id1165135149110"> <m:math>
+<m:mrow>
+     <m:mfrac>
+  <m:mrow>
+       <m:mo>−</m:mo><m:mspace width="0.8em"/><m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+      <m:mn>4</m:mn>
+     </m:mfrac>
+    </m:mrow></m:math>
+   </para>
+  </problem>
+ </exercise>
+ <exercise id="fs-id1165137593035">
+ <problem id="fs-id1165137593037">
+  <para id="fs-id1165137593039"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mo>−</m:mo><m:mi>π</m:mi></m:mrow>
+     <m:mn>8</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+ <solution id="fs-id1165137668266">
+  <para id="fs-id1165134149877"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>8</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </solution>
+ </exercise>
+
+
+<para id="fs-id1165137895387">For the following exercises, find the reference angle, the quadrant of the terminal side, and the sine and cosine of each angle. If the angle is not one of the special angles on the unit circle, use a calculator and round to three decimal places.</para><exercise id="fs-id1165137895393">
+ <problem id="fs-id1165137895395">
+  <para id="fs-id1165137895397"> <m:math>
+   <m:mrow>
+    <m:mn>225°</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+</exercise>
+<exercise id="fs-id1165134380844">
+ <problem id="fs-id1165134380846">
+  <para id="fs-id1165134380849"> <m:math>
+   <m:mrow>
+    <m:mn>300°</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165135154333">
+ <para id="fs-id1165135154336"> <m:math>
+  <m:mrow>
+   <m:mn>60°</m:mn><m:mo>,</m:mo></m:mrow>
+ </m:math> Quadrant IV, <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>300°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>300°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+ </para></solution>
+</exercise>
+<exercise id="fs-id1165134297638">
+ <problem id="fs-id1165134297640">
+  <para id="fs-id1165134297642"> <m:math>
+   <m:mrow>
+    <m:mn>320°</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+</exercise>
+<exercise id="fs-id1165137895372">
+ <problem id="fs-id1165137410915">
+  <para id="fs-id1165137410917"> <m:math>
+   <m:mrow>
+    <m:mn>135°</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165137890678">
+ <para id="fs-id1165137890680"> <m:math>
+  <m:mrow>
+   <m:mn>45°</m:mn><m:mo>,</m:mo></m:mrow>
+ </m:math> Quadrant II, <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>135°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+  <m:mrow>
+   <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>135°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+     <m:msqrt>
+      <m:mn>2</m:mn>
+     </m:msqrt>
+    </m:mrow>
+    <m:mn>2</m:mn></m:mfrac>
+  </m:mrow>
+ </m:math>
+ </para></solution>
+</exercise>
+<exercise id="fs-id1165137569890"><problem id="fs-id1165137569892">
+  <para id="fs-id1165137569894"> <m:math>
+   <m:mrow>
+    <m:mn>210°</m:mn></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+</exercise><exercise id="fs-id1165135675182">
+ <problem id="fs-id1165134589536">
+  <para id="fs-id1165134589539"> <m:math>
+   <m:mrow>
+    <m:mn>120°</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+ <solution id="fs-id1165135332783"><para id="fs-id1165135332784"> <m:math>
+  <m:mrow>
+   <m:mn>60°</m:mn><m:mo>,</m:mo></m:mrow>
+ </m:math> Quadrant II, <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>120°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+  <m:mrow>
+   <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>120°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>2</m:mn></m:mfrac>
+  </m:mrow>
+ </m:math>
+ </para></solution></exercise>
+<exercise id="fs-id1165134198710">
+ <problem id="fs-id1165134198712">
+  <para id="fs-id1165137463836"> <m:math>
+   <m:mrow>
+    <m:mn>250°</m:mn></m:mrow>
+  </m:math>
+  </para></problem>
+</exercise>
+<exercise id="fs-id1165134401722"><problem id="fs-id1165134401724">
+  <para id="fs-id1165134401726"> <m:math>
+   <m:mrow>
+    <m:mn>150°</m:mn></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+<solution id="fs-id1165131937940">
+ <para id="fs-id1165131937942"> <m:math>
+  <m:mrow>
+   <m:mn>30°</m:mn><m:mo>,</m:mo></m:mrow>
+ </m:math> Quadrant II, <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>150°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+  <m:mrow>
+   <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>150°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+     <m:msqrt>
+      <m:mn>3</m:mn>
+     </m:msqrt>
+    </m:mrow>
+    <m:mn>2</m:mn></m:mfrac>
+  </m:mrow>
+ </m:math>
+ </para></solution>
+</exercise><exercise id="fs-id1165133291318">
+ <problem id="fs-id1165133291320">
+  <para id="fs-id1165134170107"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137897086">
+ <problem id="fs-id1165137897088">
+  <para id="fs-id1165137897090"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+<solution id="fs-id1165135192734">
+ <para id="fs-id1165135192736"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> Quadrant III, <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165137647553">
+ <problem id="fs-id1165137647555">
+  <para id="fs-id1165137647557"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137662747">
+ <problem id="fs-id1165137662749">
+  <para id="fs-id1165137662751"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+<solution id="fs-id1165135547159">
+ <para id="fs-id1165137838000"> <m:math>
+  <m:mrow>
+   <m:mfrac>
+    <m:mi>π</m:mi>
+    <m:mn>4</m:mn></m:mfrac>
+   <m:mo>,</m:mo></m:mrow>
+ </m:math> Quadrant II, <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+      <m:mfrac>
+   <m:mrow>
+        <m:mn>4</m:mn><m:mi>π</m:mi></m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+     </m:mrow>
+     <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+  <m:mrow>
+       <m:mroot>
+        <m:mn>2</m:mn>
+        <m:mrow/>
+       </m:mroot>
+      </m:mrow>
+      <m:mn>2</m:mn>
+     </m:mfrac></m:mrow>
+  </m:math>
+ </para></solution>
+</exercise>
+<exercise id="fs-id1165135205730">
+ <problem id="fs-id1165135205732">
+  <para id="fs-id1165135205734"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mn>4</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137823324">
+ <problem id="fs-id1165137823326">
+  <para id="fs-id1165137823328"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+<solution id="fs-id1165137833929">
+ <para id="fs-id1165137833931"> <m:math>
+  <m:mrow>
+   <m:mfrac>
+    <m:mi>π</m:mi>
+    <m:mn>3</m:mn></m:mfrac>
+   <m:mo>,</m:mo></m:mrow>
+ </m:math> Quadrant II, <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+   <m:mrow>
+    <m:mspace width="0.8em"/><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+      <m:mfrac>
+   <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+     </m:mrow>
+     <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+     </m:mfrac></m:mrow>
+  </m:math>
+ </para></solution>
+</exercise>
+<exercise id="fs-id1165133289683">
+ <problem id="fs-id1165133289685">
+  <para id="fs-id1165133289688"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165134057532">
+ <problem id="fs-id1165134057534">
+  <para id="fs-id1165134057536"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+<solution id="fs-id1165135582120">
+ <para id="fs-id1165135582122"> <m:math>
+  <m:mrow>
+   <m:mfrac>
+    <m:mi>π</m:mi>
+    <m:mn>4</m:mn></m:mfrac>
+   <m:mo>,</m:mo></m:mrow>
+ </m:math> Quadrant IV, <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mtext> cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+ </para></solution>
+</exercise>
+
+<para id="fs-id1165137737560">For the following exercises, find the requested value.</para>
+<exercise id="fs-id1165137737563">
+ <problem id="fs-id1165137737565">
+  <para id="fs-id1165137737567">If <m:math>
+   <m:mrow>
+    <m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo>
+     <m:mi>t</m:mi>
+     <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>7</m:mn>
+     </m:mfrac>
+    </m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mi>t</m:mi></m:mrow>
+  </m:math> is in the 4<sup>th</sup> quadrant, find <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>  </para></problem>
+</exercise>
+<exercise id="fs-id1165135706767">
+ <problem id="fs-id1165135706770">
+  <para id="fs-id1165135706772">If <m:math>
+   <m:mrow>
+    <m:mtext>cos</m:mtext><m:mrow><m:mo>(</m:mo>
+     <m:mi>t</m:mi>
+     <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+      <m:mn>2</m:mn>
+      <m:mn>9</m:mn>
+     </m:mfrac>
+    </m:mrow>
+  </m:math> and <m:math>
+   <m:mrow>
+    <m:mi>t</m:mi></m:mrow>
+  </m:math> is in the 1<sup>st</sup> quadrant, find <m:math>
+ <m:mrow>
+  <m:mtext>sin</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>  </para></problem>
+ <solution id="fs-id1165134036846"><para id="fs-id1165134036847"> <m:math>
+  <m:mrow>
+   <m:mfrac>
+<m:mrow>
+     <m:msqrt>
+  <m:mrow>
+       <m:mn>77</m:mn></m:mrow>
+     </m:msqrt>
+    </m:mrow>
+    <m:mn>9</m:mn></m:mfrac>
+  </m:mrow>
+ </m:math>
+ </para></solution></exercise>
+<exercise id="fs-id1165134290302">
+ <problem id="fs-id1165134290304">
+  <para id="fs-id1165134290306">If <m:math>
+   <m:mrow>
+    <m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo>
+     <m:mi>t</m:mi>
+     <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+      <m:mn>3</m:mn>
+      <m:mn>8</m:mn>
+     </m:mfrac>
+    </m:mrow>
+  </m:math> and <m:math>
+<m:mrow>
+     <m:mi>t</m:mi></m:mrow></m:math> is in the 2<sup>nd</sup> quadrant, find <m:math>
+ <m:mrow>
+  <m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+  </para></problem>
+</exercise>
+<exercise id="fs-id1165135663289">
+ <problem id="fs-id1165135663292">
+  <para id="fs-id1165135663294">If <m:math>
+   <m:mrow>
+    <m:mtext>sin</m:mtext><m:mrow><m:mo>(</m:mo>
+     <m:mi>t</m:mi>
+     <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>4</m:mn>
+     </m:mfrac>
+    </m:mrow>
+  </m:math> and <m:math>
+<m:mrow>
+     <m:mi>t</m:mi></m:mrow>
+  </m:math> is in the 3<sup>rd</sup> quadrant, find <m:math>
+ <m:mrow>
+  <m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+  </para></problem>
+ <solution id="fs-id1165135448310"><para id="fs-id1165135634389"> <m:math>
+  <m:mrow>
+   <m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+     <m:msqrt>
+  <m:mrow>
+       <m:mn>15</m:mn></m:mrow>
+     </m:msqrt>
+    </m:mrow>
+    <m:mn>4</m:mn></m:mfrac>
+  </m:mrow>
+ </m:math>
+</para>
+ </solution></exercise>
+<exercise id="fs-id1165137436202">
+ <problem id="fs-id1165137436204">
+  <para id="fs-id1165137436206">Find the coordinates of the point on a circle with radius 15 corresponding to an angle of <m:math>
+   <m:mrow>
+    <m:mn>220°</m:mn><m:mo>.</m:mo></m:mrow>
+  </m:math>
+  </para></problem>
+</exercise>
+<exercise id="fs-id1165137416565">
+ <problem id="fs-id1165137416567">
+  <para id="fs-id1165137416570">Find the coordinates of the point on a circle with radius 20 corresponding to an angle of <m:math>
+   <m:mrow>
+    <m:mn>120°</m:mn><m:mo>.</m:mo></m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165133434632">
+ <para id="fs-id1165133434634"> <m:math>
+  <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+     <m:mo>−</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:msqrt>
+      <m:mn>3</m:mn>
+     </m:msqrt>
+    </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+ </m:math>
+ </para>
+</solution></exercise>
+<exercise id="fs-id1165137422762">
+ <problem id="fs-id1165137422764">
+  <para id="fs-id1165137422766">Find the coordinates of the point on a circle with radius 8 corresponding to an angle of <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    <m:mo>.</m:mo></m:mrow>
+  </m:math>
+  </para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137696997">
+ <problem id="fs-id1165133030831"><para id="fs-id1165133030832">Find the coordinates of the point on a circle with radius 16 corresponding to an angle of <m:math>
+  <m:mrow>
+   <m:mfrac>
+<m:mrow>
+     <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+    <m:mn>9</m:mn></m:mfrac>
+   <m:mo>.</m:mo></m:mrow>
+ </m:math>
+ </para>
+ </problem>
+ <solution id="fs-id1165137464223"><para id="fs-id1165137464224"> <m:math>
+  <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+     <m:mo>–</m:mo><m:mn>2.778</m:mn><m:mo>,</m:mo><m:mn>15.757</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+ </m:math>
+ </para></solution></exercise>
+<exercise id="fs-id1165137911098">
+ <problem id="fs-id1165137911100">
+  <para id="fs-id1165137911102">State the domain of the sine and cosine functions.</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137911107">
+ <problem id="fs-id1165137911109">
+  <para id="fs-id1165137854805">State the range of the sine and cosine functions.</para>
+ </problem>
+<solution id="fs-id1165137854809">
+ <para id="fs-id1165137854811"> <m:math>
+  <m:mrow>
+   <m:mrow><m:mo>[</m:mo> <m:mrow>
+    <m:mo>–</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise>
+
+</section>
+<section id="fs-id1165137756003">
+<title>Graphical</title>
+<para id="fs-id1165137827171">For the following exercises, use the given point on the unit circle to find the value of the sine and cosine of <m:math>
+ <m:mrow>
+  <m:mspace width="0.8em"/><m:mi>t</m:mi><m:mtext> .</m:mtext></m:mrow>
+</m:math>
+</para><exercise id="fs-id1165137827175" class="material-set-2"><problem id="fs-id1165137827177">
+
+   <media id="fs-id1165137419333" alt="Graph of a quarter circle with angles of 0, 30, 45, 60, and 90 degrees inscribed. Equivalence of angles in radians shown. Points along circle are marked." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_201.jpg"/>
+</media>
+
+ </problem>
+</exercise><exercise id="fs-id1165137453646" class="material-set-2"><problem id="fs-id1165137453648">
+ <media id="fs-id1165137453655" alt="Graph of circle with angle of t inscribed. Point of (negative square root of 3 over 2, 1/2) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_202.jpg"/>
+</media>
+
+ </problem>
+ <solution id="fs-id1165137453657"><para id="fs-id1165133249148"> <m:math>
+  <m:mrow>
+   <m:mi>sin</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>2</m:mn></m:mfrac>
+   <m:mo>,</m:mo><m:mi>cos</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+     <m:msqrt>
+      <m:mn>3</m:mn>
+     </m:msqrt>
+    </m:mrow>
+    <m:mn>2</m:mn></m:mfrac>
+  </m:mrow>
+ </m:math>
+ </para>
+</solution>
+</exercise><exercise id="fs-id1165137692840" class="material-set-2"><problem id="fs-id1165137692842">
+
+    <media id="fs-id1165137443560" alt="Graph of circle with angle of t inscribed. Point of (1/2, negative square root of 3 over 2) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_203.jpg"/>
+</media>
+
+
+  </problem>
+ </exercise><exercise id="fs-id1165135388992" class="material-set-2"><problem id="fs-id1165135388994">
+<media id="fs-id1165137781574" alt="Graph of circle with angle of t inscribed. Point of (negative square root of 2 over 2, negative square root of 2 over 2) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_204.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1165137888941">
+ <para id="fs-id1165137888943"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise><exercise id="fs-id1165137426316" class="material-set-2"><problem id="fs-id1165137426318">
+
+   <media id="fs-id1165135186480" alt="Graph of circle with angle of t inscribed. Point of (1/2, square root of 3 over 2) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_205.jpg"/>
+</media>
+
+ </problem>
+</exercise><exercise id="fs-id1165135651473" class="material-set-2"><problem id="fs-id1165135651474"><media id="fs-id1165137806683" alt="Graph of circle with angle of t inscribed. Point of (-1/2, square root of 3 over 2) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_206.jpg"/>
+</media>
+ </problem>
+  <solution id="fs-id1165135195408"><para id="fs-id1165135195409"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise><exercise id="fs-id1165137435410" class="material-set-2"><problem id="fs-id1165137435412">
+
+   <media id="fs-id1165137654472" alt="Graph of circle with angle of t inscribed. Point of (-1/2, negative square root of 3 over 2) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_207.jpg"/>
+</media>
+
+ </problem>
+</exercise><exercise id="fs-id1165137604137" class="material-set-2"><problem id="fs-id1165137604139">
+
+    <media id="fs-id1165137833905" alt="Graph of circle with angle of t inscribed. Point of (square root of 2 over 2, negative square root of 2 over 2) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_208.jpg"/>
+</media>
+
+  </problem>
+  <solution id="fs-id1165135251392"><para id="fs-id1165135251393"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise><exercise id="fs-id1165137677204" class="material-set-2"><problem id="fs-id1165137677206">
+<media id="fs-id1165137677212" alt="Graph of circle with angle of t inscribed. Point of (1,0) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_209.jpg"/>
+</media>
+
+ </problem>
+</exercise><exercise id="fs-id1165137551050" class="material-set-2"><problem id="fs-id1165137551052">
+  <media id="fs-id1165134163956" alt="Graph of circle with angle of t inscribed. Point of (-1,0) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_210.jpg"/>
+</media>
+
+ </problem>
+<solution id="fs-id1165135193111">
+ <para id="fs-id1165135193113"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise><exercise id="fs-id1165137824500" class="material-set-2"><problem id="fs-id1165137824502">
+
+    <media id="fs-id1165137824509" alt="Graph of circle with angle of t inscribed. Point of (0.111,0.994) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_211.jpg"/>
+</media>
+
+  </problem>
+ </exercise><exercise id="fs-id1165135485159" class="material-set-2"><problem id="fs-id1165135485161">
+
+   <media id="fs-id1165135485168" alt="Graph of circle with angle of t inscribed. Point of (0.803,-0.596 is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_212-c62f.jpg"/>
+</media>
+
+ </problem>
+ <solution id="fs-id1165137784840"><para id="fs-id1165137784841"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.596</m:mn><m:mo>,</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0.803</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise><exercise id="fs-id1165135208803" class="material-set-2"><problem id="fs-id1165135208804">
+ <media id="fs-id1165134042160" alt="Graph of circle with angle of t inscribed. Point of (negative square root of 2 over 2, square root of 2 over 2) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_213.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165135192350" class="material-set-2"><problem id="fs-id1165135192353">
+
+   <media id="fs-id1165137705895" alt="Graph of circle with angle of t inscribed. Point of (square root of 3 over 2, 1/2) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_214.jpg"/>
+</media>
+
+ </problem>
+ <solution id="fs-id1165137809935"><para id="fs-id1165137809936"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise><exercise id="fs-id1165134081017" class="material-set-2"><problem id="fs-id1165134081019">
+
+    <media id="fs-id1165137828004" alt="Graph of circle with angle of t inscribed. Point of (negative square root of 3 over 2, -1/2) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_215.jpg"/>
+</media>
+
+  </problem>
+ </exercise><exercise id="fs-id1165135199613" class="material-set-2"><problem id="fs-id1165135199614">
+ <media id="fs-id1165137705224" alt="Graph of circle with angle of t inscribed. Point of (square root of 3 over 2, -1/2) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_216.jpg"/>
+</media>
+</problem>
+ <solution id="fs-id1165137932463"><para id="fs-id1165137932464"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+</m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise><exercise id="fs-id1165135572020" class="material-set-2"><problem id="fs-id1165135572022">
+
+   <media id="fs-id1165137477135" alt="Graph of circle with angle of t inscribed. Point of (0, -1) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_217.jpg"/>
+</media>
+
+ </problem>
+</exercise><exercise id="fs-id1165135434852" class="material-set-2"><problem id="fs-id1165135434853">
+  <media id="fs-id1165134198687" alt="Graph of circle with angle of t inscribed. Point of (-0.649, 0.761) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_218.jpg"/>
+</media>
+</problem>
+  <solution id="fs-id1165137696522"><para id="fs-id1165137696523"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0.761</m:mn><m:mo>,</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.649</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise><exercise id="fs-id1165137456635" class="material-set-2"><problem id="fs-id1165137456636">
+  <media id="fs-id1165137456642" alt="Graph of circle with angle of t inscribed. Point of (-0.948, -0.317) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_219.jpg"/>
+</media>
+</problem></exercise><exercise id="fs-id1165135172289" class="material-set-2"><problem id="fs-id1165135172291">
+
+   <media id="fs-id1165137627624" alt="Graph of circle with angle of t inscribed. Point of (0, 1) is at intersection of terminal side of angle and edge of circle." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_05_02_220.jpg"/>
+</media>
+
+ </problem>
+<solution id="fs-id1165135429391">
+ <para id="fs-id1165135429393"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise></section>
+<section id="fs-id1165134433388">
+<title>Technology</title>
+
+<para id="fs-id1165134433394">For the following exercises, use a graphing calculator to evaluate.</para>
+<exercise id="fs-id1165134086037">
+ <problem id="fs-id1165134086039">
+  <para id="fs-id1165134086041"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>9</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+ <exercise id="fs-id1165135173784">
+  <problem id="fs-id1165135173786">
+   <para id="fs-id1165135173788"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>9</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137415669"><para id="fs-id1165137704572">−0.1736</para></solution>
+ </exercise>
+ <exercise id="fs-id1165137704576">
+  <problem id="fs-id1165137704578">
+   <para id="fs-id1165137704580"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mrow>
+    <m:mn>10</m:mn></m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+ </exercise>
+ <exercise id="fs-id1165137655192">
+  <problem id="fs-id1165137655195">
+   <para id="fs-id1165137655197"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mrow>
+    <m:mn>10</m:mn></m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137464202"> <para id="fs-id1165137464204"> 0.9511	</para></solution>
+ </exercise><exercise id="fs-id1165134170047">
+  <problem id="fs-id1165134170050">
+   <para id="fs-id1165134170052"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+ </exercise>
+ <exercise id="fs-id1165135516903">
+  <problem id="fs-id1165135516905">
+   <para id="fs-id1165135516907"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134108607"><para id="fs-id1165137911564">−0.7071</para></solution>
+  </exercise>
+ <exercise id="fs-id1165137911569">
+  <problem id="fs-id1165137911571">
+   <para id="fs-id1165137911573"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mn>98°</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+ </exercise>
+ <exercise id="fs-id1165135190257">
+  <problem id="fs-id1165135190259">
+   <para id="fs-id1165135190261"> <m:math>
+<m:mrow>
+     <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>98°</m:mn></m:mrow></m:math>
+   </para></problem>
+<solution id="fs-id1165135503819"><para id="fs-id1165135503820">−0.1392</para></solution>
+  </exercise>
+ <exercise id="fs-id1165135661441">
+  <problem id="fs-id1165135661443">
+   <para id="fs-id1165135661446"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>310°</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+ </exercise>
+ <exercise id="fs-id1165132935126">
+  <problem id="fs-id1165132935128">
+   <para id="fs-id1165135205930"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mn>310°</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137400267"><para id="fs-id1165137400268">−0.7660</para></solution>
+</exercise>
+</section>
+<section id="fs-id1165137400274">
+<title>Extensions</title>
+ <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-902">For the following exercises, evaluate.</para><exercise id="fs-id1165135208459">
+  <problem id="fs-id1165135208461">
+   <para id="fs-id1165135208463"> <m:math>
+<m:mrow>
+     <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+<m:mrow>
+         <m:mn>11</m:mn><m:mi>π</m:mi></m:mrow>
+        <m:mn>3</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+       </m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+   </para>
+  </problem>
+ </exercise>
+ <exercise id="fs-id1165135186514">
+  <problem id="fs-id1165135186516">
+   <para id="fs-id1165135186518"> <m:math>
+<m:mrow>
+     <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+<m:mrow>
+         <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+        <m:mn>4</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+       </m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+   </para>
+  </problem>
+  <solution id="fs-id1165137453874"><para id="fs-id1165137453875"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+     </m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para></solution>
+  </exercise>
+ <exercise id="fs-id1165137601634">
+  <problem id="fs-id1165137601636">
+   <para id="fs-id1165134436109"> <m:math>
+<m:mrow>
+     <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+         <m:mn>4</m:mn><m:mi>π</m:mi></m:mrow>
+        <m:mn>3</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+       </m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+   </para>
+  </problem>
+ </exercise>
+ <exercise id="fs-id1165137922509">
+  <problem id="fs-id1165137922511">
+   <para id="fs-id1165135160952"> <m:math>
+<m:mrow>
+     <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+<m:mrow>
+         <m:mo>−</m:mo><m:mn>9</m:mn><m:mi>π</m:mi></m:mrow>
+        <m:mn>4</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mo>−</m:mo><m:mi>π</m:mi></m:mrow>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+       </m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+   </para>
+  </problem>
+  <solution id="fs-id1165137450898"><para id="fs-id1165135319437"> <m:math>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mfrac>
+ <m:mrow>
+      <m:msqrt>
+       <m:mn>6</m:mn>
+      </m:msqrt>
+     </m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para></solution>
+ </exercise>
+ <exercise id="fs-id1165137660930">
+  <problem id="fs-id1165137660932">
+   <para id="fs-id1165137660934"> <m:math>
+<m:mrow>
+     <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+        <m:mi>π</m:mi>
+        <m:mn>6</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mo>−</m:mo><m:mi>π</m:mi></m:mrow>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+       </m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+   </para>
+  </problem>
+ </exercise>
+ <exercise id="fs-id1165135149256">
+  <problem id="fs-id1165135149258">
+   <para id="fs-id1165135149260"> <m:math>
+<m:mrow>
+     <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+<m:mrow>
+         <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+        <m:mn>4</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+       </m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+   </para>
+  </problem>
+  <solution id="fs-id1165137925605"><para id="fs-id1165137925606"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+     </m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para></solution>
+ </exercise>
+ <exercise id="fs-id1165137704516">
+  <problem id="fs-id1165137704518">
+   <para id="fs-id1165137704520"> <m:math>
+<m:mrow>
+     <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+<m:mrow>
+         <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+        <m:mn>6</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+       </m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+   </para>
+  </problem>
+ </exercise>
+ <exercise id="fs-id1165137471910">
+  <problem id="fs-id1165137471913">
+   <para id="fs-id1165137471915"> <m:math>
+<m:mrow>
+     <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+<m:mrow>
+         <m:mo>−</m:mo><m:mi>π</m:mi></m:mrow>
+        <m:mn>3</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+       </m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+   </para>
+  </problem>
+  <solution id="fs-id1165135310629"><para id="fs-id1165135310630"> <m:math>
+   <m:mrow>
+    <m:mfrac>
+ <m:mrow>
+      <m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+     </m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac></m:mrow>
+  </m:math>
+  </para></solution>
+ </exercise>
+ <exercise id="fs-id1165135503788">
+  <problem id="fs-id1165135503790">
+   <para id="fs-id1165135503792"> <m:math>
+<m:mrow>
+     <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+  <m:mrow>
+       <m:mfrac>
+<m:mrow>
+         <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+        <m:mn>4</m:mn>
+       </m:mfrac>
+      </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+ <m:mrow>
+          <m:mn>11</m:mn><m:mi>π</m:mi></m:mrow>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+       </m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+   </para>
+  </problem>
+ </exercise>
+ <exercise id="fs-id1165137863989">
+  <problem id="fs-id1165137863991">
+   <para id="fs-id1165135191191"> <m:math>
+<m:mrow>
+     <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>π</m:mi>
+      <m:mo>)</m:mo></m:mrow><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+       </m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+   </para>
+  </problem>
+  <solution id="fs-id1165137730448"><para id="fs-id1165137730449">0</para></solution>
+ </exercise>
+
+</section>
+<section id="fs-id1165137730454">
+<title>Real-World Applications</title>
+ <para id="fs-id1165137578436">For the following exercises, use this scenario: A child enters a carousel that takes one minute to revolve once around. The child enters at the point <m:math>
+  <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+     <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+ </m:math>
+  that is, on the due north position.  Assume the carousel revolves counter clockwise.</para>
+<exercise id="fs-id1165137851519">
+ <problem id="fs-id1165137851521">
+  <para id="fs-id1165137851524">What are the coordinates of the child after 45 seconds?</para>
+ </problem>
+</exercise>
+<exercise id="fs-id1165137851529">
+ <problem id="fs-id1165137851531">
+  <para id="fs-id1165135188018">What are the coordinates of the child after 90 seconds?</para></problem>
+ <solution id="fs-id1165135188021"><para id="fs-id1165135188022"> <m:math>
+  <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+<m:mrow>
+     <m:mn>0</m:mn><m:mo>,</m:mo><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+ </m:math>
+ </para></solution></exercise>
+<exercise id="fs-id1165137448391">
+ <problem id="fs-id1165137448393">
+  <para id="fs-id1165137448395">What is the coordinates of the child after 125 seconds?</para></problem>
+</exercise>
+<exercise id="fs-id1165135161247">
+ <problem id="fs-id1165135161249">
+  <para id="fs-id1165135161251">When will the child have coordinates <m:math>
+   <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+ <m:mrow>
+      <m:mn>0.707</m:mn><m:mo>,</m:mo><m:mn>–0.707</m:mn></m:mrow>
+     <m:mo>)</m:mo></m:mrow></m:mrow>
+  </m:math>   if the ride lasts 6 minutes? (There are multiple answers.)</para></problem>
+<solution id="fs-id1165134085984"> <para id="fs-id1165134085987">37.5 seconds, 97.5 seconds, 157.5 seconds, 217.5 seconds, 277.5 seconds, 337.5 seconds</para></solution></exercise>
+<exercise id="fs-id1165134085990">
+ <problem id="fs-id1165134085992">
+  <para id="fs-id1165137762315">When will the child have coordinates <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>−0.866</m:mn><m:mo>,</m:mo><m:mn>−0.5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+if the ride last 6 minutes?</para></problem>
+</exercise>
+</section>
+</section>
+</content>
+ <glossary>
+  <definition id="fs-id1165137762325">
+   <term>cosine function</term>
+   <meaning id="fs-id1165137408620">the <emphasis effect="italics">x</emphasis>-value of the point on a unit circle corresponding to a given angle</meaning></definition>
+  <definition id="fs-id1165137812230">
+   <term>Pythagorean Identity</term>
+   <meaning id="fs-id1165137812235">a corollary of the Pythagorean Theorem stating that the square of the cosine of a given angle plus the square of the sine of that angle equals 1</meaning></definition>
+ <definition id="fs-id1165137812240">
+  <term>sine function</term>
+  <meaning id="fs-id1165137749964">the <emphasis effect="italics">y</emphasis>-value of the point on a unit circle corresponding to a given angle</meaning></definition>
+  <definition id="fs-id1165137749972">
+   <term>unit circle</term><meaning id="fs-id1165135693774"> a circle with a center at <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+and radius 1.</meaning></definition>
+</glossary>
+</document>

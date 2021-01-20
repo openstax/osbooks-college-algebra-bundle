@@ -1,0 +1,4370 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Graphs of the Sine and Cosine Functions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m49387</md:content-id>
+  <md:title>Graphs of the Sine and Cosine Functions</md:title>
+  <md:abstract><para>In this section, you will:</para>
+    <list><item>Graph variations of   <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>  and <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>  .</item>
+    <item>Use phase shifts of sine and cosine curves.</item></list></md:abstract>
+  <md:uuid>ec87ee19-d627-4c06-89a0-2bd96aa3f402</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+<figure id="Figure_06_01_001" class="small"><media id="fs-id1165135160648" alt="A photo of a rainbow colored beam of light stretching across the floor.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_001.jpg"/>
+</media>
+<caption>Light can be separated into colors because of its wavelike properties. (credit: "wonderferret"/ Flickr)</caption></figure><para id="fs-id1165135329803">White light, such as the light from the sun, is not actually white at all. Instead, it is a composition of all the colors of the rainbow in the form of waves. The individual colors can be seen only when white light passes through an optical prism that separates the waves according to their wavelengths to form a rainbow.</para>
+<para id="fs-id1165134544966">Light waves can be represented graphically by the sine function. In the chapter on <link document="m49369">Trigonometric Functions</link>, we examined trigonometric functions such as the sine function. In this section, we will interpret and create graphs of sine and cosine functions.</para><section id="fs-id1165135169322">
+<title>Graphing Sine and Cosine Functions</title>
+<para id="fs-id1165135241395">Recall that the sine and cosine functions relate real number values to the <emphasis effect="italics">x</emphasis>- and <emphasis effect="italics">y</emphasis>-coordinates of a point on the unit circle. So what do they look like on a graph on a coordinate plane? Let’s start with the <term class="no-emphasis">sine function</term>. We can create a table of values and use them to sketch a graph. <link target-id="Table_06_01_01"/> lists some of the values for the sine function on a unit circle.</para><table id="Table_06_01_01" summary="..">
+<tgroup cols="10"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<colspec colnum="9" colname="c9"/>
+<colspec colnum="10" colname="c10"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mi>π</m:mi>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table><para id="fs-id1165137694159">Plotting the points from the table and continuing along the <emphasis effect="italics">x</emphasis>-axis gives the shape of the sine function. See <link target-id="Figure_06_01_002"/>.</para><figure id="Figure_06_01_002" class="small"><media id="fs-id1165135385050" alt="A graph of sin(x). Local maximum at (pi/2, 1). Local minimum at (3pi/2, -1). Period of 2pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_002.jpg"/>
+</media>
+<caption>The sine function</caption></figure><para id="fs-id1165137410832">Notice how the sine values are positive between 0 and <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> which correspond to the values of the sine function in quadrants I and II on the unit circle, and the sine values are negative between <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> which correspond to the values of the sine function in quadrants III and IV on the unit circle. See <link target-id="Figure_06_01_003"/>.</para>
+
+<figure id="Figure_06_01_003" class="small"><media id="fs-id1165134360899" alt="A side-by-side graph of a unit circle and a graph of sin(x). The two graphs show the equivalence of the coordinates.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_003.jpg"/>
+</media>
+<caption>Plotting values of the sine function</caption></figure><para id="fs-id1165137849285">Now let’s take a similar look at the <term class="no-emphasis">cosine function</term>. Again, we can create a table of values and use them to sketch a graph. <link target-id="Table_06_01_02"/> lists some of the values for the cosine function on a unit circle.</para>
+
+
+<table id="Table_06_01_02" summary="..">
+<tgroup cols="10"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<colspec colnum="9" colname="c9"/>
+<colspec colnum="10" colname="c10"/>
+
+<tbody>
+<row>
+<entry align="center"> <m:math>
+ <m:mi mathvariant="bold">x</m:mi>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mi>π</m:mi>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi mathvariant="bold">cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi mathvariant="bold">x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mn>0</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table><para id="fs-id1165135531416">As with the sine function, we can plots points to create a graph of the cosine function as in <link target-id="Figure_06_01_004"/>.</para>
+
+<figure id="Figure_06_01_004" class="medium"><media id="fs-id1165135536490" alt="A graph of cos(x). Local maxima at (0,1) and (2pi, 1). Local minimum at (pi, -1). Period of 2pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_004.jpg"/>
+</media>
+<caption>The cosine function</caption></figure><para id="fs-id1165135628668">Because we can evaluate the sine and cosine of any real number, both of these functions are defined for all real numbers. By thinking of the sine and cosine values as coordinates of points on a unit circle, it becomes clear that the range of both functions must be the interval <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165137727184">In both graphs, the shape of the graph repeats after <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> which means the functions are periodic with a period of <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> A <term>periodic function</term> is a function for which a specific <term class="no-emphasis">horizontal shift</term>, <emphasis effect="italics">P</emphasis>, results in a function equal to the original function: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>P</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> for all values of <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> in the domain of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> When this occurs, we call the smallest such horizontal shift with <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> the <term class="no-emphasis">period</term> of the function. <link target-id="Figure_06_01_005"/> shows several periods of the sine and cosine functions.</para>
+
+<figure id="Figure_06_01_005" class="small">
+<media id="fs-id1165137627720" alt="Side-by-side graphs of sin(x) and cos(x). Graphs show period lengths for both functions, which is 2pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_005.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137447360">Looking again at the sine and cosine functions on a domain centered at the <emphasis effect="italics">y</emphasis>-axis helps reveal symmetries. As we can see in <link target-id="Figure_06_01_006"/>, the <term class="no-emphasis">sine function</term> is symmetric about the origin. Recall from <link document="m49387">The Other Trigonometric Functions</link> that we determined from the unit circle that the sine function is an odd function because <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>−</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+Now we can clearly see this property from the graph.</para><figure id="Figure_06_01_006" class="small"><media id="fs-id1165137588091" alt="A graph of sin(x) that shows that sin(x) is an odd function due to the odd symmetry of the graph.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_006.jpg"/>
+</media>
+<caption>Odd symmetry of the sine function</caption></figure><para id="fs-id1165135484164"><link target-id="Figure_06_01_007"/> shows that the cosine function is symmetric about the <emphasis effect="italics">y</emphasis>-axis. Again, we determined that the cosine function is an even function. Now we can see from the graph that <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><figure id="Figure_06_01_007" class="small"><media id="fs-id1165131958299" alt="A graph of cos(x) that shows that cos(x) is an even function due to the even symmetry of the graph.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_007.jpg"/>
+</media>
+<caption>Even symmetry of the cosine function</caption></figure><note id="fs-id1165135187674">
+<label>A General Note label</label>
+<title>Characteristics of Sine and Cosine Functions</title>
+<para id="fs-id1165137628764">The sine and cosine functions have several distinct characteristics:</para>
+<list id="fs-id1165137662423" list-type="bulleted"><item>They are periodic functions with a period of <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>The domain of each function is <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> and the range is <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>The graph of <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> is symmetric about the origin, because it is an odd function.</item>
+<item>The graph of <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> is symmetric about the <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math>-axis, because it is an even function.</item>
+</list></note>
+</section>
+
+<section id="fs-id1165134032223">
+<title>Investigating Sinusoidal Functions</title>
+<para id="fs-id1165137410921">As we can see, sine and cosine functions have a regular period and range. If we watch ocean waves or ripples on a pond, we will see that they resemble the sine or cosine functions. However, they are not necessarily identical. Some are taller or longer than others. A function that has the same general shape as a sine or <term class="no-emphasis">cosine function</term> is known as a <term>sinusoidal function</term>. The general forms of sinusoidal functions are</para>
+<equation id="fs-id1165135512530" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>and</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+
+<section id="fs-id1165135458566">
+<title>Determining the Period of Sinusoidal Functions</title>
+<para id="fs-id1165135708019">Looking at the forms of sinusoidal functions, we can see that they are transformations of the sine and cosine functions. We can use what we know about transformations to determine the period.</para>
+<para id="fs-id1165137639577">In the general formula, <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi>
+ </m:mrow>
+</m:math> is related to the period by <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> If <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> then the period is less than <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> and the function undergoes a horizontal compression, whereas if <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> then the period is greater than <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> and the function undergoes a horizontal stretch. For example, <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mn>1,</m:mn>
+ </m:mrow>
+</m:math> so the period is <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mi>,</m:mi><m:mtext/>
+ </m:mrow>
+</m:math> which we knew. If <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mn>2,</m:mn>
+ </m:mrow>
+</m:math> so the period is <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi>
+ </m:mrow>
+</m:math> and the graph is compressed. If <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> then <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> so the period is <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> and the graph is stretched. Notice in <link target-id="Figure_06_01_008"/> how the period is indirectly related to <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><figure id="Figure_06_01_008" class="small">
+<media id="fs-id1165137583924" alt="A graph with three items. The x-axis ranges from 0 to 2pi. The y-axis ranges from -1 to 1. The first item is the graph of sin(x) for one full period. The second is the graph of sin(2x) over two periods. The third is the graph of sin(x/2) for one half of a period.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_008.jpg"/>
+</media>
+</figure>
+
+<note id="fs-id1165137697004"><label>A General note label</label><title>Period of Sinusoidal Functions</title>
+
+<para id="fs-id1165137766762">If we let <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> in the general form equations of the sine and cosine functions, we obtain the forms</para>
+<equation id="fs-id1165137855068" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </equation>
+<equation id="fs-id1165134371173" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137413926">The period is <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></note><example id="Example_06_01_01">
+<exercise id="fs-id1165137772370"><problem id="fs-id1165137772372">
+<title>Identifying the Period of a Sine or Cosine Function</title>
+<para id="fs-id1165137389619">Determine the period of the function <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137434852">
+<para id="fs-id1165135188750">Let’s begin by comparing the equation to the general form <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165134482743">In the given equation, <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> so the period will be</para>
+<equation id="fs-id1165137646911" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:mn>2</m:mn><m:mi>π</m:mi>
+         </m:mrow>
+         <m:mrow>
+          <m:mo>|</m:mo><m:mi>B</m:mi><m:mo>|</m:mo>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+ <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+ <m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mfrac>
+       <m:mn>6</m:mn>
+       <m:mi>π</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+ <m:mo>=</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation></solution>
+</exercise></example>
+
+<note id="fs-id1165137465427" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_06_01_01"><problem id="fs-id1165135187453"><para id="fs-id1165135208858">Determine the period of the function <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137507692"><para id="fs-id1165137675634"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise></note>
+</section>
+
+<section id="fs-id1165135699141"><title>Determining Amplitude</title><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135207425">Returning to the general formula for a sinusoidal function, we have analyzed how the variable <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi>
+ </m:mrow>
+</m:math> relates to the period. Now let’s turn to the variable <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> so we can analyze how it is related to the <emphasis>amplitude</emphasis>, or greatest distance from rest. <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> represents the vertical stretch factor, and its absolute value <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math> is the amplitude. The local maxima will be a distance <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math> above the horizontal <emphasis>midline</emphasis> of the graph, which is the line <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>D</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> because <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> in this case, the midline is the <emphasis effect="italics">x</emphasis>-axis. The local minima will be the same distance below the midline. If <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the function is stretched. For example, the amplitude of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> is twice the amplitude of <m:math display="block">
+ <m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> If <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the function is compressed. <link target-id="Figure_06_01_009"/> compares several sine functions with different amplitudes.</para><figure id="Figure_06_01_009">
+<media id="fs-id1165137482990" alt="A graph with four items. The x-axis ranges from -6pi to 6pi. The y-axis ranges from -4 to 4. The first item is the graph of sin(x), which has an amplitude of 1. The second is a graph of 2sin(x), which has amplitude of 2. The third is a graph of 3sin(x), which has an amplitude of 3. The fourth is a graph of 4 sin(x) with an amplitude of 4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_009.jpg"/>
+</media>
+</figure>
+
+<note id="fs-id1165134284498"><label>A General Note Label</label><title>Amplitude of Sinusoidal Functions</title>
+
+<para id="fs-id1165134497141">If we let <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> in the general form equations of the sine and cosine functions, we obtain the forms</para><equation id="fs-id1165135177658" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mtext> and </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137464064">The <term>amplitude</term> is <m:math>
+ <m:mrow>
+  <m:mo>|</m:mo><m:mi>A</m:mi><m:mtext>|</m:mtext><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> which is the vertical height from the <term>midline</term> <m:math>
+ <m:mrow>
+<m:mo>.</m:mo>
+ </m:mrow>
+</m:math> In addition, notice in the example that</para><equation id="fs-id1165135460914" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mtext> = amplitude = </m:mtext><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mtext>maximum </m:mtext><m:mo>−</m:mo><m:mtext> minimum</m:mtext>
+  </m:mrow> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</equation></note><example id="Example_06_01_02">
+<exercise id="fs-id1165137653911">
+<problem id="fs-id1165134377968">
+<title>Identifying the Amplitude of a Sine or Cosine Function</title>
+<para id="fs-id1165137932594">What is the amplitude of the sinusoidal function <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−4</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> Is the function stretched or compressed vertically?</para></problem>
+<solution id="fs-id1165135195832">
+<para id="fs-id1165135195834">Let’s begin by comparing the function to the simplified form <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137930335">In the given function, <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mn>−4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> so the amplitude is <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+<m:mn>−4</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math> The function is stretched.</para></solution>
+<commentary id="fs-id1165134226786">
+<title>Analysis</title>
+<para id="fs-id1165137410615">The negative value of <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> results in a reflection across the <emphasis effect="italics">x</emphasis>-axis of the <term class="no-emphasis">sine function</term>, as shown in <link target-id="Figure_06_01_010"/>.</para><figure id="Figure_06_01_010" class="small">
+<media id="fs-id1165137425512" alt="A graph of -4sin(x). The function has an amplitude of 4. Local minima at (-3pi/2, -4) and (pi/2, -4). Local maxima at (-pi/2, 4) and (3pi/2, 4). Period of 2pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_010.jpg"/>
+</media>
+</figure>
+
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165135471236" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_06_01_02">
+<problem id="fs-id1165137771980"><para id="fs-id1165137771982">What is the amplitude of the sinusoidal function <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> Is the function stretched or compressed vertically?</para></problem>
+<solution id="fs-id1165137531120"><para id="fs-id1165137531121"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> compressed</para>
+</solution>
+</exercise>
+</note>
+</section></section>
+
+<section id="fs-id1165137834807"><title>Analyzing Graphs of Variations of <emphasis effect="italics">y</emphasis> = sin<emphasis effect="italics"> x</emphasis> and <emphasis effect="italics">y</emphasis> = cos <emphasis effect="italics">x</emphasis></title><para id="fs-id1165135193998">Now that we understand how <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi>
+ </m:mrow>
+</m:math> relate to the general form equation for the sine and cosine functions, we will explore the variables <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Recall the general form:</para>
+<equation id="fs-id1165134122886" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mtext> and </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>o</m:mi><m:mi>r</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+           <m:mi>C</m:mi>
+           <m:mi>B</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mtext> and </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+           <m:mi>C</m:mi>
+           <m:mi>B</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165134187254">The value <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> for a sinusoidal function is called the <emphasis>phase shift</emphasis>, or the horizontal displacement of the basic sine or <term class="no-emphasis">cosine function</term>. If <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the graph shifts to the right. If <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the graph shifts to the left. The greater the value of <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>C</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the more the graph is shifted. <link target-id="Figure_06_01_011"/> shows that the graph of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>π</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> shifts to the right by <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi>
+ </m:mrow>
+</m:math> units, which is more than we see in the graph of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> which shifts to the right by <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> units.</para><figure id="Figure_06_01_011" class="small">
+<media id="fs-id1165137425737" alt="A graph with three items. The first item is a graph of sin(x). The second item is a graph of sin(x-pi/4), which is the same as sin(x) except shifted to the right by pi/4. The third item is a graph of sin(x-pi), which is the same as sin(x) except shifted to the right by pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_011.jpg"/>
+</media>
+</figure>
+
+  <para id="fs-id1165137663752">While <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi>
+ </m:mrow>
+</m:math> relates to the horizontal shift, <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> indicates the vertical shift from the midline in the general formula for a sinusoidal function. See <link target-id="Figure_06_01_012"/>. The function <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+ </m:mrow>
+</m:math> has its midline at <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+
+<figure id="Figure_06_01_012" class="small">
+<media id="fs-id1165135353057" alt="A graph of y=Asin(x)+D. Graph shows the midline of the function at y=D.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_012.jpg"/>
+</media>
+</figure>
+
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135242867">Any value of <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> other than zero shifts the graph up or down. <link target-id="Figure_06_01_013"/> compares <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo>
+ </m:mrow>
+</m:math> with <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> which is shifted 2 units up on a graph.</para><figure id="Figure_06_01_013" class="small">
+<media id="fs-id1165135536497" alt="A graph with two items. The first item is a graph of sin(x). The second item is a graph of sin(x)+2, which is the same as sin(x) except shifted up by 2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_013.jpg"/>
+</media>
+</figure>
+
+<note id="fs-id1165135571809">
+<label>A General Note label</label>
+<title>Variations of Sine and Cosine Functions</title>
+<para id="fs-id1165133201875">Given an equation in the form <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+ </m:mrow>
+</m:math> or <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> is the <term>phase shift</term> and <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> is the <term class="no-emphasis">vertical shift</term>.</para>
+</note>
+
+<example id="Example_06_01_03">
+<exercise id="fs-id1165137696922"><problem id="fs-id1165137696924">
+<title>Identifying the Phase Shift of a Function</title>
+<para id="fs-id1165137804482">Determine the direction and magnitude of the phase shift for <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165134483435">
+<para id="fs-id1165134483437">Let’s begin by comparing the equation to the general form <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137461008">In the given equation, notice that <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> So the phase shift is</para>
+<equation id="fs-id1165137693976" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="right">
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>C</m:mi>
+       <m:mi>B</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mn>1</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135696189">or <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> units to the left.</para>
+</solution>
+<commentary id="fs-id1165134156073">
+<title>Analysis</title>
+<para id="fs-id1165137664617">We must pay attention to the sign in the equation for the general form of a sinusoidal function. The equation shows a minus sign before <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Therefore <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> can be rewritten as <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> If the value of <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi>
+ </m:mrow>
+</m:math> is negative, the shift is to the left.</para>
+</commentary>
+ </exercise></example>
+
+<note id="fs-id1165137806038" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_06_01_03">
+<problem id="fs-id1165137461117"><para id="fs-id1165137461118">Determine the direction and magnitude of the phase shift for <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165131959464"><para id="fs-id1165131959465"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> right</para></solution>
+</exercise>
+</note>
+
+<example id="Example_06_01_04">
+<exercise id="fs-id1165137410966">
+<problem id="fs-id1165137410968">
+<title>Identifying the Vertical Shift of a Function</title>
+<para id="fs-id1165135186656">Determine the direction and magnitude of the vertical shift for <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137427502">
+<para id="fs-id1165137427504">Let’s begin by comparing the equation to the general form <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165135503692">In the given equation, <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn>
+ </m:mrow>
+</m:math> so the shift is 3 units downward.</para></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137742086" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_06_01_04">
+<problem id="fs-id1165137410879"><para id="fs-id1165137410880">Determine the direction and magnitude of the vertical shift for <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137432579"><para id="fs-id1165137432580">2 units up</para></solution>
+</exercise>
+
+</note>
+
+<note id="fs-id1165137824883" class="how-to-notitle">
+<label>How to Feature</label>
+<para id="fs-id1165135417813"><emphasis>Given a sinusoidal function in the form</emphasis> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <emphasis>identify the midline, amplitude, period, and phase shift.</emphasis></para>
+<list id="fs-id1165137805755" list-type="enumerated" number-style="arabic">
+<item>Determine the amplitude as <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Determine the period as <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Determine the phase shift as <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Determine the midline as <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list>
+</note>
+
+<example id="Example_06_01_05">
+<exercise id="fs-id1165137457010">
+<problem id="fs-id1165137457013">
+<title>Identifying the Variations of a Sinusoidal Function from an Equation</title>
+<para id="fs-id1165137416718">Determine the midline, amplitude, period, and phase shift of the function <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137454382">
+<para id="fs-id1165137454384">Let’s begin by comparing the equation to the general form <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137408417"> <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> so the amplitude is <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137438431">Next, <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> so the period is <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137637576">There is no added constant inside the parentheses, so <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> and the phase shift is <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>0</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165137697063">Finally, <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> so the midline is <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+<commentary id="fs-id1165137701755">
+<title>Analysis</title>
+<para id="fs-id1165135414237">Inspecting the graph, we can determine that the period is <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the midline is <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and the amplitude is 3. See <link target-id="Figure_06_01_014"/>.</para><figure id="Figure_06_01_014" class="small">
+<media id="fs-id1165135185294" alt="A graph of y=3sin(2x)+1. The graph has an amplitude of 3. There is a midline at y=1. There is a period of pi. Local maximum at (pi/4, 4) and local minimum at (3pi/4, -2).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_014.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137447405" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_06_01_05">
+<problem id="fs-id1165137447552"><para id="fs-id1165137447553">Determine the midline, amplitude, period, and phase shift of the function <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mo>−</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134042357"><para id="fs-id1165134042358">midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> amplitude: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> period: <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>6</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> phase shift: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+
+<example id="Example_06_01_06"><exercise id="fs-id1165137659478"><problem id="fs-id1165134040573">
+<title>Identifying the Equation for a Sinusoidal Function from a Graph</title>
+<para id="fs-id1165137871008">Determine the formula for the cosine function in <link target-id="Figure_06_01_015"/>.</para>
+
+<figure id="Figure_06_01_015" class="small">
+<media id="fs-id1165137772064" alt="A graph of -0.5cos(x)+0.5. The graph has an amplitude of 0.5. The graph has a period of 2pi. The graph has a range of [0, 1]. The graph is also reflected about the x-axis from the parent function cos(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_015.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165135329784">
+<para id="fs-id1165137726017">To determine the equation, we need to identify each value in the general form of a sinusoidal function.</para>
+<equation id="fs-id1165137726021" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137704661">The graph could represent either a sine or a <term class="no-emphasis">cosine function</term> that is shifted and/or reflected. When <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the graph has an extreme point, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Since the cosine function has an extreme point for <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> let us write our equation in terms of a cosine function.</para><para id="fs-id1165135536557">Let’s start with the midline. We can see that the graph rises and falls an equal distance above and below <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0.5.</m:mn>
+ </m:mrow>
+</m:math> This value, which is the midline, is <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> in the equation, so <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>0.5.</m:mn>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165137938642">The greatest distance above and below the midline is the amplitude. The maxima are 0.5 units above the midline and the minima are 0.5 units below the midline. So <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.5.</m:mn>
+ </m:mrow>
+</m:math> Another way we could have determined the amplitude is by recognizing that the difference between the height of local maxima and minima is 1, so <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0.5.</m:mn>
+ </m:mrow>
+</m:math> Also, the graph is reflected about the <emphasis effect="italics">x</emphasis>-axis so that <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.5.</m:mn>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165134204425">The graph is not horizontally stretched or compressed, so <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mn>1;</m:mn>
+ </m:mrow>
+</m:math> and the graph is not shifted horizontally, so <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165135347312">Putting this all together,</para><equation id="fs-id1165137401884" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.5</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>0.5</m:mn>
+ </m:mrow>
+</m:math> </equation></solution>
+</exercise>
+</example><note id="fs-id1165137702221" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_06_01_06">
+<problem id="fs-id1165135582221"><para id="fs-id1165135582222">Determine the formula for the sine function in <link target-id="Figure_06_01_016"/>.</para>
+
+<figure id="Figure_06_01_016" class="small">
+<media id="fs-id1165134224521" alt="A graph of sin(x)+2. Period of 2pi, amplitude of 1, and range of [1, 3].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_016.jpg"/>
+</media>
+</figure></problem>
+ <solution id="fs-id1165137526465"><para id="fs-id1165137526466"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+
+<example id="Example_06_01_07"><exercise id="fs-id1165134164950"><problem id="fs-id1165134058400">
+<title>Identifying the Equation for a Sinusoidal Function from a Graph</title>
+<para id="fs-id1165134059763">Determine the equation for the sinusoidal function in <link target-id="Figure_06_01_017"/>.</para><figure id="Figure_06_01_017" class="medium">
+<media id="fs-id1165135253132" alt="A graph of 3cos(pi/3x-pi/3)-2. Graph has amplitude of 3, period of 6, range of [-5,1].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_017.jpg"/>
+</media>
+</figure>
+
+</problem>
+<solution id="fs-id1165137598813">
+<para id="fs-id1165137598815">With the highest value at 1 and the lowest value at <m:math>
+ <m:mrow>
+  <m:mn>−5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the midline will be halfway between at <m:math>
+ <m:mrow>
+  <m:mn>−2.</m:mn>
+ </m:mrow>
+</m:math> So <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>−2.</m:mn>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165133281392">The distance from the midline to the highest or lowest value gives an amplitude of <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165137824298">The period of the graph is 6, which can be measured from the peak at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> to the next peak at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> or from the distance between the lowest points. Therefore, <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>6.</m:mn>
+ </m:mrow>
+</m:math> Using the positive value for <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> we find that</para>
+<equation id="fs-id1165135196958" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mi>P</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137611526">So far, our equation is either <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> or <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> For the shape and shift, we have more than one option. We could write this as any one of the following:</para><list id="fs-id1165137466148" list-type="bulleted"><item>a cosine shifted to the right</item>
+<item>a negative cosine shifted to the left</item>
+<item>a sine shifted to the left</item>
+<item>a negative sine shifted to the right</item>
+</list><para id="fs-id1165137619397">While any of these would be correct, the cosine shifts are easier to work with than the sine shifts in this case because they involve integer values. So our function becomes</para><equation id="fs-id1165137619402" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mtext> or </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135704043">Again, these functions are equivalent, so both yield the same graph.</para>
+</solution>
+</exercise></example><note id="fs-id1165137805588" class="precalculus try"><label>Try IT Feature</label>
+<exercise id="ti_06_01_07"><problem id="fs-id1165137436869"><para id="fs-id1165137436870">Write a formula for the function graphed in <link target-id="Figure_06_01_018"/>.</para>
+
+<figure id="Figure_06_01_018" class="medium"><media id="fs-id1165137647462" alt="A graph of 4sin((pi/5)x-pi/5)+4. Graph has period of 10, amplitude of 4, range of [0,8].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_018n-0a72.jpg"/>
+</media>
+</figure></problem>
+
+<solution id="fs-id1165135173772"><para id="fs-id1165135173773">two possibilities: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> or <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise></note></section><section id="fs-id1165137735424"><title>Graphing Variations of <emphasis effect="italics">y</emphasis> = sin <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> = cos <emphasis effect="italics">x</emphasis></title><para id="fs-id1165134148513">Throughout this section, we have learned about types of variations of sine and cosine functions and used that information to write equations from graphs. Now we can use the same information to create graphs from equations.</para>
+<para id="fs-id1165137456137">Instead of focusing on the general form equations</para>
+<equation id="fs-id1165137456140" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mtext> and </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137807234">we will let <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> and work with a simplified form of the equations in the following examples.</para><note id="fs-id1165135380117" class="how-to-notitle">
+<label>How To Feature</label>
+<para id="fs-id1165135329942"><emphasis>Given the function <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> sketch its graph.</emphasis></para><list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137542466" list-type="enumerated" number-style="arabic"><item>Identify the amplitude, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Identify the period, <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Start at the origin, with the function increasing to the right if <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> is positive or decreasing if <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> is negative.</item>
+<item>At <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> there is a local maximum for <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> or a minimum for <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> with <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>The curve returns to the <emphasis effect="italics">x</emphasis>-axis at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>There is a local minimum for <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> (maximum for <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> ) at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> with <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mi>A</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>The curve returns again to the <emphasis effect="italics">x</emphasis>-axis at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list></note>
+<!--CONTINUE HERE-->
+<example id="Example_06_01_08"><exercise id="fs-id1165134156046"><problem id="fs-id1165137565145">
+<title>Graphing a Function and Identifying the Amplitude and Period</title>
+<para id="fs-id1165137565150">Sketch a graph of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>π</m:mi><m:mi>x</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165134190732">
+<para id="fs-id1165134190734">Let’s begin by comparing the equation to the form <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<list id="eip-id1165135169452" mark-suffix="" list-type="labeled-item"><item><emphasis effect="italics">Step 1.</emphasis> We can see from the equation that <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>,</m:mi>
+ </m:mrow>
+</m:math> so the amplitude is 2.
+<equation id="fs-id1165135400292" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> </equation></item>
+<item><emphasis effect="italics">Step 2.</emphasis> The equation shows that <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> so the period is
+<equation id="fs-id1165134178538" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+ <m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mi>π</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+ <m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+</item>
+<item><emphasis effect="italics">Step 3.</emphasis> Because <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> is negative, the graph descends as we move to the right of the origin.</item>
+<item><emphasis effect="italics">Step 4–7.</emphasis> The <emphasis effect="italics">x</emphasis>-intercepts are at the beginning of one period, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the horizontal midpoints are at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> and at the end of one period at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math> </item>
+</list><para id="fs-id1165137786248">The quarter points include the minimum at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> and the maximum at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> A local minimum will occur 2 units below the midline, at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and a local maximum will occur at 2 units above the midline, at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> <link target-id="Figure_06_01_019"/> shows the graph of the function.</para><figure id="Figure_06_01_019" class="small">
+<media id="fs-id1165137414262" alt="A graph of -2sin((pi/2)x). Graph has range of [-2,2], period of 4, and amplitude of 2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_019.jpg"/>
+</media>
+</figure>
+</solution>
+</exercise></example><note id="fs-id1165137539724" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_06_01_08"><problem id="fs-id1165137409841"><para id="fs-id1165137628752">Sketch a graph of <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.8</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Determine the midline, amplitude, period, and phase shift. </para></problem>
+<solution id="fs-id1165135342790"><media id="fs-id1165135397949" alt="A graph of -0.8cos(2x). Graph has range of [-0.8, 0.8], period of pi, amplitude of 0.8, and is reflected about the x-axis compared to it's parent function cos(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_020.jpg"/>
+</media>
+<para id="eip-id1165137938401">midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> amplitude: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.8</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> period: <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> phase shift: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>  or none</para></solution>
+</exercise></note>
+
+
+<note id="fs-id1165137425929" class="how-to-notitle"><label>How to Feature</label>
+<para id="fs-id1165137661914"><emphasis>Given a sinusoidal function with a phase shift and a vertical shift, sketch its graph.</emphasis></para>
+<list id="fs-id1165135503706" list-type="enumerated" number-style="arabic"><item>Express the function in the general form <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mtext> or </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item>Identify the amplitude, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Identify the period, <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Identify the phase shift, <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Draw the graph of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>  shifted to the right or left by <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> and up or down by <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list></note><example id="Example_06_01_09"><exercise id="fs-id1165134116767">
+    <problem id="fs-id1165134116769">
+        <title>Graphing a Transformed Sinusoid</title>
+        <para id="fs-id1165137723733">Sketch a graph of <m:math>
+            <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                            <m:mfrac>
+                                <m:mi>π</m:mi>
+                                <m:mn>4</m:mn>
+                            </m:mfrac>
+                            <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+                                <m:mi>π</m:mi>
+                                <m:mn>4</m:mn>
+                            </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+            </m:mrow>
+        </m:math> </para>
+    </problem>
+    <solution id="fs-id1165135209894">
+
+        <list id="eip-id1165137474346" list-type="labeled-item"><item><emphasis effect="italics">Step 1.</emphasis> The function is already written in general form: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> This graph will have the shape of a <term class="no-emphasis">sine function</term>, starting at the midline and increasing to the right.</item>
+            <item><emphasis effect="italics">Step 2.</emphasis> <m:math>
+                <m:mrow>
+<m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mn>3</m:mn> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3.</m:mn>
+                </m:mrow>
+            </m:math> The amplitude is 3.</item>
+            <item><emphasis effect="italics">Step 3.</emphasis> Since <m:math>
+                <m:mrow>
+<m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+                        <m:mfrac>
+                            <m:mi>π</m:mi>
+                            <m:mn>4</m:mn>
+                        </m:mfrac>
+
+                    </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+                        <m:mi>π</m:mi>
+                        <m:mn>4</m:mn>
+                    </m:mfrac>
+                    <m:mo>,</m:mo>
+                </m:mrow>
+            </m:math> we determine the period as follows.
+                <equation id="fs-id1165137572143" class="unnumbered"><label/> <m:math>
+                    <m:mrow>
+                        <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+                            <m:mrow>
+                                <m:mn>2</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mrow>
+                                <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+                            </m:mrow>
+                        </m:mfrac>
+                        <m:mo>=</m:mo><m:mfrac>
+                            <m:mrow>
+                                <m:mn>2</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mrow>
+                                <m:mfrac>
+                                    <m:mi>π</m:mi>
+                                    <m:mn>4</m:mn>
+                                </m:mfrac>
+
+                            </m:mrow>
+                        </m:mfrac>
+                        <m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mfrac>
+                            <m:mn>4</m:mn>
+                            <m:mi>π</m:mi>
+                        </m:mfrac>
+                        <m:mo>=</m:mo><m:mn>8</m:mn>
+                    </m:mrow>
+                </m:math>
+                </equation>
+                <para id="fs-id1165137757960">The period is 8.</para>
+            </item>
+            <item><emphasis effect="italics">Step 4.</emphasis> Since <m:math>
+                <m:mrow>
+<m:mi>C</m:mi><m:mo>=</m:mo><m:mfrac>
+                        <m:mi>π</m:mi>
+                        <m:mn>4</m:mn>
+                    </m:mfrac>
+                    <m:mo>,</m:mo>
+                </m:mrow>
+            </m:math> the phase shift is
+                <equation id="fs-id1165135684362" class="unnumbered"><label/> <m:math>
+                    <m:mrow>
+                        <m:mfrac>
+                            <m:mi>C</m:mi>
+                            <m:mi>B</m:mi>
+                        </m:mfrac>
+                        <m:mo>=</m:mo><m:mfrac>
+                            <m:mrow>
+                                <m:mfrac>
+                                    <m:mi>π</m:mi>
+                                    <m:mn>4</m:mn>
+                                </m:mfrac>
+
+                            </m:mrow>
+                            <m:mrow>
+                                <m:mfrac>
+                                    <m:mi>π</m:mi>
+                                    <m:mn>4</m:mn>
+                                </m:mfrac>
+
+                            </m:mrow>
+                        </m:mfrac>
+                        <m:mo>=</m:mo><m:mn>1.</m:mn>
+                    </m:mrow>
+                </m:math>
+                </equation>
+                <para id="fs-id1165137634941">The phase shift is 1 unit.</para>
+            </item>
+            <item><emphasis effect="italics">Step 5.</emphasis> <link target-id="Figure_06_01_021"/> shows the graph of the function.
+                <figure id="Figure_06_01_021" class="small">
+                    <media id="fs-id1165137693945" alt="A graph of 3sin(*(pi/4)x-pi/4). Graph has amplitude of 3, period of 8, and a phase shift of 1 to the right.">
+                        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_021.jpg"/>
+                    </media>
+                    <caption>A horizontally compressed, vertically stretched, and horizontally shifted sinusoid</caption>
+                </figure>
+            </item>
+        </list></solution>
+</exercise>
+</example><note id="fs-id1165135181399" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_06_01_09"><problem id="fs-id1165137638347"><para id="fs-id1165137638348">Draw a graph of <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Determine the midline, amplitude, period, and phase shift.</para></problem>
+<solution id="fs-id1165137480594">
+<media id="fs-id1165137442771" alt="A graph of -2cos((pi/3)x+(pi/6)). Graph has amplitude of 2, period of 6, and has a phase shift of 0.5 to the left.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_022.jpg"/>
+</media>
+<para id="fs-id1165137627836">midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> amplitude: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> period: <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>6</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> phase shift: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise></note>
+
+
+<example id="Example_06_01_10"><exercise id="fs-id1165137749524"><problem id="fs-id1165137749526">
+<title>Identifying the Properties of a Sinusoidal Function</title>
+<para id="fs-id1165137406791">Given <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>π</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> determine the amplitude, period, phase shift, and horizontal shift. Then graph the function.</para>
+</problem>
+<solution id="fs-id1165135487183">
+<para id="fs-id1165137431258">Begin by comparing the equation to the general form and use the steps outlined in <link target-id="Example_06_01_09"/>.</para>
+<equation id="fs-id1165134225658" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+ </m:mrow>
+</m:math> </equation>
+<list id="eip-id1165134311998" list-type="labeled-item"><item><emphasis effect="italics">Step 1.</emphasis> The function is already written in general form.</item>
+<item><emphasis effect="italics">Step 2.</emphasis> Since <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the amplitude is <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item><emphasis effect="italics">Step 3.</emphasis> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> so the period is <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mi>π</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math> The period is 4.</item>
+<item><emphasis effect="italics">Step 4.</emphasis> <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> so we calculate the phase shift as <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mi>π</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mi>π</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> The phase shift is <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item><emphasis effect="italics">Step 5.</emphasis> <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> so the midline is <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>, </m:mo>
+ </m:mrow>
+</m:math> and the vertical shift is up 3.</item>
+</list><para id="fs-id1165137936633">Since <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> is negative, the graph of the cosine function has been reflected about the <emphasis effect="italics">x</emphasis>-axis.</para><para id="fs-id1165137761033"><link target-id="Figure_06_01_028"/> shows one cycle of the graph of the function.</para>
+
+<figure id="Figure_06_01_028" class="small">
+<media id="fs-id1165137794283" alt="A graph of -2cos((pi/2)x+pi)+3. Graph shows an amplitude of 2, midline at y=3, and a period of 4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_028.jpg"/>
+</media>
+</figure>
+</solution>
+</exercise></example></section><section id="fs-id1165137939840">
+<title>Using Transformations of Sine and Cosine Functions</title>
+<para id="fs-id1165137891269">We can use the transformations of sine and cosine functions in numerous applications. As mentioned at the beginning of the chapter, <term class="no-emphasis">circular motion</term> can be modeled using either the sine or <term class="no-emphasis">cosine function</term>.</para><example id="Example_06_01_11">
+<exercise id="fs-id1165137612101">
+<problem id="fs-id1165137612103">
+<title>Finding the Vertical Component of Circular Motion</title>
+<para id="fs-id1165137731540">A point rotates around a circle of radius 3 centered at the origin. Sketch a graph of the <emphasis effect="italics">y</emphasis>-coordinate of the point as a function of the angle of rotation.</para></problem>
+<solution id="fs-id1165137552985">
+<para id="fs-id1165137552987">Recall that, for a point on a circle of radius <emphasis effect="italics">r</emphasis>, the <emphasis effect="italics">y</emphasis>-coordinate of the point is <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math>
+so in this case, we get the equation <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+The constant 3 causes a vertical stretch of the <emphasis effect="italics">y</emphasis>-values of the function by a factor of 3, which we can see in the graph in <link target-id="Figure_06_01_023"/>.</para><figure id="Figure_06_01_023" class="small">
+<media id="fs-id1165137603461" alt="A graph of 3sin(x). Graph has period of 2pi, amplitude of 3, and range of [-3,3].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_023.jpg"/>
+</media>
+</figure>
+</solution>
+
+<commentary id="fs-id1165137556901">
+<title>Analysis</title>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137400109">Notice that the period of the function is still <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> as we travel around the circle, we return to the point <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> for <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>4</m:mn><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>6</m:mn><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>...</m:mn><m:mo/>
+ </m:mrow>
+</m:math> Because the outputs of the graph will now oscillate between <m:math>
+ <m:mrow>
+  <m:mo>–</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the amplitude of the sine wave is <m:math>
+ <m:mrow>
+  <m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> </para></commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165135319496" class="precalculus try">
+<label>Try IT Feature</label>
+<exercise id="ti_06_01_10"><problem id="fs-id1165135403587"><para id="fs-id1165135403588">What is the amplitude of the function <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> Sketch a graph of this function.</para></problem>
+<solution id="fs-id1165137534006"><para id="fs-id1165137534008">7</para>
+
+<media id="fs-id1165134187242" alt="A graph of 7cos(x). Graph has amplitude of 7, period of 2pi, and range of [-7,7].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_024.jpg"/>
+</media>
+</solution>
+</exercise></note>
+
+<example id="Example_06_01_12">
+<exercise id="fs-id1165135190936"><problem id="fs-id1165135190938">
+<title>Finding the Vertical Component of Circular Motion</title>
+<para id="fs-id1165135210138">A circle with radius 3 ft is mounted with its center 4 ft off the ground. The point closest to the ground is labeled <emphasis effect="italics">P</emphasis>, as shown in <link target-id="Figure_06_01_025"/>. Sketch a graph of the height above the ground of the point <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi>
+ </m:mrow>
+</m:math> as the circle is rotated; then find a function that gives the height in terms of the angle of rotation.</para>
+
+<figure id="Figure_06_01_025" class="small">
+<media id="fs-id1165137597150" alt="An illustration of a circle lifted 4 feet off the ground. Circle has radius of 3 ft. There is a point P labeled on the circle's circumference.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_025.jpg"/>
+</media>
+</figure>
+
+</problem>
+<solution id="fs-id1165137863854">
+<para id="fs-id1165137863856">Sketching the height, we note that it will start 1 ft above the ground, then increase up to 7 ft above the ground, and continue to oscillate 3 ft above and below the center value of 4 ft, as shown in <link target-id="Figure_06_01_026"/>.</para>
+
+
+<figure id="Figure_06_01_026" class="small">
+<media id="fs-id1165137618998" alt="A graph of -3cox(x)+4. Graph has midline at y=4, amplitude of 3, and period of 2pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_026.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137601519">Although we could use a transformation of either the sine or cosine function, we start by looking for characteristics that would make one function easier to use than the other. Let’s use a cosine function because it starts at the highest or lowest value, while a <term class="no-emphasis">sine function</term> starts at the middle value. A standard cosine starts at the highest value, and this graph starts at the lowest value, so we need to incorporate a vertical reflection.</para><para id="fs-id1165137601522">Second, we see that the graph oscillates 3 above and below the center, while a basic cosine has an amplitude of 1, so this graph has been vertically stretched by 3, as in the last example.</para><para id="fs-id1165134401716">Finally, to move the center of the circle up to a height of 4, the graph has been vertically shifted up by 4. Putting these transformations together, we find that</para>
+<equation id="fs-id1165133047569" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </equation></solution>
+</exercise></example>
+
+<note id="fs-id1165137692182" class="precalculus try">
+<label>Try It Feature</label>
+<exercise id="ti_06_01_11"><problem id="fs-id1165137447011"><para id="fs-id1165137447012">A weight is attached to a spring that is then hung from a board, as shown in <link target-id="Figure_06_01_029"/>. As the spring oscillates up and down, the position <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> of the weight relative to the board ranges from <m:math>
+ <m:mrow>
+  <m:mn>–1</m:mn>
+ </m:mrow>
+</m:math> in. (at time <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> to <m:math>
+ <m:mrow>
+  <m:mn>–7</m:mn>
+ </m:mrow>
+</m:math> in. (at time <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> below the board. Assume the position of <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> is given as a sinusoidal function of <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Sketch a graph of the function, and then find a cosine function that gives the position <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> in terms of <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><figure id="Figure_06_01_029" class="small">
+<media id="fs-id1165137811089" alt="An illustration of a spring with length y.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_029.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165137736527">
+<para id="fs-id1165137736529"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </para>
+<media id="fs-id1165137786551" alt="A cosine graph with range [-1,-7]. Period is 2 pi. Local maximums at (0,-1), (2pi,-1), and (4pi, -1). Local minimums at (pi,-7) and (3pi, -7).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_027.jpg"/>
+</media>
+</solution>
+</exercise></note>
+
+<example id="Example_06_01_13">
+<exercise id="fs-id1165135187190"><problem id="fs-id1165137812716">
+<title>Determining a Rider’s Height on a Ferris Wheel</title>
+<para id="fs-id1165137500935">The London Eye is a huge Ferris wheel with a diameter of 135 meters (443 feet). It completes one rotation every 30 minutes. Riders board from a platform 2 meters above the ground. Express a rider’s height above ground as a function of time in minutes.</para></problem>
+<solution id="fs-id1165137837117">
+<para id="fs-id1165137837120">With a diameter of 135 m, the wheel has a radius of 67.5 m. The height will oscillate with amplitude 67.5 m above and below the center.</para>
+<para id="fs-id1165134086000">Passengers board 2 m above ground level, so the center of the wheel must be located <m:math>
+ <m:mrow>
+  <m:mn>67.5</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>69.5</m:mn>
+ </m:mrow>
+</m:math> m above ground level. The midline of the oscillation will be at 69.5 m.</para>
+<para id="fs-id1165137578349">The wheel takes 30 minutes to complete 1 revolution, so the height will oscillate with a period of 30 minutes.</para><para id="fs-id1165137529532">Lastly, because the rider boards at the lowest point, the height will start at the smallest value and increase, following the shape of a vertically reflected cosine curve.</para>
+<list id="fs-id1165137529537" list-type="bulleted"><item>Amplitude: <m:math>
+ <m:mrow>
+  <m:mn>67.5,</m:mn>
+ </m:mrow>
+</m:math> so <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mn>67.5</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item>Midline: <m:math>
+ <m:mrow>
+  <m:mn>69.5,</m:mn>
+ </m:mrow>
+</m:math> so <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>69.5</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item>Period: <m:math>
+ <m:mrow>
+  <m:mn>30,</m:mn>
+ </m:mrow>
+</m:math> so <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>30</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </item>
+<item>Shape: <m:math>
+ <m:mrow>
+  <m:mi>−cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </item>
+</list><para id="fs-id1165137767318">An equation for the rider’s height would be</para>
+<equation id="fs-id1165135403551" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>67.5</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mrow>
+      <m:mn>15</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    <m:mi>t</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>69.5</m:mn>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137634889">where <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> is in minutes and <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> is measured in meters.</para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137540365" class="precalculus media media-notitle">
+<label>Media Feature Label</label>
+<para id="fs-id1165137761688">Access these online resources for additional instruction and practice with graphs of sine and cosine functions.</para>
+<list id="fs-id1165137761692" list-type="bulleted"><item><link url="http://openstax.org/l/ampperiod">Amplitude and Period of Sine and Cosine</link></item>
+<item><link url="http://openstax.org/l/translasincos">Translations of Sine and Cosine</link></item>
+<item><link url="http://openstax.org/l/transformsincos">Graphing Sine and Cosine Transformations</link></item>
+<item><link url="http://openstax.org/l/graphsinefunc">Graphing the Sine Function</link></item>
+</list></note>
+
+
+</section>
+<section id="fs-id1165137574576" class="key-equations"><title>Key Equations</title><table id="eip-id1165133087385" summary=".." class="unnumbered unstyled"><label/>
+<title/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry>Sinusoidal functions</entry>
+<entry> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section><section id="fs-id1165137540392" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1165137762207" list-type="bulleted"><item>Periodic functions repeat after a given value. The smallest such value is the period. The basic sine and cosine functions have a period of <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>The function <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> is odd, so its graph is symmetric about the origin. The function <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> is even, so its graph is symmetric about the <emphasis effect="italics">y</emphasis>-axis.</item>
+<item>The graph of a sinusoidal function has the same general shape as a sine or cosine function.</item>
+<item>In the general formula for a sinusoidal function, the period is <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> See <link target-id="Example_06_01_01"/>.</item>
+<item>In the general formula for a sinusoidal function, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math> represents amplitude. If <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the function is stretched, whereas if <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the function is compressed. See <link target-id="Example_06_01_02"/>.</item>
+<item>The value <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> in the general formula for a sinusoidal function indicates the phase shift. See <link target-id="Example_06_01_03"/>.</item>
+<item>The value <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> in the general formula for a sinusoidal function indicates the vertical shift from the midline. See <link target-id="Example_06_01_04"/>.</item>
+<item>Combinations of variations of sinusoidal functions can be detected from an equation. See <link target-id="Example_06_01_05"/>.</item>
+<item>The equation for a sinusoidal function can be determined from a graph. See <link target-id="Example_06_01_06"/> and <link target-id="Example_06_01_07"/>.</item>
+<item>A function can be graphed by identifying its amplitude and period. See <link target-id="Example_06_01_08"/> and <link target-id="Example_06_01_09"/>.</item>
+<item>A function can also be graphed by identifying its amplitude, period, phase shift, and horizontal shift. See <link target-id="Example_06_01_10"/>.</item>
+<item>Sinusoidal functions can be used to solve real-world problems. See <link target-id="Example_06_01_11"/>, <link target-id="Example_06_01_12"/>, and <link target-id="Example_06_01_13"/>.</item>
+</list></section>
+<section id="fs-id1165137842570" class="section-exercises"><title>Section Exercises</title><section id="fs-id1165137475812">
+<title>Verbal</title>
+<exercise id="fs-id1165137432049">
+<problem id="fs-id1165137415633"><para id="fs-id1165137415634">Why are the sine and cosine functions called periodic functions?</para></problem>
+<solution id="fs-id1165137415637"><para id="fs-id1165137415638">The sine and cosine functions have the property that <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>P</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> for a certain <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> This means that the function values repeat for every <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi>
+ </m:mrow>
+</m:math> units on the <emphasis effect="italics">x</emphasis>-axis.</para></solution>
+</exercise>
+<exercise id="fs-id1165135305829">
+<problem id="fs-id1165135305831"><para id="fs-id1165135305832">How does the graph of <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+compare with the graph of <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+Explain how you could horizontally translate the graph of <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+to obtain <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134290285">
+<problem id="fs-id1165134290287"><para id="fs-id1165134290288">For the equation <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> what constants affect the range of the function and how do they affect the range?</para></problem>
+<solution id="fs-id1165137811265"><para id="fs-id1165137431114">The absolute value of the constant <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> (amplitude) increases the total range and the constant <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> (vertical shift) shifts the graph vertically.</para></solution>
+</exercise>
+<exercise id="fs-id1165137810849">
+<problem id="fs-id1165137810851"><para id="fs-id1165137810852">How does the range of a translated sine function relate to the equation <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137410268">
+<problem id="fs-id1165137432413"><para id="fs-id1165137432414">How can the unit circle be used to construct the graph of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137407584"><para id="fs-id1165137407585">At the point where the terminal side of <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> intersects the unit circle, you can determine that the <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> equals the <emphasis effect="italics">y</emphasis>-coordinate of the point.</para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137663688">
+<title>Graphical</title>
+<para id="fs-id1165137742733">For the following exercises, graph two full periods of each function and state the amplitude, period, and midline. State the maximum and minimum <emphasis effect="italics">y</emphasis>-values and their corresponding <emphasis effect="italics">x</emphasis>-values on one period for <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> Round answers to two decimal places if necessary.</para><exercise id="fs-id1165137570454">
+<problem id="fs-id1165137570456"><para id="fs-id1165137570457"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137423636"><problem id="fs-id1165137423638"><para id="fs-id1165137423639"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135456747">
+
+<media id="fs-id1165137871371" alt="A graph of (2/3)cos(x). Graph has amplitude of 2/3, period of 2pi, and range of [-2/3, 2/3].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_202.jpg"/>
+</media>
+
+<para id="fs-id1165137817435">amplitude: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> period: <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> maximum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> minimum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> for one period, the graph starts at 0 and ends at <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165135663289">
+<problem id="fs-id1165135663292">
+<para id="fs-id1165135663294"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>sin</m:mi>
+  <m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137678150"><problem id="fs-id1165135160163"><para id="fs-id1165135160164"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137407212">
+
+<media id="fs-id1165135151296" alt="A graph of 4sin(x). Graph has amplitude of 4, period of 2pi, and range of [-4, 4].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_204.jpg"/>
+</media>
+
+<para id="fs-id1165137535655">amplitude: 4; period: <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> maximum <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> minimum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> one full period occurs from <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> to <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise><exercise id="fs-id1165137451618">
+<problem id="fs-id1165137451620"><para id="fs-id1165137451622"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137794096"><problem id="fs-id1165137794099"><para id="fs-id1165137585075"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137871346">
+
+<media id="fs-id1165135386486" alt="A graph of cos(2x). Graph has amplitude of 1, period of pi, and range of [-1,1].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_206.jpg"/>
+</media>
+
+<para id="fs-id1165137827174">amplitude: 1; period: <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> maximum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> minimum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> one full period is graphed from <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> to <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165135241360">
+<problem id="fs-id1165137531898"><para id="fs-id1165137531899"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137793956"><problem id="fs-id1165137793958"><para id="fs-id1165137793959"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137804069">
+<media id="fs-id1165137874893" alt="A graph of 4cos(pi*x). Grpah has amplitude of 4, period of 2, and range of [-4, 4].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_208.jpg"/>
+</media>
+
+<para id="fs-id1165137434223">amplitude: 4; period: 2; midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> maximum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> minimum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165135487094">
+<problem id="fs-id1165135181423"><para id="fs-id1165135181424"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>6</m:mn>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134277994"><problem id="fs-id1165134277996"><para id="fs-id1165134277997"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137843946">
+
+<media id="fs-id1165137424209" alt="A graph of 3sin(8(x+4))+5. Graph has amplitude of 3, range of [2, 8], and period of pi/4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_210.jpg"/>
+</media>
+
+<para id="fs-id1165134107350">amplitude: 3; period: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> maximum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0.12</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> minimum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0.516</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> horizontal shift: <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> vertical translation 5; one period occurs from <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> to <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165137870948">
+<problem id="fs-id1165135457711"><para id="fs-id1165135457712"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>21</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135675218"><problem id="fs-id1165137414495"><para id="fs-id1165137414496"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134284471">
+
+<media id="fs-id1165135487190" alt="A graph of 5sin(5x+20)-2. Graph has an amplitude of 5, period of 2pi/5, and range of [-7,3].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_212.jpg"/>
+</media>
+
+<para id="fs-id1165137862366">amplitude: 5; period: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> maximum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0.08</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> minimum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−7</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0.71;</m:mn>
+ </m:mrow>
+</m:math> phase shift: <m:math>
+ <m:mrow>
+  <m:mn>−4</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> vertical translation: <m:math>
+ <m:mrow>
+  <m:mn>−2;</m:mn>
+ </m:mrow>
+</m:math> one full period can be graphed on <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> to <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise><para id="fs-id1165137803788">For the following exercises, graph one full period of each function, starting at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> For each function, state the amplitude, period, and midline. State the maximum and minimum <emphasis effect="italics">y</emphasis>-values and their corresponding <emphasis effect="italics">x</emphasis>-values on one period for <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> State the phase shift and vertical translation, if applicable. Round answers to two decimal places if necessary.</para><exercise id="fs-id1165135154308">
+<problem id="fs-id1165137694190"><para id="fs-id1165137694191"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>t</m:mi><m:mo>−</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</problem></exercise>
+
+<exercise id="fs-id1165137898084"><problem id="fs-id1165137898086"><para id="fs-id1165137898087"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>t</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134541171">
+
+<media id="fs-id1165135411369" alt="A graph of -cos(t+pi/3)+1. Graph has amplitude of 1, period of 2pi, and range of [0,2]. Phase shifted pi/3 to the left.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_214.jpg"/>
+</media>
+
+<para id="fs-id1165137911368">amplitude: 1 ; period: <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> maximum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.09</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> maximum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2.09</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> minimum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5.24</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> phase shift: <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> vertical translation: 1; one full period is from <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> to <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165135250664">
+<problem id="fs-id1165135250666"><para id="fs-id1165135250667"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>t</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165137552971"><problem id="fs-id1165137552973"><para id="fs-id1165137552974"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>t</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137541180">
+<media id="fs-id1165135349231" alt="A graph of -sin((1/2)*t + 5pi/3). Graph has amplitude of 1, range of [-1,1], period of 4pi, and a phase shift of -10pi/3.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_216.jpg"/>
+</media>
+<para id="fs-id1165135511335">amplitude: 1; period: <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> maximum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>11.52</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> minimum: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> occurs at <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5.24</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> phase shift: <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>10</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> vertical shift: 0 </para>
+</solution>
+</exercise><exercise id="fs-id1165135247503">
+<problem id="fs-id1165135247505"><para id="fs-id1165135247506"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165137658354" class="media-set-2"><problem id="fs-id1165137658356"><para id="fs-id1165137823542">Determine the amplitude, midline, period, and an equation involving the sine function for the graph shown in <link target-id="Figure_06_01_218"/>.</para>
+<figure id="Figure_06_01_218" class="small">
+<media id="fs-id1165134378625" alt="A sinusoidal graph with amplitude of 2, range of [-5, -1], period of 4, and midline at y=-3." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_218.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165135708054"><para id="fs-id1165135708055">amplitude: 2; midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> period: 4; equation: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise><exercise id="fs-id1165137705148" class="media-set-2"><problem id="fs-id1165135169261"><para id="fs-id1165135169262">Determine the amplitude, period, midline, and an equation involving cosine for the graph shown in <link target-id="Figure_06_01_219"/>.</para>
+<figure id="Figure_06_01_219" class="small">
+<media id="fs-id1165135192938" alt="A graph with a cosine parent function, with amplitude of 3, period of pi, midline at y=-1, and range of [-4,2]" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_219.jpg"/>
+</media>
+</figure>
+</problem>
+</exercise><exercise id="fs-id1165135688798" class="media-set-2">
+<problem id="fs-id1165135688800"><para id="fs-id1165135688801">Determine the amplitude, period, midline, and an equation involving cosine for the graph shown in <link target-id="Figure_06_01_220"/>.</para>
+<figure id="Figure_06_01_220" class="small">
+<media id="fs-id1165134045717" alt="A graph with a cosine parent function with an amplitude of 2, period of 5, midline at y=3, and a range of [1,5].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_220.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165134378700"><para id="fs-id1165134378701">amplitude: 2; period: 5; midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> equation: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135333824" class="media-set-2">
+<problem id="fs-id1165135333826"><para id="fs-id1165135333827">Determine the amplitude, period, midline, and an equation involving sine for the graph shown in <link target-id="Figure_06_01_221"/>.</para>
+<figure id="Figure_06_01_221" class="small">
+<media id="fs-id1165134262487" alt="A sinusoidal graph with amplitude of 4, period of 10, midline at y=0, and range [-4,4].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_221.jpg"/>
+</media>
+</figure>
+</problem>
+</exercise>
+<exercise id="fs-id1165137473550" class="media-set-2">
+<problem id="fs-id1165134389954"><para id="fs-id1165134389955">Determine the amplitude, period, midline, and an equation involving cosine for the graph shown in <link target-id="Figure_06_01_222"/>.</para>
+<figure id="Figure_06_01_222" class="small">
+<media id="fs-id1165137676946" alt="A graph with cosine parent function, range of function is [-4,4], amplitude of 4, period of 2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_222.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165135534972"><para id="fs-id1165135534973">amplitude: 4; period: 2; midline: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> equation: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>π</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137425686" class="media-set-2">
+<problem id="fs-id1165137425688"><para id="fs-id1165137425689">Determine the amplitude, period, midline, and an equation involving sine for the graph shown in <link target-id="Figure_06_01_223"/>.</para>
+<figure id="Figure_06_01_223" class="small">
+<media id="fs-id1165137445238" alt="A graph with sine parent function. Amplitude 2, period 2, midline y=0">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_223.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+<exercise id="fs-id1165137588535" class="media-set-2">
+<problem id="fs-id1165137588538"><para id="fs-id1165137588539">Determine the amplitude, period, midline, and an equation involving cosine for the graph shown in <link target-id="Figure_06_01_224"/>.</para>
+<figure id="Figure_06_01_224" class="small">
+<media id="fs-id1165135252106" alt="A graph with cosine parent function. Amplitude 2, period 2, midline y=1">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_224.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165137600948"><para id="fs-id1165137600949">amplitude: 2; period: 2; midline <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> equation: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>π</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135530674" class="media-set-2">
+<problem id="fs-id1165137823256"><para id="fs-id1165137823257">Determine the amplitude, period, midline, and an equation involving sine for the graph shown in <link target-id="Figure_06_01_225"/>.</para>
+
+<figure id="Figure_06_01_225" class="small">
+<media id="fs-id1165133362029" alt="A graph with a sine parent function. Amplitude 1, period 4 and midline y=0.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_225.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+</section>
+
+
+
+<section id="fs-id1165134043561">
+<title>Algebraic</title>
+<para id="fs-id1165134043566">For the following exercises, let <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135471271"><problem id="fs-id1165135471273"><para id="fs-id1165137650837">On <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> solve <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="eip-idm685047824">
+<para id="eip-idm685047568"> <m:math>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mn>π</m:mn>
+
+</m:math> </para></solution></exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137400540"><problem id="fs-id1165137400542"><para id="fs-id1165137400543">On <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> solve <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<!--<solution id="fs-id1165137832261"><para id="fs-id1165137784896"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>&#960;</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137637941"><problem id="fs-id1165137637943"><para id="fs-id1165137637944">Evaluate <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="eip-idm498263712">
+<para id="eip-idm438787472"> <m:math>
+<m:mtext>sin</m:mtext><m:mo>(</m:mo><m:mfrac><m:mn>π</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:math> </para></solution>
+</exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137804692"><problem id="fs-id1165137442246"><para id="fs-id1165137442247">On <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Find all values of <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<!--<solution id="fs-id1165137837133"><para id="fs-id1165137837134"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>&#960;</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137416978"><problem id="fs-id1165135189866"><para id="fs-id1165135189867">On <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> the maximum value(s) of the function occur(s) at what <emphasis effect="italics">x</emphasis>-value(s)?</para></problem>
+<solution id="eip-idm232022464">
+<para id="eip-idm232022208">
+ <m:math>
+<m:mfrac><m:mn>π</m:mn><m:mn>2</m:mn></m:mfrac>
+</m:math>
+</para>
+</solution></exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137942464"><problem id="fs-id1165137942466"><para id="fs-id1165137942467">On <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> the minimum value(s) of the function occur(s) at what <emphasis effect="italics">x</emphasis>-value(s)?</para></problem>
+<!--<solution id="fs-id1165134042136"><para id="fs-id1165134042137"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137633931"><problem id="fs-id1165137633933"><para id="fs-id1165137633934">Show that <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> This means that <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> is an odd function and possesses symmetry with respect to ________________.</para></problem>
+<solution id="eip-idm468422592">
+<para id="eip-idm468422336"> <m:math>
+<m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mtext>sin</m:mtext><m:mi>x</m:mi>
+</m:math>
+is symmetric</para></solution></exercise><para id="fs-id1165137806520">For the following exercises, let <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137844202"><problem id="fs-id1165137844204"><para id="fs-id1165137844205">On <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> solve the equation <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<!--<solution id="fs-id1165134129955"><para id="fs-id1165134129956"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>&#960;</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134043804"><problem id="fs-id1165135191893"><para id="fs-id1165135191894">On <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> solve <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="eip-idm503657376">
+<para id="eip-idm456116448">
+ <m:math>
+<m:mfrac><m:mn>π</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mn>π</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac>
+</m:math>
+</para>
+</solution>
+</exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137423113"><problem id="fs-id1165137423115"><para id="fs-id1165137447173">On <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> find the <emphasis effect="italics">x</emphasis>-intercepts of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<!--<solution id="fs-id1165135440505"><para id="fs-id1165135440506"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>&#960;</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134394631"><problem id="fs-id1165134394633"><para id="fs-id1165134230442">On <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> find the <emphasis effect="italics">x</emphasis>-values at which the function has a maximum or minimum value.</para></problem>
+<solution id="eip-idm649466192">
+<para id="eip-idm649465936">Maximum:
+ <m:math>
+<m:mn>1</m:mn>
+</m:math>
+at
+ <m:math>
+<m:mi>x</m:mi><m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>
+; minimum:
+ <m:math>
+<m:mn>-1</m:mn>
+</m:math>
+at
+ <m:math>
+<m:mi>x</m:mi><m:mo>=</m:mo>
+<m:mn>π</m:mn>
+</m:math> </para></solution></exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137442136"><problem id="fs-id1165137442139"><para id="fs-id1165137442140">On <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> solve the equation <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<!--<solution id="fs-id1165137933103"><para id="fs-id1165137933104"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>&#960;</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise></section>
+
+<section id="fs-id1165137638455">
+<title>Technology</title>
+<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135193041"><problem id="fs-id1165135193043">
+  <para id="fs-id1165137639606">Graph <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> on <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Explain why the graph appears as it does.</para></problem>
+<solution id="eip-idm501526848">
+<para id="eip-idm466138656">A linear function is added to a periodic sine function. The graph does not have an amplitude because as the linear function increases without bound the combined function
+
+
+ <m:math>
+<m:mi>h</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>sin</m:mtext><m:mi>x</m:mi>
+</m:math>
+will increase without bound as well. The graph is bounded between the graphs of
+
+
+ <m:math>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:math>
+
+and
+
+
+ <m:math>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+</m:math>
+
+because sine oscillates between −1 and 1.
+
+<media id="eip-idm358410368" alt=""><image mime-type="jpeg" src="../../media/CNX_Precalc_Figure_06_01_226.jpg"/></media></para></solution></exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137736577"><problem id="fs-id1165137736579"><para id="fs-id1165137637316">Graph <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> on <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mo>−</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mn>100</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Did the graph appear as predicted in the previous exercise?</para></problem>
+<!--<solution id="fs-id1165137433807">
+<para id="fs-id1165137433809">The graph appears linear. The linear functions dominate the shape of the graph for large values of <m:math>
+ <m:mrow>
+  <m:mtext>&#8201;</m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+
+<media id="fs-id1165137604843" alt="A sinusoidal graph that increases like the function y=x, shown from 0 to 100.">
+<image mime-type="image/jpg" src="CNX_Precalc_Figure_06_01_227.jpg"/>
+</media>
+
+</solution>-->
+</exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137891285"><problem id="fs-id1165137891288">
+<para id="fs-id1165137891290">Graph <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> on <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math> and verbalize how the graph varies from the graph of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="eip-idm304745008">
+<para id="eip-idm451079760">There is no amplitude because the function is not bounded.
+<media id="eip-idm586629920" alt=""><image mime-type="jpeg" src="../../media/CNX_Precalc_Figure_06_01_228.jpg"/></media></para></solution>
+</exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165133085093"><problem id="fs-id1165133085095"><para id="fs-id1165133085096">Graph <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> on the window <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mn>−10</m:mn><m:mo>,</m:mo><m:mn>10</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math> and explain what the graph shows.</para></problem>
+<!--<solution id="fs-id1165135322029">
+<para id="fs-id1165134283628">The graph is symmetric with respect to the <emphasis effect="italics">y</emphasis>-axis and there is no amplitude because the function is not periodic.</para>
+
+
+<media id="fs-id1165137570542" alt="A sinusoidal graph that has increasing peaks and decreasing lows as the absolute value of x increases.">
+<image mime-type="image/jpg" src="CNX_Precalc_Figure_06_01_229.jpg"/>
+</media>
+
+</solution>-->
+</exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137433574"><problem id="fs-id1165137433577">
+<para id="fs-id1165137696192">Graph <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> on the window <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mn>−5</m:mn><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>5</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math> and explain what the graph shows.</para></problem>
+<solution id="eip-idm420606880">
+<para id="eip-idm420606304">The graph is symmetric with respect to the y-axis and there is no amplitude because the function’s bounds decrease as
+
+ <m:math>
+<m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo>
+</m:math>
+grows. There appears to be a horizontal asymptote at
+
+ <m:math>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:math>
+.
+<media id="eip-idm1385291856" alt=""><image mime-type="jpeg" src="../../media/CNX_Precalc_Figure_06_01_230.jpg"/></media>
+</para></solution></exercise></section>
+
+<section id="fs-id1165135333770">
+<title>Real-World Applications</title>
+<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135333775" class="media-set-2"><problem id="fs-id1165137435670"><para id="fs-id1165137435671">A Ferris wheel is 25 meters in diameter and boarded from a platform that is 1 meter above the ground. The six o’clock position on the Ferris wheel is level with the loading platform. The wheel completes 1 full revolution in 10 minutes. The function <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> gives a person’s height in meters above the ground <emphasis effect="italics">t</emphasis> minutes after the wheel begins to turn.</para><list id="fs-id1165135194497" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> Find the amplitude, midline, and period of <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">ⓑ</span> Find a formula for the height function <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">ⓒ</span> How high off the ground is a person after 5 minutes?</item>
+</list>
+</problem>
+<!--
+<solution id="fs-id1165135205671">
+<list id="fs-id1165135205673" list-type="enumerated" number-style="lower-alpha"><item>Amplitude: 12.5; period: 10; midline: <m:math>
+ <m:mrow>
+  <m:mtext>&#8201;</m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>13.5</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>12.5</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>&#960;</m:mi>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>t</m:mi><m:mo>&#8722;</m:mo><m:mn>2.5</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>13.5</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>26 ft</item>
+</list></solution> -->
+</exercise></section></section></content>
+<glossary>
+<definition id="fs-id1165137414167">
+<term>amplitude</term>
+<meaning id="fs-id1165137463141">the vertical height of a function; the constant <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> appearing in the definition of a sinusoidal function</meaning>
+</definition>
+<definition id="fs-id1165137602032">
+<term>midline</term>
+<meaning id="fs-id1165137602037">the horizontal line <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> appears in the general form of a sinusoidal function</meaning>
+</definition>
+<definition id="fs-id1165137678058">
+<term>periodic function</term>
+<meaning id="fs-id1165137678063">a function <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> that satisfies <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>P</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> for a specific constant <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi>
+ </m:mrow>
+</m:math> and any value of <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+<definition id="fs-id1165137939683">
+<term>phase shift</term>
+<meaning id="fs-id1165137939688">the horizontal displacement of the basic sine or cosine function; the constant <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+<definition id="fs-id1165135160153">
+<term>sinusoidal function</term>
+<meaning id="fs-id1165137737500">any function that can be expressed in the form <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+ </m:mrow>
+</m:math> or <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+</glossary>
+</document>

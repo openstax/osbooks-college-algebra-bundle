@@ -1,0 +1,3338 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Dividing Polynomials</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m51277</md:content-id>
+  <md:title>Dividing Polynomials</md:title>
+  <md:abstract><para>In this section, you will:</para><list>
+<item>Use long division to divide polynomials.</item>
+<item>Use synthetic division to divide polynomials.</item>
+</list></md:abstract>
+  <md:uuid>11f2bd05-8eff-4fb8-9e06-02a657fbb031</md:uuid>
+<md:canonical-book-uuid>13ac107a-f15f-49d2-97e8-60ab2e3b519c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+  <section id="eip-660" class="coreq-skills"><section id="eip-248" class="learning-objectives"><title>Learning Objectives</title><list id="eip-idm396764352">
+<item>Dividing polynomials using long division (IA 5.4.3)</item>
+<item>Dividing polynomials using synthetic division (IA 5.4.4)</item>
+</list></section><section id="eip-980"><title>Objective 1: Dividing polynomials using long division (IA 5.4.3)</title><para id="eip-171">To divide a polynomial by a binomial, we follow a procedure very similar to long division of numbers. So, let’s look carefully at the steps we take when we divide a 3-digit number, 875, by a 2-digit number, 25.
+</para><example id="eip-420"><exercise id="eip-idm259840400"><problem id="eip-idm259840272"><title>Long division of numbers</title><media id="eip-idm417771872" alt="This figure shows the long division of 875 divided by 25. 875 is labeled dividend and 25 is labeled divisor. The result of 35 is labeled quotient. The 3 in 35 is determined from the number of times we can divide 25 into 87. Multiplying 25 and 3 results in 75. 75 is subtracted from 87 to get 12. The 5 from 875 is dropped down to make 12 into 125. The 5 in 35 is determined from the number of times was can divide 25 into 125. Since 25 goes into 125 evenly there is no remainder. The result of subtracting 125 from 125 is 0 which is labeled remainder.">
+    <image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_05_04_001_img_new.jpg"/>
+</media>
+<para id="eip-125">When we divided 875 by 25, we had no remainder. But sometimes division of numbers does leave a remainder.
+</para>
+</problem></exercise></example><section id="eip-604" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-86">Vocabulary of the example. </para><para id="eip-926">Fill in the blanks.</para><exercise id="eip-558"><problem id="eip-193">
+  <para id="eip-384">When dividing 69 by 4,</para>
+<para id="eip-idm338644336">the <emphasis>dividend</emphasis> is_________, </para><para id="eip-idm338548560">the <emphasis>divisor</emphasis> is________,    </para><para id="eip-idm338548176">the <emphasis>quotient</emphasis> is________, </para><para id="eip-idm338547792">and the <emphasis>remainder</emphasis> is________.</para><para id="eip-idm915981648">We check division by multiplying the quotient by the divisor and adding the remainder.
+</para>
+</problem></exercise>
+
+</section>
+<example id="eip-413"><exercise id="fs-id1167831908410"><problem id="fs-id1167834473947"><title>Dividing of polynomials has very similar steps to the numerical example above.</title>
+<para id="fs-id1167834517539">Find the quotient: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>20</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1167835218048">
+<table id="fs-id1167827957025" class="unnumbered unstyled can-break" summary="This image shows the process for polynomial long division using the example x squared plus 9 x plus 20 divided by x plus 5. Writing the problem as a long division problem we make sure the dividend is in standard form. The dividend of x squared plus 9 x plus 20 is put in the long division symbol. The divisor of x plus 5 is written to the left of the long division symbol. The quotient is written above the long division symbol. To find the first term in the quotient we divide the x squared by x to get x. Then multiplying the x from the quotient with the entire divisor we get x squared plus 5 x. This is written below the x squared plus 9 x in the dividend and subtracted to get 4 x. The 20 in the dividend is dropped down to make this 4 x plus 20. To find the next term in the quotient we divide the 4 x by the x in the divisor to get 4. The quotient is now x plus 4. The 4 is multiplied to the entire divisor to get 4 x plus 20. This is subtracted from the 4 x plus 20 to give a remainder of 0. The process can be checked by multiplying the quotient of x plus 4 with the divisor of x plus 5 to get the dividend of x squared plus 9 x plus 20."><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row valign="top">
+<entry valign="top" align="left"/>
+<entry valign="top" align="left"><media id="fs-id1167835356577" alt="."><image mime-type="image/jpeg" src="../../media/5_4_1.jpg"/></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">Write it as a long division problem.<newline/>Be sure the dividend is written in descending order of powers, with no missing terms.</entry>
+<entry valign="top" align="left"><media id="fs-id1167835343759" alt="."><image mime-type="image/jpeg" src="../../media/5_4_2.jpg"/></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">Divide <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> by <m:math><m:mrow><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> It may help to ask yourself, “What do I need<newline/>to multiply <m:math><m:mi>x</m:mi></m:math> by to get <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> ?”</entry>
+<entry valign="top" align="left"><media id="fs-id1167830701188" alt="."><image mime-type="image/jpeg" src="../../media/5_4_3.jpg"/></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">Put the answer, <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> in the quotient over the <m:math><m:mi>x</m:mi></m:math> term.<newline/>Multiply <m:math><m:mi>x</m:mi></m:math> times <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math> Line up the like terms under the dividend.</entry>
+<entry valign="top" align="left"><media id="fs-id1167835325737" alt="."><image mime-type="image/jpeg" src="../../media/5_4_4.jpg"/></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">Subtract <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:math> from <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> <newline/>You may find it easier to change the signs and then add.<newline/>Then bring down the last term, 20.</entry>
+<entry valign="top" align="left"><media id="fs-id1167835327295" alt="."><image mime-type="image/jpeg" src="../../media/5_4_5.jpg"/></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left"><newline/>Divide <m:math><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow></m:math> by <m:math><m:mrow><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> It may help to ask yourself, “What do I<newline/>need to multiply <m:math><m:mi>x</m:mi></m:math> by to get <m:math><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow></m:math> ?”<newline/>Put the answer, <m:math><m:mn>4</m:mn></m:math> , in the quotient over the constant term.</entry>
+<entry valign="top" align="left"><media id="fs-id1167828421672" alt="."><image mime-type="image/jpeg" src="../../media/5_4_6.jpg"/></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">Multiply 4 times <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>.</m:mo></m:mrow></m:math> </entry>
+<entry valign="top" align="left"><media id="fs-id1167835254539" alt="."><image mime-type="image/jpeg" src="../../media/5_4_7.jpg"/></media></entry>
+</row>
+<row valign="top">
+<entry valign="top" align="left">Subtract <m:math><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>20</m:mn></m:mrow></m:math> from <m:math><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>20</m:mn><m:mo>.</m:mo></m:mrow></m:math> </entry>
+<entry valign="top" align="left"><media id="fs-id1167830757353" alt="."><image mime-type="image/jpeg" src="../../media/5_4_8.jpg"/></media></entry>
+</row>
+<row>
+<entry valign="top" align="left">Check:<newline/>Multiply the quotient by the divisor. <m:math><m:mrow><m:mrow><m:mspace width="1em"/><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> <newline/>You should get the dividend. <m:math><m:mrow><m:mspace width="4em"/><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>20</m:mn><m:mo>✓</m:mo></m:mrow></m:math> </entry>
+<entry/>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+<section id="eip-518" class="practice-perfect"><title>Practice Makes Perfect</title><exercise id="eip-931"><problem id="eip-342">
+  <para id="eip-767">
+Divide using long division of polynomials: <m:math><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>21</m:mn><m:mo>)</m:mo><m:mo>÷</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:math>
+  </para>
+</problem>
+</exercise>
+</section><para id="eip-856">Sometimes division of polynomials, just like division of numbers, leaves a remainder. We write the <emphasis>remainder</emphasis> as a fraction with the divisor as the denominator.
+</para>
+<para id="eip-952">Also, if you look back at the dividends in previous examples, you will notice that the terms were written in <emphasis>descending order of degrees</emphasis>, and there were <emphasis>no missing degrees</emphasis>.
+</para>
+<example id="eip-760"><exercise id="eip-416"><problem id="eip-667"><title>Dividing polynomials using long division.</title>
+  <para id="eip-451">
+ <m:math><m:mo>(</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>÷</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:math>
+  </para>
+</problem>
+
+<solution id="eip-149">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-214">Notice, this polynomial is not in descending order and it is missing <m:math><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:math> term. We need to write it in the correct order and add <m:math><m:mn>0</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:math> as a placeholder.
+  </para><figure id="eip-idm297568864">
+  <media id="eip-idm218694400" alt=".">
+    <image mime-type="image/jpeg" src="../../media/5_4_9.jpg"/>
+  </media>
+</figure>
+<para id="eip-idm203465312">To check, multiply divisor by the quotient and add remainder <m:math><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>-</m:mo><m:mn>4</m:mn></m:math> </para>
+<para id="eip-idm230006624">The result should be <m:math><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn></m:math> </para>
+</solution>
+</exercise></example>
+<section id="eip-460" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-773">
+Dividing polynomials using long division.
+</para><exercise id="eip-151"><problem id="eip-939">
+  <para id="eip-947">
+ <m:math><m:mo>(</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>-</m:mo><m:mn>7</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>÷</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:math>
+  </para>
+</problem>
+
+</exercise><exercise id="eip-134"><problem id="eip-69">
+  <para id="eip-467">
+ <m:math><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>8</m:mn><m:mo>)</m:mo><m:mo>÷</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:math>
+  </para>
+</problem>
+
+</exercise></section></section><section id="eip-59"><title>Objective 2: Dividing polynomials using synthetic division (IA 5.4.4)</title><para id="eip-29">As you probably noticed, long division can be tedious. Synthetic division uses the patterns from long division as a basis to make a process much simpler by leaving the variable terms out. The same example in synthetic division format is shown next.
+</para>
+<figure id="eip-idm309800592">
+
+  <media id="eip-idm309800336" alt=".">
+    <image mime-type="image/jpeg" src="../../media/5_4_10.jpg"/>
+  </media>
+
+</figure>
+
+<para id="eip-763">Synthetic division only works when the divisor is of the form (x−c).</para><example id="eip-500"><exercise id="eip-448"><problem id="eip-567">
+  <para id="eip-215">
+Use synthetic division to find the quotient and remainder when <m:math><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>-</m:mo><m:mn>16</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:math> is divided by x+4. Note that the divisor is in the form x-(-4), so use c as the divisor.
+  </para>
+</problem>
+
+<solution id="eip-557">
+  <para id="eip-70">
+The polynomial <m:math><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>-</m:mo><m:mn>16</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:math> has its term in order with descending degree but we notice there is no x3term. We will add a 0 as a placeholder for the <m:math><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:math> term.
+  </para>
+
+
+<figure id="fs-idm241293040">
+  <media id="fs-idm247036368" alt=".">
+    <image mime-type="image/jpeg" src="../../media/5_4_11.jpg"/>
+  </media>
+</figure>
+
+<para id="eip-idm797744912">We divided a 4th degree polynomial by a 1st degree polynomial so the quotient will be a 3rd degree polynomial. Reading from the third row, the quotient has the coefficients 1,−4,0, and 3, which is <m:math><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>0</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo> </m:mo></m:math> . The remainder is 0.
+</para>
+</solution>
+</exercise>
+</example><section id="eip-963" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-380">
+Dividing polynomials using synthetic division.
+</para><exercise id="eip-268"><problem id="eip-333">
+  <para id="eip-754">
+Let <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:math>
+  </para>
+<list id="eip-idm300137584" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> Find <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:math> </item>
+<item><span class="token">ⓑ</span> Divide <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> by <m:math><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:math> . What is the quotient? What is the remainder?</item>
+</list></problem>
+</exercise><exercise id="eip-909"><problem id="eip-idm875029776">
+  <para id="eip-idm843385168">
+Let <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn></m:math>
+  </para>
+<list id="eip-idm434527584" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> Find <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mn>−3</m:mn><m:mo>)</m:mo></m:math> </item>
+<item><span class="token">ⓑ</span> Divide <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> by <m:math><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:math> . What is the quotient? What is the remainder?</item>
+</list><para id="eip-idm604375376">What is the connection between <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>)</m:mo></m:math> and the remainder when <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> is divided by <m:math><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>c</m:mi><m:mo>)</m:mo></m:math> ? Summarize your findings.
+</para></problem>
+</exercise></section></section></section><figure id="Figure_03_05_001" class="small"><media id="fs-id1165137831283" alt="Lincoln Memorial.">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_05_001.jpg"/>
+   </media>
+  <caption>Lincoln Memorial, Washington, D.C. (credit: Ron Cogswell, Flickr)</caption></figure><para id="fs-id1165135382145">The exterior of the Lincoln Memorial in Washington, D.C., is a large rectangular solid with length 61.5 meters (m), width 40 m, and height 30 m.<footnote id="fs-id1165135149061">National Park Service. "Lincoln Memorial Building Statistics." http://www.nps.gov/linc/historyculture/lincoln-memorial-building-statistics.htm. Accessed 4/3/2014</footnote> We can easily find the volume using elementary geometry.</para>
+<equation id="eip-435" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center"><m:mi>V</m:mi></m:mtd>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left"><m:mrow><m:mi>l</m:mi><m:mo>⋅</m:mo><m:mi>w</m:mi><m:mo>⋅</m:mo><m:mi>h</m:mi></m:mrow></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left"><m:mrow><m:mn>61.5</m:mn><m:mo>⋅</m:mo><m:mn>40</m:mn><m:mo>⋅</m:mo><m:mn>30</m:mn></m:mrow></m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left"><m:mrow><m:mn>73,800</m:mn></m:mrow></m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165133214948">So the volume is 73,800 cubic meters <m:math>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mtext>m</m:mtext><m:mo>³</m:mo>
+     </m:mrow>
+     <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>   </m:mrow>
+  </m:math>
+   Suppose we knew the volume, length, and width. We could divide to find the height.</para>
+
+<equation id="eip-312" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right"><m:mi>h</m:mi></m:mtd>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left" rowalign="center"><m:mrow><m:mfrac><m:mi>V</m:mi><m:mrow><m:mi>l</m:mi><m:mo>⋅</m:mo><m:mi>w</m:mi></m:mrow></m:mfrac></m:mrow></m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left"><m:mrow><m:mfrac><m:mrow><m:mn>73,800</m:mn></m:mrow><m:mrow><m:mn>61.5</m:mn><m:mo>⋅</m:mo><m:mn>40</m:mn></m:mrow></m:mfrac></m:mrow></m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left" rowalign="center"><m:mrow><m:mn>30</m:mn></m:mrow></m:mtd>
+   </m:mtr>
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137892463">As we can confirm from the dimensions above, the height is 30 m. We can use similar methods to find any of the missing dimensions. We can also use the same method if any, or all, of the measurements contain variable expressions. For example, suppose the volume of a rectangular solid is given by the polynomial <m:math>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>33</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>54</m:mn><m:mi>x</m:mi><m:mo>.</m:mo>   </m:mrow>
+  </m:math>
+   The length of the solid is given by <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math>
+   the width is given by <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2.</m:mn>
+    </m:mrow>
+   </m:math>    To find the height of the solid, we can use polynomial division, which is the focus of this section.</para><section id="fs-id1165137676949"><title>Using Long Division to Divide Polynomials</title><para id="fs-id1165135191647">We are familiar with the <term class="no-emphasis">long division</term> algorithm for ordinary arithmetic. We begin by dividing into the digits of the dividend that have the greatest place value. We divide, multiply, subtract, include the digit in the next place value position, and repeat. For example, let’s divide 178 by 3 using long division.</para>
+
+
+    <media id="fs-id1165137564295" alt="Steps of long division for intergers." display="block">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_05_002.jpg"/>
+    </media>
+
+   <para id="fs-id1165134170235">Another way to look at the solution is as a sum of parts. This should look familiar, since it is the same method used to check division in elementary arithmetic.</para>
+
+   <equation id="eip-474" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right"><m:mrow><m:mtext>dividend</m:mtext></m:mrow></m:mtd>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left"><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>divisor</m:mtext><m:mo>⋅</m:mo><m:mtext>quotient) + remainder</m:mtext></m:mrow></m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right"><m:mrow><m:mn>178</m:mn></m:mrow></m:mtd>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left"><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>⋅</m:mo><m:mn>59</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd columnalign="left" rowalign="center"><m:mrow><m:mn>177</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"><m:mo>=</m:mo></m:mtd>
+    <m:mtd rowalign="center" columnalign="left"><m:mrow><m:mn>178</m:mn></m:mrow></m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137640958">We call this the <emphasis>Division Algorithm </emphasis>and will discuss it more formally after looking at an example.</para>
+   <para id="fs-id1165137933942">Division of polynomials that contain more than one term has similarities to long division of whole numbers. We can write a polynomial dividend as the product of the divisor and the quotient added to the remainder. The terms of the polynomial division correspond to the digits (and place values) of the whole number division. This method allows us to divide two polynomials. For example, if we were to divide <m:math>
+    <m:mrow>
+     <m:mn>2</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+    </m:mrow>
+   </m:math>     by <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:math>     using the long division algorithm, it would look like this:</para>
+<media id="fs-id1678300" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_CAT_Figure_05_01_001.jpg"/>
+</media>
+<para id="fs-id1165135191694">We have found</para>
+   <equation id="eip-334" class="unnumbered"><label/> <m:math display="block">
+    <m:mrow>
+     <m:mfrac>
+      <m:mrow>
+       <m:mn>2</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+      </m:mrow>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+      </m:mrow>
+     </m:mfrac>
+     <m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mo>−</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>18</m:mn><m:mo>−</m:mo><m:mfrac>
+      <m:mrow>
+       <m:mn>31</m:mn>
+      </m:mrow>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+      </m:mrow>
+     </m:mfrac>
+
+    </m:mrow>
+   </m:math>
+   </equation>
+   <para id="fs-id1165137823279">or</para>
+   <equation id="eip-212" class="unnumbered"><label/><m:math>
+ <m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>18</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mn>31</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135181270">We can identify the <term class="no-emphasis">dividend</term>, the <term class="no-emphasis">divisor</term>, the <term class="no-emphasis">quotient</term>, and the <term class="no-emphasis">remainder</term>.</para>
+
+
+    <media id="fs-id1165134164979" alt="Identifying the dividend, divisor, quotient and remainder of the polynomial 2x^3-3x^2+4x+5, which is the dividend." display="block">
+     <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_05_003.jpg"/>
+    </media>
+
+
+   <para id="fs-id1165135508592">Writing the result in this manner illustrates the Division Algorithm.</para>
+
+   <note id="fs-id1165135508595"><title>The Division Algorithm</title>
+
+    <para id="fs-id1165137854177">The <term>Division Algorithm</term> states that, given a polynomial dividend <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:math>      and a non-zero polynomial divisor <m:math>
+      <m:mrow>
+   <m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:math>
+     where the degree of <m:math>
+      <m:mrow>
+   <m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:math>
+     is less than or equal to the degree of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> , there exist unique polynomials <m:math>
+      <m:mrow>
+   <m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:math>
+     and <m:math>
+      <m:mrow>
+   <m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:math>
+     such that</para>
+
+    <equation id="fs-id1165135320405" class="unnumbered"><label/> <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:math>
+    </equation>
+    <para id="fs-id1165137664631"> <m:math>
+     <m:mrow>
+      <m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:math>      is the quotient and <m:math>
+      <m:mrow>
+   <m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:math>
+     is the remainder. The remainder is either equal to zero or has degree strictly less than <m:math>
+      <m:mrow>
+   <m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+      </m:mrow>
+     </m:math>
+    </para>
+    <para id="fs-id1165134540113">If <m:math>
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:math>      then <m:math>
+      <m:mrow>
+   <m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:math>
+     divides evenly into <m:math>
+      <m:mrow>
+   <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+      </m:mrow>
+     </m:math>
+     This means that, in this case, both <m:math>
+      <m:mrow>
+   <m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:math>
+     and <m:math>
+      <m:mrow>
+   <m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:math>
+     are factors of <m:math>
+      <m:mrow>
+   <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+      </m:mrow>
+     </m:math>
+    </para>
+   </note><note id="fs-id1165135638531" class="how-to-notitle"><label>How To</label>
+    <para id="eip-id1567242"><emphasis>Given a polynomial and a binomial, use long division to divide the polynomial by the binomial.</emphasis></para>
+
+<list id="eip-id1165134557348" list-type="enumerated" number-style="arabic">
+
+<item>Set up the division problem.</item>
+     <item>Determine the first term of the quotient by dividing the leading term of the dividend by the leading term of the divisor.</item>
+     <item>Multiply the answer by the divisor and write it below the like terms of the dividend.</item>
+     <item>Subtract the bottom <term class="no-emphasis">binomial</term> from the top binomial.</item>
+     <item>Bring down the next term of the dividend.</item>
+     <item>Repeat steps 2–5 until reaching the last term of the dividend.</item>
+     <item>If the remainder is non-zero, express as a fraction using the divisor as the denominator.</item></list>
+   </note><example id="Example_03_05_01"><exercise id="fs-id1165137817675"><problem id="fs-id1165137817678">
+      <title>Using Long Division to Divide a Second-Degree Polynomial</title>
+      <para id="fs-id1165137817683">Divide <m:math>
+       <m:mrow><m:mn>5</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:math>
+       by <m:math>
+        <m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1.</m:mn>
+        </m:mrow>
+       </m:math>
+      </para>
+     </problem>
+     <solution id="fs-id1165135196885">
+<media id="fs-id1446862" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_CAT_Figure_05_01_002.jpg"/>
+</media>
+<para id="fs-id1165137639118">The quotient is <m:math>
+      <m:mrow>
+   <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2.</m:mn>
+      </m:mrow>
+     </m:math>
+      The remainder is 0. We write the result as</para>
+<equation id="eip-id1165137701865" class="unnumbered"><label/> <m:math>
+      <m:mrow>
+       <m:mfrac>
+        <m:mrow>
+         <m:mn>5</m:mn><m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>2</m:mn>
+         </m:msup>
+         <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+        </m:mrow>
+        <m:mrow>
+         <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+        </m:mrow>
+       </m:mfrac>
+       <m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+      </m:mrow>
+     </m:math>
+</equation>
+     <para id="fs-id1165134058382">or</para>
+<equation id="eip-id1165135533774" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</equation></solution>
+     <commentary id="fs-id1165132950610">
+      <title>Analysis </title>
+      <para id="fs-id1165135372071">This division problem had a remainder of 0. This tells us that the dividend is divided evenly by the divisor, and that the divisor is a factor of the dividend.</para>
+     </commentary>
+    </exercise></example><example id="Example_03_05_02">
+    <exercise id="fs-id1165135372082"><problem id="fs-id1165135372084">
+      <title>Using Long Division to Divide a Third-Degree Polynomial</title>
+      <para id="fs-id1165134352552">Divide <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>11</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>31</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn>
+ </m:mrow>
+</m:math>
+by <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+     </problem>
+     <solution id="fs-id1165135503914">
+
+<media id="fs-id1952791" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_CAT_Figure_05_01_003.jpg"/>
+</media>
+
+<para id="fs-id1165135639821">There is a remainder of 1. We can express the result as:</para>
+<equation id="eip-id1165134294806" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>6</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>11</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>31</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+</m:math>
+</equation></solution>
+
+     <commentary id="fs-id1165135340591">
+      <title>Analysis </title>
+      <para id="fs-id1165135340597">We can check our work by using the Division Algorithm to rewrite the solution. Then multiply.</para>
+
+<equation id="eip-id1165135428302" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>6</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>11</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>31</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn>
+ </m:mrow>
+</m:math>
+</equation>
+      <para id="fs-id1165135152076">Notice, as we write our result,</para>
+      <list id="fs-id1165135152079" list-type="bulleted"><item>the dividend is <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>11</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>31</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+       <item>the divisor is <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+       <item>the quotient is <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+       <item>the remainder is <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+      </list></commentary>
+    </exercise></example>
+
+   <note id="fs-id1165134042317" class="precalculus try">
+    <label>Try It</label>
+    <exercise id="ti_03_05_01">
+     <problem id="fs-id1165135545762"><para id="fs-id1165135545763">Divide <m:math>
+ <m:mrow>
+  <m:mn>16</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>12</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>20</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+by <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+     <solution id="fs-id1165135177648"><para id="fs-id1165135177649"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>78</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+    </exercise>
+   </note>
+  </section><section id="fs-id1165137932621"><title>Using Synthetic Division to Divide Polynomials</title><para id="fs-id1165137932627">As we’ve seen, long division of polynomials can involve many steps and be quite cumbersome. <emphasis>Synthetic division</emphasis> is a shorthand method of dividing polynomials for the special case of dividing by a linear factor whose leading coefficient is 1.</para>
+    <para id="fs-id1165137932636">To illustrate the process, recall the example at the beginning of the section.</para>
+    <para id="fs-id1165137932639">Divide <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math>
+by <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+using the long division algorithm.</para>
+    <para id="fs-id1165135170412">The final form of the process looked like this:</para>
+
+<media id="fs-id2502523" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_CAT_Figure_05_01_004.jpg"/>
+</media>
+
+<para id="fs-id1165137932377">There is a lot of repetition in the table. If we don’t write the variables but, instead, line up their coefficients in columns under the division sign and also eliminate the partial products, we already have a simpler version of the entire problem.</para>
+
+     <media id="fs-id1165134305375" alt="Synthetic division of the polynomial 2x^3-3x^2+4x+5 by x+2 in which it only contains the coefficients of each polynomial." display="block">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_05_004.jpg"/>
+     </media>
+
+    <para id="fs-id1165134305388">Synthetic division carries this simplification even a few more steps. Collapse the table by moving each of the rows up to fill any vacant spots. Also, instead of dividing by 2, as we would in division of whole numbers, then multiplying and subtracting the middle product, we change the sign of the “divisor” to –2, multiply and add. The process starts by bringing down the leading coefficient.</para>
+
+<media id="fs-id1165137696374" alt="Synthetic division of the polynomial 2x^3-3x^2+4x+5 by x+2 in which it only contains the coefficients of each polynomial." display="block">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_05_011.jpg"/>
+     </media>
+<para id="fs-id1165137696388">We then multiply it by the “divisor” and add, repeating this process column by column, until there are no entries left. The bottom row represents the coefficients of the quotient; the last entry of the bottom row is the remainder. In this case, the quotient is <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>18</m:mn></m:mrow>
+</m:math> and the remainder is <m:math>
+ <m:mrow>
+  <m:mn>–31.</m:mn>
+ </m:mrow>
+</m:math>
+The process will be made more clear in <link target-id="Example_03_05_03"/>.</para><note id="fs-id1165135383640">
+
+     <title>Synthetic Division</title>
+     <para id="fs-id1165135383649">Synthetic division is a shortcut that can be used when the divisor is a binomial in the form <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>k</m:mi>
+ </m:mrow>
+</m:math> where <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi>
+ </m:mrow>
+</m:math> is a real number.
+
+In <term>synthetic division</term>, only the coefficients are used in the division process.</para></note>
+
+    <note id="fs-id1165135393407" class="how-to-notitle">
+     <label>How To</label>
+     <para id="fs-id1165135393414"><emphasis>Given two polynomials, use synthetic division to divide.</emphasis></para>
+
+     <list id="fs-id1165135393418" list-type="enumerated" number-style="arabic">
+      <item>Write <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi>
+ </m:mrow>
+</m:math>
+for the divisor.</item>
+     <item>Write the coefficients of the dividend.</item>
+     <item>Bring the lead coefficient down.</item>
+     <item>Multiply the lead coefficient by <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+Write the product in the next column.</item>
+     <item>Add the terms of the second column.</item>
+     <item>Multiply the result by <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+Write the product in the next column.</item>
+     <item>Repeat steps 5 and 6 for the remaining columns.</item>
+     <item>Use the bottom numbers to write the quotient. The number in the last column is the remainder and has degree 0, the next number from the right has degree 1, the next number from the right has degree 2, and so on.</item>
+     </list>
+    </note>
+    <example id="Example_03_05_03">
+     <exercise id="fs-id1165135383099"><problem id="fs-id1165135383101">
+       <title>Using Synthetic Division to Divide a Second-Degree Polynomial</title>
+       <para id="fs-id1165135383107">Use synthetic division to divide <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>36</m:mn>
+ </m:mrow>
+</m:math>
+by <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+      </problem>
+      <solution id="fs-id1165135177606">
+       <para id="fs-id1165135177608">Begin by setting up the synthetic division. Write <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi>
+ </m:mrow>
+</m:math>
+and the coefficients.</para>
+
+
+
+       <media id="fs-id1165135177629" alt="A collapsed version of the previous synthetic division." display="block">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_05_005.jpg"/>
+       </media>
+
+
+      <para id="fs-id1165135439942">Bring down the lead coefficient. Multiply the lead coefficient by <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+       <media id="fs-id1165135439966" alt="The set-up of the synthetic division for the polynomial 5x^2-3x-36 by x-3, which renders {5, -3, -36} by 3." display="block">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_05_006.jpg"/>
+       </media>
+      <para id="fs-id1165135179942">Continue by adding the numbers in the second column. Multiply the resulting number by <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+Write the result in the next column. Then add the numbers in the third column.</para>
+
+       <media id="fs-id1165135179966" alt="Multiplied by the lead coefficient, 5, in the second column, and the lead coefficient is brought down to the second row. " display="block">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_05_007.jpg"/>
+       </media>
+
+      <para id="fs-id1165135628639">The result is <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12.</m:mn>
+ </m:mrow>
+</m:math>
+The remainder is 0. So <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+is a factor of the original polynomial.</para>
+</solution>
+<commentary id="fs-id1165135463242">
+       <title>Analysis </title>
+       <para id="fs-id1165135463247">Just as with long division, we can check our work by multiplying the quotient by the divisor and adding the remainder.</para>
+
+       <para id="fs-id1165135463251"> <m:math display="block">
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>36</m:mn>
+ </m:mrow>
+</m:math>
+</para></commentary>
+     </exercise></example>
+
+    <example id="Example_03_05_04"><exercise id="fs-id1165135549012"><problem id="fs-id1165135549014">
+       <title>Using Synthetic Division to Divide a Third-Degree Polynomial</title>
+       <para id="fs-id1165135549019">Use synthetic division to divide <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>20</m:mn>
+ </m:mrow>
+</m:math>
+by <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para>
+
+      </problem>
+      <solution id="fs-id1165135173365">
+       <para id="fs-id1165135173367">The binomial divisor is <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+so <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>−2.</m:mn>
+ </m:mrow>
+</m:math>
+Add each column, multiply the result by –2, and repeat until the last column is reached.</para><media id="fs-id1165134176031" display="block" alt="Synthetic division of 4x^3+10x^2-6x-20 divided by x+2.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_05_008-c129.jpg"/>
+       </media>
+
+      <para id="fs-id1165134433356">The result is <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>10.</m:mn>
+ </m:mrow>
+</m:math>
+The remainder is 0. Thus, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+is a factor of <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>20.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+      <commentary id="fs-id1165133061700">
+       <title>Analysis </title>
+       <para id="fs-id1165133061705">The graph of the polynomial function <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>20</m:mn>
+ </m:mrow>
+</m:math>
+in <link target-id="Figure_03_05_009"/> shows a zero at <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>−2.</m:mn>
+ </m:mrow>
+</m:math>
+This confirms that <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+is a factor of <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>20.</m:mn>
+ </m:mrow>
+</m:math>
+</para><figure id="Figure_03_05_009" class="small">
+        <media id="fs-id1165133260451" alt="Synthetic division of 4x^3+10x^2-6x-20 divided by x+2.">
+         <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_05_009.jpg"/>
+        </media>
+       </figure>
+</commentary>
+     </exercise></example><example id="Example_03_05_05">
+     <exercise id="fs-id1165133260470"><problem id="fs-id1165133260472">
+       <title>Using Synthetic Division to Divide a Fourth-Degree Polynomial</title>
+       <para id="fs-id1165135481144">Use synthetic division to divide <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>9</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>7</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+</m:math>
+by <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+      </problem>
+      <solution id="fs-id1165135571792">
+       <para id="fs-id1165135571794">Notice there is no <emphasis effect="italics">x</emphasis>-term. We will use a zero as the coefficient for that term.<newline count="2"/></para>
+<media id="Figure_05_04_001" alt="..">
+  <image mime-type="image/jpeg" src="../../media/CNX_CAT_Figure_05_04_001.jpg"/>
+</media>
+<para id="fs-id1165135341342">The result is <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>9</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+     </exercise></example>
+
+    <note id="fs-id1165134037571" class="precalculus try">
+     <label>Try It</label>
+     <exercise id="ti_03_05_02">
+      <problem id="fs-id1165134037583"><para id="fs-id1165134037584">Use synthetic division to divide <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>18</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>40</m:mn>
+ </m:mrow>
+</m:math>
+by <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165133365553"><para id="fs-id1165133365554"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>21</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>150</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>090</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+     </exercise>
+    </note>
+
+   </section><section id="fs-id1165135403412">
+   <title>Using Polynomial Division to Solve Application Problems</title>
+   <para id="fs-id1165135403417">Polynomial division can be used to solve a variety of application problems involving expressions for area and volume. We looked at an application at the beginning of this section. Now we will solve that problem in the following example.</para>
+
+   <example id="Example_03_05_06"><exercise id="fs-id1165135403427"><problem id="fs-id1165135403429">
+      <title>Using Polynomial Division in an Application Problem</title>
+      <para id="fs-id1165135403434">The volume of a rectangular solid is given by the polynomial <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>33</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>54</m:mn><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+The length of the solid is given by <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+and the width is given by <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math>
+Find the height, <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> of the solid.</para></problem>
+     <solution id="fs-id1165135685835">
+      <para id="fs-id1165135685837">There are a few ways to approach this problem. We need to divide the expression for the volume of the solid by the expressions for the length and width. Let us create a sketch as in <link target-id="Figure_03_05_010"/>.</para>
+
+
+     <figure id="Figure_03_05_010" class="small">
+      <media id="fs-id1165137843218" alt="Graph of f(x)=4x^3+10x^2-6x-20 with a close up on x+2.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_05_010.jpg"/>
+      </media>
+     </figure>
+     <para id="fs-id1165137843229">We can now write an equation by substituting the known values into the formula for the volume of a rectangular solid.</para>
+<equation id="eip-id1165135439925" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mi>V</m:mi>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mi>l</m:mi><m:mo>⋅</m:mo><m:mi>w</m:mi><m:mo>⋅</m:mo><m:mi>h</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center" columnalign="right">
+     <m:mrow>
+      <m:mn>3</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>33</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>54</m:mn><m:mi>x</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd rowalign="center" columnalign="left">
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:mi>h</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135457104">To solve for <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> first divide both sides by <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+<equation id="eip-id1165135438421" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>⋅</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:mi>h</m:mi></m:mrow>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>x</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>3</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>4</m:mn>
+        </m:msup>
+        <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>3</m:mn>
+        </m:msup>
+        <m:mo>−</m:mo><m:mn>33</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:mn>54</m:mn><m:mi>x</m:mi></m:mrow>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>x</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mi>h</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>18</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math> </equation>
+
+<para id="fs-id1165135528878">Now solve for <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi>
+ </m:mrow>
+</m:math>
+using synthetic division.</para>
+<equation id="eip-id1165134103025" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>18</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation>
+
+<media id="fs-id1349001" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_CAT_Figure_05_01_005.jpg"/>
+</media>
+
+<para id="fs-id1165134152722">The quotient is <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9</m:mn>
+ </m:mrow>
+</m:math>
+and the remainder is 0. The height of the solid is <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>9.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+     </solution>
+    </exercise></example><note id="fs-id1165135694534" class="precalculus try">
+    <label>Try It</label>
+    <exercise id="ti_03_05_03">
+     <problem id="fs-id1165135694546"><para id="fs-id1165135694547">The area of a rectangle is given by <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>14</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>23</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6.</m:mn>
+ </m:mrow>
+</m:math>
+The width of the rectangle is given by <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6.</m:mn>
+ </m:mrow>
+</m:math>
+Find an expression for the length of the rectangle.</para></problem>
+     <solution id="fs-id1165135407022"><para id="fs-id1165135407023"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+    </exercise>
+   </note>
+
+   <note id="fs-id1165135571867" class="media-notitle">
+    <label>Media</label>
+    <para id="fs-id1165135571875">Access these online resources for additional instruction and practice with polynomial division.</para>
+<list id="fs-id1165135571879" list-type="bulleted"><item><link url="http://openstax.org/l/dividetribild">Dividing a Trinomial by a Binomial Using Long Division</link></item>
+    <item><link url="http://openstax.org/l/dividepolybild">Dividing a Polynomial by a Binomial Using Long Division </link></item>
+
+    <item><link url="http://openstax.org/l/dividepolybisd2">Ex 2: Dividing a Polynomial by a Binomial Using Synthetic Division</link></item>
+
+    <item><link url="http://openstax.org/l/dividepolybisd4">Ex 4: Dividing a Polynomial by a Binomial Using Synthetic Division</link></item>
+</list></note>
+
+  </section>
+<section id="fs-id1165135487276" class="key-equations"><title>Key Equations</title><table id="eip-id1165133432926" summary=".." class="unnumbered unstyled"><label/><tgroup cols="1">
+<colspec colnum="1" colname="c1"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">Division Algorithm</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.8em"/><m:mtext>where </m:mtext><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table></section><section id="fs-id1165135531548" class="key-concepts"><title>Key Concepts</title><list id="fs-id1165135531552" list-type="bulleted"><item>Polynomial long division can be used to divide a polynomial by any polynomial with equal or lower degree. See <link target-id="Example_03_05_01"/> and <link target-id="Example_03_05_02"/><emphasis>.</emphasis></item>
+    <item>The Division Algorithm tells us that a polynomial dividend can be written as the product of the divisor and the quotient added to the remainder.</item>
+    <item>Synthetic division is a shortcut that can be used to divide a polynomial by a binomial in the form <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>k</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+See <link target-id="Example_03_05_03"/><emphasis>, </emphasis><link target-id="Example_03_05_04"/><emphasis>, </emphasis>and <link target-id="Example_03_05_05"/><emphasis>.</emphasis></item>
+    <item>Polynomial division can be used to solve application problems, including area and volume. See <link target-id="Example_03_05_06"/><emphasis>.</emphasis></item>
+    </list></section>
+
+  <section id="fs-id1165135255120" class="section-exercises"><title>Section Exercises</title><section id="fs-id1165135255124"><title>Verbal</title><exercise id="fs-id1165135255129" class="material-set-2">
+     <problem id="fs-id1165135255131"><para id="fs-id1165135443966">If division of a polynomial by a binomial results in a remainder of zero, what can be conclude?</para></problem>
+    <solution id="fs-id1165135443970"><para id="fs-id1165135443971">The binomial is a factor of the polynomial.</para></solution>
+    </exercise>
+
+    <exercise id="fs-id1165135443975" class="material-set-2"><problem id="fs-id1165135443976"><para id="fs-id1165135443977">If a polynomial of degree <m:math>
+ <m:mrow><m:mi>n</m:mi>
+ </m:mrow>
+</m:math>
+is divided by a binomial of degree 1, what is the degree of the quotient?</para></problem></exercise>
+
+   </section><section id="fs-id1165135443995"><title>Algebraic </title><para id="fs-id1165135444000">For the following exercises, use long division to divide. Specify the quotient and the remainder.</para>
+    <exercise id="fs-id1165135349098"><problem id="fs-id1165135349099"><para id="fs-id1165135349100"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165137849077"><para id="fs-id1165137849078"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>quotient:</m:mtext><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>remainder:</m:mtext><m:mspace width="0.8em"/><m:mtext>5</m:mtext>
+ </m:mrow>
+</m:math>
+</para></solution>
+    </exercise>
+    <exercise id="fs-id1165137932684"><problem id="fs-id1165137932685"><para id="fs-id1165137932686"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135643143"><problem id="fs-id1165135643144"><para id="fs-id1165135643146"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>23</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>14</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+     <solution id="fs-id1165134149896"><para id="fs-id1165134149897"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>quotient: </m:mtext><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>remainder: 0</m:mtext>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165135453058"><problem id="fs-id1165135453059"><para id="fs-id1165135453060"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165137833881"><problem id="fs-id1165137833882"><para id="fs-id1165137833883"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>6</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>25</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>25</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+     <solution id="fs-id1165135532496"><para id="fs-id1165135532497"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>quotient:</m:mtext><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>remainder:</m:mtext><m:mspace width="0.8em"/><m:mtext>0</m:mtext>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165135363204"><problem id="fs-id1165135363205"><para id="fs-id1165135363206"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165134472270"><problem id="fs-id1165134472271"><para id="fs-id1165134472272"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+     <solution id="fs-id1165134234239"><para id="fs-id1165135694449"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>quotient:</m:mtext><m:mtext>​</m:mtext><m:mspace width="0.8em"/><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>remainder:</m:mtext><m:mspace width="0.8em"/><m:mtext>16</m:mtext>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165134352532"><problem id="fs-id1165134352533"><para id="fs-id1165134352534"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>126</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135678617"><problem id="fs-id1165135678618"><para id="fs-id1165135678619"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+     <solution id="fs-id1165132962052"><para id="fs-id1165132962053"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mn>6</m:mn>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>quotient:</m:mtext><m:mspace width="0.8em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>remainder:</m:mtext><m:mspace width="0.8em"/><m:mtext>6</m:mtext>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165133093355"><problem id="fs-id1165133093356"><para id="fs-id1165133093357"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>6</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135435667"><problem id="fs-id1165135435668"><para id="fs-id1165135435669"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+     <solution id="fs-id1165135632104"><para id="fs-id1165135632105"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>quotient:</m:mtext><m:mspace width="0.8em"/><m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>remainder:</m:mtext><m:mspace width="0.8em"/><m:mtext>0</m:mtext>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+
+    <para id="fs-id1165135321927">For the following exercises, use synthetic division to find the quotient. Ensure the equation is in the form required by synthetic division. (Hint: divide the dividend and divisor by the coefficient of the linear term in the divisor.)</para><exercise id="fs-id1165135321931"><problem id="fs-id1165135321932"><para id="fs-id1165135321933"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165134474179"><problem id="fs-id1165134474180"><para id="fs-id1165134474181"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>6</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+     <solution id="fs-id1165135298453"><para id="fs-id1165135298454"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165135199519"><problem id="fs-id1165137680594"><para id="fs-id1165137680595"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>6</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>10</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>15</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165133233060"><problem id="fs-id1165133233062"><para id="fs-id1165133233063"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>12</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165135486057"><para id="fs-id1165135486058"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165133311045"><problem id="fs-id1165133311046"><para id="fs-id1165133311047"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>9</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>9</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>18</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135560630"><problem id="fs-id1165135560631"><para id="fs-id1165135560632"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+     <solution id="fs-id1165135517139"><para id="fs-id1165135517140"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>34</m:mn><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>106</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165137642766"><problem id="fs-id1165137642767"><para id="fs-id1165137642768"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>6</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135530633"><problem id="fs-id1165135530634"><para id="fs-id1165135530635"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>7</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>13</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134173709"><para id="fs-id1165134173710"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165134173742"><problem id="fs-id1165134173743"><para id="fs-id1165134173744"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>5</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135443762"><problem id="fs-id1165135443764"><para id="fs-id1165135443765"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>5</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>13</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165137851483"><para id="fs-id1165137851484"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>21</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>84</m:mn><m:mo>−</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>323</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165135403522"><problem id="fs-id1165135403523"><para id="fs-id1165135403524"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165134061948"><problem id="fs-id1165134061949"><para id="fs-id1165134061950"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>21</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>147</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>343</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134156036"><para id="fs-id1165134156037"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>14</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>49</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165134156069"><problem id="fs-id1165134156070"><para id="fs-id1165134156071"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>15</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>75</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>125</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135344106"><problem id="fs-id1165135344107"><para id="fs-id1165135344108"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>9</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134118337"><para id="fs-id1165134118338"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165135485710"><problem id="fs-id1165135485711"><para id="fs-id1165135485712"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>6</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135485136" class="material-set-2"><problem id="fs-id1165135485137"><para id="fs-id1165135485138"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134357257"><para id="fs-id1165134357258"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165134357289" class="material-set-2"><problem id="fs-id1165134357290"><para id="fs-id1165134357291"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135390850" class="material-set-2"><problem id="fs-id1165135390852"><para id="fs-id1165135390853"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165135575976"><para id="fs-id1165135575977"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165137850245" class="material-set-2"><problem id="fs-id1165137850246"><para id="fs-id1165137850247"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>10</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>37</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>60</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>36</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165137705401" class="material-set-2"><problem id="fs-id1165137705402"><para id="fs-id1165137705403"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>8</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>24</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>32</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>16</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134261862"><para id="fs-id1165134261863"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>6</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165134389913" class="material-set-2"><problem id="fs-id1165134389914"><para id="fs-id1165134389915"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>13</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165134484904" class="material-set-2"><problem id="fs-id1165134484905"><para id="fs-id1165134484906"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>12</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>54</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>108</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>81</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165135486004"><para id="fs-id1165135486005"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>9</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>27</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>27</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165137696095" class="material-set-2"><problem id="fs-id1165137696096"><para id="fs-id1165137696097"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135575253" class="material-set-2"><problem id="fs-id1165135575254"><para id="fs-id1165135575255"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>4</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165135403348"><para id="fs-id1165135403350"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+
+    <para id="fs-id1165135353027">For the following exercises, use synthetic division to determine whether the first expression is a factor of the second. If it is, indicate the factorization.</para>
+    <exercise id="fs-id1165135353032"><problem id="fs-id1165135353033"><para id="fs-id1165135353034"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165134031382"><problem id="fs-id1165134031383"><para id="fs-id1165134031384"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>6</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134431791"><para id="fs-id1165134431792">Yes <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165135240972"><problem id="fs-id1165135240974"><para id="fs-id1165135240975"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mo>−</m:mo><m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135394052"><problem id="fs-id1165135394053"><para id="fs-id1165135394054"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>15</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+     <solution id="fs-id1165135329837"><para id="fs-id1165135329838">Yes <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>8</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165137851216"><problem id="fs-id1165135397213"><para id="fs-id1165135397214"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135547391"><problem id="fs-id1165135547392"><para id="fs-id1165135547394"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165135481294"><para id="fs-id1165135481295">No</para></solution></exercise>
+
+   </section><section id="fs-id1165135481299">
+    <title>Graphical</title>
+    <para id="fs-id1165135481304">For the following exercises, use the graph of the third-degree polynomial and one factor to write the factored form of the polynomial suggested by the graph. The leading coefficient is one.</para>
+
+    <exercise id="fs-id1165135436617"><problem id="fs-id1165135436618"><para id="fs-id1165135436619">Factor is <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+<media id="fs-id1165135436654" alt="Graph of a polynomial that has a x-intercept at -1.">
+      <image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_03_05_201.jpg"/>
+     </media>
+</problem></exercise><exercise id="fs-id1165135423510"><problem id="fs-id1165135423511"><para id="fs-id1165135423512">Factor is <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<media id="fs-id1165134197955" alt="Graph of a polynomial that has a x-intercept at 1.">
+      <image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_03_05_202.jpg"/>
+     </media>
+</problem>
+     <solution id="fs-id1165134197969"><para id="fs-id1165134197970"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution></exercise><exercise id="fs-id1165135412915"><problem id="fs-id1165135412916"><para id="fs-id1165135412917">Factor is <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+<media id="fs-id1165135176349" alt="Graph of a polynomial that has a x-intercept at 2.">
+      <image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_03_05_203.jpg"/>
+     </media>
+</problem></exercise><exercise id="fs-id1165135176362"><problem id="fs-id1165135176363"><para id="fs-id1165135176364">Factor is <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+<media id="fs-id1165134164936" alt="Graph of a polynomial that has a x-intercept at 5.">
+      <image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_03_05_204.jpg"/>
+     </media>
+</problem>
+    <solution id="fs-id1165134164949"><para id="fs-id1165134164950"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution></exercise><exercise id="fs-id1165134089490"><problem id="fs-id1165134089491"><para id="fs-id1165134089492">Factor is <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+<media id="fs-id1165137888963" alt="Graph of a polynomial that has a x-intercept at -3.">
+      <image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_03_05_205-028b.jpg"/>
+     </media>
+</problem></exercise><para id="fs-id1165137888975">For the following exercises, use synthetic division to find the quotient and remainder.</para>
+    <exercise id="fs-id1165137888978"><problem id="fs-id1165137888979"><para id="fs-id1165137888980"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>4</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>33</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134061088"><para id="fs-id1165134061090"> <m:math>
+ <m:mrow>
+  <m:mtext>Quotient:</m:mtext><m:mspace width="0.8em"/><m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>16</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>remainder:</m:mtext><m:mspace width="0.8em"/><m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+
+    <exercise id="fs-id1165135209652"><problem id="fs-id1165135209653"><para id="fs-id1165135209654"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>25</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135443854"><problem id="fs-id1165135443855"><para id="fs-id1165135443856"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165137646978"><para id="fs-id1165137646979"> <m:math>
+ <m:mrow>
+  <m:mtext>Quotient:</m:mtext><m:mspace width="0.8em"/><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>remainder:</m:mtext><m:mspace width="0.8em"/><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+
+    <exercise id="fs-id1165135154363"><problem id="fs-id1165135154364"><para id="fs-id1165135154366"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo>−</m:mo><m:mn>4</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>12</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+    <exercise id="fs-id1165135155437"><problem id="fs-id1165135155438"><para id="fs-id1165135155439"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>22</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134118486"><para id="fs-id1165134118487"> <m:math>
+ <m:mrow>
+  <m:mtext>Quotient:</m:mtext><m:mspace width="0.8em"/><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>8</m:mn><m:mtext>,</m:mtext><m:mspace width="0.8em"/><m:mtext>remainder:</m:mtext><m:mspace width="0.8em"/><m:mo>−</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+   </section>
+   <section id="fs-id1165135501101"><title>Technology</title><para id="fs-id1165135501106">For the following exercises, use a calculator with CAS to answer the questions.</para>
+    <exercise id="fs-id1165137889809" class="material-set-2"><problem id="fs-id1165137889810"><para id="fs-id1165137889811">Consider <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mi>k</m:mi>
+    </m:msup>
+    <m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> with <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> What do you expect the result to be if <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135534969" class="material-set-2"><problem id="fs-id1165135534970"><para id="fs-id1165135534971">Consider <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mi>k</m:mi>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> for <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math> What do you expect the result to be if <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134148458"><para id="fs-id1165134148459"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>6</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165135241323" class="material-set-2"><problem id="fs-id1165135241324"><para id="fs-id1165135241326">Consider <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:msup>
+     <m:mi>k</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>k</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> for <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> What do you expect the result to be if <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165132939184" class="material-set-2"><problem id="fs-id1165132939185"><para id="fs-id1165132939186">Consider <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mi>k</m:mi>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> with <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> What do you expect the result to be if <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134153037"><para id="fs-id1165134153038"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165134261659" class="material-set-2"><problem id="fs-id1165134261660"><para id="fs-id1165134261661">Consider <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mi>k</m:mi>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> with <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> What do you expect the result to be if <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+   </section><section id="fs-id1165135191971">
+    <title>Extensions</title>
+    <para id="fs-id1165135191976">For the following exercises, use synthetic division to determine the quotient involving a complex number.</para>
+
+    <exercise id="fs-id1165135191981"><problem id="fs-id1165135191982"><para id="fs-id1165135191983"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165135259591"><para id="fs-id1165135259592"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165135593133"><problem id="fs-id1165135593134"><para id="fs-id1165135593135"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135593178"><problem id="fs-id1165135593179"><para id="fs-id1165135593180"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165137834324"><para id="fs-id1165137834325"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165137777664"><problem id="fs-id1165137777665"><para id="fs-id1165137777666"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+    <exercise id="fs-id1165134248021"><problem id="fs-id1165134248022"><para id="fs-id1165134248023"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134248065"><para id="fs-id1165134248066"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mi>i</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>i</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+
+   </section>
+   <section id="fs-id1165135180069"><title>Real-World Applications</title><para id="fs-id1165135180074">For the following exercises, use the given length and area of a rectangle to express the width algebraically.</para>
+
+    <exercise id="fs-id1165135180078"><problem id="fs-id1165135440138"><para id="fs-id1165135440139">Length is <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> area is <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135440195"><problem id="fs-id1165135440196"><para id="fs-id1165135440197">Length is <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mtext/><m:mo>+</m:mo><m:mtext/><m:mn>5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> area is <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165135264690"><para id="fs-id1165135264691"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165135264719"><problem id="fs-id1165135264720"><para id="fs-id1165135264721">Length is <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> area is <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>8</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>9</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+    <para id="fs-id1165135339554">For the following exercises, use the given volume of a box and its length and width to express the height of the box algebraically.</para>
+    <exercise id="fs-id1165135339559" class="material-set-2"><problem id="fs-id1165135339560"><para id="fs-id1165135339561">Volume is <m:math>
+ <m:mrow>
+  <m:mn>12</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>20</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>21</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>36</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> length is <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> width is <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165135317479"><para id="fs-id1165135317480"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165134071557" class="material-set-2"><problem id="fs-id1165134071558"><para id="fs-id1165134071559">Volume is <m:math>
+ <m:mrow>
+  <m:mn>18</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>21</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>40</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>48</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> length is <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math>
+width is <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165132920308" class="material-set-2"><problem id="fs-id1165132920309"><para id="fs-id1165132920310">Volume is <m:math>
+ <m:mrow>
+  <m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>27</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>24</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> length is <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math>
+width is <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165135564161"><para id="fs-id1165135564162"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165135564178" class="material-set-2"><problem id="fs-id1165135564179"><para id="fs-id1165135564180">Volume is <m:math>
+ <m:mrow>
+  <m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>30</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>24</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> length is <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> width is <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> </para></problem></exercise>
+
+    <para id="fs-id1165135514530">For the following exercises, use the given volume and radius of a cylinder to express the height of the cylinder algebraically.</para>
+    <exercise id="fs-id1165135514534" class="material-set-2"><problem id="fs-id1165135514535"><para id="fs-id1165135514536">Volume is <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>(</m:mo><m:mn>25</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>65</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>29</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> radius is <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165134031308"><para id="fs-id1165134031310"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+    <exercise id="fs-id1165134031328" class="material-set-2"><problem id="fs-id1165134031329"><para id="fs-id1165134031330">Volume is <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>(</m:mo><m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>12</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>15</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>50</m:mn><m:mo>)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> radius is <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165134258601" class="material-set-2"><problem id="fs-id1165134258602"><para id="fs-id1165134258603">Volume is <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>(</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>24</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>46</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>16</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>32</m:mn><m:mo>)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> radius is <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165137527638"><para id="fs-id1165137527639"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+   </section></section></content>
+ <glossary>
+
+ <definition id="fs-id1165135471190">
+  <term>Division Algorithm</term>
+  <meaning id="fs-id1165135471195">given a polynomial dividend <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+and a non-zero polynomial divisor <m:math>
+ <m:mrow>
+  <m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+where the degree of <m:math>
+ <m:mrow>
+  <m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+is less than or equal to the degree of <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> , there exist unique polynomials <m:math>
+ <m:mrow>
+  <m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+and <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+such that <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+where <m:math>
+ <m:mrow>
+  <m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+is the quotient and <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+is the remainder. The remainder is either equal to zero or has degree strictly less than <m:math>
+ <m:mrow>
+  <m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</meaning></definition>
+ <definition id="fs-id1165134486770">
+  <term>synthetic division</term>
+  <meaning id="fs-id1165134486776">a shortcut method that can be used to divide a polynomial by a binomial of  the form <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>−</m:mo><m:mi>k</m:mi>
+ </m:mrow>
+</m:math>
+</meaning></definition>
+</glossary>
+</document>

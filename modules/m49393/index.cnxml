@@ -1,0 +1,5401 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Solving Trigonometric Equations with Identities</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m49393</md:content-id>
+  <md:title>Solving Trigonometric Equations with Identities</md:title>
+  <md:abstract><para>In this section, you will:</para><list>
+<item>Verify the fundamental trigonometric identities.</item>
+<item>Simplify trigonometric expressions using algebra and the identities.</item>
+</list></md:abstract>
+  <md:uuid>2b4014ea-82b6-49ea-8c26-47ed38be3f34</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+<figure id="Figure_07_01_006" class="small"><media id="fs-id516530" alt="Photo of international passports.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_07_01_006.jpg"/>
+</media>
+<caption>International passports and travel documents</caption></figure><para id="fs-id2479925">In espionage movies, we see international spies with multiple passports, each claiming a different identity. However, we know that each of those passports represents the same person. The trigonometric identities act in a similar manner to multiple passports—there are many ways to represent the same trigonometric expression. Just as a spy will choose an Italian passport when traveling to Italy, we choose the identity that applies to the given scenario when solving a trigonometric equation.</para>
+<para id="fs-id1186261">In this section, we will begin an examination of the fundamental trigonometric identities, including how we can verify them and how we can use them to simplify trigonometric expressions.</para>
+
+
+
+
+<section id="fs-id2429534"><title>Verifying the Fundamental Trigonometric Identities </title><para id="fs-id2238347">Identities enable us to simplify complicated expressions. They are the basic tools of trigonometry used in solving trigonometric equations, just as factoring, finding common denominators, and using special formulas are the basic tools of solving algebraic equations. In fact, we use algebraic techniques constantly to simplify trigonometric expressions. Basic properties and formulas of algebra, such as the difference of squares formula and the perfect squares formula, will simplify the work involved with trigonometric expressions and equations. We already know that all of the trigonometric functions are related because they all are defined in terms of the unit circle. Consequently, any trigonometric identity can be written in many ways.</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id2291728">To verify the trigonometric identities, we usually start with the more complicated side of the equation and essentially rewrite the expression until it has been transformed into the same expression as the other side of the equation. Sometimes we have to factor expressions, expand expressions, find common denominators, or use other algebraic strategies to obtain the desired result. In this first section, we will work with the fundamental identities: the <term class="no-emphasis">Pythagorean Identities</term>, the even-odd identities, the reciprocal identities, and the quotient identities.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id2113436">We will begin with the <emphasis>Pythagorean Identities </emphasis>(see <link target-id="Table_07_01_01"/>), which are equations involving trigonometric functions based on the properties of a right triangle. We have already seen and used the first of these identifies, but now we will also use additional identities.</para><table id="Table_07_01_01" summary="&quot;Pythagorean Identities&quot; with three cells. First: sin(theta)^2 + cos(theta)^2 = 1. Second: 1 + cot(theta)^2 = csc(theta)^2. Third: 1 + tan(theta)^2 = sec(theta)^2.">
+<title/>
+<tgroup cols="3">
+<colspec colnum="1" colname="c1" align="center"/>
+<colspec colnum="2" colname="c2" align="center"/>
+<colspec colnum="3" colname="c3" align="center"/>
+<thead>
+<row>
+<entry namest="c1" nameend="c3" align="center">Pythagorean Identities
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>csc</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<para id="fs-id1313011">The second and third identities can be obtained by manipulating the first. The identity <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>csc</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math> is found by rewriting the left side of the equation in terms of sine and cosine.</para>
+<para id="fs-id1297940"> Prove: <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>csc</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math> </para>
+
+<equation id="fs-id1286496" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>cot</m:mi></m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+         <m:mrow>
+          <m:msup>
+           <m:mrow>
+            <m:mi>cos</m:mi></m:mrow>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mi>θ</m:mi></m:mrow>
+         <m:mrow>
+          <m:msup>
+           <m:mrow>
+            <m:mi>sin</m:mi></m:mrow>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mi>θ</m:mi></m:mrow>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Rewrite the left side</m:mtext><m:mo>.</m:mo></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:msup>
+           <m:mrow>
+            <m:mi>sin</m:mi></m:mrow>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mi>θ</m:mi></m:mrow>
+         <m:mrow>
+          <m:msup>
+           <m:mrow>
+            <m:mi>sin</m:mi></m:mrow>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mi>θ</m:mi></m:mrow>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:msup>
+           <m:mrow>
+            <m:mi>cos</m:mi></m:mrow>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mi>θ</m:mi></m:mrow>
+         <m:mrow>
+          <m:msup>
+           <m:mrow>
+            <m:mi>sin</m:mi></m:mrow>
+           <m:mn>2</m:mn>
+          </m:msup>
+          <m:mi>θ</m:mi></m:mrow>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Write both terms with the common denominator</m:mtext><m:mo>.</m:mo></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mi>sin</m:mi></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mi>θ</m:mi><m:mo>+</m:mo><m:msup>
+         <m:mrow>
+          <m:mi>cos</m:mi></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mi>θ</m:mi></m:mrow>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mi>sin</m:mi></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mi>θ</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mi>sin</m:mi></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mi>θ</m:mi></m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>csc</m:mi></m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1693712">Similarly, <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math> can be obtained by rewriting the left side of this identity in terms of sine and cosine. This gives</para>
+<equation id="fs-id1734133" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Rewrite left side</m:mtext><m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mspace width="0.8em"/><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Write both terms with the common denominator</m:mtext><m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mspace width="0.8em"/><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mspace width="0.8em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mspace width="0.8em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mspace width="0.8em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mspace width="0.8em"/><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mspace width="0.8em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mspace width="0.8em"/><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mspace width="0.8em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1981287">The next set of fundamental identities is the set of <emphasis>even-odd identities. </emphasis>The <term class="no-emphasis">even-odd identities</term> relate the value of a trigonometric function at a given angle to the value of the function at the opposite angle and determine whether the identity is odd or even. (See <link target-id="Table_07_01_02"/>).</para>
+
+<table id="Table_07_01_02" summary="&quot;Even-Odd Identities&quot; with three cells. First: tan(-theta) = -tan(theta) and cot(-theta) = -cot(theta). Second: sin(-theta) = -sin(theta) and csc(-theta) = -csc(theta). Third: cos(-theta) = cos(theta) and sec(-theta) = sec(theta).">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry namest="c1" nameend="c3" align="center">Even-Odd Identities</entry>
+</row>
+</thead>
+<tbody>
+<row>
+
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>tan</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>cot</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>csc</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>sec</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+
+</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table>
+
+
+<para id="fs-id2261790">Recall that an <term class="no-emphasis">odd function</term> is one in which <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(−</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>= −</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> for all <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> in the domain of <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> The <term class="no-emphasis">sine</term> function is an odd function because <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> The graph of an odd function is symmetric about the origin. For example, consider corresponding inputs of <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> The output of <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> is opposite the output of <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Thus,</para>
+
+<equation id="fs-id1250340" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mtext>and</m:mtext></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.8em"/><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1348168">This is shown in <link target-id="Figure_07_01_002"/>.</para>
+
+<figure id="Figure_07_01_002" class="small">
+<media id="fs-id1491023" alt="Graph of y=sin(theta) from -2pi to 2pi, showing in particular that it is symmetric about the origin. Points given are (pi/2, 1) and (-pi/2, -1).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_07_01_002-a36c.jpg"/>
+</media>
+<caption>Graph of <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</caption>
+</figure>
+
+<para id="fs-id1017824">Recall that an <term class="no-emphasis">even function</term> is one in which</para>
+<equation id="fs-id1369369" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mtext> for all </m:mtext><m:mi>x</m:mi><m:mtext> in the domain of </m:mtext><m:mi>f</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1557117">The graph of an even function is symmetric about the <emphasis effect="italics">y-</emphasis>axis. The cosine function is an even function because <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+For example, consider corresponding inputs <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>4</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> The output of <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>4</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> is the same as the output of <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>4</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Thus,</para>
+<equation id="fs-id1371573" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>4</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>π</m:mi>
+<m:mn>4</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>              </m:mtext><m:mo>≈</m:mo><m:mn>0.707</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1938940">See <link target-id="Figure_07_01_003"/>.</para>
+
+<figure id="Figure_07_01_003" class="small">
+<media id="fs-id1157926" alt="Graph of y=cos(theta) from -2pi to 2pi, showing in particular that it is symmetric about the y-axis. Points given are (-pi/4, .707) and (pi/4, .707). ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_07_01_003.jpg"/>
+</media>
+<caption>Graph of <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+
+</caption>
+</figure>
+
+<para id="fs-id1194483">For all <m:math>
+<m:mrow>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math> in the domain of the sine and cosine functions, respectively, we can state the following:</para>
+<list id="fs-id2141576"><item>Since <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(−</m:mo><m:mrow><m:mi>θ</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>−</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> sine is an odd function.</item>
+<item>Since, <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mrow><m:mo>(−</m:mo>
+<m:mrow>
+<m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> cosine is an even function.</item>
+</list><para id="fs-id1980806">The other even-odd identities follow from the even and odd nature of the sine and cosine functions. For example, consider the tangent identity, <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mrow><m:mo>(−</m:mo>
+<m:mrow>
+<m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>−tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> We can interpret the tangent of a negative angle as <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mrow><m:mo>(−</m:mo>
+<m:mrow>
+<m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mrow><m:mo>(−</m:mo>
+<m:mrow>
+<m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mo>−</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Tangent is therefore an odd function, which means that <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>θ</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> for all <m:math>
+<m:mrow>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math> in the domain of the <term class="no-emphasis">tangent function</term>.</para><para id="fs-id2077664">The cotangent identity, <m:math>
+<m:mrow>
+<m:mi>cot</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> also follows from the sine and cosine identities. We can interpret the cotangent of a negative angle as <m:math>
+<m:mrow>
+<m:mi>cot</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mo>−</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Cotangent is therefore an odd function, which means that <m:math>
+<m:mrow>
+<m:mi>cot</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>cot</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>θ</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> for all <m:math>
+<m:mrow>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math> in the domain of the <term class="no-emphasis">cotangent function</term>.</para><para id="fs-id2723404">The <term class="no-emphasis">cosecant function</term> is the reciprocal of the sine function, which means that the cosecant of a negative angle will be interpreted as <m:math>
+<m:mrow>
+<m:mi>csc</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mo>−</m:mo><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> The cosecant function is therefore odd.</para><para id="fs-id2082526">Finally, the secant function is the reciprocal of the cosine function, and the secant of a negative angle is interpreted as <m:math>
+<m:mrow>
+<m:mi>sec</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> The secant function is therefore even. </para>
+<para id="fs-id1672703">To sum up, only two of the trigonometric functions, cosine and secant, are even. The other four functions are odd, verifying the even-odd identities.</para>
+<para id="fs-id1419861">The next set of fundamental identities is the set of <term>reciprocal identities</term>, which, as their name implies, relate trigonometric functions that are reciprocals of each other. See <link target-id="fs-id2031263"/>.</para><table id="fs-id2031263" summary="Table labeled &quot;Reciprocal Identities.&quot; Three rows, two columns. The table has ordered pairs of these row values: (sin(theta) = 1/csc(theta), csc(theta) = 1/sin(theta)), (cos(theta) = 1/sec(theta), sec(theta) = 1/cos(theta)), (tan(theta) = 1/cot(theta), cot(theta) = 1/tan(theta)).">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry namest="c1" nameend="c3" align="center">Reciprocal Identities</entry>
+</row>
+</thead>
+<tbody>
+<row>
+
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</entry>
+</row>
+
+
+<row>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table>
+
+
+<para id="fs-id1354190">The final set of identities is the set of <term class="no-emphasis">quotient identities</term>, which define relationships among certain trigonometric functions and can be very helpful in verifying other identities. See <link target-id="fs-id937819"/>.</para><table id="fs-id937819" summary="Table labeled &quot;Quotient Identities.&quot; First cell: tan(theta) = sin(theta) / cos(theta). Second cell: cot(theta) = cos(theta) / sin(theta).">
+<title/>
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry namest="c1" nameend="c3" align="center">Quotient Identities
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+
+<para id="fs-id1921100">The reciprocal and quotient identities are derived from the definitions of the basic trigonometric functions.</para>
+
+<note id="fs-id1403866">
+<title>Summarizing Trigonometric Identities</title>
+
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1389829">The <term>Pythagorean Identities</term> are based on the properties of a right triangle.</para>
+<equation id="Equation_07_01_01" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_02" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>csc</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_03" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id2769070">The <term>even-odd identities</term> relate the value of a trigonometric function at a given angle to the value of the function at the opposite angle.</para>
+<equation id="Equation_07_01_04" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_05" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>cot</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_06" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</equation><equation id="Equation_07_01_07" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>csc</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_08" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_09" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>sec</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1528559">The <term>reciprocal identities</term> define reciprocals of the trigonometric functions.</para>
+<equation id="Equation_07_01_10" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_11" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_12" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_13" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_14" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_15" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1343265">The <term>quotient identities</term> define the relationship among the trigonometric functions.</para>
+<equation id="Equation_07_01_16" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</equation>
+<equation id="Equation_07_01_17" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</equation>
+</note><example id="Example_07_01_01">
+<exercise id="fs-id1194554"><problem id="fs-id1616347">
+<title>Graphing the Equations of an Identity</title>
+<para id="fs-id1693457">Graph both sides of the identity <m:math>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> In other words, on the graphing calculator, graph <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1208452">
+
+
+<para id="fs-id1859063">See <link target-id="Figure_07_01_007"/>.</para>
+
+<figure id="Figure_07_01_007" class="small">
+<media id="fs-id1353869" alt="Graph of y = cot(theta) and y=1/tan(theta) from -2pi to 2pi. They are the same!">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_07_01_007.jpg"/>
+</media>
+</figure></solution>
+<commentary id="fs-id1581724">
+<title>Analysis </title>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id3063508">We see only one graph because both expressions generate the same image. One is on top of the other. This is a good way to confirm an identity verified with analytical means. If both expressions give the same graph, then they are most likely identities.</para></commentary>
+</exercise></example>
+
+<note id="fs-id2467864" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id693742"><emphasis>Given a trigonometric identity, verify that it is true.
+</emphasis></para>
+<list id="fs-id2191946" list-type="enumerated" number-style="arabic">
+<item>Work on one side of the equation. It is usually better to start with the more complex side, as it is easier to simplify than to build.</item>
+<item>Look for opportunities to factor expressions, square a binomial, or add fractions.</item>
+<item>Noting which functions are in the final expression, look for opportunities to use the identities and make the proper substitutions.</item>
+<item>If these steps do not yield the desired result, try converting all terms to sines and cosines.</item>
+</list>
+</note>
+
+<example id="Example_07_01_02">
+<exercise id="fs-id3057901">
+<problem id="fs-id2291660">
+<title>Verifying a Trigonometric Identity</title>
+<para id="fs-id1947320">Verify <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1334614">
+
+
+<para id="fs-id1213512">We will start on the left side, as it is the more complicated side:</para>
+<equation id="fs-id1732674" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+         </m:mrow>
+         <m:mrow>
+          <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+         </m:mrow>
+         <m:mrow>
+          <m:menclose notation="updiagonalstrike">
+           <m:mrow>
+            <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+           </m:mrow>
+          </m:menclose>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:menclose notation="updiagonalstrike">
+       <m:mrow>
+        <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+       </m:mrow>
+      </m:menclose>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1149916">
+<title>Analysis </title>
+
+
+<para id="fs-id1266264">This identity was fairly simple to verify, as it only required writing <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math> in terms of <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id820368" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_07_01_01"><problem id="fs-id2335257"><para id="fs-id2335258">Verify the identity <m:math>
+ <m:mrow><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1237705">
+<equation id="fs-id2822559" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                   </m:mtext><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                   </m:mtext><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                   </m:mtext><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation></solution>
+</exercise></note>
+
+<example id="Example_07_01_03">
+<exercise id="fs-id2066731">
+<problem id="fs-id1128511">
+<title>Verifying the Equivalency Using the Even-Odd Identities</title>
+<para id="fs-id937635">Verify the following equivalency using the even-odd identities:</para>
+<equation id="fs-id2463271" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1492841">
+<para id="fs-id1137525">Working on the left side of the equation, we have </para>
+
+
+<equation id="fs-id1277815" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mo stretchy="false">(−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Since sin(−</m:mtext><m:mi>x</m:mi><m:mtext>)=</m:mtext><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                                      </m:mtext><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Difference of squares</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                                      </m:mtext><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mtext>cos</m:mtext>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<example id="Example_07_01_04">
+<exercise id="fs-id1758470"><problem id="fs-id1233021">
+<title>Verifying a Trigonometric Identity Involving <emphasis effect="italics">sec<sup>2</sup>θ</emphasis></title>
+<para id="fs-id2814564">Verify the identity <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2123498">
+
+
+<para id="fs-id2123500">As the left side is more complicated, let’s begin there.</para>
+
+
+<equation id="fs-id2081326" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mtext>sec</m:mtext>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                </m:mtext><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                </m:mtext><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                </m:mtext><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                </m:mtext><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow/>
+</m:mtd>
+<m:mtd>
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mtext>tan</m:mtext>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                </m:mtext><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:menclose notation="updiagonalstrike">
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:menclose>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:menclose notation="updiagonalstrike">
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:menclose>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                </m:mtext><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1244586">There is more than one way to verify an identity. Here is another possibility. Again, we can start with the left side.</para>
+<equation id="fs-id2107026" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>−</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                 </m:mtext><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                 </m:mtext><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1414116">
+<title>Analysis </title>
+<para id="fs-id1698743">In the first method, we used the identity <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> and continued to simplify. In the second method, we split the fraction, putting both terms in the numerator over the common denominator. This problem illustrates that there are multiple ways we can verify an identity. Employing some creativity can sometimes simplify a procedure. As long as the substitutions are correct, the answer will be the same.</para>
+</commentary>
+</exercise></example>
+
+<note id="fs-id2017058" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_07_01_02"><problem id="fs-id1185914"><para id="fs-id1185915">Show that <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1506268"><equation id="fs-id1506270" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>       </m:mtext><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>⋅</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mn>1</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>       </m:mtext><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation></solution>
+</exercise></note>
+
+<example id="Example_07_01_05">
+<exercise id="fs-id2122140">
+<problem id="fs-id1970227">
+<title>Creating and Verifying an Identity</title>
+<para id="fs-id1970233">Create an identity for the expression <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math> by rewriting strictly in terms of sine.</para>
+</problem>
+<solution id="fs-id1429666">
+
+
+<para id="fs-id1429668">There are a number of ways to begin, but here we will use the quotient and reciprocal identities to rewrite the expression:</para>
+<equation id="fs-id2338806" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mspace width="0.8em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+         </m:mrow>
+         <m:mrow>
+          <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mi>cos</m:mi>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mi>θ</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+         <m:mrow>
+          <m:mi>sin</m:mi>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mi>θ</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Substitute </m:mtext><m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>sin</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mspace width="0.8em"/><m:mi>θ</m:mi><m:mtext> for </m:mtext><m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mspace width="0.8em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id2715698">Thus,</para>
+<equation id="fs-id1713659" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+     <m:mrow>
+      <m:mi>sin</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mspace width="0.8em"/><m:mi>θ</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<example id="Example_07_01_06">
+<exercise id="fs-id1219228">
+<problem id="fs-id1219230">
+<title>Verifying an Identity Using Algebra and Even/Odd Identities</title>
+<para id="fs-id2430931">Verify the identity:</para>
+<equation id="fs-id1583958" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+
+</problem>
+<solution id="fs-id2345275">
+
+
+<para id="fs-id2345277">Let’s start with the left side and simplify:</para>
+<equation id="fs-id1540225" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mi>sin</m:mi>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>−</m:mo><m:mi>θ</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:msup>
+         <m:mrow>
+          <m:mi>cos</m:mi>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>−</m:mo><m:mi>θ</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>−</m:mo><m:mi>θ</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>−</m:mo><m:mi>θ</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>[</m:mo> <m:mrow>
+           <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+            <m:mrow>
+             <m:mo>−</m:mo><m:mi>θ</m:mi>
+            </m:mrow>
+           <m:mo>)</m:mo></m:mrow>
+          </m:mrow> <m:mo>]</m:mo></m:mrow>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>−</m:mo><m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>[</m:mo> <m:mrow>
+           <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+            <m:mrow>
+             <m:mo>−</m:mo><m:mi>θ</m:mi>
+            </m:mrow>
+           <m:mo>)</m:mo></m:mrow>
+          </m:mrow> <m:mo>]</m:mo></m:mrow>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>−</m:mo><m:mi>θ</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>−</m:mo><m:mi>θ</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                                     </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(−</m:mo>
+           <m:mrow>
+            <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>−</m:mo><m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.8em"/><m:mtext>and</m:mtext><m:mspace width="0.8em"/><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                                     </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>−</m:mo><m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Difference of squares</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                                     </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                                     </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:menclose notation="updiagonalstrike">
+           <m:mrow>
+            <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+           </m:mrow>
+          </m:menclose>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>−</m:mo><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:menclose notation="updiagonalstrike">
+           <m:mrow>
+            <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+           </m:mrow>
+          </m:menclose>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                                     </m:mtext><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id2137172" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_07_01_03">
+<problem id="fs-id2261720">
+<para id="fs-id2261721">Verify the identity <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+
+<solution id="fs-id2701905"><para id="fs-id2701906"> <m:math>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<example id="Example_07_01_07">
+<exercise id="fs-id1664723">
+<problem id="fs-id1664725">
+<title>Verifying an Identity Involving Cosines and Cotangents </title>
+<para id="fs-id1664730">Verify the identity: <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1913600">
+
+
+<para id="fs-id1913602">We will work on the left side of the equation.</para>
+
+<equation id="fs-id1913605" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                                     </m:mtext><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>+</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mspace width="0.8em"/>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Find the common denominator</m:mtext><m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                                     </m:mtext><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                                     </m:mtext><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                                     </m:mtext><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+</section><section id="fs-id2485952">
+<title>Using Algebra to Simplify Trigonometric Expressions</title>
+<para id="fs-id2485958">We have seen that algebra is very important in verifying trigonometric identities, but it is just as critical in simplifying trigonometric expressions before solving. Being familiar with the basic properties and formulas of algebra, such as the difference of squares formula, the perfect square formula, or substitution, will simplify the work involved with trigonometric expressions and equations.</para>
+<para id="fs-id2485964">For example, the equation <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> resembles the equation <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> which uses the factored form of the difference of squares. Using algebra makes finding a solution straightforward and familiar. We can set each factor equal to zero and solve. This is one example of recognizing algebraic patterns in trigonometric expressions or equations.</para><para id="fs-id1814865">Another example is the difference of squares formula, <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>a</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> which is widely used in many areas other than mathematics, such as engineering, architecture, and physics. We can also create our own identities by continually expanding an expression and making the appropriate substitutions. Using algebraic properties and formulas makes many trigonometric equations easier to understand and solve.</para><example id="Example_07_01_08">
+<exercise id="fs-id1814944">
+<problem id="fs-id2578086"><title>Writing the Trigonometric Expression as an Algebraic Expression</title>
+
+<para id="fs-id2578091">Write the following trigonometric expression as an algebraic expression: <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id2578132">
+
+
+<para id="fs-id2578134">Notice that the pattern displayed has the same form as a standard quadratic expression, <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Letting <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> we can rewrite the expression as follows:</para>
+<equation id="fs-id2121948" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id2121978">This expression can be factored as <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> If it were set equal to zero and we wanted to solve the equation, we would use the zero factor property and solve each factor for <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> At this point, we would replace <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> with <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math> and solve for <m:math>
+<m:mrow>
+<m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</example>
+
+<example id="Example_07_05_09">
+<exercise id="fs-id2721228">
+<problem id="fs-id2721230">
+<title>Rewriting a Trigonometric Expression Using the Difference of Squares </title>
+<para id="fs-id1777385">Rewrite the trigonometric expression: <m:math>
+<m:mrow>
+<m:mn>4</m:mn><m:mspace width="0.8em"/><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1777420">
+
+<para id="fs-id1777422">Notice that both the coefficient and the trigonometric expression in the first term are squared, and the square of the number 1 is 1. This is the difference of squares. Thus,</para>
+<equation id="fs-id1777427" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>4</m:mn><m:mspace width="0.8em"/><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mspace width="0.8em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                  </m:mtext><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mspace width="0.8em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mspace width="0.8em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1739635">
+<title>Analysis </title>
+
+
+<para id="fs-id1739641">If this expression were written in the form of an equation set equal to zero, we could solve each factor using the zero factor property. We could also use substitution like we did in the previous problem and let <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> rewrite the expression as <m:math>
+<m:mrow>
+<m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> and factor <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Then replace <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> with <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:math> and solve for the angle.</para></commentary>
+</exercise>
+</example>
+
+<note id="fs-id2438482" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_07_01_04">
+<problem id="fs-id2438492"><para id="fs-id2438493">Rewrite the trigonometric expression: <m:math>
+ <m:mrow>
+  <m:mn>25</m:mn><m:mo>−</m:mo><m:mn>9</m:mn><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>sin</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mspace width="0.8em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+</para></problem>
+<solution id="fs-id2438529">
+<para id="fs-id2438532">This is a difference of squares formula: <m:math>
+ <m:mrow>
+  <m:mn>25</m:mn><m:mo>−</m:mo><m:mn>9</m:mn><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>sin</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mspace width="0.8em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+</para></solution>
+</exercise>
+</note>
+
+<example id="Example_07_01_10">
+<exercise id="fs-id2917234">
+<problem id="fs-id2917236">
+<title>Simplify by Rewriting and Using Substitution</title>
+<para id="fs-id2917242">Simplify the expression by rewriting and using identities:</para>
+<equation id="fs-id2917245" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>csc</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id2483936">
+
+
+<para id="fs-id2483938">We can start with the Pythagorean identity.</para>
+<equation id="fs-id2483941" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>csc</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id2483988">Now we can simplify by substituting <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math> for <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>csc</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> We have</para>
+<equation id="fs-id2873062" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>csc</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                       </m:mtext><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id2607392" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_07_01_05"><problem id="fs-id2607401"><para id="fs-id2607402">Use algebraic techniques to verify the identity: <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+<para id="fs-id2780700">(Hint: Multiply the numerator and denominator on the left side by <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2780726">
+<equation id="fs-id2780728" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                               </m:mtext><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>                               </m:mtext><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation></solution>
+</exercise></note>
+
+<note id="fs-id1646590" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1646597">Access these online resources for additional instruction and practice with the fundamental trigonometric identities.</para>
+<list id="fs-id1646601">
+<item><link url="http://openstax.org/l/funtrigiden">Fundamental Trigonometric Identities</link></item>
+<item><link url="http://openstax.org/l/verifytrigiden">Verifying Trigonometric Identities</link></item></list>
+</note>
+</section>
+
+<section id="fs-id2056229" class="key-equations"><title>Key Equations</title><table xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id2056235" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center">Pythagorean Identities</entry>
+<entry align="center"> <m:math>
+<m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:msup>
+<m:mi>sin</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>+</m:mo><m:msup>
+<m:mi>cos</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mi>cot</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>csc</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mi>tan</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>sec</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</entry>
+</row>
+
+
+<row>
+<entry align="center">Even-odd identities</entry>
+<entry align="center"> <m:math>
+<m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow><m:mo>−</m:mo><m:mi>θ</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>cot</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>csc</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>sec</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center">Reciprocal identities</entry>
+<entry align="center"> <m:math>
+<m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center">Quotient identities</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table></section><section id="fs-id2081298" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id2081305">
+<item>There are multiple ways to represent a trigonometric expression. Verifying the identities illustrates how expressions can be rewritten to simplify a problem.</item>
+<item>Graphing both sides of an identity will verify it. See <link target-id="Example_07_01_01"/>.</item>
+<item>Simplifying one side of the equation to equal the other side is another method for verifying an identity. See <link target-id="Example_07_01_02"/> and <link target-id="Example_07_01_03"/>.</item>
+<item>The approach to verifying an identity depends on the nature of the identity. It is often useful to begin on the more complex side of the equation. See <link target-id="Example_07_01_04"/>.</item>
+<item>We can create an identity by simplifying an expression and then verifying it. See <link target-id="Example_07_01_05"/>.</item>
+<item>Verifying an identity may involve algebra with the fundamental identities. See <link target-id="Example_07_01_06"/> and <link target-id="Example_07_01_07"/>.</item>
+<item>Algebraic techniques can be used to simplify trigonometric expressions. We use algebraic techniques throughout this text, as they consist of the fundamental rules of mathematics. See <link target-id="Example_07_01_08"/>, <link target-id="Example_07_05_09"/>, and <link target-id="Example_07_01_10"/>.</item>
+</list></section>
+
+<section id="fs-id2347805" class="section-exercises">
+<title>Section Exercises</title><section id="fs-id2347808">
+<title>Verbal</title>
+<exercise id="fs-id2347813" class="material-set-2"><problem id="fs-id2347814"><para id="fs-id2347815">We know <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math> is an even function, and <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math> are odd functions. What about <m:math>
+<m:mrow>
+<m:mi>G</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>,</m:mo><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mi>H</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>?</m:mo>
+</m:mrow>
+</m:math> Are they even, odd, or neither? Why?</para></problem>
+<solution id="fs-id2116116">
+<para id="fs-id2116118">All three functions, <m:math>
+<m:mrow>
+<m:mi>F</m:mi></m:mrow></m:math>, <m:math><m:mi>G</m:mi></m:math>, and <m:math>
+<m:mrow>
+<m:mi>H</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> are even.</para><para id="eip-id1868065">This is because <m:math>
+<m:mrow>
+<m:mi>F</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mi>F</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>G</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mi>G</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> and <m:math>
+<m:mrow>
+<m:mi>H</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mi>H</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+
+</para>
+</solution></exercise><exercise id="fs-id1880650" class="material-set-2"><problem id="fs-id1880651"><para id="fs-id1880652">Examine the graph of <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math> on the interval <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mo>−</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mi>π</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> How can we tell whether the function is even or odd by only observing the graph of <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>?</m:mo>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2431723" class="material-set-2"><problem id="fs-id2431724"><para id="fs-id2431726">After examining the reciprocal identity for <m:math>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> explain why the function is undefined at certain points.</para></problem>
+<solution id="fs-id2431745">
+<para id="fs-id2431747">When <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> then <m:math>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>0</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> which is undefined. </para></solution></exercise>
+<exercise id="fs-id2431799" class="material-set-2"><problem id="fs-id2431800"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id2431801">All of the Pythagorean Identities are related. Describe how to manipulate the equations to get from <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>t</m:mi><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> to the other forms.</para></problem></exercise>
+
+</section>
+<section id="fs-id2796234">
+<title>Algebraic</title>
+<para id="fs-id2796239">For the following exercises, use the fundamental identities to fully simplify the expression.</para>
+<exercise id="fs-id2796242"><problem id="fs-id2796243"><para id="fs-id2796244"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2796267">
+<para id="fs-id2796269"> <m:math>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id2796285"><problem id="fs-id2796286"><para id="fs-id2796287"> <m:math>
+ <m:mrow>
+  <m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>csc</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+<exercise id="fs-id2170891"><problem id="fs-id2170892"><para id="fs-id2170893"> <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2170933">
+<para id="fs-id2170935"> <m:math>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id2170950" class="material-set-2"><problem id="fs-id2170951"><para id="fs-id2170952"> <m:math>
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mi>cot</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+
+<exercise id="fs-id2170985" class="material-set-2"><problem id="fs-id2170986"><para id="fs-id2170987"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>sec</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1685204">
+<para id="fs-id1685206"> <m:math>
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id1685221" class="material-set-2"><problem id="fs-id1685222"><para id="fs-id1685223"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mrow>
+    <m:mi>sin</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mi>t</m:mi><m:mi>csc</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>cos</m:mi><m:mi>t</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+<exercise id="fs-id1685297" class="material-set-2"><problem id="fs-id1685298"><para id="fs-id1685299"> <m:math>
+<m:mrow>
+<m:mi>−</m:mi><m:mi>tan</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>cot</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1799282">
+<para id="fs-id1799284"> <m:math>
+<m:mrow>
+<m:mn>−1</m:mn>
+</m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1799299" class="material-set-2"><problem id="fs-id1799300"><para id="fs-id1799301"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>−</m:mi><m:mi>sin</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+<exercise id="fs-id1799362" class="material-set-2"><problem id="fs-id1799363"><para id="fs-id1799364"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>csc</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2550286">
+<para id="fs-id2550288"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id2550314" class="material-set-2"><problem id="fs-id2550315"><para id="fs-id2550316"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>csc</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>+</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2438284" class="material-set-2"><problem id="fs-id2438285"><para id="fs-id2438286"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+     <m:mrow>
+      <m:mi>cos</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mspace width="0.8em"/><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>tan</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mspace width="0.8em"/><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>sin</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mspace width="0.8em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id2438361">
+<para id="fs-id2438363"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+
+
+<para id="fs-id2438393">For the following exercises, simplify the first trigonometric expression by writing the simplified form in terms of the second expression.</para>
+<exercise id="fs-id2438397"><problem id="fs-id2438398"><para id="fs-id2438400"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2641075"><problem id="fs-id2641076"><para id="fs-id2641077"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2641126">
+<para id="fs-id2641128"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id2641154"><problem id="fs-id2641155"><para id="fs-id2641156"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>+</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1408283" class="material-set-2"><problem id="fs-id1408284"><para id="fs-id1408285"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>−</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1408328">
+<para id="fs-id1408331"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id1408355" class="material-set-2"><problem id="fs-id1408356"><para id="fs-id1408357"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1408421" class="material-set-2"><problem id="fs-id1408422"><para id="fs-id1408423"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1775770">
+<para id="fs-id1775772"> <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id1775788" class="material-set-2"><problem id="fs-id1775789"><para id="fs-id1775790"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mtext> and </m:mtext><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1775836" class="material-set-2"><problem id="fs-id1775837"><para id="fs-id1775838"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mtext> and </m:mtext><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2159351">
+<para id="fs-id2159353"> <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mn>4</m:mn><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id2159377" class="material-set-2"><problem id="fs-id2159378"><para id="fs-id2159379"> <m:math>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2159401"><problem id="fs-id2159402"><para id="fs-id2159404"> <m:math>
+<m:mrow>
+<m:mi>sec</m:mi><m:mi>x</m:mi><m:mo>;</m:mo><m:mi>cot</m:mi><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2159426">
+<para id="fs-id2159428"> <m:math>
+<m:mrow>
+<m:mo>±</m:mo><m:msqrt>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msqrt>
+
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id3239563"><problem id="fs-id3239564"><para id="fs-id3239565"> <m:math>
+<m:mrow>
+<m:mi>sec</m:mi><m:mi>x</m:mi><m:mo>;</m:mo><m:mi>sin</m:mi><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id3239588"><problem id="fs-id3239589"><para id="fs-id3239590"> <m:math>
+<m:mrow>
+<m:mi>cot</m:mi><m:mi>x</m:mi><m:mo>;</m:mo><m:mi>sin</m:mi><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3239612">
+<para id="fs-id3239614"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mo>±</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:msqrt>
+
+</m:mrow>
+<m:mrow>
+<m:mi>sin</m:mi><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id3239668"><problem id="fs-id3239669"><para id="fs-id3239670"> <m:math>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>;</m:mo><m:mspace width="0.8em"/><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+
+
+<para id="fs-id3239692">For the following exercises, verify the identity.</para>
+<exercise id="fs-id3239695" class="material-set-2"><problem id="fs-id3239696"><para id="fs-id3239698"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>sin</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mspace width="0.8em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1271421">
+<para id="fs-id1271423">Answers will vary. Sample proof:</para>
+<para id="eip-id2078625"> <m:math><m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:msup>
+<m:mi>cos</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow></m:math> <newline/>
+
+ <m:math><m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mi>x</m:mi><m:msup>
+<m:mi>sin</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi></m:mrow>
+</m:math>
+</para></solution></exercise><exercise id="fs-id2955162" class="material-set-2"><problem id="fs-id2955163"><para id="fs-id2955164"> <m:math>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>sec</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2955223" class="material-set-2"><problem id="fs-id2955224"><para id="fs-id2955225"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+     <m:mrow>
+      <m:mi>sin</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>cos</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>cos</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>sin</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>cos</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id2558764">
+<para id="fs-id2558767"> Answers will vary. Sample proof:<newline/> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>+</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id2777843" class="material-set-2"><problem id="fs-id2777844"><para id="fs-id2777845"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.8em"/><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2242102" class="material-set-2"><problem id="fs-id2242103"><para id="fs-id2242104"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2242184">
+<para id="fs-id2242186"> Answers will vary. Sample proof:<newline/>
+ <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+
+</section>
+<section id="fs-id3240672">
+<title>Extensions</title>
+
+
+<para id="fs-id3240678">For the following exercises, prove or disprove the identity.</para>
+<exercise id="fs-id3240681" class="material-set-2"><problem id="fs-id3240682"><para id="fs-id3240683"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>−</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>−</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mspace width="0.8em"/><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2595511" class="material-set-2"><problem id="fs-id2595512"><para id="fs-id2595513"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>csc</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>cot</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2595584">
+<para id="fs-id2595586">False</para>
+</solution></exercise>
+<exercise id="fs-id2595591" class="material-set-2"><problem id="fs-id2595592"><para id="fs-id2595593"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>sec</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>tan</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>x</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.8em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.8em"/><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>sin</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.8em"/><m:mn>2</m:mn><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1812346" class="material-set-2"><problem id="fs-id1812347"><para id="fs-id1812348"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1812412">
+<para id="fs-id1812414">False</para>
+</solution></exercise>
+<exercise id="fs-id1812418" class="material-set-2"><problem id="fs-id1812419"><para id="fs-id1812420"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>sec</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mo>−</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2791132" class="material-set-2"><problem id="fs-id2791133"><para id="fs-id2791134"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2791207">
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id2791209">Proved with negative and Pythagorean Identities</para></solution>
+</exercise>
+
+<para id="fs-id2791214">For the following exercises, determine whether the identity is true or false. If false, find an appropriate equivalent expression.</para>
+<exercise id="fs-id2791219" class="material-set-2"><problem id="fs-id2791220"><para id="fs-id2791221"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mi>cos</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>−</m:mo><m:msup>
+<m:mrow>
+<m:mi>tan</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sin</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2427617" class="material-set-2"><problem id="fs-id2427618"><para id="fs-id2427619"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>sin</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2427687">
+<para id="fs-id2427689">True <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>sin</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>sin</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>sin</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>θ</m:mi><m:mo>+</m:mo><m:msup>
+     <m:mrow>
+      <m:mi>cos</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+
+</para></solution></exercise>
+<exercise id="fs-id2575546"><problem id="fs-id2575547"><para id="fs-id2575548"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mi>sec</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mi>θ</m:mi>
+</m:mrow>
+</m:math>
+</para></problem></exercise>
+
+</section>
+</section>
+
+</content>
+<glossary>
+<definition id="fs-id1881971">
+<term>even-odd identities</term>
+<meaning id="fs-id1881976">set of equations involving trigonometric functions such that if <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> the identity is odd, and if <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>−</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> the identity is even</meaning></definition>
+<definition id="fs-id1882066">
+<term>Pythagorean identities</term>
+<meaning id="fs-id1882069">set of equations involving trigonometric functions based on the right triangle properties</meaning>
+</definition>
+<definition id="fs-id1882073">
+<term>quotient identities</term>
+<meaning id="fs-id1882076">pair of identities based on the fact that tangent is the ratio of sine and cosine, and cotangent is the ratio of cosine and sine</meaning>
+</definition>
+<definition id="fs-id1882080">
+<term>reciprocal identities</term>
+<meaning id="fs-id1882083">set of equations involving the reciprocals of basic trigonometric definitions</meaning>
+</definition>
+</glossary>
+</document>

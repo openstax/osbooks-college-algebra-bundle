@@ -1,0 +1,4743 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Binomial Theorem</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m49449</md:content-id>
+  <md:title>Binomial Theorem</md:title>
+  <md:abstract/>
+  <md:uuid>05ece6ed-b387-41cc-b8bc-742abaaf814f</md:uuid>
+<md:canonical-book-uuid>fd53eae1-fa23-47c7-bb1b-972349835c3c</md:canonical-book-uuid>
+</metadata>
+
+<content>
+<section id="eip-113" class="coreq-skills"><section id="eip-85" class="learning-objectives"><title>Learning Objectives</title><list id="eip-idm409230256">
+<item>Use Pascal’s Triangle to expand a binomial. (IA 12.4.1)
+</item>
+</list></section><section id="eip-688"><title>Objective 1: Use Pascal’s Triangle to expand a binomial. (IA 12.4.1)</title><para id="eip-831">Pascal’s triangle helps us find the coefficients of the terms in the expansion of a binomial.
+</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-820">To find the coefficients of the terms, we write our expansion again focusing on the coefficients. We rewrite the coefficients to the right forming an array of coefficients. The array to the right is called <term>Pascal’s Triangle</term>.
+</para><media id="eip-idm190683104" alt="A plus b to the power of 0 equals 1. The top level of Pascal’s Triangle is 1. A plus b to the power of 1 equals 1 a plus 1 b. The second level of Pascal’s Triangle is 1, 1. A plus b to the power of 2 equals 1 a to the power of 2 plus 2 a b plus 1 b to the power of 2. The third level of Pascal’s Triangle is 1, 2, 1. A plus b to the power of 3 equals 1 a to the power of 3 plus 3 a to the power of 2 b plus 3 a b to the power of 2 plus 1 b to the power of 3. The fourth level of Pascal’s Triangle is 1,3,3,1. A plus b to the power of 4 equals 1 a to the power of 4 plus 4 a to the power of 3 b plus 6 a to the power of 2 b to the power of 2 plus 4 a b to the power of 3 plus 1 b to the power of 4. The fifth level of Pascal’s Triangle is 1, 4, 6, 4, 1. A plus b to the power of 5 equals 1 a to the power of 5 plus 5 a to the power of 4 b plus 10 a to the power of 3 b to the power of 2 plus 10 a to the power of 2 b to the power of 3. The sixth row of the Pascal’s Triangle is 1, 5, 10, 10, 5, 1.">
+    <image mime-type="image/jpeg" src="../../media/9_6_1.jpg"/>
+  </media><para id="eip-534">Notice that in each expansion the powers of <emphasis effect="italics">a</emphasis> in each term decrease from <emphasis effect="italics">n</emphasis> to 0, and the powers of <emphasis effect="italics">b</emphasis> increase from 0 to <emphasis effect="italics">n</emphasis>.
+</para><para id="eip-519">Notice each number in the array is the sum of the two closest numbers in the row above. We can find the next row by starting and ending with one and then adding two adjacent numbers.
+</para><para id="eip-779">To find the coefficients of the expansion of the binomial <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:mrow><m:mi>n</m:mi></m:msup></m:math> , go to the row that has the value n as a second entry.
+</para>
+<media id="eip-idm372639904" alt="This figure shows Pascal’s Triangle. The first level is 1. The second level is 1, 1. The third level is 1, 2, 1. The fourth level is 1, 3, 3, 1. The fifth level is 1, 4, 6, 4, 1. The sixth level is 1, 5, 10, 10, 5, 1. The seventh level is 1, 6, 15, 20, 15, 6, 1.">
+    <image mime-type="image/jpeg" src="../../media/9_6_2.jpg"/>
+  </media><example id="eip-35"><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-615"><problem id="eip-44">
+  <para id="eip-684">
+Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mn>6</m:mn></m:msup></m:math> .
+  </para>
+</problem>
+
+<solution id="eip-489">
+<table id="eip-243" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>Go to Pascal’s Triangle and read off the coefficients from the row whose second entry is 6.
+</entry>
+    <entry><media id="eip-idm461088896" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_001-01.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry>Write the expansion with the coefficients.
+</entry>
+    <entry><media id="eip-idm482406720" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_001-02.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry>
+Fill in the variable with the power of x decreasing from 6 to 0, and the power of y increasing from 0 to 6.
+</entry>
+    <entry><media id="eip-idm435760416" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_001-03.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry>Binomial expansion of <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mn>6</m:mn></m:msup></m:math> .
+</entry>
+    <entry><media id="eip-idm478303120" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_001-04.jpg"/></media></entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table></solution>
+</exercise></example><example id="eip-731"><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-144"><problem id="eip-764">
+  <para id="eip-43">
+Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mn>5</m:mn></m:msup></m:math> .
+
+  </para>
+</problem>
+
+<solution id="eip-894">
+<table id="eip-244" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><media id="eip-idm811216624" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_002-06.jpg"/></media><newline/>Go to Pascal’s Triangle and read off the coefficients from the row whose second entry is 5.
+</entry>
+    <entry><media id="eip-idm226530160" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_002-01.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry>Write the expansion with the coefficients.
+</entry>
+    <entry><media id="eip-idm512381888" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_002-05.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry>
+Fill in the variable with the power of x decreasing from 5 to 0, and the power of 3 increasing from 0 to 5.
+</entry>
+    <entry><media id="eip-idm518478352" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_002-02.jpg"/></media><newline/><media id="eip-idm255825088" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_002-03.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry>Binomial expansion of <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mn>5</m:mn></m:msup></m:math> .
+</entry>
+    <entry><media id="eip-idm201444304" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_002-04.jpg"/></media></entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-256"><exercise id="eip-945"><problem id="eip-67">
+  <para id="eip-126">
+Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mn>4</m:mn></m:msup></m:math> .
+
+  </para>
+</problem>
+
+<solution id="eip-421">
+  <para id="eip-453"><table id="eip-245" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><media id="eip-idm540340496" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_003-02.jpg"/></media><newline/>Go to Pascal’s Triangle and read off the coefficients from the row whose second entry is 4.
+</entry>
+    <entry><media id="eip-idm536128416" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_003-01.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry>Write the expansion with the coefficients.
+</entry>
+    <entry><media id="eip-idm528248592" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_003-03.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry>Fill in the variable with the power of (3x) decreasing from 4 to 0, and the power of (-2) increasing from 0 to 4.</entry>
+    <entry><media id="eip-idm250115696" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_003-04.jpg"/></media><newline/><media id="eip-idm299725536" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_003-05.jpg"/></media><newline/><media id="eip-idm296607152" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_003-06.jpg"/></media></entry>
+  </row>
+  <row>
+    <entry>Binomial expansion of <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mn>4</m:mn></m:msup></m:math> .
+</entry>
+    <entry><media id="eip-idm236996528" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_06_003-07.jpg"/></media></entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table></para></solution>
+</exercise>
+</example><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-184" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-916">
+Use Pascal’s Triangle to expand a binomial.
+
+</para><exercise id="eip-819"><problem id="eip-967">
+  <para id="eip-376">Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:mrow><m:mn>4</m:mn></m:msup></m:math> .
+
+  </para></problem>
+</exercise><exercise id="eip-855"><problem id="eip-358">
+  <para id="eip-377">
+Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mn>5</m:mn></m:msup></m:math> .
+
+  </para>
+</problem>
+</exercise><exercise id="eip-74"><problem id="eip-987">
+  <para id="eip-391">
+Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mn>3</m:mn></m:msup></m:math> .
+
+  </para>
+</problem></exercise></section></section></section><para id="fs-id1165137836429">A polynomial with two terms is called a binomial. We have already learned to multiply binomials and to raise binomials to powers, but raising a binomial to a high power can be tedious and time-consuming. In this section, we will discuss a shortcut that will allow us to find <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> without multiplying the binomial by itself <m:math>
+ <m:mi>n</m:mi>
+</m:math> times.</para><section id="fs-id1165135195368">
+<title>Identifying Binomial Coefficients</title>
+<para id="fs-id1165135181540">In <link document="m49448">Counting Principles</link>, we studied <term class="no-emphasis">combinations</term>. In the shortcut to finding <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="true">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="true">)</m:mo>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> we will need to use combinations to find the coefficients that will appear in the expansion of the binomial. In this case, we use the notation <m:math>
+ <m:mrow>
+  <m:mo stretchy="true">(</m:mo><m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>n</m:mi>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>r</m:mi>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable><m:mo stretchy="true">)</m:mo>
+ </m:mrow>
+</m:math> instead of <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> but it can be calculated in the same way. So<equation id="eip-id1165137656645" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>r</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation></para><para id="fs-id1165135692906">The combination <m:math>
+ <m:mrow>
+  <m:mo stretchy="true">(</m:mo><m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>n</m:mi>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>r</m:mi>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable><m:mo stretchy="true">)</m:mo>
+ </m:mrow>
+</m:math> is called a <emphasis effect="bold">binomial coefficient</emphasis>. An example of a binomial coefficient is <m:math>
+ <m:mrow>
+  <m:mo stretchy="true">(</m:mo><m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mn>5</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mn>2</m:mn>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable><m:mo stretchy="true">)</m:mo><m:mo>=</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+<note id="fs-id1165137482950"><title>Binomial Coefficients</title>
+
+<para id="fs-id1165137472666">If <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> are integers greater than or equal to 0 with <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>≥</m:mo><m:mi>r</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> then the <term>binomial coefficient </term> is</para><equation id="fs-id1165135188055" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>r</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+</m:math>
+</equation></note><note id="fs-id1165135174912" class="precalculus qa">
+<label>Q&amp;A</label>
+<para id="fs-id1165137386960"><emphasis>Is a binomial coefficient always a whole number?</emphasis></para>
+<para id="fs-id1165137436611"><emphasis effect="italics">Yes. Just as the number of combinations must always be a whole number, a binomial coefficient will always be a whole number.  </emphasis></para>
+</note>
+
+<example id="Example_11_06_01">
+<exercise id="fs-id1165137837055">
+<problem id="fs-id1165137714295">
+<title>Finding Binomial Coefficients</title>
+<para id="fs-id1165135253860">Find each binomial coefficient.</para>
+<list id="fs-id1165137553883" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>5</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>3</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>9</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>2</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">ⓒ</span> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>9</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>7</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </item>
+</list>
+</problem>
+<solution id="fs-id1165137933188">
+<para id="fs-id1165137645446">Use the formula to calculate each binomial coefficient. You can also use the <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:msub>
+   <m:mi>C</m:mi>
+   <m:mi>r</m:mi>
+  </m:msub>
+ </m:mrow>
+</m:math> function on your calculator.</para><equation id="eip-id1165137755879" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>r</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation><list id="fs-id1165137527991" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>5</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>3</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>⋅</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>3</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>!</m:mo><m:mn>2</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>10</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+<item><span class="token">ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>9</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>2</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>9</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>9</m:mn><m:mo>⋅</m:mo><m:mn>8</m:mn><m:mo>⋅</m:mo><m:mn>7</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>!</m:mo><m:mn>7</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>36</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">ⓒ</span> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>9</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>7</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>9</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>9</m:mn><m:mo>⋅</m:mo><m:mn>8</m:mn><m:mo>⋅</m:mo><m:mn>7</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mo>!</m:mo><m:mn>2</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>36</m:mn>
+ </m:mrow>
+</m:math> </item>
+</list>
+</solution>
+<commentary id="fs-id1165135161493">
+<title>Analysis </title>
+<para id="fs-id1165137749058">Notice that we obtained the same result for parts (b) and (c). If you look closely at the solution for these two parts, you will see that you end up with the same two factorials in the denominator, but the order is reversed, just as with combinations.<equation id="eip-id1165137416511" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>r</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mi>r</m:mi>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </equation></para></commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165135309824" class="precalculus try">
+<label>Try It</label>
+<para id="fs-id1165137812282">Find each binomial coefficient.</para>
+<exercise id="ti_11_06_01"><problem id="fs-id1165137640379">
+<para id="eip-id1165135194781"><list id="eip-id1165135332801" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>7</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>3</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>11</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>4</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </item>
+</list>
+</para></problem>
+<solution id="fs-id1165137653724">
+<para id="eip-id1165137645967"><list id="eip-id1165135331689" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span>35</item>
+<item><span class="token">ⓑ</span>330</item>
+</list></para></solution>
+</exercise></note>
+</section>
+<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137722450"><title>Using the Binomial Theorem</title><para id="fs-id1165137445287">When we expand <m:math>
+ <m:mrow>
+<m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+ </m:mrow>
+</m:math> by multiplying, the result is called a <term>binomial expansion</term>, and it includes binomial coefficients. If we wanted to expand <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>52</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> we might multiply <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> by itself fifty-two times. This could take hours! If we examine some simple binomial expansions, we can find patterns that will lead us to a shortcut for finding more complicated binomial expansions.</para><equation id="eip-id1165137387258" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137602015">First, let’s examine the exponents. With each successive term, the exponent for <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> decreases and the exponent for <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> increases. The sum of the two exponents is <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> for each term.</para><para id="fs-id1165137738201">Next, let’s examine the coefficients. Notice that the coefficients increase and then decrease in a symmetrical pattern. The coefficients follow a pattern:</para><equation id="eip-id1165135173876" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>0</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>1</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>2</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137666545">These patterns lead us to the <emphasis effect="bold">Binomial Theorem</emphasis>, which can be used to expand any binomial.</para><equation id="eip-id1165135194720" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mi>n</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mstyle displaystyle="true">
+       <m:munderover>
+        <m:mo>∑</m:mo>
+        <m:mrow>
+         <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+        </m:mrow>
+        <m:mi>n</m:mi>
+       </m:munderover>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mtable>
+           <m:mtr>
+            <m:mtd>
+             <m:mi>n</m:mi>
+            </m:mtd>
+           </m:mtr>
+           <m:mtr>
+            <m:mtd>
+             <m:mi>k</m:mi>
+            </m:mtd>
+           </m:mtr>
+
+          </m:mtable>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:msup>
+         <m:mi>x</m:mi>
+         <m:mrow>
+          <m:mi>n</m:mi><m:mo>−</m:mo><m:mi>k</m:mi>
+         </m:mrow>
+        </m:msup>
+
+       </m:mrow>
+      </m:mstyle><m:msup>
+       <m:mi>y</m:mi>
+       <m:mi>k</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mi>n</m:mi>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mi>n</m:mi>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>1</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mi>n</m:mi>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>2</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>...</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mi>n</m:mi>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mrow>
+            <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>x</m:mi><m:msup>
+       <m:mi>y</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mi>n</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137602044">Another way to see the coefficients is to examine the expansion of a binomial in general form, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> to successive powers 1, 2, 3, and 4.</para><equation id="eip-id1165137935737" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>1</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137430560">Can you guess the next expansion for the binomial <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>?</m:mo>
+ </m:mrow>
+</m:math> </para>
+<figure id="CNX_Precalc_Figure_11_06_002"><media id="fs-id1165137570609" alt="Graph of the function f_2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_06_002.jpg"/>
+</media>
+</figure><para id="fs-id1165137443527">See <link target-id="CNX_Precalc_Figure_11_06_002"/>, which illustrates the following:</para><list id="fs-id1165137748570" list-type="bulleted"><item>There are <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> terms in the expansion of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>The degree (or sum of the exponents) for each term is <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>The powers on <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> begin with <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> and decrease to 0.</item>
+<item>The powers on <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> begin with 0 and increase to <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>The coefficients are symmetric.</item>
+</list><para id="fs-id1165137605699">To determine the expansion on <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> we see <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> thus, there will be 5+1 = 6 terms. Each term has a combined degree of 5. In descending order for powers of <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the pattern is as follows:</para><list id="fs-id1165137804247" list-type="bulleted"><item>Introduce <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and then for each successive term reduce the exponent on <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> by 1 until <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>0</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> is reached.</item>
+<item>Introduce <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>0</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> and then increase the exponent on <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> by 1 until <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+   </m:mrow>
+</m:math> is reached.
+<equation id="eip-id1165137643155" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mi>y</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:mi>x</m:mi><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.8em"/><m:mspace width="0.8em"/><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </equation>
+</item>
+</list><para id="fs-id1165137445918">The next expansion would be</para><equation id="eip-id1165137460981" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137737731">But where do those coefficients come from? The binomial coefficients are symmetric. We can see these coefficients in an array known as <term class="no-emphasis">Pascal's Triangle</term>, shown in <link target-id="CNX_Precalc_Figure_11_06_001"/>.</para><figure id="CNX_Precalc_Figure_11_06_001" class="medium">
+<media id="fs-id1165137444433" alt="Pascal's Triangle">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_06_001.jpg"/>
+</media>
+</figure>
+<para id="fs-id1165137446339">To generate Pascal’s Triangle, we start by writing a 1. In the row below, row 2, we write two 1’s. In the 3<sup>rd</sup> row, flank the ends of the rows with 1’s, and add <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> to find the middle number, 2. In the <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mtext>th</m:mtext>
+ </m:mrow>
+</m:math> row, flank the ends of the row with 1’s. Each element in the triangle is the sum of the two elements immediately above it.</para><para id="fs-id1165137864198">To see the connection between Pascal’s Triangle and binomial coefficients, let us revisit the expansion of the binomials in general form.</para>
+
+<media id="fs-id1165137643968" alt="Pascal's Triangle expanded to show the values of the triangle as x and y terms with exponents" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_06_003.jpg"/>
+</media>
+
+<note id="fs-id1165135187302">
+
+<title>The Binomial Theorem</title>
+<para id="fs-id1165137726456">The <term>Binomial Theorem</term> is a formula that can be used to expand any binomial.</para>
+<equation id="fs-id1165137828132" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mi>n</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mstyle displaystyle="true">
+       <m:munderover>
+        <m:mo>∑</m:mo>
+        <m:mrow>
+         <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+        </m:mrow>
+        <m:mi>n</m:mi>
+       </m:munderover>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mtable>
+           <m:mtr>
+            <m:mtd>
+             <m:mi>n</m:mi>
+            </m:mtd>
+           </m:mtr>
+           <m:mtr>
+            <m:mtd>
+             <m:mi>k</m:mi>
+            </m:mtd>
+           </m:mtr>
+
+          </m:mtable>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:msup>
+         <m:mi>x</m:mi>
+         <m:mrow>
+          <m:mi>n</m:mi><m:mo>−</m:mo><m:mi>k</m:mi>
+         </m:mrow>
+        </m:msup>
+        <m:msup>
+         <m:mi>y</m:mi>
+         <m:mi>k</m:mi>
+        </m:msup>
+
+       </m:mrow>
+      </m:mstyle>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mi>n</m:mi>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mi>n</m:mi>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>1</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mi>n</m:mi>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>2</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>...</m:mn><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mi>n</m:mi>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mrow>
+            <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>x</m:mi><m:msup>
+       <m:mi>y</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mi>n</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+</note>
+
+<note id="fs-id1165135646154" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165137634381"><emphasis effect="bold">Given a binomial, write it in expanded form.</emphasis></para><list id="fs-id1165135377104" list-type="enumerated" number-style="arabic"><item>Determine the value of <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> according to the exponent.</item>
+<item>Evaluate the <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> through <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> using the Binomial Theorem formula.</item>
+<item>Simplify.</item>
+</list></note>
+
+<example id="Example_11_06_02"><exercise id="fs-id1165137843915">
+<problem id="fs-id1165137843917">
+<title>Expanding a Binomial</title>
+<para id="fs-id1165137571473">Write in expanded form.</para>
+<list id="fs-id1165137571476" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">ⓑ</span> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </item>
+</list></problem>
+<solution id="fs-id1165137771774">
+<list id="fs-id1165137804171" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">ⓐ</span>Substitute <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> into the formula. Evaluate the <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> through <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> terms. Simplify.
+<equation id="eip-id1165135600195" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>5</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>0</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>0</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>5</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>1</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>1</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>5</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>2</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>5</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>3</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>5</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>4</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>1</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>5</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>5</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>0</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>5</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>5</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+</item>
+
+<item><span class="token">ⓑ</span>Substitute <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> into the formula. Evaluate the <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> through <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> terms. Notice that <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> is in the place that was occupied by <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> and that <m:math>
+ <m:mrow>
+  <m:mo>–</m:mo><m:mi>y</m:mi>
+ </m:mrow>
+</m:math> is in the place that was occupied by <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> So we substitute them. Simplify.
+<equation id="eip-id1165133341948" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>4</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>0</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>0</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>4</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>1</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>1</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>4</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>2</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>4</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>3</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>1</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mtable>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>4</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr>
+          <m:mtd>
+           <m:mn>4</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>0</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>81</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>108</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>54</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></item>
+</list></solution>
+<commentary id="fs-id1165135191233">
+<title>Analysis </title>
+<para id="fs-id1165135296274">Notice the alternating signs in part b. This happens because <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> raised to odd powers is negative, but <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> raised to even powers is positive. This will occur whenever the binomial contains a subtraction sign.</para>
+</commentary>
+</exercise>
+</example><note id="fs-id1165135501144" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_11_06_02"><problem id="fs-id1165137772198">
+<para id="fs-id1165137772200">Write in expanded form.</para>
+<list id="eip-id1700717" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</item>
+<item><span class="token">ⓑ</span> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</item>
+</list></problem>
+<solution id="fs-id1165137635439">
+<list id="eip-id1366342" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">ⓐ</span> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>10</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</item>
+<item><span class="token">ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>60</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>150</m:mn><m:mi>x</m:mi><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>125</m:mn><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</item>
+</list></solution>
+</exercise></note>
+</section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137658053"><title>Using the Binomial Theorem to Find a Single Term</title><para id="fs-id1165137736641">Expanding a binomial with a high exponent such as <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> can be a lengthy process.</para><para id="eip-164">Sometimes we are interested only in a certain term of a binomial expansion. We do not need to fully expand a binomial to find a single specific term.</para><para id="fs-id1165137834237">Note the pattern of coefficients in the expansion of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+<equation id="eip-405" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>5</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>1</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mi>y</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>5</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>2</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>5</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>3</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>5</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>4</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mi>x</m:mi><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137855349">The second term is <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>5</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>1</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> The third term is <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>5</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>2</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> We can generalize this result.</para><equation id="eip-415" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>r</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mi>r</m:mi>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mi>r</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </equation>
+<note id="fs-id1165137466315">
+
+<title>The (r+1)th Term of a Binomial Expansion</title>
+
+<para id="fs-id1165137628103">The <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>th</m:mtext>
+ </m:mrow>
+</m:math> term of the <term class="no-emphasis">binomial expansion</term> of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> is:</para><equation id="fs-id1165135203716" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>r</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mi>r</m:mi>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mi>r</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </equation>
+ </note><note id="fs-id1165137400324" class="how-to-notitle">
+<label>How To</label>
+<para id="fs-id1165137854996"><emphasis effect="bold">Given a binomial, write a specific term without fully expanding.</emphasis></para>
+<list id="fs-id1165137414548" list-type="enumerated" number-style="arabic"><item>Determine the value of <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> according to the exponent.</item>
+<item>Determine <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Determine <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Replace <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> in the formula for the <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mtext>th</m:mtext>
+ </m:mrow>
+</m:math> term of the binomial expansion.</item>
+</list></note><example id="Example_11_06_03"><exercise id="fs-id1165137605967">
+<problem id="fs-id1165137605969">
+<title>Writing a Given Term of a Binomial Expansion</title>
+<para id="fs-id1165135403538">Find the tenth term of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> without fully expanding the binomial.</para>
+</problem>
+<solution id="fs-id1165137834759">
+<para id="fs-id1165137737706">Because we are looking for the tenth term, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> we will use <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>9</m:mn>
+ </m:mrow>
+</m:math> in our calculations.</para><equation id="eip-id1165137464257" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>r</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mi>r</m:mi>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mi>r</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </equation>
+<equation id="eip-id1165137894367" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>16</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>9</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mn>16</m:mn><m:mo>−</m:mo><m:mn>9</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>9</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>5</m:mn><m:mtext>,</m:mtext><m:mn>857</m:mn><m:mtext>,</m:mtext><m:mn>280</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>7</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>9</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+<note id="fs-id1165137732277" class="precalculus try">
+<label>Try It</label>
+<exercise id="ti_11_06_03">
+<problem id="fs-id1165137657120"><para id="fs-id1165137657121">Find the sixth term of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>9</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> without fully expanding the binomial.</para>
+</problem>
+<solution id="fs-id1165137758550">
+<para id="fs-id1165137758552"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>206</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137862398" class="media-notitle">
+<label>Media</label>
+<para id="fs-id1165137611861">Access these online resources for additional instruction and practice with binomial expansion.</para>
+<list id="url-list" display="block" list-type="bulleted"><item><link url="http://openstax.org/l/binomialtheorem">The Binomial Theorem</link></item>
+<item><link url="http://openstax.org/l/btexample">Binomial Theorem Example</link></item>
+</list></note>
+</section><section id="fs-id1165135705092" class="key-equations">
+<title>Key Equations</title>
+<table id="eip-id1165134166609" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry>Binomial Theorem</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup><m:mo>=</m:mo>
+  <m:mstyle displaystyle="true">
+   <m:munderover>
+    <m:mo>∑</m:mo>
+    <m:mrow>
+     <m:mi>k</m:mi><m:mo>−</m:mo><m:mn>0</m:mn>
+    </m:mrow>
+    <m:mi>n</m:mi>
+   </m:munderover>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mi>n</m:mi>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr>
+        <m:mtd>
+         <m:mi>k</m:mi>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mstyle><m:msup>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mi>k</m:mi>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mi>k</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+
+
+<row>
+<entry> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>t</m:mi><m:mi>h</m:mi>
+ </m:mrow>
+</m:math> term of a binomial expansion</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>r</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mi>r</m:mi>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mi>r</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table></section>
+<section id="fs-id1165137469809" class="key-concepts">
+<title>Key Concepts</title>
+<list id="fs-id1165135187830" list-type="bulleted"><item> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>r</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> is called a binomial coefficient and is equal to <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> See <link target-id="Example_11_06_01"/>.</item>
+<item>The Binomial Theorem allows us to expand binomials without multiplying. See <link target-id="Example_11_06_02"/>.</item>
+<item>We can find a given term of a binomial expansion without fully expanding the binomial. See <link target-id="Example_11_06_03"/>.</item>
+</list></section>
+
+<section id="fs-id1165134089502" class="section-exercises">
+<title>Section Exercises</title>
+<section id="fs-id1165134089506">
+<title>Verbal </title>
+<exercise id="fs-id1165137419807">
+<problem id="fs-id1165135181496">
+<para id="fs-id1165135181499">What is a binomial coefficient, and how it is calculated?</para>
+</problem>
+<solution id="fs-id1165135501149">
+<para id="fs-id1165135501151">A binomial coefficient is an alternative way of denoting the combination <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">).</m:mo>
+ </m:mrow>
+</m:math> It is defined as <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>r</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mspace width="0.8em"/><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.8em"/><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137442166">
+<problem id="fs-id1165137442168">
+<para id="fs-id1165137442170">What role do binomial coefficients play in a binomial expansion? Are they restricted to any type of number?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137846475">
+<problem id="fs-id1165135190462">
+<para id="fs-id1165135190464">What is the Binomial Theorem and what is its use?</para>
+</problem>
+<solution id="fs-id1165137452921">
+<para id="fs-id1165137452923">The Binomial Theorem is defined as <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>=</m:mo><m:mstyle displaystyle="true">
+   <m:munderover>
+    <m:mo>∑</m:mo>
+    <m:mrow>
+     <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+    </m:mrow>
+    <m:mi>n</m:mi>
+   </m:munderover>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mi>n</m:mi>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr>
+        <m:mtd>
+         <m:mi>k</m:mi>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:msup>
+     <m:mi>x</m:mi>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>−</m:mo><m:mi>k</m:mi>
+     </m:mrow>
+    </m:msup>
+
+   </m:mrow>
+  </m:mstyle><m:msup>
+   <m:mi>y</m:mi>
+   <m:mi>k</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> and can be used to expand any binomial.</para>
+</solution>
+ </exercise>
+
+<exercise id="fs-id1165137445986">
+<problem id="fs-id1165137445988">
+<para id="fs-id1165137445990">When is it an advantage to use the Binomial Theorem? Explain.</para>
+</problem>
+</exercise>
+</section>
+
+<section id="fs-id1165137408889">
+<title>Algebraic</title>
+<para id="fs-id1165135169145">For the following exercises, evaluate the binomial coefficient.</para>
+
+<exercise id="fs-id1165135526110">
+<problem id="fs-id1165135526112">
+<para id="fs-id1165135526114"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>6</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>2</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137583395">
+<para id="fs-id1165137583397">15</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137455051">
+<problem id="fs-id1165137455053">
+<para id="fs-id1165137655192"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>5</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>3</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135484521">
+<problem id="fs-id1165137541584">
+<para id="fs-id1165137541586"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>7</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>4</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135484154">
+<para id="fs-id1165135484156">35</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137772477">
+<problem id="fs-id1165137772480">
+<para id="fs-id1165137772482"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>9</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>7</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135506400">
+<problem id="fs-id1165135506403">
+<para id="fs-id1165135570073"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>9</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137480607">
+<para id="fs-id1165137480609">10</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137656508">
+<problem id="fs-id1165137656510">
+<para id="fs-id1165137530730"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>25</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>11</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135241276">
+<problem id="fs-id1165135424707">
+<para id="fs-id1165135424709"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>17</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>6</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137749996">
+<para id="fs-id1165137749998">12,376</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135193638">
+<problem id="fs-id1165135193640">
+<para id="fs-id1165137409164"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>200</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>199</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<para id="fs-id1165137807329">For the following exercises, use the Binomial Theorem to expand each binomial.</para>
+
+<exercise id="fs-id1165137442493">
+<problem id="fs-id1165137442495">
+<para id="fs-id1165137724327"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mo>−</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137831242">
+<para id="fs-id1165137769967"> <m:math>
+ <m:mrow>
+  <m:mn>64</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>48</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>b</m:mi><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>a</m:mi><m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137548190">
+<problem id="fs-id1165137548192">
+<para id="fs-id1165137548194"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137542019">
+<problem id="fs-id1165137651760">
+<para id="fs-id1165137651762"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135394319">
+<para id="fs-id1165135394321"> <m:math>
+ <m:mrow>
+  <m:mn>27</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>54</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>b</m:mi><m:mo>+</m:mo><m:mn>36</m:mn><m:mi>a</m:mi><m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>8</m:mn><m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137414737">
+<problem id="fs-id1165137414739">
+<para id="fs-id1165137647996"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135581214">
+<problem id="fs-id1165135581216">
+<para id="fs-id1165137896227"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135516855">
+<para id="fs-id1165135516857"> <m:math>
+ <m:mrow>
+  <m:mn>1024</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2560</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2560</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>1280</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>320</m:mn><m:mi>x</m:mi><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>32</m:mn><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137678200">
+<problem id="fs-id1165137678202">
+<para id="fs-id1165137678204"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137667609">
+<problem id="fs-id1165137667611">
+<para id="fs-id1165137667613"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137837121">
+<para id="fs-id1165137642794"> <m:math>
+ <m:mrow>
+  <m:mn>1024</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>3840</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>5760</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>4320</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>1620</m:mn><m:mi>x</m:mi><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>243</m:mn><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137418542">
+<problem id="fs-id1165137418544">
+<para id="fs-id1165137418546"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135526126">
+<problem id="fs-id1165135526128">
+<para id="fs-id1165135526130"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>2</m:mn><m:msup>
+     <m:mi>y</m:mi>
+     <m:mrow>
+      <m:mo>−</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137462052">
+<para id="fs-id1165137805817"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mn>8</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mi>y</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>24</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>32</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137828072">
+<problem id="fs-id1165137828074">
+<para id="fs-id1165137828076"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:msqrt>
+     <m:mi>x</m:mi>
+    </m:msqrt>
+    <m:mo>−</m:mo><m:msqrt>
+     <m:mi>y</m:mi>
+    </m:msqrt>
+    <m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<para id="fs-id1165135149859">For the following exercises, use the Binomial Theorem to write the first three terms of each binomial.</para>
+
+<exercise id="fs-id1165137565755">
+<problem id="fs-id1165137565757">
+<para id="fs-id1165137565759"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>17</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137527392">
+<para id="fs-id1165137535275"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>17</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>17</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mi>b</m:mi><m:mo>+</m:mo><m:mn>136</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135182971">
+<problem id="fs-id1165137871899">
+<para id="fs-id1165137871901"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>18</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137736266">
+<problem id="fs-id1165137736268">
+<para id="fs-id1165137409564"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135188234">
+<para id="fs-id1165135188236"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>30</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>14</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mi>b</m:mi><m:mo>+</m:mo><m:mn>420</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>13</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137543302">
+<problem id="fs-id1165137543304">
+<para id="fs-id1165137543306"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>8</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137635106">
+<problem id="fs-id1165137874642">
+<para id="fs-id1165137874644"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>20</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137659105">
+<para id="fs-id1165137659107"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>486</m:mn><m:mo>,</m:mo><m:mn>784</m:mn><m:mo>,</m:mo><m:mn>401</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>20</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>23</m:mn><m:mo>,</m:mo><m:mn>245</m:mn><m:mo>,</m:mo><m:mn>229</m:mn><m:mo>,</m:mo><m:mn>340</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>19</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mi>b</m:mi><m:mo>+</m:mo><m:mn>73</m:mn><m:mo>,</m:mo><m:mn>609</m:mn><m:mo>,</m:mo><m:mn>892</m:mn><m:mo>,</m:mo><m:mn>910</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>18</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137646617">
+<problem id="fs-id1165137526699">
+<para id="fs-id1165137526701"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>7</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137732098">
+<problem id="fs-id1165137573195">
+<para id="fs-id1165137573197"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:msqrt>
+     <m:mi>y</m:mi>
+    </m:msqrt>
+    <m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>8</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137433769">
+<para id="fs-id1165137414388"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mn>24</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>8</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mn>21</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:msqrt>
+   <m:mi>y</m:mi>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>28</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mn>18</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165134032296">For the following exercises, find the indicated term of each binomial without fully expanding the binomial.</para>
+
+<exercise id="fs-id1165135344957">
+<problem id="fs-id1165135344959">
+<para id="fs-id1165135344961">The fourth term of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137696650">
+<problem id="fs-id1165137696653">
+<para id="fs-id1165135193960">The fourth term of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137827785">
+<para id="fs-id1165137827787"> <m:math>
+ <m:mrow>
+  <m:mo>−</m:mo><m:mn>720</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137898985">
+<problem id="fs-id1165137898987">
+<para id="fs-id1165137898989">The third term of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>7</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135195054">
+<problem id="fs-id1165135195056">
+<para id="fs-id1165137737799">The eighth term of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>14</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137549805">
+<para id="fs-id1165137659226"> <m:math>
+ <m:mrow>
+  <m:mn>220</m:mn><m:mo>,</m:mo><m:mn>812</m:mn><m:mo>,</m:mo><m:mn>466</m:mn><m:mo>,</m:mo><m:mn>875</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>7</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137466522">
+<problem id="fs-id1165137466524">
+<para id="fs-id1165137466526">The seventh term of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>11</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135173932">
+<problem id="fs-id1165135173934">
+<para id="fs-id1165135173936">The fifth term of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>7</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137723999">
+<para id="fs-id1165137673496"> <m:math>
+ <m:mrow>
+  <m:mn>35</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137725287">
+<problem id="fs-id1165137768225">
+<para id="fs-id1165137768227">The tenth term of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135541625">
+<problem id="fs-id1165135541627">
+<para id="fs-id1165135541629">The ninth term of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:msup>
+     <m:mi>b</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>11</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137423625">
+<para id="fs-id1165137423627"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>082</m:mn><m:mo>,</m:mo><m:mn>565</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137723425">
+<problem id="fs-id1165137536035">
+<para id="fs-id1165137536037">The fourth term of <m:math display="inline">
+ <m:mrow>
+  <m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>−</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135152237">
+<problem id="fs-id1165135152240">
+<para id="fs-id1165137445389">The eighth term of <m:math display="inline">
+ <m:mrow>
+  <m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>9</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137692780">
+<para id="fs-id1165137692782"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>1152</m:mn><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>7</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137653220">
+<title>Graphical</title>
+
+<para id="fs-id1165137635092">For the following exercises, use the Binomial Theorem to expand the binomial <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Then find and graph each indicated sum on one set of axes.</para><exercise id="fs-id1165137407882">
+<problem id="fs-id1165137407884">
+<para id="fs-id1165137693683">Find and graph <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> such that <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> is the first term of the expansion.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137925296"><problem id="fs-id1165137925298">
+<para id="fs-id1165137925300">Find and graph <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> such that <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> is the sum of the first two terms of the expansion.</para>
+</problem>
+<solution id="fs-id1165137575802">
+<para id="fs-id1165137575804"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>12</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para><media id="fs-id1165137726516" alt="Graph of the function f_2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_06_202.jpg"/>
+</media></solution>
+</exercise><exercise id="fs-id1165137812692">
+<problem id="fs-id1165137812694">
+<para id="fs-id1165137812696">Find and graph <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> such that <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> is the sum of the first three terms of the expansion.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137723651"><problem id="fs-id1165137723653">
+<para id="fs-id1165137723655">Find and graph <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>4</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> such that <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>4</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> is the sum of the first four terms of the expansion.</para>
+</problem>
+<solution id="fs-id1165135408467">
+<para id="fs-id1165135408469"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>4</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>12</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>54</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>108</m:mn><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para><media id="fs-id1165137482837" alt="Graph of the function f_4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_06_204.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165137557834">
+<problem id="fs-id1165137557836">
+<para id="fs-id1165137557838">Find and graph <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>5</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> such that <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>f</m:mi>
+   <m:mn>5</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> is the sum of the first five terms of the expansion.</para></problem>
+</exercise>
+
+</section>
+<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137836668"><title>Extensions</title><exercise id="fs-id1165137836673" class="material-set-2">
+<problem id="fs-id1165137836675">
+<para id="fs-id1165137932593">In the expansion of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> each term has the form <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>k</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mi>k</m:mi>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mi>k</m:mi>
+  </m:msup></m:mrow></m:math>, where <m:math><m:mrow><m:mi>k</m:mi>
+ </m:mrow>
+</m:math> successively takes on the value <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mn>...</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>n</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> If <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>k</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>7</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>2</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> what is the corresponding term?</para></problem>
+<solution id="fs-id1165137871611">
+<para id="fs-id1165137476761"> <m:math>
+ <m:mrow>
+  <m:mn>590</m:mn><m:mo>,</m:mo><m:mn>625</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137441704">
+<problem id="fs-id1165137441706">
+<para id="fs-id1165137441708">In the expansion of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> the coefficient of <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>−</m:mo><m:mi>k</m:mi>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mi>k</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> is the same as the coefficient of which other term?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137651016">
+<problem id="fs-id1165137651019">
+<para id="fs-id1165135209329">Consider the expansion of <m:math display="inline">
+ <m:mrow>
+  <m:mspace width="0.8em"/><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>40</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> What is the exponent of <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi>
+ </m:mrow>
+</m:math> in the <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mtext>th</m:mtext>
+ </m:mrow>
+</m:math> term?</para></problem>
+<solution id="fs-id1165137731710">
+<para id="fs-id1165137731712"> <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137755502"><problem id="fs-id1165137755504">
+<para id="fs-id1165137755506">Find <m:math display="inline">
+ <m:mrow>
+  <m:mspace width="0.8em"/><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mi>k</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>k</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> and write the answer as a binomial coefficient in the form <m:math display="inline">
+ <m:mrow>
+  <m:mspace width="0.8em"/><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>k</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Prove it. <emphasis effect="italics">Hint:</emphasis> Use the fact that, for any integer <m:math>
+ <m:mrow>
+  <m:mi>p</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> such that <m:math>
+ <m:mrow>
+  <m:mi>p</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>p</m:mi><m:mo>!</m:mo><m:mo>=</m:mo><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math> </para></problem>
+<!--<solution id="fs-id1165137692126">
+<para id="fs-id1165137692128"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mtable>
+    <m:mtr>
+     <m:mtd>
+      <m:mi>n</m:mi>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr>
+     <m:mtd>
+      <m:mi>k</m:mi><m:mo>&#8722;</m:mo><m:mn>1</m:mn>
+     </m:mtd>
+    </m:mtr>
+   </m:mtable>
+
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mtable columnalign="left">
+    <m:mtr>
+     <m:mtd>
+      <m:mi>n</m:mi>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr>
+     <m:mtd>
+      <m:mi>k</m:mi>
+     </m:mtd>
+    </m:mtr>
+   </m:mtable>
+
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mtable>
+    <m:mtr>
+     <m:mtd>
+      <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr>
+     <m:mtd>
+      <m:mi>k</m:mi>
+     </m:mtd>
+    </m:mtr>
+   </m:mtable>
+
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mtext>&#8201;</m:mtext>
+ </m:mrow>
+</m:math> Proof:</para>
+<para id="fs-id1165137759673"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr/><m:mtr/><m:mtr/>
+  <m:mtr>
+   <m:mtd>
+    <m:mtext>&#8201;</m:mtext><m:mtext>&#8201;</m:mtext><m:mtext>&#8201;</m:mtext><m:mtext>&#8201;</m:mtext><m:mtext>&#8201;</m:mtext><m:mrow><m:mo>(</m:mo>
+     <m:mtable>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>n</m:mi>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>k</m:mi><m:mo>&#8722;</m:mo><m:mn>1</m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mi>n</m:mi>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>k</m:mi>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    <m:mo>)</m:mo></m:mrow>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>!</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mo>!</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>&#8722;</m:mo><m:mi>k</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo>
+     </m:mrow>
+    </m:mfrac>
+    <m:mo>+</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>!</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>k</m:mi><m:mo>&#8722;</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>&#8722;</m:mo><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>k</m:mi><m:mo>&#8722;</m:mo><m:mn>1</m:mn>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>!</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>&#8722;</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+     </m:mrow>
+    </m:mfrac>
+    <m:mo>+</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>!</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>k</m:mi><m:mo>&#8722;</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>&#8722;</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>&#8722;</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>n</m:mi><m:mo>!</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>&#8722;</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>k</m:mi><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>&#8722;</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+     </m:mrow>
+    </m:mfrac>
+    <m:mo>+</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mi>n</m:mi><m:mo>!</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>k</m:mi><m:mo>&#8722;</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>&#8722;</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>&#8722;</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>n</m:mi><m:mo>!</m:mo><m:mo>+</m:mo><m:mi>k</m:mi><m:mi>n</m:mi><m:mo>!</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mo>!</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>&#8722;</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>n</m:mi><m:mo>!</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mo>!</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>&#8722;</m:mo><m:mi>k</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mo>!</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>&#8722;</m:mo><m:mi>k</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+     <m:mtable>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>k</m:mi>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    <m:mo>)</m:mo></m:mrow>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> </para></solution>-->
+</exercise><exercise id="fs-id1165137757975"><problem id="fs-id1165137757977">
+<para id="fs-id1165137757979">Which expression cannot be expanded using the Binomial Theorem? Explain.</para>
+<list id="eip-id1165137732312" list-type="bulleted" bullet-style="none"><item> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:msqrt>
+     <m:mi>a</m:mi>
+    </m:msqrt>
+    <m:mo>+</m:mo><m:mn>4</m:mn><m:msqrt>
+     <m:mi>a</m:mi>
+    </m:msqrt>
+    <m:mo>−</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>8</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</item>
+<item> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>2</m:mn><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</item>
+<item> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:msqrt>
+     <m:mrow>
+      <m:mn>2</m:mn><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:msqrt>
+    <m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</item>
+</list></problem>
+<solution id="fs-id1165135176542">
+<para id="fs-id1165135176544">The expression <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>2</m:mn><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo><m:mi>z</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> cannot be expanded using the Binomial Theorem because it cannot be rewritten as a binomial.</para>
+</solution>
+</exercise></section></section>
+</content>
+<glossary>
+<definition id="fs-id1165137673583">
+<term>binomial coefficient</term>
+<meaning id="fs-id1165137673588">the number of ways to choose<emphasis effect="italics"> r</emphasis> objects from <emphasis effect="italics">n</emphasis> objects where order does not matter; equivalent to <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> denoted <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>r</m:mi>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</meaning>
+</definition>
+<definition id="fs-id1165137812031">
+<term>binomial expansion</term>
+<meaning id="fs-id1165137812163">the result of expanding <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> by multiplying</meaning>
+</definition>
+<definition id="fs-id1165135161212">
+<term>Binomial Theorem</term>
+<meaning id="fs-id1165135161217">a formula that can be used to expand any binomial</meaning>
+</definition>
+</glossary>
+</document>
