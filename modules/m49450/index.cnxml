@@ -1,7 +1,7 @@
-<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
 
 <title>Probability</title>
-<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m49450</md:content-id>
   <md:title>Probability</md:title>
   <md:abstract/>
@@ -11,7 +11,7 @@
 <content>
 <section id="eip-7" class="coreq-skills"><section id="eip-204" class="learning-objectives"><title>Learning Objectives</title><list id="eip-122"><item>Introduction to Sample Spaces and Computing Basic Probabilities.
 </item>
-</list></section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-784"><title>Objective 1: Introduction to Sample Spaces and Computing Basic Probabilities.</title><para id="eip-13">
+</list></section><section id="eip-784"><title>Objective 1: Introduction to Sample Spaces and Computing Basic Probabilities.</title><para id="eip-13">
 Many events in life are inherently uncertain: will it snow tomorrow? Am I going to get an ‘A’ in this course? None of these questions can be answered with certainty, however, we might say that some are unlikely, and others are more likely.
 
 </para><para id="eip-512">The <term>probability of an event</term> is a description of how likely it is that an event will happen. A probability is a number between <emphasis>0</emphasis> and <emphasis>1</emphasis> (that is, between 0% and 100%), where probabilities closer to 100% are very likely to occur, and probabilities closer to 0% are very unlikely to occur. A probability of 0% means the event is impossible, and a probability of 100% means the event will certainly occur.
@@ -112,7 +112,7 @@ Find the probability of “Drawing a black queen.”
 
 <caption>An example of a “spaghetti model,” which can be used to predict possible paths of a tropical storm.<footnote id="eip-id1165135209268">The figure is for illustrative purposes only and does not model any particular storm.</footnote></caption></figure><para id="fs-id1648117">Residents of the Southeastern United States are all too familiar with charts, known as spaghetti models, such as the one in <link target-id="CNX_Precalc_Figure_11_07_001"/>. They combine a collection of weather data to predict the most likely path of a hurricane. Each colored line represents one possible path. The group of squiggly lines can begin to resemble strands of spaghetti, hence the name. In this section, we will investigate methods for making these types of predictions.</para>
 
-<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1629254"><title>Constructing Probability Models</title><para id="fs-id1599191">Suppose we roll a six-sided number cube. Rolling a number cube is an example of an <term>experiment</term>, or an activity with an observable result. The numbers on the cube are possible results, or <term>outcomes</term>, of this experiment. The set of all possible outcomes of an experiment is called the <term>sample space</term> of the experiment. The sample space for this experiment is <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn></m:mrow> <m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> An <term>event</term> is any subset of a sample space.</para><para id="fs-id1587181">The likelihood of an event is known as <term>probability</term>. The probability of an event <m:math>
+<section id="fs-id1629254"><title>Constructing Probability Models</title><para id="fs-id1599191">Suppose we roll a six-sided number cube. Rolling a number cube is an example of an <term>experiment</term>, or an activity with an observable result. The numbers on the cube are possible results, or <term>outcomes</term>, of this experiment. The set of all possible outcomes of an experiment is called the <term>sample space</term> of the experiment. The sample space for this experiment is <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn></m:mrow> <m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> An <term>event</term> is any subset of a sample space.</para><para id="fs-id1587181">The likelihood of an event is known as <term>probability</term>. The probability of an event <m:math>
 <m:mrow>
 <m:mi>p</m:mi>
 </m:mrow>
@@ -717,7 +717,7 @@ Find the probability of “Drawing a black queen.”
 </exercise>
 </note>
 </section>
-<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1116713"><title>Computing the Probability of Mutually Exclusive Events</title><para id="fs-id1585848">Suppose the spinner in <link target-id="Figure_11_07_002"/> is spun again, but this time we are interested in the probability of spinning an orange or a <m:math>
+<section id="fs-id1116713"><title>Computing the Probability of Mutually Exclusive Events</title><para id="fs-id1585848">Suppose the spinner in <link target-id="Figure_11_07_002"/> is spun again, but this time we are interested in the probability of spinning an orange or a <m:math>
 <m:mrow>
 <m:mi>d</m:mi><m:mo>.</m:mo>
 </m:mrow>
@@ -1303,7 +1303,7 @@ Find the probability of “Drawing a black queen.”
 <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo>
 </m:mrow>
 </m:math> ways to select 2 phones. The probability of selecting 2 phones that are not defective is:</para>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-546" class="unnumbered"><label/> <m:math display="block">
+<equation id="eip-546" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mtable columnalign="left">
    <m:mtr columnalign="left">
@@ -1777,7 +1777,7 @@ Find the probability of “Drawing a black queen.”
 </exercise>
 </section>
 
-<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1655573"><title>Numeric</title><para id="fs-id1210672">For the following exercises, use the spinner shown in <link target-id="CNX_Precalc_Figure_11_07_201"/> to find the probabilities indicated.</para>
+<section id="fs-id1655573"><title>Numeric</title><para id="fs-id1210672">For the following exercises, use the spinner shown in <link target-id="CNX_Precalc_Figure_11_07_201"/> to find the probabilities indicated.</para>
 <figure id="CNX_Precalc_Figure_11_07_201" class="small"><media id="fs-id1460534" alt="A pie chart with eight pieces with one A colored blue, one B colored purple, once C colored orange, one D colored blue, one E colored red, one F colored green, one I colored green, and one O colored yellow.">
 <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_07_201n.jpg"/>
 </media>
@@ -2610,7 +2610,7 @@ Find the probability of “Drawing a black queen.”
 <title><link document="m49445">Arithmetic Sequences</link></title>
 <exercise id="fs-id1646955">
 <problem id="fs-id1431642">
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1431644">Is the sequence <m:math>
+<para id="fs-id1431644">Is the sequence <m:math>
 <m:mrow>
 <m:mfrac>
 <m:mn>4</m:mn>
@@ -2852,12 +2852,12 @@ and then find the 31<sup>st</sup> term.</para></problem>
 
 <exercise id="fs-id1323468">
 <problem id="fs-id1323470">
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1323472">Is the sequence 4, 16, 28, 40 … geometric? If so find the common ratio. If not, explain why.</para></problem>
+<para id="fs-id1323472">Is the sequence 4, 16, 28, 40 … geometric? If so find the common ratio. If not, explain why.</para></problem>
 </exercise>
 
 <exercise id="fs-id1692760">
 <problem id="fs-id1692762">
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1692764">A geometric sequence has terms <m:math>
+<para id="fs-id1692764">A geometric sequence has terms <m:math>
  <m:mrow>
   <m:msub>
    <m:mi>a</m:mi>
@@ -2874,7 +2874,7 @@ and then find the 31<sup>st</sup> term.</para></problem>
  </m:mrow>
 </m:math>. What are the first five terms?</para></problem>
 <solution id="fs-id1489943">
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1489945">4, 16, 64, 256, 1024</para></solution>
+<para id="fs-id1489945">4, 16, 64, 256, 1024</para></solution>
 </exercise>
 
 <exercise id="fs-id1706539">
@@ -3144,7 +3144,7 @@ tapered rungs, the lengths of which increase by a common difference. The first r
 
 <exercise id="fs-id1457811">
 <problem id="fs-id1433467">
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1433469">Use the formula for the sum of the first <emphasis effect="italics">n</emphasis> terms of a geometric series to find <m:math>
+<para id="fs-id1433469">Use the formula for the sum of the first <emphasis effect="italics">n</emphasis> terms of a geometric series to find <m:math>
 <m:mrow>
 <m:msub>
 <m:mi>S</m:mi>
@@ -3496,7 +3496,7 @@ have?</para>
 </problem>
 </exercise>
 </section>
-<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1521395"><title><link document="m49449">Binomial Theorem</link></title><exercise id="fs-id1458647">
+<section id="fs-id1521395"><title><link document="m49449">Binomial Theorem</link></title><exercise id="fs-id1458647">
 <problem id="fs-id1458649">
 <para id="fs-id1458651">Evaluate the binomial coefficient <m:math>
  <m:mrow>
@@ -3635,7 +3635,7 @@ have?</para>
  without fully expanding the binomial.</para>
 </problem>
 </exercise>
-</section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1375856"><title><link document="m49450">Probability</link></title><para id="fs-id1375861">For the following exercises, assume two die are rolled.</para>
+</section><section id="fs-id1375856"><title><link document="m49450">Probability</link></title><para id="fs-id1375861">For the following exercises, assume two die are rolled.</para>
 
 <exercise id="fs-id1690879" class="material-set-2"><problem id="fs-id1690881">
 <para id="fs-id1690883">Construct a table showing the sample space.</para>
@@ -3877,7 +3877,7 @@ have?</para>
 </solution>
 </exercise>
 </section></section>
-<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1434556" class="practice-test"><title>Practice Test</title><exercise id="fs-id1434559">
+<section id="fs-id1434556" class="practice-test"><title>Practice Test</title><exercise id="fs-id1434559">
 <problem id="fs-id1695339">
 <para id="fs-id1695341">Write the first four terms of the sequence defined by the recursive formula <m:math>
  <m:mrow>

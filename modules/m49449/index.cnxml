@@ -1,7 +1,7 @@
-<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
 
 <title>Binomial Theorem</title>
-<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m49449</md:content-id>
   <md:title>Binomial Theorem</md:title>
   <md:abstract/>
@@ -13,7 +13,7 @@
 <item>Use Pascal’s Triangle to expand a binomial. (IA 12.4.1)
 </item>
 </list></section><section id="eip-688"><title>Objective 1: Use Pascal’s Triangle to expand a binomial. (IA 12.4.1)</title><para id="eip-831">Pascal’s triangle helps us find the coefficients of the terms in the expansion of a binomial.
-</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-820">To find the coefficients of the terms, we write our expansion again focusing on the coefficients. We rewrite the coefficients to the right forming an array of coefficients. The array to the right is called <term>Pascal’s Triangle</term>.
+</para><para id="eip-820">To find the coefficients of the terms, we write our expansion again focusing on the coefficients. We rewrite the coefficients to the right forming an array of coefficients. The array to the right is called <term>Pascal’s Triangle</term>.
 </para><media id="eip-idm190683104" alt="A plus b to the power of 0 equals 1. The top level of Pascal’s Triangle is 1. A plus b to the power of 1 equals 1 a plus 1 b. The second level of Pascal’s Triangle is 1, 1. A plus b to the power of 2 equals 1 a to the power of 2 plus 2 a b plus 1 b to the power of 2. The third level of Pascal’s Triangle is 1, 2, 1. A plus b to the power of 3 equals 1 a to the power of 3 plus 3 a to the power of 2 b plus 3 a b to the power of 2 plus 1 b to the power of 3. The fourth level of Pascal’s Triangle is 1,3,3,1. A plus b to the power of 4 equals 1 a to the power of 4 plus 4 a to the power of 3 b plus 6 a to the power of 2 b to the power of 2 plus 4 a b to the power of 3 plus 1 b to the power of 4. The fifth level of Pascal’s Triangle is 1, 4, 6, 4, 1. A plus b to the power of 5 equals 1 a to the power of 5 plus 5 a to the power of 4 b plus 10 a to the power of 3 b to the power of 2 plus 10 a to the power of 2 b to the power of 3. The sixth row of the Pascal’s Triangle is 1, 5, 10, 10, 5, 1.">
     <image mime-type="image/jpeg" src="../../media/9_6_1.jpg"/>
   </media><para id="eip-534">Notice that in each expansion the powers of <emphasis effect="italics">a</emphasis> in each term decrease from <emphasis effect="italics">n</emphasis> to 0, and the powers of <emphasis effect="italics">b</emphasis> increase from 0 to <emphasis effect="italics">n</emphasis>.
@@ -22,7 +22,7 @@
 </para>
 <media id="eip-idm372639904" alt="This figure shows Pascal’s Triangle. The first level is 1. The second level is 1, 1. The third level is 1, 2, 1. The fourth level is 1, 3, 3, 1. The fifth level is 1, 4, 6, 4, 1. The sixth level is 1, 5, 10, 10, 5, 1. The seventh level is 1, 6, 15, 20, 15, 6, 1.">
     <image mime-type="image/jpeg" src="../../media/9_6_2.jpg"/>
-  </media><example id="eip-35"><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-615"><problem id="eip-44">
+  </media><example id="eip-35"><exercise id="eip-615"><problem id="eip-44">
   <para id="eip-684">
 Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mn>6</m:mn></m:msup></m:math> .
   </para>
@@ -56,7 +56,7 @@ Fill in the variable with the power of x decreasing from 6 to 0, and the power o
 
 </tgroup>
 </table></solution>
-</exercise></example><example id="eip-731"><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-144"><problem id="eip-764">
+</exercise></example><example id="eip-731"><exercise id="eip-144"><problem id="eip-764">
   <para id="eip-43">
 Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mn>5</m:mn></m:msup></m:math> .
 
@@ -94,7 +94,7 @@ Fill in the variable with the power of x decreasing from 5 to 0, and the power o
 
 </tgroup>
 </table></solution>
-</exercise></example><example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-256"><exercise id="eip-945"><problem id="eip-67">
+</exercise></example><example id="eip-256"><exercise id="eip-945"><problem id="eip-67">
   <para id="eip-126">
 Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mn>4</m:mn></m:msup></m:math> .
 
@@ -131,7 +131,7 @@ Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3<
 </tgroup>
 </table></para></solution>
 </exercise>
-</example><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-184" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-916">
+</example><section id="eip-184" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-916">
 Use Pascal’s Triangle to expand a binomial.
 
 </para><exercise id="eip-819"><problem id="eip-967">
@@ -629,7 +629,7 @@ Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>2<
 </list></para></solution>
 </exercise></note>
 </section>
-<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137722450"><title>Using the Binomial Theorem</title><para id="fs-id1165137445287">When we expand <m:math>
+<section id="fs-id1165137722450"><title>Using the Binomial Theorem</title><para id="fs-id1165137445287">When we expand <m:math>
  <m:mrow>
 <m:msup>
    <m:mrow>
@@ -2087,7 +2087,7 @@ Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>2<
 </item>
 </list></solution>
 </exercise></note>
-</section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137658053"><title>Using the Binomial Theorem to Find a Single Term</title><para id="fs-id1165137736641">Expanding a binomial with a high exponent such as <m:math>
+</section><section id="fs-id1165137658053"><title>Using the Binomial Theorem to Find a Single Term</title><para id="fs-id1165137736641">Expanding a binomial with a high exponent such as <m:math>
  <m:mrow>
   <m:msup>
    <m:mrow>
@@ -4076,7 +4076,7 @@ Use Pascal’s Triangle to expand <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>2<
 </exercise>
 
 </section>
-<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137836668"><title>Extensions</title><exercise id="fs-id1165137836673" class="material-set-2">
+<section id="fs-id1165137836668"><title>Extensions</title><exercise id="fs-id1165137836673" class="material-set-2">
 <problem id="fs-id1165137836675">
 <para id="fs-id1165137932593">In the expansion of <m:math>
  <m:mrow>

@@ -1,7 +1,7 @@
-<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
 
 <title>Solving Systems with Gaussian Elimination</title>
-<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m49434</md:content-id>
   <md:title>Solving Systems with Gaussian Elimination</md:title>
   <md:abstract><para>In this section, you will:</para><list>
@@ -21,7 +21,7 @@
 </list>
 </section>
 
-<section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-idm234430464"><title>Objective 1: Use row operations on a matrix (IA 4.5.2)</title><para id="fs-idm262054320">In the last section, we learned how to write the augmented matrix for a system of equations.
+<section id="fs-idm234430464"><title>Objective 1: Use row operations on a matrix (IA 4.5.2)</title><para id="fs-idm262054320">In the last section, we learned how to write the augmented matrix for a system of equations.
 </para><para id="eip-521">Once a system of equations is in its <term>augmented matrix form</term>, we will <emphasis>solve by elimination</emphasis> by <emphasis>performing operations on the rows</emphasis> that will lead us to the solution. Our goal will be to get 1 on the diagonal of the matrix and all entries below the diagonal must be zeros.
 </para>
 <section id="eip-idm618431632"><title>Row Operations</title>
@@ -99,7 +99,7 @@ Use the needed row operation that will get the first entry in row 2 to be zero i
 </para>
 <para id="eip-idm528851552">
  <m:math><m:mfenced open="[" close="]"><m:mtable columnalign="right center center" columnlines="none solid none"><m:mtr><m:mtd><m:mn>1</m:mn></m:mtd><m:mtd><m:mo>-</m:mo><m:mn>1</m:mn></m:mtd><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn></m:mtd><m:mtd><m:mo>-</m:mo><m:mn>6</m:mn></m:mtd><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math>
-</para></problem></exercise></section></section><section id="fs-idm260532608"><title>Objective 2: Solve systems of equations using matrices (IA 4.5.3)</title><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-idm245759600">To solve a system of equations using matrices, we transform the augmented matrix into a matrix in <term>row-echelon form</term> using row operations. For a consistent and independent system of equations, the augmented matrix is in row-echelon form when to the left of the vertical line, each entry on the diagonal is a 1 and all entries below the diagonal are zeros.
+</para></problem></exercise></section></section><section id="fs-idm260532608"><title>Objective 2: Solve systems of equations using matrices (IA 4.5.3)</title><para id="fs-idm245759600">To solve a system of equations using matrices, we transform the augmented matrix into a matrix in <term>row-echelon form</term> using row operations. For a consistent and independent system of equations, the augmented matrix is in row-echelon form when to the left of the vertical line, each entry on the diagonal is a 1 and all entries below the diagonal are zeros.
 </para><media id="eip-idm204886640" alt="A 2 by 3 matrix is shown on the left. Its first row is 1, a, b. Its second row is 0, 1, c. An arrow points diagonally down and right, overlapping both the 1s in the matrix. A 3 by 4 matrix is shown on the right. Its first row is 1, a, b, d. Its second row is 0, 1, c, e. Its third row is 0, 0, 1, f. An arrow points diagonally down and right, overlapping all the 1s in the matrix. a, b, c, d, e, f are real numbers.">
     <image mime-type="image/jpeg" src="../../media/7_6_5.jpg"/>
   </media>
@@ -190,7 +190,7 @@ Once we get the augmented matrix into <emphasis>row-echelon form</emphasis>, we 
 </table></para>
 </solution>
 </exercise>
-</example><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-266" class="practice-perfect"><title>Practice Makes Perfect</title><exercise id="eip-idm368745840"><problem id="eip-idm368745712"><para id="eip-371">
+</example><section id="eip-266" class="practice-perfect"><title>Practice Makes Perfect</title><exercise id="eip-idm368745840"><problem id="eip-idm368745712"><para id="eip-371">
 Solve the system of equations using matrices
 </para>
 <para id="eip-idm458838688">
@@ -576,7 +576,7 @@ Solve the system of equations using matrices
 
 </m:math> </equation>
 </problem>
-<solution id="fs-id1165134301343"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134301344"><m:math>
+<solution id="fs-id1165134301343"><para id="fs-id1165134301344"><m:math>
  <m:mrow>
   <m:mrow><m:mo>[</m:mo> <m:mrow>
    <m:mtable>
@@ -828,7 +828,7 @@ Solve the system of equations using matrices
 <label>Try It</label>
 <exercise id="ti_09_06_02">
 <problem id="fs-id1165135404165"><para id="fs-id1165135404166">Write the system of equations from the augmented matrix.</para>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137895388" class="unnumbered"><label/> <m:math display="block">
+<equation id="fs-id1165137895388" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mrow><m:mo>[</m:mo> <m:mrow>
    <m:mtable>
@@ -907,7 +907,7 @@ Solve the system of equations using matrices
   </m:mrow> <m:mo>]</m:mo></m:mrow>
  </m:mrow>
 </m:math> </equation></problem>
-<solution id="fs-id1165135528897"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135528898"><m:math>
+<solution id="fs-id1165135528897"><para id="fs-id1165135528898"><m:math>
  <m:mtable>
   <m:mtr>
    <m:mtd>
@@ -1950,7 +1950,7 @@ Solve the system of equations using matrices
   </m:mrow> <m:mo>]</m:mo></m:mrow>
  </m:mrow>
 </m:math>
-</equation><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137834786" class="unnumbered"><label/> <m:math display="block">
+</equation><equation id="fs-id1165137834786" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mtable columnalign="left">
    <m:mtr columnalign="left">
@@ -2732,7 +2732,7 @@ Solve the system of equations using matrices
  </m:mrow>
 </m:math>
 </equation></problem>
-<solution id="fs-id1165134189887"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137834565"><m:math>
+<solution id="fs-id1165134189887"><para id="fs-id1165137834565"><m:math>
  <m:mrow>
   <m:mrow><m:mo>[</m:mo> <m:mrow>
    <m:mrow><m:mrow>
@@ -2838,7 +2838,7 @@ Solve the system of equations using matrices
 <problem id="fs-id1165132220673">
 <title>Solving a System of Linear Equations Using Matrices</title>
 <para id="fs-id1165135503646">Solve the system of linear equations using matrices.</para>
-  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135503649" class="unnumbered"><label/> <m:math display="block">
+  <equation id="fs-id1165135503649" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mtable>
    <m:mtr>
@@ -3640,7 +3640,7 @@ Solve the system of equations using matrices
 <problem id="fs-id1165135347161">
 <title>Solving a Dependent System of Linear Equations Using Matrices</title>
 <para id="fs-id1165137641765">Solve the following system of linear equations using matrices.</para>
-  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135451195" class="unnumbered"><label/> <m:math display="block">
+  <equation id="fs-id1165135451195" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mtable columnalign="right">
    <m:mtr columnalign="right">
@@ -4261,7 +4261,7 @@ Solve the system of equations using matrices
  <m:mrow>
   <m:mi>x</m:mi><m:mo>.</m:mo>
  </m:mrow>
-</m:math> </para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137731375" class="unnumbered"><label/> <m:math display="block">
+</m:math> </para><equation id="fs-id1165137731375" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mtable columnalign="left">
    <m:mtr columnalign="left">
@@ -4401,7 +4401,7 @@ Solve the system of equations using matrices
 <problem id="fs-id1165134298827">
 <title>Solving Systems of Equations with Matrices Using a Calculator</title>
 <para id="fs-id1165137411490">Solve the system of equations.</para>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134047650" class="unnumbered"><label/> <m:math display="block">
+<equation id="fs-id1165134047650" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mtable columnalign="right">
    <m:mtr columnalign="right">
@@ -4611,7 +4611,7 @@ Solve the system of equations using matrices
  </m:mrow>
 </m:math>
 </equation><para id="fs-id1165137653346">Evaluate.</para>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137653350" class="unnumbered"><label/> <m:math display="block">
+<equation id="fs-id1165137653350" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mtable columnalign="left">
    <m:mtr columnalign="left">
@@ -7998,7 +7998,7 @@ Solve the system of equations using matrices
 <title>Extensions</title>
 <para id="fs-id1165137456142">For the following exercises, use Gaussian elimination to solve the system.</para>
 <exercise id="fs-id1165135319437">
-<problem id="fs-id1165135319439"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135319440"><m:math>
+<problem id="fs-id1165135319439"><para id="fs-id1165135319440"><m:math>
  <m:mrow>
   <m:mtable columnalign="left">
    <m:mtr columnalign="left">
@@ -8129,7 +8129,7 @@ Solve the system of equations using matrices
 </para></problem></exercise>
 <exercise id="fs-id1165135481001">
 <problem id="fs-id1165135481003">
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135481005"><m:math>
+<para id="fs-id1165135481005"><m:math>
  <m:mrow>
   <m:mtable columnalign="left">
    <m:mtr columnalign="left">
@@ -8294,7 +8294,7 @@ Solve the system of equations using matrices
 </para></problem>
 </exercise>
 <exercise id="fs-id1165137737633">
-<problem id="fs-id1165135401792"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135401794"><m:math>
+<problem id="fs-id1165135401792"><para id="fs-id1165135401794"><m:math>
  <m:mrow>
   <m:mtable columnalign="left">
    <m:mtr columnalign="left">

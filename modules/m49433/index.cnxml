@@ -1,7 +1,7 @@
-<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
 
 <title>Matrices and Matrix Operations</title>
-<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m49433</md:content-id>
   <md:title>Matrices and Matrix Operations</md:title>
   <md:abstract><para>In this section, you will:</para><list>
@@ -20,8 +20,8 @@
 </list>
 </section>
 
-<section id="eip-idm630022656"><title>Objective 1: Write the augmented matrix for a system of equations (IA 4.5.1)</title><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-idm630022016">A <term>matrix</term> is a rectangular array of numbers arranged in rows and columns.</para><para id="eip-822">A matrix with <emphasis effect="italics">m</emphasis> rows and <emphasis effect="italics">n</emphasis> columns has dimension m×n.
-</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-163">Each number in the matrix is called an <term>element</term> or <term>entry</term> in the matrix.
+<section id="eip-idm630022656"><title>Objective 1: Write the augmented matrix for a system of equations (IA 4.5.1)</title><para id="eip-idm630022016">A <term>matrix</term> is a rectangular array of numbers arranged in rows and columns.</para><para id="eip-822">A matrix with <emphasis effect="italics">m</emphasis> rows and <emphasis effect="italics">n</emphasis> columns has dimension m×n.
+</para><para id="eip-163">Each number in the matrix is called an <term>element</term> or <term>entry</term> in the matrix.
 </para><para id="eip-231">The matrix on the left below has 2 rows and 3 columns and so it has order 2×3. We say it is a 2 by 3 matrix.
 </para>
 <media id="eip-idm409930960" alt="Figure shows two matrices. The one on the left has the numbers minus 3, minus 2 and 2 in the first row and the numbers minus 1, 4 and 5 in the second row. The rows and columns are enclosed within brackets. Thus, it has 2 rows and 3 columns. It is labeled 2 cross 3 or 2 by 3 matrix. The matrix on the right is similar but with 3 rows and 4 columns. It is labeled 3 by 4 matrix.">
@@ -33,7 +33,7 @@
 </para>
   <media id="eip-idm1087280128" alt="The equations are 3x plus y equals minus 3 and 2x plus 3y equals 6. A 2 by 3 matrix is shown. The first row is 3, 1, minus 3. The second row is 2, 3, 6. The first column is labeled coefficients of x. The second column is labeled coefficients of y and the third is labeled constants.">
     <image mime-type="image/jpeg" src="../../media/7_5_2-1424.jpg"/>
-  </media><example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-475"><para id="eip-905">
+  </media><example id="eip-475"><para id="eip-905">
 Write each system of linear equations as an augmented matrix
 </para><exercise id="eip-278"><problem id="eip-249">
   <para id="eip-971"><span class="token">ⓐ</span>
@@ -203,7 +203,7 @@ Write each system of linear equations as an augmented matrix
 
   </m:math>
   </para></solution>
-</exercise></example><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-752" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-30">
+</exercise></example><section id="eip-752" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-30">
 Write each system of linear equations as an augmented matrix
 </para><exercise id="eip-946"><problem id="eip-397">
   <para id="eip-439">
@@ -215,7 +215,7 @@ Write each system of linear equations as an augmented matrix
  <m:math><m:mfenced open="{" close=""><m:mtable columnalign="left"><m:mtr><m:mtd><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math>
   </para>
 </problem>
-</exercise></section></section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-idm1075969632"><title>Objective 2: Add, subtract matrices and multiply a matrix by a scalar</title><para id="eip-idm1075968992">We add or subtract matrices by adding or subtracting corresponding entries.
+</exercise></section></section><section id="eip-idm1075969632"><title>Objective 2: Add, subtract matrices and multiply a matrix by a scalar</title><para id="eip-idm1075968992">We add or subtract matrices by adding or subtracting corresponding entries.
 </para><para id="eip-947">In order to do this, the <emphasis>entries must correspond</emphasis>. Therefore, <emphasis>addition and subtraction of matrices is only possible when the matrices have the same dimensions</emphasis>. We can add or subtract a 3 × 3 matrix and another 3 × 3 matrix, but we cannot add or subtract a 2 × 3 matrix and a 3 × 3 matrix because some entries in one matrix will not have a corresponding entry in the other matrix.
 </para>
 <para id="eip-972">The process of scalar multiplication involves multiplying each entry in a matrix by a scalar. A <term>scalar multiple</term> is any entry of a matrix that results from scalar multiplication.
@@ -245,7 +245,7 @@ Add the two matrices <m:math><m:mi>A</m:mi><m:mo>=</m:mo><m:mfenced open="[" clo
  <m:math><m:mn>5</m:mn><m:mi>A</m:mi><m:mo>=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mn>5</m:mn><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mtd><m:mtd><m:mn>5</m:mn><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>5</m:mn><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mtd><m:mtd><m:mn>5</m:mn><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo>=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mn>10</m:mn></m:mtd><m:mtd><m:mo>-</m:mo><m:mn>20</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>25</m:mn></m:mtd><m:mtd><m:mn>15</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math>
   </para>
 </solution>
-</exercise></example><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-266" class="practice-perfect"><title>Practice Makes Perfect </title><para id="eip-689">
+</exercise></example><section id="eip-266" class="practice-perfect"><title>Practice Makes Perfect </title><para id="eip-689">
 Perform the indicated operations
 </para><exercise id="eip-191"><problem id="eip-754">
   <para id="eip-285">Add the two matrices <m:math><m:mi>A</m:mi><m:mo>=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mi>l</m:mi></m:mtd><m:mtd><m:mi>m</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>n</m:mi></m:mtd><m:mtd><m:mi>p</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo> </m:mo><m:mi>B</m:mi><m:mo>=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mi>q</m:mi></m:mtd><m:mtd><m:mi>r</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>s</m:mi></m:mtd><m:mtd><m:mi>t</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced></m:math> </para>
@@ -9182,7 +9182,7 @@ given</para>
  </m:mrow>
 </m:math>
 </para></problem></exercise>
-<exercise id="fs-id1165135455009"><problem id="fs-id1165135455010"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135455011">Using the above questions, find a formula for <m:math>
+<exercise id="fs-id1165135455009"><problem id="fs-id1165135455010"><para id="fs-id1165135455011">Using the above questions, find a formula for <m:math>
  <m:mrow>
   <m:msup>
    <m:mi>B</m:mi>

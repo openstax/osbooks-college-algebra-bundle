@@ -1,7 +1,7 @@
-<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
 
 <title>Fitting Linear Models to Data</title>
-<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m49327</md:content-id>
   <md:title>Fitting Linear Models to Data</md:title>
   <md:abstract><para>In this section, you will:</para><list>
@@ -19,7 +19,7 @@
 <section id="fs-id1165137557592"><title>Drawing and Interpreting Scatter Plots</title><para id="fs-id1165135262700">A <term class="no-emphasis">scatter plot</term> is a graph of plotted points that may show a relationship between two sets of data. If the relationship is from a <term class="no-emphasis">linear model</term>, or a model that is nearly linear, the professor can draw conclusions using his knowledge of linear functions. <link target-id="CNX_Precalc_Figure_02_04_001"/> shows a sample scatter plot.</para>
 
 <figure id="CNX_Precalc_Figure_02_04_001" class="medium"><media id="fs-id1165137660654" alt="Scatter plot, titled 'Final Exam Score VS Age'. The x-axis is the age, and the y-axis is the final exam score. The range of ages are between 20s - 50s, and the range for scores are between upper 50s and 90s.">
-<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_001.jpg"/>
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_001-c854.jpg"/>
 </media>
 
 <caption>A scatter plot of age and final exam score variables</caption></figure><para id="fs-id1165137658014">Notice this scatter plot does <emphasis effect="italics">not</emphasis> indicate a <term class="no-emphasis">linear relationship</term>. The points do not appear to follow a trend. In other words, there does not appear to be a relationship between the age of the student and the score on the final exam.</para>
@@ -73,7 +73,7 @@
 <para id="fs-id1165137430969">Plotting this data, as depicted in <link target-id="CNX_Precalc_Figure_02_04_002"/> suggests that there may be a trend. We can see from the trend in the data that the number of chirps increases as the temperature increases. The trend appears to be roughly linear, though certainly not perfectly so.</para>
 <figure id="CNX_Precalc_Figure_02_04_002">
 <media id="fs-id1165137550269" alt="Scatter plot, titled 'Cricket Chirps Vs Air Temperature'. The x-axis is the Cricket Chirps in 15 Seconds, and the y-axis is the Temperature (F). The line regression is generally positive.">
-<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_002.jpg"/>
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_002-1ba2.jpg"/>
 </media>
 </figure>
 </solution>
@@ -98,7 +98,7 @@
 
 <para id="fs-id1165137573540">where <m:math><m:mi>c</m:mi></m:math> is the number of chirps in 15 seconds, and <m:math><m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is the temperature in degrees Fahrenheit. The resulting equation is represented in <link target-id="CNX_Precalc_Figure_02_04_003"/>.</para><figure id="CNX_Precalc_Figure_02_04_003">
 <media id="fs-id1165137530089" alt="Scatter plot, showing the line of best fit. It is titled 'Cricket Chirps Vs Air Temperature'. The x-axis is  'c, Number of Chirps', and the y-axis is 'T(c), Temperature (F)'.">
-<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_003.jpg"/>
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_003-9b3c.jpg"/>
 </media>
 </figure>
 </solution>
@@ -114,7 +114,7 @@
 
 <figure id="CNX_Precalc_Figure_02_04_004" class="small">
 <media id="fs-id1165137438581" alt="Scatter plot, showing the line of best fit and where interpolation and extrapolation occurs. It is titled 'Cricket Chirps Vs Air Temperature'. The x-axis is  'c, Number of Chirps', and the y-axis is 'T(c), Temperature (F)'.">
-<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_004.jpg"/>
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_004-e962.jpg"/>
 </media>
 <caption>Interpolation occurs within the domain and range of the provided data whereas extrapolation occurs outside.</caption>
 </figure>
@@ -201,7 +201,7 @@
 
 <figure id="CNX_Precalc_Figure_02_04_005">
 <media id="fs-id1165135253858" alt="Scatter plot, showing the line of best fit and where interpolation and extrapolation occurs. It is titled 'Cricket Chirps Vs Air Temperature'. The x-axis is  'c, Number of Chirps', and the y-axis is 'T(c), Temperature (F)'.">
-<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_005.jpg"/>
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_005-e10d.jpg"/>
 </media>
 </figure>
 </solution>
@@ -230,7 +230,7 @@
 <note id="fs-id1165137534286" class="how-to-notitle">
 <label>How To</label>
 <para id="fs-id1165137472097"><emphasis>Given data of input and corresponding outputs from a linear function, find the best fit line using linear regression.</emphasis></para>
-<list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135192714" list-type="enumerated" number-style="arabic"><item>Enter the input in List 1 (<emphasis>L1</emphasis>).</item>
+<list id="fs-id1165135192714" list-type="enumerated" number-style="arabic"><item>Enter the input in List 1 (<emphasis>L1</emphasis>).</item>
 <item>Enter the output in List 2 (<emphasis>L2</emphasis>).</item>
 <item>On a graphing utility, select Linear Regression (<emphasis>LinReg</emphasis>).</item>
 </list></note>
@@ -322,7 +322,7 @@
 </equation><para id="fs-id1165137901348">The graph of the scatter plot with the least squares regression line is shown in <link target-id="CNX_Precalc_Figure_02_04_006"/>.</para>
 <figure id="CNX_Precalc_Figure_02_04_006">
 <media id="fs-id1165137692164" alt="Scatter plot, showing the line of best fit. It is titled 'Cricket Chirps Vs Air Temperature'. The x-axis is  'c, Number of Chirps', and the y-axis is 'T(c), Temperature (F)'.">
-<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_006.jpg"/>
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_006-dfce.jpg"/>
 </media>
 </figure>
 </commentary>
@@ -360,7 +360,7 @@
 </problem>
 <solution id="fs-id1165137639432">
 <para id="fs-id1165137471985">Because the data appear to follow a linear pattern, we can use technology to calculate <m:math><m:mrow><m:mi>r</m:mi><m:mo>.</m:mo></m:mrow></m:math> Enter the inputs and corresponding outputs and select the Linear Regression. The calculator will also provide you with the correlation coefficient, <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.9509.</m:mn></m:mrow></m:math> This value is very close to 1, which suggests a strong increasing linear relationship.</para>
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137473276">Note: For some calculators, the Diagnostics must be turned "on" in order to get the correlation coefficient when linear regression is performed: [2nd]&gt;[0]&gt;[alpha][ <m:math><m:mi>x</m:mi></m:math> –1], then scroll to <emphasis>DIAGNOSTICSON</emphasis>.</para></solution>
+<para id="fs-id1165137473276">Note: For some calculators, the Diagnostics must be turned "on" in order to get the correlation coefficient when linear regression is performed: [2nd]&gt;[0]&gt;[alpha][ <m:math><m:mi>x</m:mi></m:math> –1], then scroll to <emphasis>DIAGNOSTICSON</emphasis>.</para></solution>
 </exercise>
 </example>
 </section><section id="fs-id1165137731906">
@@ -833,14 +833,14 @@
 
 <para id="fs-id1165137863522">For the following exercises, draw a best-fit line for the plotted data.</para>
 
-<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137503083" class="material-set-2"><problem id="fs-id1165137715092">
+<exercise id="fs-id1165137503083" class="material-set-2"><problem id="fs-id1165137715092">
 
 <media id="fs-id1165134094675" alt="" display="block">
 <image mime-type="image/jpg" src="../../media/CNX_Precalc_02_04_02.jpg"/>
 </media>
 
 </problem>
-</exercise><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137533645" class="material-set-2"><problem id="fs-id1165137551923">
+</exercise><exercise id="fs-id1165137533645" class="material-set-2"><problem id="fs-id1165137551923">
 
 <media id="fs-id1165137628394" alt="" display="block">
 <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_204-e172.jpg"/>
@@ -1071,7 +1071,7 @@
 </tgroup>
 </table></problem>
 <solution id="fs-id1165137637776">
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137559354"> <m:math>
+<para id="fs-id1165137559354"> <m:math>
 <m:mrow>
 <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.962</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>26.86</m:mn><m:mo>,</m:mo><m:mspace width="0.8em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.965</m:mn>
 </m:mrow>
@@ -1287,7 +1287,7 @@
 </section>
 <section id="fs-id1165137443890" class="review-exercises">
 <title>Chapter Review Exercises</title>
-<section id="fs-id1165135543320"><title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute"><link document="m49324">Linear Functions</link></title><exercise id="fs-id1165135161473">
+<section id="fs-id1165135543320"><title><link document="m49324">Linear Functions</link></title><exercise id="fs-id1165135161473">
 <problem id="fs-id1165137465483">
 <para id="fs-id1165137465485">Determine whether the algebraic equation is linear. <m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math> </para>
 </problem>
@@ -1453,7 +1453,7 @@
 <para id="fs-id1165135640460">On June 1<sup>st</sup>, a company has $4,000,000 profit. If the company then loses 150,000 dollars per day thereafter in the month of June, what is the company’s profit <emphasis effect="italics">n<sup>th</sup></emphasis>day after June 1<sup>st</sup>?</para>
 </problem>
 </exercise>
-</section><section id="fs-id1165135532356"><title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute"><link document="m50389">Graphs of Linear Functions</link></title><para id="fs-id1165135192057">For the following exercises, determine whether the lines given by the equations below are parallel, perpendicular, or neither parallel nor perpendicular:</para>
+</section><section id="fs-id1165135532356"><title><link document="m50389">Graphs of Linear Functions</link></title><para id="fs-id1165135192057">For the following exercises, determine whether the lines given by the equations below are parallel, perpendicular, or neither parallel nor perpendicular:</para>
 
 <exercise id="fs-id1165137571890">
 <problem id="fs-id1165137595618">
@@ -1589,7 +1589,7 @@
 <solution id="fs-id1165137938792">
 <para id="fs-id1165137938794">250.</para>
 </solution>
-</exercise></section><section id="fs-id1165137401852"><title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute"><link document="m49326">Modeling with Linear Functions</link></title><exercise id="fs-id1165135541997">
+</exercise></section><section id="fs-id1165137401852"><title><link document="m49326">Modeling with Linear Functions</link></title><exercise id="fs-id1165135541997">
 <problem id="fs-id1165137748989">
 <para id="fs-id1165137748991">Find the area of a triangle bounded by the <emphasis effect="italics">y</emphasis> axis, the line <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:math>, and the line perpendicular to <m:math><m:mi>f</m:mi></m:math> that passes through the origin.</para>
 </problem>
@@ -1705,7 +1705,7 @@
 <para id="fs-id1165135613304">$91,625</para>
 </solution>
 </exercise>
-</section><section id="fs-id1165137541379"><title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute"><link document="m49327">Fitting Linear Models to Data</link></title><exercise id="fs-id1165135500024" class="material-set-2">
+</section><section id="fs-id1165137541379"><title><link document="m49327">Fitting Linear Models to Data</link></title><exercise id="fs-id1165135500024" class="material-set-2">
 <problem id="fs-id1165137580614">
 <para id="fs-id1165137580616">Draw a scatter plot for the data in <link target-id="Table_02_04_24"/>. Then determine whether the data appears to be linearly related.</para>
   <table id="Table_02_04_24" summary="Two rows and six columns. Reading the columns and rows as ordered pairs, we have: (0, -105), (2, -50), (4, 1), (6, 55), (8, 105), and (10, 160).">

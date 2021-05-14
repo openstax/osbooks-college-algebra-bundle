@@ -1,7 +1,7 @@
-<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
 
 <title>Solving Systems with Inverses</title>
-<metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m49435</md:content-id>
   <md:title>Solving Systems with Inverses</md:title>
   <md:abstract><para>In this section, you will:</para><list>
@@ -16,11 +16,11 @@
 <item>Evaluate the determinant of a 2×2 matrix (IA 4.6.1)</item>
 <item>Evaluate the determinant of a 3x3 matrix (IA 4.6.2)</item>
 </list>
-</section><section id="eip-904"><title>Objective 1: Evaluate the determinant of a 2×2 matrix (IA 4.6.1)</title><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-182">If a matrix has the same number of rows and columns, we call it a <term>square matrix</term>. Each square matrix has a real number associated with it called its <term>determinant</term>.
+</section><section id="eip-904"><title>Objective 1: Evaluate the determinant of a 2×2 matrix (IA 4.6.1)</title><para id="eip-182">If a matrix has the same number of rows and columns, we call it a <term>square matrix</term>. Each square matrix has a real number associated with it called its <term>determinant</term>.
 </para><note id="eip-981"><title>Determinant</title><para id="eip-idm619385360">The determinant of any square matrix <m:math><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mi>a</m:mi></m:mtd><m:mtd><m:mi>b</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>c</m:mi></m:mtd><m:mtd><m:mi>d</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced></m:math> , where a, b, c, and d are real numbers, is <m:math><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mi>a</m:mi></m:mtd><m:mtd><m:mi>b</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>c</m:mi></m:mtd><m:mtd><m:mi>d</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>d</m:mi><m:mo>-</m:mo><m:mi>b</m:mi><m:mi>c</m:mi></m:math> </para><para id="eip-60">To get the real number value of the determinate we subtract the products of the diagonals, as shown.
  <media id="eip-idm354633472" alt="A 2 by 2 determinant is show, with its first row being a, b and second one being c, d. These values are written between two vertical lines instead of brackets as in the case of matrices. Two arrows are shown, one from a to d, the other from c to b. This determinant is equal to ad minus bc.">
     <image mime-type="image/jpeg" src="../../media/7_7_1-b95e.jpg"/>
-  </media></para></note><example id="eip-388"><exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-202"><problem id="eip-867">
+  </media></para></note><example id="eip-388"><exercise id="eip-202"><problem id="eip-867">
   <para id="eip-742">
 Find the determinant of the 2x2 matrix <m:math><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mn>4</m:mn></m:mtd><m:mtd><m:mo>-</m:mo><m:mn>2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn></m:mtd><m:mtd><m:mo>-</m:mo><m:mn>1</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math>
   </para>
@@ -48,7 +48,7 @@ Find the determinant of the 2x2 matrix <m:math><m:mfenced open="[" close="]"><m:
 </tgroup>
 </table>
 </solution>
-</exercise></example><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-398" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-606">
+</exercise></example><section id="eip-398" class="practice-perfect"><title>Practice Makes Perfect</title><para id="eip-606">
 Find the determinant of the 2x2 matrices.</para>
 <exercise id="eip-83"><problem id="eip-147">
   <para id="eip-649">
@@ -60,7 +60,7 @@ Find the determinant of the 2x2 matrices.</para>
   <para id="eip-894">
  <m:math><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mo>-</m:mo><m:mn>4</m:mn></m:mtd><m:mtd><m:mn>8</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>-</m:mo><m:mn>3</m:mn></m:mtd><m:mtd><m:mn>5</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math>
   </para>
-</problem></exercise></section></section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-379"><title>Objective 2: Evaluate the determinant of a 3×3 matrix (IA 4.6.2)</title><para id="eip-269">To evaluate the determinant of a 3×3 matrix, we must be able to evaluate the <term>minor of an entry</term> in the determinant.
+</problem></exercise></section></section><section id="eip-379"><title>Objective 2: Evaluate the determinant of a 3×3 matrix (IA 4.6.2)</title><para id="eip-269">To evaluate the determinant of a 3×3 matrix, we must be able to evaluate the <term>minor of an entry</term> in the determinant.
 </para><para id="eip-76">The minor of an entry is the 2×2 determinant found by eliminating the row and column in the 3×3 determinant that contains the entry.
 </para><para id="eip-590">For example, to find the minor of entry a<sub>1</sub>, we eliminate the row and column which contain it. So, we eliminate the first row and first column. Then we write the 2×2 determinant that remains.
 </para>
@@ -3297,7 +3297,7 @@ matrix such that <m:math>
             <para id="fs-id1165133253459"/>
 
           <para id="fs-id1165133253462">We will use the method of augmenting with the identity.</para>
-          <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135541960" class="unnumbered"><label/> <m:math display="block">
+          <equation id="fs-id1165135541960" class="unnumbered"><label/> <m:math display="block">
             <m:mrow>
               <m:mrow><m:mo>[</m:mo> <m:mrow>
                 <m:mtable>
@@ -3343,7 +3343,7 @@ matrix such that <m:math>
             </m:mrow>
           </m:math>
           </equation><list id="fs-id1165134077339" list-type="enumerated" number-style="arabic"><item>Switch row 1 and row 2.
-            <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165134069352" class="unnumbered"><label/> <m:math display="block">
+            <equation id="fs-id1165134069352" class="unnumbered"><label/> <m:math display="block">
               <m:mrow>
                 <m:mrow><m:mo>[</m:mo> <m:mrow>
                   <m:mtable>
@@ -3392,7 +3392,7 @@ matrix such that <m:math>
             </m:math>
             </equation></item>
             <item>Multiply row 1 by −3 and add it to row 2.
-              <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137656945" class="unnumbered"><label/> <m:math display="block">
+              <equation id="fs-id1165137656945" class="unnumbered"><label/> <m:math display="block">
                 <m:mrow>
                   <m:mrow><m:mo>[</m:mo> <m:mrow>
                     <m:mtable>
@@ -8364,7 +8364,7 @@ matrix such that <m:math>
         </para></solution></exercise>
 
     </section>
-    <section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165133075017"><title>Algebraic</title><para id="fs-id1165132059611">In the following exercises, show that matrix <m:math>
+    <section id="fs-id1165133075017"><title>Algebraic</title><para id="fs-id1165132059611">In the following exercises, show that matrix <m:math>
         <m:mrow>
           <m:mi>A</m:mi>        </m:mrow>
       </m:math> is the inverse of matrix <m:math>
@@ -10554,7 +10554,7 @@ matrix such that <m:math>
 </para></problem></exercise>
 
 
-    </section><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165137900020"><title>Technology</title><para id="fs-id1165134356163">For the following exercises, use a calculator to solve the system of equations with matrix inverses.</para>
+    </section><section id="fs-id1165137900020"><title>Technology</title><para id="fs-id1165134356163">For the following exercises, use a calculator to solve the system of equations with matrix inverses.</para>
 
       <exercise id="fs-id1165134356166"><problem id="fs-id1165134356167"><para id="fs-id1165134356168"><m:math>
  <m:mrow>
@@ -11522,7 +11522,7 @@ matrix such that <m:math>
       <solution id="fs-id1165137501553">
 <para id="fs-id1165135547272">Tom ate 6, Joe ate 3, and Albert ate 3.</para>
 </solution></exercise>
-      <exercise id="fs-id1165135547276"><problem id="fs-id1165135547278"><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165135547279">A farmer constructed a chicken coop out of chicken wire, wood, and plywood. The chicken wire cost $2 per square foot, the wood $10 per square foot, and the plywood $5 per square foot. The farmer spent a total of $51, and the total amount of materials used was <m:math>
+      <exercise id="fs-id1165135547276"><problem id="fs-id1165135547278"><para id="fs-id1165135547279">A farmer constructed a chicken coop out of chicken wire, wood, and plywood. The chicken wire cost $2 per square foot, the wood $10 per square foot, and the plywood $5 per square foot. The farmer spent a total of $51, and the total amount of materials used was <m:math>
         <m:mrow>
           <m:mn>14</m:mn><m:msup>
             <m:mrow>
