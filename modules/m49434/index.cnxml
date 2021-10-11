@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m49434</md:content-id>
   <md:title>Solving Systems with Gaussian Elimination</md:title>
-  <md:abstract><para>In this section, you will:</para><list>
+  <md:abstract><para id="para-00001">In this section, you will:</para><list id="list-00001">
 <item>Write the augmented matrix of a system of equations.</item>
 <item>Write the system of equations from an augmented matrix.</item>
 <item>Perform row operations on a matrix.</item>
@@ -22,7 +22,7 @@
 </section>
 
 <section id="fs-idm234430464"><title>Objective 1: Use row operations on a matrix (IA 4.5.2)</title><para id="fs-idm262054320">In the last section, we learned how to write the augmented matrix for a system of equations.
-</para><para id="eip-521">Once a system of equations is in its <term>augmented matrix form</term>, we will <emphasis>solve by elimination</emphasis> by <emphasis>performing operations on the rows</emphasis> that will lead us to the solution. Our goal will be to get 1 on the diagonal of the matrix and all entries below the diagonal must be zeros.
+</para><para id="eip-521">Once a system of equations is in its <term id="term-00001">augmented matrix form</term>, we will <emphasis>solve by elimination</emphasis> by <emphasis>performing operations on the rows</emphasis> that will lead us to the solution. Our goal will be to get 1 on the diagonal of the matrix and all entries below the diagonal must be zeros.
 </para>
 <section id="eip-idm618431632"><title>Row Operations</title>
 <para id="eip-259">In a matrix, the following operations can be performed on any row and the resulting matrix will be equivalent to the original matrix.
@@ -99,7 +99,7 @@ Use the needed row operation that will get the first entry in row 2 to be zero i
 </para>
 <para id="eip-idm528851552">
  <m:math><m:mfenced open="[" close="]"><m:mtable columnalign="right center center" columnlines="none solid none"><m:mtr><m:mtd><m:mn>1</m:mn></m:mtd><m:mtd><m:mo>-</m:mo><m:mn>1</m:mn></m:mtd><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn></m:mtd><m:mtd><m:mo>-</m:mo><m:mn>6</m:mn></m:mtd><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math>
-</para></problem></exercise></section></section><section id="fs-idm260532608"><title>Objective 2: Solve systems of equations using matrices (IA 4.5.3)</title><para id="fs-idm245759600">To solve a system of equations using matrices, we transform the augmented matrix into a matrix in <term>row-echelon form</term> using row operations. For a consistent and independent system of equations, the augmented matrix is in row-echelon form when to the left of the vertical line, each entry on the diagonal is a 1 and all entries below the diagonal are zeros.
+</para></problem></exercise></section></section><section id="fs-idm260532608"><title>Objective 2: Solve systems of equations using matrices (IA 4.5.3)</title><para id="fs-idm245759600">To solve a system of equations using matrices, we transform the augmented matrix into a matrix in <term id="term-00002">row-echelon form</term> using row operations. For a consistent and independent system of equations, the augmented matrix is in row-echelon form when to the left of the vertical line, each entry on the diagonal is a 1 and all entries below the diagonal are zeros.
 </para><media id="eip-idm204886640" alt="A 2 by 3 matrix is shown on the left. Its first row is 1, a, b. Its second row is 0, 1, c. An arrow points diagonally down and right, overlapping both the 1s in the matrix. A 3 by 4 matrix is shown on the right. Its first row is 1, a, b, d. Its second row is 0, 1, c, e. Its third row is 0, 0, 1, f. An arrow points diagonally down and right, overlapping all the 1s in the matrix. a, b, c, d, e, f are real numbers.">
     <image mime-type="image/jpeg" src="../../media/7_6_5.jpg"/>
   </media>
@@ -200,11 +200,11 @@ Solve the system of equations using matrices
 <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_09_06_001new.jpg"/>
 </media>
 
-<caption>German mathematician Carl Friedrich Gauss (1777–1855).</caption></figure><para id="fs-id1165133141356">Carl Friedrich <term class="no-emphasis">Gauss</term> lived during the late 18th century and early 19th century, but he is still considered one of the most prolific mathematicians in history. His contributions to the science of mathematics and physics span fields such as algebra, number theory, analysis, differential geometry, astronomy, and optics, among others. His discoveries regarding matrix theory changed the way mathematicians have worked for the last two centuries.</para>
+<caption>German mathematician Carl Friedrich Gauss (1777–1855).</caption></figure><para id="fs-id1165133141356">Carl Friedrich <term class="no-emphasis" id="term-00003">Gauss</term> lived during the late 18th century and early 19th century, but he is still considered one of the most prolific mathematicians in history. His contributions to the science of mathematics and physics span fields such as algebra, number theory, analysis, differential geometry, astronomy, and optics, among others. His discoveries regarding matrix theory changed the way mathematicians have worked for the last two centuries.</para>
 
  <para id="fs-id1165137768241">We first encountered Gaussian elimination in <link document="m49419">Systems of Linear Equations: Two Variables</link>. In this section, we will revisit this technique for solving systems, this time using matrices.</para><section id="fs-id1165135187846">
 <title>Writing the Augmented Matrix of a System of Equations</title>
-<para id="fs-id1165137805208">A <term class="no-emphasis">matrix</term> can serve as a device for representing and solving a system of equations. To express a system in matrix form, we extract the coefficients of the variables and the constants, and these become the entries of the matrix. We use a vertical line to separate the coefficient entries from the constants, essentially replacing the equal signs. When a system is written in this form, we call it an <term>augmented matrix</term>.</para>
+<para id="fs-id1165137805208">A <term class="no-emphasis" id="term-00004">matrix</term> can serve as a device for representing and solving a system of equations. To express a system in matrix form, we extract the coefficients of the variables and the constants, and these become the entries of the matrix. We use a vertical line to separate the coefficient entries from the constants, essentially replacing the equal signs. When a system is written in this form, we call it an <term id="term-00005">augmented matrix</term>.</para>
 <para id="fs-id1165134040526">For example, consider the following <m:math>
  <m:mrow>
   <m:mn>2</m:mn><m:mo>×</m:mo><m:mn>2</m:mn>
@@ -266,7 +266,7 @@ Solve the system of equations using matrices
   </m:mrow> <m:mo>]</m:mo></m:mrow>
  </m:mrow>
 </m:math>
-</equation><para id="fs-id1165135408254">We can also write a matrix containing just the coefficients. This is called the <term>coefficient matrix</term>.</para>
+</equation><para id="fs-id1165135408254">We can also write a matrix containing just the coefficients. This is called the <term id="term-00006">coefficient matrix</term>.</para>
 <equation id="fs-id1165134272662" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mrow><m:mo>[</m:mo> <m:mrow>
@@ -294,7 +294,7 @@ Solve the system of equations using matrices
   </m:mrow> <m:mo>]</m:mo></m:mrow>
  </m:mrow>
 </m:math> </equation>
-<para id="fs-id1165134418945">A three-by-three <term class="no-emphasis">system of equations</term> such as</para>
+<para id="fs-id1165134418945">A three-by-three <term class="no-emphasis" id="term-00007">system of equations</term> such as</para>
   <equation id="fs-id1165134060349" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mtable columnalign="left">
@@ -629,7 +629,7 @@ Solve the system of equations using matrices
 
 <section id="fs-id1165134042772">
 <title>Writing a System of Equations from an Augmented Matrix</title>
-<para id="fs-id1165135384875">We can use augmented matrices to help us solve systems of equations because they simplify operations when the systems are not encumbered by the variables. However, it is important to understand how to move back and forth between formats in order to make finding solutions smoother and more intuitive. Here, we will use the information in an augmented matrix to write the <term class="no-emphasis">system of equations</term> in standard form.</para>
+<para id="fs-id1165135384875">We can use augmented matrices to help us solve systems of equations because they simplify operations when the systems are not encumbered by the variables. However, it is important to understand how to move back and forth between formats in order to make finding solutions smoother and more intuitive. Here, we will use the information in an augmented matrix to write the <term class="no-emphasis" id="term-00008">system of equations</term> in standard form.</para>
 
 <example id="Example_09_06_02">
 <exercise id="fs-id1165134168373">
@@ -933,8 +933,8 @@ Solve the system of equations using matrices
 
 <section id="fs-id1165137932395">
 <title>Performing Row Operations on a Matrix</title>
-<para id="fs-id1165137642129">Now that we can write systems of equations in augmented matrix form, we will examine the various <term>row operations</term> that can be performed on a matrix, such as addition, multiplication by a constant, and interchanging rows.</para>
-<para id="fs-id1165134389750">Performing row operations on a matrix is the method we use for solving a system of equations. In order to solve the system of equations, we want to convert the matrix to <term>row-echelon form</term>, in which there are ones down the <term>main diagonal</term> from the upper left corner to the lower right corner, and zeros in every position below the main diagonal as shown.</para>
+<para id="fs-id1165137642129">Now that we can write systems of equations in augmented matrix form, we will examine the various <term id="term-00009">row operations</term> that can be performed on a matrix, such as addition, multiplication by a constant, and interchanging rows.</para>
+<para id="fs-id1165134389750">Performing row operations on a matrix is the method we use for solving a system of equations. In order to solve the system of equations, we want to convert the matrix to <term id="term-00010">row-echelon form</term>, in which there are ones down the <term id="term-00011">main diagonal</term> from the upper left corner to the lower right corner, and zeros in every position below the main diagonal as shown.</para>
 <equation id="fs-id1165135239726" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mtable>
@@ -993,7 +993,7 @@ Solve the system of equations using matrices
   </m:mtable>
  </m:mrow>
 </m:math>
-</equation><para id="fs-id1165135475907">We use row operations corresponding to equation operations to obtain a new matrix that is <term>row-equivalent</term> in a simpler form. Here are the guidelines to obtaining row-echelon form.</para>
+</equation><para id="fs-id1165135475907">We use row operations corresponding to equation operations to obtain a new matrix that is <term id="term-00012">row-equivalent</term> in a simpler form. Here are the guidelines to obtaining row-echelon form.</para>
 <list id="fs-id1165135661443" list-type="enumerated" number-style="arabic">
 <item>In any nonzero row, the first nonzero number is a 1. It is called a <emphasis effect="italics">leading</emphasis> 1.</item>
 <item>Any all-zero rows are placed at the bottom on the matrix.</item>
@@ -1001,7 +1001,7 @@ Solve the system of equations using matrices
 <item>Any column containing a leading 1 has zeros in all other positions in the column.</item>
 </list>
 
-<para id="fs-id1165135506341">To solve a system of equations we can perform the following row operations to convert the <term class="no-emphasis">coefficient matrix</term> to row-echelon form and do back-substitution to find the solution.</para><list id="fs-id1165137530290" list-type="enumerated" number-style="arabic"><item>Interchange rows. (Notation: <m:math>
+<para id="fs-id1165135506341">To solve a system of equations we can perform the following row operations to convert the <term class="no-emphasis" id="term-00013">coefficient matrix</term> to row-echelon form and do back-substitution to find the solution.</para><list id="fs-id1165137530290" list-type="enumerated" number-style="arabic"><item>Interchange rows. (Notation: <m:math>
  <m:mrow>
   <m:msub>
    <m:mi>R</m:mi>
@@ -1041,7 +1041,7 @@ Solve the system of equations using matrices
 <note id="fs-id1165137665510">
 
 <title>Gaussian Elimination</title>
-<para id="fs-id1165131891700">The <term>Gaussian elimination</term> method refers to a strategy used to obtain the row-echelon form of a matrix. The goal is to write matrix <m:math>
+<para id="fs-id1165131891700">The <term id="term-00014">Gaussian elimination</term> method refers to a strategy used to obtain the row-echelon form of a matrix. The goal is to write matrix <m:math>
  <m:mrow>
   <m:mi>A</m:mi>
  </m:mrow>
@@ -1652,12 +1652,12 @@ Solve the system of equations using matrices
 <example id="Example_09_06_04">
 <exercise id="fs-id1165135407306"><problem id="fs-id1165135544367">
 <title>Using Gaussian Elimination to Solve a System of Equations</title>
-<para id="fs-id1165133134796">Use <term class="no-emphasis">Gaussian elimination</term> to solve the given <m:math>
+<para id="fs-id1165133134796">Use <term class="no-emphasis" id="term-00015">Gaussian elimination</term> to solve the given <m:math>
  <m:mrow>
   <m:mn>2</m:mn><m:mo>×</m:mo><m:mn>2</m:mn>
  </m:mrow>
 </m:math>
-<term class="no-emphasis">system of equations</term>.</para>
+<term class="no-emphasis" id="term-00016">system of equations</term>.</para>
   <equation id="fs-id1165137693512" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mtable columnalign="left">
@@ -1682,7 +1682,7 @@ Solve the system of equations using matrices
 </equation>
 </problem>
 <solution id="eip-id2294364">
-<para id="fs-id1165135315606">Write the system as an <term class="no-emphasis">augmented matrix</term>.</para>
+<para id="fs-id1165135315606">Write the system as an <term class="no-emphasis" id="term-00017">augmented matrix</term>.</para>
   <equation id="fs-id1165135202398" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mrow><m:mo>[</m:mo> <m:mrow>
@@ -1889,7 +1889,7 @@ Solve the system of equations using matrices
 </m:math> </equation>
 </problem>
 <solution id="fs-id1165135704880">
-<para id="fs-id1165135704882">Perform <term class="no-emphasis">row operations</term> on the augmented matrix to try and achieve <term class="no-emphasis">row-echelon form</term>.</para><equation id="fs-id1165137594979" class="unnumbered"><label/> <m:math display="block">
+<para id="fs-id1165135704882">Perform <term class="no-emphasis" id="term-00018">row operations</term> on the augmented matrix to try and achieve <term class="no-emphasis" id="term-00019">row-echelon form</term>.</para><equation id="fs-id1165137594979" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mi>A</m:mi><m:mo>=</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
    <m:mrow><m:mrow>
@@ -2831,7 +2831,7 @@ Solve the system of equations using matrices
 
 <section id="fs-id1165135168461">
 <title>Solving a System of Linear Equations Using Matrices</title>
-<para id="fs-id1165131924536">We have seen how to write a <term class="no-emphasis">system of equations</term> with an <term class="no-emphasis">augmented matrix</term>, and then how to use row operations and back-substitution to obtain <term class="no-emphasis">row-echelon form</term>. Now, we will take row-echelon form a step farther to solve a 3 by 3 system of linear equations. The general idea is to eliminate all but one variable using row operations and then back-substitute to solve for the other variables.</para>
+<para id="fs-id1165131924536">We have seen how to write a <term class="no-emphasis" id="term-00020">system of equations</term> with an <term class="no-emphasis" id="term-00021">augmented matrix</term>, and then how to use row operations and back-substitution to obtain <term class="no-emphasis" id="term-00022">row-echelon form</term>. Now, we will take row-echelon form a step farther to solve a 3 by 3 system of linear equations. The general idea is to eliminate all but one variable using row operations and then back-substitute to solve for the other variables.</para>
 
 <example id="Example_09_06_07">
 <exercise id="fs-id1165132220671">
@@ -3744,7 +3744,7 @@ Solve the system of equations using matrices
  <m:mrow>
   <m:mn>−1</m:mn>
  </m:mrow>
-</m:math> to get a 1 in row 1, column 1. Then, perform <term class="no-emphasis">row operations</term> to obtain row-echelon form.</para><equation id="fs-id1165135668480" class="unnumbered"><label/> <m:math display="block">
+</m:math> to get a 1 in row 1, column 1. Then, perform <term class="no-emphasis" id="term-00023">row operations</term> to obtain row-echelon form.</para><equation id="fs-id1165135668480" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mo>−</m:mo><m:msub>
    <m:mi>R</m:mi>

@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m49432</md:content-id>
   <md:title>Partial Fractions</md:title>
-  <md:abstract><para>In this section, you will:</para><list><item>Decompose   <m:math><m:mfrac><m:mrow> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow> <m:mrow><m:mi>Q</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mfrac></m:math> , where   <m:math><m:mi>Q</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> has only nonrepeated linear factors.</item>
+  <md:abstract><para id="para-00001">In this section, you will:</para><list id="list-00001"><item>Decompose   <m:math><m:mfrac><m:mrow> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow> <m:mrow><m:mi>Q</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mfrac></m:math> , where   <m:math><m:mi>Q</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> has only nonrepeated linear factors.</item>
     <item>Decompose   <m:math><m:mfrac><m:mrow> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow> <m:mrow><m:mi>Q</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mfrac></m:math> , where   <m:math><m:mi>Q</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>   has repeated linear factors.</item>
     <item>Decompose   <m:math><m:mfrac><m:mrow> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow> <m:mrow><m:mi>Q</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mfrac></m:math> , where   <m:math><m:mi>Q</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> has a nonrepeated irreducible quadratic factor.</item>
     <item>Decompose   <m:math><m:mfrac><m:mrow> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow> <m:mrow><m:mi>Q</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mfrac></m:math> , where   <m:math><m:mi>Q</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> has a repeated irreducible quadratic factor.</item></list></md:abstract>
@@ -231,7 +231,7 @@ Solve the system of equations by elimination.
 </section><para id="fs-id1165137590432">Earlier in this chapter, we studied systems of two equations in two variables, systems of three equations in three variables, and nonlinear systems. Here we introduce another way that systems of equations can be utilized—the decomposition of rational expressions.</para>
 <para id="fs-id1165134325836">Fractions can be complicated; adding a variable in the denominator makes them even more so. The methods studied in this section will help simplify the concept of a rational expression.</para>
 
-<section id="fs-id1165133406591"><title>Decomposing <m:math> <m:mrow> <m:mspace width="0.8em"/><m:mfrac> <m:mrow> <m:mi>P</m:mi><m:mrow><m:mo>(</m:mo> <m:mi>x</m:mi> <m:mo>)</m:mo></m:mrow> </m:mrow> <m:mrow> <m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo> <m:mi>x</m:mi> <m:mo>)</m:mo></m:mrow> </m:mrow> </m:mfrac> <m:mspace width="0.8em"/> </m:mrow> </m:math> Where <emphasis effect="italics">Q(x)</emphasis> Has Only Nonrepeated Linear Factors</title><para id="fs-id1165135160695">Recall the algebra regarding adding and subtracting rational expressions. These operations depend on finding a common denominator so that we can write the sum or difference as a single, simplified rational expression. In this section, we will look at <term class="no-emphasis">partial fraction decomposition</term>, which is the undoing of the procedure to add or subtract rational expressions. In other words, it is a return from the single simplified <term class="no-emphasis">rational expression</term> to the original expressions, called the <term>partial fraction</term>.</para><para id="fs-id1165132032595">For example, suppose we add the following fractions:</para>
+<section id="fs-id1165133406591"><title>Decomposing <m:math> <m:mrow> <m:mspace width="0.8em"/><m:mfrac> <m:mrow> <m:mi>P</m:mi><m:mrow><m:mo>(</m:mo> <m:mi>x</m:mi> <m:mo>)</m:mo></m:mrow> </m:mrow> <m:mrow> <m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo> <m:mi>x</m:mi> <m:mo>)</m:mo></m:mrow> </m:mrow> </m:mfrac> <m:mspace width="0.8em"/> </m:mrow> </m:math> Where <emphasis effect="italics">Q(x)</emphasis> Has Only Nonrepeated Linear Factors</title><para id="fs-id1165135160695">Recall the algebra regarding adding and subtracting rational expressions. These operations depend on finding a common denominator so that we can write the sum or difference as a single, simplified rational expression. In this section, we will look at <term class="no-emphasis" id="term-00001">partial fraction decomposition</term>, which is the undoing of the procedure to add or subtract rational expressions. In other words, it is a return from the single simplified <term class="no-emphasis" id="term-00002">rational expression</term> to the original expressions, called the <term id="term-00003">partial fraction</term>.</para><para id="fs-id1165132032595">For example, suppose we add the following fractions:</para>
 <equation id="fs-id1165137936992" class="unnumbered"><label/> <m:math display="block">
 <m:mrow>
 <m:mfrac>
@@ -335,7 +335,7 @@ Solve the system of equations by elimination.
 
   </m:mtable>
  </m:mrow>
-</m:math> </equation><para id="fs-id1165137742386">Partial fraction <term class="no-emphasis">decomposition</term> is the reverse of this procedure. We would start with the solution and rewrite (decompose) it as the sum of two fractions.</para>
+</m:math> </equation><para id="fs-id1165137742386">Partial fraction <term class="no-emphasis" id="term-00004">decomposition</term> is the reverse of this procedure. We would start with the solution and rewrite (decompose) it as the sum of two fractions.</para>
 <equation id="fs-id1165134149785" class="unnumbered"><label/> <m:math display="block">
 <m:mrow>
 <m:munder>
@@ -433,7 +433,7 @@ Solve the system of equations by elimination.
 
 <note id="fs-id1165132971707"><label>A general note label</label><title>Partial Fraction Decomposition of <m:math> <m:mrow> <m:mspace width="0.8em"/><m:mfrac> <m:mrow> <m:mi>P</m:mi><m:mrow><m:mo>(</m:mo> <m:mi>x</m:mi> <m:mo>)</m:mo></m:mrow> </m:mrow> <m:mrow> <m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo> <m:mi>x</m:mi> <m:mo>)</m:mo></m:mrow> </m:mrow> </m:mfrac> <m:mo>:</m:mo><m:mi>Q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.8em"/> </m:mrow> </m:math> Has Nonrepeated Linear Factors</title>
 
-<para id="fs-id1165135485810">The <term class="no-emphasis">partial fraction decomposition</term> of <m:math>
+<para id="fs-id1165135485810">The <term class="no-emphasis" id="term-00005">partial fraction decomposition</term> of <m:math>
 <m:mrow>
 <m:mspace width="0.8em"/><m:mfrac>
 <m:mrow>
@@ -687,7 +687,7 @@ Solve the system of equations by elimination.
 </list></note><example id="Example_09_04_01">
 <exercise id="fs-id1165137645631"><problem id="fs-id1165137530470">
 <title>Decomposing a Rational Function with Distinct Linear Factors</title>
-<para id="fs-id1165135462884">Decompose the given <term class="no-emphasis">rational expression</term> with distinct linear factors.</para><equation id="fs-id1165135503860" class="unnumbered"><label/> <m:math display="block">
+<para id="fs-id1165135462884">Decompose the given <term class="no-emphasis" id="term-00006">rational expression</term> with distinct linear factors.</para><equation id="fs-id1165135503860" class="unnumbered"><label/> <m:math display="block">
 <m:mrow>
 <m:mfrac>
 <m:mrow>
@@ -1178,7 +1178,7 @@ Solve the system of equations by elimination.
 </m:mrow>
 </m:math>
 </equation>
-<para id="fs-id1165134485696">Although this method is not seen very often in textbooks, we present it here as an alternative that may make some partial fraction decompositions easier. It is known as the <term class="no-emphasis">Heaviside method</term>, named after Charles Heaviside, a pioneer in the study of electronics.</para>
+<para id="fs-id1165134485696">Although this method is not seen very often in textbooks, we present it here as an alternative that may make some partial fraction decompositions easier. It is known as the <term class="no-emphasis" id="term-00007">Heaviside method</term>, named after Charles Heaviside, a pioneer in the study of electronics.</para>
 </solution>
 </exercise></example>
 
@@ -2012,7 +2012,7 @@ Solve the system of equations by elimination.
   <m:mrow>
    <m:mspace width="0.8em"/><m:mi>C</m:mi><m:mspace width="0.8em"/>
   </m:mrow>
- </m:math> representing constants. Now we will look at an example where one of the factors in the denominator is a <term class="no-emphasis">quadratic</term> expression that does not factor. This is referred to as an irreducible quadratic factor. In cases like this, we use a linear numerator such as <m:math>
+ </m:math> representing constants. Now we will look at an example where one of the factors in the denominator is a <term class="no-emphasis" id="term-00008">quadratic</term> expression that does not factor. This is referred to as an irreducible quadratic factor. In cases like this, we use a linear numerator such as <m:math>
   <m:mrow>
    <m:mspace width="0.8em"/><m:mi>A</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>B</m:mi><m:mo>,</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo>,</m:mo><m:mspace width="0.8em"/>
   </m:mrow>
@@ -2994,7 +2994,7 @@ Solve the system of equations by elimination.
  </para></solution>
 </exercise></note>
 
-</section><section id="fs-id1165134351129"><title>Decomposing <m:math>    <m:mrow>     <m:mspace width="0.8em"/><m:mfrac>      <m:mrow>       <m:mi>P</m:mi><m:mrow><m:mo>(</m:mo>        <m:mi>x</m:mi>        <m:mo>)</m:mo></m:mrow>      </m:mrow>      <m:mrow>       <m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo>        <m:mi>x</m:mi>        <m:mo>)</m:mo></m:mrow>      </m:mrow>     </m:mfrac>     <m:mspace width="0.8em"/>    </m:mrow>   </m:math> When <emphasis effect="italics">Q(x)</emphasis> Has a Repeated Irreducible Quadratic Factor</title><para id="fs-id1165134204390">Now that we can decompose a simplified <term class="no-emphasis">rational expression</term> with an irreducible <term class="no-emphasis">quadratic</term> factor, we will learn how to do partial fraction decomposition when the simplified rational expression has repeated irreducible quadratic factors. The decomposition will consist of partial fractions with linear numerators over each irreducible quadratic factor represented in increasing powers.</para><note id="fs-id1165137842428"><label>A general note label</label><title>Decomposition of <m:math>     <m:mrow>      <m:mspace width="0.8em"/><m:mfrac>       <m:mrow>        <m:mi>P</m:mi><m:mrow><m:mo>(</m:mo>         <m:mi>x</m:mi>         <m:mo>)</m:mo></m:mrow>       </m:mrow>       <m:mrow>        <m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo>         <m:mi>x</m:mi>         <m:mo>)</m:mo></m:mrow>       </m:mrow>      </m:mfrac>      <m:mspace width="0.8em"/>     </m:mrow>    </m:math> When  <emphasis effect="italics">Q(x)</emphasis> Has a Repeated Irreducible Quadratic Factor</title>
+</section><section id="fs-id1165134351129"><title>Decomposing <m:math>    <m:mrow>     <m:mspace width="0.8em"/><m:mfrac>      <m:mrow>       <m:mi>P</m:mi><m:mrow><m:mo>(</m:mo>        <m:mi>x</m:mi>        <m:mo>)</m:mo></m:mrow>      </m:mrow>      <m:mrow>       <m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo>        <m:mi>x</m:mi>        <m:mo>)</m:mo></m:mrow>      </m:mrow>     </m:mfrac>     <m:mspace width="0.8em"/>    </m:mrow>   </m:math> When <emphasis effect="italics">Q(x)</emphasis> Has a Repeated Irreducible Quadratic Factor</title><para id="fs-id1165134204390">Now that we can decompose a simplified <term class="no-emphasis" id="term-00009">rational expression</term> with an irreducible <term class="no-emphasis" id="term-00010">quadratic</term> factor, we will learn how to do partial fraction decomposition when the simplified rational expression has repeated irreducible quadratic factors. The decomposition will consist of partial fractions with linear numerators over each irreducible quadratic factor represented in increasing powers.</para><note id="fs-id1165137842428"><label>A general note label</label><title>Decomposition of <m:math>     <m:mrow>      <m:mspace width="0.8em"/><m:mfrac>       <m:mrow>        <m:mi>P</m:mi><m:mrow><m:mo>(</m:mo>         <m:mi>x</m:mi>         <m:mo>)</m:mo></m:mrow>       </m:mrow>       <m:mrow>        <m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo>         <m:mi>x</m:mi>         <m:mo>)</m:mo></m:mrow>       </m:mrow>      </m:mfrac>      <m:mspace width="0.8em"/>     </m:mrow>    </m:math> When  <emphasis effect="italics">Q(x)</emphasis> Has a Repeated Irreducible Quadratic Factor</title>
 
    <para id="fs-id1165135546901">The partial fraction decomposition of <m:math>
     <m:mrow>

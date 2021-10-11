@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m49435</md:content-id>
   <md:title>Solving Systems with Inverses</md:title>
-  <md:abstract><para>In this section, you will:</para><list>
+  <md:abstract><para id="para-00001">In this section, you will:</para><list id="list-00001">
 <item>Find the inverse of a matrix.</item>
 <item>Solve a system of linear equations using an inverse matrix.</item>
 </list></md:abstract>
@@ -16,7 +16,7 @@
 <item>Evaluate the determinant of a 2×2 matrix (IA 4.6.1)</item>
 <item>Evaluate the determinant of a 3x3 matrix (IA 4.6.2)</item>
 </list>
-</section><section id="eip-904"><title>Objective 1: Evaluate the determinant of a 2×2 matrix (IA 4.6.1)</title><para id="eip-182">If a matrix has the same number of rows and columns, we call it a <term>square matrix</term>. Each square matrix has a real number associated with it called its <term>determinant</term>.
+</section><section id="eip-904"><title>Objective 1: Evaluate the determinant of a 2×2 matrix (IA 4.6.1)</title><para id="eip-182">If a matrix has the same number of rows and columns, we call it a <term id="term-00001">square matrix</term>. Each square matrix has a real number associated with it called its <term id="term-00002">determinant</term>.
 </para><note id="eip-981"><title>Determinant</title><para id="eip-idm619385360">The determinant of any square matrix <m:math><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mi>a</m:mi></m:mtd><m:mtd><m:mi>b</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>c</m:mi></m:mtd><m:mtd><m:mi>d</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced></m:math> , where a, b, c, and d are real numbers, is <m:math><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mi>a</m:mi></m:mtd><m:mtd><m:mi>b</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>c</m:mi></m:mtd><m:mtd><m:mi>d</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>d</m:mi><m:mo>-</m:mo><m:mi>b</m:mi><m:mi>c</m:mi></m:math> </para><para id="eip-60">To get the real number value of the determinate we subtract the products of the diagonals, as shown.
  <media id="eip-idm354633472" alt="A 2 by 2 determinant is show, with its first row being a, b and second one being c, d. These values are written between two vertical lines instead of brackets as in the case of matrices. Two arrows are shown, one from a to d, the other from c to b. This determinant is equal to ad minus bc.">
     <image mime-type="image/jpeg" src="../../media/7_7_1-b95e.jpg"/>
@@ -60,7 +60,7 @@ Find the determinant of the 2x2 matrices.</para>
   <para id="eip-894">
  <m:math><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mo>-</m:mo><m:mn>4</m:mn></m:mtd><m:mtd><m:mn>8</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mo>-</m:mo><m:mn>3</m:mn></m:mtd><m:mtd><m:mn>5</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:math>
   </para>
-</problem></exercise></section></section><section id="eip-379"><title>Objective 2: Evaluate the determinant of a 3×3 matrix (IA 4.6.2)</title><para id="eip-269">To evaluate the determinant of a 3×3 matrix, we must be able to evaluate the <term>minor of an entry</term> in the determinant.
+</problem></exercise></section></section><section id="eip-379"><title>Objective 2: Evaluate the determinant of a 3×3 matrix (IA 4.6.2)</title><para id="eip-269">To evaluate the determinant of a 3×3 matrix, we must be able to evaluate the <term id="term-00003">minor of an entry</term> in the determinant.
 </para><para id="eip-76">The minor of an entry is the 2×2 determinant found by eliminating the row and column in the 3×3 determinant that contains the entry.
 </para><para id="eip-590">For example, to find the minor of entry a<sub>1</sub>, we eliminate the row and column which contain it. So, we eliminate the first row and first column. Then we write the 2×2 determinant that remains.
 </para>
@@ -291,7 +291,7 @@ Evaluate the determinant of the 3x3 matrix by expanding by minors along the firs
           </m:mrow>
           <m:mo>)</m:mo></m:mrow><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>1.</m:mn>
       </m:mrow>
-    </m:math> The <term class="no-emphasis">multiplicative inverse of a matrix</term> is similar in concept, except that the product of matrix <m:math>
+    </m:math> The <term class="no-emphasis" id="term-00004">multiplicative inverse of a matrix</term> is similar in concept, except that the product of matrix <m:math>
       <m:mrow>
 <m:mi>A</m:mi>
       </m:mrow>
@@ -305,7 +305,7 @@ Evaluate the determinant of the 3x3 matrix by expanding by minors along the firs
         </m:msup>
 
       </m:mrow>
-    </m:math> equals the <term class="no-emphasis">identity matrix</term>. The identity matrix is a square matrix containing ones down the main diagonal and zeros everywhere else. We identify identity matrices by <m:math>
+    </m:math> equals the <term class="no-emphasis" id="term-00005">identity matrix</term>. The identity matrix is a square matrix containing ones down the main diagonal and zeros everywhere else. We identify identity matrices by <m:math>
       <m:mrow>
        <m:msub>
           <m:mi>I</m:mi>
@@ -451,7 +451,7 @@ Evaluate the determinant of the 3x3 matrix by expanding by minors along the firs
 
     </m:math>
     </equation>
-    <para id="fs-id1165133354140">A matrix that has a multiplicative inverse is called an <term class="no-emphasis">invertible matrix</term>. Only a square matrix may have a multiplicative inverse, as the reversibility, <m:math>
+    <para id="fs-id1165133354140">A matrix that has a multiplicative inverse is called an <term class="no-emphasis" id="term-00006">invertible matrix</term>. Only a square matrix may have a multiplicative inverse, as the reversibility, <m:math>
       <m:mrow>
        <m:mi>A</m:mi><m:msup>
           <m:mi>A</m:mi>
@@ -496,7 +496,7 @@ Evaluate the determinant of the 3x3 matrix by expanding by minors along the firs
 </m:math> matrices.</para><note id="fs-id1165137749300">
 
       <title>The Identity Matrix and Multiplicative Inverse</title>
-      <para id="fs-id1165134108378">The <term>identity matrix</term>, <m:math>
+      <para id="fs-id1165134108378">The <term id="term-00007">identity matrix</term>, <m:math>
         <m:mrow>
           <m:msub>
             <m:mi>I</m:mi>
@@ -662,7 +662,7 @@ matrix such that <m:math>
             </m:mrow>
           </m:msup>
           <m:mo>,</m:mo>        </m:mrow>
-      </m:math> the <term>multiplicative inverse of a matrix</term> <m:math>
+      </m:math> the <term id="term-00008">multiplicative inverse of a matrix</term> <m:math>
         <m:mrow>
           <m:mi>A</m:mi><m:mo>.</m:mo>
         </m:mrow>
@@ -1787,7 +1787,7 @@ matrix such that <m:math>
 
     <section id="fs-id1165137418635">
       <title>Finding the Multiplicative Inverse Using Matrix Multiplication</title>
-      <para id="fs-id1165131961693">We can now determine whether two matrices are inverses, but how would we find the inverse of a given matrix? Since we know that the product of a matrix and its inverse is the identity matrix, we can find the inverse of a matrix by setting up an equation using <term class="no-emphasis">matrix multiplication</term>.</para>
+      <para id="fs-id1165131961693">We can now determine whether two matrices are inverses, but how would we find the inverse of a given matrix? Since we know that the product of a matrix and its inverse is the identity matrix, we can find the inverse of a matrix by setting up an equation using <term class="no-emphasis" id="term-00009">matrix multiplication</term>.</para>
 
       <example id="Example_09_07_03">
         <exercise id="fs-id1165135347580"><problem id="fs-id1165135347583">
@@ -2269,7 +2269,7 @@ matrix such that <m:math>
         </exercise></example>
 
     </section>
-    <section id="fs-id1165137737676"><title>Finding the Multiplicative Inverse by Augmenting with the Identity</title><para id="fs-id1165132328759">Another way to find the <term class="no-emphasis">multiplicative inverse</term> is by augmenting with the identity. When matrix <m:math>
+    <section id="fs-id1165137737676"><title>Finding the Multiplicative Inverse by Augmenting with the Identity</title><para id="fs-id1165132328759">Another way to find the <term class="no-emphasis" id="term-00010">multiplicative inverse</term> is by augmenting with the identity. When matrix <m:math>
         <m:mrow>
           <m:mi>A</m:mi>        </m:mrow>
       </m:math> is transformed into <m:math>
@@ -2371,7 +2371,7 @@ matrix such that <m:math>
   </m:mrow> <m:mo>]</m:mo></m:mrow>
  </m:mrow>
 </m:math>
-</equation><para id="fs-id1165137694941">Perform <term class="no-emphasis">row operations</term> with the goal of turning <m:math>
+</equation><para id="fs-id1165137694941">Perform <term class="no-emphasis" id="term-00011">row operations</term> with the goal of turning <m:math>
         <m:mrow>
           <m:mi>A</m:mi>        </m:mrow>
       </m:math> into the identity.</para>
@@ -2694,7 +2694,7 @@ matrix such that <m:math>
  </m:mrow>
 </m:math>
 </equation></section><section id="fs-id1165132300248">
-      <title>Finding the Multiplicative Inverse of 2×2 Matrices Using a Formula</title><para id="fs-id1165135688796">When we need to find the <term class="no-emphasis">multiplicative inverse</term> of a <m:math>
+      <title>Finding the Multiplicative Inverse of 2×2 Matrices Using a Formula</title><para id="fs-id1165135688796">When we need to find the <term class="no-emphasis" id="term-00012">multiplicative inverse</term> of a <m:math>
         <m:mrow>
           <m:mn>2</m:mn><m:mo>×</m:mo><m:mn>2</m:mn>        </m:mrow>
       </m:math> matrix, we can use a special formula instead of using matrix multiplication or augmenting with the identity.</para><para id="fs-id1165134047623">If <m:math>
@@ -3012,7 +3012,7 @@ matrix such that <m:math>
               </m:mrow>
             </m:math>
             </equation>
-            <para id="fs-id1165134365354">Perform <term class="no-emphasis">row operations</term> with the goal of turning <m:math>
+            <para id="fs-id1165134365354">Perform <term class="no-emphasis" id="term-00013">row operations</term> with the goal of turning <m:math>
               <m:mrow>
                 <m:mi>A</m:mi>
               </m:mrow>
@@ -3453,7 +3453,7 @@ matrix such that <m:math>
       </m:math> matrix to find the inverse of a <m:math>
         <m:mrow>
           <m:mn>3</m:mn><m:mtext/><m:mo>×</m:mo><m:mtext/><m:mn>3</m:mn>        </m:mrow>
-      </m:math> matrix. Instead, we will augment the original matrix with the identity matrix and use <term class="no-emphasis">row operations</term> to obtain the inverse.</para><para id="fs-id1165134435528">Given a <m:math>
+      </m:math> matrix. Instead, we will augment the original matrix with the identity matrix and use <term class="no-emphasis" id="term-00014">row operations</term> to obtain the inverse.</para><para id="fs-id1165134435528">Given a <m:math>
         <m:mrow>
           <m:mn>3</m:mn><m:mspace width="0.8"/><m:mtext/><m:mo>×</m:mo><m:mspace width="0.8"/><m:mtext/><m:mn>3</m:mn>        </m:mrow>
       </m:math>
@@ -3583,10 +3583,10 @@ matrix such that <m:math>
   </m:mrow> <m:mo>]</m:mo></m:mrow>
  </m:mrow>
 </m:math>
-</equation><para id="fs-id1165134357582">To begin, we write the <term class="no-emphasis">augmented matrix</term> with the identity on the right and <m:math>
+</equation><para id="fs-id1165134357582">To begin, we write the <term class="no-emphasis" id="term-00015">augmented matrix</term> with the identity on the right and <m:math>
         <m:mrow>
           <m:mi>A</m:mi>        </m:mrow>
-      </m:math> on the left. Performing elementary <term class="no-emphasis">row operations</term> so that the <term class="no-emphasis">identity matrix</term> appears on the left, we will obtain the <term class="no-emphasis">inverse matrix</term> on the right. We will find the inverse of this matrix in the next example.</para>
+      </m:math> on the left. Performing elementary <term class="no-emphasis" id="term-00016">row operations</term> so that the <term class="no-emphasis" id="term-00017">identity matrix</term> appears on the left, we will obtain the <term class="no-emphasis" id="term-00018">inverse matrix</term> on the right. We will find the inverse of this matrix in the next example.</para>
 
       <note id="fs-id1165134258652" class="how-to-notitle">
         <label>How To</label>
@@ -5052,18 +5052,18 @@ matrix such that <m:math>
       <m:mrow>
        <m:mi>B</m:mi>
       </m:mrow>
-    </m:math> is the matrix representing the constants. Using <term class="no-emphasis">matrix multiplication</term>, we may define a system of equations with the same number of equations as variables as</para>
+    </m:math> is the matrix representing the constants. Using <term class="no-emphasis" id="term-00019">matrix multiplication</term>, we may define a system of equations with the same number of equations as variables as</para>
     <equation id="fs-id1165137436526" class="unnumbered"><label/> <m:math>
       <m:mrow>
         <m:mi>A</m:mi><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>B</m:mi>
       </m:mrow>
     </m:math>
     </equation>
-    <para id="fs-id1165137466371">To solve a system of linear equations using an <term class="no-emphasis">inverse matrix</term>, let <m:math>
+    <para id="fs-id1165137466371">To solve a system of linear equations using an <term class="no-emphasis" id="term-00020">inverse matrix</term>, let <m:math>
       <m:mrow>
        <m:mi>A</m:mi>
       </m:mrow>
-    </m:math> be the <term class="no-emphasis">coefficient matrix</term>, let <m:math>
+    </m:math> be the <term class="no-emphasis" id="term-00021">coefficient matrix</term>, let <m:math>
       <m:mrow>
        <m:mi>X</m:mi>
       </m:mrow>
@@ -5451,7 +5451,7 @@ matrix such that <m:math>
   </m:mtable>
  </m:mrow>
 </m:math>
-</equation><para id="fs-id1165137843896">The only difference between a solving a linear equation and a <term class="no-emphasis">system of equations</term> written in matrix form is that finding the inverse of a matrix is more complicated, and matrix multiplication is a longer process. However, the goal is the same—to isolate the variable.</para>
+</equation><para id="fs-id1165137843896">The only difference between a solving a linear equation and a <term class="no-emphasis" id="term-00022">system of equations</term> written in matrix form is that finding the inverse of a matrix is more complicated, and matrix multiplication is a longer process. However, the goal is the same—to isolate the variable.</para>
     <para id="fs-id1165135487326">We will investigate this idea in detail, but it is helpful to begin with a <m:math>
  <m:mrow>
   <m:mn>2</m:mn><m:mo>×</m:mo><m:mn>2</m:mn>
@@ -7818,7 +7818,7 @@ matrix such that <m:math>
         <solution id="fs-id1165134394498">
 
 
-          <para id="fs-id1165134394500">On the matrix page of the calculator, enter the <term class="no-emphasis">coefficient matrix</term> as the matrix variable <m:math>
+          <para id="fs-id1165134394500">On the matrix page of the calculator, enter the <term class="no-emphasis" id="term-00023">coefficient matrix</term> as the matrix variable <m:math>
             <m:mrow>
               <m:mrow><m:mo>[</m:mo> <m:mi>A</m:mi> <m:mo>]</m:mo></m:mrow><m:mo>,</m:mo>
             </m:mrow>
