@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m49436</md:content-id>
   <md:title>Solving Systems with Cramer's Rule</md:title>
-  <md:abstract><para>In this section, you will:</para><list><item>Evaluate  2 × 2  determinants.</item>
+  <md:abstract><para id="para-00001">In this section, you will:</para><list id="list-00001"><item>Evaluate  2 × 2  determinants.</item>
     <item>Use Cramer’s Rule to solve a system of equations in two variables.</item>
     <item>Evaluate  3 × 3  determinants.</item>
     <item>Use Cramer’s Rule to solve a system of three equations in three variables.</item>
@@ -15,7 +15,7 @@
 <content>
   <section id="eip-505" class="coreq-skills"><section id="eip-824" class="learning-objectives"><title>Learning Objectives</title><list id="eip-idm457324016">
 <item>Use Cramer’s Rule to solve systems of equations (IA 4.6.3)</item>
-</list></section><section id="eip-886"><title>Objective 1: Use Cramer’s Rule to solve systems of equations (IA 4.6.3)</title><para id="eip-402"><term>Cramer’s Rule</term> uses determinants to solve systems of equations.
+</list></section><section id="eip-886"><title>Objective 1: Use Cramer’s Rule to solve systems of equations (IA 4.6.3)</title><para id="eip-402"><term id="term-00001">Cramer’s Rule</term> uses determinants to solve systems of equations.
 
 </para><example id="eip-223"><exercise id="eip-930"><problem id="eip-90">
   <para id="eip-966">
@@ -210,11 +210,11 @@ Use Cramer’s Rule to solve the system of three equations.
 
 <section id="fs-id1423475">
 <title>Evaluating the Determinant of a 2×2 Matrix</title>
-<para id="fs-id1331675">A determinant is a real number that can be very useful in mathematics because it has multiple applications, such as calculating area, volume, and other quantities. Here, we will use determinants to reveal whether a matrix is invertible by using the entries of a <term class="no-emphasis">square matrix</term> to determine whether there is a solution to the system of equations. Perhaps one of the more interesting applications, however, is their use in cryptography. Secure signals or messages are sometimes sent encoded in a matrix. The data can only be decrypted with an <term class="no-emphasis">invertible matrix</term> and the determinant. For our purposes, we focus on the determinant as an indication of the invertibility of the matrix. Calculating the determinant of a matrix involves following the specific patterns that are outlined in this section.</para>
+<para id="fs-id1331675">A determinant is a real number that can be very useful in mathematics because it has multiple applications, such as calculating area, volume, and other quantities. Here, we will use determinants to reveal whether a matrix is invertible by using the entries of a <term class="no-emphasis" id="term-00002">square matrix</term> to determine whether there is a solution to the system of equations. Perhaps one of the more interesting applications, however, is their use in cryptography. Secure signals or messages are sometimes sent encoded in a matrix. The data can only be decrypted with an <term class="no-emphasis" id="term-00003">invertible matrix</term> and the determinant. For our purposes, we focus on the determinant as an indication of the invertibility of the matrix. Calculating the determinant of a matrix involves following the specific patterns that are outlined in this section.</para>
 
 <note id="fs-id1305022"><label/><title>Find the Determinant of a 2 × 2 Matrix</title>
 
-<para id="fs-id1376906">The <term>determinant</term> of a <m:math>
+<para id="fs-id1376906">The <term id="term-00004">determinant</term> of a <m:math>
  <m:mrow>
   <m:mn>2</m:mn><m:mo>×</m:mo><m:mn>2</m:mn> </m:mrow>
 </m:math> matrix, given</para><equation id="fs-id1355183" class="unnumbered"><label/> <m:math display="block">
@@ -350,7 +350,7 @@ Use Cramer’s Rule to solve the system of three equations.
 </equation></solution>
 </exercise></example>
 </section>
-<section id="fs-id1420496"><title>Using Cramer’s Rule to Solve a System of Two Equations in Two Variables</title><para id="fs-id1322833">We will now introduce a final method for solving systems of equations that uses determinants. Known as <term class="no-emphasis">Cramer’s Rule</term>, this technique dates back to the middle of the 18th century and is named for its innovator, the Swiss mathematician Gabriel Cramer (1704-1752), who introduced it in 1750 in <foreign>Introduction à l'Analyse des lignes Courbes algébriques</foreign>. Cramer’s Rule is a viable and efficient method for finding solutions to systems with an arbitrary number of unknowns, provided that we have the same number of equations as unknowns.</para><para id="fs-id1531826">Cramer’s Rule will give us the unique solution to a system of equations, if it exists. However, if the system has no solution or an infinite number of solutions, this will be indicated by a determinant of zero. To find out if the system is inconsistent or dependent, another method, such as elimination, will have to be used.</para>
+<section id="fs-id1420496"><title>Using Cramer’s Rule to Solve a System of Two Equations in Two Variables</title><para id="fs-id1322833">We will now introduce a final method for solving systems of equations that uses determinants. Known as <term class="no-emphasis" id="term-00005">Cramer’s Rule</term>, this technique dates back to the middle of the 18th century and is named for its innovator, the Swiss mathematician Gabriel Cramer (1704-1752), who introduced it in 1750 in <foreign>Introduction à l'Analyse des lignes Courbes algébriques</foreign>. Cramer’s Rule is a viable and efficient method for finding solutions to systems with an arbitrary number of unknowns, provided that we have the same number of equations as unknowns.</para><para id="fs-id1531826">Cramer’s Rule will give us the unique solution to a system of equations, if it exists. However, if the system has no solution or an infinite number of solutions, this will be indicated by a determinant of zero. To find out if the system is inconsistent or dependent, another method, such as elimination, will have to be used.</para>
 <para id="fs-id1393178">To understand Cramer’s Rule, let’s look closely at how we solve systems of linear equations using basic row operations. Consider a system of two equations in two variables.</para>
   <equation id="fs-id1279412" class="unnumbered"><label/> <m:math display="block">
  <m:mtable>
@@ -1381,7 +1381,7 @@ Use Cramer’s Rule to solve the system of three equations.
 
 <note id="fs-id1357295"><label/><title>Cramer’s Rule for 2×2 Systems</title>
 
-<para id="fs-id1664070"><term>Cramer’s Rule</term> is a method that uses determinants to solve systems of equations that have the same number of equations as variables.</para>
+<para id="fs-id1664070"><term id="term-00006">Cramer’s Rule</term> is a method that uses determinants to solve systems of equations that have the same number of equations as variables.</para>
 <para id="fs-id1660256">Consider a system of two linear equations in two variables.</para>
 <equation id="fs-id1700631" class="unnumbered"><label/> <m:math display="block">
  <m:mtable>
@@ -1924,7 +1924,7 @@ Use Cramer’s Rule to solve the system of three equations.
 </para></solution>
 </exercise></note>
 </section><section id="fs-id1594718"><title>Evaluating the Determinant of a 3 × 3 Matrix</title><para id="fs-id1673681">Finding the determinant of a 2×2 matrix is straightforward, but finding the determinant of a 3×3 matrix is more complicated. One method is to augment the 3×3 matrix with a repetition of the first two columns, giving a 3×5 matrix. Then we calculate the sum of the products of entries <emphasis effect="italics">down</emphasis> each of the three diagonals (upper left to lower right), and subtract the products of entries <emphasis effect="italics">up</emphasis> each of the three diagonals (lower left to upper right). This is more easily understood with a visual and an example.</para>
-<para id="fs-id1422443">Find the <term class="no-emphasis">determinant</term> of the 3×3 matrix.</para>
+<para id="fs-id1422443">Find the <term class="no-emphasis" id="term-00007">determinant</term> of the 3×3 matrix.</para>
   <equation id="fs-id1505641" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mi>A</m:mi><m:mo>=</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
@@ -2545,7 +2545,7 @@ Use Cramer’s Rule to solve the system of three equations.
  <m:mrow>
   <m:mtext>3</m:mtext><m:mo>×</m:mo><m:mn>3</m:mn> </m:mrow>
 </m:math> matrices. For larger matrices it is best to use a graphing utility or computer software.</emphasis></para></note>
-</section><section id="fs-id1420022"><title>Using Cramer’s Rule to Solve a System of Three Equations in Three Variables</title><para id="fs-id1433754">Now that we can find the <term class="no-emphasis">determinant</term> of a 3 × 3 matrix, we can apply <term class="no-emphasis">Cramer’s Rule</term> to solve a <term class="no-emphasis">system of three equations in three variables</term>. Cramer’s Rule is straightforward, following a pattern consistent with Cramer’s Rule for 2 × 2 matrices. As the order of the matrix increases to 3 × 3, however, there are many more calculations required.</para><para id="fs-id1433166">When we calculate the determinant to be zero, Cramer’s Rule gives no indication as to whether the system has no solution or an infinite number of solutions. To find out, we have to perform elimination on the system.</para>
+</section><section id="fs-id1420022"><title>Using Cramer’s Rule to Solve a System of Three Equations in Three Variables</title><para id="fs-id1433754">Now that we can find the <term class="no-emphasis" id="term-00008">determinant</term> of a 3 × 3 matrix, we can apply <term class="no-emphasis" id="term-00009">Cramer’s Rule</term> to solve a <term class="no-emphasis" id="term-00010">system of three equations in three variables</term>. Cramer’s Rule is straightforward, following a pattern consistent with Cramer’s Rule for 2 × 2 matrices. As the order of the matrix increases to 3 × 3, however, there are many more calculations required.</para><para id="fs-id1433166">When we calculate the determinant to be zero, Cramer’s Rule gives no indication as to whether the system has no solution or an infinite number of solutions. To find out, we have to perform elimination on the system.</para>
 <para id="fs-id1518566">Consider a 3 × 3 system of equations.</para><media id="eip-id1435181" alt="" display="block">
 <image mime-type="image/jpg" src="../../media/9.8.1.jpg"/>
 </media>
@@ -3398,7 +3398,7 @@ Use Cramer’s Rule to solve the system of three equations.
 </exercise></example>
 </section><section id="fs-id1651973">
 <title>Understanding Properties of Determinants</title>
-<para id="fs-id1651978">There are many <term class="no-emphasis">properties of determinants</term>. Listed here are some properties that may be helpful in calculating the determinant of a matrix.</para><note id="fs-id1651986">
+<para id="fs-id1651978">There are many <term class="no-emphasis" id="term-00011">properties of determinants</term>. Listed here are some properties that may be helpful in calculating the determinant of a matrix.</para><note id="fs-id1651986">
 <label>a general note label</label>
 <title>Properties of Determinants</title>
 <list id="fs-id1459457" list-type="enumerated" number-style="arabic"><item>If the matrix is in upper triangular form, the determinant equals the product of entries down the main diagonal.</item>
@@ -4088,7 +4088,7 @@ Use Cramer’s Rule to solve the system of three equations.
 </equation></problem>
 <solution id="fs-id1653552">
 
-<para id="fs-id1653554">Using <term class="no-emphasis">Cramer’s Rule</term>, we have</para>
+<para id="fs-id1653554">Using <term class="no-emphasis" id="term-00012">Cramer’s Rule</term>, we have</para>
   <equation id="fs-id1407186" class="unnumbered"><label/> <m:math display="block">
  <m:mrow>
   <m:mi>D</m:mi><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
@@ -6912,7 +6912,7 @@ Use Cramer’s Rule to solve the system of three equations.
 <para id="fs-id1513100">For the following exercises, graph the inequality.</para>
  <exercise id="fs-id1513103"><problem id="fs-id1513104"><para id="fs-id1513105"> <m:math>
   <m:mrow>
-   <m:mi>y</m:mi><m:mo>&gt;</m:mo><m:msup>
+   <m:mi>y</m:mi><m:mo>></m:mo><m:msup>
     <m:mi>x</m:mi>
     <m:mn>2</m:mn>
    </m:msup>
@@ -6967,7 +6967,7 @@ Use Cramer’s Rule to solve the system of three equations.
    <m:mtr columnalign="left">
     <m:mtd columnalign="left">
      <m:mrow>
-      <m:mi>y</m:mi><m:mo>&gt;</m:mo><m:mo>−</m:mo><m:msup>
+      <m:mi>y</m:mi><m:mo>></m:mo><m:mo>−</m:mo><m:msup>
        <m:mi>x</m:mi>
        <m:mn>2</m:mn>
       </m:msup>
@@ -9446,7 +9446,7 @@ Use Cramer’s Rule to solve the system of three equations.
        <m:mi>y</m:mi>
        <m:mn>2</m:mn>
       </m:msup>
-      <m:mo>&gt;</m:mo><m:mn>4</m:mn>
+      <m:mo>></m:mo><m:mn>4</m:mn>
      </m:mtd>
     </m:mtr>
     <m:mtr>
