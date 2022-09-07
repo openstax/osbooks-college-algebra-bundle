@@ -2319,6 +2319,11 @@
    <m:mtr columnalign="left">
     <m:mtd columnalign="left">
      <m:mrow>
+        <m:msup>
+            <m:mi>s</m:mi>
+            <m:mo>′</m:mo>
+        </m:msup>
+        <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
       <m:mtext>        </m:mtext><m:mo>=</m:mo><m:munder>
        <m:mrow>
         <m:mi>lim</m:mi>
@@ -2981,7 +2986,7 @@
    <m:mtr columnalign="left">
     <m:mtd columnalign="left">
      <m:mrow>
-      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
        <m:mrow>
         <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo>
        </m:mrow>
@@ -2994,11 +2999,11 @@
    <m:mtr columnalign="left">
     <m:mtd columnalign="left">
      <m:mrow>
-      <m:mtext>      </m:mtext><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
-       <m:mi>a</m:mi>
+      <m:mtext>      </m:mtext><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
        <m:mn>2</m:mn>
       </m:msup>
-      <m:mo>−</m:mo><m:mn>100</m:mn><m:mi>a</m:mi>
+      <m:mo>−</m:mo><m:mn>100</m:mn><m:mi>x</m:mi>
      </m:mrow>
     </m:mtd>
    </m:mtr>
@@ -3016,9 +3021,18 @@
        <m:mi>f</m:mi>
        <m:mo>′</m:mo>
       </m:msup>
-      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo>
+      <m:munder>
+   <m:mrow>
+    <m:mi>lim</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>h</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+      <m:mfrac>
        <m:mrow>
-        <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+        <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
        </m:mrow>
        <m:mi>h</m:mi>
       </m:mfrac>
@@ -3034,7 +3048,16 @@
    <m:mtr columnalign="left">
     <m:mtd columnalign="left">
      <m:mrow>
-      <m:mtext>             </m:mtext><m:mo>=</m:mo><m:mfrac>
+      <m:mtext>             </m:mtext><m:mo>=</m:mo>
+      <m:munder>
+   <m:mrow>
+    <m:mi>lim</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>h</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+      <m:mfrac>
        <m:mrow>
         <m:msup>
          <m:mrow>
@@ -3055,14 +3078,23 @@
     </m:mtd>
     <m:mtd columnalign="left">
      <m:mrow>
-      <m:mtext>Substitute </m:mtext><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mtext> and </m:mtext><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+      <m:mtext>Substitute </m:mtext><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mtext> and </m:mtext><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
      </m:mrow>
     </m:mtd>
    </m:mtr>
    <m:mtr columnalign="left">
     <m:mtd columnalign="left">
      <m:mrow>
-      <m:mtext>             </m:mtext><m:mo>=</m:mo><m:mfrac>
+      <m:mtext>             </m:mtext><m:mo>=</m:mo>
+      <m:munder>
+   <m:mrow>
+    <m:mi>lim</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>h</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+      <m:mfrac>
        <m:mrow>
         <m:msup>
          <m:mi>x</m:mi>
@@ -3092,7 +3124,16 @@
    <m:mtr columnalign="left">
     <m:mtd columnalign="left">
      <m:mrow>
-      <m:mtext>             </m:mtext><m:mo>=</m:mo><m:mfrac>
+      <m:mtext>             </m:mtext><m:mo>=</m:mo>
+      <m:munder>
+   <m:mrow>
+    <m:mi>lim</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>h</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+      <m:mfrac>
        <m:mrow>
         <m:mn>2</m:mn><m:mi>x</m:mi><m:mi>h</m:mi><m:mo>+</m:mo><m:msup>
          <m:mi>h</m:mi>
@@ -3114,7 +3155,16 @@
    <m:mtr columnalign="left">
     <m:mtd columnalign="left">
      <m:mrow>
-      <m:mtext>             </m:mtext><m:mo>=</m:mo><m:mfrac>
+      <m:mtext>             </m:mtext><m:mo>=</m:mo>
+      <m:munder>
+   <m:mrow>
+    <m:mi>lim</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>h</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+      <m:mfrac>
        <m:mrow>
         <m:menclose notation="updiagonalstrike">
          <m:mi>h</m:mi>
@@ -3140,7 +3190,16 @@
    <m:mtr columnalign="left">
     <m:mtd columnalign="left">
      <m:mrow>
-      <m:mtext>             </m:mtext><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>−</m:mo><m:mn>100</m:mn>
+      <m:mtext>             </m:mtext><m:mo>=</m:mo>
+      <m:munder>
+   <m:mrow>
+    <m:mi>lim</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>h</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>−</m:mo><m:mn>100</m:mn>
      </m:mrow>
     </m:mtd>
     <m:mtd columnalign="left">
@@ -3152,7 +3211,10 @@
    <m:mtr columnalign="left">
     <m:mtd columnalign="left">
      <m:mrow>
-      <m:mtext>             </m:mtext><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>100</m:mn>
+      <m:mtext>             </m:mtext><m:mo>=</m:mo>
+     <m:mo stretchy="false">(</m:mo>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>100</m:mn>
+      <m:mo stretchy="false">)</m:mo>
      </m:mrow>
     </m:mtd>
     <m:mtd columnalign="left">
