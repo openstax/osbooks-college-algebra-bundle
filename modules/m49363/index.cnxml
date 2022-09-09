@@ -1829,12 +1829,17 @@ We can solve and evaluate logarithmic equations by using the technique of conver
 
 <section id="fs-id1165137547253">
 <title>Using Common Logarithms</title>
-<para id="fs-id1165137574205">Sometimes we may see a logarithm written without a base. In this case, we assume that the base is 10. In other words, the expression <m:math>
-<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<para id="fs-id1165137574205">Sometimes you may see a logarithm written without a base. When you see one written this way, you need to look at the expression before evaluating it. It may be that the base you use doesn't matter. If you find it in computer science, it often means <m:math>
+<m:mrow><m:msub><m:mi>log</m:mi><m:mn>2</m:mn></m:msub><m:mo>(</m:mo>
 <m:mi>x</m:mi>
-<m:mo>)</m:mo></m:mrow>
+<m:mo>)</m:mo>
 </m:mrow>
-</m:math> means <m:math>
+</m:math>. However, in mathematics it almost always means the common logarithm of 10. In other words, the expression <m:math>
+  <m:mrow><m:mi>log</m:mi><m:mo>(</m:mo>
+  <m:mi>x</m:mi>
+  <m:mo>)</m:mo>
+  </m:mrow>
+  </m:math> often means <m:math>
 <m:mrow><m:msub>
 <m:mrow>
 <m:mi>log</m:mi>
@@ -1843,11 +1848,11 @@ We can solve and evaluate logarithmic equations by using the technique of conver
 <m:mn>10</m:mn>
 </m:mrow>
 </m:msub>
-<m:mrow><m:mo>(</m:mo>
+<m:mo>(</m:mo>
 <m:mi>x</m:mi>
-<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+<m:mo>)</m:mo><m:mo>.</m:mo>
 </m:mrow>
-</m:math> We call a base-10 logarithm a <emphasis effect="bold">common logarithm</emphasis>. Common logarithms are used to measure the Richter Scale mentioned at the beginning of the section. Scales for measuring the brightness of stars and the pH of acids and bases also use common logarithms.</para>
+</m:math></para>
 
 <note id="fs-id1165137401037"><title>Definition of the Common Logarithm</title>
 
@@ -1855,7 +1860,7 @@ We can solve and evaluate logarithmic equations by using the technique of conver
 <para id="fs-id1165135609332">A <term id="term-00004">common logarithm</term> is a logarithm with base <m:math>
 <m:mrow><m:mn>10.</m:mn>
 </m:mrow>
-</m:math> We write <m:math>
+</m:math> We can also write <m:math>
 <m:mrow><m:msub>
 <m:mrow>
 <m:mi>log</m:mi>
@@ -1864,14 +1869,14 @@ We can solve and evaluate logarithmic equations by using the technique of conver
 <m:mn>10</m:mn>
 </m:mrow>
 </m:msub>
-<m:mrow><m:mo>(</m:mo>
+<m:mo>(</m:mo>
 <m:mi>x</m:mi>
-<m:mo>)</m:mo></m:mrow>
+<m:mo>)</m:mo>
 </m:mrow>
 </m:math> simply as <m:math>
-<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow><m:mi>lg</m:mi><m:mo>(</m:mo>
 <m:mi>x</m:mi>
-<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+<m:mo>)</m:mo><m:mo>.</m:mo>
 </m:mrow>
 </m:math> The common logarithm of a positive number <m:math>
 <m:mrow><m:mi>x</m:mi>
@@ -1920,7 +1925,45 @@ We can solve and evaluate logarithmic equations by using the technique of conver
 <m:mrow><m:mi>x</m:mi><m:mo>.</m:mo>
 </m:mrow>
 </m:math> </para>
-</note><note id="fs-id1165137579434" class="how-to-notitle">
+</note>
+
+<para id="para-00002">
+  Currently, we use 
+  <m:math>
+    <m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:msub>
+<m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo>
+</m:mrow><m:mo>,</m:mo>
+<m:mrow>
+  <m:mi>lg</m:mi>
+  <m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo>
+</m:mrow>
+  </m:math> as the common logarithm, 
+  <m:math>
+    <m:mrow>
+      <m:mi>lb</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo>
+    </m:mrow>
+  </m:math> as the binary logarithm, and 
+  <m:math>
+    <m:mrow>
+      <m:mi>ln</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo>
+    </m:mrow>
+  </m:math> as the natural logarithm. Writing <m:math>
+    <m:mrow>
+      <m:mi>lg</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo>
+    </m:mrow>
+  </m:math> without specifying a base is now considered bad form, despite being frequently found in older materials.
+</para>
+
+<note id="fs-id1165137579434" class="how-to-notitle">
 <label>How To</label>
 <para id="fs-id1165137810781"><emphasis>Given a common logarithm of the form <m:math>
 <m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
