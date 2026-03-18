@@ -11,7 +11,7 @@ To view these books online and view contributors, please visit:
 - _College Algebra with Corequisite Support 2e_ [online](https://openstax.org/details/books/college-algebra-corequisite-support-2e)
 
 ## License
-_College Algebra 2e, Precalculus 2e, Algebra and Trigonometry 2e, and College Algebra with Corequisite Support 2e_ are available under the [Creative Commons Attribution License](./LICENSE) license.
+_College Algebra 2e, Precalculus 2e, Algebra and Trigonometry 2e, and College Algebra with Corequisite Support 2e_ are available under the [Creative Commons Attribution-NonCommercial-ShareAlike License](./LICENSE) license.
 
 ## Support
 If you would like to support the creation of free textbooks for students, your [donations are welcome](https://riceconnect.rice.edu/donation/support-openstax-banner).
